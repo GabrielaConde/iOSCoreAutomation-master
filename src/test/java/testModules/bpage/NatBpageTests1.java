@@ -18,6 +18,7 @@ public class NatBpageTests1 extends BpageInit {
     //THIS IS A THIRD MASTER TEST COMMENT *****
     //THIS IS A FORTH MASTER TEST COMMENT *****
     //THIS IS A FIFTH MASTER TEST COMMENT *****
+
     @BeforeClass
     public void initProcess() {
         disableAdExp = new SettingsSetupPage();
