@@ -13,11 +13,13 @@ public class NatBpageTests1 extends BpageInit {
 
     protected SettingsSetupPage disableAdExp;
 
+    //THIS IS A MASTER TEST COMMENT *****
+    //THIS IS A SECOND MASTER TEST COMMENT *****
     @BeforeClass
     public void initProcess() {
         disableAdExp = new SettingsSetupPage();
         nativeBpage.tapAllowButton();
-            nativeBpage.tapAllowButton();
+        nativeBpage.tapAllowButton();
     }
 
     @Test(enabled = true )               //if TRUE, uncomment capabilities (Base class)
