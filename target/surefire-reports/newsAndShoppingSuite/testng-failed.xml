@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [newsAndShoppingSuite]">
+  <test thread-count="5" verbose="0" name="News and Shopping(failed)">
+    <classes>
+      <class name="testModules.shopping.ShoppingTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initializePages"/>
+          <include name="setUpTest"/>
+          <include name="testButtons"/>
+        </methods>
+      </class> <!-- testModules.shopping.ShoppingTests -->
+    </classes>
+  </test> <!-- News and Shopping(failed) -->
+</suite> <!-- Failed suite [newsAndShoppingSuite] -->

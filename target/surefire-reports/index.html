@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">2 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-homeSuite">
+              <span class="suite-name border-passed">homeSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-homeSuite">
+                    <span>homeSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-homeSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-homeSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-homeSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-homeSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-homeSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-homeSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">22 methods,   22 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-homeSuite" class="hide-methods passed suite-homeSuite"> (hide)</a> <!-- hide-methods passed suite-homeSuite -->
+                      <a href="#" panel-name="suite-homeSuite" class="show-methods passed suite-homeSuite"> (show)</a> <!-- show-methods passed suite-homeSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-homeSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="disableAdExp">disableAdExp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="openTrendingModal">openTrendingModal</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapFirstBpage">tapFirstBpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapItemsShoppingPackage">tapItemsShoppingPackage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnAnimals">tapOnAnimals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnBooks">tapOnBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnCelebrity">tapOnCelebrity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnComunity">tapOnComunity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnCoronavirus">tapOnCoronavirus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnFood">tapOnFood</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnHealth">tapOnHealth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnLGBTQ">tapOnLGBTQ</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnMore1">tapOnMore1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnNifty">tapOnNifty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnParents">tapOnParents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnRewind">tapOnRewind</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnTVAndMovies">tapOnTVAndMovies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnTrending">tapOnTrending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapOnVideos">tapOnVideos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="tapSplash">tapSplash</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="testAllowButton">testAllowButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-homeSuite" title="testModules.home.HomeLatestNewNavTests" hash-for-method="verifyBuzzFeedLogo">verifyBuzzFeedLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-homeSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-homeSuite" class="panel homeSuite">
+          <div class="suite-homeSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testModules.home.HomeLatestNewNavTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="disableAdExp">
+                  </a> <!-- disableAdExp -->
+                  <span class="method-name">disableAdExp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openTrendingModal">
+                  </a> <!-- openTrendingModal -->
+                  <span class="method-name">openTrendingModal</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapFirstBpage">
+                  </a> <!-- tapFirstBpage -->
+                  <span class="method-name">tapFirstBpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapItemsShoppingPackage">
+                  </a> <!-- tapItemsShoppingPackage -->
+                  <span class="method-name">tapItemsShoppingPackage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnAnimals">
+                  </a> <!-- tapOnAnimals -->
+                  <span class="method-name">tapOnAnimals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnBooks">
+                  </a> <!-- tapOnBooks -->
+                  <span class="method-name">tapOnBooks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnCelebrity">
+                  </a> <!-- tapOnCelebrity -->
+                  <span class="method-name">tapOnCelebrity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnComunity">
+                  </a> <!-- tapOnComunity -->
+                  <span class="method-name">tapOnComunity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnCoronavirus">
+                  </a> <!-- tapOnCoronavirus -->
+                  <span class="method-name">tapOnCoronavirus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnFood">
+                  </a> <!-- tapOnFood -->
+                  <span class="method-name">tapOnFood</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnHealth">
+                  </a> <!-- tapOnHealth -->
+                  <span class="method-name">tapOnHealth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnLGBTQ">
+                  </a> <!-- tapOnLGBTQ -->
+                  <span class="method-name">tapOnLGBTQ</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnMore1">
+                  </a> <!-- tapOnMore1 -->
+                  <span class="method-name">tapOnMore1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnNifty">
+                  </a> <!-- tapOnNifty -->
+                  <span class="method-name">tapOnNifty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnParents">
+                  </a> <!-- tapOnParents -->
+                  <span class="method-name">tapOnParents</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnRewind">
+                  </a> <!-- tapOnRewind -->
+                  <span class="method-name">tapOnRewind</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnTVAndMovies">
+                  </a> <!-- tapOnTVAndMovies -->
+                  <span class="method-name">tapOnTVAndMovies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnTrending">
+                  </a> <!-- tapOnTrending -->
+                  <span class="method-name">tapOnTrending</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapOnVideos">
+                  </a> <!-- tapOnVideos -->
+                  <span class="method-name">tapOnVideos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tapSplash">
+                  </a> <!-- tapSplash -->
+                  <span class="method-name">tapSplash</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAllowButton">
+                  </a> <!-- testAllowButton -->
+                  <span class="method-name">testAllowButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBuzzFeedLogo">
+                  </a> <!-- verifyBuzzFeedLogo -->
+                  <span class="method-name">verifyBuzzFeedLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-homeSuite-class-passed -->
+        </div> <!-- panel homeSuite -->
+        <div panel-name="suite-AllSuites" class="panel AllSuites">
+        </div> <!-- panel AllSuites -->
+        <div panel-name="test-xml-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/suitesFolder/homeSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;homeSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Home&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testModules.home.HomeLatestNewNavTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home --&gt;
+&lt;/suite&gt; &lt;!-- homeSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/allSuites.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;AllSuites&quot;&gt;
+  &lt;suite-files&gt;
+    &lt;suite-file path=&quot;suitesFolder/homeSuite.xml&quot;/&gt;
+  &lt;/suite-files&gt;
+&lt;/suite&gt; &lt;!-- AllSuites --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for homeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Home (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AllSuites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for homeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AllSuites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for homeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_homeSuite');
+function tableData_homeSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(22);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'disableAdExp')
+data.setCell(0, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(0, 3, 134251);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tapItemsShoppingPackage')
+data.setCell(1, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(1, 3, 62951);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openTrendingModal')
+data.setCell(2, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(2, 3, 60257);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tapSplash')
+data.setCell(3, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(3, 3, 39721);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tapOnAnimals')
+data.setCell(4, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(4, 3, 26568);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tapOnHealth')
+data.setCell(5, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(5, 3, 19207);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tapOnTVAndMovies')
+data.setCell(6, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(6, 3, 18628);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tapOnCelebrity')
+data.setCell(7, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(7, 3, 18272);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testAllowButton')
+data.setCell(8, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(8, 3, 16333);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tapFirstBpage')
+data.setCell(9, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(9, 3, 15829);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tapOnFood')
+data.setCell(10, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(10, 3, 13824);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'tapOnTrending')
+data.setCell(11, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(11, 3, 13252);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tapOnCoronavirus')
+data.setCell(12, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(12, 3, 13048);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'tapOnMore1')
+data.setCell(13, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(13, 3, 10992);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'tapOnRewind')
+data.setCell(14, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(14, 3, 8590);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'tapOnComunity')
+data.setCell(15, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(15, 3, 8523);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'tapOnParents')
+data.setCell(16, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(16, 3, 8446);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'tapOnNifty')
+data.setCell(17, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(17, 3, 8255);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'tapOnBooks')
+data.setCell(18, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(18, 3, 8244);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'tapOnLGBTQ')
+data.setCell(19, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(19, 3, 8097);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'tapOnVideos')
+data.setCell(20, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(20, 3, 3620);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyBuzzFeedLogo')
+data.setCell(21, 2, 'testModules.home.HomeLatestNewNavTests')
+data.setCell(21, 3, 1062);
+window.suiteTableData['homeSuite']= { tableData: data, tableDiv: 'times-div-homeSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-homeSuite">
+              </div> <!-- times-div-homeSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AllSuites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AllSuites');
+function tableData_AllSuites() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['AllSuites']= { tableData: data, tableDiv: 'times-div-AllSuites'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-AllSuites">
+              </div> <!-- times-div-AllSuites -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for homeSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AllSuites</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testModules.home.HomeLatestNewNavTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">enableTrendingPackageExp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-homeSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testModules.home.HomeLatestNewNavTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">initializePages</span>
+                <span class="method-start">89086 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">initProcess</span>
+                <span class="method-start">105194 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAllowButton</span>
+                <span class="method-start">105583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">disableAdExp</span>
+                <span class="method-start">121940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBuzzFeedLogo</span>
+                <span class="method-start">256192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapSplash</span>
+                <span class="method-start">257255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapFirstBpage</span>
+                <span class="method-start">296978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapItemsShoppingPackage</span>
+                <span class="method-start">312808 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openTrendingModal</span>
+                <span class="method-start">375761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnTrending</span>
+                <span class="method-start">436020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnCelebrity</span>
+                <span class="method-start">449273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnFood</span>
+                <span class="method-start">467546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnTVAndMovies</span>
+                <span class="method-start">481385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnMore1</span>
+                <span class="method-start">500014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnCoronavirus</span>
+                <span class="method-start">511007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnVideos</span>
+                <span class="method-start">524056 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnAnimals</span>
+                <span class="method-start">527677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnBooks</span>
+                <span class="method-start">554246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnComunity</span>
+                <span class="method-start">562491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnHealth</span>
+                <span class="method-start">571015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnLGBTQ</span>
+                <span class="method-start">590223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnNifty</span>
+                <span class="method-start">598322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnParents</span>
+                <span class="method-start">606579 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tapOnRewind</span>
+                <span class="method-start">615026 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">623708 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AllSuites" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

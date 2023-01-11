@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="AllSuites" verbose="1" preserve-order="true">
+    <suite-files>
+        <!--      <suite-file path="suitesFolder/editionsSuite.xml"/> -->
+        <!--   <suite-file path="suitesFolder/homeNewsAndQuizzesSuite.xml"/> -->
+        <!--         <suite-file path="suitesFolder/searchSuite.xml"/> -->
+              <suite-file path="suitesFolder/bpageSuite.xml"/>
+        <!-- <suite-file path="suitesFolder/signInEmailAndProfileSuite.xml"/> -->
+       <!--     <suite-file path="suitesFolder/signInFBAndProfileSuite.xml"/> -->
+     <!--          <suite-file path="suitesFolder/shoppingSuite.xml"/> -->
+        <!--        <suite-file path="suitesFolder/quizzesSuite.xml"/> -->
+ </suite-files>
+ </suite>
