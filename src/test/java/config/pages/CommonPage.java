@@ -16,19 +16,20 @@ public class CommonPage extends Base {
 
     //Catching Elements
     //--Allow button & Navigation
- //   protected final By suscribeBtn = By.xpath("//*[contains(@name,'Close')");
+    protected final By agreeFirstLaunch = MobileBy.AccessibilityId("AGREE");
+    //protected final By suscribeBtn = By.xpath("//*[contains(@name,'Close')");
     protected final By suscribeBtn = By.xpath("(//XCUIElementTypeButton[@name=\"Close\"])[2]");
-  //  protected final By suscribeBtn = By.xpath("/XCUIElementTypeButton[@name='Close']");
+    //protected final By suscribeBtn = By.xpath("/XCUIElementTypeButton[@name='Close']");
     protected final By allowTrackButton = By.xpath("/XCUIElementTypeButton[@name='Allow']");
     protected final By continueAds = MobileBy.AccessibilityId("Continue");
     protected final By allowButton = MobileBy.AccessibilityId("Allow");
- //   protected final By backButton = By.xpath("//*[contains(@name,'Home')");
+    //protected final By backButton = By.xpath("//*[contains(@name,'Home')");
     protected final By backButton = MobileBy.AccessibilityId("Back");
     protected final By closeButton = MobileBy.AccessibilityId("Close");
     protected final By backButtonFromSearch = MobileBy.AccessibilityId("Back");
 
-  //  protected final By backButton = By.xpath("//XCUIElementTypeButton[@name=\"Home\"]");
-   // protected final By backButton = By.xpath("//XCUIElementTypeButton[@name='BUZZ_BACK_BUTTON']");
+    //protected final By backButton = By.xpath("//XCUIElementTypeButton[@name=\"Home\"]");
+    //protected final By backButton = By.xpath("//XCUIElementTypeButton[@name='BUZZ_BACK_BUTTON']");
 
     protected final By backToTrending = MobileBy.AccessibilityId("Trending");
     protected final By backToCoronavirus = MobileBy.AccessibilityId("Coronavirus");
@@ -48,11 +49,9 @@ public class CommonPage extends Base {
     protected final By backToTravel = MobileBy.AccessibilityId("Travel");
     protected final By backToFeed = MobileBy.AccessibilityId("Back");
 
-
-
- //   protected final By closeButton = MobileBy.AccessibilityId("Close");
+    //protected final By closeButton = MobileBy.AccessibilityId("Close");
     protected final By doneButton = MobileBy.AccessibilityId("Done");
-  //  protected final By cancelButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
+    //protected final By cancelButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
     protected final By cancelButton = MobileBy.AccessibilityId("Cancel");
     protected final By OKButton = MobileBy.AccessibilityId("OK");
 
@@ -71,8 +70,8 @@ public class CommonPage extends Base {
 
     //--Feeds
     protected final By splashCellNewNav = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
- //   protected final By splashCellNewNav = By.xpath("//*[contains(@name,'splash_cell,')]");
-  //  protected final By splashCellNewNav = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]");
+    //protected final By splashCellNewNav = By.xpath("//*[contains(@name,'splash_cell,')]");
+    //protected final By splashCellNewNav = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]");
     protected final By fstCellNewNav = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
     protected final By splashCell = By.id("splash_cell");
     protected final By firstCell = By.xpath(("(//XCUIElementTypeCell[@name='buffet_grid_cell'])[1]/XCUIElementTypeOther[2]"));
@@ -96,8 +95,11 @@ public class CommonPage extends Base {
 
     //--Bpages & Quizzes
     protected final By copyLink = By.xpath("//XCUIElementTypeButton[@name=\"Copy Link\"]");
-   // protected final By copyLink = MobileBy.AccessibilityId("Copy Link");
-    protected final By copyLinkToastView = By.id("BFKitToastView");
+    //protected final By copyLink = MobileBy.AccessibilityId("Copy Link");
+
+    //protected final By copyLinkToastView = By.id("BFKitToastView");
+    protected final By copyLinkToastView = MobileBy.AccessibilityId("Link Copied");
+
     protected final By copyLinkToastText = By.id("BFKitToastLabel");
 
     //--Profile
@@ -120,41 +122,8 @@ public class CommonPage extends Base {
     //--Go back to the app
     protected final By openBFAppButton = MobileBy.AccessibilityId("Open");
 
-    // footers
+    //--footers
     protected final By searchIcon = MobileBy.AccessibilityId("search");
-
-
-    //Methods
-    //--ContinueAds + Allow button + Navigation
-    public void tapContinueButton() {
-        driver.findElement(continueAds).click();
-        print("Tapped 'Continue' button on Ads prompt");
-    }
-
-    public void tapOnSuscribeBtn()throws InterruptedException{
-     //   try {
-            WaitersPage.waitForElement(suscribeBtn);
-            Thread.sleep(3000);
-            driver.findElement(suscribeBtn).click();
-       // }catch (Exception e) {}
-    }
-
-    //NEW NAV
-    public Boolean splashCellNewNavIsPresent() {return driver.findElement(splashCellNewNav).isDisplayed();}
-    public void tapSplashNewNav(){driver.findElement(splashCellNewNav).click();}
-    public void tapFstCellNewNav(){driver.findElement(fstCellNewNav).click();}
-
-    public void tapOnSearchIcon(){
-        driver.findElement(searchIcon).click();
-    }
-
-    public void tapAllowButton() {
-        try {
-            driver.findElement(allowButton).click();
-            print("Tapped Allow Button");
-        }catch (Exception e)
-        {}
-    }
 
     public void backtoTrending() {driver.findElement(backToTrending).click();}
     public void backtoFood() {driver.findElement(backToFood).click();}
@@ -175,6 +144,48 @@ public class CommonPage extends Base {
     public void backtoFeed(){driver.findElement(backToFeed).click();}
 
 
+    //Methods
+    //--ContinueAds + Allow button + Navigation
+    public void tapContinueButton() {
+        driver.findElement(continueAds).click();
+        print("Tapped 'Continue' button on Ads prompt");
+    }
+
+    public void tapOnSuscribeBtn()throws InterruptedException{
+        WaitersPage.waitForElement(suscribeBtn);
+        Thread.sleep(3000);
+        driver.findElement(suscribeBtn).click();
+    }
+
+    //NEW NAV
+    public Boolean splashCellNewNavIsPresent() {
+        return driver.findElement(splashCellNewNav).isDisplayed();
+    }
+
+    public void tapSplashNewNav(){
+        driver.findElement(splashCellNewNav).click();
+    }
+
+    public void tapFstCellNewNav(){
+        driver.findElement(fstCellNewNav).click();
+    }
+
+    public void tapOnSearchIcon(){
+        driver.findElement(searchIcon).click();
+    }
+
+    public void tapAgreeFirstLaunch(){
+        driver.findElement(agreeFirstLaunch).click();
+    }
+
+    public void tapAllowButton() {
+        try {
+            driver.findElement(allowButton).click();
+            print("Tapped Allow Button");
+        }catch (Exception e)
+        {}
+    }
+
     public void tapAllowTrackButton() {
         driver.findElement(allowTrackButton).click();
         print("Tapped Allow Track Button");
@@ -192,10 +203,7 @@ public class CommonPage extends Base {
         WaitersPage.waitForElement(backButton);
         driver.findElement(backButton).click();
         print("Tapped Back button");
-
     }
-
-
 
     public void scrollHoriz(int x1, int y1, int x2, int y2) {
         TouchAction action = new TouchAction(driver);
@@ -303,7 +311,7 @@ public class CommonPage extends Base {
     }
 
     //--Feeds
-        //--Splash
+    //--Splash
     public Boolean splashCellIsPresent() {
         WaitersPage.waitForElement(splashCell);
         return driver.findElement(splashCell).isDisplayed();
@@ -317,10 +325,10 @@ public class CommonPage extends Base {
     public void tapSplash() {
         WaitersPage.waitForElement(splashCell);
         driver.findElement(splashCell).click();
-     //   print("Tapped Splash on feed");
+        //print("Tapped Splash on feed");
     }
 
-       //--First Cell on Trending
+    //--First Cell on Trending
     public Boolean firstCellOnTrendingIsPresent() {
         return driver.findElement(firstCellTrending).isDisplayed();
     }
@@ -330,7 +338,7 @@ public class CommonPage extends Base {
         print("Tapped first Bpage under Splash on Trending feed");
     }
 
-        //--First cell on general tabs
+    //--First cell on general tabs
     public Boolean fistCellIsPresent() {
         return driver.findElement(firstCell).isDisplayed();
     }
@@ -340,7 +348,7 @@ public class CommonPage extends Base {
         print("Tapped first Bpage under Splash on Feed");
     }
 
-        //--First Video
+    //--First Video
     public void tapFirstVideo() {
         driver.findElement(firstVideo).click();
         print("Tapped first video on Video feed");
@@ -351,7 +359,7 @@ public class CommonPage extends Base {
         print("Tapped an item from the Package");
     }
 
-        //--Trending Products Title
+    //--Trending Products Title
     public boolean trendingProductsTitleIsPresent() {
         return driver.findElement(trendingProductsTitle).isDisplayed();
     }
@@ -372,10 +380,12 @@ public class CommonPage extends Base {
     }
 
     public boolean verifyLinkCopiedToastIsPresent(){
+        WaitersPage.waitForElement(copyLinkToastView);
         return driver.findElement(copyLinkToastView).isDisplayed();
     }
 
     public boolean verifyLinkCopiedToastTextIsPresent(){
+        WaitersPage.waitForElement(copyLinkToastText);
         return driver.findElement(copyLinkToastText).isDisplayed();
     }
 
@@ -427,7 +437,7 @@ public class CommonPage extends Base {
     }
 
     public void completeSearch(String data)throws InterruptedException{
-       Thread.sleep(4000);
+        Thread.sleep(4000);
         tapSearchTab();
         tapSearchField();
         sendSearchString(data);

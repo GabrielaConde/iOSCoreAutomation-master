@@ -10,7 +10,6 @@ public class SearchTests1 extends SearchInit {
     @Test()
     public void testSearchTab() {
         testName("Verify the Search Tab");
-
         search.tapAllowButton();
         search.tapAllowButton();
 
@@ -18,8 +17,6 @@ public class SearchTests1 extends SearchInit {
         print("Verified Search tab is present in the nav bar");
 
         search.tapSearchTab();
-        print("------------------------------------------------------");
-
     }
 
     @Test(priority = 1)
@@ -35,7 +32,6 @@ public class SearchTests1 extends SearchInit {
     @Test(priority = 2)
     public void testSearchTerm() {
         testName("Enter a search term");
-
         search.sendSearchString("Kate Winslet");
     }
 
@@ -59,7 +55,4 @@ public class SearchTests1 extends SearchInit {
         search.tapClearSearch();
         search.tapCancelButton();
     }
-
-
-
 }

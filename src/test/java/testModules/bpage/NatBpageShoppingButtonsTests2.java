@@ -12,14 +12,13 @@ public class NatBpageShoppingButtonsTests2 extends BpageInit {
     public void testSearchFallbackBpage(String data) throws InterruptedException{
         print("-------------------STARTING TO TEST SHOPPING BUTTONS ON NATIVE BPAGE -------------------");
         testName("Search native Bpage with Amazon shopping button");
-     //   amazonButton.tapCancelButton();
+        //amazonButton.tapCancelButton();
         Thread.sleep(3000);
         amazonButton.completeSearch(data);
-
     }
 
     @Test(priority = 1)
-    public void testBuyFromAmazonButtonIsPresent() {
+    public void ztestBuyFromAmazonButtonIsPresent() {
         testName("Verify 'Buy from Amazon' button is present on bpage");
         Assert.assertEquals(amazonButton.bpageTitleIsPresent(), "33 Trendy Pieces Your Friends Will Want To Borrow");
         print("Verified Bpage title is present. Bpage loaded fine.");
@@ -37,14 +36,13 @@ public class NatBpageShoppingButtonsTests2 extends BpageInit {
 
         Assert.assertTrue(amazonButton.amazonSiteIsPresent());
         print("Verified 'Amazon' site loaded fine");
-
-        amazonButton.returnToBFApp();
-
     }
 
     @Test(priority = 3)
     public void testBuyNowIsPresent() {
         testName("Verify 'Buy Now' button is present on bpage");
+        amazonButton.returnToBFApp();
+
         try {
             amazonButton.scrollBuyNowButton();
             Assert.assertTrue(amazonButton.buyNowIsPresent());
@@ -55,7 +53,6 @@ public class NatBpageShoppingButtonsTests2 extends BpageInit {
             Assert.assertTrue(amazonButton.buyNowIsPresent());
             print("Verified 'Buy Now' button is present");
         }
-
     }
 
     @Test(priority = 4)
@@ -63,6 +60,5 @@ public class NatBpageShoppingButtonsTests2 extends BpageInit {
         testName("Verify 'Buy Now' button is present on bpage");
         amazonButton.tapBuyNowButton();
         amazonButton.returnToBFApp();
-
     }
 }

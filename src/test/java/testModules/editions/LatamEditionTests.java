@@ -20,27 +20,23 @@ public class LatamEditionTests extends EditionsInit {
 
         editions.tapLatamEdition();
         editions.tapCloseButton();
-
     }
 
     //Home
     @Test(priority = 1)
-    public void testLoUltimoSubTab(){
+    public void testLoUltimoSubTab() {
         testName("INICIO");
         testName("Verify Inicio tab / Lo Último sub-tab");
-
         print("Verified 'Lo Último' sub-tab is present on Inicio tab");
 
         latestSubTab.tapSplash();
         print("Verified 'Splash' is present on Home/Lo Último feed");
 
         editions.tapAtrasButton();
-
     }
 
     @Test(priority = 2)
     public void testTendenciasSubTab(){
-        print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Tendencias' Tab");
         Assert.assertTrue(editions.tendenciasSubTabIsPresent());
         print("Verified 'Tendencias' Sub-tab is present");
@@ -58,20 +54,18 @@ public class LatamEditionTests extends EditionsInit {
     public void testJajajaSubTab(){
         testName("Verify 'Ja Ja Ja' Sub-Tab");
         print("Verified Sub-tab 'Ja Ja Ja' is present");
-
         editions.tapJajajaSubTab();
 
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'Ja Ja Ja'");
 
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
+        //print("Bpage on Splash: " + editions.getSplashTitle());
         editions.tapAtrasButton();
         editions.tapAtrasButton();
-
     }
 
 
-    @Test (priority = 5)
+    @Test (priority = 4)
     public void testChidoSubTab()throws InterruptedException{
         testName("Verify 'Chido' Sub-Tab");
         Assert.assertTrue(editions.chidoSubTabIsPresent());
@@ -79,33 +73,32 @@ public class LatamEditionTests extends EditionsInit {
         Thread.sleep(3000);
         editions.tapChidoSubTab();
 
-      homeSubTabs.splashCellIsPresent();
+        homeSubTabs.splashCellIsPresent();
         print("Verified Splash is present on sub-tab 'Chido'");
 
-       // print("Bpage on Splash: " + editions.getSplashTitle());
+        //print("Bpage on Splash: " + editions.getSplashTitle());
         editions.tapAtrasButton();
         editions.tapAtrasButton();
     }
 
-    @Test (priority = 6)
+    @Test (priority = 5)
     public void testMadreDeDiosSubTab()throws InterruptedException{
         testName("Verify '¡madre de dios!' Sub-Tab");
         Assert.assertTrue(editions.madreDeDiosSubTabIsPresent());
         print("Verified Sub-tab '¡madre de dios!' is present");
+
         Thread.sleep(3000);
         editions.tapMadreDeDiosSubTab();
 
-         homeSubTabs.splashCellIsPresent();
+        homeSubTabs.splashCellIsPresent();
         print("Verified Splash is present on sub-tab '¡madre de dios!'");
 
         editions.tapAtrasButton();
-
     }
 
-    @Test (priority = 7)
+    @Test (priority = 6)
     public void testLindoSubTab(){
         testName("Verify 'Books' Sub-Tab");
-
         latestSubTab.tapOnMore();
         editions.tapLindoSubTab();
 
@@ -116,18 +109,16 @@ public class LatamEditionTests extends EditionsInit {
         editions.tapAtrasButton();
     }
 
-    @Test (priority = 8)
+    @Test (priority = 7)
     public void testFailSubTab(){
         testName("Verify 'Fail' Sub-Tab");
         print("Verified Sub-tab 'Fail' is present");
-
         editions.tapFailSubTab();
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'Fail'");
 
         editions.tapAtrasButton();
         editions.tapAtrasButton();
-
     }
 
     @Test (priority = 8)
@@ -135,6 +126,7 @@ public class LatamEditionTests extends EditionsInit {
         testName("Verify 'WTF' Sub-Tab");
         print("Verified Sub-tab 'WTF' is present");
         editions.tapWTFSubTab();
+
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'WTF'");
 
@@ -145,7 +137,6 @@ public class LatamEditionTests extends EditionsInit {
     //Shopping
     @Test (priority = 9)
     public void testShoppingTab(){
-
         editions.tapShoppingLatamTab();
 
         homeSubTabs.tapSplash();
@@ -157,7 +148,6 @@ public class LatamEditionTests extends EditionsInit {
     @Test (priority = 10)
     public void testBellezaSubTab(){
         testName("Verify 'Belleza' sub-tab");
-
         editions.tapBellezaSubTab();
 
         homeSubTabs.tapSplash();
@@ -171,7 +161,6 @@ public class LatamEditionTests extends EditionsInit {
     public void testOfertasShoppingSubTab(){
         testName("Verify 'Ofertas' sub-tab");
         print("Verified 'Ofertas' sub-tab is present");
-
         editions.ofertasSubTab();
         editions.tapSplash();
         editions.tapAtrasButton();
@@ -182,7 +171,6 @@ public class LatamEditionTests extends EditionsInit {
     public void testHogarSubTab(){
         testName("Verify 'Hogar' sub-tab");
         print("Verified 'Hogar' sub-tab is present");
-
         editions.hogarSubTab();
 
         homeSubTabs.tapSplash();
@@ -196,7 +184,6 @@ public class LatamEditionTests extends EditionsInit {
     public void testEstiloSubTab(){
         testName("Verify 'Estilo' sub-tab");
         print("Verified 'Estilo' sub-tab is present");
-
         editions.estiloSubTab();
 
         homeSubTabs.tapSplash();
@@ -213,10 +200,10 @@ public class LatamEditionTests extends EditionsInit {
         latestSubTab.tapOnMore();
         editions.ideasSubTab();
 
-       homeSubTabs.tapSplash();
+        homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'Ideas para regalar'");
 
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
+        //print("Bpage on Splash: " + editions.getSplashTitle());
         editions.tapAtrasButton();
         editions.tapAtrasButton();
 
@@ -226,13 +213,12 @@ public class LatamEditionTests extends EditionsInit {
     public void testDeMenos500SubTab(){
         testName("Verify 'De menos de $500' sub-tab");
         print("Verified 'De menos de $500' sub-tab is present");
-
         editions.menos500SubTab();
 
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'De menos de $500'");
 
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
+        //print("Bpage on Splash: " + editions.getSplashTitle());
         editions.tapAtrasButton();
         editions.tapAtrasButton();
     }
@@ -241,7 +227,6 @@ public class LatamEditionTests extends EditionsInit {
     public void testElectronicosSubTab(){
         testName("Verify 'Electrónicos' sub-tab");
         print("Verified 'Electrónicos' sub-tab is present");
-
         editions.electronicosSubTab();
 
         homeSubTabs.tapSplash();
@@ -249,23 +234,20 @@ public class LatamEditionTests extends EditionsInit {
 
         editions.tapAtrasButton();
         editions.tapAtrasButton();
-
     }
 
     @Test (priority = 17)
     public void testValenSubTab(){
         testName("Verify 'Valen cada peso' sub-tab");
         print("Verified 'Valen cada peso' sub-tab is present");
-
         editions.valenSubTab();
 
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'Valen cada peso'");
 
-     //   print("Bpage on Splash: " + editions.getSplashTitle());
+        //print("Bpage on Splash: " + editions.getSplashTitle());
         editions.tapAtrasButton();
         editions.tapAtrasButton();
-
     }
 
     //Search

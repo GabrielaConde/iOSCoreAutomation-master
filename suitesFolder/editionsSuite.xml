@@ -2,13 +2,13 @@
 
 <suite name="bpageSuite" verbose="1" >
     <test verbose="2" name="BPage" parallel="none" preserve-order="true" >
-        <classes>
-         <!--       <class name="testModules.editions.AustraliaEditionTests"/>
-                 <class name="testModules.editions.CanadaEditionTests2"/>
-                 <class name="testModules.editions.IndiaEditionTests"/>
-                <class name="testModules.editions.UKEditionTests2"/> -->
-                <class name="testModules.editions.LatamEditionTests"/>
-              <class name="testModules.editions.JapanEditionTests"/>
-            </classes>
-             </test>
-         </suite>
+       <classes>
+         <class name="testModules.editions.AustraliaEditionTests"/>
+         <class name="testModules.editions.CanadaEditionTests2"/>
+         <!--class name="testModules.editions.IndiaEditionTests"/>
+         <class name="testModules.editions.UKEditionTests2"/>
+         <class name="testModules.editions.LatamEditionTests"/>
+         <class name="testModules.editions.JapanEditionTests"/-->
+       </classes>
+    </test>
+</suite>

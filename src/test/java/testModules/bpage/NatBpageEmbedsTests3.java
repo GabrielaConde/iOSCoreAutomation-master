@@ -52,7 +52,6 @@ public class NatBpageEmbedsTests3 extends BpageInit {
 
         Assert.assertTrue(embeds.ytPlayButtonIsPresent());
         print("Verified 'Play' button is present ");
-
     }
 
     //Twitter
@@ -74,7 +73,6 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         print("Verified Twitter embed is present");
 
         embeds.tapTWPlayButton();
-
     }
 
     //IG Videos
@@ -84,10 +82,9 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.tapBackButton();
         embeds.tapCancelButton();
         embeds.completeSearch(data);
-
     }
 
-   // @Test(priority = 9)
+    // @Test(priority = 9)
     public void testIGVideoIsPresent() {
         testName("Verify IG Video embed is present");
         embeds.waitForNative();
@@ -121,13 +118,13 @@ public class NatBpageEmbedsTests3 extends BpageInit {
     }
 
     //Tumblr.
-   // @Test(priority = 12, dataProvider = "tumblrEmbed", dataProviderClass = BpagesDataProvider.class)
+    // @Test(priority = 12, dataProvider = "tumblrEmbed", dataProviderClass = BpagesDataProvider.class)
     public void testSearchTumblrNativeBpage(String data) throws InterruptedException {
         try{
-        testName("Search Native Bpage with Tumblr embed");
-        embeds.tapBackButton();
-        embeds.tapCancelButton();
-        embeds.completeSearch(data);
+            testName("Search Native Bpage with Tumblr embed");
+            embeds.tapBackButton();
+            embeds.tapCancelButton();
+            embeds.completeSearch(data);
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
@@ -135,18 +132,21 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         }
     }
 
- //   @Test(priority = 13)
+    //   @Test(priority = 13)
     public void testTumblrIsPresent() {
         testName("Verify Tumblr embed is present");
         embeds.waitForNative();
+
         Assert.assertTrue(embeds.tumblrButtonIsPresent());
         print("Verified 'Open in tumblr' button on Tumblr embed is present");
+
         nativeBpage.tapBackButton();
+
         Assert.assertTrue(embeds.tumblrUserIsPresent());
         print("Verified user from Tumblr embed is present");
     }
 
-   // @Test(priority = 14)
+    // @Test(priority = 14)
     public void testTappingTumblrButton() throws InterruptedException {
         testName("Verify Tumblr button leads to web page");
         embeds.tapTumblrButtonEmbed();                          //button is not working, known issue.

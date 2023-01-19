@@ -15,7 +15,7 @@ public class FallBpageCommentsTests5 extends BpageInit {
 
     @BeforeClass
     public void initProcess() {
-     /*   fallbackComments.tapBackButton();
+     /*fallbackComments.tapBackButton();
         setUpSettings = new SettingsSetupPage();
         setUpSettings.changeToStage();
         fallbackComments.tapContinueButton();
@@ -30,14 +30,14 @@ public class FallBpageCommentsTests5 extends BpageInit {
         fallbackComments.completeSearch(data);
     }
 
-   @Test(priority = 1)
+    @Test(priority = 1)
     public void verifyReadCommentsIsPresent() {
         testName("Verify 'Read Comments' button is present on Bpage");
-          fallbackBpage.tapOnCommentsButton();
-      //  fallbackComments.scrollToReadCommentsOnFallBpage();
+        fallbackBpage.tapOnCommentsButton();
+        //fallbackComments.scrollToReadCommentsOnFallBpage();
 
         try {
-           // Assert.assertTrue(fallbackComments.readCommentsIsPresent());
+            //Assert.assertTrue(fallbackComments.readCommentsIsPresent());
             print("Verified 'Read Comments' button is present on Bpage");
         }catch (RuntimeException exception){
             scroll.scrollDown2Times();
@@ -47,10 +47,10 @@ public class FallBpageCommentsTests5 extends BpageInit {
 
     }
 
-  //  @Test(priority = 2)
+    //  @Test(priority = 2)
     public void tapReadCommentsButton(){
         testName("Verify tapping 'Read Comments' button");
-       // fallbackComments.tapOnToolbarComments();
+        //fallbackComments.tapOnToolbarComments();
         fallbackComments.tapReadCommentsButton();
 
     }
@@ -99,6 +99,7 @@ public class FallBpageCommentsTests5 extends BpageInit {
         }catch (RuntimeException exception){
             print("Logged in with email");
         }
+
         fallbackComments.tapPostButton();
     }
 
@@ -162,7 +163,6 @@ public class FallBpageCommentsTests5 extends BpageInit {
         testName("Verify 'Like Comment' button is filled after voting on 'More Recent' Section");
         Assert.assertTrue(fallbackComments.likeButtonIsFilled());
         print("Verified 'Like Comment' is filled");
-
     }
 
     @Test(priority = 17)
@@ -180,7 +180,6 @@ public class FallBpageCommentsTests5 extends BpageInit {
         testName("Verify replying a comment on 'More Recent' Section");
         fallbackComments.addComment(data);
         fallbackComments.tapPostButton();
-
     }
 
     @Test(priority = 19, dataProvider = "replyComment", dataProviderClass = BpagesDataProvider.class)
@@ -193,6 +192,5 @@ public class FallBpageCommentsTests5 extends BpageInit {
 
         fallbackComments.tapDoneButton();
         fallbackBpage.tapBackButton();
-
     }
 }

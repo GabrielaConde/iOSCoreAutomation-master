@@ -10,17 +10,19 @@ import org.testng.annotations.Test;
 public class AustraliaEditionTests extends EditionsInit {
 
     @BeforeClass
-    public void onboarding()throws InterruptedException{
-        editions.tapAllowButton();
+    public void onboarding(){
+        //editions.tapAgreeFirstLaunch();
+        //editions.tapAllowButton();
         editions.tapAllowButton();
         disableAdExp.disableAdExp();
-
+        editions.tapAllowButton();
     }
 
     @Test
     public void testAustraliaEditionIsPresent(){
         print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Australia' edition is present");
+        editions.tapHomeTab();
         editions.tapProfileButton();
         editions.tapSettingsButton();
         editions.tapEditionOption();
@@ -34,94 +36,89 @@ public class AustraliaEditionTests extends EditionsInit {
 
     //Home
     @Test(priority = 1)
-    public void testLatestSubTab() throws InterruptedException{
+    public void testLatestSubTab(){
         testName("HOME");
         testName("Verify Home tab / Lastest sub-tab");
 
-       Assert.assertTrue((editions.buzzfeedLogoIsPresent()));
+        Assert.assertTrue((editions.buzzfeedLogoIsPresent()));
         print("Verified 'BuzzFeed' logo is present on Home feed");
-
         print("Verified 'Latest' sub-tab is present on Home/Latest");
 
         homeSubTabs.tapSplash();
         bpage.tapBackButton();
-
     }
 
     @Test(priority = 2)
     public void testTrendingSubTab(){
         print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Trending' Tab");
-            homeSubTabs.clickOnTrendingBtn();
+        homeSubTabs.clickOnTrendingBtn();
         print("Verified 'Trending' sub-tab  is present");
 
         editions.visitSplashAndReturn();
+        scroll.scrollDown();
         latestSubTab.tapBackButton();
-
     }
 
-       @Test (priority = 3)
+    @Test (priority = 3)
     public void testShowsSubTab()throws InterruptedException{
-            testName("Verify 'Shows' Sub-Tab");
-            homeSubTabs.clickOnShowsBtn();
-            homeSubTabs.tapBackButton();
-
+        testName("Verify 'Shows' Sub-Tab");
+        homeSubTabs.clickOnShowsBtn();
+        scroll.scrollDown();
+        homeSubTabs.tapBackButton();
     }
 
-     @Test (priority = 4)
+    @Test (priority = 4)
     public void testVideosSubTab(){
-            testName("Verify 'Videos' Sub-Tab");
-            homeSubTabs.clickOnVideosTab();
-            homeSubTabs.tapBackButton();
-
+        testName("Verify 'Videos' Sub-Tab");
+        homeSubTabs.clickOnVideosTab();
+        scroll.scrollDown();
+        homeSubTabs.tapBackButton();
     }
 
     @Test (priority = 5)
     public void testAnimalsSubTab() throws InterruptedException{
-    //    try{
-            homeSubTabs.clickOnAnimalsBtn();
-            homeSubTabs.tapSplash();
-         //   bpage.tapOnBpageTitle();
-            bpage.tapBackButton();
-            homeSubTabs.tapBackButton();
-      /*  } catch (Exception e) {
+        //try{
+        homeSubTabs.clickOnAnimalsBtn();
+        homeSubTabs.tapSplash();
+        //bpage.tapOnBpageTitle();
+        scroll.scrollDown();
+        bpage.tapBackButton();
+        homeSubTabs.tapBackButton();
+        /*} catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
             System.out.print(e.getMessage());
         }*/
     }
 
-
-
-    @Test(priority =6)
+    @Test(priority = 6)
     public void tapOnMore1()throws InterruptedException{
-    //    try{
-          //  Thread.sleep(5000);
+        //try{
+            //Thread.sleep(5000);
             latestSubTab.tapOnMore();
-           // Thread.sleep(5000);
-            //    Assert.assertTrue(false);
-      /*  } catch (Exception e) {
+            //Thread.sleep(5000);
+            //Assert.assertTrue(false);
+        /*} catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
             System.out.print(e.getMessage());
         }*/
     }
-
-
 
      @Test (priority = 7)
     public void testBooksSubTab() throws InterruptedException{
-     //    try{
+        //try{
              latestSubTab.tapOnBooks();
              latestSubTab.tapSplash();
              bpage.tapOnBpageTitle();
              bpage.tapBackButton();
              homeSubTabs.tapBackButton();
-      /*   } catch (Exception e) {
+        /*} catch (Exception e) {
              System.out.println("ERROR ON THIS TEST CASE");
              System.out.print("EXCEPTION: ");
              System.out.print(e.getMessage());
-         }*/
+        }*/
     }
 
     @Test (priority = 8)
@@ -129,6 +126,7 @@ public class AustraliaEditionTests extends EditionsInit {
         try{
             testName("Verify 'Celebrity' sub-tab");
             homeSubTabs.clickOnCelebrityBtn();
+            scroll.scrollDown();
             latestSubTab.tapBackButton();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
@@ -141,17 +139,18 @@ public class AustraliaEditionTests extends EditionsInit {
     public void testFoodSubTab(){
         try{
             testName("Verify 'Food' sub-tab");
-            //   scroll.swipeLeft();
+            //scroll.swipeLeft();
             homeSubTabs.clickOnFoodBtn();
 
-            //    Assert.assertTrue(homeSubTabs.foodTabIsPresent());
-            //    print("Verified 'Food' sub-tab is present");
+            //Assert.assertTrue(homeSubTabs.foodTabIsPresent());
+            //print("Verified 'Food' sub-tab is present");
 
-            //   Assert.assertTrue(editions.splashCellIsPresent());
-            //   print("Verified Splash is present on 'Food' sub-tab");
+            //Assert.assertTrue(editions.splashCellIsPresent());
+            //print("Verified Splash is present on 'Food' sub-tab");
 
-            //   print("Bpage on Splash: " + editions.getSplashTitle());
-            //    editions.visitSplashAndReturn();
+            //print("Bpage on Splash: " + editions.getSplashTitle());
+            //editions.visitSplashAndReturn();
+            scroll.scrollDown();
             latestSubTab.tapBackButton();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
@@ -165,7 +164,8 @@ public class AustraliaEditionTests extends EditionsInit {
         try{
             latestSubTab.tapOnCommunity();
             latestSubTab.tapSplash();
-           // bpage.tapOnBpageTitle();
+            //bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -181,6 +181,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnHealth();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -196,6 +197,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnMusic();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -211,6 +213,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnNifty();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -226,6 +229,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnParents();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -241,6 +245,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnRewind();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -252,17 +257,18 @@ public class AustraliaEditionTests extends EditionsInit {
 
     @Test (priority = 16)
     public void testStyleSubTab(){
-            try {
-                latestSubTab.tapOnStyle();
-                latestSubTab.tapSplash();
-                bpage.tapOnBpageTitle();
-                bpage.tapBackButton();
-                homeSubTabs.tapBackButton();
-            } catch (Exception e) {
-                System.out.println("ERROR ON THIS TEST CASE");
-                System.out.print("EXCEPTION: ");
-                System.out.print(e.getMessage());
-            }
+        try {
+            latestSubTab.tapOnStyle();
+            latestSubTab.tapSplash();
+            bpage.tapOnBpageTitle();
+            scroll.scrollDown();
+            bpage.tapBackButton();
+            homeSubTabs.tapBackButton();
+        } catch (Exception e) {
+            System.out.println("ERROR ON THIS TEST CASE");
+            System.out.print("EXCEPTION: ");
+            System.out.print(e.getMessage());
+        }
     }
 
     @Test (priority = 17)
@@ -271,6 +277,7 @@ public class AustraliaEditionTests extends EditionsInit {
             latestSubTab.tapOnTravel();
             latestSubTab.tapSplash();
             bpage.tapOnBpageTitle();
+            scroll.scrollDown();
             bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
@@ -280,25 +287,21 @@ public class AustraliaEditionTests extends EditionsInit {
         }
     }
 
-
-
-
-
-  //  @Test (priority = 16)
+    //@Test (priority = 18)
     public void testTravelSubTab(){
         try{
-        testName("Verify Travel sub-tab");
-    //    scroll.swipeLeft();
-        homeSubTabs.clickOnTraveltab();
+            testName("Verify Travel sub-tab");
+            //scroll.swipeLeft();
+            homeSubTabs.clickOnTraveltab();
 
-      //  Assert.assertTrue(homeSubTabs.travelTabIsPresent());
-      //  print("Verified 'Travel' sub-tab is present");
+            //Assert.assertTrue(homeSubTabs.travelTabIsPresent());
+            //print("Verified 'Travel' sub-tab is present");
 
-      //  Assert.assertTrue(editions.splashCellIsPresent());
-      //  print("Verified Splash is present on 'Travel' sub-tab");
+            //Assert.assertTrue(editions.splashCellIsPresent());
+            //print("Verified Splash is present on 'Travel' sub-tab");
 
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
+            //print("Bpage on Splash: " + editions.getSplashTitle());
+            editions.visitSplashAndReturn();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
@@ -307,7 +310,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
     //News
-    @Test (priority = 18)
+    @Test (priority = 19)
     public void testGoingNewsTab() {
         testName("NEWS");
         testName("Verify going to News tab / Latest sub-tab");
@@ -315,94 +318,101 @@ public class AustraliaEditionTests extends EditionsInit {
 
         Assert.assertTrue(news.newsHeaderIsPresent());
         print("Verified the Buzzfeed News header in the News feed is present");
-            homeSubTabs.tapSplash();
-            bpage.tapBackButton();
+
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
     }
 
-    @Test (priority = 19)
+    @Test (priority = 20)
     public void testHealthNewsTab() {
         testName("Verify 'Science' sub-tab");
         news.clickOnHealthBtn();
         print("Verified Splash is present on 'Health' sub-tab");
         homeSubTabs.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         homeSubTabs.tapBackButton();
-
-    }
-
-    @Test (priority = 20)
-    public void testScienceTab() {
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnScienceBtn();
-            homeSubTabs.tapSplash();
-            bpage.tapBackButton();
     }
 
     @Test (priority = 21)
-    public void testPoliticsTab() {
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnPoliticseBtn();
-            homeSubTabs.tapSplash();
-            bpage.tapBackButton();
+    public void testScienceTab() {
+        testName("Verify 'Culture' sub-tab");
+        news.clickOnScienceBtn();
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
     }
 
     @Test (priority = 22)
-    public void testCultureTab() {
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnCultureBtn();
-            homeSubTabs.tapSplash();
-            bpage.tapBackButton();
-            homeSubTabs.tapBackButton();
+    public void testPoliticsTab() {
+        testName("Verify 'Culture' sub-tab");
+        news.clickOnPoliticseBtn();
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
     }
 
     @Test (priority = 23)
-    public void testInvestigationsTab() throws InterruptedException {
-            testName("Verify 'Culture' sub-tab");
-            Thread.sleep(3000);
-            news.clickOnInvestigationsBtn();
-            Thread.sleep(3000);
-            homeSubTabs.tapSplash();
-            bpage.tapBackButton();
-            homeSubTabs.tapBackButton();
+    public void testCultureTab() {
+        testName("Verify 'Culture' sub-tab");
+        news.clickOnCultureBtn();
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
+        homeSubTabs.tapBackButton();
     }
 
     @Test (priority = 24)
-    public void testClickOnMoreNews() {
-             news.tapOnMore();
+    public void testInvestigationsTab() throws InterruptedException {
+        testName("Verify 'Culture' sub-tab");
+        Thread.sleep(3000);
+        news.clickOnInvestigationsBtn();
+        Thread.sleep(3000);
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
+        homeSubTabs.tapBackButton();
     }
 
     @Test (priority = 25)
+    public void testClickOnMoreNews() {
+        news.tapOnMore();
+    }
+
+    @Test (priority = 26)
     public void testTechTab() {
         testName("Verify 'Tech' sub-tab");
         news.tapOnTech();
         print("Verified Splash is present on 'Tech' sub-tab");
         homeSubTabs.tapSplash();
-        bpage.tapBackButton();
-        homeSubTabs.tapBackButton();
-    }
-
-    @Test (priority = 26)
-    public void testWordlTab() {
-        testName("Verify 'Entertainment' sub-tab");
-        news.tapOnWorld();
-        homeSubTabs.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         homeSubTabs.tapBackButton();
     }
 
     @Test (priority = 27)
-    public void testEntertainmentNewsTab() {
+    public void testWordlTab() {
         testName("Verify 'Entertainment' sub-tab");
-        news.tapOnEntertainment();
+        news.tapOnWorld();
         homeSubTabs.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         homeSubTabs.tapBackButton();
     }
 
-
+    @Test (priority = 28)
+    public void testEntertainmentNewsTab() {
+        testName("Verify 'Entertainment' sub-tab");
+        news.tapOnEntertainment();
+        homeSubTabs.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
+        homeSubTabs.tapBackButton();
+    }
 
     //Shopping
-    @Test (priority = 28)
+    @Test (priority = 29)
     public void testGoingShoppingTab() {
         testName("SHOPPING");
         testName("Verify Shopping tab / Latest sub-tab");
@@ -410,99 +420,109 @@ public class AustraliaEditionTests extends EditionsInit {
 
         Assert.assertTrue(editions.shoppingHeaderIsPresent());
         print("Verified the 'Shopping' header in the Shopping feed is present");
+
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
     }
 
-    @Test (priority = 29)
+    @Test (priority = 30)
     public void testTrendingShoppingSubTab() {
         testName("Verify 'Trending' sub-tab");
         editions.tapTrendingSubTab();
         editions.tapSplash();
-        bpage.tapBackButton();
-        news.tapBackButton();
-    }
-
-    @Test (priority = 30)
-    public void testBeautySubTab() {
-        testName("Verify 'Beauty' sub-tab");
-        shoppingSubTabs.tapBeautySubTab();
-        editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 31)
-    public void testDealsSubTab() {
-        testName("Verify 'Deals' sub-tab");
-        shoppingSubTabs.tapDealsSubTab();
+    public void testBeautySubTab() {
+        testName("Verify 'Beauty' sub-tab");
+        shoppingSubTabs.tapBeautySubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 32)
-    public void testHomeSubTab() {
-        testName("Verify 'Home' sub-tab");
-        shoppingSubTabs.tapHomeSubTab();
+    public void testDealsSubTab() {
+        testName("Verify 'Deals' sub-tab");
+        shoppingSubTabs.tapDealsSubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 33)
-    public void testClothingSubTab() {
-        testName("Verify 'Clothing' sub-tab");
-        shoppingSubTabs.tapClothingSubTab();
+    public void testHomeSubTab() {
+        testName("Verify 'Home' sub-tab");
+        shoppingSubTabs.tapHomeSubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 34)
-    public void testClickShoppingOnMoreNews() {
-            news.tapOnMore();
-    }
-
-
-    @Test (priority = 35)
-    public void testGiftSubTab() {
-        testName("Verify 'Gift Ideas' sub-tab");
-        editions.tapGiftIdeasSubTab();
+    public void testClothingSubTab() {
+        testName("Verify 'Clothing' sub-tab");
+        shoppingSubTabs.tapClothingSubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
+    @Test (priority = 35)
+    public void testClickShoppingOnMoreNews() {
+        news.tapOnMore();
+    }
+
     @Test (priority = 36)
-    public void testUnder50SubTab() {
-        testName("Verify 'Under $50' sub-tab");
-        shoppingSubTabs.tapUnder50SubTab();
+    public void testGiftSubTab() {
+        testName("Verify 'Gift Ideas' sub-tab");
+        editions.tapGiftIdeasSubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 37)
-    public void testSelfCareSubTab() {
-        testName("Verify 'Self Care' sub-tab");
-        editions.tapSelfCareSubTab();
+    public void testUnder50SubTab() {
+        testName("Verify 'Under $50' sub-tab");
+        shoppingSubTabs.tapUnder50SubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     @Test (priority = 38)
+    public void testSelfCareSubTab() {
+        testName("Verify 'Self Care' sub-tab");
+        editions.tapSelfCareSubTab();
+        editions.tapSplash();
+        scroll.scrollDown();
+        bpage.tapBackButton();
+        news.tapBackButton();
+    }
+
+    @Test (priority = 39)
     public void testTreatYourselfSubTab() {
         testName("Verify 'Treat Yourself' sub-tab");
         editions.tapTreatYourselfSubTab();
         editions.tapSplash();
+        scroll.scrollDown();
         bpage.tapBackButton();
         news.tapBackButton();
     }
 
     //Quizzes
-    @Test (priority = 39)
+    @Test (priority = 40)
     public void testGoingToQuizzesTab(){
         testName("QUIZZES");
         testName("Verify going to Quizzes tab / Latest sub-tab");
@@ -511,22 +531,12 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
     //Search
-    @Test (priority = 40)
+    @Test (priority = 41)
     public void testSearchTab() {
         testName("SEARCH");
         testName("Verify going to Search tab");
         editions.tapSearchTab();
         Assert.assertTrue(editions.suggestedSearchesTitleIsPresent());
         print("Verified 'Suggested Searches' title is present Search tab. Search is loading fine");
-
     }
-
-
-
-
 }
-
-
-
-
-

@@ -12,8 +12,8 @@ public class FallBpageTests4 extends BpageInit {
     public void testSearchFallbackBpage(String data) throws InterruptedException {
         print("-------------------STARTING TO TEST FALLBACK BPAGE -------------------");
         testName("Search Fallback Bpage");
-     //   embeds.tapBackButton();
-     //   embeds.tapCancelButton();
+        //embeds.tapBackButton();
+        //embeds.tapCancelButton();
         fallbackBpage.completeSearch(data);
     }
 
@@ -47,7 +47,7 @@ public class FallBpageTests4 extends BpageInit {
     }
 
     //Internal / External links
-    @Test(priority = 7)
+    @Test(priority = 6)
     public void tapFallbackExternalLink() {
         testName("Verify tapping 'External' link");
         scroll.scrollDown90_45();
@@ -56,14 +56,14 @@ public class FallBpageTests4 extends BpageInit {
         fallbackBpage.tapDoneButton();
     }
 
-    @Test(priority = 8)
+    @Test(priority = 7)
     public void tapExternalLink() {
         testName("Verify tapping 'External' link");
         fallbackBpage.tapFallbackInternalLink();
         print("Verified 'External' link is tap-able");
     }
 
-    @Test(priority = 9)
+    @Test(priority = 8)
     public void verifyInternalLinkLoadsFine() {
         testName("Verify tapping internal link leads to a bpage which loads fine");
         Assert.assertTrue(fallbackBpage.bpageTitleIdDisplayed());
@@ -71,7 +71,7 @@ public class FallBpageTests4 extends BpageInit {
     }
 
     //Share bpage
-    @Test(priority = 10)
+    @Test(priority = 9)
     public void verifyShareButtonIsPresent() {
         testName("Verify 'Share' button is present on bpage");
         fallbackBpage.tapBackButton();
@@ -80,21 +80,21 @@ public class FallBpageTests4 extends BpageInit {
         print("Verified 'Share' button is present on bpage");
     }
 
-    @Test(priority = 11)
+    @Test(priority = 10)
     public void tapShareButtonOnBpage() {
         testName("Verify tapping 'Share' button on Bpage");
         fallbackBpage.tapShare();
         print("Verified tapping 'Share' button is opening the sheet on Bpage");
     }
 
-    @Test(priority = 12)
+    @Test(priority = 11)
     public void verifyCopyLinkbuttonIsPresent() {
         testName("Verify 'Copy Link' button is present on Share sheet");
         Assert.assertTrue(fallbackBpage.verifyCopyLinkbuttonIsPresent());
         print("Verified 'Copy Link' button is present on Share sheet");
     }
 
-    @Test(priority = 13)
+    @Test(priority = 12)
     public void testTapCopyLinkAndToast() {
         fallbackBpage.tapCopyLink();
 
@@ -103,15 +103,15 @@ public class FallBpageTests4 extends BpageInit {
     }
 
     //More on this section
-    @Test(priority = 14)
+    @Test(priority = 13)
     public void verifyMoreOnThisHeaderIsPresent() {
         testName("Verify 'More In This' header is present'");
         scroll.scrollUp();
         scroll.scrollDown90_85();
-    //    fallbackBpage.scrollMoreOnThis();
+        //fallbackBpage.scrollMoreOnThis();
 
         try {
-         //   Assert.assertTrue(fallbackBpage.moreOnThisHeaderIsPresent());
+            //Assert.assertTrue(fallbackBpage.moreOnThisHeaderIsPresent());
             print("Verified 'More On This' header is present");
         }catch (RuntimeException exception){
             scroll.scrollDown90_70();
@@ -120,14 +120,14 @@ public class FallBpageTests4 extends BpageInit {
         }
     }
 
- //   @Test(priority = 15)
+    //@Test(priority = 14)
     public void verifyMoreOnThisBpageIsPresent() {
         testName("Verify bpage from 'More In This' section is present'");
         Assert.assertTrue(fallbackBpage.fallbackMoreOnThisBpageIsPresent());
         print("Verified 'More On This' Bpage is present");
     }
 
-    @Test(priority = 16)
+    @Test(priority = 15)
     public void verifyMoreOnThisBpage() {
         testName("Verify tapping the first bpage from More On This section is loading");
         String bpageTitle= fallbackBpage.fallbackTitleMoreOnLikeThisBpage();
@@ -139,11 +139,10 @@ public class FallBpageTests4 extends BpageInit {
 
         fallbackBpage.tapBackButton();
         fallbackBpage.tapBackButton();
-
     }
 
     //More like this section
- //   @Test(priority = 17)
+    //@Test(priority = 16)
     public void verifyMoreLikeThisHeaderIsPresent() {
         testName("Verify 'More Like this' header is present");
         try{
@@ -156,14 +155,14 @@ public class FallBpageTests4 extends BpageInit {
         }
     }
 
-   // @Test(priority = 18)
+    //@Test(priority = 17)
     public void verifyMoreLikeThisBpageIsPresent() {
         testName("Verify 'More Like this' Bpage is present");
         Assert.assertTrue(fallbackBpage.moreLikeThisBpageIsPresent());
         print("Verified 'More Like This' bpage is present");
     }
 
-   // @Test(priority = 19)
+    //@Test(priority = 18)
     public void tapFirstMoreLikeThisBpage() {
         testName("Verify tapping bpage from 'More Like This' section");
         String bpageTitle= fallbackBpage.nativeTitleMoreLikeThisBpage();
@@ -178,7 +177,7 @@ public class FallBpageTests4 extends BpageInit {
     }
 
     //Trending section
-   // @Test(priority = 20)
+    //@Test(priority = 19)
     public void verifyTrendingHeader() {
         testName("Verify 'Trending' header is present");
         fallbackBpage.scrollTrendingHeaderFallbackBpage();
@@ -187,7 +186,7 @@ public class FallBpageTests4 extends BpageInit {
         print("Verified 'Trending' header is present");
     }
 
-   // @Test(priority = 21)
+    //@Test(priority = 20)
     public void verifyTrendingBpageIsPresent() {
         testName("Verify 'Trending' bpage is present");
 
@@ -195,7 +194,7 @@ public class FallBpageTests4 extends BpageInit {
         print("Verified 'Trending' bpage is present");
     }
 
-   // @Test(priority = 22)
+    //@Test(priority = 21)
     public void tapTrendingBpage() {
         testName("Verify tapping 'Trending' bpage");
         print("Expected title to load after tapping bpage from More On this Section: " + "\n" + "'" + fallbackBpage.titleTrendingBpage() + "'");

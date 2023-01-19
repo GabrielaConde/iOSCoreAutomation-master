@@ -31,31 +31,48 @@ public class HomeSubTabsPage extends CommonPage {
     private final By backToMore = MobileBy.AccessibilityId("More");
 
     //NEW NAV BAR
- /*   private final By recentlyViewedBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
+/*  private final By recentlyViewedBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
     private final By trendingBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
     private final By celebrityBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[3]");
-    private final By foodBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[4]");
-*/
+    private final By foodBtn = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[4]");*/
 
     private final By trendingBtn = MobileBy.AccessibilityId("Trending");
     private final By recentlyViewedBtn = MobileBy.AccessibilityId("Recently Viewed");
     private final By celebrityBtn = MobileBy.AccessibilityId("Celebrity");
     private final By foodBtn = MobileBy.AccessibilityId("Food");
-
     private final By showsBtn = MobileBy.AccessibilityId("Shows");
     private final By videosBtn = MobileBy.AccessibilityId("Videos");
     private final By animalsBtn = MobileBy.AccessibilityId("Animals");
-
     private final By showCell = By.xpath("**/XCUIElementTypeCell[`label == \"BuzzFeed Unsolved: True Crime\"`]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
-    //METHODS NEW NAV
-    public void clickOnRecentlyViewedBtn(){driver.findElement(recentlyViewedBtn).click();}
-    public void clickOnTrendingBtn(){driver.findElement(trendingBtn).click();}
-    public void clickOnCelebrityBtn(){driver.findElement(celebrityBtn).click();}
-    public void clickOnFoodBtn(){driver.findElement(foodBtn).click();}
 
-    public void clickOnShowsBtn(){driver.findElement(showsBtn).click();}
-    public void clickOnVideosBtn(){driver.findElement(videosBtn).click();}
-    public void clickOnAnimalsBtn(){driver.findElement(animalsBtn).click();}
+    //METHODS NEW NAV
+    public void clickOnRecentlyViewedBtn() {
+        driver.findElement(recentlyViewedBtn).click();
+    }
+
+    public void clickOnTrendingBtn() {
+        driver.findElement(trendingBtn).click();
+    }
+
+    public void clickOnCelebrityBtn() {
+        driver.findElement(celebrityBtn).click();
+    }
+
+    public void clickOnFoodBtn() {
+        driver.findElement(foodBtn).click();
+    }
+
+    public void clickOnShowsBtn() {
+        driver.findElement(showsBtn).click();
+    }
+
+    public void clickOnVideosBtn() {
+        driver.findElement(videosBtn).click();
+    }
+
+    public void clickOnAnimalsBtn() {
+        driver.findElement(animalsBtn).click();
+    }
 
     //Methods
     //--Videos feed
@@ -64,34 +81,94 @@ public class HomeSubTabsPage extends CommonPage {
         return driver.findElement(firstVideo).isDisplayed();
     }
 
-    public void backToMore(){driver.findElement(backToMore).click();}
+    public void backToMore() {
+        driver.findElement(backToMore).click();
+    }
 
     //--Tabs name - Active
     public Boolean coronavirusTabIsPresent(){
         return driver.findElement(coronavirusSubTab).isDisplayed();
     }
 
-    public void clickOnShowCell(){driver.findElement(showCell).click();}
+    public void clickOnShowCell() {
+        driver.findElement(showCell).click();
+    }
 
-    public void clickOnShowstab() {driver.findElement(ShowsSubTab).click();};
-    public void clickOnCoronavitustab() {driver.findElement(coronavirusSubTab).click();};
-    public void clickOnTrendingtab() {driver.findElement(trendingSubTab).click();};
-    public void clickOnTVMoviesTab() {driver.findElement(tvMoviesSubTab).click();}
-    public void clickOnVideosTab() {driver.findElement(videosSubTab).click();}
-    public void clickOnAnimalstab() {driver.findElement(animalsSubTab).click();};
-    public void clickOnCelebritytab() {driver.findElement(celebritySubTab).click();};
-    public void clickOnBookstab() {driver.findElement(booksSubTab).click();};
-    public void clickOnCommunitytab() {driver.findElement(communitySubTab).click();};
-    public void clickOnFoodtab() {driver.findElement(foodSubTab).click();};
-    public void clickOnHealthtab() {driver.findElement(healthSubTab).click();};
-    public void clickOnLGTBtab() {driver.findElement(lgbtqSubTab).click();};
-    public void clickOnMusictab() {driver.findElement(musicSubTab).click();};
-    public void clickOnNiftytab() {driver.findElement(niftySubTab).click();};
-    public void clickOnParentstab() {driver.findElement(parentsSubTab).click();};
-    public void clickRewindtab() {driver.findElement(rewindSubTab).click();};
-    public void clickOnStyletab() {driver.findElement(styleSubTab).click();};
-    public void clickOnRewindtab() {driver.findElement(rewindSubTab).click();};
-    public void clickOnTraveltab() {driver.findElement(travelSubTab).click();};
+    public void clickOnShowstab() {
+        driver.findElement(ShowsSubTab).click();
+    }
+
+    public void clickOnCoronavitustab() {
+        driver.findElement(coronavirusSubTab).click();
+    }
+
+    public void clickOnTrendingtab() {
+        driver.findElement(trendingSubTab).click();
+    }
+
+    public void clickOnTVMoviesTab() {
+        driver.findElement(tvMoviesSubTab).click();
+    }
+
+    public void clickOnVideosTab() {
+        driver.findElement(videosSubTab).click();
+    }
+
+    public void clickOnAnimalstab() {
+        driver.findElement(animalsSubTab).click();
+    }
+
+    public void clickOnCelebritytab() {
+        driver.findElement(celebritySubTab).click();
+    }
+
+    public void clickOnBookstab() {
+        driver.findElement(booksSubTab).click();
+    }
+
+    public void clickOnCommunitytab() {
+        driver.findElement(communitySubTab).click();
+    }
+
+    public void clickOnFoodtab() {
+        driver.findElement(foodSubTab).click();
+    }
+
+    public void clickOnHealthtab() {
+        driver.findElement(healthSubTab).click();
+    }
+
+    public void clickOnLGTBtab() {
+        driver.findElement(lgbtqSubTab).click();
+    }
+
+    public void clickOnMusictab() {
+        driver.findElement(musicSubTab).click();
+    }
+
+    public void clickOnNiftytab() {
+        driver.findElement(niftySubTab).click();
+    }
+
+    public void clickOnParentstab() {
+        driver.findElement(parentsSubTab).click();
+    }
+
+    public void clickRewindtab() {
+        driver.findElement(rewindSubTab).click();
+    }
+
+    public void clickOnStyletab() {
+        driver.findElement(styleSubTab).click();
+    }
+
+    public void clickOnRewindtab() {
+        driver.findElement(rewindSubTab).click();
+    }
+
+    public void clickOnTraveltab() {
+        driver.findElement(travelSubTab).click();
+    }
 
     public String coronavirusTabIsActive(){
         return driver.findElement(coronavirusSubTab).getAttribute("value");

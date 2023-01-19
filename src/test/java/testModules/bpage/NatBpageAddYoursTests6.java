@@ -13,10 +13,10 @@ public class NatBpageAddYoursTests6 extends BpageInit {
     public void testSearchNativeBpageWAddYoursButton(String data) throws InterruptedException {
         print("-------------------STARTING TO TEST ADD YOURS ON NATIVE BPAGE -------------------");
         testName("Search Native Bpage");
-   //     addYours.tapBackButton();
-   //     addYours.tapCancelButton();
+        //addYours.tapBackButton();
+        //addYours.tapCancelButton();
         addYours.completeSearch(data);
-       /* addYours.scrollToAddYoursReadComments();
+        /*addYours.scrollToAddYoursReadComments();
         addYours.tapReadCommentsButton();*/
         Thread.sleep(3000);
         addYours.tapOnCommentsButton();
@@ -27,18 +27,17 @@ public class NatBpageAddYoursTests6 extends BpageInit {
         testName("Verify 'Add yours' button is present on Comments");
         Assert.assertTrue(addYours.addPhotoButtonIsPresent());
         print("Verified 'Add yours' button is present on Comments");
+
         addYours.tapAddPhotoButton();
     }
 
     @Test(priority = 2)
     public void testChooseFromLibraryButtonIsPresent(){
-
         testName("Verify 'Choose From Library' button is present when tapping 'Add Yours' button");
         Assert.assertTrue(addYours.chooseFromLibraryButtonIsPresent());
         print("Verified 'Choose From Library' button is present");
 
         addYours.tapChooseFromLibraryButton();
-
     }
 
     @Test(priority = 3)
@@ -46,6 +45,7 @@ public class NatBpageAddYoursTests6 extends BpageInit {
         testName("Verify photo loads on Library");
         Assert.assertTrue(addYours.photoOnLibraryIsPresent());
         print("Verified photo loads fine on Library feed");
+
         addYours.tapPhotoFromLibrary();
     }
 
@@ -75,13 +75,11 @@ public class NatBpageAddYoursTests6 extends BpageInit {
         addYours.tapAddPhotoButton();
         addYours.tapChooseFromLibraryButton();
         addYours.tapPhotoFromLibrary();
-     //   addYours.addComment(data);
-     //   addYours.tapPostButton();
-
+        //addYours.addComment(data);
+        //addYours.tapPostButton();
     }
 
-    /*
-    @Test(priority = 7, dataProvider = "stageUser", dataProviderClass = LoginCredentialsDataProvider.class)
+    /*@Test(priority = 7, dataProvider = "stageUser", dataProviderClass = LoginCredentialsDataProvider.class)
     public void testEnterEmail(String data) {
         testName("Enter Email");
         addYours.enterEmail(data);
@@ -94,10 +92,9 @@ public class NatBpageAddYoursTests6 extends BpageInit {
         addYours.tapSignInButton();
         print("Logged in with email");
         addYours.tapPostButton();
-    }
-     */
+    }*/
 
-   // @Test(priority = 9)
+    //@Test(priority = 9)
     public void verifyUserIsPresentOnMoreRecentSection(){
         testName("Verify 'User' is present on 'More Recent' Section");
         Assert.assertTrue(addYours.userIsPresent());
@@ -114,7 +111,7 @@ public class NatBpageAddYoursTests6 extends BpageInit {
 
     @Test(priority = 11)
     public void verifyPicIsPresentOnComment(){
-       testName("Verify the comment includes the pic");
+        testName("Verify the comment includes the pic");
         Assert.assertTrue(addYours.picIsPresentOnComment());
         print("Verified pic is present on comment");
         addYours.tapDoneButton();

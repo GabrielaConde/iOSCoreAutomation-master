@@ -10,10 +10,10 @@ public class BpagePage extends CommonPage {
     //Catching elements
     //--Top elements
     private final By shoppingPackageCTA =  By.xpath("//*[contains(@name,'Find even more')]");
- //   protected final By commentsButton = MobileBy.AccessibilityId("//*[contains(@name,'Comments')]");
+    //   protected final By commentsButton = MobileBy.AccessibilityId("//*[contains(@name,'Comments')]");
     protected final By commentsButton = By.xpath("//*[contains(@name,'Comments')]");
     protected final By categoryDate = By.xpath("//XCUIElementTypeCollectionView[@name='buzz-collectionview']/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]/XCUIElementTypeTextView");
-  //  protected final By title = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
+    //  protected final By title = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
     protected final By title = By.xpath("//XCUIElementTypeCollectionView[@name=\"buzz-collectionview\"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
     protected final By subTitle = By.xpath("//XCUIElementTypeCollectionView[@name=\"buzz-collectionview\"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[3]/XCUIElementTypeTextView");
     protected final By nativeAuthorName = By.xpath("//XCUIElementTypeOther[@name=\"by Ikran Dahir, BuzzFeed News Reporter\"]");
@@ -28,8 +28,8 @@ public class BpagePage extends CommonPage {
     protected final By nativeExternalLink = By.xpath("//XCUIElementTypeLink[@name='ties']");
     protected final By fallbackInternalLink = By.xpath("//XCUIElementTypeLink[@name='years of smaller drops']");
     protected final By fallbackExternalLink = By.xpath("//XCUIElementTypeLink[@name='CDC data']");
-   // protected final By bookmark = By.xpath("//XCUIElementTypeButton[@name=\"Add Bookmark\"]");
-   protected final By bookmark = MobileBy.AccessibilityId("Add Bookmark");
+    // protected final By bookmark = By.xpath("//XCUIElementTypeButton[@name=\"Add Bookmark\"]");
+    protected final By bookmark = MobileBy.AccessibilityId("Add Bookmark");
 
     //--Bottom sections
     protected final By moreOnThisHeader = MobileBy.iOSNsPredicateString("label == \"MORE ON THIS\"");
@@ -81,7 +81,7 @@ public class BpagePage extends CommonPage {
 
     public Boolean bpageTitleIdDisplayed(){
         WaitersPage.waitForElement(title);
-       return driver.findElement(title).isDisplayed();
+        return driver.findElement(title).isDisplayed();
     }
 
     public String subtitleIsPresent(){
@@ -90,12 +90,12 @@ public class BpagePage extends CommonPage {
     }
 
     //--Author
-        //--Native
+    //--Native
     public Boolean nativeAuthorInfoIsPresent(){
         return driver.findElement(nativeAuthorName).isDisplayed();
     }
 
-        //--Fallback
+    //--Fallback
     public Boolean fallbackAuthorInfoIsPresent(){
         return driver.findElement(fallbackAuthorName).isDisplayed();
     }
@@ -125,7 +125,7 @@ public class BpagePage extends CommonPage {
     }
 
     //--Internal/External links
-        //--Native
+    //--Native
     public void tapNativeInternalLink() {
         driver.findElement(nativeInternalLink).click();
         print("Tapped internal link on native bpage");
@@ -136,7 +136,7 @@ public class BpagePage extends CommonPage {
         print("Tapped external link on native bpage");
     }
 
-        //--Fallback
+    //--Fallback
     public void tapFallbackExternalLink() {
         driver.findElement(fallbackExternalLink).click();
         print("Tapped external link on fallback bpage");
@@ -149,7 +149,7 @@ public class BpagePage extends CommonPage {
     }
 
     //--More on this section
-        //--Native
+    //--Native
     public Boolean moreOnThisHeaderIsPresent(){
 
         return driver.findElement(moreOnThisHeader).isDisplayed();
@@ -169,7 +169,7 @@ public class BpagePage extends CommonPage {
         print("Tapped first post on More On This section");
     }
 
-        //--Fallback
+    //--Fallback
     public void scrollMoreOnThis() {
         int i;
         for(i=0; i<=2; i++) {
@@ -177,7 +177,7 @@ public class BpagePage extends CommonPage {
         }
         scroll.scrollDown90_20();
         scroll.scrollUntilElement(fallbackMoreOnThisPost);
-    //    scroll.scrollUntilElement(moreOnThisHeader);
+        //scroll.scrollUntilElement(moreOnThisHeader);
     }
 
     public Boolean fallbackMoreOnThisBpageIsPresent(){
@@ -222,7 +222,7 @@ public class BpagePage extends CommonPage {
     }
 
     //--Trending section
-        //--Native
+    //--Native
     public void scrollTrendingHeaderNativeBpage() {
         int i;
         for(i=0; i<=3; i++) {
@@ -248,7 +248,7 @@ public class BpagePage extends CommonPage {
         return trendingBpageTitle;
     }
 
-        //--Fallback
+    //--Fallback
     public void scrollTrendingHeaderFallbackBpage() {
         int i;
         for(i=0; i<=5; i++) {

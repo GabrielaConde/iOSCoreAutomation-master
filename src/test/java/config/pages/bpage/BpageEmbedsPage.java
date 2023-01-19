@@ -81,10 +81,12 @@ public class BpageEmbedsPage extends BpagePage{
     }
 
     public Boolean tikTokWatchNowButtonIsPresent(){
+        WaitersPage.waitForElement(watchNowButtonTikTokEmbed);
         return driver.findElement(watchNowButtonTikTokEmbed).isDisplayed();
     }
 
     public Boolean tikTokUserIsPresent(){
+        WaitersPage.waitForElement(userTikTokEmbed);
         return driver.findElement(userTikTokEmbed).isDisplayed();
     }
 

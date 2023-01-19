@@ -18,7 +18,7 @@ public class BpageCommentsPage extends BpagePage{
     private final By mostRecentSection = MobileBy.AccessibilityId("Most Recent");
     //private final By user = By.xpath("//XCUIElementTypeLink[contains(@name,'pochii']");
     private final By user = By.xpath("//XCUIElementTypeLink[@name='Gabby']");
-   // private final By user = By.xpath("//XCUIElementTypeLink[@name='Mark &bull; Wilkie']");
+    //private final By user = By.xpath("//XCUIElementTypeLink[@name='Mark &bull; Wilkie']");
     private final By comment = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]");
     private final By likeCommentButton = MobileBy.AccessibilityId("0 people love this comment.");
     private final By likedCommentButton = MobileBy.AccessibilityId("1 person loves this comment.");
@@ -27,12 +27,11 @@ public class BpageCommentsPage extends BpagePage{
 
     //Add Yours
     private final By photoButton = By.xpath("//XCUIElementTypeButton[@name='photo.on.rectangle']");
-   // private final By photoButton = MobileBy.AccessibilityId("photo.on");
+    //private final By photoButton = MobileBy.AccessibilityId("photo.on");
     private final By chooseFromLibraryButton = MobileBy.AccessibilityId("Choose from library");
-    private final By picOnLibrary = MobileBy.AccessibilityId("Photo, March 30, 2018, 4:14 PM");
-
+    private final By picOnLibrary = MobileBy.AccessibilityId("Photo, August 08, 2012, 11:55 PM");
     private final By deletePhoto = By.xpath("//XCUIElementTypeButton[@name='Close']");
-   // private final By deletePhoto = MobileBy.AccessibilityId("close icon");
+    //private final By deletePhoto = MobileBy.AccessibilityId("close icon");
     private final By picOnComment = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]");
 
 
@@ -46,7 +45,7 @@ public class BpageCommentsPage extends BpagePage{
         for(i=0; i<=5; i++) {
             scroll.scrollDown();
         }
-      //  scroll.scrollUntilElement(readCommentsButton);
+        //scroll.scrollUntilElement(readCommentsButton);
     }
 
     public void scrollToReadCommentsOnFallBpage(){
@@ -86,8 +85,8 @@ public class BpageCommentsPage extends BpagePage{
 
     public Boolean mostHeartsIsPresent(){
         Boolean ret;
-       ret = driver.findElement(mostHeartsSection).isDisplayed();
-       return ret;
+        ret = driver.findElement(mostHeartsSection).isDisplayed();
+        return ret;
     }
 
     public void tapMostHeartsSection(){
@@ -120,7 +119,6 @@ public class BpageCommentsPage extends BpagePage{
     }
 
     public Boolean likeCommentButtonPresent(){
-
         return driver.findElement(likeCommentButton).isDisplayed();
     }
 
@@ -153,7 +151,7 @@ public class BpageCommentsPage extends BpagePage{
         for(i=0; i<=1; i++) {
             scroll.scrollDown();
         }
-      //  scroll.scrollUntilElement(readCommentsButton);
+        //scroll.scrollUntilElement(readCommentsButton);
     }
 
     public Boolean addPhotoButtonIsPresent(){
@@ -196,5 +194,3 @@ public class BpageCommentsPage extends BpagePage{
         return driver.findElement(picOnComment).isDisplayed();
     }
 }
-
-

@@ -23,8 +23,8 @@ public class NatBpageCommentsTests7 extends BpageInit {
         testName("Verify 'Read Comments' button is present on Bpage");
         nativeBpage.tapOnCommentsButton();
 
-      //  nativeComments.scrollToReadCommentsOnNatBpage();
-      /*  try {
+        //nativeComments.scrollToReadCommentsOnNatBpage();
+        /*try {
             Assert.assertTrue(nativeComments.readCommentsIsPresent());
             print("Verified 'Read Comments' button is present on Bpage");
         }catch (RuntimeException exception){
@@ -40,7 +40,7 @@ public class NatBpageCommentsTests7 extends BpageInit {
         nativeComments.tapReadCommentsButton();
     }
 
-  //  @Test(priority = 3)
+    //@Test(priority = 3)
     public void verifyReportButtonIsPresent(){
         testName("Verify 'Report' button is present on Comments Lists");
         try {
@@ -65,7 +65,6 @@ public class NatBpageCommentsTests7 extends BpageInit {
         testName("Verify 'Post' button is present on Comments Lists");
         Assert.assertTrue(nativeComments.postButtonIsPresent());
         print("Verified 'Post' button is present on Comments Lists");
-
     }
 
     @Test(priority = 6)
@@ -73,7 +72,6 @@ public class NatBpageCommentsTests7 extends BpageInit {
         testName("Verify tapping 'Post' button on Comments Lists");
         nativeComments.tapPostButton();
     }
-
 
     @Test(priority = 7, dataProvider = "stageUser", dataProviderClass = LoginCredentialsDataProvider.class)
     public void testEnterEmail(String data) {
@@ -90,7 +88,6 @@ public class NatBpageCommentsTests7 extends BpageInit {
         nativeComments.tapPostButton();
     }
 
-
     @Test(priority = 9)
     public void verifyMostHeartSectionIsPresent()throws InterruptedException{
         testName("Verify 'Most Hearts' section is present on Comments Lists");
@@ -106,7 +103,6 @@ public class NatBpageCommentsTests7 extends BpageInit {
 
         Assert.assertTrue(nativeComments.nativeMostHeartsUserIsPresent());
         print("Verified 'Most Hearts' section is loading fine");
-
     }
 
     @Test(priority = 11)
@@ -125,7 +121,6 @@ public class NatBpageCommentsTests7 extends BpageInit {
 
         Assert.assertTrue(nativeComments.userIsPresent());
         print("Verified 'User' is present on 'More Recent' Section");
-
     }
 
     @Test(priority = 13, dataProvider = "comment", dataProviderClass = BpagesDataProvider.class)
@@ -135,10 +130,9 @@ public class NatBpageCommentsTests7 extends BpageInit {
 
         Assert.assertEquals(nativeComments.commentIsPresent(), data);
         print("Verified comment is present on 'More Recent' Section");
-
     }
 
- //   @Test(priority = 14)
+    //@Test(priority = 14)
     public void verifyLikeCommentButtonIsPresent(){
         testName("Verify 'Like Comment' button is present on 'More Recent' Section");
 
@@ -150,11 +144,10 @@ public class NatBpageCommentsTests7 extends BpageInit {
     public void tapLikeCommentButton(){
         testName("Verify tapping 'Like Comment' button on 'More Recent' Section");
         nativeComments.tapLikeCommentButton();
-
     }
 
 
-    @Test(priority = 17)
+    @Test(priority = 16)
     public void verifyReplyButtonIsPresent(){
         testName("Verify 'Reply' button is present on 'More Recent' Section");
 
@@ -162,20 +155,17 @@ public class NatBpageCommentsTests7 extends BpageInit {
         print("Verified 'Reply' is present on 'More Recent' Section");
 
         nativeComments.tapReplyButton();
-
     }
 
-    @Test(priority = 18, dataProvider = "replyComment", dataProviderClass = BpagesDataProvider.class)
+    @Test(priority = 17, dataProvider = "replyComment", dataProviderClass = BpagesDataProvider.class)
     public void replyComment(String data){
         testName("Verify replying a comment on 'More Recent' Section");
         nativeComments.addComment(data);
         nativeComments.tapPostButton();
-
     }
 
-    @Test(priority = 19, dataProvider = "replyComment", dataProviderClass = BpagesDataProvider.class)
+    @Test(priority = 18, dataProvider = "replyComment", dataProviderClass = BpagesDataProvider.class)
     public void verifyReplyCommentIsPresent(String data) {
-
         testName("Verify reply comment is present on 'More Recent' Section");
         print("Expected comment: " + "'" + data + "'");
 
@@ -183,6 +173,5 @@ public class NatBpageCommentsTests7 extends BpageInit {
         print("Verified comment is present on 'More Recent' Section");
 
         nativeComments.tapDoneButton();
-
     }
 }

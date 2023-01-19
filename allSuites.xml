@@ -3,13 +3,17 @@
 
 <suite name="AllSuites" verbose="1" preserve-order="true">
     <suite-files>
-        <!--      <suite-file path="suitesFolder/editionsSuite.xml"/> -->
-        <!--   <suite-file path="suitesFolder/homeNewsAndQuizzesSuite.xml"/> -->
-        <!--         <suite-file path="suitesFolder/searchSuite.xml"/> -->
-              <suite-file path="suitesFolder/bpageSuite.xml"/>
-        <!-- <suite-file path="suitesFolder/signInEmailAndProfileSuite.xml"/> -->
-       <!--     <suite-file path="suitesFolder/signInFBAndProfileSuite.xml"/> -->
-     <!--          <suite-file path="suitesFolder/shoppingSuite.xml"/> -->
-        <!--        <suite-file path="suitesFolder/quizzesSuite.xml"/> -->
- </suite-files>
+    <!--Working-->
+        <!--suite-file path="suitesFolder/bpageSuite.xml"/-->
+
+    <!--Keep working on...-->
+        <!--suite-file path="suitesFolder/editionsSuite.xml"/-->
+        <!--suite-file path="suitesFolder/homeNewsAndQuizzesSuite.xml"/-->
+        <!--suite-file path="suitesFolder/searchSuite.xml"/-->
+        <!--suite-file path="suitesFolder/signInEmailAndProfileSuite.xml"/-->
+        <!--suite-file path="suitesFolder/signInFBAndProfileSuite.xml"/-->
+        <!--suite-file path="suitesFolder/shoppingSuite.xml"/-->
+        <!--suite-file path="suitesFolder/quizzesSuite.xml"/-->
+        <!--suite-file path="suitesFolder/settingsSuite.xml"/-->
+    </suite-files>
  </suite>

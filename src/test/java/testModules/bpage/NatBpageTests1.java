@@ -13,24 +13,18 @@ public class NatBpageTests1 extends BpageInit {
 
     protected SettingsSetupPage disableAdExp;
 
-    //THIS IS A MASTER TEST COMMENT *****
-    //THIS IS A SECOND MASTER TEST COMMENT *****
-    //THIS IS A THIRD MASTER TEST COMMENT *****
-    //THIS IS A FORTH MASTER TEST COMMENT *****
-    //THIS IS A FIFTH MASTER TEST COMMENT *****
-
     @BeforeClass
     public void initProcess() {
         disableAdExp = new SettingsSetupPage();
         nativeBpage.tapAllowButton();
-        nativeBpage.tapAllowButton();
+        //nativeBpage.tapAllowButton();
     }
 
     @Test(enabled = true )               //if TRUE, uncomment capabilities (Base class)
     public void disableAdExp() throws InterruptedException {
         testName("Disabling Dynamic Ads on Bpages");
         disableAdExp.disableAdExp();
-     //   disableAdExp.tapOnSuscribeBtn();
+        //disableAdExp.tapOnSuscribeBtn();
     }
 
     @Test(priority = 1, dataProvider = "nativeBpage", dataProviderClass = BpagesDataProvider.class)
@@ -40,8 +34,7 @@ public class NatBpageTests1 extends BpageInit {
 
         nativeBpage.completeSearch(data);
         Thread.sleep(3000);
-      //  nativeBpage.tapOnBpageTitle();
-
+        //nativeBpage.tapOnBpageTitle();
     }
 
     @Test(priority = 2)
@@ -123,7 +116,6 @@ public class NatBpageTests1 extends BpageInit {
         testName("Verify tapping internal link leads to a bpage which loads fine");
         Assert.assertEquals(nativeBpage.bpageTitleIsPresent(),"Simone Biles Pulled Out Of The Women’s Gymnastics Team Final Due To Mental Health Concerns");
         print("Verified Internal Link Bpage is loading fine: 'Simone Biles Pulled Out Of The Women’s Gymnastics Team Final Due To Mental Health Concerns'");
-
     }
 
     @Test(priority = 13)
@@ -138,18 +130,14 @@ public class NatBpageTests1 extends BpageInit {
         nativeBpage.tapNativeExternalLink();
         print("Verified 'External' link is tap-able");
         nativeBpage.tapDoneButton();
-
-
-
     }
 
     //Share bpage
     @Test(priority = 14)
     public void verifyShareButtonIsPresent() {
         testName("Verify 'Share' button is present on bpage");
-            nativeBpage.shareButtonIsPresent();
+        nativeBpage.shareButtonIsPresent();
         print("Verified 'Share' button is present on bpage");
-
     }
 
     @Test(priority = 15)
@@ -158,7 +146,6 @@ public class NatBpageTests1 extends BpageInit {
         Thread.sleep(2000);
         nativeBpage.tapShare();
         print("Verified tapping 'Share' button is opening the sheet on Bpage");
-
     }
 
     @Test(priority = 16)
@@ -173,19 +160,19 @@ public class NatBpageTests1 extends BpageInit {
         nativeBpage.tapCopyLink();
 
         Assert.assertTrue(nativeBpage.verifyLinkCopiedToastIsPresent());
-        System.out.print("'Link Copied' toast is present after tapping 'Copy Link' share option");
-        Assert.assertTrue(nativeBpage.verifyLinkCopiedToastTextIsPresent());
-        System.out.print("'Link Copied' text is present on toast after tapping 'Copy Link' share option");
-      //  nativeBpage.tapBackButton();
+        print("'Link Copied' toast is present after tapping 'Copy Link' share option");
 
+        //Assert.assertTrue(nativeBpage.verifyLinkCopiedToastTextIsPresent());
+        print("'Link Copied' text is present on toast after tapping 'Copy Link' share option");
+        //nativeBpage.tapBackButton();
     }
 
     //More on this section
     @Test(priority = 18)
     public void verifyMoreOnThisHeaderIsPresent() {
         testName("Verify 'More In This' header is present'");
-        //    scroll.scrollMultipleTimes(1);
-            scroll.scrollDown90_005();
+        //scroll.scrollMultipleTimes(1);
+        scroll.scrollDown90_005();
 
         Assert.assertTrue(nativeBpage.moreOnThisHeaderIsPresent());
         print("Verified 'More On This' header is present");
@@ -196,7 +183,6 @@ public class NatBpageTests1 extends BpageInit {
         testName("Verify bpage from 'More In This' section is present'");
         Assert.assertTrue(nativeBpage.nativeMoreOnThisBpageIsPresent());
         print("Verified 'More On This' Bpage is present");
-
     }
 
     @Test(priority = 20)
@@ -204,10 +190,11 @@ public class NatBpageTests1 extends BpageInit {
         testName("Verify tapping the first bpage from More On This section is loading");
         String bpageTitle= nativeBpage.nativeTitleMoreOnThisBpage();
         print("Expected title to load after tapping bpage from More On this Section: " + "\n" + "'" + bpageTitle + "'");
+
         Thread.sleep(3000);
         nativeBpage.nativeTapMoreOnThisBpage();
 
-       nativeBpage.bpageTitleIsPresent();
+        nativeBpage.bpageTitleIsPresent();
         print("Verified Bpage is loading fine. Actual title: " + "\n" + "'" + nativeBpage.bpageTitleIsPresent() + "'");
 
         nativeBpage.tapBackButton();
@@ -216,7 +203,7 @@ public class NatBpageTests1 extends BpageInit {
     @Test(priority = 21)
     public void validateRelatedContentHeader(){
         print(testName("Verify bpage related content Header is displayed"));
-       Assert.assertTrue(nativeBpage.relatedContentHeaderIsPresent());
+        Assert.assertTrue(nativeBpage.relatedContentHeaderIsPresent());
     }
 
     @Test(priority = 22)
@@ -224,24 +211,22 @@ public class NatBpageTests1 extends BpageInit {
         print(testName("Verify bpage related content item opens fine"));
         nativeBpage.tapRelatedContentItem();
         nativeBpage.tapSplash();
-
         nativeBpage.tapBackButton();
         nativeBpage.tapCloseButton();
-
     }
-
 
     @Test(priority = 24)
     public void verifyMoreLikeThisBpageIsPresent()throws InterruptedException {
         testName("Verify 'More Like this' Bpage is present");
         driver.get("buzz://emilymaeczachor/sandra-bullock-channing-tatum-met-principals-office");
         Thread.sleep(4000);
-        try{
-        nativeBpage.returnToBFApp();
-        nativeBpage.returnToBFApp();}
-        catch (Exception e){
 
+        try{
+            nativeBpage.returnToBFApp();
+            nativeBpage.returnToBFApp();}
+        catch (Exception e){
         }
+
         nativeBpage.tapOnBpageTitle();
         scroll.scrollDown90_005();
         scroll.scrollDown90_005();
@@ -254,8 +239,6 @@ public class NatBpageTests1 extends BpageInit {
 
         Assert.assertTrue(nativeBpage.moreLikeThisBpageIsPresent());
         print("Verified 'More Like This' bpage is present");
-
-
     }
 
     @Test(priority = 25)
@@ -267,7 +250,7 @@ public class NatBpageTests1 extends BpageInit {
 
         Assert.assertEquals(nativeBpage.bpageTitleIsPresent(), bpageTitle);
         print("Verified Bpage is loading fine. Actual title: " + "\n" + "'" + nativeBpage.bpageTitleIsPresent() + "'");
-            nativeBpage.tapBackButton();
+        nativeBpage.tapBackButton();
     }
 
     //Trending section
@@ -275,15 +258,13 @@ public class NatBpageTests1 extends BpageInit {
     public void verifyTrendingHeader() {
         testName("Verify 'Trending' header is present");
         nativeBpage.scrollTrendingHeaderNativeBpage();
-
-       nativeBpage.trendingHeaderIsPresent();
+        nativeBpage.trendingHeaderIsPresent();
         print("Verified 'Trending' header is present");
     }
 
     @Test(priority = 27)
     public void verifyTrendingBpageIsPresent() {
         testName("Verify 'Trending' bpage is present");
-
         Assert.assertTrue(nativeBpage.trendingBpageIsPresent());
         print("Verified 'Trending' bpage is present");
     }

@@ -28,7 +28,7 @@ public class BpageShoppingButtonPage extends BpagePage {
     }
 
     public void scrollBuyNowButton(){
-      /*  scroll.scrollDown();
+      /*scroll.scrollDown();
         scroll.scrollDown();
         scroll.scrollDown();
         scroll.scrollDown();
@@ -38,7 +38,7 @@ public class BpageShoppingButtonPage extends BpagePage {
         scroll.scrollDown();*/
         scroll.scrollMultipleTimes(7);
         scroll.scrollUntilElement(buyNowButton);
-       // scroll.scrollDown90_30();
+        //scroll.scrollDown90_30();
     }
 
     public Boolean buyNowIsPresent(){
