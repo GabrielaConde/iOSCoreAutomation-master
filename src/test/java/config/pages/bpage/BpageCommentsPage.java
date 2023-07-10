@@ -17,7 +17,7 @@ public class BpageCommentsPage extends BpagePage{
     private final By mostHeartsSectionFallUser = By.xpath("//XCUIElementTypeLink[@name='amyface30']");
     private final By mostRecentSection = MobileBy.AccessibilityId("Most Recent");
     //private final By user = By.xpath("//XCUIElementTypeLink[contains(@name,'pochii']");
-    private final By user = By.xpath("//XCUIElementTypeLink[@name='Gabby']");
+    private final By user = By.xpath("//XCUIElementTypeLink[@name='Gabb']");
    // private final By user = By.xpath("//XCUIElementTypeLink[@name='Mark &bull; Wilkie']");
     private final By comment = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeStaticText[3]");
     private final By likeCommentButton = MobileBy.AccessibilityId("0 people love this comment.");

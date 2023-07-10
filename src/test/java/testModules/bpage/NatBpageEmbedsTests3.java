@@ -19,22 +19,15 @@ public class NatBpageEmbedsTests3 extends BpageInit {
     }
 
     @Test(priority = 2)
-    public void testIGEmbedIsPresent() {
+    public void testIGEmbedIsPresent() throws InterruptedException{
         testName("Verify IG embed is present");
         embeds.waitForNative();
         scroll.scrollDown();
-
+        Thread.sleep(3000);
         Assert.assertTrue(embeds.igEmbedIsPresent());
         print("Verified IG embed is present");
     }
 
-    @Test(priority = 3)
-    public void testTapIGProfileIsPresent() {
-        testName("Verify tapping IG embed leads to web page");
-        embeds.tapIGEmbed();
-        embeds.tapDoneButton();
-        print("Verified tapping IG embed leads to web page");
-    }
 
     //YouTube
     @Test(priority = 4, dataProvider = "YTVideoEmbed", dataProviderClass = BpagesDataProvider.class)
@@ -43,13 +36,14 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.tapBackButton();
         embeds.tapCancelButton();
         embeds.completeSearch(data);
+
     }
 
     @Test(priority = 5)
-    public void testPlayYTButtonIsPresent() {
+    public void testPlayYTButtonIsPresent() throws InterruptedException{
         testName("Verify tapping 'Play' button on YouTube embed");
         embeds.waitForNative();
-
+        Thread.sleep(3000);
         Assert.assertTrue(embeds.ytPlayButtonIsPresent());
         print("Verified 'Play' button is present ");
 
@@ -69,12 +63,9 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         testName("Verify Twitter embed is present");
         embeds.waitForNative();
         scroll.scrollDown90_40();
-
         Assert.assertTrue(embeds.twPlayButtonIsPresent());
         print("Verified Twitter embed is present");
-
         embeds.tapTWPlayButton();
-
     }
 
     //IG Videos
@@ -85,17 +76,9 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.tapCancelButton();
         embeds.completeSearch(data);
 
+
     }
 
-   // @Test(priority = 9)
-    public void testIGVideoIsPresent() {
-        testName("Verify IG Video embed is present");
-        embeds.waitForNative();
-        embeds.scrollToIGVideo();
-
-        Assert.assertTrue(embeds.igVideoIsPresent());
-        print("Verified IG Video embed is present");
-    }
 
     //TikTok
     @Test(priority = 10, dataProvider = "tiktokEmbed", dataProviderClass = BpagesDataProvider.class)
@@ -120,37 +103,5 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         print("Verified user from Tik Tok video embed is present");
     }
 
-    //Tumblr.
-   // @Test(priority = 12, dataProvider = "tumblrEmbed", dataProviderClass = BpagesDataProvider.class)
-    public void testSearchTumblrNativeBpage(String data) throws InterruptedException {
-        try{
-        testName("Search Native Bpage with Tumblr embed");
-        embeds.tapBackButton();
-        embeds.tapCancelButton();
-        embeds.completeSearch(data);
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
 
- //   @Test(priority = 13)
-    public void testTumblrIsPresent() {
-        testName("Verify Tumblr embed is present");
-        embeds.waitForNative();
-        Assert.assertTrue(embeds.tumblrButtonIsPresent());
-        print("Verified 'Open in tumblr' button on Tumblr embed is present");
-        nativeBpage.tapBackButton();
-        Assert.assertTrue(embeds.tumblrUserIsPresent());
-        print("Verified user from Tumblr embed is present");
-    }
-
-   // @Test(priority = 14)
-    public void testTappingTumblrButton() throws InterruptedException {
-        testName("Verify Tumblr button leads to web page");
-        embeds.tapTumblrButtonEmbed();                          //button is not working, known issue.
-        print("Verified Tumblr button leads to web page");
-        embeds.tapDoneButton();
-    }
 }

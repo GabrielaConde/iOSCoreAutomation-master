@@ -21,7 +21,6 @@ public class MyPostsTests5 extends ProfileInit {
         Assert.assertTrue(posts.myPostsEmptyMessageIsPresent());
         print("Verified Empty message is present in My Posts");
 
-
     }
 
 

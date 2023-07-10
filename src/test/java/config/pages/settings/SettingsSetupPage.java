@@ -30,6 +30,7 @@ public class SettingsSetupPage extends CommonPage {
     //--Shopping tab
     protected final By shoppingTabExperiment = MobileBy.AccessibilityId("shopping-tab-ios-7040");
     protected final By enabledOption = MobileBy.AccessibilityId("enabled");
+    protected final By onOption = MobileBy.AccessibilityId("on");
 
     //--Trending Package exp
     protected final By trendingPckExperiment = MobileBy.AccessibilityId("trending-products-package-IOS-7723");
@@ -45,12 +46,21 @@ public class SettingsSetupPage extends CommonPage {
 
     //GAME HUB
     protected final By gameHubFF = MobileBy.AccessibilityId("quiz-game-hub-IOS-8701");
+    protected final By gamesTabFF = MobileBy.AccessibilityId("game-tab-BR-3008-NOPROD");
+
+    //VISUAL FEED
+    protected final By visualFeedExp = MobileBy.AccessibilityId("visual-feed-APPS-7879");
+
+    //AI QUIZZES
+    protected final By aiQuizzes = MobileBy.AccessibilityId("ai-quiz-APPS-8061");
 
     //IMPROVE SUB TABS NAVIGATION
     protected final By navSubTabs = MobileBy.AccessibilityId("improved-sub-tab-navigation-IOS-8982");
    // protected final By navSubTabs = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]");
 
     public void closeSubscribe() {driver.findElement(closeSubscribe).click();}
+
+    public void setOnOption() {driver.findElement(onOption).click();}
 
 
     public void turnOnGameHubFF(){
@@ -59,6 +69,42 @@ public class SettingsSetupPage extends CommonPage {
         driver.findElement(gameHubFF).click();
         driver.findElement(onVariant).click();
         driver.findElement(featureFlag).click();
+        driver.findElement(kennelButton).click();
+        tapDoneButton();
+        tapSettingsButton();
+        tapCloseButton();
+        driver.resetApp();
+    }
+
+    public void turnOnAIQuizzesFF(){
+        editFlag();
+        driver.findElement(aiQuizzes).click();
+        driver.findElement(onVariant).click();
+        driver.findElement(experiments).click();
+        driver.findElement(kennelButton).click();
+        tapDoneButton();
+        tapSettingsButton();
+        tapCloseButton();
+        driver.resetApp();
+    }
+
+    public void turnOnGamesTabFF(){
+        editFlag();
+        driver.findElement(gamesTabFF).click();
+        driver.findElement(onOption).click();
+        driver.findElement(featureFlag).click();
+        driver.findElement(kennelButton).click();
+        tapDoneButton();
+        tapSettingsButton();
+        tapCloseButton();
+        driver.resetApp();
+    }
+
+    public void turnOnVisualFeedFF(){
+        editExperiment();
+        driver.findElement(visualFeedExp).click();
+        driver.findElement(enabledOption).click();
+        driver.findElement(experiments).click();
         driver.findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
@@ -88,11 +134,14 @@ public class SettingsSetupPage extends CommonPage {
         driver.findElement(adFeatureFlag).click();
     }
 
+
+
     public void editFlag() {
         gotoSettings();
         driver.findElement(settingsButton).click();
         driver.findElement(debugButton).click();
         driver.findElement(aBeagleExperiments).click();
+
         driver.findElement(featureFlag).click();
     }
 

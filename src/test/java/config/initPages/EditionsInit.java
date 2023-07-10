@@ -14,9 +14,12 @@ import config.pages.quizzes.quizzesTypes.*;
 import config.pages.settings.SettingsSetupPage;
 import config.pages.shopping.ShoppingPage;
 import config.pages.shopping.ShoppingSubTabsPageDeprecated;
+import config.pages.signIn.SignInFBPage;
 import org.testng.annotations.BeforeClass;
 
 public class EditionsInit extends InitTest {
+
+
 
     protected HomeSubTabsPage homeSubTabs;
     protected HomeLatestPage latestSubTab;
@@ -35,6 +38,7 @@ public class EditionsInit extends InitTest {
     protected QuizTriviaPage trivia;
     protected ScrollsPage scroll;
     protected BpagePage bpage;
+    protected SignInFBPage signIn;
     protected SettingsSetupPage disableAdExp;
 
 

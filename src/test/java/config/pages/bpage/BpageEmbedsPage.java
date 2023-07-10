@@ -16,9 +16,9 @@ import java.util.concurrent.TimeUnit;
 public class BpageEmbedsPage extends BpagePage{
 
     //Catching elements
-    private final By igEmbed = MobileBy.AccessibilityId("View profile");
+    private final By igEmbed = By.xpath("//XCUIElementTypeOther[@name=\"Instagram\"]");
     private final By igProfile = MobileBy.AccessibilityId("Instagram");
-    private final By ytPlayButton = By.xpath("//XCUIElementTypeButton[@name=\"Play\"]");
+    private final By ytPlayButton = MobileBy.AccessibilityId("Play");
     private final By twPlayButton = By.xpath("//XCUIElementTypeOther[@name=\"Video Attachment\"]");
     private final By igVideoEmbed = By.xpath("//XCUIElementTypeButton[@name=\"Control\"]");
     private final By watchNowButtonTikTokEmbed = MobileBy.AccessibilityId("Watch now");

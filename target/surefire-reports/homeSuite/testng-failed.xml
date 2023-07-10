@@ -5,11 +5,10 @@
     <classes>
       <class name="testModules.home.HomeLatestNewNavTests">
         <methods>
+          <include name="validatePyremidSchemeLogo"/>
           <include name="tearDown"/>
-          <include name="tapOnRecentlyViewed"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
-          <include name="initProcess"/>
         </methods>
       </class> <!-- testModules.home.HomeLatestNewNavTests -->
     </classes>

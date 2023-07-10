@@ -13,13 +13,13 @@ public class HeaderPage extends CommonPage {
     private final By displayNameFB = MobileBy.AccessibilityId("s4c162ba1f");
     private final By editProfileButton = MobileBy.AccessibilityId("Settings");
    // private final By editProfileButton = MobileBy.AccessibilityId("Edit profile");
-  //  private final By editDisplayNameButton = MobileBy.AccessibilityId("Edit display name");
-    private final By editDisplayNameButton = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeSheet/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]");
+    private final By editDisplayNameButton = MobileBy.AccessibilityId("Edit display name");
+  //  private final By editDisplayNameButton = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeSheet/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[3]");
     private final By displayNameTextField = MobileBy.iOSNsPredicateString("type == \"XCUIElementTypeTextField\"");
     private final By editDisplayNameModal = MobileBy.AccessibilityId("You may update your display name whenever you like.");
   //  private final By editUserNameModal = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeSheet/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[5]");
- //    private final By editUserNameButton = MobileBy.AccessibilityId("Edit user name");
-     private final By editUserNameButton = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeSheet/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[5]");
+    private final By editUserNameButton = MobileBy.AccessibilityId("Edit user name");
+  //   private final By editUserNameButton = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeSheet/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther[5]");
     private final By editUserNameModal = MobileBy.AccessibilityId("Choose wisely! You can only change this once, and only if you haven’t written any BuzzFeed posts.");
     private final By updateProfilePhotoButton = MobileBy.AccessibilityId("Update profile photo");
     private final By deleteProfilePhotoButton = MobileBy.AccessibilityId("Delete profile photo");
@@ -115,7 +115,8 @@ public class HeaderPage extends CommonPage {
         print ("Tapped Choose from library option");
     }
 
-    public void tapPhoto() {
+    public void tapPhoto() throws InterruptedException{
+        Thread.sleep(3000);
         driver.findElement(photo).click();
         print ("Selected a photo");
     }

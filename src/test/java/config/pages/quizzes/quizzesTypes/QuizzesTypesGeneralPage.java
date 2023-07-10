@@ -15,12 +15,14 @@ public class QuizzesTypesGeneralPage extends CommonPage {
     //--Completed Sub-tab
 
     protected final By completedQuizChecklist = MobileBy.AccessibilityId("How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?");
-    protected final By completedQuiz = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeCell[@name=\"personality-quiz-saved-result\"]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText");
-    protected final By retakeQuiz = By.xpath("//XCUIElementTypeStaticText[@name=\"Retake Quiz\"]");
+   // protected final By completedQuiz = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeCell[@name=\"personality-quiz-saved-result\"]/XCUIElementTypeOther[2]/XCUIElementTypeStaticText");
+    protected final By completedQuiz = MobileBy.AccessibilityId("Try To Guess The \"Avengers: Infinity War\" Character By The Simple Drawing");
+
+    protected final By retakeQuiz = By.xpath("//XCUIElementTypeButton[@name=\"Retake Quiz\"]");
 
 
     //--First screen
-    protected final By mainImage = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
+    protected final By mainImage = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
  //   protected final By mainImage = By.xpath("//XCUIElementTypeImage[@name=\"This quiz starts off easy and gets harder as you go. Type in what you think each drawing is. Good luck!\"]");
  //   protected final By mainImage = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
 //    protected final By mainImage = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeImage");
@@ -28,7 +30,7 @@ public class QuizzesTypesGeneralPage extends CommonPage {
 
     protected final By quizTitleOnResutlsScreen = MobileBy.AccessibilityId("How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?");
 
-    protected final By quizTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
+    protected final By quizTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
  //   protected final By quizTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
 //    protected final By quizTitle= By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
  //   protected final By quizTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
@@ -93,7 +95,8 @@ public class QuizzesTypesGeneralPage extends CommonPage {
     protected final By imageResultScreen = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeImage");
     protected final By description1Result = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]/XCUIElementTypeTextView");
     protected final By description2Result = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]/XCUIElementTypeTextView");
-    protected final By scoreFinishCard = MobileBy.AccessibilityId("13 of 14 Correct");
+    protected final By scoreFinishCard = MobileBy.AccessibilityId("8 of 14 Correct");
+    protected final By scoreFinishCardTrivia= MobileBy.AccessibilityId("13 of 14 Correct");
     protected final By resultsSubTab = MobileBy.AccessibilityId("Results");
     protected final By triviaSubTab = MobileBy.AccessibilityId("Trivia");
     protected final By progressInfo = By.xpath("//*[contains(@name,'of')]");
@@ -215,6 +218,10 @@ public class QuizzesTypesGeneralPage extends CommonPage {
         return driver.findElement(scoreFinishCard).isDisplayed();
     }
 
+    public boolean verifyScoreTriviaIsPresent(){
+        return driver.findElement(scoreFinishCardTrivia).isDisplayed();
+    }
+
     public Boolean verifyDescriptionResult1IsPresent() {
         String result = driver.findElement(description1Result).getText();
         print("Result: " + result);
@@ -245,10 +252,11 @@ public class QuizzesTypesGeneralPage extends CommonPage {
         return quizCompleted;
     }
 
-    public String verifyQuizOnResultsTriviaTab(){
+    public String verifyQuizOnResultsTriviaTab()throws InterruptedException{
         tapBackButton();
         tapQuizzesTab();
         driver.findElement(resultsSubTab).click();
+        Thread.sleep(4000);
         driver.findElement(triviaSubTab).click();   //It's not finding Trivia tab inside Results: https://buzzfeed.atlassian.net/browse/IOS-8712
         WaitersPage.waitForElement(completedQuiz);
         String quizCompleted = driver.findElement(completedQuiz).getAttribute("name");

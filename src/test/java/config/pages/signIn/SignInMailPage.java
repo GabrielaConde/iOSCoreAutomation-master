@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 public class SignInMailPage extends CommonPage {
 
     //Catching elements
-    private final By userName = MobileBy.AccessibilityId("@salpimie");
+    private final By userName = MobileBy.AccessibilityId("salpimienta");
     private final By date = MobileBy.AccessibilityId("Joined Nov 2021");
 
     //Methods

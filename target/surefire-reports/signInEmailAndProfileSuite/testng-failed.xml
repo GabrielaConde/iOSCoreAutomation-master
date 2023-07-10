@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [signInEmailAndProfileSuite]">
   <test thread-count="5" verbose="0" name="signInAndProfile(failed)">
     <classes>
-      <class name="testModules.profile.MyPostsTests5">
+      <class name="testModules.profile.BFHeaderTests1">
         <methods>
+          <include name="testEditProfileButton"/>
           <include name="initializePages"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
-          <include name="testFail"/>
         </methods>
-      </class> <!-- testModules.profile.MyPostsTests5 -->
+      </class> <!-- testModules.profile.BFHeaderTests1 -->
     </classes>
   </test> <!-- signInAndProfile(failed) -->
 </suite> <!-- Failed suite [signInEmailAndProfileSuite] -->

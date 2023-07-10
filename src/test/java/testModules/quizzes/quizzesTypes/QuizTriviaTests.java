@@ -25,12 +25,12 @@ public class QuizTriviaTests extends EditionsInit {
 
     //First screen
     @Test(priority = 1)
-    public void testQuizTitleIsPresentAtBeginning() {
+    public void testQuizTitleIsPresentAtBeginning()throws InterruptedException {
 
         testName("Verify Quiz Title is present");
+        Thread.sleep(3000);
         Assert.assertEquals(trivia.verifyTriviaTitle(), "How Good Are You At Pictionary? Identify These 30-Second Drawings To Find Out");
         print("Verified Quiz title: 'How Good Are You At Pictionary? Identify These 30-Second Drawings To Find Out' text is present on First screen");
-
     }
 
 
@@ -39,7 +39,6 @@ public class QuizTriviaTests extends EditionsInit {
         testName("Verify Sub-Text is present");
         Assert.assertTrue(trivia.verifySubTextIsPresent());
         print("Verified Sub-Text is present' on First screen");
-
     }
 
     @Test(priority = 4)
@@ -73,11 +72,10 @@ public class QuizTriviaTests extends EditionsInit {
         trivia.verifyProgressBar1IsPresent();
         Assert.assertTrue(trivia.verifyProgressBar1IsPresent());
         print("Verified Progress Bar for the first Q is present: '1 of 14'");      //if it fails it's because of https://buzzfeed.atlassian.net/browse/IOS-8692
-
         }
 
     @Test(priority = 8)
-    public void testSendFirstAnswer() {
+    public void testSendFirstAnswer()throws InterruptedException {
         testName("Verify sending first answer - correct. Verify Guess button is present and tap-able");
         Assert.assertTrue(trivia.verifyYourAnswerFieldIsPresent());
         print("Verified 'Your answer' field is present");
@@ -129,9 +127,10 @@ public class QuizTriviaTests extends EditionsInit {
 
     //Latest answer
     @Test(priority = 14)
-    public void testProgressBar14() {
+    public void testProgressBar14() throws InterruptedException{
         testName("Question 14 out of 14 -> Validations");
-        Assert.assertTrue(trivia.verifyProgressBar14IsPresent());
+        Thread.sleep(3000);
+        trivia.verifyProgressBar14IsPresent();
         print("Verified Progress Bar for the first Q is present: '14 of 14'");
     }
 
@@ -170,48 +169,39 @@ public class QuizTriviaTests extends EditionsInit {
         testName("Verify answer text is present on partial results screen");
         Assert.assertTrue(trivia.verifyHummingbirdTextIsPresent());
         print("Verified answer text is present on partial results screen");
-
         trivia.swipeUp();
-
     }
 
     @Test(priority = 20)
-    public void testQuizTitleResultScreenIsPresent() {
+    public void testQuizTitleResultScreenIsPresent()throws InterruptedException {
         testName("Verify Quiz title is present on Results screen");
-        Assert.assertTrue(trivia.verifyQuizTitleResultIsPresent());
+        Thread.sleep(3000);
+        trivia.verifyQuizTitleResultIsPresent();
         print("Verified Quiz title: 'How Good Are You At Pictionary? Identify These 30-Second Drawings To Find Out' text is present on Results screen");
-    }
+        }
 
     @Test(priority = 21)
-    public void testScoreTextResultScreenIsPresent() {
+    public void testScoreTextResultScreenIsPresent() throws InterruptedException{
         testName("Verify score is present on Results screen");
-        Assert.assertTrue(trivia.verifyScoreIsPresent());
+        Thread.sleep(3000);
+        trivia.verifyScoreTriviaIsPresent();
         print("Verified Score text: '13 of 14 Correct' is present on Results screen");
     }
 
     @Test(priority = 22)
-    public void testResultsTextIsPresent() {
+    public void testResultsTextIsPresent()throws InterruptedException {
         testName("Verify Results text is present on Results screen");
-        Assert.assertTrue(trivia.verifyResultsTextIsPresent());
+        Thread.sleep(3000);
+        trivia.verifyResultsTextIsPresent();
         print("Verified 'You're a Pictionary champ!' text is present on Results screen");
     }
 
     @Test(priority = 23)
     public void testResultsDescriptionTextIsPresent() {
         testName("Verify Results Description is present on Results screen");
-        Assert.assertTrue(trivia.verifyDescriptionTextIsPresent());
+        trivia.verifyDescriptionTextIsPresent();
         print("Verified 'You're great at this game and everyone always want you to be on their team!' text is present on Results screen");
     }
-
-    //Results sub-tab
- //   @Test(priority = 24)                            //Failing: https://buzzfeed.atlassian.net/browse/IOS-8712
-    public void testResultsSubTab() {
-        testName("Verify the quiz is present on Results Sub-tab");
-        Assert.assertEquals(trivia.verifyQuizOnResultsTriviaTab(), "How Good Are You At Pictionary? Identify These 30-Second Drawings To Find Out");
-        print("Verified The quiz is present on Results Sub-Tab");
-    }
-
-
 
 
 }

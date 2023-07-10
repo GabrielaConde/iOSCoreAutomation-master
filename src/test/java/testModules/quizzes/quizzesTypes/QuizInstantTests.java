@@ -10,15 +10,15 @@ public class QuizInstantTests extends EditionsInit {
     //Search Quiz
     @Test(dataProvider = "instantQuizzes", dataProviderClass = QuizzesTypeDataProvider.class)
     public void testSearchInstantQuiz(String data) throws InterruptedException{
-       // try{
+        try{
         print("-------------------STARTING TO TEST INSTANT QUIZ-------------------");
         testName("Search Instant Quiz");
         instant.completeSearch(data);
-       /* } catch (Exception e) {
+       } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
             System.out.print(e.getMessage());
-        }*/
+        }
     }
 
     //First Screen

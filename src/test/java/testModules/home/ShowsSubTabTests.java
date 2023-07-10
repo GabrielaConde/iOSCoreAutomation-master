@@ -10,16 +10,13 @@ public class ShowsSubTabTests extends EditionsInit {
 
 
     @BeforeClass
-    public void goingToShowsTab() {
-        //showSubTab.swipeRightManyTimes();
-        latestSubTab.tapOnMore();
+    public void goingToShowsTab() throws InterruptedException{
+        Thread.sleep(5000);
         latestSubTab.tapOnShows();
-      //  homeSubTabs.clickOnShowstab();
         print("-------------------STARTING SHOWS SUB-TAB TESTS-------------------");
         testName("Verify Shows Sub-Tab is present and tap-able");
         Assert.assertTrue(showSubTab.showsTabIsPresent());
         print("Verified Sub-tab 'Shows' is present");
-
      //   showSubTab.tapShowSubTab();
 
     }
@@ -38,15 +35,9 @@ public class ShowsSubTabTests extends EditionsInit {
     }
 
     @Test(priority = 1)
-    public void tapShows(){
-        try{
+    public void tapShows()throws InterruptedException{
         testName("Verify all Shows from Shows Sub-Tab");
         showSubTab.tapShow();
         print("Verified the Shows are working correctly");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 }

@@ -15,9 +15,15 @@ public class BpagePage extends CommonPage {
     protected final By categoryDate = By.xpath("//XCUIElementTypeCollectionView[@name='buzz-collectionview']/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[1]/XCUIElementTypeTextView");
   //  protected final By title = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeStaticText[1]");
     protected final By title = By.xpath("//XCUIElementTypeCollectionView[@name=\"buzz-collectionview\"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-    protected final By subTitle = By.xpath("//XCUIElementTypeCollectionView[@name=\"buzz-collectionview\"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[3]/XCUIElementTypeTextView");
+
+
+    protected final By titleFallback = By.xpath("//XCUIElementTypeStaticText[@name=\"US Life Expectancy Plunged A Year And A Half In 2020\"]");
+//    protected final By titleFallback = By.xpath("//XCUIElementTypeStaticText[@name=\"US Life Expectancy Plunged A Year And A Half In 2020\"]");
+    protected final By subTitleFallback = MobileBy.AccessibilityId("We have built a house of cards to live in, and the pandemic was a wind that just blew the house down,” said one expert.");
+    protected final By subtitle = MobileBy.AccessibilityId("\"I was proud of myself just to go out there after what I've been through,\" Biles said afterward.");
     protected final By nativeAuthorName = By.xpath("//XCUIElementTypeOther[@name=\"by Ikran Dahir, BuzzFeed News Reporter\"]");
-    protected final By fallbackAuthorName = By.xpath("//XCUIElementTypeOther[@name=\"by Dan Vergano, BuzzFeed News Reporter\"]");
+    protected final By fallbackAuthorName = By.xpath("//XCUIElementTypeImage[@name=\"Dan Vergano\"]");
+    protected final By fallbackSubTitle = MobileBy.AccessibilityId("“We have built a house of cards to live in, and the pandemic was a wind that just blew the house down,” said one expert.");
 
     //--Image, Share and internal/external links
     protected final By imagePost = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeImage");
@@ -32,7 +38,8 @@ public class BpagePage extends CommonPage {
    protected final By bookmark = MobileBy.AccessibilityId("Add Bookmark");
 
     //--Bottom sections
-    protected final By moreOnThisHeader = MobileBy.iOSNsPredicateString("label == \"MORE ON THIS\"");
+    protected final By moreOnThisHeader = MobileBy.AccessibilityId("MORE ON THIS");
+   // protected final By moreOnThisHeader = MobileBy.iOSNsPredicateString("label == \"MORE ON THIS\"");
     protected final By nativeMoreOnThisPost = By.xpath("//*[contains(@name,'Simone Biles')]");
     protected final By fallbackMoreOnThisPost = By.xpath("//XCUIElementTypeOther[@name='complementary']/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeLink");
     protected final By moreLikeThisHeader = MobileBy.AccessibilityId("More Like This");
@@ -51,8 +58,16 @@ public class BpagePage extends CommonPage {
         return categoryDateInfo;
     }
 
+    public String isFallbackSubtitleDisplayed(){
+       return driver.findElement(fallbackSubTitle).getText();
+    }
+
     public void tapOnBookmark(){
         driver.findElement(bookmark).click();
+    }
+
+    public Boolean isTitleFallbackDisplayed(){
+       return driver.findElement(titleFallback).isDisplayed();
     }
 
     public void tapOnImage(){
@@ -79,13 +94,19 @@ public class BpagePage extends CommonPage {
         return bpageTitle;
     }
 
+    public String fallbackBpageTitleIsPresent(){
+      //  WaitersPage.waitForElement(title);
+        String bpageTitle = driver.findElement(titleFallback).getText();
+        return bpageTitle;
+    }
+
     public Boolean bpageTitleIdDisplayed(){
         WaitersPage.waitForElement(title);
        return driver.findElement(title).isDisplayed();
     }
 
     public String subtitleIsPresent(){
-        String subtitleName = driver.findElement(subTitle).getAttribute("name");
+        String subtitleName = driver.findElement(subtitle).getAttribute("name");
         return subtitleName;
     }
 
@@ -196,6 +217,7 @@ public class BpagePage extends CommonPage {
 
     //--More like this section
     public Boolean moreLikeThisHeaderIsPresent(){
+        scroll.scrollUntilElement(moreLikeThisHeader);
         return driver.findElement(moreLikeThisHeader).isDisplayed();
     }
     public Boolean relatedContentHeaderIsPresent(){
@@ -203,6 +225,7 @@ public class BpagePage extends CommonPage {
     }
 
     public Boolean moreLikeThisBpageIsPresent(){
+        scroll.scrollUntilElement(moreLikeThisPost);
         return driver.findElement(moreLikeThisPost).isDisplayed();
     }
 

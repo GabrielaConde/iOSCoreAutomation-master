@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>News and Shopping</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>90/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 06 12:54:09 ART 2022</td>
+<td>Started on:</td><td>Thu Jun 15 18:43:30 ART 2023</td>
 </tr>
-<tr><td>Total time:</td><td>400 seconds (400166 ms)</td>
+<tr><td>Total time:</td><td>818 seconds (818212 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,42 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testModules.shopping.ShoppingTests.testButtons()'><b>testButtons</b><br>Test class: testModules.shopping.ShoppingTests</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at testModules.shopping.ShoppingTests.testButtons(ShoppingTests.java:347)
+<td title='testModules.shopping.ShoppingTests.clickOnAmazonPost()'><b>clickOnAmazonPost</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=xpath, value=(//XCUIElementTypeCell[@name=&quot;product_cell&quot;])[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnProductCell(ShoppingPage.java:228)
+	at testModules.shopping.ShoppingTests.clickOnAmazonPost(ShoppingTests.java:931)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,13 +144,464 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1235635586", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1235635586'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at testModules.shopping.ShoppingTests.testButtons(ShoppingTests.java:347)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1230507176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230507176'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=xpath, value=(//XCUIElementTypeCell[@name=&quot;product_cell&quot;])[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnProductCell(ShoppingPage.java:228)
+	at testModules.shopping.ShoppingTests.clickOnAmazonPost(ShoppingTests.java:931)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>2</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGiftGuideSplashLoads()'><b>validateGiftGuideSplashLoads</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=id, value=splash_cell}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.CommonPage.tapSplash(CommonPage.java:359)
+	at testModules.shopping.ShoppingTests.validateGiftGuideSplashLoads(ShoppingTests.java:861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1354183876", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1354183876'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=id, value=splash_cell}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.CommonPage.tapSplash(CommonPage.java:359)
+	at testModules.shopping.ShoppingTests.validateGiftGuideSplashLoads(ShoppingTests.java:861)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>140</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testShoppingTab()'><b>testShoppingTab</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=Go to games}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.CommonPage.tapOnGoToGames(CommonPage.java:155)
+	at testModules.shopping.ShoppingTests.testShoppingTab(ShoppingTests.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1515877023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515877023'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=Go to games}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.CommonPage.tapOnGoToGames(CommonPage.java:155)
+	at testModules.shopping.ShoppingTests.testShoppingTab(ShoppingTests.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>3</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.openTrendingModal()'><b>openTrendingModal</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=xpath, value=//XCUIElementTypeCell[@name=&apos;trending_products_package_cell&apos;]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[1]}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.home.HomeLatestPage.tapFirstTrendingCell(HomeLatestPage.java:225)
+	at testModules.shopping.ShoppingTests.openTrendingModal(ShoppingTests.java:880)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace289592183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace289592183'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=xpath, value=//XCUIElementTypeCell[@name=&apos;trending_products_package_cell&apos;]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[1]}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.home.HomeLatestPage.tapFirstTrendingCell(HomeLatestPage.java:225)
+	at testModules.shopping.ShoppingTests.openTrendingModal(ShoppingTests.java:880)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,7 +637,671 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
 </pre></div></td>
 <td>0</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testFail()'><b>testFail</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.testFail(ShoppingTests.java:938)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1381386227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1381386227'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.testFail(ShoppingTests.java:938)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFeatureStoriesTitle()'><b>validateFeatureStoriesTitle</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.validateFeatureStoriesTitle(ShoppingTests.java:899)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace298287232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace298287232'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.validateFeatureStoriesTitle(ShoppingTests.java:899)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGiftGuideTitle()'><b>validateGiftGuideTitle</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=Latest Gift Guides}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.validateGiftGuideTitle(ShoppingPage.java:236)
+	at testModules.shopping.ShoppingTests.validateGiftGuideTitle(ShoppingTests.java:847)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596843797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596843797'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=Latest Gift Guides}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.validateGiftGuideTitle(ShoppingPage.java:236)
+	at testModules.shopping.ShoppingTests.validateGiftGuideTitle(ShoppingTests.java:847)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTapOnVideos()'><b>validateTapOnVideos</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=xcThumbnailPlayImage}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnVideo(ShoppingPage.java:214)
+	at testModules.shopping.ShoppingTests.validateTapOnVideos(ShoppingTests.java:916)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace757660418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace757660418'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=xcThumbnailPlayImage}
+	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnVideo(ShoppingPage.java:214)
+	at testModules.shopping.ShoppingTests.validateTapOnVideos(ShoppingTests.java:916)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>5</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTrendingPackageTitleIsDisplayed()'><b>validateTrendingPackageTitleIsDisplayed</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.validateTrendingPackageTitleIsDisplayed(ShoppingTests.java:868)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1665967079", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1665967079'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at testModules.shopping.ShoppingTests.validateTrendingPackageTitleIsDisplayed(ShoppingTests.java:868)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>0</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGiftGuideCTILink()'><b>validateGiftGuideCTILink</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=See all our Gift Guides}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnCTAGiftGuideLink(ShoppingPage.java:237)
+	at testModules.shopping.ShoppingTests.validateGiftGuideCTILink(ShoppingTests.java:854)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div><a href='#' onClick='toggleBox("stack-trace18928637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18928637'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:18d9:797c:eb6f:f93e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: b83e341d-747b-4c63-a66e-710f809f5e41
+*** Element info: {Using=accessibility id, value=See all our Gift Guides}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at config.pages.shopping.ShoppingPage.tapOnCTAGiftGuideLink(ShoppingPage.java:237)
+	at testModules.shopping.ShoppingTests.validateGiftGuideCTILink(ShoppingTests.java:854)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+</pre></div></td>
+<td>5</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -167,150 +1311,455 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testModules.news.NewsLatestTests.testScroll()'><b>testScroll</b><br>Test class: testModules.news.NewsLatestTests</td>
-<td></td>
-<td>11</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.testBeautyCategory()'><b>testBeautyCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
-<td></td>
-<td>10</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.testMore()'><b>testMore</b><br>Test class: testModules.shopping.ShoppingTests</td>
-<td></td>
-<td>8</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
-<tr>
-<td title='testModules.news.NewsLatestTests.testLatestSubTab()'><b>testLatestSubTab</b><br>Test class: testModules.news.NewsLatestTests</td>
-<td></td>
-<td>0</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.validateFeatureStoriesTitle()'><b>validateFeatureStoriesTitle</b><br>Test class: testModules.shopping.ShoppingTests</td>
-<td></td>
-<td>1</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testCultureSubTab()'><b>testCultureSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>25</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testInvestigationsSubTab()'><b>testInvestigationsSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>23</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testJPGSubTab()'><b>testJPGSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>24</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
-<tr>
-<td title='testModules.news.NewsLatestTests.testNewsTab()'><b>testNewsTab</b><br>Test class: testModules.news.NewsLatestTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.testPetsCategory()'><b>testPetsCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
-<td></td>
-<td>11</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.testShopNowButton()'><b>testShopNowButton</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td title='testModules.shopping.ShoppingTests.validateAmazonMenu()'><b>validateAmazonMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
 <td>7</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsSubTabsTests.testTechSubTab()'><b>testTechSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
+<td title='testModules.shopping.ShoppingTests.validateEtsyMenu()'><b>validateEtsyMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>28</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsSubTabsTests.testWorldSubTab()'><b>testWorldSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
+<td title='testModules.shopping.ShoppingTests.validateLivingRoomSubMenu()'><b>validateLivingRoomSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>30</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.shopping.ShoppingTests.validateFeatureStoriesDisplays()'><b>validateFeatureStoriesDisplays</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td title='testModules.shopping.ShoppingTests.validateKidsMenu()'><b>validateKidsMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>11</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testInequalitySubTab()'><b>testInequalitySubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>19</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
 <td title='testModules.shopping.ShoppingTests.testHomeCategory()'><b>testHomeCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>9</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsLatestTests.testBPage()'><b>testBPage</b><br>Test class: testModules.news.NewsLatestTests</td>
+<td title='testModules.shopping.ShoppingTests.validateHomeElectronicsMenu()'><b>validateHomeElectronicsMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>9</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSneakersSubMenu()'><b>validateSneakersSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateKidsRoomSubMenu()'><b>validateKidsRoomSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
 <td>7</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSephoraMenu()'><b>validateSephoraMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateJeansSubMenu()'><b>validateJeansSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBackyardSubMenu()'><b>validateBackyardSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSandalsSubMenu()'><b>validateSandalsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateOfficeSubMenu()'><b>validateOfficeSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBodySubMenu()'><b>validateBodySubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSwimsuitsSubMenu()'><b>validateSwimsuitsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateKitchenRoomSubMenu()'><b>validateKitchenRoomSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateMachineryMenu()'><b>validateMachineryMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShopAllFashionSubMenu()'><b>validateShopAllFashionSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFlatsSubMenu()'><b>validateFlatsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSkinCareSubMenu()'><b>validateSkinCareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShopAllBeautyAndPersonalCareSubMenu()'><b>validateShopAllBeautyAndPersonalCareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validatePantsSubMenu()'><b>validatePantsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShopAllStoresMenu()'><b>validateShopAllStoresMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateHairSubMenu()'><b>validateHairSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateJacketsSubMenu()'><b>validateJacketsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFitnessAccesoriesMenu()'><b>validateFitnessAccesoriesMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGadgetsMenu()'><b>validateGadgetsMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGardenSubMenu()'><b>validateGardenSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBeautyAndCareMenu()'><b>validateBeautyAndCareMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShopAllSportsAndFitnessMenu()'><b>validateShopAllSportsAndFitnessMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateWalmartMenu()'><b>validateWalmartMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTopsSubMenu()'><b>validateTopsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTechAccessoriesMenu()'><b>validateTechAccessoriesMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testMore()'><b>testMore</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>10</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFaceSubMenu()'><b>validateFaceSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>9</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
 <td title='testModules.shopping.ShoppingTests.testFashionCategory()'><b>testFashionCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>11</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.shopping.ShoppingTests.testKidsCategory()'><b>testKidsCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td title='testModules.shopping.ShoppingTests.validatePersonalToolsSubMenu()'><b>validatePersonalToolsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>11</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsLatestTests.testQCUSection()'><b>testQCUSection</b><br>Test class: testModules.news.NewsLatestTests</td>
+<td title='testModules.shopping.ShoppingTests.validateFormalWareSubMenu()'><b>validateFormalWareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>1</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsSubTabsTests.testPoliticsSubTab()'><b>testPoliticsSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
+<td title='testModules.shopping.ShoppingTests.validatePersonalCareMenu()'><b>validatePersonalCareMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>23</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsSubTabsTests.testScienceSubTab()'><b>testScienceSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
+<td title='testModules.shopping.ShoppingTests.validateHeelsSubMenu()'><b>validateHeelsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>25</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBedroomSubMenu()'><b>validateBedroomSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBathroomSubMenu()'><b>validateBathroomSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateAcneSolutionsSubMenu()'><b>validateAcneSolutionsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validatToolsSubMenu()'><b>validatToolsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShopAllTechMenu()'><b>validateShopAllTechMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateJewerlySubMenu()'><b>validateJewerlySubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBeddingAndMatressSubMenu()'><b>validateBeddingAndMatressSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateWayfairMenu()'><b>validateWayfairMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTechMenu()'><b>validateTechMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBootsSubMenu()'><b>validateBootsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateOutdoorSubMenu()'><b>validateOutdoorSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateCleaningSubMenu()'><b>validateCleaningSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testPetsCategory()'><b>testPetsCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSecondOfficeSubMenu()'><b>validateSecondOfficeSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFashionAccesoriesSubMenu()'><b>validateFashionAccesoriesSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSexToysMenu()'><b>validateSexToysMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFootwareSubMenu()'><b>validateFootwareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateDressesSubMenu()'><b>validateDressesSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateNordstromMenu()'><b>validateNordstromMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateColdWeatherSubMenu()'><b>validateColdWeatherSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateRecreationSubMenu()'><b>validateRecreationSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>9</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSweatersSubMenu()'><b>validateSweatersSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSportsAndFitnessMenu()'><b>validateSportsAndFitnessMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testBeautyCategory()'><b>testBeautyCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validatePetsMenu()'><b>validatePetsMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateOutDoorProductsSubMenu()'><b>validateOutDoorProductsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFashionMenu()'><b>validateFashionMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateLoungeWareSubMenu()'><b>validateLoungeWareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateDecorSubMenu()'><b>validateDecorSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
 <td title='testModules.shopping.ShoppingTests.testSexToysCategory()'><b>testSexToysCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
 <td>11</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.news.NewsLatestTests.testNewsHeader()'><b>testNewsHeader</b><br>Test class: testModules.news.NewsLatestTests</td>
-<td></td>
-<td>0</td>
-<td>testModules.news.NewsLatestTests@5025a98f</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testEntertainmentSubTab()'><b>testEntertainmentSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>30</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
-<tr>
-<td title='testModules.news.NewsSubTabsTests.testOpinionSubTab()'><b>testOpinionSubTab</b><br>Test class: testModules.news.NewsSubTabsTests</td>
-<td></td>
-<td>32</td>
-<td>testModules.news.NewsSubTabsTests@dc24521</td></tr>
-<tr>
-<td title='testModules.shopping.ShoppingTests.testTrendingProductsTitle()'><b>testTrendingProductsTitle</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td title='testModules.shopping.ShoppingTests.validateShopSmallMenu()'><b>validateShopSmallMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
 <td>7</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateShoppingSearch2()'><b>validateShoppingSearch2</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSubscriptionsMenu()'><b>validateSubscriptionsMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateStoresMenu()'><b>validateStoresMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateKitchenSubMenu()'><b>validateKitchenSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFurnitureSubMenu()'><b>validateFurnitureSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateTargetMenu()'><b>validateTargetMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateBagsSubMenu()'><b>validateBagsSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateUnderwareSubMenu()'><b>validateUnderwareSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>9</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateSMakeUpSubMenu()'><b>validateSMakeUpSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateFeatureStoriesDisplays()'><b>validateFeatureStoriesDisplays</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.tapItemsShoppingPackage()'><b>tapItemsShoppingPackage</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>0</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.testKidsCategory()'><b>testKidsCategory</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateGlassesAndSunglassesSubMenu()'><b>validateGlassesAndSunglassesSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateAppliancesSubMenu()'><b>validateAppliancesSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateDressSubMenu()'><b>validateDressSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateHomeMenu()'><b>validateHomeMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
+<tr>
+<td title='testModules.shopping.ShoppingTests.validateOrganizationSubMenu()'><b>validateOrganizationSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
 <td title='testModules.shopping.ShoppingTests.testShoppingHeaderIsPresent()'><b>testShoppingHeaderIsPresent</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>2</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>6</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 <tr>
-<td title='testModules.shopping.ShoppingTests.testShoppingTab()'><b>testShoppingTab</b><br>Test class: testModules.shopping.ShoppingTests</td>
+<td title='testModules.shopping.ShoppingTests.validateOutDoorSubMenu()'><b>validateOutDoorSubMenu</b><br>Test class: testModules.shopping.ShoppingTests</td>
 <td></td>
-<td>0</td>
-<td>testModules.shopping.ShoppingTests@10bdf5e5</td></tr>
+<td>7</td>
+<td>testModules.shopping.ShoppingTests@2d928643</td></tr>
 </table><p>
 </body>
 </html>

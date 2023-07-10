@@ -6,6 +6,8 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 
+import java.util.List;
+
 public class HomeLatestPage extends CommonPage {
 
 
@@ -15,10 +17,56 @@ public class HomeLatestPage extends CommonPage {
     //NEW TAB NABS
   //  private final By recentlyViewed = MobileBy.AccessibilityId("⏳ Recently Viewed");
   //  private final By backHome = MobileBy.AccessibilityId("Home");
+
+    //GAMES TAB
+    private final By gamesLbl = By.xpath("//XCUIElementTypeStaticText[@name=\"Games\"]");
+    private final By featuredGame = MobileBy.AccessibilityId("FEATURED GAME");
+    private final By pyramidSchemeImg = MobileBy.AccessibilityId("pyramid-scheme-text-img");
+    private final By pyramidSchemeDesc = MobileBy.AccessibilityId("Connect the dots to spell words and score points.");
+
+    private final By quizPartyThumbnail = MobileBy.AccessibilityId("quiz-party-thumbnail");
+    private final By dailyTriviaThumbnail = MobileBy.AccessibilityId("daily-trivia-thumbnail");
+
+    private final By moreFunStuffLbl = MobileBy.AccessibilityId("More Fun Stuff");
+    private final By whoDis = MobileBy.AccessibilityId("Who Dis?");
+    private final By negopotchi = MobileBy.AccessibilityId("Nepogotchi");
+    private final By influencer = MobileBy.AccessibilityId("Can you make it as an influencer?");
+    private final By profileIcon = By.xpath("//XCUIElementTypeNavigationBar[@name=\"_TtGC7SwiftUI32NavigationStackHosting\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton");
+
+    //Methods
+
+    public void tapOnProfile(){driver.findElement(profileIcon).click();}
+    public Boolean isGamesLblDisplayed(){ return driver.findElement(gamesLbl).isDisplayed();}
+    public Boolean isFeaturedGamesDisplayed(){return driver.findElement(featuredGame).isDisplayed();}
+    public Boolean isPyramidSchemeImgDisplayed(){return driver.findElement(pyramidSchemeImg).isDisplayed();}
+    public Boolean isPyramidSchemeDescDisplayed(){return driver.findElement(pyramidSchemeDesc).isDisplayed();}
+
+    public void clickOnPyramidScheme(){driver.findElement(pyramidSchemeImg).click();}
+    public void clickOnQuizParty(){driver.findElement(quizPartyThumbnail).click();}
+    public void clickOnDailyTrivia(){driver.findElement(dailyTriviaThumbnail).click();}
+
+    public Boolean isMoreFunStuffLblDisplayed() {return driver.findElement(moreFunStuffLbl).isDisplayed();}
+    public void tapOnWhoDis(){driver.findElement(whoDis).click();}
+    public void tapOnNepogochi(){driver.findElement(negopotchi).click();}
+    public void tapOnInfluencer(){driver.findElement(influencer).click();}
+
+
+
+    //
+
+
+    private final By continueReadingLbl = MobileBy.AccessibilityId("Continue Reading");
+    private final By lifeBtn = MobileBy.AccessibilityId("Life");
+    private final By VideosBtn = MobileBy.AccessibilityId("Videos");
+    private final By CelebrityBtn = MobileBy.AccessibilityId("Celebrity");
+    private final By AnimalsBtn = MobileBy.AccessibilityId("Animals");
+    private final By FoodBtn = MobileBy.AccessibilityId("Food");
+    private final By MusicBtn = MobileBy.AccessibilityId("Music");
     private final By trendingVideosTitle = MobileBy.AccessibilityId("Trending Videos");
     private final By trendingVideoCell = By.xpath("(//XCUIElementTypeOther[@name=\"xcThumbnailView\"])[1]/XCUIElementTypeOther/XCUIElementTypeOther");
     private final By playVideo = By.xpath("(//XCUIElementTypeImage[@name=\"xcThumbnailPlayImage\"])[1]");
     private final By closeVideo = By.xpath("xcCloseButton");
+    private final By closeComments = MobileBy.AccessibilityId("close");
 
     private final By backHome = MobileBy.AccessibilityId("Home");
     private final By showCell = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_image_cell\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
@@ -28,6 +76,7 @@ public class HomeLatestPage extends CommonPage {
  //   private final By recentlyViewed = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
  //   private final By trending = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
     private final By trending = MobileBy.AccessibilityId("Trending");
+    private final By aiquizzes = MobileBy.AccessibilityId("AI Quizzes");
     private final By celebrity = MobileBy.AccessibilityId("Celebrity");
   //  private final By celebrity = By.xpath("**/XCUIElementTypeCollectionView[`name == \"BUFFET_COLLECTION\"`]/XCUIElementTypeOther/XCUIElementTypeButton[3]");
     private final By food = MobileBy.AccessibilityId("Food");
@@ -75,28 +124,123 @@ public class HomeLatestPage extends CommonPage {
     private final By rewind = MobileBy.AccessibilityId("Rewind");
  //   private final By rewind = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[13]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
+    private final By entertainment = MobileBy.AccessibilityId("Entertainment");
+
    private final By style = MobileBy.AccessibilityId("Style");
  //   private final By style = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[14]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
     private final By travel = MobileBy.AccessibilityId("Travel");
   //  private final By travel = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[15]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
+   //TRENDING VISUAL FEED
+    private final By commentsBtn = By.xpath("//*[@label='Comments']");
+    private final By bookmarkBtn = By.xpath("//*[@label='Bookmark']");
+    private final By shareBtn = By.xpath("//*[@label='Share']");
+    private final By closeAuthor = MobileBy.AccessibilityId("close");
+
 
 
     //ELEMENTS
 
+
     private final By maybeLaterBtn = MobileBy.AccessibilityId("Maybe later");
     private final By shoppingPackageCTA =  By.xpath("//*[contains(@name,'Find even more')]");
-    private final By trendingCell = By.xpath("//XCUIElementTypeCell[@name='trending_products_package_cell']/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
+    private final By popularProdLbl = MobileBy.AccessibilityId("Popular Products");
+    private final By trendingCell = By.xpath("//XCUIElementTypeCell[@name=\"trending_products_package_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeImage");
+  //  private final By trendingCell = By.xpath("//XCUIElementTypeCell[@name='trending_products_package_cell']/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
     private final By firstCellShoppingRecommendations = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[1]/XCUIElementTypeOther[2]");
     private final By firstShopNowButton = By.xpath("(//XCUIElementTypeButton[@name='Shop Now'])[1]");
     private final By collectDataDisclaimer = MobileBy.AccessibilityId("BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.");
     private final By trendingVideosHeader = MobileBy.AccessibilityId("Trending Videos");
     private final By seeMoreVideoButton = MobileBy.AccessibilityId("See More Video");
     private final By homeFooter = By.xpath("//XCUIElementTypeButton[@name=\"home\"]");
+ //   private final By viewsLbl = By.xpath("//*[contains(@Label,'K views')]");
+    private final By viewsLbl = By.className("SwiftUI.AccessibilityNode");
+
+    private final By authorName = MobileBy.AccessibilityId("Author");
+  //  private final By authorName = By.xpath("//*[contains(@Label,'by')]");
 
 
     //Methods
+    //VISUAL FEED ELEMENTS
+
+    public Boolean validateContinueReadingLblIsDisplayed(){
+        WaitersPage.waitForElement(continueReadingLbl);
+       return driver.findElement(continueReadingLbl).isDisplayed();
+    }
+
+    public void  tapLifeBtn(){
+        WaitersPage.waitForElement(lifeBtn);
+         driver.findElement(lifeBtn).click();
+    }
+
+    public void  tapVideosBtn(){
+        WaitersPage.waitForElement(VideosBtn);
+        driver.findElement(VideosBtn).click();
+    }
+
+    public void  tapCelebrityBtn(){
+        WaitersPage.waitForElement(CelebrityBtn);
+        driver.findElement(CelebrityBtn).click();
+    }
+
+    public void  tapAnimalsBtn(){
+        WaitersPage.waitForElement(AnimalsBtn);
+        driver.findElement(AnimalsBtn).click();
+    }
+
+    public void  tapFoodBtn(){
+        WaitersPage.waitForElement(FoodBtn);
+        driver.findElement(FoodBtn).click();
+    }
+
+    public void  tapMusicBtn(){
+        WaitersPage.waitForElement(MusicBtn);
+        driver.findElement(MusicBtn).click();
+    }
+
+    public void closeComments(){
+        driver.findElement(closeComments).click();
+    }
+
+    public void scrollDownOnvisualFeed(){
+        for(int i=1; i<=20; i++){
+            scroll.scrollDown();
+        }
+    }
+
+    public void closeAuthor(){
+        driver.findElement(closeAuthor).click();
+    }
+
+    public void tapOnViewsBtn() {int i =0;
+        List<MobileElement> views=  driver.findElements(viewsLbl);
+        views.get(i).click();}
+
+    public void tapOnBookmarks() {
+        int i =0;
+        List<MobileElement> bookmarks=  driver.findElements(bookmarkBtn);
+        bookmarks.get(i).click();
+    }
+
+    public void tapOnAuthorName() {
+        int i =0;
+        List<MobileElement> authors=  driver.findElements(authorName);
+      authors.get(i).click();
+    }
+
+    public void tapOnCommentBtn(){
+        int i =0;
+        List<MobileElement> comments=  driver.findElements(commentsBtn);
+        comments.get(i).click();
+    }
+    public void tapOnShareBtn(){
+        int i =0;
+        List<MobileElement> share=  driver.findElements(shareBtn);
+        share.get(i).click();
+    }
+
+
     //--Allow button + BuzzFeed logo
     public void backHome(){driver.findElement(backHome).click();}
     public void clickShowCell(){driver.findElement(showCell).click();}
@@ -136,6 +280,7 @@ public class HomeLatestPage extends CommonPage {
     public void tapOnTVAndMovies(){driver.findElement(tvAndMovies).click();}
     public void tapOnMore(){driver.findElement(more).click();}
     public void tapOnCoronavirus(){driver.findElement(coronavirus).click();}
+    public void tapOnEntertainment(){driver.findElement(entertainment).click();}
   //  public void tapOnShopping(){driver.findElement(shopping).click();}
     public void tapOnVideos(){driver.findElement(videos).click();}
     public void tapOnShows(){driver.findElement(shows).click();}
@@ -150,6 +295,7 @@ public class HomeLatestPage extends CommonPage {
     public void tapOnRewind(){driver.findElement(rewind).click();}
     public void tapOnStyle(){driver.findElement(style).click();}
     public void tapOnTravel(){driver.findElement(travel).click();}
+    public void tapOnAIQuizzes() {driver.findElement(aiquizzes).click();}
 
 
 
@@ -169,9 +315,10 @@ public class HomeLatestPage extends CommonPage {
 
     //--Trending products package
     public void scrollDownToTrending(){
-        scroll.scrollDown6Times();
-      //  scroll.scrollDown90_20();
-        scroll.scrollUntilElement(trendingCell);
+        scroll.scrollMultipleTimes(2);
+        scroll.scrollDown90_20();
+        scroll.scrollUntilElement(popularProdLbl);
+        scroll.scrollDown90_70();
 
     }
 

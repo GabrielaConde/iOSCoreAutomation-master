@@ -17,10 +17,9 @@ public class RecentlyViewedTests7 extends ProfileInit {
         viewed.recentlyViewedIsPresent();
         viewed.tapRecentlyViewedTab();
         Thread.sleep(4000);
-      Assert.assertTrue(viewed.bpageViewedIsPresent());
-       viewed.tapBpageViewed();
+        Assert.assertTrue(viewed.bpageViewedIsPresent());
+        viewed.tapBpageViewed();
         viewed.tapBackButton();
-
     }
 
     @Test(priority = 1)

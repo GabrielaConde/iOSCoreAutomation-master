@@ -5,10 +5,19 @@
     <classes>
       <class name="testModules.shopping.ShoppingTests">
         <methods>
+          <include name="openTrendingModal"/>
+          <include name="validateTrendingPackageTitleIsDisplayed"/>
+          <include name="validateGiftGuideSplashLoads"/>
+          <include name="testFail"/>
+          <include name="validateGiftGuideTitle"/>
+          <include name="clickOnAmazonPost"/>
+          <include name="testShoppingTab"/>
+          <include name="validateGiftGuideCTILink"/>
+          <include name="validateTapOnVideos"/>
           <include name="tearDown"/>
+          <include name="validateFeatureStoriesTitle"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
-          <include name="testButtons"/>
         </methods>
       </class> <!-- testModules.shopping.ShoppingTests -->
     </classes>

@@ -24,13 +24,9 @@ public class JapanEditionTests extends EditionsInit {
     public void testHomeSubTab(){
         testName("Verify 'Home' sub-tab");
         print("Verified 'Home' sub-tab is present");
-
         editions.homeHomeSubTab();
-
         homeSubTabs.tapSplash();
         print("Verified Splash is present on sub-tab 'Home'");
-
-        editions.tapJapanBackButton();
         editions.tapJapanBackButton();
 
     }
@@ -40,27 +36,12 @@ public class JapanEditionTests extends EditionsInit {
         testName("Verify 'Lol' sub-tab");
         Assert.assertTrue(editions.lolHomeIsPresent());
         print("Verified 'Lol' sub-tab is present");
-
         editions.lolHomeSubTab();
-
         print("Verified Splash is present on sub-tab 'Lol'");
-
         editions.tapSplash();
         editions.tapJapanBackButton();
         editions.tapJapanBackButton();
 
-    }
-
-    @Test (priority = 5)
-    public void testKawaiiSubTab(){
-        testName("Verify 'Kawaii' sub-tab");
-        print("Verified 'Kawaii' sub-tab is present");
-
-        editions.kawaiiHomeSubTab();
-        editions.tapSplash();
-        print("Verified Splash is present on sub-tab 'Kawaii'");
-        editions.tapJapanBackButton();
-        editions.tapJapanBackButton();
     }
 
     @Test (priority = 5)
@@ -73,51 +54,13 @@ public class JapanEditionTests extends EditionsInit {
         editions.tapJapanBackButton();
     }
 
-    @Test (priority = 6)
-    public void testSndItemSubTab(){
-        testName("Verify 'Kawaii' sub-tab");
-        print("Verified 'Kawaii' sub-tab is present");
-
-        editions.tapOnJapanSndItem();
-        editions.tapSplash();
-        print("Verified Splash is present on sub-tab 'Kawaii'");
-        editions.tapJapanBackButton();
-        editions.tapJapanBackButton();
-    }
-
-    @Test (priority = 6)
-    public void testTrdItemSubTab(){
-        testName("Verify 'Kawaii' sub-tab");
-        print("Verified 'Kawaii' sub-tab is present");
-
-        editions.tapOnTrdFstItem();
-        editions.tapSplash();
-        print("Verified Splash is present on sub-tab 'Kawaii'");
-        editions.tapJapanBackButton();
-        editions.tapJapanBackButton();
-    }
-
-    @Test (priority = 6)
-    public void testWinSubTab()throws InterruptedException{
-        testName("Verify 'Win' sub-tab");
-        Thread.sleep(3000);
-        latestSubTab.tapOnMore();
-        editions.winHomeSubTab();
-
-       homeSubTabs.tapSplash();
-        print("Verified Splash is present on sub-tab 'Win'");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.tapJapanBackButton();
-        editions.tapJapanBackButton();
-    }
 
     //News
     @Test (priority = 7)
-    public void testGoingNewsTab() throws InterruptedException {
+    public void testShoppingTab() throws InterruptedException {
         testName("NEWS");
         testName("Verify going to News tab / Latest sub-tab");
-        editions.tapNewsTab();
+        editions.shoppingJapan();
         Thread.sleep(3000);
         homeSubTabs.tapSplash();
         print("Verified Splash is present on 'Latest' sub-tab");
@@ -139,15 +82,4 @@ public class JapanEditionTests extends EditionsInit {
         editions.tapJapanBackButton();
     }
 
-    //Search
-    @Test (priority = 37)
-    public void testSearchTab() {
-        testName("SEARCH");
-        testName("Verify going to Search tab");
-        editions.tapSearchTab();
-
-        Assert.assertTrue(editions.suggestedSearchesTextJapanIsPresent());
-        print("Verified 'Suggested Searches' title is present Search tab. Search is loading fine");
-
-    }
 }

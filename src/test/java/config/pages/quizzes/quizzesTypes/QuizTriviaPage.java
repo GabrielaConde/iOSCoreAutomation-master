@@ -12,7 +12,8 @@ import java.util.Map;
 public class QuizTriviaPage extends QuizzesTypesGeneralPage {
 
     //Catching elements
-    private final By triviaTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
+    private final By triviaTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
+  //  private final By triviaTitle = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeScrollView/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
     private final By subText = MobileBy.AccessibilityId("Welcome to game night!");
     private final By authorInfo = MobileBy.AccessibilityId("by Simrin Singh, BuzzFeed Staff");
     private final By progressBar1 = MobileBy.AccessibilityId("1 of 14");
@@ -92,6 +93,7 @@ public class QuizTriviaPage extends QuizzesTypesGeneralPage {
 
     //--Latest answer - Fail
     public boolean verifyProgressBar14IsPresent(){
+        WaitersPage.waitForElement(progressBar14);
         return driver.findElement(progressBar14).isDisplayed();
     }
 
@@ -115,6 +117,7 @@ public class QuizTriviaPage extends QuizzesTypesGeneralPage {
 
     //--Results card
     public boolean verifyQuizTitleResultIsPresent(){
+        WaitersPage.waitForElement(quizTitleResultsScreen);
         return driver.findElement(quizTitleResultsScreen).isDisplayed();
     }
 

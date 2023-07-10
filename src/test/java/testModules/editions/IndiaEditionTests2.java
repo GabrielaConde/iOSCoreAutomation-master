@@ -883,8 +883,71 @@ public class IndiaEditionTests2 extends EditionsInit {
         }
     }
 
+    @Test (priority = 42)
+    public void testTapOnTrendingCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnTrending();
+        editions.visitSplashAndReturn();
+    }
+
+    @Test (priority = 43)
+    public void testTapOnResultsCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnResults();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 44)
+    public void testTapOnFoodCategory(){
+        testName("testTapOnFoodCategory");
+        testName("Verify going to Food category");
+        quizzesSubTabs.tapOnFood();
+        editions.visitSplashAndReturn();
+    }
+
+    @Test (priority = 45)
+    public void testTapOnTriviaCategory(){
+        testName("testTapOnTriviaCategory");
+        testName("Verify going to Trivia category");
+        quizzesSubTabs.tapOnFood();
+        editions.visitSplashAndReturn();
+    }
+
+    @Test (priority = 46)
+    public void testTapOnMore(){
+        testName("testTapOnMore");
+        testName("Verify tapping on More btn");
+        quizzesSubTabs.tapOnMore();
+    }
+
+    @Test (priority = 47)
+    public void testTapCanWeGuess(){
+        testName("testTapCanWeGuess");
+        quizzesSubTabs.tapOnCanWeGuess();
+    }
+
+    @Test (priority = 48)
+    public void testTapOnDisney(){
+        testName("testTapOnDisney");
+        quizzesSubTabs.tapOnDisney();
+    }
+
+    @Test (priority = 49)
+    public void testTapWhoAreYou(){
+        testName("testTapWhoAreYou");
+        quizzesSubTabs.tapOnWhoAreYou();
+    }
+
+    @Test (priority = 50)
+    public void testTapOnLove(){
+        testName("testTapOnLove");
+        quizzesSubTabs.tapOnLove();
+    }
+
     //Search
-    @Test(priority = 42)
+    @Test(priority = 51)
     public void testSearchTab() {
         try {
             testName("SEARCH");

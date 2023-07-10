@@ -16,6 +16,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/signIn/SignInMailPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/settings/GeneralTests2.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/AsyncQuizzes/PartnerPlayGame.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/home/HomeTrendingVisualFeed.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/search/RecentSearchesPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/quizzesTypes/QuizChecklistTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/search/SuggestedSearchesPage.java
@@ -59,6 +60,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/quizzesTypes/QuizTriviaTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/quizzes/quizzesTypes/QuizInstantPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/quizzes/quizzesTypes/QuizzesTypesGeneralPage.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/quizzesTypes/AIQuizzes.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/settings/GeneralPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/bpage/NatBpageTests1.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/WaitersPage.java
@@ -76,6 +78,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/settings/BuzzfeedPlusTests1.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/QuizzesSubTabTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/bpage/NatBpageAddYoursTests6.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/quizzes/quizzesTypes/AIQuizzes.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/signIn/SignInFBPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/profile/MyCommentsPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/bpage/BpageEmbedsPage.java

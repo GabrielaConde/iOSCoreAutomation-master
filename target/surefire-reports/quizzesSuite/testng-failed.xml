@@ -3,28 +3,14 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [quizzesSuite]">
   <test thread-count="5" verbose="0" name="Quizzes(failed)">
     <classes>
-      <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests">
+      <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests">
         <methods>
-          <include name="testQuestion1Countdown"/>
-          <include name="testQuestion2Countdown"/>
-          <include name="testQuestion4Countdown"/>
-          <include name="tearDown"/>
-          <include name="initializePages"/>
-          <include name="testQuestion5Countdown"/>
-          <include name="setUpTest"/>
-          <include name="testQuestion3Countdown"/>
-          <include name="testQuestion6Countdown"/>
-        </methods>
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizPersonalityTests -->
-      <class name="testModules.quizzes.quizzesTypes.QuizPredetTests">
-        <methods>
+          <include name="testResultsSubTab"/>
           <include name="tearDown"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
-          <include name="testProgressBarSecondQ"/>
-          <include name="testProgressBarFirstQ"/>
         </methods>
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizPredetTests -->
+      </class> <!-- testModules.quizzes.quizzesTypes.QuizTriviaTests -->
     </classes>
   </test> <!-- Quizzes(failed) -->
 </suite> <!-- Failed suite [quizzesSuite] -->

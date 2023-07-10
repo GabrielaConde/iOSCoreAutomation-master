@@ -22,74 +22,44 @@ public class HomeLatestTests extends EditionsInit {
     public void testAllowButton(){
         print("-------------------STARTING LATEST SUB-TAB TESTS-------------------");
         testName = "TEST ALLOW BUTTON";
-        try {
            // testName("Verify Allow button is present and tap-able");
             Assert.assertTrue(latestSubTab.allowButtonIsPresent());
             print("Verified Allow Notification button");
 
             latestSubTab.tapAllowButton();
-        } catch (Exception e){
-            System.out.println("ERROR ON THIS TEST CASE" );
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
- //   @Test(enabled = false, priority = 1)        //if TRUE, uncomment capabilities (Base) & dismiss tooltip (tapSplash())
-    public void enableTrendingPackageExp() {
-        try {
+   @Test(enabled = false, priority = 1)        //if TRUE, uncomment capabilities (Base) & dismiss tooltip (tapSplash())
+    public void enableVisualFeedExp() {
             testName("Enabling Trending Product package experiments");
             SettingsSetupPage enableExp = new SettingsSetupPage();
-            enableExp.enableTrendingPackage();
-        } catch (Exception e){
-            System.out.println("ERROR ON THIS TEST CASE" );
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
+            enableExp.turnOnVisualFeedFF();
     }
 
  //   @Test(enabled = true, priority = 1)               //if TRUE, uncomment capabilities (Base class)
     public void disableAdExp() {
-        try{
         testName("Disabling Dynamic Ads on Bpages");
         disableAdExp.disableAdExp();
         disableAdExp.tapAllowButton();
       //  latestSubTab.tapCloseButton();
-        } catch (Exception e){
-            System.out.println("ERROR ON THIS TEST CASE" );
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     //BuzzFeed logo + Latest sub-tab
     @Test (priority = 2)
     public void verifyBuzzFeedLogo(){
-        try{
         testName("Verify Buzzfeed Logo is present");
         Assert.assertTrue((latestSubTab.buzzfeedLogoIsPresent()));
         print("Verified 'BuzzFeed' logo is present on Home feed");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test (priority = 3)
     public void verifyLatestIsPresentActive(){
-        try{
         testName("Verify 'Latest' subtab is present and active");
         Assert.assertTrue((latestSubTab.latestSubTabIsPresent()));
         print("Verified Sub-tab'Latest' is present on Home/Latest");
 
        // Assert.assertEquals(latestSubTab.latestSubTabIsActive(), "1");
         print("Verified 'value' for sub-tab 'Latest' is = 1, the sub-tab is active");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     //Splash and first cell
@@ -124,6 +94,7 @@ public class HomeLatestTests extends EditionsInit {
         scroll.scrollDown90_20();
         latestSubTab.tapItemsShopPackage();
     }
+
 
     /*
     Commenting these @tests because right now the Shopping package is changed because of Thanks Giving and Black friday.
@@ -233,62 +204,34 @@ public class HomeLatestTests extends EditionsInit {
 
     @Test(priority = 19)
     public void seeMoreButtonIsPresent(){
-        try{
         testName("Verify 'See More Video' button is present under Videos Package");
         Assert.assertTrue((latestSubTab.seeMoreVideoButtonIsPresent()));
         print("Verified 'See More Video' button is present under Videos Package on Home/Latest feed");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test(priority = 20)
     public void videoHeaderIsPresent(){
-        try{
         testName("Verify 'Trending Videos' header is present on Videos Package");
         scroll.scrollUp70_90();
 
         Assert.assertTrue((latestSubTab.videosHeaderIsPresent()));
         print("Verified 'Trending Videos' header is present on Videos Package on Home/Latest feed");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test(priority = 21)
     public void tapSeeMoreVideoButton(){
-        try{
         testName("Verify tapping 'See More' button from Videos Package takes the user to Videos sub-tab");
         latestSubTab.tapSeeMoreButton();
 
         Assert.assertTrue((latestSubTab.videosSubTabIsPresent()));
         print("Verified 'Videos' sub-tab is present");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test(priority = 22)
     public void videosSubTabIsActive(){
-        try{
         testName("Verify 'Videos' sub-tab is active");
         Assert.assertEquals(latestSubTab.videosSubTabIsActive(), "1");     //All tests related to value:1 are going to fail because of https://buzzfeed.atlassian.net/browse/IOS-8663
         print("Verified the 'value' for 'Videos' sub-tab is = 1, the sub-tab is active");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
-    @Test(priority = 23)
-    public void WhatchNext(){
-        Assert.assertTrue(false);
-    }
 }

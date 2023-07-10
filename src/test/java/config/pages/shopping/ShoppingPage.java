@@ -236,7 +236,11 @@ public class ShoppingPage extends CommonPage {
     public Boolean validateGiftGuideTitle(){ return driver.findElement(giftGuideTitle).isDisplayed();}
     public void tapOnCTAGiftGuideLink() {driver.findElement(giftGuidesCTALink).click();}
     public Boolean validateGiftGuideTitleOnScreen() {return driver.findElement(giftGuideTitleOnScreen).isDisplayed();}
-    public Boolean validateTrendingProductsTitle(){return driver.findElement(trendingProductsTitle).isDisplayed();}
+    public Boolean validateTrendingProductsTitle()
+    {return false;
+            //driver.findElement(trendingProductsTitle).isDisplayed();
+
+            }
 
 
 

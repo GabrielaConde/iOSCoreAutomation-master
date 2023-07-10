@@ -22,6 +22,8 @@ public class QuizChecklistPage extends QuizzesTypesGeneralPage{
     private final By trdChoice = By.xpath("//XCUIElementTypeButton[@name=\"Get Out\"]");
    // private final By anyChecklistOption = By.xpath("//XCUIElementTypeOther[@name=\"BUZZ_PAGE\"]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeButton");
     private final By youCheckedText =  By.xpath("//*[contains(@name,'You checked')]");
+  //  private final By youCheckedText = By.xpath("3 of 50 Correct");
+
 
 
     //Methods

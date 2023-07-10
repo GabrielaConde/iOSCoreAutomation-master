@@ -34,17 +34,15 @@ public class CanadaEditionTests extends EditionsInit {
         testName("HOME");
         testName("Verify Home tab / Lastest sub-tab");
 
-        Assert.assertTrue((latestSubTab.buzzfeedLogoIsPresent()));
+        latestSubTab.buzzfeedLogoIsPresent();
         print("Verified 'BuzzFeed' logo is present on Home feed");
-
-     //   Assert.assertTrue((latestSubTab.latestSubTabIsPresent()));
         print("Verified 'Latest' sub-tab is present on Home/Latest");
 
-        Assert.assertTrue(latestSubTab.splashCellIsPresent());
+        latestSubTab.splashCellIsPresent();
         print("Verified 'Splash' is present on Home/Latest feed");
 
-        //print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
+        editions.tapSplash();
+        editions.tapBackButton();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
@@ -52,338 +50,168 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 2)
-    public void testVideosSubTab(){
-        try{
-        testName("Verify 'Videos' Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnVideosTab();
-
-        Assert.assertTrue(homeSubTabs.videosSubTabIsPresent());
-        print("Verified 'Videos' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.firstVideoIsPresent());
-        print("Verified First Video is present on 'Videos' sub-tab");
-
-        homeSubTabs.tapFirstVideo();
-        homeSubTabs.tapCloseButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void testTrendingSubTab(){
-       // try{
+        try{
         print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Trending' Tab");
-       // scroll.swipeLeft();
-       //  homeSubTabs.clickOnTrendingBtn();
-        homeSubTabs.clickOnTrendingtab();
+        homeSubTabs.clickOnTrendingBtn();
+        print("Verified 'Trending' sub-tab  is present");
+        editions.tapSplash();
+        latestSubTab.tapBackButton();
+               } catch (Exception e) {
+                   System.out.println("ERROR ON THIS TEST CASE");
+                   System.out.print("EXCEPTION: ");
+                System.out.print(e.getMessage());
+               }
+             }
 
-     //   Assert.assertTrue(homeSubTabs.trendingSubTabIsPresent());
-        print("Verified 'Trending' sub-tab is present");
-
-      //  Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Trending' sub-tab");
-
-        //print("Bpage on Splash: " + editions.getSplashTitle());
-     //   editions.visitSplashAndReturn();
-    /*    } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-          */
-    }
-
-    @Test (priority = 4)
-    public void testShowsSubTab(){
+    @Test (priority = 3)
+    public void testRecentlyViewedSubTab()throws InterruptedException{
         try{
         testName("Verify 'Shows' Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnShowstab();
-
-        Assert.assertTrue(showSubTab.showsTabIsPresent());
-        print("Verified 'Shows' sub-tab is present");
-
-        Assert.assertTrue(editions.verifyShowIsPresent());
-        print("Verified 'Shows' sub-tab is present");
+        latestSubTab.tapOnRecentlyViewed();
+        homeSubTabs.tapBackButton();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
+         System.out.print(e.getMessage());
         }
+        }
+
+    @Test (priority = 4)
+    public void testShowsSubTab()throws InterruptedException{
+        testName("Verify 'Shows' Sub-Tab");
+        homeSubTabs.clickOnShowsBtn();
+        homeSubTabs.tapBackButton();
+
     }
 
     @Test (priority = 5)
-    public void testAnimalsSubTab(){
-        try{
-        testName("Verify 'Animals' Sub-Tab");
-       // scroll.swipeLeft();
-        homeSubTabs.clickOnAnimalstab();
+    public void testVideosSubTab(){
+        testName("Verify 'Videos' Sub-Tab");
+        homeSubTabs.clickOnVideosTab();
+        homeSubTabs.tapBackButton();
 
-        Assert.assertTrue(homeSubTabs.animalsTabIsPresent());
-        print("Verified 'Animals' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Animals' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test (priority = 6)
-    public void testCelebritySubTab(){
-        try{
-        testName("Verify 'Celebrity' Sub-Tab");
-       // scroll.swipeLeft();
-        homeSubTabs.clickOnCelebritytab();
-    //    homeSubTabs.clickOnCelebrityBtn();
-
-   //     Assert.assertTrue(homeSubTabs.celebrityTabIsPresent());
-        print("Verified 'Celebrity' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Celebrity' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
+    public void testAIQuizzesTab(){
+        testName("Verify 'Videos' Sub-Tab");
+        latestSubTab.tapOnAIQuizzes();
+        homeSubTabs.tapBackButton();
     }
-
     @Test (priority = 7)
-    public void testBooksSubTab(){
-        try{
-        testName("Verify 'Books' Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnBookstab();
-
-        Assert.assertTrue(homeSubTabs.booksTabIsPresent());
-        print("Verified 'Books' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Books' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
+    public void testGamesTab(){
+        testName("Verify 'Videos' Sub-Tab");
+        latestSubTab.tapGamesTab();
+        homeSubTabs.tapHomeTab();
     }
 
-    @Test (priority = 8)
-    public void testCommunitySubTab(){
-        try{
-        testName("Verify 'Community' Sub-Tab");
-       // scroll.swipeLeft();
-        homeSubTabs.clickOnCommunitytab();
+      @Test(priority =7)
+         public void tapOnMore1()throws InterruptedException{
+             latestSubTab.tapOnMore();
+         }
 
-        Assert.assertTrue(homeSubTabs.communityTabIsPresent());
-        print("Verified 'Community' sub-tab is present");
+             @Test (priority = 8)
+                public void testEntertainmentSubTab() throws InterruptedException{
+                    latestSubTab.tapOnEntertainment();
+                    homeSubTabs.tapSplash();
+                    bpage.tapBackButton();
+                    homeSubTabs.tapBackButton();
+                }
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Community' sub-tab");
+                 @Test (priority = 9)
+                    public void testAnimalsSubTab() throws InterruptedException{
+                            homeSubTabs.clickOnAnimalsBtn();
+                            homeSubTabs.tapSplash();
+                            bpage.tapBackButton();
+                            homeSubTabs.tapBackButton();
+                    }
 
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
 
-    @Test (priority = 9)
-    public void testFoodSubTab(){
-        try{
-        testName("Verify 'Food' Sub-Tab");
-       // scroll.swipeLeft();
-       homeSubTabs.clickOnFoodtab();
-            //     homeSubTabs.clickOnFoodBtn();
+                     @Test (priority = 11)
+                     public void testCelebritySubTab(){
+                             testName("Verify 'Celebrity' sub-tab");
+                             homeSubTabs.clickOnCelebrityBtn();
+                             latestSubTab.tapBackButton();
+                     }
 
-   //     Assert.assertTrue(homeSubTabs.foodTabIsPresent());
-        print("Verified 'Food' sub-tab is present");
+                       @Test (priority = 10)
+                         public void testBooksSubTab() throws InterruptedException{
+                                  latestSubTab.tapOnBooks();
+                                  latestSubTab.tapSplash();
+                                  bpage.tapBackButton();
+                                  homeSubTabs.tapBackButton();
+                         }
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Food' sub-tab");
 
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
+                     @Test (priority = 12)
+                     public void testFoodSubTab(){
+                             testName("Verify 'Food' sub-tab");
+                             homeSubTabs.clickOnFoodBtn();
+                             latestSubTab.tapBackButton();
+                     }
 
-    @Test (priority = 10)
-    public void testHealthSubTab(){
-        try{
-        testName("Verify 'Health' Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnHealthtab();
 
-        Assert.assertTrue(homeSubTabs.healthTabIsPresent());
-        print("Verified 'Health' sub-tab is present");
+                     @Test (priority = 13)
+                         public void testCommunitySubTab(){
+                                 latestSubTab.tapOnCommunity();
+                                 latestSubTab.tapSplash();
+                                 bpage.tapBackButton();
+                                 homeSubTabs.tapBackButton();
+                         }
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Health' sub-tab");
+                      @Test (priority = 14)
+                      public void testMusicSubTab(){
+                              latestSubTab.tapOnMusic();
+                              latestSubTab.tapSplash();
+                              bpage.tapBackButton();
+                              homeSubTabs.tapBackButton();
+                      }
 
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
+                      @Test (priority = 15)
+                      public void testNiftySubTab(){
+                              latestSubTab.tapOnNifty();
+                              latestSubTab.tapSplash();
+                              bpage.tapBackButton();
+                              homeSubTabs.tapBackButton();
+                      }
 
-    @Test (priority = 11)
-    public void testMusicSubTab(){
-        try{
-        testName("Verify 'Music' Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnMusictab();
+                   @Test (priority = 16)
+                      public void testParentsSubTab(){
+                              latestSubTab.tapOnParents();
+                              latestSubTab.tapSplash();
+                              bpage.tapBackButton();
+                              homeSubTabs.tapBackButton();
+                      }
 
-        Assert.assertTrue(homeSubTabs.musicTabIsPresent());
-        print("Verified 'Music' sub-tab is present");
+                      @Test (priority = 17)
+                      public void testRewindSubTab(){
+                              latestSubTab.tapOnRewind();
+                              latestSubTab.tapSplash();
+                              bpage.tapBackButton();
+                              homeSubTabs.tapBackButton();
+                      }
+                      @Test (priority = 18)
+                      public void testStyleSubTab(){
+                             latestSubTab.tapOnStyle();
+                             latestSubTab.tapSplash();
+                             bpage.tapBackButton();
+                             homeSubTabs.tapBackButton();
+                    }
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Music' sub-tab");
+                    @Test (priority = 19)
+                    public void testTravelHomeSubTab(){
+                    latestSubTab.tapOnTravel();
+                    latestSubTab.tapSplash();
+                    bpage.tapBackButton();
+                    homeSubTabs.tapBackButton();
+                }
 
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 12)
-    public void testNiftySubTab(){
-        try{
-        testName("Verify 'Nifty' Sub-Tab");
-       // scroll.swipeLeft();
-        homeSubTabs.clickOnNiftytab();
-
-        Assert.assertTrue(homeSubTabs.niftyTabIsPresent());
-        print("Verified 'Nifty' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Nifty' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 13)
-    public void testParentsSubTab(){
-        try{
-        testName("Verify Parents Sub-Tab");
-       // scroll.swipeLeft();
-        homeSubTabs.clickOnParentstab();
-
-        Assert.assertTrue(homeSubTabs.parentsTabIsPresent());
-        print("Verified 'Parents' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Parents' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 14)
-    public void testRewindSubTab(){
-        try{
-        testName("Verify 'Rewind' sub-tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnRewindtab();
-
-        Assert.assertTrue(homeSubTabs.rewindTabIsPresent());
-        print("Verified 'Rewind' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Rewind' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 15)
-    public void testStyleSubTab(){
-        try{
-        testName("Verify Style Sub-Tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnStyletab();
-
-        Assert.assertTrue(homeSubTabs.styleTabIsPresent());
-        print("Verified 'Style' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Style' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 16)
-    public void testTravelSubTab(){
-        try{
-        testName("Verify Travel sub-tab");
-      //  scroll.swipeLeft();
-        homeSubTabs.clickOnTraveltab();
-
-        Assert.assertTrue(homeSubTabs.travelTabIsPresent());
-        print("Verified 'Travel' sub-tab is present");
-
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Travel' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
 
     //News
-    @Test (priority = 17)
+   // @Test (priority = 17)
     public void testGoingNewsTab() {
         try{
         testName("NEWS");
@@ -402,44 +230,16 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 18)
+  //  @Test (priority = 18)
     public void testHealthNewsSubTab() {
-    //    try{
         testName("Verify 'Science' sub-tab");
         news.tapScienceSubTab();
-        //    news.clickOnHealthBtn();
-
-       // Assert.assertTrue(news.splashCellIsPresent());
         print("Verified Splash is present on 'Science' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
         editions.visitSplashAndReturn();
-   /*     } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }*/
     }
 
-    @Test (priority = 19)
-    public void testPoliticsSubTab() {
-        try{
-        testName("Verify 'Politics' sub-tab");
-        news.tapPoliticsSubTab();
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Politics' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
-    @Test (priority = 20)
+//    @Test (priority = 20)
     public void testCultureSubTab() {
         try{
         testName("Verify 'Culture' sub-tab");
@@ -458,7 +258,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 21)
+  //  @Test (priority = 21)
     public void testTechSubTab() {
         try{
         testName("Verify 'Tech' sub-tab");
@@ -477,7 +277,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 22)
+  //  @Test (priority = 22)
     public void testWorldSubTab() {
         try{
         testName("Verify 'World' sub-tab");
@@ -495,29 +295,11 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 23)
-    public void testEntertainmentSubTab() {
-        try{
-        testName("Verify 'Entertainment' sub-tab");
-        news.tapEntertainmentSubTab();
-     //   news.clickOnHealthBtn();
 
-        Assert.assertTrue(homeSubTabs.splashCellIsPresent());
-        print("Verified Splash is present on 'Entertainment' sub-tab");
-
-      //  print("Bpage on Splash: " + editions.getSplashTitle());
-        editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
-
+    
     //SHOPPING
     @Test (priority = 24)
     public void testGoingShoppingTab() {
-        try{
         testName("SHOPPING");
         testName("Verify Shopping tab / Latest sub-tab");
         Assert.assertTrue(editions.foreignShoppingTabIsPresent());
@@ -530,35 +312,19 @@ public class CanadaEditionTests extends EditionsInit {
 
         Assert.assertTrue(homeSubTabs.splashCellIsPresent());
         print("Verified Splash is present on 'Latest' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
         editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
     @Test (priority = 25)
     public void testTrendingShoppingSubTab() {
-        try{
         testName("Verify 'Trending' sub-tab");
         editions.tapTrendingSubTab();
-
         Assert.assertTrue(homeSubTabs.splashCellIsPresent());
         print("Verified Splash is present on 'Trending' sub-tab");
-
-       // print("Bpage on Splash: " + editions.getSplashTitle());
         editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
-    @Test (priority = 26)
+   // @Test (priority = 26)
     public void testBeautySubTab() {
         try{
         testName("Verify 'Beauty' sub-tab");
@@ -574,7 +340,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 27)
+  //  @Test (priority = 27)
     public void testDealsSubTab() {
         try{
         testName("Verify 'Deals' sub-tab");
@@ -592,9 +358,8 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 28)
+   // @Test (priority = 28)
     public void testHomeSubTab() {
-        try{
         testName("Verify 'Home' sub-tab");
         shoppingSubTabs.tapHomeSubTab();
 
@@ -603,14 +368,9 @@ public class CanadaEditionTests extends EditionsInit {
 
       //  print("Bpage on Splash: " + editions.getSplashTitle());
         editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
-    @Test (priority = 29)
+  //  @Test (priority = 29)
     public void testClothingSubTab() {
         try{
         testName("Verify 'Clothing' sub-tab");
@@ -628,7 +388,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 30)
+  //  @Test (priority = 30)
     public void testGiftSubTab() {
         try{
         testName("Verify 'Gift Ideas' sub-tab");
@@ -646,7 +406,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 31)
+ //   @Test (priority = 31)
     public void testUnder50SubTab() {
         try{
         testName("Verify 'Under $50' sub-tab");
@@ -664,7 +424,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 32)
+  //  @Test (priority = 32)
     public void testSelfCareSubTab() {
         try{
         testName("Verify 'Self Care' sub-tab");
@@ -682,7 +442,7 @@ public class CanadaEditionTests extends EditionsInit {
         }
     }
 
-    @Test (priority = 33)
+  //  @Test (priority = 33)
     public void testTreatYourselfSubTab() {
         try{
         testName("Verify 'Treat Yourself' sub-tab");
@@ -703,7 +463,6 @@ public class CanadaEditionTests extends EditionsInit {
     //Quizzes
     @Test (priority = 34)
     public void testGoingToQuizzesTab(){
-        try{
         testName("QUIZZES");
         testName("Verify going to Quizzes tab / Latest sub-tab");
         editions.tapQuizzesTab();
@@ -713,35 +472,70 @@ public class CanadaEditionTests extends EditionsInit {
 
         Assert.assertTrue(quizzesLatestSubTab.splashCellIsPresent());
         print("Verified Splash is present on Quizzes/Latest feed");
-
-     //   print("Bpage on Splash: " + editions.getSplashTitle());
         editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
+    }
+
+    @Test (priority = 35)
+    public void testTapOnTrendingCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnTrending();
+        editions.tapSplash();
+        editions.tapBackButton();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 36)
+    public void testTapOnResultsCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnResults();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 37)
+    public void testTapOnAIQuizzesCategory(){
+        testName("testTapOnFoodCategory");
+        testName("Verify going to Food category");
+        quizzesSubTabs.tapOnAIQuizzes();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 38)
+    public void testTapOnTriviaCategory(){
+        testName("testTapOnTriviaCategory");
+        testName("Verify going to Trivia category");
+        quizzesSubTabs.tapOnFood();
+        editions.tapSplash();
+        editions.tapBackButton();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 40)
+    public void testTapCanWeGuess(){
+        testName("testTapCanWeGuess");
+        quizzesSubTabs.tapOnCanWeGuess();
+        quizzesSubTabs.tapSplash();
+        quizzesSubTabs.tapBackButton();
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 41)
+    public void testTapOnMatchups(){
+        testName("testTapOnDisney");
+        quizzesSubTabs.tapOnMatchups();
+        quizzesSubTabs.tapBackButton();
     }
 
     //Search
-    @Test (priority = 35)
+    @Test (priority = 44)
     public void testSearchTab() {
-        try{
         testName("SEARCH");
         testName("Verify going to Search tab");
         editions.tapSearchTab();
 
         Assert.assertTrue(quizzesLatestSubTab.suggestedSearchesTitleIsPresent());
         print("Verified 'Suggested Searches' title is present Search tab. Search is loading fine");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
     }
 
-    @Test (priority = 36)
-    public void testShoppingPackage(){
-        Assert.assertTrue(false);
-    }
 }

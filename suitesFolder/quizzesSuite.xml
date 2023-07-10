@@ -3,11 +3,11 @@
 <suite name="quizzesSuite" verbose="1" >
     <test verbose="2" name="Quizzes" parallel="none" preserve-order="true" >
         <classes>
-                    <class name="testModules.quizzes.quizzesTypes.QuizChecklistTests"/>
-                    <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests"/>
-                    <class name="testModules.quizzes.quizzesTypes.QuizPollTests"/>
-                    <class name="testModules.quizzes.quizzesTypes.QuizPredetTests"/>
-                    <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests"/>
-       </classes>
-   </test>
-   </suite>
+                 <class name="testModules.quizzes.quizzesTypes.QuizChecklistTests"/>
+                 <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests"/>
+                 <class name="testModules.quizzes.quizzesTypes.QuizPollTests"/>
+                 <class name="testModules.quizzes.quizzesTypes.QuizPredetTests"/>
+                 <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests"/>
+      </classes>
+  </test>
+  </suite>

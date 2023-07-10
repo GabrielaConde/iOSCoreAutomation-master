@@ -21,10 +21,12 @@ public class QuizzesSubTabsPage extends CommonPage {
 
     private final By celebrity = MobileBy.AccessibilityId("Celebrity");
     private final By canWeGuessSubTab = MobileBy.AccessibilityId("Can We Guess?");
+    private final By aiquizzes = MobileBy.AccessibilityId("AI Quizzes");
 
 
     //Methods
 
+    public void tapOnAIQuizzes() {driver.findElement(aiquizzes).click();}
     public void tapOnTrending(){driver.findElement(trendingSubTab).click();}
     public void tapOnCanWeGuess(){driver.findElement(canWeGuessSubTab).click();}
     public void tapOnDisney(){driver.findElement(disneySubTab).click();}

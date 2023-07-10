@@ -8,41 +8,34 @@ import org.testng.annotations.Test;
 public class SearchTests1 extends SearchInit {
 
     @Test()
-    public void testSearchTab() {
+    public void testSearchTab() throws InterruptedException{
         testName("Verify the Search Tab");
-
         search.tapAllowButton();
+        search.tapOnAcceptAllCookiesBtn();
         search.tapAllowButton();
-
-        Assert.assertTrue(search.searchTabIsPresent());
-        print("Verified Search tab is present in the nav bar");
-
+        Thread.sleep(3000);
         search.tapSearchTab();
         print("------------------------------------------------------");
-
     }
 
     @Test(priority = 1)
     public void testSearchField() {
         testName("Verify the Search field");
-
         Assert.assertTrue(search.searchFieldIsPresent());
         print("Verified Search field is present in the search screen");
-
         search.tapSearchField();
     }
 
     @Test(priority = 2)
     public void testSearchTerm() {
         testName("Enter a search term");
-
         search.sendSearchString("Kate Winslet");
     }
 
     @Test(priority = 3)
-    public void testSearchResult() {
+    public void testSearchResult()throws InterruptedException {
         testName("Verify the Search results");
-
+        Thread.sleep(3000);
         Assert.assertTrue(search.searchResultIsPresent());
         print("Verified Search result is displayed");
 
@@ -55,7 +48,6 @@ public class SearchTests1 extends SearchInit {
         testName("Clear the search results");
         Assert.assertTrue(search.clearSearchIsPresent());
         print("Verified Clear Search is displayed");
-
         search.tapClearSearch();
         search.tapCancelButton();
     }

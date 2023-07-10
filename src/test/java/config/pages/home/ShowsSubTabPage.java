@@ -37,12 +37,14 @@ public class ShowsSubTabPage extends CommonPage {
     }
 
     //--Tap Shows
-    public void tapShow(){
+    public void tapShow()throws InterruptedException{
         int x = 0;
             for (MobileElement e : driver.findElements(show)) {
                 System.out.println("Show Position: " + x);
                 e.click();
+                Thread.sleep(2000);
                 tapFirstVideo();
+                Thread.sleep(2000);
                 tapCloseButton();
                 tapBackButton();
                 WebDriverWait wait = new WebDriverWait(driver, 30);

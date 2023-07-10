@@ -9,8 +9,9 @@ import org.testng.annotations.Test;
 public class FBHeaderTests1 extends ProfileInit {
 
     @Test()
-    public void testDisplayName(){
+    public void testDisplayName()throws InterruptedException{
         testName("Verify Display Name");
+        Thread.sleep(4000);
         Assert.assertTrue(header.fbDisplayNameIsPresent());
         print("Verified User Name is present in the Profile screen");
     }
@@ -80,6 +81,7 @@ public class FBHeaderTests1 extends ProfileInit {
         print("Verified Edit User modal is displayed");
         Thread.sleep(2000);
         header.tapCancelButton();
+
     }
 
     @Test(priority = 8)
@@ -98,13 +100,11 @@ public class FBHeaderTests1 extends ProfileInit {
         testName("Delete Profile Photo");
         Assert.assertTrue(header.deleteProfilePhotoButtonIsPresent());
         print("Verified Update Profile Photo option is present");
-
         header.tapDeleteProfilePhotoButton();
-
     }
 
     @Test(priority = 10)
-    public void testAddProfilePhoto() {
+    public void testAddProfilePhoto()throws InterruptedException {
         testName("Add a new profile photo");
         header.tapEditProfileButton();
         header.tapUpdateProfilePhotoButton();

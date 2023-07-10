@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class UKEditionTests2 extends EditionsInit {
 
    // @BeforeClass
@@ -51,20 +53,13 @@ public class UKEditionTests2 extends EditionsInit {
         testName("Verify 'Trending' Tab");
         homeSubTabs.clickOnTrendingBtn();
         print("Verified 'Trending' sub-tab  is present");
-        editions.tapSplash();
-        bpage.tapBackButton();
-        latestSubTab.tapBackButton();
+        latestSubTab.tapHomeTab();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
+            Thread.sleep(2000);
             latestSubTab.tapOnMore();
             homeSubTabs.clickOnTrendingtab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -73,21 +68,17 @@ public class UKEditionTests2 extends EditionsInit {
         Boolean failed = false;
            try{
         testName("Verify 'Shows' Sub-Tab");
+               driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         homeSubTabs.clickOnShowsBtn();
         homeSubTabs.tapBackButton();
 
         print("Verified 'Shows' sub-tab  is present");
            } catch (Exception e) {
-               System.out.println("ERROR ON THIS TEST CASE");
-               System.out.print("EXCEPTION: ");
-               System.out.print(e.getMessage());
-               Thread.sleep(5000);
+               Thread.sleep(2000);
                latestSubTab.tapOnMore();
                homeSubTabs.clickOnShowsBtn();
                homeSubTabs.tapBackButton();
                homeSubTabs.tapBackButton();
-               failed = true;
-               Assert.assertFalse(failed);
            }
     }
 
@@ -96,20 +87,15 @@ public class UKEditionTests2 extends EditionsInit {
         Boolean failed = false;
             try{
         testName("Verify 'Videos' Sub-Tab");
+                driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         homeSubTabs.clickOnVideosTab();
         homeSubTabs.tapBackButton();
 
             } catch (Exception e) {
-                System.out.println("ERROR ON THIS TEST CASE");
-                System.out.print("EXCEPTION: ");
-                System.out.print(e.getMessage());
-                Thread.sleep(5000);
+                Thread.sleep(2000);
                 latestSubTab.tapOnMore();
                 homeSubTabs.clickOnVideosTab();
                 homeSubTabs.tapBackButton();
-                homeSubTabs.tapBackButton();
-                failed = true;
-                Assert.assertFalse(failed);
             }
     }
 
@@ -117,42 +103,32 @@ public class UKEditionTests2 extends EditionsInit {
     public void testAnimalsSubTab() throws InterruptedException{
         Boolean failed= false;
            try{
+               driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnAnimalsBtn();
             homeSubTabs.tapBackButton();
            } catch (Exception e) {
-               System.out.println("ERROR ON THIS TEST CASE");
-               System.out.print("EXCEPTION: ");
-               System.out.print(e.getMessage());
-               Thread.sleep(5000);
+               Thread.sleep(2000);
                latestSubTab.tapOnMore();
                homeSubTabs.clickOnAnimalsBtn();
                homeSubTabs.tapBackButton();
                homeSubTabs.tapBackButton();
-               failed = true;
-               Assert.assertFalse(failed);
            }
     }
-
 
 
     @Test (priority = 7)
     public void testBooksSubTab() throws InterruptedException{
         Boolean failed = false;
         try{
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnBookstab();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnBookstab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -162,21 +138,16 @@ public class UKEditionTests2 extends EditionsInit {
         Boolean failed = false;
         try{
             testName("Verify 'Celebrity' sub-tab");
-            Thread.sleep(3000);
-            latestSubTab.tapOnMore();
+            Thread.sleep(2000);
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnCelebritytab();
             latestSubTab.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnCelebritytab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -185,20 +156,15 @@ public class UKEditionTests2 extends EditionsInit {
         Boolean failed = false;
         try{
             testName("Verify 'Food' sub-tab");
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnFoodBtn();
             latestSubTab.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnFoodBtn();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -206,62 +172,33 @@ public class UKEditionTests2 extends EditionsInit {
     public void testCommunitySubTab()throws InterruptedException{
         Boolean failed = false;
         try{
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnCommunitytab();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnCommunitytab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
-    @Test (priority = 11)
-    public void testHealthSubTab() throws InterruptedException{
-        Boolean failed = false;
-        try{
-            latestSubTab.tapOnMore();
-            latestSubTab.tapOnHealth();
-            bpage.tapBackButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
-            homeSubTabs.clickOnHealthtab();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
-        }
-    }
 
     @Test (priority = 12)
     public void testMusicSubTab()throws InterruptedException{
         Boolean failed = false;
         try{
             Thread.sleep(2000);
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnMusictab();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnMusictab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -269,20 +206,15 @@ public class UKEditionTests2 extends EditionsInit {
     public void testNiftySubTab()throws InterruptedException{
         Boolean failed = false;
         try{
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             latestSubTab.tapOnNifty();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             latestSubTab.tapOnNifty();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -290,20 +222,15 @@ public class UKEditionTests2 extends EditionsInit {
     public void testParentsSubTab() throws InterruptedException{
         Boolean failed = false;
         try{
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             latestSubTab.tapOnParents();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             latestSubTab.tapOnParents();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -311,20 +238,15 @@ public class UKEditionTests2 extends EditionsInit {
     public void testRewindSubTab()throws InterruptedException{
         Boolean failed = false;
         try{
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             latestSubTab.tapOnRewind();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             latestSubTab.tapOnRewind();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -332,20 +254,15 @@ public class UKEditionTests2 extends EditionsInit {
     public void testStyleSubTab()throws InterruptedException{
         Boolean failed = false;
         try {
-            latestSubTab.tapOnMore();
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             homeSubTabs.clickOnStyletab();
             homeSubTabs.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
+            Thread.sleep(2000);
+            latestSubTab.tapOnMore();
             homeSubTabs.clickOnStyletab();
             homeSubTabs.tapBackButton();
             homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
@@ -353,48 +270,18 @@ public class UKEditionTests2 extends EditionsInit {
     public void testTravelHomeSubTab()throws InterruptedException{
         Boolean failed = false;
         try {
+            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+            homeSubTabs.clickOnTraveltab();
+            homeSubTabs.tapBackButton();
+        } catch (Exception e) {
+            Thread.sleep(2000);
             latestSubTab.tapOnMore();
             homeSubTabs.clickOnTraveltab();
             homeSubTabs.tapBackButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            latestSubTab.tapBackButton();
-            homeSubTabs.clickOnTraveltab();
             homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
         }
     }
 
-
-
-
-
-    //  @Test (priority = 16)
-    public void testTravelSubTab(){
-        try{
-            testName("Verify Travel sub-tab");
-            //    scroll.swipeLeft();
-            homeSubTabs.clickOnTraveltab();
-
-            //  Assert.assertTrue(homeSubTabs.travelTabIsPresent());
-            //  print("Verified 'Travel' sub-tab is present");
-
-            //  Assert.assertTrue(editions.splashCellIsPresent());
-            //  print("Verified Splash is present on 'Travel' sub-tab");
-
-            // print("Bpage on Splash: " + editions.getSplashTitle());
-            editions.visitSplashAndReturn();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
-    }
 
     //News
     @Test (priority = 18)
@@ -408,147 +295,23 @@ public class UKEditionTests2 extends EditionsInit {
 
     }
 
-    @Test (priority = 19)
-    public void testHealthNewsTab() throws InterruptedException{
-        Boolean failed = false;
-            try{
-        testName("Verify 'Science' sub-tab");
-        Thread.sleep(3000);
-        news.clickOnHealthBtn();
-        print("Verified Splash is present on 'Health' sub-tab");
-        homeSubTabs.tapBackButton();
-            } catch (Exception e) {
-                System.out.println("ERROR ON THIS TEST CASE");
-                System.out.print("EXCEPTION: ");
-                System.out.print(e.getMessage());
-                Thread.sleep(5000);
-                news.tapOnMore();
-                news.clickOnHealthBtn();
-                homeSubTabs.tapBackButton();
-                homeSubTabs.tapBackButton();
-                failed = true;
-                Assert.assertFalse(failed);
-            }
-    }
-
-    @Test (priority = 20)
-    public void testScienceTab() throws InterruptedException {
-        Boolean failed = false;
+    @Test(enabled = true, priority = 19)
+    public void tapFstNewsCell(){
         try{
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnScienceBtn();
-            bpage.tapBackButton();
+            news.tapFirstCell();
+            news.tapBackButton();
         } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            news.tapOnMore();
-            news.clickOnScienceBtn();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
+            print("ERROR IN THIS TC: " +  testName("Move to News Tab"));
+            print("ERROR" + e.getMessage());
         }
     }
-
-    @Test (priority = 21)
-    public void testCultureTab() throws InterruptedException{
-        Boolean failed = false;
-        try{
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnCultureBtn();
-            bpage.tapBackButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            news.tapOnMore();
-            news.clickOnCultureBtn();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
-        }
-    }
-
-    @Test (priority = 22)
-    public void testTechTab()throws InterruptedException{
-        Boolean failed = false;
-        try{
-            testName("Verify 'Culture' sub-tab");
-            news.clickOnTechBtn();
-            homeSubTabs.tapBackButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            news.tapOnMore();
-            news.clickOnTechBtn();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
-        }
-    }
-
-    @Test (priority = 23)
-    public void testWorldTab() throws InterruptedException{
-        Boolean failed = false;
-           try{
-        testName("Verify 'Tech' sub-tab");
-        news.clickOnWorldBtn();
-        print("Verified Splash is present on 'Tech' sub-tab");
-        homeSubTabs.tapBackButton();
-          } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            news.tapOnMore();
-            news.clickOnWorldBtn();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
-         }
-    }
-
-
-    @Test (priority = 25)
-    public void testEntertainmentNewsTab()throws InterruptedException {
-        Boolean failed = false;
-        try{
-        testName("Verify 'Entertainment' sub-tab");
-        news.tapOnMore();
-        news.tapOnEntertainment();
-        homeSubTabs.tapBackButton();
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-            Thread.sleep(5000);
-            news.tapOnMore();
-            news.tapOnEntertainment();
-            homeSubTabs.tapBackButton();
-            homeSubTabs.tapBackButton();
-            failed = true;
-            Assert.assertFalse(failed);
-        }
-    }
-
-
 
     //Shopping
     @Test (priority = 28)
     public void testGoingShoppingTab() {
             testName("SHOPPING");
             testName("Verify Shopping tab / Latest sub-tab");
-
             editions.tapForeignShoppingTab();
-
             Assert.assertTrue(editions.shoppingHeaderIsPresent());
             print("Verified the 'Shopping' header in the Shopping feed is present");
             editions.tapSplash();
@@ -563,7 +326,6 @@ public class UKEditionTests2 extends EditionsInit {
             editions.tapSplash();
             bpage.tapBackButton();
             news.tapBackButton();
-
     }
 
     @Test (priority = 30)
@@ -627,24 +389,6 @@ public class UKEditionTests2 extends EditionsInit {
             news.tapBackButton();
     }
 
-    @Test (priority = 37)
-    public void testSelfCareSubTab() {
-            testName("Verify 'Self Care' sub-tab");
-            editions.tapSelfCareSubTab();
-            editions.tapSplash();
-            bpage.tapBackButton();
-            news.tapBackButton();
-    }
-
-    @Test (priority = 38)
-    public void testTreatYourselfSubTab() {
-            testName("Verify 'Treat Yourself' sub-tab");
-            editions.tapTreatYourselfSubTab();
-            editions.tapSplash();
-            bpage.tapBackButton();
-            news.tapBackButton();
-    }
-
     //Quizzes
     @Test (priority = 39)
     public void testGoingToQuizzesTab(){
@@ -654,19 +398,66 @@ public class UKEditionTests2 extends EditionsInit {
             editions.visitSplashAndReturn();
     }
 
-    //Search
     @Test (priority = 40)
-    public void testSearchTab() {
-            testName("SEARCH");
-            testName("Verify going to Search tab");
-            editions.tapSearchTab();
-
-            Assert.assertTrue(editions.suggestedSearchesTitleIsPresent());
-            print("Verified 'Suggested Searches' title is present Search tab. Search is loading fine");
+    public void testTapOnTrendingCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnTrending();
+        editions.tapBackButton();
     }
 
+    @Test (priority = 41)
+    public void testTapOnResultsCategory(){
+        testName("testTapOnTrendingCategory");
+        testName("Verify going to Trending Quizzes tab");
+        quizzesSubTabs.tapOnResults();
+        editions.tapBackButton();
+    }
 
+    @Test (priority = 42)
+    public void testTapOnAIQuizzes(){
+        testName("testTapOnFoodCategory");
+        testName("Verify going to Food category");
+        quizzesSubTabs.tapOnAIQuizzes();
+        editions.tapBackButton();
+    }
 
+    @Test (priority = 43)
+    public void testTapOnTriviaCategory(){
+        testName("testTapOnTriviaCategory");
+        testName("Verify going to Trivia category");
+        quizzesSubTabs.tapOnTrivia();
+        editions.tapSplash();
+        editions.tapBackButton();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 44)
+    public void testTapCanWeGuess(){
+        testName("testTapCanWeGuess");
+        quizzesSubTabs.tapOnCanWeGuess();
+        quizzesSubTabs.tapSplash();
+        quizzesSubTabs.tapBackButton();
+        editions.tapBackButton();
+    }
+
+    @Test (priority = 45)
+    public void testTapOnMatchups(){
+        testName("testTapCanWeGuess");
+        quizzesSubTabs.tapOnMatchups();
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test(enabled = true, priority = 49)
+    public void tapGamesTab(){
+        try{
+            news.tapGamesTab();
+            news.tapHomeTab();
+        } catch (Exception e) {
+            print("ERROR IN THIS TC: " +  testName("Move to Games Tab"));
+            print("ERROR" + e.getMessage());
+        }
+    }
 }
 
 

@@ -6,6 +6,8 @@ import config.pages.profile.BookmarksPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+
 //3- Continues from RecentlyViewedEmptyTests2
 public class WishlistTests3 extends ProfileInit {
 
@@ -19,31 +21,31 @@ public class WishlistTests3 extends ProfileInit {
     }
 
     @Test(priority = 1)
-    public void testWishlistEmpty() {
+    public void testWishlistEmpty()throws InterruptedException {
         testName("Verify Wishlist empty message");
+        Thread.sleep(3000);
         Assert.assertTrue(wishlist.wishlistEmptyMessageIsPresent());
         print("Verified Empty message is present in Wishlist");
     }
 
     @Test(priority = 2)
-    public void testExploreButton() {
+    public void testExploreButton()throws InterruptedException {
         testName("Verify Explore button");
+        Thread.sleep(3000);
         Assert.assertTrue(wishlist.exploreButtonIsPresent());
         print("Verified 'Explore BuzzFeed Shopping' button is present in Wishlist");
-
         wishlist.tapExploreButton();
-
         Assert.assertTrue(wishlist.shoppingHeaderIsPresent());
         print("Verified Shopping page is displayed");
-
     }
 
     @Test(priority = 3,  dataProvider = "WishList", dataProviderClass = ProfileDataProvider.class)
     public void testAddToWishlist(String data) throws InterruptedException {
         testName("Add a product to the Wishlist");
-     //   wishlist.completeSearch(data);
         driver.get("buzz://jenae_sitzes/best-deals-this-week-5-9-22");
     //        driver.get("buzz://chelseastuart/weekday-deals-10-25-21");
+            wishlist.returnToBFApp();
+            wishlist.returnToBFApp();
             wishlist.returnToBFApp();
             wishlist.returnToBFApp();
     //    wishlist.waitForBpage();
@@ -58,13 +60,11 @@ public class WishlistTests3 extends ProfileInit {
         print("Verified Added to wishlist toast is displayed");
     }
 
-    public Boolean verifyItemsAreAddedToWishlist(){
-      //  wishlist.tapBackButton();
-        bpage.tapBackButton();
-      //  wishlist.tapBackButtonFromSearch();
-        wishlist.tapHomeTab();
-        wishlist.tapProfileButton();
-        wishlist.tapWishlistTab();
+    public Boolean verifyItemsAreAddedToWishlist() {
+       bpage.tapBackButton();
+       wishlist.tapHomeTab();
+       wishlist.tapProfileButton();
+       wishlist.tapWishlistTab();
        return wishlist.verifyItemsAreAdded();
     }
 
@@ -73,20 +73,11 @@ public class WishlistTests3 extends ProfileInit {
     @Test(priority = 4)
     public void testAddedToWishlist() {
         testName("Verify the product added to the Wishlist");
-     verifyItemsAreAddedToWishlist();
-
-      //  Assert.assertTrue(wishlist.multipleSavedProductHeadingIsPresent());
+        verifyItemsAreAddedToWishlist();
         wishlist.multipleSavedProductHeadingIsPresent();
         print("Verified 'Saved product' heading is present in Wishlist");
     }
 
-
- //   @Test(priority = 5)
-    public void testDisclosureIsPresent() {
-        testName("Verify disclosure is present");
-        Assert.assertTrue(wishlist.disclosureIsPresent());
-        print("Verified disclosure is present");
-    }
 
 
     @Test(priority = 6)
@@ -101,8 +92,9 @@ public class WishlistTests3 extends ProfileInit {
     }
 
     @Test(priority = 7)
-    public void testCancelButton() {
+    public void testCancelButton()throws InterruptedException {
         testName("Verify the Cancel button");
+        Thread.sleep(3000);
         wishlist.tapMenuButton();
 
         Assert.assertTrue(wishlist.cancelButtonIsPresent());
@@ -112,10 +104,10 @@ public class WishlistTests3 extends ProfileInit {
     }
 
     public void removeFromWishlist() throws InterruptedException{
-        Thread.sleep(4000);
-        wishlist.tapMenuButton();
-        Thread.sleep(4000);
-        wishlist.tapRemoveFromWishlistButton();
+            Thread.sleep(4000);
+            wishlist.tapMenuButton();
+            Thread.sleep(4000);
+            wishlist.tapRemoveFromWishlistButton();
     }
 
     @Test(priority = 8)
@@ -126,16 +118,15 @@ public class WishlistTests3 extends ProfileInit {
         removeFromWishlist();
             Thread.sleep(2000);
             removeFromWishlist();
-
         print("Verified removed from wishlist toast is displayed");
     }
 
     @Test(priority = 9)
-    public void testWishlistAfterRemoval() {
+    public void testWishlistAfterRemoval()throws InterruptedException{
         testName("Verify the product was removed");
+        Thread.sleep(5000);
         Assert.assertTrue(wishlist.wishlistEmptyMessageIsPresent());
         print("Verified Empty message is present in Wishlist");
-
     }
 
     @Test(priority = 10, dataProvider = "WishList", dataProviderClass = ProfileDataProvider.class)

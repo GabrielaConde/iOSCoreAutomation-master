@@ -1,6 +1,7 @@
 package testModules.quizzes;
 
 import config.initPages.EditionsInit;
+import config.pages.quizzes.QuizzesLatestPage;
 import config.pages.settings.SettingsSetupPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -13,10 +14,16 @@ public class QuizzesLatestTests extends EditionsInit {
   //  @BeforeClass
     public void initProcess() {
         testName("Disabling Dynamic Ads on Bpages");
+        try{
         setup = new SettingsSetupPage();
         quizzesLatestSubTab.tapAllowButton();
         quizzesLatestSubTab.tapAllowButton();
         setup.disableAdExp();
+        setup.turnOnVisualFeedFF();
+        } catch (Exception e) {
+            print("ERROR IN THIS TC: " + testName("initProcess"));
+            print("ERROR" + e.getMessage());
+        }
 
     }
 
@@ -68,9 +75,10 @@ public class QuizzesLatestTests extends EditionsInit {
     }
 
     @Test (priority = 6)
-    public void tapOnMatchups(){
-        quizzesLatestSubTab.tapOnMatchups();
-        quizzesLatestSubTab.tapBackButton();
+    public void tapOnAIQuizzes() {
+        QuizzesLatestPage quizzes = new QuizzesLatestPage();
+            quizzesSubTabs.tapOnAIQuizzes();
+            quizzesLatestSubTab.tapBackButton();
     }
 
     @Test (priority = 7)
@@ -79,7 +87,6 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapSplash();
         quizzesLatestSubTab.tapBackButton();
         quizzesLatestSubTab.tapBackButton();
-
     }
 
     @Test (priority = 8)
@@ -88,17 +95,18 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
     }
 
+
     @Test (priority = 9)
-    public void tapOnFood(){
-        quizzesLatestSubTab.tapOnFood();
+    public void tapOnTrivia(){
+        quizzesLatestSubTab.tapOnTrivia();
         quizzesLatestSubTab.tapSplash();
         quizzesLatestSubTab.tapBackButton();
         quizzesLatestSubTab.tapBackButton();
     }
 
     @Test (priority = 10)
-    public void tapOnTrivia(){
-        quizzesLatestSubTab.tapOnTrivia();
+    public void tapOnCanWeGuess(){
+        quizzesLatestSubTab.tapOnCanWeGuess();
         quizzesLatestSubTab.tapSplash();
         quizzesLatestSubTab.tapBackButton();
         quizzesLatestSubTab.tapBackButton();
@@ -110,14 +118,20 @@ public class QuizzesLatestTests extends EditionsInit {
     }
 
     @Test (priority = 12)
-    public void tapOnCanWeGuess(){
-        quizzesLatestSubTab.tapOnCanWeGuess();
+    public void tapOnFood(){
+        quizzesLatestSubTab.tapOnFood();
         quizzesLatestSubTab.tapSplash();
         quizzesLatestSubTab.tapBackButton();
         quizzesLatestSubTab.tapBackButton();
     }
 
-    @Test (priority = 13)
+        @Test (priority = 13)
+         public void tapOnMatchups(){
+            quizzesLatestSubTab.tapOnMatchups();
+            quizzesLatestSubTab.tapBackButton();
+    }
+
+    @Test (priority = 14)
     public void tapOnDisney(){
         quizzesLatestSubTab.tapOnDisney();
         quizzesLatestSubTab.tapSplash();
@@ -125,7 +139,7 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
     }
 
-    @Test (priority = 14)
+    @Test (priority = 15)
     public void tapOnWhoAreYou(){
         quizzesLatestSubTab.tapOnWhoAreYou();
         quizzesLatestSubTab.tapSplash();
@@ -133,7 +147,7 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
     }
 
-    @Test (priority = 15)
+    @Test (priority = 16)
     public void tapOnLove(){
         quizzesLatestSubTab.tapOnLove();
         quizzesLatestSubTab.tapSplash();
@@ -141,6 +155,8 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
         quizzesLatestSubTab.tapBackButton();
     }
+
+
 
 
     //Quiz Party package

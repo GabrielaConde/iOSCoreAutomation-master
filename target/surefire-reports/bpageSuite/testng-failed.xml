@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [bpageSuite]">
   <test thread-count="5" verbose="0" name="BPage(failed)">
     <classes>
-      <class name="testModules.editions.AustraliaEditionTests">
+      <class name="testModules.bpage.NatBpageTests1">
         <methods>
-          <include name="failedTest"/>
-          <include name="onboarding"/>
+          <include name="failTest"/>
           <include name="tearDown"/>
-          <include name="initializePages"/>
           <include name="setUpTest"/>
+          <include name="initializePages"/>
+          <include name="initProcess"/>
         </methods>
-      </class> <!-- testModules.editions.AustraliaEditionTests -->
+      </class> <!-- testModules.bpage.NatBpageTests1 -->
     </classes>
   </test> <!-- BPage(failed) -->
 </suite> <!-- Failed suite [bpageSuite] -->

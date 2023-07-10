@@ -27,8 +27,8 @@ public class Base {
             String hub = "https://gabriela.conde-moreau:mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE@mobile-hub.lambdatest.com/wd/hub";
 
             //LOCAL
-                caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "15.5");
-                caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 13");
+                caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "16.4");
+                caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14 Pro");
                 caps.setCapability("automationName", "XCUITest");
                 //--Experiments
                 caps.setCapability("fullReset", false);

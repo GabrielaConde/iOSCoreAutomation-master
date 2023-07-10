@@ -30,7 +30,8 @@ public class ScrollsPage extends Base {
         boolean isFoundTheElement = driver.findElements(locator).size() > 0;
        // boolean elementVisible = driver.findElement(locator).isDisplayed();
         while ( isFoundTheElement == false && scrollCount<= 4) {
-            scrollDown90_70();
+       //     scrollDown90_70();
+            scrollDown90_50();
             scrollCount ++;
             isFoundTheElement = driver.findElements(locator).size() > 0;
         }

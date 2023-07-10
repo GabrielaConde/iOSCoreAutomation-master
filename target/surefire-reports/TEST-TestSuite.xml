@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="626.047" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="621.945" tests="99" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -17,7 +17,7 @@
     <property name="user.country" value="AR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire/surefirebooter166624243393682538.jar /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire 2022-11-29T16-59-11_423-jvmRun1 surefire8743834181618863150tmp surefire_0320412173180527253tmp"/>
+    <property name="sun.java.command" value="/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire/surefirebooter5813712816527976827.jar /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire 2023-06-15T21-27-58_727-jvmRun1 surefire5803866151859342575tmp surefire_07003233528936884544tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="surefire.test.class.path" value="/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/test-classes:/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/classes:/Users/gabrielaconde/.m2/repository/io/appium/java-client/7.0.0/java-client-7.0.0.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/gabrielaconde/.m2/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar:/Users/gabrielaconde/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.jar:/Users/gabrielaconde/.m2/repository/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar:/Users/gabrielaconde/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/gabrielaconde/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/gabrielaconde/.m2/repository/cglib/cglib/3.2.8/cglib-3.2.8.jar:/Users/gabrielaconde/.m2/repository/org/ow2/asm/asm/6.2.1/asm-6.2.1.jar:/Users/gabrielaconde/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/gabrielaconde/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/gabrielaconde/.m2/repository/commons-validator/commons-validator/1.6/commons-validator-1.6.jar:/Users/gabrielaconde/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar:/Users/gabrielaconde/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/gabrielaconde/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/gabrielaconde/.m2/repository/org/apache/commons/commons-lang3/3.8/commons-lang3-3.8.jar:/Users/gabrielaconde/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-context/5.1.0.RELEASE/spring-context-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-aop/5.1.0.RELEASE/spring-aop-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-beans/5.1.0.RELEASE/spring-beans-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-core/5.1.0.RELEASE/spring-core-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-jcl/5.1.0.RELEASE/spring-jcl-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/springframework/spring-expression/5.1.0.RELEASE/spring-expression-5.1.0.RELEASE.jar:/Users/gabrielaconde/.m2/repository/org/aspectj/aspectjweaver/1.9.1/aspectjweaver-1.9.1.jar:/Users/gabrielaconde/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/gabrielaconde/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/gabrielaconde/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/gabrielaconde/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/gabrielaconde/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/gabrielaconde/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/gabrielaconde/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/gabrielaconde/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/gabrielaconde/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/gabrielaconde/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/gabrielaconde/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/gabrielaconde/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/gabrielaconde/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/gabrielaconde/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/gabrielaconde/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar:/Users/gabrielaconde/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,14 +31,14 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire/surefirebooter166624243393682538.jar"/>
+    <property name="surefire.real.class.path" value="/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/target/surefire/surefirebooter5813712816527976827.jar"/>
     <property name="sun.boot.class.path" value="/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/resources.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/rt.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/sunrsasign.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jsse.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jce.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/charsets.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/jfr.jar:/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="1.8.0_322-b06"/>
     <property name="user.name" value="gabrielaconde"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="12.6"/>
+    <property name="os.version" value="13.3.1"/>
     <property name="java.endorsed.dirs" value="/Users/gabrielaconde/Library/Java/JavaVirtualMachines/corretto-1.8.0_322/Contents/Home/jre/lib/endorsed"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
@@ -63,26 +63,103 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="argLine" value="-DTest_NG_XML=allSuites.xml"/>
   </properties>
-  <testcase name="testAllowButton" classname="testModules.home.HomeLatestNewNavTests" time="16.336"/>
-  <testcase name="disableAdExp" classname="testModules.home.HomeLatestNewNavTests" time="134.251"/>
-  <testcase name="verifyBuzzFeedLogo" classname="testModules.home.HomeLatestNewNavTests" time="1.062"/>
-  <testcase name="tapSplash" classname="testModules.home.HomeLatestNewNavTests" time="39.721"/>
-  <testcase name="tapFirstBpage" classname="testModules.home.HomeLatestNewNavTests" time="15.83"/>
-  <testcase name="tapItemsShoppingPackage" classname="testModules.home.HomeLatestNewNavTests" time="62.951"/>
-  <testcase name="openTrendingModal" classname="testModules.home.HomeLatestNewNavTests" time="60.257"/>
-  <testcase name="tapOnTrending" classname="testModules.home.HomeLatestNewNavTests" time="13.252"/>
-  <testcase name="tapOnCelebrity" classname="testModules.home.HomeLatestNewNavTests" time="18.272"/>
-  <testcase name="tapOnFood" classname="testModules.home.HomeLatestNewNavTests" time="13.835"/>
-  <testcase name="tapOnTVAndMovies" classname="testModules.home.HomeLatestNewNavTests" time="18.622"/>
-  <testcase name="tapOnMore1" classname="testModules.home.HomeLatestNewNavTests" time="10.992"/>
-  <testcase name="tapOnCoronavirus" classname="testModules.home.HomeLatestNewNavTests" time="13.048"/>
-  <testcase name="tapOnVideos" classname="testModules.home.HomeLatestNewNavTests" time="3.62"/>
-  <testcase name="tapOnAnimals" classname="testModules.home.HomeLatestNewNavTests" time="26.567"/>
-  <testcase name="tapOnBooks" classname="testModules.home.HomeLatestNewNavTests" time="8.244"/>
-  <testcase name="tapOnComunity" classname="testModules.home.HomeLatestNewNavTests" time="8.523"/>
-  <testcase name="tapOnHealth" classname="testModules.home.HomeLatestNewNavTests" time="19.206"/>
-  <testcase name="tapOnLGBTQ" classname="testModules.home.HomeLatestNewNavTests" time="8.098"/>
-  <testcase name="tapOnNifty" classname="testModules.home.HomeLatestNewNavTests" time="8.256"/>
-  <testcase name="tapOnParents" classname="testModules.home.HomeLatestNewNavTests" time="8.446"/>
-  <testcase name="tapOnRewind" classname="testModules.home.HomeLatestNewNavTests" time="8.59"/>
+  <testcase name="testSearchInstantQuiz" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="17.213"/>
+  <testcase name="testQuizTitleIsPresentAtBeginning" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="3.998"/>
+  <testcase name="testMainImageIsPresent" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="0.819"/>
+  <testcase name="testSubTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="0.32"/>
+  <testcase name="testAuthorInfoIsPresent" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="0.334"/>
+  <testcase name="testPlayNowButton" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="1.708"/>
+  <testcase name="testChoicesAreLoading" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="0.84"/>
+  <testcase name="testTapChecklistChoice" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="5.768"/>
+  <testcase name="testTapShowMeResults" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="1.802"/>
+  <testcase name="testQuizTitleResultScreenIsPresent" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="4.595"/>
+  <testcase name="testYouCheckedTextResultIsPresent" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="3.184"/>
+  <testcase name="verifyRetakeQuiz" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="3.88"/>
+  <testcase name="testResultsSubTab" classname="testModules.quizzes.quizzesTypes.QuizChecklistTests" time="6.941"/>
+  <testcase name="testSearchInstantQuiz" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="16.042"/>
+  <testcase name="testSubTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.466"/>
+  <testcase name="testAuthorInfoIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.398"/>
+  <testcase name="testPlayWithFriendsButtonIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.894"/>
+  <testcase name="testPlayNowButton" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.704"/>
+  <testcase name="testQuestion1Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.241"/>
+  <testcase name="testQuestion1" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.723"/>
+  <testcase name="testQuestion2Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.96"/>
+  <testcase name="testQuestion2" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.564"/>
+  <testcase name="testQuestion3Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.842"/>
+  <testcase name="testQuestion3" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.642"/>
+  <testcase name="testQuestion4Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.83"/>
+  <testcase name="testQuestion4" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.578"/>
+  <testcase name="testQuestion5Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.898"/>
+  <testcase name="testQuestion5" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.624"/>
+  <testcase name="testQuestion6Countdown" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.984"/>
+  <testcase name="testQuestion6" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="2.043"/>
+  <testcase name="testQuizTitleResultScreenIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="0.384"/>
+  <testcase name="testDescriptionsResultScreenArePresent" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="1.098"/>
+  <testcase name="verifyRetakeQuiz" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="5.624"/>
+  <testcase name="verifyPrevButton" classname="testModules.quizzes.quizzesTypes.QuizPersonalityTests" time="10.106"/>
+  <testcase name="testSearchPredetQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="17.607"/>
+  <testcase name="testSubTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.539"/>
+  <testcase name="testAuthorInfoIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.529"/>
+  <testcase name="testPlayWithFriendsButton" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.957"/>
+  <testcase name="testPlayNowButton" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="2.424"/>
+  <testcase name="testProgressBarFirstQ" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.982"/>
+  <testcase name="testSendFirstAnswer" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="1.342"/>
+  <testcase name="testCorrectTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.918"/>
+  <testcase name="testFirstAnswerTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.399"/>
+  <testcase name="testNextButtonGoodAnswerIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.397"/>
+  <testcase name="testTapNextGoodAnswerButton" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.9"/>
+  <testcase name="testProgressBarSecondQ" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.945"/>
+  <testcase name="testSendSecondAnswer" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="1.632"/>
+  <testcase name="testWrongTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.837"/>
+  <testcase name="testSecondAnswerTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.395"/>
+  <testcase name="testNextButtonWrongAnswerIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.383"/>
+  <testcase name="testTapNextWrongAnswerButton" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="0.91"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.645"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.316"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.349"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.469"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.317"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.302"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.412"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.334"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.35"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.714"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.336"/>
+  <testcase name="testCompletingQuiz" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="4.35"/>
+  <testcase name="testQuizTitleResultScreenIsPresent" classname="testModules.quizzes.quizzesTypes.QuizPredetTests" time="6.759"/>
+  <testcase name="testSearchTriviaQuiz" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="18.502"/>
+  <testcase name="testQuizTitleIsPresentAtBeginning" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="140.692"/>
+  <testcase name="testSubTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.39"/>
+  <testcase name="testAuthorInfoIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.389"/>
+  <testcase name="testPlayWithFriendsButton" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.751"/>
+  <testcase name="testPlayNowButton" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="1.485"/>
+  <testcase name="testProgressBar1" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.69"/>
+  <testcase name="testSendFirstAnswer" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="4.008"/>
+  <testcase name="testCorrectTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.85"/>
+  <testcase name="testFirstAnswerTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.404"/>
+  <testcase name="testNextButtonIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.362"/>
+  <testcase name="testTapNextButton" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.882"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.348"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.518"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.433"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.699"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.869"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.516"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.885"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.504"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.695"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.503"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.561"/>
+  <testcase name="testIntermediateAnswers" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="5.716"/>
+  <testcase name="testProgressBar14" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.231"/>
+  <testcase name="testSendLatestAnswer" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="3.206"/>
+  <testcase name="testIGiveUpButtonIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.462"/>
+  <testcase name="testTapIGiveUpButton" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="1.248"/>
+  <testcase name="testWrongTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.874"/>
+  <testcase name="testLatestAnswerTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="1.445"/>
+  <testcase name="testQuizTitleResultScreenIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.165"/>
+  <testcase name="testScoreTextResultScreenIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.15"/>
+  <testcase name="testResultsTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.15"/>
+  <testcase name="testResultsDescriptionTextIsPresent" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="0.299"/>
+  <testcase name="testResultsSubTab" classname="testModules.quizzes.quizzesTypes.QuizTriviaTests" time="146.381"/>
 </testsuite>

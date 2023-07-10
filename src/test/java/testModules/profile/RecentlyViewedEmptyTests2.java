@@ -12,15 +12,13 @@ public class RecentlyViewedEmptyTests2 extends ProfileInit {
         testName("Verify Recently Viewed tab");
         Assert.assertTrue(viewed.recentlyViewedIsPresent());
         print("Verified Recently Viewed is present in the Profile screen");
-
         viewed.tapRecentlyViewedTab();
     }
 
     @Test(priority = 1)
     public void testRecentlyViewedEmpty() {
         testName("Verify Recently Viewed empty message");
-
-        Assert.assertTrue(viewed.recentlyViewedEmptyMessageIsPresent());
+         Assert.assertTrue(viewed.recentlyViewedEmptyMessageIsPresent());
         print("Verified Empty message is present in Recently Viewed");
     }
 }

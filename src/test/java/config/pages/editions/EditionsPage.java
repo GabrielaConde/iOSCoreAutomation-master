@@ -36,7 +36,7 @@ public class EditionsPage extends CommonPage {
     private final By buzzfeedLogoJapanEdition = MobileBy.AccessibilityId("ホーム");
     private final By nowHomeJapanSubTab = MobileBy.AccessibilityId("新着記事");
     private final By buzzHomeJapanSubTab = MobileBy.AccessibilityId("人気の記事");
-    private final By homeHomeJapanSubTab = MobileBy.AccessibilityId("ホームページ");
+    private final By homeHomeJapanSubTab = MobileBy.AccessibilityId("home");
     private final By lolHomeJapanSubTab = MobileBy.AccessibilityId("LOL");
     private final By kawaiiHomeJapanSubTab = MobileBy.AccessibilityId("kawaii");
     private final By winHomeJapanSubTab = MobileBy.AccessibilityId("Win");

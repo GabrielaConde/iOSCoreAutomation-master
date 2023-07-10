@@ -10,7 +10,6 @@ public class SuggestedSearchesTests3 extends SearchInit {
     @Test()
     public void testSuggestedSearches() {
         testName("Verify the Suggested Searches section");
-
         Assert.assertTrue(suggested.suggestedSearchesTitleIsPresent());
         print("Verified Suggested Searches title is present in the Search screen");
 
@@ -21,18 +20,18 @@ public class SuggestedSearchesTests3 extends SearchInit {
     }
 
     @Test(priority = 1)
-    public void testSearchResults() {
+    public void testSearchResults()throws InterruptedException {
         testName("Verify the Search results from a Suggested Search");
-
+        Thread.sleep(3000);
         Assert.assertTrue(search.searchResultIsPresent());
         print("Verified Search result is displayed");
-
         recent.tapSearchResult();
     }
 
     @Test(priority = 2)
-    public void testRecentSearches() {
+    public void testRecentSearches()throws InterruptedException {
         testName("Verify the Suggested Search is displayed now on Recent Searches");
+        Thread.sleep(3000);
         recent.tapBackButtonFromSearch();
         recent.tapCancelButton();
 
@@ -53,9 +52,11 @@ public class SuggestedSearchesTests3 extends SearchInit {
     }
 
     @Test(priority = 7)
-    public void clickOnAmazonPost(){
+    public void clickOnAmazonPost()throws InterruptedException{
             testName("Validate Amazon post");
+            Thread.sleep(3000);
             shoppingPage.tapOnProductCell();
+            Thread.sleep(3000);
             shoppingPage.returnToBFApp();
     }
 

@@ -12,10 +12,13 @@ public class QuizChecklistTests extends EditionsInit {
     protected SettingsSetupPage setup;
 
     @BeforeClass
-    public void init(){
+    public void init()throws InterruptedException{
         testName("Disabling Dynamic Ads on Bpages");
         setup = new SettingsSetupPage();
         quizzesLatestSubTab.tapAllowButton();
+        Thread.sleep(2000);
+        quizzesLatestSubTab.tapOnAcceptAllCookiesBtn();
+        Thread.sleep(2000);
         quizzesLatestSubTab.tapAllowButton();
 
     }
@@ -24,6 +27,7 @@ public class QuizChecklistTests extends EditionsInit {
     @Test(dataProvider = "checklist", dataProviderClass = QuizzesTypeDataProvider.class)
     public void testSearchInstantQuiz(String data) throws InterruptedException {
         print("-------------------STARTING TO TEST CHECKLIST QUIZ-------------------");
+        Thread.sleep(3000);
         testName("Search personality Quiz");
         checklist.tapOnSearchIcon();
         checklist.completeSearch(data);
@@ -32,8 +36,9 @@ public class QuizChecklistTests extends EditionsInit {
 
     //First Screen
     @Test(priority = 1)
-    public void testQuizTitleIsPresentAtBeginning() {
+    public void testQuizTitleIsPresentAtBeginning()throws InterruptedException {
         testName("Verify Quiz Title is present");
+        Thread.sleep(3000);
         Assert.assertEquals(checklist.verifyQuizTitleIsPresent(), "How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?");
         print("Verified Quiz title: 'How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?");
 
@@ -44,6 +49,7 @@ public class QuizChecklistTests extends EditionsInit {
         testName("Verify Main Image is Present");
         Assert.assertTrue(checklist.verifyMainImageIsPresent());
         print("Verified Main Image is present on First screen");
+
     }
 
     @Test(priority = 3)
@@ -66,7 +72,6 @@ public class QuizChecklistTests extends EditionsInit {
         Assert.assertTrue(checklist.verifyPlayNowButtonIsPresent());
         print("Verified 'Play Now' button is present' on First screen");
         checklist.tapPlayNowButton();
-
     }
 
     //Completing the Quiz
@@ -92,19 +97,19 @@ public class QuizChecklistTests extends EditionsInit {
 
     //Results Screen
     @Test(priority = 9)
-    public void testQuizTitleResultScreenIsPresent() {
+    public void testQuizTitleResultScreenIsPresent() throws InterruptedException {
         testName("Verify Quiz title on Results screen");
+        Thread.sleep(4000);
         Assert.assertTrue(checklist.verifyQuizTitleResultsIsPresent());
         print("Verified Quiz title is present on Results screen");
     }
 
     @Test(priority = 10)
-    public void testYouCheckedTextResultIsPresent() {
+    public void testYouCheckedTextResultIsPresent() throws InterruptedException {
         testName("Verify 'You checked...' text is present on Results screen");
+        Thread.sleep(2000);
         Assert.assertTrue(checklist.verifyYouCheckedIsPresent());
         print("'Verified You checked...' text is present on Results screen");
-      //  checklist.tapBackButton();
-   //     checklist.tapBackButtonFromSearch();
     }
 
     @Test(priority = 11)
@@ -123,6 +128,6 @@ public class QuizChecklistTests extends EditionsInit {
         testName("Verify the quiz is present on Results Sub-tab");
         Assert.assertEquals(checklist.verifyQuizOnResultsPersonalityTab(),"How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?");
         print("Verified the quiz is present on Results Sub-Tab");
-
+        checklist.tapQuizzesBack();
     }
 }
