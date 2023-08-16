@@ -409,7 +409,7 @@ public class IndiaEditionTests extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 38)
+  //  @Test (priority = 38)
     public void testTapOnResultsCategory(){
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");

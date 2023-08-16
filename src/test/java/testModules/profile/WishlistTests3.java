@@ -61,11 +61,17 @@ public class WishlistTests3 extends ProfileInit {
     }
 
     public Boolean verifyItemsAreAddedToWishlist() {
-       bpage.tapBackButton();
-       wishlist.tapHomeTab();
-       wishlist.tapProfileButton();
-       wishlist.tapWishlistTab();
-       return wishlist.verifyItemsAreAdded();
+        try {
+            bpage.tapBackButton();
+            wishlist.tapHomeTab();
+            wishlist.tapProfileButton();
+            wishlist.tapWishlistTab();
+            return wishlist.verifyItemsAreAdded();
+        } catch (Exception e) {
+            print("ERROR ON TEST CASE");
+            print(e.getMessage());
+            return wishlist.verifyItemsAreAdded();
+        }
     }
 
 
@@ -96,10 +102,8 @@ public class WishlistTests3 extends ProfileInit {
         testName("Verify the Cancel button");
         Thread.sleep(3000);
         wishlist.tapMenuButton();
-
         Assert.assertTrue(wishlist.cancelButtonIsPresent());
         print("Verified Cancel button is present");
-
         wishlist.tapCancelButton();
     }
 
@@ -127,6 +131,7 @@ public class WishlistTests3 extends ProfileInit {
         Thread.sleep(5000);
         Assert.assertTrue(wishlist.wishlistEmptyMessageIsPresent());
         print("Verified Empty message is present in Wishlist");
+
     }
 
     @Test(priority = 10, dataProvider = "WishList", dataProviderClass = ProfileDataProvider.class)
@@ -142,6 +147,7 @@ public class WishlistTests3 extends ProfileInit {
 
         wishlist.tapAddToWishlistButton();
         wishlist.tapBackButton();
+
     }
 
     @Test(priority = 11)

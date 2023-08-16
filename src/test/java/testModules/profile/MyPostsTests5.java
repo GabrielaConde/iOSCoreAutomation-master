@@ -15,9 +15,7 @@ public class MyPostsTests5 extends ProfileInit {
         scroll.swipeRight();
         Assert.assertTrue(posts.myPostsIsPresent());
         print("Verified My Posts is present in the Profile screen");
-
         posts.tapMyPosts();
-
         Assert.assertTrue(posts.myPostsEmptyMessageIsPresent());
         print("Verified Empty message is present in My Posts");
 

@@ -24,9 +24,11 @@ public class NatBpageTests1 extends BpageInit {
         String testName = "Init Process";
             disableAdExp = new SettingsSetupPage();
             nativeBpage.tapAllowButton();
-            nativeBpage.tapOnAcceptAllCookiesBtn();
+            Thread.sleep(3000);
             nativeBpage.tapAllowButton();
             Thread.sleep(3000);
+            nativeBpage.tapOnAcceptAllCookiesBtn();
+            Thread.sleep(2000);
             nativeBpage.closeGoToGamesScreen();
     }
 
@@ -34,11 +36,7 @@ public class NatBpageTests1 extends BpageInit {
     public void disableAdExp() throws InterruptedException {
         testName("Disabling Dynamic Ads on Bpages");
             disableAdExp.disableAdExp();
-            Thread.sleep(3000);
-            nativeBpage.tapAllowButton();
             Thread.sleep(2000);
-            nativeBpage.tapAllowButton();
-            Thread.sleep(4000);
             nativeBpage.tapCloseButton();
             nativeBpage.closeGoToGamesScreen();
 
@@ -97,7 +95,6 @@ public class NatBpageTests1 extends BpageInit {
 
     @Test(priority = 8)
     public void verifyShareButtonIsPresentOnMV() {
-
         testName("Verify 'Share' button is present on MV");
         Assert.assertTrue(nativeBpage.shareButtonIsPresent());
         print("Verified 'Share' button is present on MV");
@@ -152,7 +149,6 @@ public class NatBpageTests1 extends BpageInit {
         Thread.sleep(2000);
         nativeBpage.tapCloseButton();
         print("Verified tapping 'Share' button is opening the sheet on Bpage");
-
     }
 
 
@@ -173,7 +169,6 @@ public class NatBpageTests1 extends BpageInit {
         testName("Verify bpage from 'More In This' section is present'");
         Assert.assertTrue(nativeBpage.nativeMoreOnThisBpageIsPresent());
         print("Verified 'More On This' Bpage is present");
-
     }
 
     @Test(priority = 20)
@@ -268,7 +263,4 @@ public class NatBpageTests1 extends BpageInit {
         nativeBpage.tapBackButton();
         nativeBpage.tapBackButton();
     }
-
-
-
 }

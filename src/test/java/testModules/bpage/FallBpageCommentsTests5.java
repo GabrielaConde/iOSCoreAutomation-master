@@ -36,15 +36,8 @@ public class FallBpageCommentsTests5 extends BpageInit {
           fallbackBpage.tapOnCommentsButton();
       //  fallbackComments.scrollToReadCommentsOnFallBpage();
 
-        try {
            // Assert.assertTrue(fallbackComments.readCommentsIsPresent());
             print("Verified 'Read Comments' button is present on Bpage");
-        }catch (RuntimeException exception){
-            scroll.scrollDown2Times();
-            Assert.assertTrue(fallbackComments.readCommentsIsPresent());
-            print("Verified 'Read Comments' button is present on Bpage");
-        }
-
     }
 
   //  @Test(priority = 2)

@@ -272,5 +272,10 @@ public class NewsLatestNewNavTests extends EditionsInit {
         }
     }
 
+    @Test(priority =19)
+    public void testFailed(){
+        Assert.assertTrue(false);
+    }
+
 
 }

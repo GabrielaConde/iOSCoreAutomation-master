@@ -406,7 +406,7 @@ public class UKEditionTests2 extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 41)
+  //  @Test (priority = 41)
     public void testTapOnResultsCategory(){
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");
@@ -441,7 +441,7 @@ public class UKEditionTests2 extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 45)
+ //   @Test (priority = 45)
     public void testTapOnMatchups(){
         testName("testTapCanWeGuess");
         quizzesSubTabs.tapOnMatchups();

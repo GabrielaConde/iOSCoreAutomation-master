@@ -7,15 +7,8 @@
         <methods>
           <include name="openTrendingModal"/>
           <include name="validateTrendingPackageTitleIsDisplayed"/>
-          <include name="validateGiftGuideSplashLoads"/>
-          <include name="testFail"/>
-          <include name="validateGiftGuideTitle"/>
-          <include name="clickOnAmazonPost"/>
-          <include name="testShoppingTab"/>
-          <include name="validateGiftGuideCTILink"/>
-          <include name="validateTapOnVideos"/>
+          <include name="testShopNowButton"/>
           <include name="tearDown"/>
-          <include name="validateFeatureStoriesTitle"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
         </methods>

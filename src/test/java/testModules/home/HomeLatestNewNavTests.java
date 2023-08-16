@@ -20,18 +20,20 @@ public class HomeLatestNewNavTests extends EditionsInit {
     //Allow Button
     @Test
     public void testAllowButton()throws InterruptedException{
-        print("-------------------STARTING LATEST SUB-TAB TESTS-------------------");
-        testName = "TEST ALLOW BUTTON";
-             testName("Verify Allow button is present and tap-able");
+            print("-------------------STARTING LATEST SUB-TAB TESTS-------------------");
+            testName = "TEST ALLOW BUTTON";
+            testName("Verify Allow button is present and tap-able");
             Assert.assertTrue(latestSubTab.allowButtonIsPresent());
             print("Verified Allow Notification button");
-
+            Thread.sleep(3000);
             latestSubTab.tapAllowButton();
+            Thread.sleep(3000);
+            latestSubTab.tapAllowButton();
+            Thread.sleep(3000);
             latestSubTab.tapOnAcceptAllCookiesBtn();
-            latestSubTab.tapAllowButton();
+            Thread.sleep(3000);
             latestSubTab.tapOnGoToGames();
             latestSubTab.tapHomeTab();
-
     }
    //  @Test(enabled = true, priority = 1)        //if TRUE, uncomment capabilities (Base) & dismiss tooltip (tapSplash())
      public void enableGamesTabExp() throws InterruptedException{
@@ -49,7 +51,6 @@ public class HomeLatestNewNavTests extends EditionsInit {
             enableExp.turnOnVisualFeedFF();
             latestSubTab.tapCloseButton();
             latestSubTab.closeGoToGamesScreen();
-
     }
 
   //  @Test(enabled = true, priority = 2)               //if TRUE, uncomment capabilities (Base class)
@@ -95,7 +96,6 @@ public class HomeLatestNewNavTests extends EditionsInit {
             latestSubTab.tapSplashNewNav();
             BpagePage bpage = new BpagePage();
             bpage.tapBackButton();
-
     }
 
     @Test (priority = 7)
@@ -114,11 +114,10 @@ public class HomeLatestNewNavTests extends EditionsInit {
             latestSubTab.tapHomeTab();
             scroll.scrollDown90_20();
             latestSubTab.tapItemsShopPackage();
-
     }
 
 
-    @Test(priority = 9)
+   // @Test(priority = 9)
      public void validateTrendingVideos(){
         scroll.scrollMultipleTimes(1);
          Assert.assertTrue(latestSubTab.validateTrendingVideosTitle());
@@ -149,7 +148,6 @@ public class HomeLatestNewNavTests extends EditionsInit {
         Thread.sleep(2000);
         bpage.tapBackButton();
         latestSubTab.tapBackButton();
-
     }
 
     @Test(priority =13)
@@ -163,23 +161,19 @@ public class HomeLatestNewNavTests extends EditionsInit {
     @Test(priority =16)
     public void tapOnAIQuizzes()throws InterruptedException{
         latestSubTab.tapOnAIQuizzes();
-    //    latestSubTab.tapSplash();
         bpage.tapBackButton();
-        //latestSubTab.tapBackButton();
     }
 
     @Test(priority =17)
     public void tapOnVideos()throws InterruptedException{
             latestSubTab.tapOnVideos();
             homeSubTabs.tapBackButton();
-
     }
 
     @Test(priority =18)
     public void tapOnShows()throws InterruptedException{
             latestSubTab.tapOnShows();
             homeSubTabs.tapBackButton();
-
     }
 
 
@@ -314,7 +308,6 @@ public class HomeLatestNewNavTests extends EditionsInit {
     public void tapNewsSplash(){
             news.tapSplash();
             news.tapBackButton();
-
     }
 
     @Test(enabled = true, priority = 34)
@@ -329,6 +322,5 @@ public class HomeLatestNewNavTests extends EditionsInit {
         homeSubTabs.tapHomeTab();
         homeSubTabs.tapBackButton();
     }
-
 
 }

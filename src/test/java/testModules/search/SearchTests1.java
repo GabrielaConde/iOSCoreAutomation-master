@@ -11,9 +11,11 @@ public class SearchTests1 extends SearchInit {
     public void testSearchTab() throws InterruptedException{
         testName("Verify the Search Tab");
         search.tapAllowButton();
-        search.tapOnAcceptAllCookiesBtn();
+        Thread.sleep(3000);
         search.tapAllowButton();
         Thread.sleep(3000);
+        search.tapOnAcceptAllCookiesBtn();
+        Thread.sleep(2000);
         search.tapSearchTab();
         print("------------------------------------------------------");
     }

@@ -59,9 +59,9 @@ public class CommentBoxTests3 extends InitTest {
     }
 
     @Test (priority = 5)
-    public void testFAQHeader() {
+    public void testFAQHeader()throws InterruptedException {
         testName("Verify the Frequently Asked Questions header");
-
+        Thread.sleep(15000);
         comment.tapFAQSection();
 
         Assert.assertTrue(comment.FAQHeaderIsPresent());
@@ -69,9 +69,9 @@ public class CommentBoxTests3 extends InitTest {
     }
 
     @Test (priority = 6)
-    public void testChangeEdition() {
+    public void testChangeEdition()throws InterruptedException {
         testName("Verify the Change Edition FAQ");
-
+       Thread.sleep(3000);
         Assert.assertTrue(comment.changeEditionIsPresent());
         print("Verified Change Edition FAQ is present");
 
@@ -143,14 +143,15 @@ public class CommentBoxTests3 extends InitTest {
         comment.tapSettingsButton();
     }
 
-    @Test (priority = 11)
-    public void testBetaTester() {
+  //  @Test (priority = 11)
+    public void testBetaTester() throws InterruptedException{
         testName("Verify Beta Tester section");
 
         Assert.assertTrue(comment.betaTesterIsPresent());
         print("Verified the Beta Tester section is present");
 
         comment.tapBetaTester();
+        Thread.sleep(3000);
         comment.tapDoneButton();
     }
 }

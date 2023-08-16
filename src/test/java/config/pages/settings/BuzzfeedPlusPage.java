@@ -8,8 +8,10 @@ public class BuzzfeedPlusPage extends CommonPage {
 
     //Catching elements
     private final By closeSubsScreen = By.xpath("(//XCUIElementTypeButton[@name=\"Close\"])[2]");
-    private final By settingsHeader = MobileBy.AccessibilityId("Settings");
-    private final By buzzfeedPlusTitle = MobileBy.AccessibilityId("BUZZFEED+");
+  //  private final By settingsHeader = MobileBy.AccessibilityId("Settings");
+    private final By settingsHeader  = By.xpath("//XCUIElementTypeStaticText[@name=\"Settings\"]");
+    private final By buzzfeedPlusTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"BUZZFEED+\"]");
+  //  private final By buzzfeedPlusTitle = MobileBy.AccessibilityId("BUZZFEED+");
     private final By subscribeSection = MobileBy.AccessibilityId("Subscribe to BuzzFeed+, Get exclusive app benefits: An ad-free experience, custom app icons, and customizable tabs.");
     private final By subscribeHeader = MobileBy.AccessibilityId("Subscribe to BuzzFeed+");
     private final By appIcon = MobileBy.AccessibilityId("App Icon");

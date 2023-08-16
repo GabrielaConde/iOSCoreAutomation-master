@@ -7,7 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitersPage extends Base {
 
-    protected static WebDriverWait waiter = new WebDriverWait(driver, 140);
+    //140
+    protected static WebDriverWait waiter = new WebDriverWait(driver, 60);
 
     //Method
     public static Boolean waitForElement(By data) {

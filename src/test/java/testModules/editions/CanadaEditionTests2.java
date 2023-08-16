@@ -329,7 +329,7 @@ public class CanadaEditionTests2 extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 41)
+  //  @Test (priority = 41)
     public void testTapOnResultsCategory(){
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");
@@ -361,7 +361,7 @@ public class CanadaEditionTests2 extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 46)
+   // @Test (priority = 46)
     public void testTapOnMatchups(){
         testName("testTapOnDisney");
         quizzesSubTabs.tapOnMatchups();

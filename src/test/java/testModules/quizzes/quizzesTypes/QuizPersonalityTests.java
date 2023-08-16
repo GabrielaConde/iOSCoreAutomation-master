@@ -2,10 +2,25 @@ package testModules.quizzes.quizzesTypes;
 
 import config.dataProvider.QuizzesTypeDataProvider;
 import config.initPages.EditionsInit;
+import config.pages.settings.SettingsSetupPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class QuizPersonalityTests extends EditionsInit {
+    protected SettingsSetupPage setup;
+
+    @BeforeClass
+    public void init()throws InterruptedException{
+        testName("Disabling Dynamic Ads on Bpages");
+        setup = new SettingsSetupPage();
+        quizzesLatestSubTab.tapAllowButton();
+        Thread.sleep(2000);
+        quizzesLatestSubTab.tapAllowButton();
+        Thread.sleep(2000);
+     //   quizzesLatestSubTab.tapOnAcceptAllCookiesBtn();
+     //   Thread.sleep(2000);
+    }
 
     //Search Quiz
     @Test(dataProvider = "personality", dataProviderClass = QuizzesTypeDataProvider.class)
@@ -165,7 +180,6 @@ public class QuizPersonalityTests extends EditionsInit {
         personality.tapOnPrevBtn();
         Assert.assertEquals(personality.progressBar(), "1 of 6");
         personality.tapBackButton();
-
     }
 
     //Results sub-tab

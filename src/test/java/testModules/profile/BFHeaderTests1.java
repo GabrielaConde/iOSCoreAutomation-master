@@ -28,7 +28,6 @@ public class BFHeaderTests1 extends ProfileInit {
         testName("Verify Edit Display Name option");
          Assert.assertTrue(header.editDisplayNameButtonIsPresent());
         print("Verified Edit Display Name option is present");
-
         header.tapEditDisplayNameButton();
     }
 
@@ -37,7 +36,6 @@ public class BFHeaderTests1 extends ProfileInit {
         testName("Change Edit Display Name");
         Assert.assertTrue(header.editDisplayNameModalIsPresent());
         print("Verified Edit Display Name modal is present");
-
         header.enterDisplayName(data);
         header.tapDoneButton();
     }
@@ -47,6 +45,7 @@ public class BFHeaderTests1 extends ProfileInit {
         testName("Verify the new Display Name");
        header.newDisplayNameIsPresent();
         print("Verified the new Display Name is present");
+
     }
 
     @Test(priority = 5, dataProvider = "BFOriginalProfileName", dataProviderClass = ProfileDataProvider.class)
@@ -93,6 +92,7 @@ public class BFHeaderTests1 extends ProfileInit {
         header.deleteProfilePhotoButtonIsPresent();
         print("Verified Update Profile Photo option is present");
         header.tapDeleteProfilePhotoButton();
+
     }
 
     @Test(priority = 10)
@@ -106,5 +106,6 @@ public class BFHeaderTests1 extends ProfileInit {
         header.tapChooseFromLibrary();
         header.tapPhoto();
         header.tapChoosePhoto();
+
     }
 }

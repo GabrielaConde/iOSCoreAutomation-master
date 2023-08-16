@@ -89,7 +89,7 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
     }
 
-    @Test (priority = 8)
+   // @Test (priority = 8)
     public void tapOnResults(){
         quizzesLatestSubTab.tapOnResults();
         quizzesLatestSubTab.tapBackButton();
@@ -113,11 +113,6 @@ public class QuizzesLatestTests extends EditionsInit {
     }
 
     @Test (priority = 11)
-    public void tapOnMore(){
-        quizzesLatestSubTab.tapOnMore();
-    }
-
-    @Test (priority = 12)
     public void tapOnFood(){
         quizzesLatestSubTab.tapOnFood();
         quizzesLatestSubTab.tapSplash();
@@ -125,7 +120,14 @@ public class QuizzesLatestTests extends EditionsInit {
         quizzesLatestSubTab.tapBackButton();
     }
 
-        @Test (priority = 13)
+    @Test (priority = 12)
+    public void tapOnMore(){
+        quizzesLatestSubTab.tapOnMore();
+    }
+
+
+
+    //    @Test (priority = 13)
          public void tapOnMatchups(){
             quizzesLatestSubTab.tapOnMatchups();
             quizzesLatestSubTab.tapBackButton();

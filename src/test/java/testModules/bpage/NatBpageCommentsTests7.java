@@ -31,7 +31,6 @@ public class NatBpageCommentsTests7 extends BpageInit  {
     public void addComment(String data){
         testName("Verify sending comment on Comments Lists");
         nativeComments.addComment(data);
-
     }
 
     @Test(priority = 5)
@@ -39,7 +38,6 @@ public class NatBpageCommentsTests7 extends BpageInit  {
         testName("Verify 'Post' button is present on Comments Lists");
         Assert.assertTrue(nativeComments.postButtonIsPresent());
         print("Verified 'Post' button is present on Comments Lists");
-
     }
 
     @Test(priority = 6)
@@ -83,7 +81,6 @@ public class NatBpageCommentsTests7 extends BpageInit  {
         Thread.sleep(3000);
         nativeComments.nativeMostHeartsUserIsPresent();
         print("Verified 'Most Hearts' section is loading fine");
-
     }
 
     @Test(priority = 11)
@@ -102,7 +99,6 @@ public class NatBpageCommentsTests7 extends BpageInit  {
         Thread.sleep(3000);
         nativeComments.userIsPresent();
         print("Verified 'User' is present on 'More Recent' Section");
-
     }
 
     @Test(priority = 13, dataProvider = "comment", dataProviderClass = BpagesDataProvider.class)
@@ -119,7 +115,6 @@ public class NatBpageCommentsTests7 extends BpageInit  {
     public void tapLikeCommentButton(){
         testName("Verify tapping 'Like Comment' button on 'More Recent' Section");
         nativeComments.tapLikeCommentButton();
-
     }
 
 
@@ -147,6 +142,5 @@ public class NatBpageCommentsTests7 extends BpageInit  {
         nativeComments.replyCommentIsPresent();
         print("Verified comment is present on 'More Recent' Section");
         nativeComments.tapDoneButton();
-
     }
 }

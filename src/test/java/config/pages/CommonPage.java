@@ -6,6 +6,10 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import org.springframework.remoting.support.DefaultRemoteInvocationExecutor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +41,7 @@ public class CommonPage extends Base {
     protected final By backButtonFromSearch = MobileBy.AccessibilityId("Back");
     protected final By goToGamesButton = MobileBy.AccessibilityId("Go to games");
     protected final By acceptOneTrust = MobileBy.AccessibilityId("bannerAllowAllButton");
+    protected final By sweepTakesNoThanks = MobileBy.AccessibilityId("No thanks, I don't like money");
 
   //  protected final By backButton = By.xpath("//XCUIElementTypeButton[@name=\"Home\"]");
    // protected final By backButton = By.xpath("//XCUIElementTypeButton[@name='BUZZ_BACK_BUTTON']");
@@ -68,7 +73,10 @@ public class CommonPage extends Base {
 
 
  //   protected final By closeButton = MobileBy.AccessibilityId("Close");
-    protected final By doneButton = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
+ //   protected final By doneButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]")
+ //   protected final By doneButton = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
+    protected final By doneButton = By.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
+ //   protected final By doneButton = MobileBy.AccessibilityId("Done");
   //  protected final By cancelButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
     protected final By cancelButton = MobileBy.AccessibilityId("Cancel");
     protected final By OKButton = MobileBy.AccessibilityId("OK");
@@ -138,15 +146,21 @@ public class CommonPage extends Base {
 
     //--Settings
     protected final By settingsButton = MobileBy.AccessibilityId("Settings");
+   // protected final By profileButton = MobileBy.AccessibilityId("Profile");
 
     //--Go back to the app
     protected final By openBFAppButton = MobileBy.AccessibilityId("Open");
+
 
     // footers
     protected final By searchIcon = MobileBy.AccessibilityId("Search");
 
 
     //Methods
+
+    public Boolean isDoneBtnDisplayed(){
+        return driver.findElement(doneButton).isDisplayed();
+    }
     //--ContinueAds + Allow button + Navigation
     public void tapContinueButton() {
         driver.findElement(continueAds).click();
@@ -168,11 +182,20 @@ public class CommonPage extends Base {
         }catch (Exception e){}
     }
 
+    public void tapOnNoThanksSweepTakes(){
+        try {
+            driver.findElement(sweepTakesNoThanks).click();
+        }catch (Exception e){}
+    }
+
+
     public void tapOnContinueBtn(){
         driver.findElement(continueBtn).click();
     }
     public void tapOnAcceptAllCookiesBtn(){
-        driver.findElement(acceptAllCookies).click();
+        try {
+            driver.findElement(acceptAllCookies).click();
+        }catch (Exception e){}
     }
 
     public void closeGoToGamesScreen() {
@@ -271,8 +294,14 @@ public class CommonPage extends Base {
     }
 
     public void tapDoneButton() {
-        driver.findElement(doneButton).click();
-        print("Tapped 'Done' button");
+        if (driver.findElement(doneButton).isEnabled())
+        {    driver.findElement(doneButton).click();
+         //   driver.getKeyboard(new KeyEvent(AndroidKey.ENTER));
+          driver.getKeyboard().pressKey(Keys.ENTER);
+            //    driver.getKeyboard().pressKey(Keys.CANCEL);
+                print("Tapped 'Done' button");
+        } else {   print("'Done' button not enabled");}
+
     }
 
     public boolean cancelButtonIsPresent() {

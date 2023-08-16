@@ -1,0 +1,19 @@
+userName: gabrielacondemor_DQB8Fe
+accessKey: MzzcBsPqWxsnx6GtqdsH
+framework: java
+app: bs://1397bdc5b55af18bbeb7341e5ac8580359bed17b
+platforms:
+  - platformName: ios
+    deviceName: iPhone 14 Pro
+    platformVersion: 16
+  - platformName: ios
+    deviceName: iPhone 13 Pro
+    platformVersion: 15
+  - platformName: ios
+    deviceName: iPhone 14
+    platformVersion: 16
+browserstackLocal: false
+buildName: bstack-demo
+projectName: Buzzfeed Sample
+debug: true
+networkLogs: true

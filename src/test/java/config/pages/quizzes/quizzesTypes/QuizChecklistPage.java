@@ -24,6 +24,9 @@ public class QuizChecklistPage extends QuizzesTypesGeneralPage{
     private final By youCheckedText =  By.xpath("//*[contains(@name,'You checked')]");
   //  private final By youCheckedText = By.xpath("3 of 50 Correct");
 
+    // Fallback elements
+
+
 
 
     //Methods

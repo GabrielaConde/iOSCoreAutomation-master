@@ -24,15 +24,24 @@ public class LegalPage extends CommonPage {
     private final By userAccountData = MobileBy.AccessibilityId("BuzzFeed User Account Data, Send an email for instructions on how to access your data.");
     private final By appleData = MobileBy.AccessibilityId("Apple Data & Privacy, Sign in to apple.com to learn more about what Apple collects and how to access your subscription data.");
     private final By quantcastPrivacyPolicy = MobileBy.AccessibilityId("Quantcast Privacy Policy");
-    private final By quantcastPrivacyPolicyTitle = By.xpath("(//XCUIElementTypeImage[@name=\"Quantcast\"])[1]");
-    private final By quantcastTracking = MobileBy.AccessibilityId("Quantcast Tracking");
-    private final By nielsenRatings = MobileBy.AccessibilityId("Nielsen Ratings, Enabled");
+    private final By quantcastPrivacyPolicyTitle = By.xpath("//XCUIElementTypeStaticText[@name='Quantcast Privacy Policy']");
+    private final By quantcastTracking = By.xpath("//XCUIElementTypeStaticText[@name=\"Quantcast Tracking\"]");
+    private final By nielsenRatings = MobileBy.AccessibilityId("Nielsen Ratings");
     private final By aboutNielsen = MobileBy.AccessibilityId("ABOUT NIELSEN MEASUREMENT");
+    private final By manageAdvConsent = By.xpath("//XCUIElementTypeStaticText[@name=\"Manage Advertisement Consent\"]");
 
     //Methods
     public boolean legalSectionTitleIsPresent(){
         return driver.findElement(legalSectionTitle).isDisplayed();
     }
+    public boolean manageAdvConsentIsPresent(){
+        return driver.findElement(manageAdvConsent).isDisplayed();
+    }
+    public void tapOnManageAdvConsentIsPresent(){
+         driver.findElement(manageAdvConsent).click();
+    }
+
+
 
     public boolean privacyPolicyIsPresent(){
         return driver.findElement(privacyPolicy).isDisplayed();
@@ -74,7 +83,7 @@ public class LegalPage extends CommonPage {
     }
 
     public boolean quantcastPrivacyPolicyIsPresent(){
-        return driver.findElement(quantcastPrivacyPolicy).isDisplayed();
+        return driver.findElement(quantcastPrivacyPolicyTitle).isDisplayed();
     }
 
     public void tapQuantcastPrivacyPolicy() {

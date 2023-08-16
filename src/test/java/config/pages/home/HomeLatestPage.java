@@ -252,7 +252,9 @@ public class HomeLatestPage extends CommonPage {
     public void clickOnHomeIcon() {driver.findElement(homeFooter).click();}
 
     //Trending videos
-    public Boolean validateTrendingVideosTitle() { return driver.findElement(trendingVideosTitle).isDisplayed();}
+    public Boolean validateTrendingVideosTitle() {
+        scroll.scrollUntilElement(trendingVideosTitle);
+        return driver.findElement(trendingVideosTitle).isDisplayed();}
     public void tapOnTrendingVideo() {driver.findElement(playVideo).click();}
     public void closeTrendingVideo() {driver.findElement(closeVideo).click();}
 
@@ -315,7 +317,7 @@ public class HomeLatestPage extends CommonPage {
 
     //--Trending products package
     public void scrollDownToTrending(){
-        scroll.scrollMultipleTimes(2);
+        scroll.scrollMultipleTimes(3);
         scroll.scrollDown90_20();
         scroll.scrollUntilElement(popularProdLbl);
         scroll.scrollDown90_70();

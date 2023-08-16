@@ -10,6 +10,7 @@ public class BookmarksTests6 extends ProfileInit {
 
     @Test()
     public void testBookmarksTab() {
+
         testName("Verify Bookmarks tab");
         wishlist.tapWishlistTab();
 
@@ -53,7 +54,6 @@ public class BookmarksTests6 extends ProfileInit {
         Thread.sleep(4000);
         bookmarks.bpageBookmarkedIsPresent();
         bookmarks.tapBackButton();
-
         print("Verified the bpage bookmarked is present in the Bookmarks tab");
     }
 

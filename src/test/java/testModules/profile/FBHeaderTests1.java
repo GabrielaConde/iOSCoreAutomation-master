@@ -30,7 +30,6 @@ public class FBHeaderTests1 extends ProfileInit {
         testName("Verify Edit Display Name option");
         Assert.assertTrue(header.editDisplayNameButtonIsPresent());
         print("Verified Edit Display Name option is present");
-
         header.tapEditDisplayNameButton();
     }
 

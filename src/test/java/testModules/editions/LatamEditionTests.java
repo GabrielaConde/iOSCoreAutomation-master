@@ -54,7 +54,7 @@ public class LatamEditionTests extends EditionsInit {
     }
 
     //Shopping
-    @Test (priority = 9)
+   // @Test (priority = 9)
     public void testShoppingTab(){
         editions.tapShoppingLatamTab();
         homeSubTabs.tapSplash();

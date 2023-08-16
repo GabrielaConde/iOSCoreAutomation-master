@@ -26,6 +26,7 @@ public class SuggestedSearchesTests3 extends SearchInit {
         Assert.assertTrue(search.searchResultIsPresent());
         print("Verified Search result is displayed");
         recent.tapSearchResult();
+
     }
 
     @Test(priority = 2)

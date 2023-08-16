@@ -23,15 +23,10 @@ public class ShowsSubTabTests extends EditionsInit {
 
   //  @Test
     public void verifyShowTabActive(){
-        try{
         testName("Verify Shows Sub-Tab is active");
     //    Assert.assertEquals(showSubTab.showsTabIsActive(), "1");
         print("Verified 'value' for sub-tab 'Shows' is = 1, the sub-tab is active");
-        } catch (Exception e) {
-            System.out.println("ERROR ON THIS TEST CASE");
-            System.out.print("EXCEPTION: ");
-            System.out.print(e.getMessage());
-        }
+
     }
 
     @Test(priority = 1)

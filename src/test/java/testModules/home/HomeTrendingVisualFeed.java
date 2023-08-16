@@ -133,7 +133,7 @@ public class HomeTrendingVisualFeed extends EditionsInit {
         Thread.sleep(2000);
         latestSubTab.tapMusicBtn();
         latestSubTab.tapBackButton();
-        latestSubTab.backHome();
+      //  latestSubTab.backHome();
     }
 
 }

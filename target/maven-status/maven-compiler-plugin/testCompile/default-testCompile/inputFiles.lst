@@ -50,6 +50,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/dataProvider/QuizzesTypeDataProvider.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/editions/CanadaEditionTests2.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/home/HomeLatestTests.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/settings/OneTrustPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/editions/JapanEditionTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/shopping/ShoppingSubTabsTestsDeprecated.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/profile/HeaderPage.java
@@ -98,6 +99,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/quizzesTypes/QuizPredetTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/bpage/FallBpageTests4.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/ScrollsPage.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/home/GamesFeed.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/settings/CommentBoxPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/initPages/ProfileInit.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/editions/IndiaEditionTests2.java

@@ -20,9 +20,12 @@ public class SignInEmailTests extends InitTest {
         testName("Enter Email");
         signIn.tapAllowButton();
         Thread.sleep(2000);
-        signIn.tapOnAcceptAllCookiesBtn();
         signIn.tapAllowButton();
-        Thread.sleep(6000);
+        Thread.sleep(2000);
+        signIn.tapOnAcceptAllCookiesBtn();
+        Thread.sleep(4000);
+        signIn.closeGoToGamesScreen();
+        Thread.sleep(3000);
         Assert.assertTrue(signIn.profileButtonIsPresent());
         print("Verified Sign in button is present in the nav bar");
         signIn.tapProfileButton();
@@ -49,7 +52,6 @@ public class SignInEmailTests extends InitTest {
         Thread.sleep(6000);
         signIn.tapNotNow();
         print("Logged in with email");
-
     }
 
     @Test(priority = 2)

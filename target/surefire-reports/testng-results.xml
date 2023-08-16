@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="105" passed="99">
+<testng-results skipped="0" failed="0" ignored="4" total="93" passed="89">
   <reporter-output>
   </reporter-output>
-  <suite name="quizzesSuite" duration-ms="598320" started-at="2023-06-15T21:28:21 ART" finished-at="2023-06-15T21:38:19 ART">
+  <suite name="quizzesSuite" duration-ms="266688" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:11:50 ART">
     <groups>
     </groups>
-    <test name="Quizzes" duration-ms="598320" started-at="2023-06-15T21:28:21 ART" finished-at="2023-06-15T21:38:19 ART">
+    <test name="Quizzes" duration-ms="266688" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:11:50 ART">
       <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="initializePages" is-config="true" duration-ms="1562" started-at="2023-06-15T21:31:46 ART" finished-at="2023-06-15T21:31:48 ART">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="initializePages" is-config="true" duration-ms="1394" started-at="2023-08-09T12:09:56 ART" finished-at="2023-08-09T12:09:57 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="testSearchTriviaQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testSearchTriviaQuiz" duration-ms="18502" started-at="2023-06-15T21:31:48 ART" data-provider="trivia" finished-at="2023-06-15T21:32:06 ART">
+        <test-method status="PASS" signature="testSearchTriviaQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSearchTriviaQuiz" duration-ms="14836" started-at="2023-08-09T12:09:57 ART" data-provider="trivia" finished-at="2023-08-09T12:10:12 ART">
           <params>
             <param index="0">
               <value>
@@ -22,51 +22,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchTriviaQuiz -->
-        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testQuizTitleIsPresentAtBeginning" duration-ms="140691" started-at="2023-06-15T21:32:06 ART" finished-at="2023-06-15T21:34:27 ART">
+        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testQuizTitleIsPresentAtBeginning" duration-ms="4631" started-at="2023-08-09T12:10:12 ART" finished-at="2023-08-09T12:10:17 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testSubTextIsPresent" duration-ms="390" started-at="2023-06-15T21:34:27 ART" finished-at="2023-06-15T21:34:28 ART">
+        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSubTextIsPresent" duration-ms="312" started-at="2023-08-09T12:10:17 ART" finished-at="2023-08-09T12:10:17 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testAuthorInfoIsPresent" duration-ms="389" started-at="2023-06-15T21:34:28 ART" finished-at="2023-06-15T21:34:28 ART">
+        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testAuthorInfoIsPresent" duration-ms="329" started-at="2023-08-09T12:10:17 ART" finished-at="2023-08-09T12:10:18 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testPlayWithFriendsButton" duration-ms="751" started-at="2023-06-15T21:34:28 ART" finished-at="2023-06-15T21:34:29 ART">
+        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testPlayWithFriendsButton" duration-ms="684" started-at="2023-08-09T12:10:18 ART" finished-at="2023-08-09T12:10:18 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayWithFriendsButton -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testPlayNowButton" duration-ms="1485" started-at="2023-06-15T21:34:29 ART" finished-at="2023-06-15T21:34:30 ART">
+        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testPlayNowButton" duration-ms="1311" started-at="2023-08-09T12:10:18 ART" finished-at="2023-08-09T12:10:20 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testProgressBar1()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testProgressBar1" duration-ms="690" started-at="2023-06-15T21:34:30 ART" finished-at="2023-06-15T21:34:31 ART">
+        <test-method status="PASS" signature="testProgressBar1()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testProgressBar1" duration-ms="595" started-at="2023-08-09T12:10:20 ART" finished-at="2023-08-09T12:10:20 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProgressBar1 -->
-        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testSendFirstAnswer" duration-ms="4009" started-at="2023-06-15T21:34:31 ART" finished-at="2023-06-15T21:34:35 ART">
+        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSendFirstAnswer" duration-ms="3492" started-at="2023-08-09T12:10:20 ART" finished-at="2023-08-09T12:10:24 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSendFirstAnswer -->
-        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testCorrectTextIsPresent" duration-ms="850" started-at="2023-06-15T21:34:35 ART" finished-at="2023-06-15T21:34:36 ART">
+        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testCorrectTextIsPresent" duration-ms="610" started-at="2023-08-09T12:10:24 ART" finished-at="2023-08-09T12:10:24 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCorrectTextIsPresent -->
-        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testFirstAnswerTextIsPresent" duration-ms="403" started-at="2023-06-15T21:34:36 ART" finished-at="2023-06-15T21:34:36 ART">
+        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testFirstAnswerTextIsPresent" duration-ms="309" started-at="2023-08-09T12:10:24 ART" finished-at="2023-08-09T12:10:25 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFirstAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testNextButtonIsPresent" duration-ms="361" started-at="2023-06-15T21:34:36 ART" finished-at="2023-06-15T21:34:37 ART">
+        <test-method status="PASS" signature="testNextButtonIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testNextButtonIsPresent" duration-ms="281" started-at="2023-08-09T12:10:25 ART" finished-at="2023-08-09T12:10:25 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNextButtonIsPresent -->
-        <test-method status="PASS" signature="testTapNextButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testTapNextButton" duration-ms="882" started-at="2023-06-15T21:34:37 ART" finished-at="2023-06-15T21:34:37 ART">
+        <test-method status="PASS" signature="testTapNextButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testTapNextButton" duration-ms="796" started-at="2023-08-09T12:10:25 ART" finished-at="2023-08-09T12:10:26 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTapNextButton -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5348" started-at="2023-06-15T21:34:37 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:34:43 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5351" started-at="2023-08-09T12:10:26 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:31 ART">
           <params>
             <param index="0">
               <value>
@@ -77,7 +77,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5518" started-at="2023-06-15T21:34:43 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:34:48 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5034" started-at="2023-08-09T12:10:31 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:36 ART">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5433" started-at="2023-06-15T21:34:48 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:34:54 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5365" started-at="2023-08-09T12:10:36 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:41 ART">
           <params>
             <param index="0">
               <value>
@@ -99,7 +99,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5699" started-at="2023-06-15T21:34:54 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:34:59 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5066" started-at="2023-08-09T12:10:41 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:46 ART">
           <params>
             <param index="0">
               <value>
@@ -110,7 +110,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5868" started-at="2023-06-15T21:34:59 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:05 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5118" started-at="2023-08-09T12:10:46 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:52 ART">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5516" started-at="2023-06-15T21:35:05 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:11 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5282" started-at="2023-08-09T12:10:52 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:57 ART">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5885" started-at="2023-06-15T21:35:11 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:17 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5083" started-at="2023-08-09T12:10:57 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:02 ART">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5503" started-at="2023-06-15T21:35:17 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:22 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5141" started-at="2023-08-09T12:11:02 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:07 ART">
           <params>
             <param index="0">
               <value>
@@ -154,7 +154,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5695" started-at="2023-06-15T21:35:22 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:28 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5207" started-at="2023-08-09T12:11:07 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:12 ART">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5504" started-at="2023-06-15T21:35:28 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:33 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5152" started-at="2023-08-09T12:11:12 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:17 ART">
           <params>
             <param index="0">
               <value>
@@ -176,7 +176,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5562" started-at="2023-06-15T21:35:33 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:39 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5297" started-at="2023-08-09T12:11:17 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:23 ART">
           <params>
             <param index="0">
               <value>
@@ -187,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIntermediateAnswers" duration-ms="5717" started-at="2023-06-15T21:35:39 ART" data-provider="QuizTriviaAnswers" finished-at="2023-06-15T21:35:45 ART">
+        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5151" started-at="2023-08-09T12:11:23 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:28 ART">
           <params>
             <param index="0">
               <value>
@@ -198,57 +198,53 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testProgressBar14()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testProgressBar14" duration-ms="231" started-at="2023-06-15T21:35:45 ART" finished-at="2023-06-15T21:35:45 ART">
+        <test-method status="PASS" signature="testProgressBar14()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testProgressBar14" duration-ms="3810" started-at="2023-08-09T12:11:28 ART" finished-at="2023-08-09T12:11:32 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProgressBar14 -->
-        <test-method status="PASS" signature="testSendLatestAnswer()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testSendLatestAnswer" duration-ms="3206" started-at="2023-06-15T21:35:45 ART" finished-at="2023-06-15T21:35:48 ART">
+        <test-method status="PASS" signature="testSendLatestAnswer()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSendLatestAnswer" duration-ms="3003" started-at="2023-08-09T12:11:32 ART" finished-at="2023-08-09T12:11:35 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSendLatestAnswer -->
-        <test-method status="PASS" signature="testIGiveUpButtonIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testIGiveUpButtonIsPresent" duration-ms="462" started-at="2023-06-15T21:35:48 ART" finished-at="2023-06-15T21:35:49 ART">
+        <test-method status="PASS" signature="testIGiveUpButtonIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIGiveUpButtonIsPresent" duration-ms="535" started-at="2023-08-09T12:11:35 ART" finished-at="2023-08-09T12:11:35 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIGiveUpButtonIsPresent -->
-        <test-method status="PASS" signature="testTapIGiveUpButton()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testTapIGiveUpButton" duration-ms="1248" started-at="2023-06-15T21:35:49 ART" finished-at="2023-06-15T21:35:50 ART">
+        <test-method status="PASS" signature="testTapIGiveUpButton()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testTapIGiveUpButton" duration-ms="1133" started-at="2023-08-09T12:11:35 ART" finished-at="2023-08-09T12:11:36 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTapIGiveUpButton -->
-        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testWrongTextIsPresent" duration-ms="874" started-at="2023-06-15T21:35:50 ART" finished-at="2023-06-15T21:35:51 ART">
+        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testWrongTextIsPresent" duration-ms="638" started-at="2023-08-09T12:11:36 ART" finished-at="2023-08-09T12:11:37 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWrongTextIsPresent -->
-        <test-method status="PASS" signature="testLatestAnswerTextIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testLatestAnswerTextIsPresent" duration-ms="1445" started-at="2023-06-15T21:35:51 ART" finished-at="2023-06-15T21:35:52 ART">
+        <test-method status="PASS" signature="testLatestAnswerTextIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testLatestAnswerTextIsPresent" duration-ms="1045" started-at="2023-08-09T12:11:37 ART" finished-at="2023-08-09T12:11:38 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLatestAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testQuizTitleResultScreenIsPresent" duration-ms="164" started-at="2023-06-15T21:35:52 ART" finished-at="2023-06-15T21:35:52 ART">
+        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testQuizTitleResultScreenIsPresent" duration-ms="4639" started-at="2023-08-09T12:11:38 ART" finished-at="2023-08-09T12:11:43 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="testScoreTextResultScreenIsPresent()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testScoreTextResultScreenIsPresent" duration-ms="149" started-at="2023-06-15T21:35:52 ART" finished-at="2023-06-15T21:35:52 ART">
+        <test-method status="PASS" signature="testScoreTextResultScreenIsPresent()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testScoreTextResultScreenIsPresent" duration-ms="3534" started-at="2023-08-09T12:11:43 ART" finished-at="2023-08-09T12:11:46 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScoreTextResultScreenIsPresent -->
-        <test-method status="PASS" signature="testResultsTextIsPresent()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testResultsTextIsPresent" duration-ms="150" started-at="2023-06-15T21:35:52 ART" finished-at="2023-06-15T21:35:53 ART">
+        <test-method status="PASS" signature="testResultsTextIsPresent()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testResultsTextIsPresent" duration-ms="3526" started-at="2023-08-09T12:11:46 ART" finished-at="2023-08-09T12:11:50 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResultsTextIsPresent -->
-        <test-method status="PASS" signature="testResultsDescriptionTextIsPresent()[pri:23, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testResultsDescriptionTextIsPresent" duration-ms="299" started-at="2023-06-15T21:35:53 ART" finished-at="2023-06-15T21:35:53 ART">
+        <test-method status="PASS" signature="testResultsDescriptionTextIsPresent()[pri:23, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testResultsDescriptionTextIsPresent" duration-ms="455" started-at="2023-08-09T12:11:50 ART" finished-at="2023-08-09T12:11:50 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResultsDescriptionTextIsPresent -->
-        <test-method status="PASS" signature="testResultsSubTab()[pri:24, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31610302]" name="testResultsSubTab" duration-ms="146380" started-at="2023-06-15T21:35:53 ART" finished-at="2023-06-15T21:38:19 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResultsSubTab -->
       </class> <!-- testModules.quizzes.quizzesTypes.QuizTriviaTests -->
       <class name="testModules.quizzes.quizzesTypes.QuizPredetTests">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="initializePages" is-config="true" duration-ms="1395" started-at="2023-06-15T21:30:13 ART" finished-at="2023-06-15T21:30:15 ART">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="initializePages" is-config="true" duration-ms="1330" started-at="2023-08-09T12:08:25 ART" finished-at="2023-08-09T12:08:27 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="testSearchPredetQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testSearchPredetQuiz" duration-ms="17606" started-at="2023-06-15T21:30:15 ART" data-provider="predetermined" finished-at="2023-06-15T21:30:32 ART">
+        <test-method status="PASS" signature="testSearchPredetQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSearchPredetQuiz" duration-ms="14989" started-at="2023-08-09T12:08:27 ART" data-provider="predetermined" finished-at="2023-08-09T12:08:42 ART">
           <params>
             <param index="0">
               <value>
@@ -259,71 +255,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchPredetQuiz -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testSubTextIsPresent" duration-ms="539" started-at="2023-06-15T21:30:32 ART" finished-at="2023-06-15T21:30:33 ART">
+        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testQuizTitleIsPresentAtBeginning" duration-ms="3923" started-at="2023-08-09T12:08:42 ART" finished-at="2023-08-09T12:08:46 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
+        <test-method status="PASS" signature="testMainImageIsPresent()[pri:2, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testMainImageIsPresent" duration-ms="854" started-at="2023-08-09T12:08:46 ART" finished-at="2023-08-09T12:08:47 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMainImageIsPresent -->
+        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSubTextIsPresent" duration-ms="325" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:47 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testAuthorInfoIsPresent" duration-ms="529" started-at="2023-06-15T21:30:33 ART" finished-at="2023-06-15T21:30:33 ART">
+        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testAuthorInfoIsPresent" duration-ms="290" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:47 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testPlayWithFriendsButton" duration-ms="957" started-at="2023-06-15T21:30:33 ART" finished-at="2023-06-15T21:30:34 ART">
+        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testPlayWithFriendsButton" duration-ms="639" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:48 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayWithFriendsButton -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testPlayNowButton" duration-ms="2425" started-at="2023-06-15T21:30:34 ART" finished-at="2023-06-15T21:30:37 ART">
+        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testPlayNowButton" duration-ms="1696" started-at="2023-08-09T12:08:48 ART" finished-at="2023-08-09T12:08:49 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testProgressBarFirstQ()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testProgressBarFirstQ" duration-ms="982" started-at="2023-06-15T21:30:37 ART" finished-at="2023-06-15T21:30:38 ART">
+        <test-method status="PASS" signature="testProgressBarFirstQ()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testProgressBarFirstQ" duration-ms="788" started-at="2023-08-09T12:08:49 ART" finished-at="2023-08-09T12:08:50 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProgressBarFirstQ -->
-        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testSendFirstAnswer" duration-ms="1341" started-at="2023-06-15T21:30:38 ART" finished-at="2023-06-15T21:30:39 ART">
+        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSendFirstAnswer" duration-ms="1226" started-at="2023-08-09T12:08:50 ART" finished-at="2023-08-09T12:08:51 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSendFirstAnswer -->
-        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCorrectTextIsPresent" duration-ms="917" started-at="2023-06-15T21:30:39 ART" finished-at="2023-06-15T21:30:40 ART">
+        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCorrectTextIsPresent" duration-ms="715" started-at="2023-08-09T12:08:51 ART" finished-at="2023-08-09T12:08:52 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCorrectTextIsPresent -->
-        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testFirstAnswerTextIsPresent" duration-ms="399" started-at="2023-06-15T21:30:40 ART" finished-at="2023-06-15T21:30:40 ART">
+        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testFirstAnswerTextIsPresent" duration-ms="301" started-at="2023-08-09T12:08:52 ART" finished-at="2023-08-09T12:08:53 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFirstAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonGoodAnswerIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testNextButtonGoodAnswerIsPresent" duration-ms="397" started-at="2023-06-15T21:30:40 ART" finished-at="2023-06-15T21:30:41 ART">
+        <test-method status="PASS" signature="testNextButtonGoodAnswerIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testNextButtonGoodAnswerIsPresent" duration-ms="342" started-at="2023-08-09T12:08:53 ART" finished-at="2023-08-09T12:08:53 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNextButtonGoodAnswerIsPresent -->
-        <test-method status="PASS" signature="testTapNextGoodAnswerButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testTapNextGoodAnswerButton" duration-ms="899" started-at="2023-06-15T21:30:41 ART" finished-at="2023-06-15T21:30:42 ART">
+        <test-method status="PASS" signature="testTapNextGoodAnswerButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testTapNextGoodAnswerButton" duration-ms="782" started-at="2023-08-09T12:08:53 ART" finished-at="2023-08-09T12:08:54 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTapNextGoodAnswerButton -->
-        <test-method status="PASS" signature="testProgressBarSecondQ()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testProgressBarSecondQ" duration-ms="945" started-at="2023-06-15T21:30:42 ART" finished-at="2023-06-15T21:30:43 ART">
+        <test-method status="PASS" signature="testProgressBarSecondQ()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testProgressBarSecondQ" duration-ms="769" started-at="2023-08-09T12:08:54 ART" finished-at="2023-08-09T12:08:54 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProgressBarSecondQ -->
-        <test-method status="PASS" signature="testSendSecondAnswer()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testSendSecondAnswer" duration-ms="1632" started-at="2023-06-15T21:30:43 ART" finished-at="2023-06-15T21:30:44 ART">
+        <test-method status="PASS" signature="testSendSecondAnswer()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSendSecondAnswer" duration-ms="1313" started-at="2023-08-09T12:08:54 ART" finished-at="2023-08-09T12:08:56 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSendSecondAnswer -->
-        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testWrongTextIsPresent" duration-ms="838" started-at="2023-06-15T21:30:44 ART" finished-at="2023-06-15T21:30:45 ART">
+        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testWrongTextIsPresent" duration-ms="735" started-at="2023-08-09T12:08:56 ART" finished-at="2023-08-09T12:08:56 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWrongTextIsPresent -->
-        <test-method status="PASS" signature="testSecondAnswerTextIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testSecondAnswerTextIsPresent" duration-ms="394" started-at="2023-06-15T21:30:45 ART" finished-at="2023-06-15T21:30:45 ART">
+        <test-method status="PASS" signature="testSecondAnswerTextIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSecondAnswerTextIsPresent" duration-ms="351" started-at="2023-08-09T12:08:56 ART" finished-at="2023-08-09T12:08:57 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSecondAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonWrongAnswerIsPresent()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testNextButtonWrongAnswerIsPresent" duration-ms="383" started-at="2023-06-15T21:30:45 ART" finished-at="2023-06-15T21:30:46 ART">
+        <test-method status="PASS" signature="testNextButtonWrongAnswerIsPresent()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testNextButtonWrongAnswerIsPresent" duration-ms="356" started-at="2023-08-09T12:08:57 ART" finished-at="2023-08-09T12:08:57 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNextButtonWrongAnswerIsPresent -->
-        <test-method status="PASS" signature="testTapNextWrongAnswerButton()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testTapNextWrongAnswerButton" duration-ms="910" started-at="2023-06-15T21:30:46 ART" finished-at="2023-06-15T21:30:47 ART">
+        <test-method status="PASS" signature="testTapNextWrongAnswerButton()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testTapNextWrongAnswerButton" duration-ms="921" started-at="2023-08-09T12:08:57 ART" finished-at="2023-08-09T12:08:58 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTapNextWrongAnswerButton -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4645" started-at="2023-06-15T21:30:47 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:30:51 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4032" started-at="2023-08-09T12:08:58 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:02 ART">
           <params>
             <param index="0">
               <value>
@@ -334,7 +338,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4316" started-at="2023-06-15T21:30:51 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:30:56 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3980" started-at="2023-08-09T12:09:02 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:06 ART">
           <params>
             <param index="0">
               <value>
@@ -345,7 +349,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4349" started-at="2023-06-15T21:30:56 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:00 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4082" started-at="2023-08-09T12:09:06 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:10 ART">
           <params>
             <param index="0">
               <value>
@@ -356,7 +360,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4469" started-at="2023-06-15T21:31:00 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:05 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3969" started-at="2023-08-09T12:09:10 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:14 ART">
           <params>
             <param index="0">
               <value>
@@ -367,7 +371,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4317" started-at="2023-06-15T21:31:05 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:09 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4047" started-at="2023-08-09T12:09:14 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:18 ART">
           <params>
             <param index="0">
               <value>
@@ -378,7 +382,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4301" started-at="2023-06-15T21:31:09 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:13 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4119" started-at="2023-08-09T12:09:18 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:22 ART">
           <params>
             <param index="0">
               <value>
@@ -389,7 +393,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4412" started-at="2023-06-15T21:31:13 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:18 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4016" started-at="2023-08-09T12:09:22 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:26 ART">
           <params>
             <param index="0">
               <value>
@@ -400,7 +404,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4334" started-at="2023-06-15T21:31:18 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:22 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3982" started-at="2023-08-09T12:09:26 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:30 ART">
           <params>
             <param index="0">
               <value>
@@ -411,7 +415,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4350" started-at="2023-06-15T21:31:22 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:26 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4017" started-at="2023-08-09T12:09:30 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:34 ART">
           <params>
             <param index="0">
               <value>
@@ -422,7 +426,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4714" started-at="2023-06-15T21:31:26 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:31 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4064" started-at="2023-08-09T12:09:34 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:38 ART">
           <params>
             <param index="0">
               <value>
@@ -433,7 +437,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4335" started-at="2023-06-15T21:31:31 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:35 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4000" started-at="2023-08-09T12:09:38 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:42 ART">
           <params>
             <param index="0">
               <value>
@@ -444,7 +448,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testCompletingQuiz" duration-ms="4350" started-at="2023-06-15T21:31:35 ART" data-provider="QuizPredetAnswers" finished-at="2023-06-15T21:31:40 ART">
+        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4018" started-at="2023-08-09T12:09:42 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:46 ART">
           <params>
             <param index="0">
               <value>
@@ -455,94 +459,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@544fe44c]" name="testQuizTitleResultScreenIsPresent" duration-ms="6759" started-at="2023-06-15T21:31:40 ART" finished-at="2023-06-15T21:31:46 ART">
+        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testQuizTitleResultScreenIsPresent" duration-ms="4531" started-at="2023-08-09T12:09:46 ART" finished-at="2023-08-09T12:09:51 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuizTitleResultScreenIsPresent -->
+        <test-method status="PASS" signature="testScoreResultScreenIsPresent()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testScoreResultScreenIsPresent" duration-ms="5147" started-at="2023-08-09T12:09:51 ART" finished-at="2023-08-09T12:09:56 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScoreResultScreenIsPresent -->
       </class> <!-- testModules.quizzes.quizzesTypes.QuizPredetTests -->
-      <class name="testModules.quizzes.quizzesTypes.QuizChecklistTests">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="setUpTest" is-config="true" duration-ms="21871" started-at="2023-06-15T21:27:59 ART" finished-at="2023-06-15T21:28:21 ART">
+      <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="setUpTest" is-config="true" duration-ms="18534" started-at="2023-08-09T12:07:05 ART" finished-at="2023-08-09T12:07:24 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="initializePages" is-config="true" duration-ms="1424" started-at="2023-06-15T21:28:21 ART" finished-at="2023-06-15T21:28:22 ART">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="initializePages" is-config="true" duration-ms="1331" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:07:25 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="init" is-config="true" duration-ms="5376" started-at="2023-06-15T21:28:22 ART" finished-at="2023-06-15T21:28:28 ART">
+        <test-method status="PASS" signature="init()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="init" is-config="true" duration-ms="6144" started-at="2023-08-09T12:07:25 ART" finished-at="2023-08-09T12:07:31 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testSearchInstantQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testSearchInstantQuiz" duration-ms="17211" started-at="2023-06-15T21:28:28 ART" data-provider="checklist" finished-at="2023-06-15T21:28:45 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[How Many Of The Top 50 Most Popular Movies Of All Time Have You Seen?]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchInstantQuiz -->
-        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testQuizTitleIsPresentAtBeginning" duration-ms="3999" started-at="2023-06-15T21:28:45 ART" finished-at="2023-06-15T21:28:49 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
-        <test-method status="PASS" signature="testMainImageIsPresent()[pri:2, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testMainImageIsPresent" duration-ms="818" started-at="2023-06-15T21:28:49 ART" finished-at="2023-06-15T21:28:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMainImageIsPresent -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testSubTextIsPresent" duration-ms="321" started-at="2023-06-15T21:28:50 ART" finished-at="2023-06-15T21:28:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testAuthorInfoIsPresent" duration-ms="334" started-at="2023-06-15T21:28:50 ART" finished-at="2023-06-15T21:28:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testPlayNowButton" duration-ms="1708" started-at="2023-06-15T21:28:50 ART" finished-at="2023-06-15T21:28:52 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testChoicesAreLoading()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testChoicesAreLoading" duration-ms="840" started-at="2023-06-15T21:28:52 ART" finished-at="2023-06-15T21:28:53 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testChoicesAreLoading -->
-        <test-method status="PASS" signature="testTapChecklistChoice()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testTapChecklistChoice" duration-ms="5767" started-at="2023-06-15T21:28:53 ART" finished-at="2023-06-15T21:28:59 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapChecklistChoice -->
-        <test-method status="PASS" signature="testTapShowMeResults()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testTapShowMeResults" duration-ms="1802" started-at="2023-06-15T21:28:59 ART" finished-at="2023-06-15T21:29:01 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapShowMeResults -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testQuizTitleResultScreenIsPresent" duration-ms="4595" started-at="2023-06-15T21:29:01 ART" finished-at="2023-06-15T21:29:05 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="testYouCheckedTextResultIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testYouCheckedTextResultIsPresent" duration-ms="3184" started-at="2023-06-15T21:29:05 ART" finished-at="2023-06-15T21:29:08 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testYouCheckedTextResultIsPresent -->
-        <test-method status="PASS" signature="verifyRetakeQuiz()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="verifyRetakeQuiz" duration-ms="3880" started-at="2023-06-15T21:29:08 ART" finished-at="2023-06-15T21:29:12 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRetakeQuiz -->
-        <test-method status="PASS" signature="testResultsSubTab()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="testResultsSubTab" duration-ms="6941" started-at="2023-06-15T21:29:12 ART" finished-at="2023-06-15T21:29:19 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResultsSubTab -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizChecklistTests@6e1ec318]" name="tearDown" is-config="true" duration-ms="1078" started-at="2023-06-15T21:38:19 ART" finished-at="2023-06-15T21:38:20 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizChecklistTests -->
-      <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="initializePages" is-config="true" duration-ms="1401" started-at="2023-06-15T21:29:19 ART" finished-at="2023-06-15T21:29:21 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="testSearchInstantQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testSearchInstantQuiz" duration-ms="16042" started-at="2023-06-15T21:29:21 ART" data-provider="personality" finished-at="2023-06-15T21:29:37 ART">
+        <test-method status="PASS" signature="testSearchInstantQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testSearchInstantQuiz" duration-ms="14859" started-at="2023-08-09T12:07:31 ART" data-provider="personality" finished-at="2023-08-09T12:07:46 ART">
           <params>
             <param index="0">
               <value>
@@ -553,90 +492,98 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInstantQuiz -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testSubTextIsPresent" duration-ms="465" started-at="2023-06-15T21:29:37 ART" finished-at="2023-06-15T21:29:37 ART">
+        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuizTitleIsPresentAtBeginning" duration-ms="4594" started-at="2023-08-09T12:07:46 ART" finished-at="2023-08-09T12:07:51 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
+        <test-method status="PASS" signature="testMainImageIsPresent()[pri:2, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testMainImageIsPresent" duration-ms="1028" started-at="2023-08-09T12:07:51 ART" finished-at="2023-08-09T12:07:52 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMainImageIsPresent -->
+        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testSubTextIsPresent" duration-ms="382" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:52 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testAuthorInfoIsPresent" duration-ms="397" started-at="2023-06-15T21:29:37 ART" finished-at="2023-06-15T21:29:38 ART">
+        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testAuthorInfoIsPresent" duration-ms="300" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:52 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButtonIsPresent()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testPlayWithFriendsButtonIsPresent" duration-ms="894" started-at="2023-06-15T21:29:38 ART" finished-at="2023-06-15T21:29:38 ART">
+        <test-method status="PASS" signature="testPlayWithFriendsButtonIsPresent()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testPlayWithFriendsButtonIsPresent" duration-ms="611" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:53 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayWithFriendsButtonIsPresent -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testPlayNowButton" duration-ms="1703" started-at="2023-06-15T21:29:38 ART" finished-at="2023-06-15T21:29:40 ART">
+        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testPlayNowButton" duration-ms="1339" started-at="2023-08-09T12:07:53 ART" finished-at="2023-08-09T12:07:54 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testQuestion1Countdown()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion1Countdown" duration-ms="1242" started-at="2023-06-15T21:29:40 ART" finished-at="2023-06-15T21:29:41 ART">
+        <test-method status="PASS" signature="testQuestion1Countdown()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion1Countdown" duration-ms="703" started-at="2023-08-09T12:07:54 ART" finished-at="2023-08-09T12:07:55 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion1Countdown -->
-        <test-method status="PASS" signature="testQuestion1()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion1" duration-ms="1723" started-at="2023-06-15T21:29:41 ART" finished-at="2023-06-15T21:29:43 ART">
+        <test-method status="PASS" signature="testQuestion1()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion1" duration-ms="1566" started-at="2023-08-09T12:07:55 ART" finished-at="2023-08-09T12:07:56 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion1 -->
-        <test-method status="PASS" signature="testQuestion2Countdown()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion2Countdown" duration-ms="961" started-at="2023-06-15T21:29:43 ART" finished-at="2023-06-15T21:29:44 ART">
+        <test-method status="PASS" signature="testQuestion2Countdown()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion2Countdown" duration-ms="738" started-at="2023-08-09T12:07:56 ART" finished-at="2023-08-09T12:07:57 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion2Countdown -->
-        <test-method status="PASS" signature="testQuestion2()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion2" duration-ms="1564" started-at="2023-06-15T21:29:44 ART" finished-at="2023-06-15T21:29:46 ART">
+        <test-method status="PASS" signature="testQuestion2()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion2" duration-ms="1402" started-at="2023-08-09T12:07:57 ART" finished-at="2023-08-09T12:07:59 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion2 -->
-        <test-method status="PASS" signature="testQuestion3Countdown()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion3Countdown" duration-ms="843" started-at="2023-06-15T21:29:46 ART" finished-at="2023-06-15T21:29:46 ART">
+        <test-method status="PASS" signature="testQuestion3Countdown()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion3Countdown" duration-ms="795" started-at="2023-08-09T12:07:59 ART" finished-at="2023-08-09T12:07:59 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion3Countdown -->
-        <test-method status="PASS" signature="testQuestion3()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion3" duration-ms="1643" started-at="2023-06-15T21:29:46 ART" finished-at="2023-06-15T21:29:48 ART">
+        <test-method status="PASS" signature="testQuestion3()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion3" duration-ms="1510" started-at="2023-08-09T12:07:59 ART" finished-at="2023-08-09T12:08:01 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion3 -->
-        <test-method status="PASS" signature="testQuestion4Countdown()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion4Countdown" duration-ms="831" started-at="2023-06-15T21:29:48 ART" finished-at="2023-06-15T21:29:49 ART">
+        <test-method status="PASS" signature="testQuestion4Countdown()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion4Countdown" duration-ms="843" started-at="2023-08-09T12:08:01 ART" finished-at="2023-08-09T12:08:02 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion4Countdown -->
-        <test-method status="PASS" signature="testQuestion4()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion4" duration-ms="1579" started-at="2023-06-15T21:29:49 ART" finished-at="2023-06-15T21:29:51 ART">
+        <test-method status="PASS" signature="testQuestion4()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion4" duration-ms="1607" started-at="2023-08-09T12:08:02 ART" finished-at="2023-08-09T12:08:03 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion4 -->
-        <test-method status="PASS" signature="testQuestion5Countdown()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion5Countdown" duration-ms="898" started-at="2023-06-15T21:29:51 ART" finished-at="2023-06-15T21:29:51 ART">
+        <test-method status="PASS" signature="testQuestion5Countdown()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion5Countdown" duration-ms="683" started-at="2023-08-09T12:08:03 ART" finished-at="2023-08-09T12:08:04 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion5Countdown -->
-        <test-method status="PASS" signature="testQuestion5()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion5" duration-ms="1624" started-at="2023-06-15T21:29:51 ART" finished-at="2023-06-15T21:29:53 ART">
+        <test-method status="PASS" signature="testQuestion5()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion5" duration-ms="1501" started-at="2023-08-09T12:08:04 ART" finished-at="2023-08-09T12:08:06 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion5 -->
-        <test-method status="PASS" signature="testQuestion6Countdown()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion6Countdown" duration-ms="985" started-at="2023-06-15T21:29:53 ART" finished-at="2023-06-15T21:29:54 ART">
+        <test-method status="PASS" signature="testQuestion6Countdown()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion6Countdown" duration-ms="698" started-at="2023-08-09T12:08:06 ART" finished-at="2023-08-09T12:08:06 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion6Countdown -->
-        <test-method status="PASS" signature="testQuestion6()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuestion6" duration-ms="2042" started-at="2023-06-15T21:29:54 ART" finished-at="2023-06-15T21:29:56 ART">
+        <test-method status="PASS" signature="testQuestion6()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion6" duration-ms="1591" started-at="2023-08-09T12:08:06 ART" finished-at="2023-08-09T12:08:08 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuestion6 -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testQuizTitleResultScreenIsPresent" duration-ms="384" started-at="2023-06-15T21:29:56 ART" finished-at="2023-06-15T21:29:56 ART">
+        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuizTitleResultScreenIsPresent" duration-ms="3533" started-at="2023-08-09T12:08:08 ART" finished-at="2023-08-09T12:08:11 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="testDescriptionsResultScreenArePresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="testDescriptionsResultScreenArePresent" duration-ms="1098" started-at="2023-06-15T21:29:56 ART" finished-at="2023-06-15T21:29:58 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDescriptionsResultScreenArePresent -->
-        <test-method status="PASS" signature="verifyRetakeQuiz()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="verifyRetakeQuiz" duration-ms="5625" started-at="2023-06-15T21:29:58 ART" finished-at="2023-06-15T21:30:03 ART">
+        <test-method status="PASS" signature="verifyRetakeQuiz()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="verifyRetakeQuiz" duration-ms="5276" started-at="2023-08-09T12:08:11 ART" finished-at="2023-08-09T12:08:17 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRetakeQuiz -->
-        <test-method status="PASS" signature="verifyPrevButton()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@31dc339b]" name="verifyPrevButton" duration-ms="10107" started-at="2023-06-15T21:30:03 ART" finished-at="2023-06-15T21:30:13 ART">
+        <test-method status="PASS" signature="verifyPrevButton()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="verifyPrevButton" duration-ms="8769" started-at="2023-08-09T12:08:17 ART" finished-at="2023-08-09T12:08:25 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPrevButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="tearDown" is-config="true" duration-ms="1096" started-at="2023-08-09T12:11:50 ART" finished-at="2023-08-09T12:11:51 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- testModules.quizzes.quizzesTypes.QuizPersonalityTests -->
     </test> <!-- Quizzes -->
   </suite> <!-- quizzesSuite -->
-  <suite name="AllSuites" duration-ms="0" started-at="2023-06-15T21:38:20 ART" finished-at="2023-06-15T21:38:20 ART">
+  <suite name="AllSuites" duration-ms="0" started-at="2023-08-09T12:11:51 ART" finished-at="2023-08-09T12:11:51 ART">
     <groups>
     </groups>
   </suite> <!-- AllSuites -->

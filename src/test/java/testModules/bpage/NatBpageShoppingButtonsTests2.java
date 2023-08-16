@@ -37,21 +37,14 @@ public class NatBpageShoppingButtonsTests2 extends BpageInit {
         print("Verified 'Amazon' site loaded fine");
 
         amazonButton.returnToBFApp();
-
     }
 
     @Test(priority = 3)
     public void testBuyNowIsPresent() {
         testName("Verify 'Buy Now' button is present on bpage");
-        try {
             amazonButton.scrollBuyNowButton();
             amazonButton.buyNowIsPresent();
             print("Verified 'Buy Now' button is present");
-        }catch (RuntimeException exception){
-            scroll.scrollDown90_70();
-            Assert.assertTrue(amazonButton.buyNowIsPresent());
-            print("Verified 'Buy Now' button is present");
-        }
     }
 
     @Test(priority = 4)

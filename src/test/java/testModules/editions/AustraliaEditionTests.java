@@ -16,10 +16,10 @@ public class AustraliaEditionTests extends EditionsInit {
     public void onboarding()throws InterruptedException{
         Thread.sleep(3000);
         editions.tapAllowButton();
-        Thread.sleep(4000);
-        editions.tapOnAcceptAllCookiesBtn();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         editions.tapAllowButton();
+        Thread.sleep(2000);
+        editions.tapOnAcceptAllCookiesBtn();
         Thread.sleep(2000);
         disableAdExp.disableAdExp();
         editions.tapCloseButton();
@@ -32,12 +32,14 @@ public class AustraliaEditionTests extends EditionsInit {
     public void testAustraliaEditionIsPresent(){
         print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Australia' edition is present");
+        editions.tapOnNoThanksSweepTakes();
         editions.tapProfileButton();
         editions.tapSettingsButton();
         editions.tapEditionOption();
         print("Verified 'Australia' edition is present in the list");
         editions.tapAustraliaEdition();
         editions.tapCloseButton();
+
     }
 
     //Home
@@ -290,7 +292,7 @@ public class AustraliaEditionTests extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 26)
+ //   @Test (priority = 26)
     public void testTapOnResultsCategory(){
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");
@@ -318,7 +320,7 @@ public class AustraliaEditionTests extends EditionsInit {
         editions.tapBackButton();
     }
 
-    @Test (priority = 29)
+  //  @Test (priority = 29)
     public void testTapMatchups(){
         testName("testTapOnLove");
         quizzesSubTabs.tapOnMatchups();

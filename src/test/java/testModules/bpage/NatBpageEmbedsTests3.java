@@ -36,7 +36,6 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.tapBackButton();
         embeds.tapCancelButton();
         embeds.completeSearch(data);
-
     }
 
     @Test(priority = 5)
@@ -46,7 +45,6 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         Thread.sleep(3000);
         Assert.assertTrue(embeds.ytPlayButtonIsPresent());
         print("Verified 'Play' button is present ");
-
     }
 
     //Twitter
@@ -75,8 +73,6 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.tapBackButton();
         embeds.tapCancelButton();
         embeds.completeSearch(data);
-
-
     }
 
 

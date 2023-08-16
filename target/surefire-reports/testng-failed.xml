@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [quizzesSuite]">
-  <test thread-count="5" verbose="0" name="Quizzes(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [newsAndShoppingSuite]">
+  <test thread-count="5" verbose="0" name="News and Shopping(failed)">
     <classes>
-      <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests">
+      <class name="testModules.shopping.ShoppingTests">
         <methods>
-          <include name="testResultsSubTab"/>
+          <include name="openTrendingModal"/>
+          <include name="validateTrendingPackageTitleIsDisplayed"/>
+          <include name="testShopNowButton"/>
           <include name="tearDown"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
         </methods>
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizTriviaTests -->
+      </class> <!-- testModules.shopping.ShoppingTests -->
     </classes>
-  </test> <!-- Quizzes(failed) -->
-</suite> <!-- Failed suite [quizzesSuite] -->
+  </test> <!-- News and Shopping(failed) -->
+</suite> <!-- Failed suite [newsAndShoppingSuite] -->

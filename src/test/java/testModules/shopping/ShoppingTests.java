@@ -10,8 +10,10 @@ public class ShoppingTests extends EditionsInit {
     @Test
     public void testShoppingTab()throws InterruptedException {
         latestSubTab.tapAllowButton();
-        latestSubTab.tapOnAcceptAllCookiesBtn();
+        Thread.sleep(3000);
         latestSubTab.tapAllowButton();
+        Thread.sleep(3000);
+        latestSubTab.tapOnAcceptAllCookiesBtn();
         Thread.sleep(3000);
         latestSubTab.closeGoToGamesScreen();
         testName("Verify the Shopping Tab");
