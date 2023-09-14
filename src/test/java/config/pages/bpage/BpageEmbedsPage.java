@@ -19,12 +19,15 @@ public class BpageEmbedsPage extends BpagePage{
     private final By igEmbed = By.xpath("//XCUIElementTypeOther[@name=\"Instagram\"]");
     private final By igProfile = MobileBy.AccessibilityId("Instagram");
     private final By ytPlayButton = MobileBy.AccessibilityId("Play");
-    private final By twPlayButton = By.xpath("//XCUIElementTypeOther[@name=\"Video Attachment\"]");
+  //  private final By twPlayButton = By.xpath("//XCUIElementTypeOther[@name=\"Video Attachment\"]");
+  private final By twPlayButton = MobileBy.AccessibilityId("Watch now");
     private final By igVideoEmbed = By.xpath("//XCUIElementTypeButton[@name=\"Control\"]");
     private final By watchNowButtonTikTokEmbed = MobileBy.AccessibilityId("Watch now");
     private final By userTikTokEmbed = MobileBy.AccessibilityId("@alexogray");
     private final By tumblrButton = MobileBy.AccessibilityId("Open in");
     private final By tumblrUser = MobileBy.AccessibilityId("yungterra");
+    private final By twitterEmbed = MobileBy.AccessibilityId("20 seconds");
+
 
 
     //Methods
@@ -73,15 +76,25 @@ public class BpageEmbedsPage extends BpagePage{
     //--TikTok
     public void scrollToTikTokVideo() {
         int i;
-        for(i=0; i<=2; i++) {
+        scroll.scrollDown();
+        scroll.scrollDown();
+        scroll.scrollDown();
+        scroll.scrollDown();
+      /*  for(i=0; i<=2; i++) {
             scroll.scrollDown();
-        }
-        scroll.scrollDown90_80();
-        scroll.scrollUntilElement(userTikTokEmbed);
+            scroll.scrollDown();
+          //  scroll.scrollDown();
+        }*/
+      //  scroll.scrollDown90_80();
+     //   scroll.scrollUntilElement(watchNowButtonTikTokEmbed);
     }
 
     public Boolean tikTokWatchNowButtonIsPresent(){
         return driver.findElement(watchNowButtonTikTokEmbed).isDisplayed();
+    }
+
+    public void tapOntikTokWatchNowButton(){
+         driver.findElement(watchNowButtonTikTokEmbed).click();
     }
 
     public Boolean tikTokUserIsPresent(){
@@ -96,6 +109,8 @@ public class BpageEmbedsPage extends BpagePage{
     public Boolean tumblrUserIsPresent(){
         return driver.findElement(tumblrUser).isDisplayed();
     }
+
+    public void tapTwitterVideo(){driver.findElement(twitterEmbed).click();}
 
     public void tapTumblrButtonEmbed()throws InterruptedException{
         Thread.sleep(3000);

@@ -3,11 +3,14 @@
 <suite name="homeSuite" verbose="1" >
     <test verbose="2" name="Home" parallel="none" preserve-order="true" >
            <classes>
-               <class name="testModules.home.HomeLatestNewNavTests"/>
+               <class name="testModules.home.InFeedElements"/>
+              <class name="testModules.home.HomeLatestNewNavTests"/>
+
                <class name="testModules.home.HomeTrendingVisualFeed"/>
                <class name="testModules.home.GamesFeed"/>
                <class name="testModules.home.ShowsSubTabTests"/>
                <class name="testModules.quizzes.QuizzesLatestTests"/>
-       </classes>
-   </test>
-</suite>
+
+           </classes>
+       </test>
+    </suite>

@@ -5,6 +5,9 @@ import config.pages.WaitersPage;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.springframework.ui.context.Theme;
+import sun.security.krb5.internal.TGSRep;
 
 import java.util.List;
 
@@ -17,6 +20,19 @@ public class HomeLatestPage extends CommonPage {
     //NEW TAB NABS
   //  private final By recentlyViewed = MobileBy.AccessibilityId("⏳ Recently Viewed");
   //  private final By backHome = MobileBy.AccessibilityId("Home");
+
+    //COMMENTS IN-FEED
+    private final By inFeedCommentBtn = MobileBy.AccessibilityId("Write Comment");
+    public void tapOnInFeedComments() {driver.findElement(inFeedCommentBtn).click();}
+
+    //IN FEED ELEMENTS
+     private final By dailyTriviaPromo = MobileBy.AccessibilityId("banner_promo_cell");
+
+    public Boolean tapOnDailyTriviaPromo() throws InterruptedException{
+        driver.findElement(dailyTriviaPromo).click();
+        Thread.sleep(2000);
+       return isDailyTriviaHeaderDisplayed();
+    }
 
     //GAMES TAB
     private final By gamesLbl = By.xpath("//XCUIElementTypeStaticText[@name=\"Games\"]");
@@ -33,6 +49,50 @@ public class HomeLatestPage extends CommonPage {
     private final By influencer = MobileBy.AccessibilityId("Can you make it as an influencer?");
     private final By profileIcon = By.xpath("//XCUIElementTypeNavigationBar[@name=\"_TtGC7SwiftUI32NavigationStackHosting\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton");
 
+    // DAILY TRIVIA
+    private final By dailyTrivia = MobileBy.AccessibilityId("DAILY TRIVIA");
+    private final By startButton = MobileBy.AccessibilityId("Start Game");
+    private final By triviaOption = By.xpath("XCUIElementTypeButton");
+    private final By nextQButton = By.xpath("(//XCUIElementTypeButton[@name=\"Next Question\"])[2]");
+
+    private final By startPyramid = By.xpath("(//XCUIElementTypeStaticText[@name=\"Start\"])[1]");
+    private final By howToPlay = MobileBy.AccessibilityId("How To Play");
+    private final By nextPyramid = MobileBy.AccessibilityId("Next");
+    private final By caretRight = MobileBy.AccessibilityId("Caret Right");
+    private final By startBtn = MobileBy.AccessibilityId("Start");
+
+//METHODS
+    public void tapCaretRight() {driver.findElement(caretRight).click();}
+    public void tapStart() {driver.findElement(startBtn).click();}
+    public Boolean isDailyTriviaHeaderDisplayed(){return driver.findElement(dailyTrivia).isDisplayed();}
+    public Boolean isStartGameDisplayed(){return driver.findElement(startButton).isDisplayed();}
+    public void tapStartPyramid(){ driver.findElement(startPyramid).click();}
+    public boolean isHowToPlayHeaderDisplayed() {return driver.findElement(howToPlay).isDisplayed();}
+    public void tapNext(){driver.findElement(nextQButton).click();}
+    public void tapNextPyramid(){driver.findElement(nextPyramid).click();}
+
+    // SUBNAVS
+    private final By subnavTrending = MobileBy.AccessibilityId("Subnav-Trending");
+    private final By subnavFunnyTweets = MobileBy.AccessibilityId("Subnav-FunnyTweets");
+    private final By subnavGames = MobileBy.AccessibilityId("Subnav-Games");
+    private final By subnavLatest = MobileBy.AccessibilityId("Subnav-Latest");
+    private final By subnavRandom = MobileBy.AccessibilityId("Subnav-Random");
+    private final By subnavGossip = MobileBy.AccessibilityId("Subnav-Gossip");
+    private final By subnavGay = MobileBy.AccessibilityId("Subnav-Gay");
+    private final By subnavMore = MobileBy.AccessibilityId("Subnav-More");
+
+    //SUBNAV METHODS
+
+    public void tapOnTrendingSubNav(){driver.findElement( subnavTrending).click();}
+    public void tapOnFunnyTweetsSubNav(){driver.findElement(subnavFunnyTweets).click();}
+    public void tapOnGamesSubNav(){driver.findElement(subnavGames).click();;}
+    public void tapOnLatestSubNav(){driver.findElement(subnavLatest).click();;}
+    public void tapOnRandomSubNav(){driver.findElement(subnavRandom).click();;}
+    public void tapOnGossipSubNav(){driver.findElement(subnavGossip).click();;}
+    public void tapOnGaySubNav(){driver.findElement(subnavGay).click();;}
+    public void tapOnMoreSubNav(){driver.findElement(subnavMore).click();;}
+
+
     //Methods
 
     public void tapOnProfile(){driver.findElement(profileIcon).click();}
@@ -45,6 +105,7 @@ public class HomeLatestPage extends CommonPage {
     public void clickOnQuizParty(){driver.findElement(quizPartyThumbnail).click();}
     public void clickOnDailyTrivia(){driver.findElement(dailyTriviaThumbnail).click();}
 
+
     public Boolean isMoreFunStuffLblDisplayed() {return driver.findElement(moreFunStuffLbl).isDisplayed();}
     public void tapOnWhoDis(){driver.findElement(whoDis).click();}
     public void tapOnNepogochi(){driver.findElement(negopotchi).click();}
@@ -53,7 +114,7 @@ public class HomeLatestPage extends CommonPage {
 
 
     //
-
+    private final By CTALink = MobileBy.AccessibilityId("See more shopping posts");
 
     private final By continueReadingLbl = MobileBy.AccessibilityId("Continue Reading");
     private final By lifeBtn = MobileBy.AccessibilityId("Life");
@@ -143,6 +204,7 @@ public class HomeLatestPage extends CommonPage {
     //ELEMENTS
 
 
+
     private final By maybeLaterBtn = MobileBy.AccessibilityId("Maybe later");
     private final By shoppingPackageCTA =  By.xpath("//*[contains(@name,'Find even more')]");
     private final By popularProdLbl = MobileBy.AccessibilityId("Popular Products");
@@ -160,6 +222,7 @@ public class HomeLatestPage extends CommonPage {
     private final By authorName = MobileBy.AccessibilityId("Author");
   //  private final By authorName = By.xpath("//*[contains(@Label,'by')]");
 
+    public void tapOnCTALink(){driver.findElement(CTALink).click();}
 
     //Methods
     //VISUAL FEED ELEMENTS
@@ -198,6 +261,25 @@ public class HomeLatestPage extends CommonPage {
         WaitersPage.waitForElement(MusicBtn);
         driver.findElement(MusicBtn).click();
     }
+
+    public void tapOnNextQuestion(){driver.findElement(nextQButton).click();}
+    public void selectOption() {driver.findElement(triviaOption).click();}
+    public void tapStartBtn() {driver.findElement(startButton).click();}
+
+
+    public void runDailyTrivia()throws InterruptedException{
+        tapStartBtn();
+        List<MobileElement> listOfElements = driver.findElements(By.xpath("//XCUIElementTypeButton"));
+        for(int i=0; i<5; i++){
+            Thread.sleep(1000);
+            listOfElements.get(4).click();
+          //  Thread.sleep(3000);
+            tapOnNextQuestion();
+            System.out.println(listOfElements.get(3).getText());
+        }
+    }
+
+
 
     public void closeComments(){
         driver.findElement(closeComments).click();

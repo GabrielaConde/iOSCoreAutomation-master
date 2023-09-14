@@ -12,6 +12,8 @@ public class ShowsSubTabTests extends EditionsInit {
     @BeforeClass
     public void goingToShowsTab() throws InterruptedException{
         Thread.sleep(5000);
+        scroll.scrollHoriz(1,1,1,1);
+        latestSubTab.tapOnMoreSubNav();
         latestSubTab.tapOnShows();
         print("-------------------STARTING SHOWS SUB-TAB TESTS-------------------");
         testName("Verify Shows Sub-Tab is present and tap-able");

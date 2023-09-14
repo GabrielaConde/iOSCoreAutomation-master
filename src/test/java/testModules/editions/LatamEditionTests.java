@@ -44,7 +44,7 @@ public class LatamEditionTests extends EditionsInit {
         editions.tapAtrasButton();
     }
 
-    @Test (priority = 3)
+  //  @Test (priority = 3)
     public void testVistosRecientementeSubTab(){
         testName("Verify 'Ja Ja Ja' Sub-Tab");
         print("Verified Sub-tab 'Ja Ja Ja' is present");

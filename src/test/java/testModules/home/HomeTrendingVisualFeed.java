@@ -97,6 +97,8 @@ public class HomeTrendingVisualFeed extends EditionsInit {
     public void tapOnLifeBtn()throws InterruptedException{
         Thread.sleep(2000);
         latestSubTab.tapLifeBtn();
+        latestSubTab.tapSplash();
+        bpage.tapBackButton();
         latestSubTab.tapBackButton();
     }
 
@@ -111,6 +113,8 @@ public class HomeTrendingVisualFeed extends EditionsInit {
     public void tapOnCelebrityBtn()throws InterruptedException{
         Thread.sleep(2000);
         latestSubTab.tapCelebrityBtn();
+        latestSubTab.tapSplash();
+        bpage.tapBackButton();
         latestSubTab.tapBackButton();
     }
 
@@ -118,6 +122,8 @@ public class HomeTrendingVisualFeed extends EditionsInit {
     public void tapOnAnimalsBtn()throws InterruptedException{
         Thread.sleep(2000);
         latestSubTab.tapAnimalsBtn();
+        latestSubTab.tapSplash();
+        bpage.tapBackButton();
         latestSubTab.tapBackButton();
     }
 
@@ -125,6 +131,8 @@ public class HomeTrendingVisualFeed extends EditionsInit {
     public void tapOnFoodBtn()throws InterruptedException{
         Thread.sleep(2000);
         latestSubTab.tapFoodBtn();
+        latestSubTab.tapSplash();
+        bpage.tapBackButton();
         latestSubTab.tapBackButton();
     }
 
@@ -132,8 +140,11 @@ public class HomeTrendingVisualFeed extends EditionsInit {
     public void tapOnMusicBtn()throws InterruptedException{
         Thread.sleep(2000);
         latestSubTab.tapMusicBtn();
+        latestSubTab.tapSplash();
+        bpage.tapBackButton();
         latestSubTab.tapBackButton();
-      //  latestSubTab.backHome();
+     //   latestSubTab.tapBackButton();
+//        latestSubTab.backHome();
     }
 
 }

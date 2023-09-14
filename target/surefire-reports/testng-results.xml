@@ -1,589 +1,666 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="93" passed="89">
+<testng-results skipped="0" failed="3" ignored="8" total="72" passed="61">
   <reporter-output>
   </reporter-output>
-  <suite name="quizzesSuite" duration-ms="266688" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:11:50 ART">
+  <suite name="bpageSuite" duration-ms="794399" started-at="2023-09-05T21:43:25 ART" finished-at="2023-09-05T21:56:39 ART">
     <groups>
     </groups>
-    <test name="Quizzes" duration-ms="266688" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:11:50 ART">
-      <class name="testModules.quizzes.quizzesTypes.QuizTriviaTests">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="initializePages" is-config="true" duration-ms="1394" started-at="2023-08-09T12:09:56 ART" finished-at="2023-08-09T12:09:57 ART">
+    <test name="BPage" duration-ms="794399" started-at="2023-09-05T21:43:25 ART" finished-at="2023-09-05T21:56:39 ART">
+      <class name="testModules.bpage.FallBpageTests4">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.bpage.FallBpageTests4@37654521]" name="initializePages" is-config="true" duration-ms="453" started-at="2023-09-05T21:54:26 ART" finished-at="2023-09-05T21:54:27 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="testSearchTriviaQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSearchTriviaQuiz" duration-ms="14836" started-at="2023-08-09T12:09:57 ART" data-provider="trivia" finished-at="2023-08-09T12:10:12 ART">
+        <test-method status="PASS" signature="testSearchFallbackBpage(java.lang.String)[pri:1, instance:testModules.bpage.FallBpageTests4@37654521]" name="testSearchFallbackBpage" duration-ms="14181" started-at="2023-09-05T21:54:27 ART" data-provider="fallbackBpage" finished-at="2023-09-05T21:54:41 ART">
           <params>
             <param index="0">
               <value>
-                <![CDATA[How Good Are You At Pictionary? Identify These 30-Second Drawings To Find Out]]>
+                <![CDATA[US Life Expectancy In 2020 Dropped By More Than It Has Since World War II]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchTriviaQuiz -->
-        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testQuizTitleIsPresentAtBeginning" duration-ms="4631" started-at="2023-08-09T12:10:12 ART" finished-at="2023-08-09T12:10:17 ART">
+        </test-method> <!-- testSearchFallbackBpage -->
+        <test-method status="PASS" signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyTitleIsPresent" duration-ms="4124" started-at="2023-09-05T21:54:41 ART" finished-at="2023-09-05T21:54:45 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSubTextIsPresent" duration-ms="312" started-at="2023-08-09T12:10:17 ART" finished-at="2023-08-09T12:10:17 ART">
+        </test-method> <!-- verifyTitleIsPresent -->
+        <test-method status="PASS" signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifySubTitleIsPresent" duration-ms="604" started-at="2023-09-05T21:54:45 ART" finished-at="2023-09-05T21:54:46 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testAuthorInfoIsPresent" duration-ms="329" started-at="2023-08-09T12:10:17 ART" finished-at="2023-08-09T12:10:18 ART">
+        </test-method> <!-- verifySubTitleIsPresent -->
+        <test-method status="PASS" signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyAuthorInfoIsPresentOnBpage" duration-ms="1755" started-at="2023-09-05T21:54:46 ART" finished-at="2023-09-05T21:54:47 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testPlayWithFriendsButton" duration-ms="684" started-at="2023-08-09T12:10:18 ART" finished-at="2023-08-09T12:10:18 ART">
+        </test-method> <!-- verifyAuthorInfoIsPresentOnBpage -->
+        <test-method status="PASS" signature="verifyShareButtonIsPresent()[pri:10, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyShareButtonIsPresent" duration-ms="627" started-at="2023-09-05T21:54:47 ART" finished-at="2023-09-05T21:54:48 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlayWithFriendsButton -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testPlayNowButton" duration-ms="1311" started-at="2023-08-09T12:10:18 ART" finished-at="2023-08-09T12:10:20 ART">
+        </test-method> <!-- verifyShareButtonIsPresent -->
+        <test-method status="PASS" signature="tapShareButtonOnBpage()[pri:11, instance:testModules.bpage.FallBpageTests4@37654521]" name="tapShareButtonOnBpage" duration-ms="3982" started-at="2023-09-05T21:54:48 ART" finished-at="2023-09-05T21:54:52 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testProgressBar1()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testProgressBar1" duration-ms="595" started-at="2023-08-09T12:10:20 ART" finished-at="2023-08-09T12:10:20 ART">
+        </test-method> <!-- tapShareButtonOnBpage -->
+        <test-method status="PASS" signature="verifyMoreOnThisHeaderIsPresent()[pri:14, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyMoreOnThisHeaderIsPresent" duration-ms="12776" started-at="2023-09-05T21:54:52 ART" finished-at="2023-09-05T21:55:05 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testProgressBar1 -->
-        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSendFirstAnswer" duration-ms="3492" started-at="2023-08-09T12:10:20 ART" finished-at="2023-08-09T12:10:24 ART">
+        </test-method> <!-- verifyMoreOnThisHeaderIsPresent -->
+        <test-method status="PASS" signature="verifyMoreOnThisBpageIsPresent()[pri:15, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyMoreOnThisBpageIsPresent" duration-ms="1024" started-at="2023-09-05T21:55:05 ART" finished-at="2023-09-05T21:55:06 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSendFirstAnswer -->
-        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testCorrectTextIsPresent" duration-ms="610" started-at="2023-08-09T12:10:24 ART" finished-at="2023-08-09T12:10:24 ART">
+        </test-method> <!-- verifyMoreOnThisBpageIsPresent -->
+        <test-method status="PASS" signature="verifyMoreOnThisBpage()[pri:16, instance:testModules.bpage.FallBpageTests4@37654521]" name="verifyMoreOnThisBpage" duration-ms="10874" started-at="2023-09-05T21:55:06 ART" finished-at="2023-09-05T21:55:17 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCorrectTextIsPresent -->
-        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testFirstAnswerTextIsPresent" duration-ms="309" started-at="2023-08-09T12:10:24 ART" finished-at="2023-08-09T12:10:25 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testNextButtonIsPresent" duration-ms="281" started-at="2023-08-09T12:10:25 ART" finished-at="2023-08-09T12:10:25 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNextButtonIsPresent -->
-        <test-method status="PASS" signature="testTapNextButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testTapNextButton" duration-ms="796" started-at="2023-08-09T12:10:25 ART" finished-at="2023-08-09T12:10:26 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapNextButton -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5351" started-at="2023-08-09T12:10:26 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:31 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[king ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5034" started-at="2023-08-09T12:10:31 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:36 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Suit case]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5365" started-at="2023-08-09T12:10:36 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:41 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bugspray]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5066" started-at="2023-08-09T12:10:41 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:46 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wedding cake]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5118" started-at="2023-08-09T12:10:46 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:52 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Baguette]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5282" started-at="2023-08-09T12:10:52 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:10:57 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ray]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5083" started-at="2023-08-09T12:10:57 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:02 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[first class]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5141" started-at="2023-08-09T12:11:02 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:07 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Darts]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5207" started-at="2023-08-09T12:11:07 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:12 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[stadium]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5152" started-at="2023-08-09T12:11:12 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:17 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Destination]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5297" started-at="2023-08-09T12:11:17 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:23 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[seashell]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testIntermediateAnswers(java.lang.String)[pri:13, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIntermediateAnswers" duration-ms="5151" started-at="2023-08-09T12:11:23 ART" data-provider="QuizTriviaAnswers" finished-at="2023-08-09T12:11:28 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pen Pal]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIntermediateAnswers -->
-        <test-method status="PASS" signature="testProgressBar14()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testProgressBar14" duration-ms="3810" started-at="2023-08-09T12:11:28 ART" finished-at="2023-08-09T12:11:32 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProgressBar14 -->
-        <test-method status="PASS" signature="testSendLatestAnswer()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testSendLatestAnswer" duration-ms="3003" started-at="2023-08-09T12:11:32 ART" finished-at="2023-08-09T12:11:35 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSendLatestAnswer -->
-        <test-method status="PASS" signature="testIGiveUpButtonIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testIGiveUpButtonIsPresent" duration-ms="535" started-at="2023-08-09T12:11:35 ART" finished-at="2023-08-09T12:11:35 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testIGiveUpButtonIsPresent -->
-        <test-method status="PASS" signature="testTapIGiveUpButton()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testTapIGiveUpButton" duration-ms="1133" started-at="2023-08-09T12:11:35 ART" finished-at="2023-08-09T12:11:36 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapIGiveUpButton -->
-        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testWrongTextIsPresent" duration-ms="638" started-at="2023-08-09T12:11:36 ART" finished-at="2023-08-09T12:11:37 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWrongTextIsPresent -->
-        <test-method status="PASS" signature="testLatestAnswerTextIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testLatestAnswerTextIsPresent" duration-ms="1045" started-at="2023-08-09T12:11:37 ART" finished-at="2023-08-09T12:11:38 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLatestAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testQuizTitleResultScreenIsPresent" duration-ms="4639" started-at="2023-08-09T12:11:38 ART" finished-at="2023-08-09T12:11:43 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="testScoreTextResultScreenIsPresent()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testScoreTextResultScreenIsPresent" duration-ms="3534" started-at="2023-08-09T12:11:43 ART" finished-at="2023-08-09T12:11:46 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScoreTextResultScreenIsPresent -->
-        <test-method status="PASS" signature="testResultsTextIsPresent()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testResultsTextIsPresent" duration-ms="3526" started-at="2023-08-09T12:11:46 ART" finished-at="2023-08-09T12:11:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResultsTextIsPresent -->
-        <test-method status="PASS" signature="testResultsDescriptionTextIsPresent()[pri:23, instance:testModules.quizzes.quizzesTypes.QuizTriviaTests@31dc339b]" name="testResultsDescriptionTextIsPresent" duration-ms="455" started-at="2023-08-09T12:11:50 ART" finished-at="2023-08-09T12:11:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResultsDescriptionTextIsPresent -->
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizTriviaTests -->
-      <class name="testModules.quizzes.quizzesTypes.QuizPredetTests">
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="initializePages" is-config="true" duration-ms="1330" started-at="2023-08-09T12:08:25 ART" finished-at="2023-08-09T12:08:27 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="testSearchPredetQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSearchPredetQuiz" duration-ms="14989" started-at="2023-08-09T12:08:27 ART" data-provider="predetermined" finished-at="2023-08-09T12:08:42 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Try To Guess The 'Avengers: Infinity War' Character By The Simple Drawing]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchPredetQuiz -->
-        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testQuizTitleIsPresentAtBeginning" duration-ms="3923" started-at="2023-08-09T12:08:42 ART" finished-at="2023-08-09T12:08:46 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
-        <test-method status="PASS" signature="testMainImageIsPresent()[pri:2, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testMainImageIsPresent" duration-ms="854" started-at="2023-08-09T12:08:46 ART" finished-at="2023-08-09T12:08:47 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMainImageIsPresent -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSubTextIsPresent" duration-ms="325" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:47 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testAuthorInfoIsPresent" duration-ms="290" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:47 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButton()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testPlayWithFriendsButton" duration-ms="639" started-at="2023-08-09T12:08:47 ART" finished-at="2023-08-09T12:08:48 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlayWithFriendsButton -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testPlayNowButton" duration-ms="1696" started-at="2023-08-09T12:08:48 ART" finished-at="2023-08-09T12:08:49 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testProgressBarFirstQ()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testProgressBarFirstQ" duration-ms="788" started-at="2023-08-09T12:08:49 ART" finished-at="2023-08-09T12:08:50 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProgressBarFirstQ -->
-        <test-method status="PASS" signature="testSendFirstAnswer()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSendFirstAnswer" duration-ms="1226" started-at="2023-08-09T12:08:50 ART" finished-at="2023-08-09T12:08:51 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSendFirstAnswer -->
-        <test-method status="PASS" signature="testCorrectTextIsPresent()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCorrectTextIsPresent" duration-ms="715" started-at="2023-08-09T12:08:51 ART" finished-at="2023-08-09T12:08:52 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCorrectTextIsPresent -->
-        <test-method status="PASS" signature="testFirstAnswerTextIsPresent()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testFirstAnswerTextIsPresent" duration-ms="301" started-at="2023-08-09T12:08:52 ART" finished-at="2023-08-09T12:08:53 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFirstAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonGoodAnswerIsPresent()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testNextButtonGoodAnswerIsPresent" duration-ms="342" started-at="2023-08-09T12:08:53 ART" finished-at="2023-08-09T12:08:53 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNextButtonGoodAnswerIsPresent -->
-        <test-method status="PASS" signature="testTapNextGoodAnswerButton()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testTapNextGoodAnswerButton" duration-ms="782" started-at="2023-08-09T12:08:53 ART" finished-at="2023-08-09T12:08:54 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapNextGoodAnswerButton -->
-        <test-method status="PASS" signature="testProgressBarSecondQ()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testProgressBarSecondQ" duration-ms="769" started-at="2023-08-09T12:08:54 ART" finished-at="2023-08-09T12:08:54 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProgressBarSecondQ -->
-        <test-method status="PASS" signature="testSendSecondAnswer()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSendSecondAnswer" duration-ms="1313" started-at="2023-08-09T12:08:54 ART" finished-at="2023-08-09T12:08:56 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSendSecondAnswer -->
-        <test-method status="PASS" signature="testWrongTextIsPresent()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testWrongTextIsPresent" duration-ms="735" started-at="2023-08-09T12:08:56 ART" finished-at="2023-08-09T12:08:56 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWrongTextIsPresent -->
-        <test-method status="PASS" signature="testSecondAnswerTextIsPresent()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testSecondAnswerTextIsPresent" duration-ms="351" started-at="2023-08-09T12:08:56 ART" finished-at="2023-08-09T12:08:57 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSecondAnswerTextIsPresent -->
-        <test-method status="PASS" signature="testNextButtonWrongAnswerIsPresent()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testNextButtonWrongAnswerIsPresent" duration-ms="356" started-at="2023-08-09T12:08:57 ART" finished-at="2023-08-09T12:08:57 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testNextButtonWrongAnswerIsPresent -->
-        <test-method status="PASS" signature="testTapNextWrongAnswerButton()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testTapNextWrongAnswerButton" duration-ms="921" started-at="2023-08-09T12:08:57 ART" finished-at="2023-08-09T12:08:58 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTapNextWrongAnswerButton -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4032" started-at="2023-08-09T12:08:58 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:02 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vision]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3980" started-at="2023-08-09T12:09:02 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:06 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Bruce Banner]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4082" started-at="2023-08-09T12:09:06 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:10 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Black Widow]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3969" started-at="2023-08-09T12:09:10 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:14 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Black Widow]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4047" started-at="2023-08-09T12:09:14 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:18 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Vision]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4119" started-at="2023-08-09T12:09:18 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:22 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tony Stark]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4016" started-at="2023-08-09T12:09:22 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:26 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Thor]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="3982" started-at="2023-08-09T12:09:26 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:30 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Loki]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4017" started-at="2023-08-09T12:09:30 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:34 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Tony Stark]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4064" started-at="2023-08-09T12:09:34 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:38 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[T'Challa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4000" started-at="2023-08-09T12:09:38 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:42 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Thanos]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testCompletingQuiz(java.lang.String)[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testCompletingQuiz" duration-ms="4018" started-at="2023-08-09T12:09:42 ART" data-provider="QuizPredetAnswers" finished-at="2023-08-09T12:09:46 ART">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wanda Maximoff]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCompletingQuiz -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:20, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testQuizTitleResultScreenIsPresent" duration-ms="4531" started-at="2023-08-09T12:09:46 ART" finished-at="2023-08-09T12:09:51 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="testScoreResultScreenIsPresent()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizPredetTests@3c0f93f1]" name="testScoreResultScreenIsPresent" duration-ms="5147" started-at="2023-08-09T12:09:51 ART" finished-at="2023-08-09T12:09:56 ART">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScoreResultScreenIsPresent -->
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizPredetTests -->
-      <class name="testModules.quizzes.quizzesTypes.QuizPersonalityTests">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="setUpTest" is-config="true" duration-ms="18534" started-at="2023-08-09T12:07:05 ART" finished-at="2023-08-09T12:07:24 ART">
+        </test-method> <!-- verifyMoreOnThisBpage -->
+      </class> <!-- testModules.bpage.FallBpageTests4 -->
+      <class name="testModules.bpage.NatBpageTests1">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:testModules.bpage.NatBpageTests1@d29f28]" name="setUpTest" is-config="true" duration-ms="21947" started-at="2023-09-05T21:43:03 ART" finished-at="2023-09-05T21:43:25 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="initializePages" is-config="true" duration-ms="1331" started-at="2023-08-09T12:07:24 ART" finished-at="2023-08-09T12:07:25 ART">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageTests1@d29f28]" name="initializePages" is-config="true" duration-ms="1211" started-at="2023-09-05T21:43:25 ART" finished-at="2023-09-05T21:43:26 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="init" is-config="true" duration-ms="6144" started-at="2023-08-09T12:07:25 ART" finished-at="2023-08-09T12:07:31 ART">
+        <test-method status="PASS" signature="initProcess()[pri:0, instance:testModules.bpage.NatBpageTests1@d29f28]" name="initProcess" is-config="true" duration-ms="10655" started-at="2023-09-05T21:43:26 ART" finished-at="2023-09-05T21:43:37 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testSearchInstantQuiz(java.lang.String)[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testSearchInstantQuiz" duration-ms="14859" started-at="2023-08-09T12:07:31 ART" data-provider="personality" finished-at="2023-08-09T12:07:46 ART">
+        </test-method> <!-- initProcess -->
+        <test-method status="PASS" signature="disableAdExp()[pri:0, instance:testModules.bpage.NatBpageTests1@d29f28]" name="disableAdExp" duration-ms="38954" started-at="2023-09-05T21:43:37 ART" finished-at="2023-09-05T21:44:16 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disableAdExp -->
+        <test-method status="PASS" signature="testSearchNativeBpage(java.lang.String)[pri:1, instance:testModules.bpage.NatBpageTests1@d29f28]" name="testSearchNativeBpage" duration-ms="16880" started-at="2023-09-05T21:44:16 ART" data-provider="nativeBpage" finished-at="2023-09-05T21:44:33 ART">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Pick A Bunch Of Kittens And We'll Guess Your Life Goal]]>
+                <![CDATA[Simone Biles Won A Bronze Medal In Her Olympic Return]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchInstantQuiz -->
-        <test-method status="PASS" signature="testQuizTitleIsPresentAtBeginning()[pri:1, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuizTitleIsPresentAtBeginning" duration-ms="4594" started-at="2023-08-09T12:07:46 ART" finished-at="2023-08-09T12:07:51 ART">
+        </test-method> <!-- testSearchNativeBpage -->
+        <test-method status="PASS" signature="verifyDataCategoryArePresent()[pri:2, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyDataCategoryArePresent" duration-ms="558" started-at="2023-09-05T21:44:33 ART" finished-at="2023-09-05T21:44:33 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuizTitleIsPresentAtBeginning -->
-        <test-method status="PASS" signature="testMainImageIsPresent()[pri:2, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testMainImageIsPresent" duration-ms="1028" started-at="2023-08-09T12:07:51 ART" finished-at="2023-08-09T12:07:52 ART">
+        </test-method> <!-- verifyDataCategoryArePresent -->
+        <test-method status="PASS" signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyTitleIsPresent" duration-ms="934" started-at="2023-09-05T21:44:33 ART" finished-at="2023-09-05T21:44:34 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMainImageIsPresent -->
-        <test-method status="PASS" signature="testSubTextIsPresent()[pri:3, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testSubTextIsPresent" duration-ms="382" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:52 ART">
+        </test-method> <!-- verifyTitleIsPresent -->
+        <test-method status="PASS" signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifySubTitleIsPresent" duration-ms="218" started-at="2023-09-05T21:44:34 ART" finished-at="2023-09-05T21:44:34 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSubTextIsPresent -->
-        <test-method status="PASS" signature="testAuthorInfoIsPresent()[pri:4, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testAuthorInfoIsPresent" duration-ms="300" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:52 ART">
+        </test-method> <!-- verifySubTitleIsPresent -->
+        <test-method status="PASS" signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyAuthorInfoIsPresentOnBpage" duration-ms="1203" started-at="2023-09-05T21:44:34 ART" finished-at="2023-09-05T21:44:35 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAuthorInfoIsPresent -->
-        <test-method status="PASS" signature="testPlayWithFriendsButtonIsPresent()[pri:5, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testPlayWithFriendsButtonIsPresent" duration-ms="611" started-at="2023-08-09T12:07:52 ART" finished-at="2023-08-09T12:07:53 ART">
+        </test-method> <!-- verifyAuthorInfoIsPresentOnBpage -->
+        <test-method status="PASS" signature="verifyImagePresentOnBpage()[pri:6, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyImagePresentOnBpage" duration-ms="791" started-at="2023-09-05T21:44:35 ART" finished-at="2023-09-05T21:44:36 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlayWithFriendsButtonIsPresent -->
-        <test-method status="PASS" signature="testPlayNowButton()[pri:6, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testPlayNowButton" duration-ms="1339" started-at="2023-08-09T12:07:53 ART" finished-at="2023-08-09T12:07:54 ART">
+        </test-method> <!-- verifyImagePresentOnBpage -->
+        <test-method status="PASS" signature="tapImage()[pri:7, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapImage" duration-ms="1450" started-at="2023-09-05T21:44:36 ART" finished-at="2023-09-05T21:44:38 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPlayNowButton -->
-        <test-method status="PASS" signature="testQuestion1Countdown()[pri:7, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion1Countdown" duration-ms="703" started-at="2023-08-09T12:07:54 ART" finished-at="2023-08-09T12:07:55 ART">
+        </test-method> <!-- tapImage -->
+        <test-method status="PASS" signature="verifyShareButtonIsPresentOnMV()[pri:8, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyShareButtonIsPresentOnMV" duration-ms="263" started-at="2023-09-05T21:44:38 ART" finished-at="2023-09-05T21:44:38 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion1Countdown -->
-        <test-method status="PASS" signature="testQuestion1()[pri:8, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion1" duration-ms="1566" started-at="2023-08-09T12:07:55 ART" finished-at="2023-08-09T12:07:56 ART">
+        </test-method> <!-- verifyShareButtonIsPresentOnMV -->
+        <test-method status="PASS" signature="tapShareButtonOnMV()[pri:9, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapShareButtonOnMV" duration-ms="2700" started-at="2023-09-05T21:44:38 ART" finished-at="2023-09-05T21:44:41 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion1 -->
-        <test-method status="PASS" signature="testQuestion2Countdown()[pri:9, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion2Countdown" duration-ms="738" started-at="2023-08-09T12:07:56 ART" finished-at="2023-08-09T12:07:57 ART">
+        </test-method> <!-- tapShareButtonOnMV -->
+        <test-method status="PASS" signature="verifyDismissMV()[pri:10, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyDismissMV" duration-ms="1242" started-at="2023-09-05T21:44:41 ART" finished-at="2023-09-05T21:44:42 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion2Countdown -->
-        <test-method status="PASS" signature="testQuestion2()[pri:10, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion2" duration-ms="1402" started-at="2023-08-09T12:07:57 ART" finished-at="2023-08-09T12:07:59 ART">
+        </test-method> <!-- verifyDismissMV -->
+        <test-method status="PASS" signature="tapInternalLink()[pri:11, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapInternalLink" duration-ms="8342" started-at="2023-09-05T21:44:42 ART" finished-at="2023-09-05T21:44:50 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion2 -->
-        <test-method status="PASS" signature="testQuestion3Countdown()[pri:11, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion3Countdown" duration-ms="795" started-at="2023-08-09T12:07:59 ART" finished-at="2023-08-09T12:07:59 ART">
+        </test-method> <!-- tapInternalLink -->
+        <test-method status="PASS" signature="verifyInternalLinkLoadsFine()[pri:12, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyInternalLinkLoadsFine" duration-ms="4512" started-at="2023-09-05T21:44:50 ART" finished-at="2023-09-05T21:44:55 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion3Countdown -->
-        <test-method status="PASS" signature="testQuestion3()[pri:12, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion3" duration-ms="1510" started-at="2023-08-09T12:07:59 ART" finished-at="2023-08-09T12:08:01 ART">
+        </test-method> <!-- verifyInternalLinkLoadsFine -->
+        <test-method status="PASS" signature="verifyShareButtonIsPresent()[pri:14, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyShareButtonIsPresent" duration-ms="413" started-at="2023-09-05T21:44:55 ART" finished-at="2023-09-05T21:44:55 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion3 -->
-        <test-method status="PASS" signature="testQuestion4Countdown()[pri:13, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion4Countdown" duration-ms="843" started-at="2023-08-09T12:08:01 ART" finished-at="2023-08-09T12:08:02 ART">
+        </test-method> <!-- verifyShareButtonIsPresent -->
+        <test-method status="PASS" signature="tapShareButtonOnBpage()[pri:15, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapShareButtonOnBpage" duration-ms="6781" started-at="2023-09-05T21:44:55 ART" finished-at="2023-09-05T21:45:02 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion4Countdown -->
-        <test-method status="PASS" signature="testQuestion4()[pri:14, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion4" duration-ms="1607" started-at="2023-08-09T12:08:02 ART" finished-at="2023-08-09T12:08:03 ART">
+        </test-method> <!-- tapShareButtonOnBpage -->
+        <test-method status="PASS" signature="verifyMoreOnThisHeaderIsPresent()[pri:18, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyMoreOnThisHeaderIsPresent" duration-ms="10543" started-at="2023-09-05T21:45:02 ART" finished-at="2023-09-05T21:45:13 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion4 -->
-        <test-method status="PASS" signature="testQuestion5Countdown()[pri:15, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion5Countdown" duration-ms="683" started-at="2023-08-09T12:08:03 ART" finished-at="2023-08-09T12:08:04 ART">
+        </test-method> <!-- verifyMoreOnThisHeaderIsPresent -->
+        <test-method status="PASS" signature="verifyMoreOnThisBpageIsPresent()[pri:19, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyMoreOnThisBpageIsPresent" duration-ms="487" started-at="2023-09-05T21:45:13 ART" finished-at="2023-09-05T21:45:13 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion5Countdown -->
-        <test-method status="PASS" signature="testQuestion5()[pri:16, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion5" duration-ms="1501" started-at="2023-08-09T12:08:04 ART" finished-at="2023-08-09T12:08:06 ART">
+        </test-method> <!-- verifyMoreOnThisBpageIsPresent -->
+        <test-method status="FAIL" signature="verifyMoreOnThisBpage()[pri:20, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyMoreOnThisBpage" duration-ms="66041" started-at="2023-09-05T21:45:13 ART" finished-at="2023-09-05T21:46:19 ART">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}
+at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at config.pages.bpage.BpagePage.bpageTitleIsPresent(BpagePage.java:93)
+at testModules.bpage.NatBpageTests1.verifyMoreOnThisBpage(NatBpageTests1.java:181)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion5 -->
-        <test-method status="PASS" signature="testQuestion6Countdown()[pri:17, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion6Countdown" duration-ms="698" started-at="2023-08-09T12:08:06 ART" finished-at="2023-08-09T12:08:06 ART">
+        </test-method> <!-- verifyMoreOnThisBpage -->
+        <test-method status="PASS" signature="validateRelatedContentHeader()[pri:21, instance:testModules.bpage.NatBpageTests1@d29f28]" name="validateRelatedContentHeader" duration-ms="6002" started-at="2023-09-05T21:46:19 ART" finished-at="2023-09-05T21:46:25 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion6Countdown -->
-        <test-method status="PASS" signature="testQuestion6()[pri:18, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuestion6" duration-ms="1591" started-at="2023-08-09T12:08:06 ART" finished-at="2023-08-09T12:08:08 ART">
+        </test-method> <!-- validateRelatedContentHeader -->
+        <test-method status="PASS" signature="validateRelatedContentItemDisplays()[pri:22, instance:testModules.bpage.NatBpageTests1@d29f28]" name="validateRelatedContentItemDisplays" duration-ms="10872" started-at="2023-09-05T21:46:25 ART" finished-at="2023-09-05T21:46:36 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuestion6 -->
-        <test-method status="PASS" signature="testQuizTitleResultScreenIsPresent()[pri:19, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="testQuizTitleResultScreenIsPresent" duration-ms="3533" started-at="2023-08-09T12:08:08 ART" finished-at="2023-08-09T12:08:11 ART">
+        </test-method> <!-- validateRelatedContentItemDisplays -->
+        <test-method status="PASS" signature="verifyMoreLikeThisBpageIsPresent()[pri:24, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyMoreLikeThisBpageIsPresent" duration-ms="46894" started-at="2023-09-05T21:46:36 ART" finished-at="2023-09-05T21:47:23 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testQuizTitleResultScreenIsPresent -->
-        <test-method status="PASS" signature="verifyRetakeQuiz()[pri:21, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="verifyRetakeQuiz" duration-ms="5276" started-at="2023-08-09T12:08:11 ART" finished-at="2023-08-09T12:08:17 ART">
+        </test-method> <!-- verifyMoreLikeThisBpageIsPresent -->
+        <test-method status="FAIL" signature="tapFirstMoreLikeThisBpage()[pri:25, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapFirstMoreLikeThisBpage" duration-ms="57329" started-at="2023-09-05T21:47:23 ART" finished-at="2023-09-05T21:48:20 ART">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}
+at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at config.pages.bpage.BpagePage.bpageTitleIsPresent(BpagePage.java:93)
+at testModules.bpage.NatBpageTests1.tapFirstMoreLikeThisBpage(NatBpageTests1.java:237)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRetakeQuiz -->
-        <test-method status="PASS" signature="verifyPrevButton()[pri:22, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="verifyPrevButton" duration-ms="8769" started-at="2023-08-09T12:08:17 ART" finished-at="2023-08-09T12:08:25 ART">
+        </test-method> <!-- tapFirstMoreLikeThisBpage -->
+        <test-method status="PASS" signature="verifyTrendingHeader()[pri:26, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyTrendingHeader" duration-ms="17416" started-at="2023-09-05T21:48:20 ART" finished-at="2023-09-05T21:48:38 ART">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPrevButton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testModules.quizzes.quizzesTypes.QuizPersonalityTests@10bdf5e5]" name="tearDown" is-config="true" duration-ms="1096" started-at="2023-08-09T12:11:50 ART" finished-at="2023-08-09T12:11:51 ART">
+        </test-method> <!-- verifyTrendingHeader -->
+        <test-method status="PASS" signature="verifyTrendingBpageIsPresent()[pri:27, instance:testModules.bpage.NatBpageTests1@d29f28]" name="verifyTrendingBpageIsPresent" duration-ms="533" started-at="2023-09-05T21:48:38 ART" finished-at="2023-09-05T21:48:38 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTrendingBpageIsPresent -->
+        <test-method status="PASS" signature="tapTrendingBpage()[pri:28, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tapTrendingBpage" duration-ms="6832" started-at="2023-09-05T21:48:38 ART" finished-at="2023-09-05T21:48:45 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapTrendingBpage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testModules.bpage.NatBpageTests1@d29f28]" name="tearDown" is-config="true" duration-ms="1063" started-at="2023-09-05T21:56:39 ART" finished-at="2023-09-05T21:56:40 ART">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testModules.quizzes.quizzesTypes.QuizPersonalityTests -->
-    </test> <!-- Quizzes -->
-  </suite> <!-- quizzesSuite -->
-  <suite name="AllSuites" duration-ms="0" started-at="2023-08-09T12:11:51 ART" finished-at="2023-08-09T12:11:51 ART">
+      </class> <!-- testModules.bpage.NatBpageTests1 -->
+      <class name="testModules.bpage.NatBpageShoppingButtonsTests2">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="initializePages" is-config="true" duration-ms="376" started-at="2023-09-05T21:48:45 ART" finished-at="2023-09-05T21:48:45 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testSearchFallbackBpage(java.lang.String)[pri:0, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="testSearchFallbackBpage" duration-ms="16095" started-at="2023-09-05T21:48:45 ART" data-provider="amazonButtonNativeBpage" finished-at="2023-09-05T21:49:01 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[33 Trendy Pieces Your Friends Will Want To Borrow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFallbackBpage -->
+        <test-method status="PASS" signature="testBuyFromAmazonButtonIsPresent()[pri:1, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="testBuyFromAmazonButtonIsPresent" duration-ms="7729" started-at="2023-09-05T21:49:01 ART" finished-at="2023-09-05T21:49:09 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyFromAmazonButtonIsPresent -->
+        <test-method status="PASS" signature="testBuyFromAmazonButton()[pri:2, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="testBuyFromAmazonButton" duration-ms="3004" started-at="2023-09-05T21:49:09 ART" finished-at="2023-09-05T21:49:12 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyFromAmazonButton -->
+        <test-method status="PASS" signature="testBuyNowIsPresent()[pri:3, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="testBuyNowIsPresent" duration-ms="37014" started-at="2023-09-05T21:49:12 ART" finished-at="2023-09-05T21:49:49 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyNowIsPresent -->
+        <test-method status="PASS" signature="testBuyNowButton()[pri:4, instance:testModules.bpage.NatBpageShoppingButtonsTests2@793be5ca]" name="testBuyNowButton" duration-ms="3736" started-at="2023-09-05T21:49:49 ART" finished-at="2023-09-05T21:49:53 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyNowButton -->
+      </class> <!-- testModules.bpage.NatBpageShoppingButtonsTests2 -->
+      <class name="testModules.bpage.NatBpageCommentsTests7">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="initializePages" is-config="true" duration-ms="419" started-at="2023-09-05T21:55:17 ART" finished-at="2023-09-05T21:55:17 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testSearchNativeBpage(java.lang.String)[pri:0, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="testSearchNativeBpage" duration-ms="19510" started-at="2023-09-05T21:55:17 ART" data-provider="nativeBPageComment" finished-at="2023-09-05T21:55:36 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[15 Things You're Gonna Want To Bring To College That No One Tells You About]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchNativeBpage -->
+        <test-method status="PASS" signature="verifyCommentsBtnIsPresent()[pri:1, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyCommentsBtnIsPresent" duration-ms="3910" started-at="2023-09-05T21:55:36 ART" finished-at="2023-09-05T21:55:40 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCommentsBtnIsPresent -->
+        <test-method status="PASS" signature="addComment(java.lang.String)[pri:4, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="addComment" duration-ms="3409" started-at="2023-09-05T21:55:40 ART" data-provider="comment" finished-at="2023-09-05T21:55:44 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[It's amazing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addComment -->
+        <test-method status="PASS" signature="verifyPostButtonIsPresent()[pri:5, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyPostButtonIsPresent" duration-ms="473" started-at="2023-09-05T21:55:44 ART" finished-at="2023-09-05T21:55:44 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPostButtonIsPresent -->
+        <test-method status="PASS" signature="tapPostButton()[pri:6, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="tapPostButton" duration-ms="1358" started-at="2023-09-05T21:55:44 ART" finished-at="2023-09-05T21:55:46 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapPostButton -->
+        <test-method status="PASS" signature="testEnterEmail(java.lang.String)[pri:7, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="testEnterEmail" duration-ms="2558" started-at="2023-09-05T21:55:46 ART" data-provider="stageUser" finished-at="2023-09-05T21:55:48 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gabmoreau@hotmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterEmail -->
+        <test-method status="PASS" signature="testEnterPassword(java.lang.String)[pri:8, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="testEnterPassword" duration-ms="13058" started-at="2023-09-05T21:55:48 ART" data-provider="stagePass" finished-at="2023-09-05T21:56:01 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[almadormida12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnterPassword -->
+        <test-method status="PASS" signature="verifyMostHeartSectionIsPresent()[pri:9, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyMostHeartSectionIsPresent" duration-ms="2468" started-at="2023-09-05T21:56:01 ART" finished-at="2023-09-05T21:56:04 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMostHeartSectionIsPresent -->
+        <test-method status="PASS" signature="verifyMostHeartSectionLoads()[pri:10, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyMostHeartSectionLoads" duration-ms="5042" started-at="2023-09-05T21:56:04 ART" finished-at="2023-09-05T21:56:09 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMostHeartSectionLoads -->
+        <test-method status="PASS" signature="verifyMostRecentSectionIsPresent()[pri:11, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyMostRecentSectionIsPresent" duration-ms="1475" started-at="2023-09-05T21:56:09 ART" finished-at="2023-09-05T21:56:10 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMostRecentSectionIsPresent -->
+        <test-method status="PASS" signature="verifyUserIsPresentOnMoreRecentSection()[pri:12, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyUserIsPresentOnMoreRecentSection" duration-ms="4199" started-at="2023-09-05T21:56:10 ART" finished-at="2023-09-05T21:56:14 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserIsPresentOnMoreRecentSection -->
+        <test-method status="PASS" signature="verifyCommentIsPresent(java.lang.String)[pri:13, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyCommentIsPresent" duration-ms="1139" started-at="2023-09-05T21:56:14 ART" data-provider="comment" finished-at="2023-09-05T21:56:16 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[It's amazing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCommentIsPresent -->
+        <test-method status="PASS" signature="tapLikeCommentButton()[pri:15, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="tapLikeCommentButton" duration-ms="975" started-at="2023-09-05T21:56:16 ART" finished-at="2023-09-05T21:56:17 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tapLikeCommentButton -->
+        <test-method status="PASS" signature="verifyReplyButtonIsPresent()[pri:17, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyReplyButtonIsPresent" duration-ms="6174" started-at="2023-09-05T21:56:17 ART" finished-at="2023-09-05T21:56:23 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReplyButtonIsPresent -->
+        <test-method status="PASS" signature="replyComment(java.lang.String)[pri:18, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="replyComment" duration-ms="4235" started-at="2023-09-05T21:56:23 ART" data-provider="replyComment" finished-at="2023-09-05T21:56:27 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[I really like it]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyComment -->
+        <test-method status="PASS" signature="verifyReplyCommentIsPresent(java.lang.String)[pri:19, instance:testModules.bpage.NatBpageCommentsTests7@15aab8c6]" name="verifyReplyCommentIsPresent" duration-ms="12262" started-at="2023-09-05T21:56:27 ART" data-provider="replyComment" finished-at="2023-09-05T21:56:39 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[I really like it]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReplyCommentIsPresent -->
+      </class> <!-- testModules.bpage.NatBpageCommentsTests7 -->
+      <class name="testModules.bpage.NatBpageEmbedsTests3">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="initializePages" is-config="true" duration-ms="1272" started-at="2023-09-05T21:49:53 ART" finished-at="2023-09-05T21:49:54 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="testSearchIGYTNativeBpage(java.lang.String)[pri:0, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testSearchIGYTNativeBpage" duration-ms="16747" started-at="2023-09-05T21:49:54 ART" data-provider="IGYTEmbed" finished-at="2023-09-05T21:50:11 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Whitney Port Opened Up About Her Recent Pregnancy Loss After Sharing Health Concerns Two Weeks Ago]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchIGYTNativeBpage -->
+        <test-method status="PASS" signature="testIGEmbedIsPresent()[pri:2, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testIGEmbedIsPresent" duration-ms="11008" started-at="2023-09-05T21:50:11 ART" finished-at="2023-09-05T21:50:22 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIGEmbedIsPresent -->
+        <test-method status="PASS" signature="testSearchYTVideoNativeBpage(java.lang.String)[pri:4, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testSearchYTVideoNativeBpage" duration-ms="16727" started-at="2023-09-05T21:50:22 ART" data-provider="YTVideoEmbed" finished-at="2023-09-05T21:50:39 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rather Than Just Hiding Extremist Videos, YouTube Will Offer Anti-Extremist Results]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchYTVideoNativeBpage -->
+        <test-method status="PASS" signature="testPlayYTButtonIsPresent()[pri:5, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testPlayYTButtonIsPresent" duration-ms="6861" started-at="2023-09-05T21:50:39 ART" finished-at="2023-09-05T21:50:46 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPlayYTButtonIsPresent -->
+        <test-method status="PASS" signature="testSearchTwitterNativeBpage(java.lang.String)[pri:6, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testSearchTwitterNativeBpage" duration-ms="17475" started-at="2023-09-05T21:50:46 ART" data-provider="twitterEmbed" finished-at="2023-09-05T21:51:03 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Addison Rae Accused Of Being A Trump Supporter On Twitter After She Excitedly Greeted The Former President At UFC 264]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTwitterNativeBpage -->
+        <test-method status="FAIL" signature="testTWEmbedIsPresent()[pri:7, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testTWEmbedIsPresent" duration-ms="68294" started-at="2023-09-05T21:51:03 ART" finished-at="2023-09-05T21:52:11 ART">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeOther[@name="Video Attachment"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
+Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
+*** Element info: {Using=xpath, value=//XCUIElementTypeOther[@name="Video Attachment"]}
+at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+at config.pages.bpage.BpageEmbedsPage.twPlayButtonIsPresent(BpageEmbedsPage.java:51)
+at testModules.bpage.NatBpageEmbedsTests3.testTWEmbedIsPresent(NatBpageEmbedsTests3.java:64)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTWEmbedIsPresent -->
+        <test-method status="PASS" signature="testSearchIGVideoNativeBpage(java.lang.String)[pri:8, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testSearchIGVideoNativeBpage" duration-ms="21524" started-at="2023-09-05T21:52:11 ART" data-provider="instagramVideoEmbed" finished-at="2023-09-05T21:52:33 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Maisie Richardson-Sellers' Instagram Is Pretty Much A Stan Account For Their Girlfriend, And I'm Obsessed With It]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchIGVideoNativeBpage -->
+        <test-method status="PASS" signature="testSearchTikTokVideoNativeBpage(java.lang.String)[pri:10, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testSearchTikTokVideoNativeBpage" duration-ms="18189" started-at="2023-09-05T21:52:33 ART" data-provider="tiktokEmbed" finished-at="2023-09-05T21:52:51 ART">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Someone On TikTok Tricked A Bunch Of "Love Island" Fans Into Thinking They Were On The Show]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTikTokVideoNativeBpage -->
+        <test-method status="PASS" signature="testTikTokVideoIsPresent()[pri:11, instance:testModules.bpage.NatBpageEmbedsTests3@2df9b86]" name="testTikTokVideoIsPresent" duration-ms="95099" started-at="2023-09-05T21:52:51 ART" finished-at="2023-09-05T21:54:26 ART">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTikTokVideoIsPresent -->
+      </class> <!-- testModules.bpage.NatBpageEmbedsTests3 -->
+    </test> <!-- BPage -->
+  </suite> <!-- bpageSuite -->
+  <suite name="AllSuites" duration-ms="0" started-at="2023-09-05T21:56:40 ART" finished-at="2023-09-05T21:56:40 ART">
     <groups>
     </groups>
   </suite> <!-- AllSuites -->

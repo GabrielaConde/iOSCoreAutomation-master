@@ -4,6 +4,7 @@ import basePackage.Base;
 import com.sun.org.apache.xalan.internal.xsltc.dom.AdaptiveResultTreeImpl;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.TouchAction;
+import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import io.appium.java_client.android.AndroidDriver;
@@ -75,8 +76,8 @@ public class CommonPage extends Base {
  //   protected final By closeButton = MobileBy.AccessibilityId("Close");
  //   protected final By doneButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]")
  //   protected final By doneButton = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
-    protected final By doneButton = By.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
- //   protected final By doneButton = MobileBy.AccessibilityId("Done");
+  //  protected final By doneButton = By.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
+    protected final By doneButton = MobileBy.AccessibilityId("Done");
   //  protected final By cancelButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
     protected final By cancelButton = MobileBy.AccessibilityId("Cancel");
     protected final By OKButton = MobileBy.AccessibilityId("OK");
@@ -89,17 +90,22 @@ public class CommonPage extends Base {
     protected final By shoppingJapan = MobileBy.AccessibilityId("shopping");
     protected final By gamesTab = MobileBy.AccessibilityId("games");
 
+
+
     //--Subtabs
     protected final By buzzFeedLogo = MobileBy.AccessibilityId("Home");
     protected final By subtabs = By.xpath("//XCUIElementTypeApplication[@name='BuzzFeed 🐞']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeButton");
     protected final By latestSubTab = By.id("Latest");
     protected final By trendingSubTab = MobileBy.AccessibilityId("Trending");
     protected final By videosSubTab = MobileBy.AccessibilityId("Videos");
+    protected final By funnyTweets = By.xpath("//XCUIElementTypeStaticText[@name=\"Funny Tweets\"]");
 
     //--Feeds
     protected final By splashCellNewNav = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
  //   protected final By splashCellNewNav = By.xpath("//*[contains(@name,'splash_cell,')]");
   //  protected final By splashCellNewNav = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]");
+
+    protected final By trendingSplash = By.xpath("**/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
     protected final By fstCellNewNav = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
     protected final By splashCell = By.id("splash_cell");
     protected final By firstCell = By.xpath(("(//XCUIElementTypeCell[@name='buffet_grid_cell'])[1]/XCUIElementTypeOther[2]"));
@@ -111,6 +117,16 @@ public class CommonPage extends Base {
     protected final By shoppingHeader = MobileBy.AccessibilityId("Shopping");
     protected final By trendingProductsTitle = MobileBy.AccessibilityId("Trending Products");
     protected final By latestGiftGuides = MobileBy.AccessibilityId("Latest Gift Guides");
+    protected final By latestHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"Latest\"]");
+    protected final By randomHeader = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Random\"]\n");
+    protected final By gossipHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"Celebrity\"]");
+    protected final By lgbtqHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"LGBTQ\"]");
+
+    //Methods
+    public Boolean isLatestHeaderDisplayed(){return driver.findElement(latestHeader).isDisplayed();}
+    public Boolean isRandomHeaderDisplayed(){return driver.findElement(randomHeader).isDisplayed();}
+    public Boolean isGossipHeaderDisplayed() {return driver.findElement(gossipHeader).isDisplayed();}
+    public Boolean isLgbtqHeaderDisplayed() {return driver.findElement(lgbtqHeader).isDisplayed();}
 
     //--Quizzes tab
     protected final By quizzesHeader = By.id("Quizzes");
@@ -143,6 +159,7 @@ public class CommonPage extends Base {
     protected final By searchField = By.xpath("//XCUIElementTypeSearchField[@name='Search BuzzFeed']");
     protected final By searchResult = By.id("buffet_grid_cell");
     protected final By suggestedSearchesTitle = MobileBy.AccessibilityId("Suggested Searches");
+
 
     //--Settings
     protected final By settingsButton = MobileBy.AccessibilityId("Settings");
@@ -182,6 +199,8 @@ public class CommonPage extends Base {
         }catch (Exception e){}
     }
 
+    public Boolean isFunnyTweetsHeaderDisplayed(){return driver.findElement(funnyTweets).isDisplayed();}
+
     public void tapOnNoThanksSweepTakes(){
         try {
             driver.findElement(sweepTakesNoThanks).click();
@@ -216,6 +235,7 @@ public class CommonPage extends Base {
     public Boolean splashCellNewNavIsPresent() {return driver.findElement(splashCellNewNav).isDisplayed();}
     public void tapSplashNewNav(){driver.findElement(splashCellNewNav).click();}
     public void tapFstCellNewNav(){driver.findElement(fstCellNewNav).click();}
+    public void tapTrendingSplash() {driver.findElement(trendingSplash).click();}
 
     public void tapOnSearchIcon(){
         driver.findElement(searchIcon).click();
@@ -347,6 +367,8 @@ public class CommonPage extends Base {
         driver.findElement(gamesTab).click();
         print("Tapped 'Games' tab");
     }
+
+    public Boolean isGamesHeaderDisplayed(){ return driver.findElement(gamesTab).isDisplayed();}
 
     public void tapShoppingTab() {
         driver.findElement(shoppingTab).click();

@@ -11,14 +11,6 @@
           <include name="setUpTest"/>
         </methods>
       </class> <!-- testModules.home.HomeLatestNewNavTests -->
-      <class name="testModules.home.HomeTrendingVisualFeed">
-        <methods>
-          <include name="tearDown"/>
-          <include name="initializePages"/>
-          <include name="setUpTest"/>
-          <include name="tapOnMusicBtn"/>
-        </methods>
-      </class> <!-- testModules.home.HomeTrendingVisualFeed -->
     </classes>
   </test> <!-- Home(failed) -->
 </suite> <!-- Failed suite [homeSuite] -->

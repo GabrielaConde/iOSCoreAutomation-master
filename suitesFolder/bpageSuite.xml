@@ -3,11 +3,11 @@
 <suite name="bpageSuite" verbose="1" >
     <test verbose="2" name="BPage" parallel="none" preserve-order="true" >
         <classes>
-               <class name="testModules.bpage.NatBpageTests1"/>
-                    <class name="testModules.bpage.NatBpageShoppingButtonsTests2"/>
-                      <class name="testModules.bpage.NatBpageEmbedsTests3"/>
-                      <class name="testModules.bpage.FallBpageTests4"/>
-                <class name="testModules.bpage.NatBpageCommentsTests7"/>
+              <class name="testModules.bpage.NatBpageTests1"/>
+               <class name="testModules.bpage.NatBpageShoppingButtonsTests2"/>
+               <class name="testModules.bpage.NatBpageEmbedsTests3"/>
+               <class name="testModules.bpage.FallBpageTests4"/>
+               <class name="testModules.bpage.NatBpageCommentsTests7"/>
   </classes>
 </test>
 </suite>

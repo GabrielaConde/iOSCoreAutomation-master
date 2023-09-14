@@ -1,0 +1,29 @@
+userName: gabrielacondemor_DQB8Fe
+accessKey: MzzcBsPqWxsnx6GtqdsH
+framework: java
+app: bs://759140274ad6d673a0030ad6eeed06a26e92e8e0
+platforms:
+  - platformName: ios
+    deviceName: iPhone 14 Pro
+    platformVersion: 16
+  - platformName: ios
+    deviceName: iPhone 13 Pro
+    platformVersion: 15
+  - platformName: ios
+    deviceName: iPhone 14
+    platformVersion: 16
+browserstackLocal: false
+buildName: bstack-demo
+projectName: iOSCore
+debug: true
+networkLogs: true
+
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+# Test Observability is an intelligent test reporting & debugging product. It collects data using the SDK. Read more about what data is collected at https://www.browserstack.com/docs/test-observability/references/terms-and-conditions
+# Visit observability.browserstack.com to see your test reports and insights. To disable test observability, specify `testObservability: false` in the key below.
+testObservability: true
+
+source: testng :appium-intellij:v1.1.2

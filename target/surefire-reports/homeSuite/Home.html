@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Home</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>66/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>68/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 09 10:06:13 ART 2023</td>
+<td>Started on:</td><td>Tue Sep 05 18:30:44 ART 2023</td>
 </tr>
-<tr><td>Total time:</td><td>665 seconds (665328 ms)</td>
+<tr><td>Total time:</td><td>631 seconds (631960 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,234 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.testFail()'><b>testFail</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at testModules.home.HomeLatestNewNavTests.testFail(HomeLatestNewNavTests.java:503)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1471019696", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1471019696'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at testModules.home.HomeLatestNewNavTests.testFail(HomeLatestNewNavTests.java:503)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></div></td>
-<td>0</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnMusicBtn()'><b>tapOnMusicBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:d:69e7:b03e:6e5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
-Session ID: b63a9e85-d9a2-4702-9b4b-9c528a6f484b
-*** Element info: {Using=accessibility id, value=Home}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at config.pages.home.HomeLatestPage.backHome(HomeLatestPage.java:245)
-	at testModules.home.HomeTrendingVisualFeed.tapOnMusicBtn(HomeTrendingVisualFeed.java:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1021656938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1021656938'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Gabrielas-MBP.fibertel.com.ar&apos;, ip: &apos;fe80:0:0:0:d:69e7:b03e:6e5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;1.8.0_322&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
-Session ID: b63a9e85-d9a2-4702-9b4b-9c528a6f484b
-*** Element info: {Using=accessibility id, value=Home}
-	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
-	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:342)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at config.pages.home.HomeLatestPage.backHome(HomeLatestPage.java:245)
-	at testModules.home.HomeTrendingVisualFeed.tapOnMusicBtn(HomeTrendingVisualFeed.java:136)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1207)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></div></td>
-<td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -303,335 +75,345 @@ Session ID: b63a9e85-d9a2-4702-9b4b-9c528a6f484b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testModules.home.HomeTrendingVisualFeed.validateAuthorButton()'><b>validateAuthorButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>6</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.scrollDownOnVisualFeed()'><b>scrollDownOnVisualFeed</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>75</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapFirstCell()'><b>tapFirstCell</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.validateViewsButton()'><b>validateViewsButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>7</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnMusic()'><b>tapOnMusic</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>9</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnMore1()'><b>tapOnMore1</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>1</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.verifyBuzzFeedLogo()'><b>verifyBuzzFeedLogo</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnTravel()'><b>tapOnTravel</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>9</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnParents()'><b>tapOnParents</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>7</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnAIQuizzes()'><b>tapOnAIQuizzes</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapGamesTab()'><b>tapGamesTab</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.validateGamesTab()'><b>validateGamesTab</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>7</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnRecentlyViewed()'><b>tapOnRecentlyViewed</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>8</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnTrending()'><b>tapOnTrending</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnWhoAreYou()'><b>tapOnWhoAreYou</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>5</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnLifeBtn()'><b>tapOnLifeBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnEntertainment()'><b>tapOnEntertainment</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapSplash()'><b>tapSplash</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>3</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnComunity()'><b>tapOnComunity</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnParents()'><b>tapOnParents</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnTrending()'><b>tapOnTrending</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnLatest()'><b>tapOnLatest</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.moveToNewsTab()'><b>moveToNewsTab</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>0</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnCelebrity()'><b>tapOnCelebrity</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>5</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.validateTappingOnQuizParty()'><b>validateTappingOnQuizParty</b><br>Test class: testModules.home.GamesFeed</td>
+<td title='testModules.quizzes.QuizzesLatestTests.tapFirstCell()'><b>tapFirstCell</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
 <td></td>
 <td>2</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapFirstBpage()'><b>tapFirstBpage</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnFunnyTweets()'><b>tapOnFunnyTweets</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
-<td>9</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapNewsSplash()'><b>tapNewsSplash</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapOnFood()'><b>tapOnFood</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
-<td>7</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnVideosBtn()'><b>tapOnVideosBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnLove()'><b>tapOnLove</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>8</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.openTrendingModal()'><b>openTrendingModal</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>41</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnRewind()'><b>tapOnRewind</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
 <td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnCanWeGuess()'><b>tapOnCanWeGuess</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>6</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnFood()'><b>tapOnFood</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>7</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnTrending()'><b>tapOnTrending</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>7</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.validateTappingOnWhoDis()'><b>validateTappingOnWhoDis</b><br>Test class: testModules.home.GamesFeed</td>
-<td></td>
-<td>3</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnAIQuizzes()'><b>tapOnAIQuizzes</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.validateCommentsButton()'><b>validateCommentsButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>20</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnVideos()'><b>tapOnVideos</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.validateTappingOnNepogochi()'><b>validateTappingOnNepogochi</b><br>Test class: testModules.home.GamesFeed</td>
-<td></td>
-<td>6</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnNifty()'><b>tapOnNifty</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnAnimalsBtn()'><b>tapOnAnimalsBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.arePyramidSchemeElementsDisplayed()'><b>arePyramidSchemeElementsDisplayed</b><br>Test class: testModules.home.GamesFeed</td>
-<td></td>
-<td>0</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnTrivia()'><b>tapOnTrivia</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>6</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.isContinueReadingLblDisplayed()'><b>isContinueReadingLblDisplayed</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapItemsShoppingPackage()'><b>tapItemsShoppingPackage</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnMusicBtn()'><b>tapOnMusicBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
 <td></td>
 <td>4</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
 <tr>
-<td title='testModules.home.HomeTrendingVisualFeed.validateBookmarksButton()'><b>validateBookmarksButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>41</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.verifyQuizzesHeaderIsPresent()'><b>verifyQuizzesHeaderIsPresent</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>0</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.validateShareButton()'><b>validateShareButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>8</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.validateTappingOnPyramidScheme()'><b>validateTappingOnPyramidScheme</b><br>Test class: testModules.home.GamesFeed</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
-<tr>
-<td title='testModules.home.ShowsSubTabTests.tapShows()'><b>tapShows</b><br>Test class: testModules.home.ShowsSubTabTests</td>
-<td></td>
-<td>105</td>
-<td>testModules.home.ShowsSubTabTests@31dc339b</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnLGBTQ()'><b>tapOnLGBTQ</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnFoodBtn()'><b>tapOnFoodBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnComunity()'><b>tapOnComunity</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapFstNewsCell()'><b>tapFstNewsCell</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
 <td title='testModules.quizzes.QuizzesLatestTests.tapQuizzesTab()'><b>tapQuizzesTab</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
 <td></td>
 <td>0</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
 <tr>
-<td title='testModules.home.HomeTrendingVisualFeed.tapOnCelebrityBtn()'><b>tapOnCelebrityBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
-<td></td>
-<td>5</td>
-<td>testModules.home.HomeTrendingVisualFeed@6e1ec318</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapSplash()'><b>tapSplash</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>3</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
-<tr>
-<td title='testModules.home.GamesFeed.validateTappingOnTrivia()'><b>validateTappingOnTrivia</b><br>Test class: testModules.home.GamesFeed</td>
+<td title='testModules.home.GamesFeed.validateTappingOnPyramidScheme()'><b>validateTappingOnPyramidScheme</b><br>Test class: testModules.home.GamesFeed</td>
 <td></td>
 <td>2</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.validateTrendingVideos()'><b>validateTrendingVideos</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.quizzes.QuizzesLatestTests.verifyQuizzesHeaderIsPresent()'><b>verifyQuizzesHeaderIsPresent</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
 <td></td>
-<td>4</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnMore()'><b>tapOnMore</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
-<td></td>
-<td>1</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
+<td>0</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
 <tr>
 <td title='testModules.home.GamesFeed.isGamesLblDisplayed()'><b>isGamesLblDisplayed</b><br>Test class: testModules.home.GamesFeed</td>
 <td></td>
 <td>10</td>
-<td>testModules.home.GamesFeed@7e0b0338</td></tr>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.tapOnShows()'><b>tapOnShows</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
-<td></td>
-<td>2</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
-<tr>
-<td title='testModules.quizzes.QuizzesLatestTests.tapOnDisney()'><b>tapOnDisney</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnMusic()'><b>tapOnMusic</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>6</td>
-<td>testModules.quizzes.QuizzesLatestTests@544fe44c</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.enableVisualFeedExp()'><b>enableVisualFeedExp</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnTrivia()'><b>tapOnTrivia</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
 <td></td>
-<td>36</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>5</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
 <tr>
-<td title='testModules.home.HomeLatestNewNavTests.testAllowButton()'><b>testAllowButton</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnFoodBtn()'><b>tapOnFoodBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
 <td></td>
-<td>17</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>5</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnGossip()'><b>tapOnGossip</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnMore()'><b>tapOnMore</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>1</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapGamesTab()'><b>tapGamesTab</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.GamesFeed.arePyramidSchemeElementsDisplayed()'><b>arePyramidSchemeElementsDisplayed</b><br>Test class: testModules.home.GamesFeed</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapOnTVAndMovies()'><b>tapOnTVAndMovies</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
-<td>8</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>6</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapOnBooks()'><b>tapOnBooks</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
+<td>5</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.scrollDownOnVisualFeed()'><b>scrollDownOnVisualFeed</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>66</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.verifyBuzzFeedLogo()'><b>verifyBuzzFeedLogo</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapNewsSplash()'><b>tapNewsSplash</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnTravel()'><b>tapOnTravel</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnCelebrityBtn()'><b>tapOnCelebrityBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnWhoAreYou()'><b>tapOnWhoAreYou</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnDisney()'><b>tapOnDisney</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>10</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.validateBookmarksButton()'><b>validateBookmarksButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>35</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnEntentainment()'><b>tapOnEntentainment</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnFood()'><b>tapOnFood</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
 <td>6</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnVideosBtn()'><b>tapOnVideosBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.isContinueReadingLblDisplayed()'><b>isContinueReadingLblDisplayed</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnRandom()'><b>tapOnRandom</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnAIQuizzes()'><b>tapOnAIQuizzes</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>3</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapSplash()'><b>tapSplash</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>3</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.validateCommentsButton()'><b>validateCommentsButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>20</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnAnimalsBtn()'><b>tapOnAnimalsBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapOnAnimals()'><b>tapOnAnimals</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
 <td>5</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapItemsShoppingPackage()'><b>tapItemsShoppingPackage</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>24</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.openTrendingModal()'><b>openTrendingModal</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>39</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnShows()'><b>tapOnShows</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnVideos()'><b>tapOnVideos</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnGayStuff()'><b>tapOnGayStuff</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnTrending()'><b>tapOnTrending</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.enableVisualFeedExp()'><b>enableVisualFeedExp</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>35</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapFstNewsCell()'><b>tapFstNewsCell</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.GamesFeed.validateTappingOnTrivia()'><b>validateTappingOnTrivia</b><br>Test class: testModules.home.GamesFeed</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapFirstBpage()'><b>tapFirstBpage</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.GamesFeed.validateTappingOnNepogochi()'><b>validateTappingOnNepogochi</b><br>Test class: testModules.home.GamesFeed</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnNifty()'><b>tapOnNifty</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.validateViewsButton()'><b>validateViewsButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnLove()'><b>tapOnLove</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.validateAuthorButton()'><b>validateAuthorButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.GamesFeed.validateTappingOnWhoDis()'><b>validateTappingOnWhoDis</b><br>Test class: testModules.home.GamesFeed</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
 <tr>
 <td title='testModules.home.HomeLatestNewNavTests.tapOnStyle()'><b>tapOnStyle</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
 <td></td>
+<td>6</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.tapOnLifeBtn()'><b>tapOnLifeBtn</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnMore()'><b>tapOnMore</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.ShowsSubTabTests.tapShows()'><b>tapShows</b><br>Test class: testModules.home.ShowsSubTabTests</td>
+<td></td>
+<td>102</td>
+<td>testModules.home.ShowsSubTabTests@793be5ca</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnRewind()'><b>tapOnRewind</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.tapOnGames()'><b>tapOnGames</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeTrendingVisualFeed.validateShareButton()'><b>validateShareButton</b><br>Test class: testModules.home.HomeTrendingVisualFeed</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.HomeTrendingVisualFeed@d29f28</td></tr>
+<tr>
+<td title='testModules.home.GamesFeed.validateTappingOnQuizParty()'><b>validateTappingOnQuizParty</b><br>Test class: testModules.home.GamesFeed</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.GamesFeed@2fd1433e</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.testAllowButton()'><b>testAllowButton</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
+<td>17</td>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.home.HomeLatestNewNavTests.validateGamesTab()'><b>validateGamesTab</b><br>Test class: testModules.home.HomeLatestNewNavTests</td>
+<td></td>
 <td>7</td>
-<td>testModules.home.HomeLatestNewNavTests@192b07fd</td></tr>
+<td>testModules.home.HomeLatestNewNavTests@223aa2f7</td></tr>
+<tr>
+<td title='testModules.quizzes.QuizzesLatestTests.tapOnCanWeGuess()'><b>tapOnCanWeGuess</b><br>Test class: testModules.quizzes.QuizzesLatestTests</td>
+<td></td>
+<td>5</td>
+<td>testModules.quizzes.QuizzesLatestTests@2df9b86</td></tr>
 </table><p>
 </body>
 </html>

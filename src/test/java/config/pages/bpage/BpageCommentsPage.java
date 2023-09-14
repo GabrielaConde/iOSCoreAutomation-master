@@ -34,12 +34,14 @@ public class BpageCommentsPage extends BpagePage{
     private final By deletePhoto = By.xpath("//XCUIElementTypeButton[@name='Close']");
    // private final By deletePhoto = MobileBy.AccessibilityId("close icon");
     private final By picOnComment = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton[1]");
-
+    private final By backFromComments = MobileBy.AccessibilityId("Home");
 
     //--Methods
     public Boolean readCommentsIsPresent(){
         return driver.findElement(readCommentsButton).isDisplayed();
     }
+
+    public void backFromHome() {driver.findElement(backFromComments).click();}
 
     public void scrollToReadCommentsOnNatBpage(){
         int i;

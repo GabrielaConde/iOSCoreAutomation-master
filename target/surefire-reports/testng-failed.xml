@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [newsAndShoppingSuite]">
-  <test thread-count="5" verbose="0" name="News and Shopping(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [bpageSuite]">
+  <test thread-count="5" verbose="0" name="BPage(failed)">
     <classes>
-      <class name="testModules.shopping.ShoppingTests">
+      <class name="testModules.bpage.NatBpageEmbedsTests3">
         <methods>
-          <include name="openTrendingModal"/>
-          <include name="validateTrendingPackageTitleIsDisplayed"/>
-          <include name="testShopNowButton"/>
+          <include name="testTWEmbedIsPresent"/>
           <include name="tearDown"/>
-          <include name="initializePages"/>
           <include name="setUpTest"/>
+          <include name="initializePages"/>
         </methods>
-      </class> <!-- testModules.shopping.ShoppingTests -->
+      </class> <!-- testModules.bpage.NatBpageEmbedsTests3 -->
+      <class name="testModules.bpage.NatBpageTests1">
+        <methods>
+          <include name="tapFirstMoreLikeThisBpage"/>
+          <include name="verifyMoreOnThisBpage"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="initializePages"/>
+          <include name="initProcess"/>
+        </methods>
+      </class> <!-- testModules.bpage.NatBpageTests1 -->
     </classes>
-  </test> <!-- News and Shopping(failed) -->
-</suite> <!-- Failed suite [newsAndShoppingSuite] -->
+  </test> <!-- BPage(failed) -->
+</suite> <!-- Failed suite [bpageSuite] -->

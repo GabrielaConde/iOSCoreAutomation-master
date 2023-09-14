@@ -24,33 +24,62 @@ public class GamesFeed extends EditionsInit {
     @Test(priority = 3)
     public void validateTappingOnPyramidScheme(){
        latestSubTab.clickOnPyramidScheme();
-       latestSubTab.tapCloseButton();
+      // latestSubTab.tapCloseButton();
     }
 
     @Test(priority = 4)
+    public void validatePyramidSchemeOnboarding()throws InterruptedException{
+       latestSubTab.isPyramidSchemeImgDisplayed();
+        Thread.sleep(3000);
+       latestSubTab.tapStartPyramid();
+       Thread.sleep(2000);
+       latestSubTab.isHowToPlayHeaderDisplayed();
+        Thread.sleep(4000);
+       latestSubTab.tapNextPyramid();
+        Thread.sleep(1000);
+       latestSubTab.isHowToPlayHeaderDisplayed();
+        Thread.sleep(4000);
+       latestSubTab.tapNextPyramid();
+        Thread.sleep(4000);
+       latestSubTab.tapDoneButton();
+       Thread.sleep(3000);
+       latestSubTab.tapStart();
+       latestSubTab.tapCloseButton();
+    }
+
+    @Test(priority = 5)
     public void validateTappingOnQuizParty(){
         latestSubTab.clickOnQuizParty();
         latestSubTab.tapCloseButton();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void validateTappingOnTrivia(){
         latestSubTab.clickOnDailyTrivia();
-        latestSubTab.tapCloseButton();
+     //   latestSubTab.tapCloseButton();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 7)
+    public void validateTriviaQuizElements() throws InterruptedException{
+       Assert.assertTrue(latestSubTab.isDailyTriviaHeaderDisplayed());
+       Assert.assertTrue(latestSubTab.isStartGameDisplayed());
+       latestSubTab.tapCloseButton();
+    }
+
+    @Test(priority = 8)
     public void validateTappingOnWhoDis(){
         latestSubTab.tapOnWhoDis();
         latestSubTab.tapBackButton();
     }
 
-    @Test(priority = 7)
-    public void validateTappingOnNepogochi(){
+    @Test(priority = 9)
+    public void validateTappingOnNepogochi()throws InterruptedException{
         latestSubTab.tapOnNepogochi();
+        Thread.sleep(3000);
         latestSubTab.tapBackButton();
         latestSubTab.tapHomeTab();
-        latestSubTab.tapBackButton();
+        latestSubTab.tapHomeTab();
+
     }
 
 

@@ -40,17 +40,18 @@ public class JapanEditionTests extends EditionsInit {
         print("Verified Splash is present on sub-tab 'Lol'");
         editions.tapSplash();
         editions.tapJapanBackButton();
-        editions.tapJapanBackButton();
+     //   editions.tapJapanBackButton();
 
     }
 
-    @Test (priority = 5)
+  //  @Test (priority = 5)
     public void testFstItemSubTab(){
         testName("Verify 'Kawaii' sub-tab");
         print("Verified 'Kawaii' sub-tab is present");
 
         editions.tapOnJapanFstItem();
         print("Verified Splash is present on sub-tab 'Kawaii'");
+        editions.tapJapanBackButton();
         editions.tapJapanBackButton();
     }
 

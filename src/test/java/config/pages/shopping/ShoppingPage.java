@@ -12,6 +12,10 @@ public class ShoppingPage extends CommonPage {
   //  private final By shopNowButton = By.xpath("(//XCUIElementTypeButton[@name=\"Shop Now\"])[2]");
     private final By shopNowButton = MobileBy.AccessibilityId("Shop Now");
 
+    private final By shoppingHeader = MobileBy.AccessibilityId("Shopping");
+
+    public Boolean isShoppingHeaderDisplayed(){return driver.findElement(shoppingHeader).isDisplayed();}
+
     //SHOPPING SEARCH
     private final By shoppingSearch = MobileBy.AccessibilityId("Search BuzzFeed");
 //    private final By shoppingSearch = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");

@@ -62,9 +62,14 @@ public class FallBpageTests4 extends BpageInit {
     @Test(priority = 14)
     public void verifyMoreOnThisHeaderIsPresent() {
         testName("Verify 'More In This' header is present'");
-        scroll.scrollUp();
-        scroll.scrollDown90_85();
-        scroll.scrollDown90_70();
+      //  scroll.scrollUp();
+     //   scroll.scrollDown90_85();
+     //   scroll.scrollDown90_70();
+        scroll.scrollDown80_20();
+        scroll.scrollDown();
+        scroll.scrollDown();
+        scroll.scrollDown();
+
         fallbackBpage.moreOnThisHeaderIsPresent();
         print("Verified 'More On This' header is present");
         }
