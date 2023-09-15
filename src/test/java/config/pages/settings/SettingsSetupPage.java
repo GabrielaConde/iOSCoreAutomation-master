@@ -1,6 +1,7 @@
 package config.pages.settings;
 
 import config.pages.CommonPage;
+import config.pages.WaitersPage;
 import config.pages.signIn.SignInMailPage;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.By;
@@ -100,24 +101,44 @@ public class SettingsSetupPage extends CommonPage {
         driver.resetApp();
     }
 
-    public void turnOnVisualFeedFF(){
+    public void turnOnVisualFeedFF()throws InterruptedException{
         editExperiment();
+        WaitersPage.waiterEnv(3000);
+      //  Thread.sleep(3000);
         driver.findElement(visualFeedExp).click();
+        WaitersPage.waiterEnv(3000);
+     //   Thread.sleep(3000);
         driver.findElement(enabledOption).click();
+        WaitersPage.waiterEnv(3000);
+   //     Thread.sleep(3000);
         driver.findElement(experiments).click();
+        WaitersPage.waiterEnv(3000);
+   //     Thread.sleep(3000);
         driver.findElement(kennelButton).click();
+        WaitersPage.waiterEnv(3000);
+    //    Thread.sleep(3000);
         tapDoneButton();
+        WaitersPage.waiterEnv(3000);
+     //   Thread.sleep(3000);
         tapSettingsButton();
+        WaitersPage.waiterEnv(3000);
+    //    Thread.sleep(3000);
         tapCloseButton();
         driver.resetApp();
     }
 
     //Methods
-    public void editExperiment() {
+    public void editExperiment() throws InterruptedException{
         gotoSettings();
         driver.findElement(settingsButton).click();
+        WaitersPage.waiterEnv(3000);
+    //    Thread.sleep(3000);
         driver.findElement(debugButton).click();
+        WaitersPage.waiterEnv(3000);
+     //   Thread.sleep(3000);
         driver.findElement(aBeagleExperiments).click();
+        WaitersPage.waiterEnv(3000);
+    //    Thread.sleep(3000);
         driver.findElement(experiments).click();
     }
 
@@ -159,7 +180,7 @@ public class SettingsSetupPage extends CommonPage {
         driver.resetApp();
     }
 
-    public void enableTrendingPackage() {
+    public void enableTrendingPackage()throws InterruptedException {
         editExperiment();
         driver.findElement(trendingPckExperiment).click();
         driver.findElement(bothFeedsVariant).click();
@@ -191,7 +212,7 @@ public class SettingsSetupPage extends CommonPage {
         driver.resetApp();
     }
 
-    public void enableShoppingTab() {
+    public void enableShoppingTab()throws InterruptedException {
         editExperiment();
         driver.findElement(shoppingTabExperiment).click();
         driver.findElement(enabledOption).click();

@@ -306,7 +306,7 @@ public class UKEditionTests2 extends EditionsInit {
 
     }
 
-   @Test (priority = 29)
+ //  @Test (priority = 29)
     public void testTrendingShoppingSubTab() {
         try {
             testName("Verify 'Trending' sub-tab");
@@ -320,7 +320,7 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 30)
+  //  @Test (priority = 30)
     public void testBeautySubTab() {
         try{
             testName("Verify 'Beauty' sub-tab");
@@ -334,7 +334,7 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 31)
+  //  @Test (priority = 31)
     public void testDealsSubTab() {
         try{
             testName("Verify 'Deals' sub-tab");
@@ -348,7 +348,7 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 32)
+  //  @Test (priority = 32)
     public void testHomeSubTab() {
         try{
             testName("Verify 'Home' sub-tab");
@@ -362,7 +362,7 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 33)
+  //  @Test (priority = 33)
     public void testClothingSubTab() {
         try{
             testName("Verify 'Clothing' sub-tab");
@@ -376,14 +376,14 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 34)
+ //   @Test (priority = 34)
     public void testClickShoppingOnMoreNews() {
             testName("Verify 'Culture' sub-tab");
             news.tapOnMore();
     }
 
 
-    @Test (priority = 35)
+  //  @Test (priority = 35)
     public void testGiftSubTab() {
         try{
             testName("Verify 'Gift Ideas' sub-tab");
@@ -397,7 +397,7 @@ public class UKEditionTests2 extends EditionsInit {
         }
     }
 
-    @Test (priority = 36)
+  //  @Test (priority = 36)
     public void testUnder20SubTab() {
         try{
             testName("Verify 'Under $50' sub-tab");

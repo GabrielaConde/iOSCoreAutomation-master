@@ -30,7 +30,7 @@ public class NewsLatestNewNavTests extends EditionsInit {
     }
 
   //  @Test(enabled = false, priority = 1)        //if TRUE, uncomment capabilities (Base) & dismiss tooltip (tapSplash())
-    public void enableTrendingPackageExp() {
+    public void enableTrendingPackageExp()throws InterruptedException {
             testName("Enabling Trending Product package experiments");
             SettingsSetupPage enableExp = new SettingsSetupPage();
             enableExp.enableTrendingPackage();

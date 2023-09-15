@@ -4,6 +4,7 @@ import basePackage.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.ui.context.Theme;
 
 public class WaitersPage extends Base {
 
@@ -17,6 +18,12 @@ public class WaitersPage extends Base {
             return true;
         } catch (Exception e){
             return false;
+        }
+    }
+
+    public static void waiterEnv(Integer time) throws InterruptedException {
+        if (env == "BS") {
+            Thread.sleep(time);
         }
     }
 }

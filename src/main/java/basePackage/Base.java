@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Base {
 
+    public static String env = "Local";
     public static IOSDriver<MobileElement> driver;
     private static final String APP_LOCATION = "/Users/gabrielaconde/Library/Developer/Xcode/DerivedData/BuzzFeed-dlfzqcsvaxkihhcfckvtlybabxsf/Build/Products/Debug-iphonesimulator/BuzzFeed.app";
 
@@ -40,8 +41,9 @@ public class Base {
         //--App
                 caps.setCapability(MobileCapabilityType.APP, APP_LOCATION);
         //--Driver
-               URL url = new URL("http://127.0.0.1:4723/wd/hub");
-                driver = new IOSDriver<MobileElement>(url, caps);
+            //  URL url = new URL("https://hub.browserstack.com/wd/hub");
+              URL url = new URL("http://127.0.0.1:4723/wd/hub");
+               driver = new IOSDriver<MobileElement>(url, caps);
 
     }
 

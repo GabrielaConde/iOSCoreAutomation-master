@@ -45,7 +45,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
      }
 
   //  @Test(enabled = true, priority = 1)        //if TRUE, uncomment capabilities (Base) & dismiss tooltip (tapSplash())
-    public void enableVisualFeedExp() {
+    public void enableVisualFeedExp() throws InterruptedException{
             testName("Enabling Trending Product package experiments");
             SettingsSetupPage enableExp = new SettingsSetupPage();
             enableExp.turnOnVisualFeedFF();
