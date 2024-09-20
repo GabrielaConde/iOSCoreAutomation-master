@@ -13,6 +13,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/editions/IndiaEditionTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/profile/MyPostsPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/CommonPage.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/editions/AllEditionsLambda.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/signIn/SignInMailPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/settings/GeneralTests2.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/AsyncQuizzes/PartnerPlayGame.java
@@ -20,6 +21,7 @@
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/search/RecentSearchesPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/quizzes/quizzesTypes/QuizChecklistTests.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/search/SuggestedSearchesPage.java
+/Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/testModules/home/InFeedElements.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/bpage/BpagePage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/home/HomeSubTabsPage.java
 /Users/gabrielaconde/Documents/Core/iOSCoreAutomation-master/src/test/java/config/pages/quizzes/quizzesTypes/QuizChecklistPage.java

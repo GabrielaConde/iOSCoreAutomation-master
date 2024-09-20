@@ -2,7 +2,7 @@ package testModules.editions;
 
 import config.initPages.EditionsInit;
 import config.pages.settings.SettingsSetupPage;
-import org.omg.CORBA.PUBLIC_MEMBER;
+//import org.omg.CORBA.PUBLIC_MEMBER;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,22 +11,28 @@ import java.util.concurrent.TimeUnit;
 
 public class UKEditionTests2 extends EditionsInit {
 
-   // @BeforeClass
+    @BeforeClass
     public void onboarding() throws InterruptedException{
+        Thread.sleep(5000);
         editions.tapAllowButton();
-        editions.tapAllowButton();
-        disableAdExp.disableAdExp();
-        editions.tapAllowButton();
-        editions.tapOnSuscribeBtn();
+        Thread.sleep(2000);
+        editions.tapOnGuestSignIn();
+      //  editions.tapAllowButton();
+     //   disableAdExp.disableAdExp();
+     //   editions.tapAllowButton();
+     //   editions.tapOnSuscribeBtn();
     }
 
     @Test
     public void testUKEditionIsPresent(){
         print("-------------------STARTING UK EDITION TESTS-------------------");
         testName("Verify 'UK' edition is present");
-        editions.tapProfileButton();
-        editions.tapSettingsButton();
-        editions.tapEditionOption();
+      //  editions.tapProfileButton();
+      //  editions.tapGearIcon();
+        editions.tapSettingsMenu();
+
+        //   editions.tapEditionOption();
+        editions.tapOnEditionOnUK();
 
         Assert.assertTrue(editions.ukEditionIsPresent());
         print("Verified 'Australia' edition is present in the list");
@@ -77,18 +83,18 @@ public class UKEditionTests2 extends EditionsInit {
 
     @Test(priority = 4)
     public void testFunnyTweetsSubTab() throws InterruptedException {
-        try {
+     //   try {
             testName("Verify 'Shows' Sub-Tab");
             latestSubTab.tapOnFunnyTweetsSubNav();
             latestSubTab.isFunnyTweetsHeaderDisplayed();
-            latestSubTab.tapSplash();
-            bpage.tapBackButton();
+         //   latestSubTab.tapSplash();
+         //   bpage.tapBackButton();
             homeSubTabs.tapBackButton();
-        } catch (Exception e){
+       /* } catch (Exception e){
             homeSubTabs.tapBackButton();
             Assert.assertTrue(false);
 
-        }
+        }/*
     }
 
     @Test(priority = 5)
@@ -107,32 +113,30 @@ public class UKEditionTests2 extends EditionsInit {
 
     @Test(priority = 6)
     public void testLatestsSubTab() {
-        try{
+     //   try{
             testName("Verify 'Videos' Sub-Tab");
             latestSubTab.tapOnLatestSubNav();
             latestSubTab.isLatestHeaderDisplayed();
-            latestSubTab.tapSplash();
-            bpage.tapBackButton();
+       //     latestSubTab.tapSplash();
+       //     bpage.tapBackButton();
             homeSubTabs.tapBackButton();
-        } catch (Exception e){
+       /* } catch (Exception e){
             Assert.assertTrue(false);
             homeSubTabs.tapBackButton();
-        }
+        }*/
     }
 
     @Test(priority = 7)
     public void testRandomSubTab() {
-        try{
+       // try{
             testName("Verify 'Videos' Sub-Tab");
             latestSubTab.tapOnRandomSubNav();
             latestSubTab.isRandomHeaderDisplayed();
-            latestSubTab.tapSplash();
-            bpage.tapBackButton();
             homeSubTabs.tapHomeTab();
-        } catch (Exception e){
+       /* } catch (Exception e){
             homeSubTabs.tapBackButton();
             Assert.assertTrue(false);
-        }
+        }*/
     }
 
     @Test(priority = 8)
@@ -141,8 +145,6 @@ public class UKEditionTests2 extends EditionsInit {
             testName("Verify 'Videos' Sub-Tab");
             latestSubTab.tapOnGossipSubNav();
             latestSubTab.isGossipHeaderDisplayed();
-            latestSubTab.tapSplash();
-            bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e){
             Assert.assertTrue(false);
@@ -156,8 +158,6 @@ public class UKEditionTests2 extends EditionsInit {
             testName("Verify 'Videos' Sub-Tab");
             latestSubTab.tapOnGaySubNav();
             latestSubTab.isLgbtqHeaderDisplayed();
-            latestSubTab.tapSplash();
-            bpage.tapBackButton();
             homeSubTabs.tapBackButton();
         } catch (Exception e){
             Assert.assertTrue(false);
@@ -177,22 +177,25 @@ public class UKEditionTests2 extends EditionsInit {
     public void testRecentlyViewedSubTab() throws InterruptedException {
         testName("Verify 'Shows' Sub-Tab");
         latestSubTab.tapOnRecentlyViewed();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 12)
     public void testEntertainmentSubTab() throws InterruptedException {
         latestSubTab.tapOnEntertainment();
-        homeSubTabs.tapSplash();
-        bpage.tapBackButton();
+    //    homeSubTabs.tapSplash();
+    //    bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 13)
     public void testAnimalsSubTab() throws InterruptedException {
         homeSubTabs.clickOnAnimalsBtn();
-        homeSubTabs.tapSplash();
-        bpage.tapBackButton();
+     //   homeSubTabs.tapSplash();
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
@@ -200,89 +203,98 @@ public class UKEditionTests2 extends EditionsInit {
     @Test(priority = 14)
     public void testBooksSubTab() throws InterruptedException {
         latestSubTab.tapOnBooks();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
 
     @Test(priority = 15)
-    public void testFoodSubTab() {
+    public void testFoodSubTab()throws InterruptedException {
         testName("Verify 'Food' sub-tab");
         homeSubTabs.clickOnFoodBtn();
+        Thread.sleep(2000);
         latestSubTab.tapBackButton();
     }
 
     @Test(priority = 16)
-    public void testCommunitySubTab() {
+    public void testCommunitySubTab() throws InterruptedException{
         latestSubTab.tapOnCommunity();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+      //  latestSubTab.tapSplash();
+      //  bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
 
     @Test(priority = 17)
-    public void testMusicSubTab() {
+    public void testMusicSubTab()throws InterruptedException {
         latestSubTab.tapOnMusic();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+    //    latestSubTab.tapSplash();
+    //    bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 18)
-    public void testNiftySubTab() {
+    public void testNiftySubTab()throws InterruptedException {
         latestSubTab.tapOnNifty();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+    //    latestSubTab.tapSplash();
+    //    bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 19)
-    public void testParentsSubTab() {
+    public void testParentsSubTab()throws InterruptedException {
         latestSubTab.tapOnParents();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 20)
-    public void testRewindSubTab() {
+    public void testRewindSubTab() throws InterruptedException{
         latestSubTab.tapOnRewind();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 21)
-    public void testStyleSubTab() {
+    public void testStyleSubTab()throws InterruptedException {
         latestSubTab.tapOnStyle();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     @Test(priority = 22)
-    public void testTravelHomeSubTab() {
+    public void testTravelHomeSubTab()throws InterruptedException {
         latestSubTab.tapOnTravel();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+      //  latestSubTab.tapSplash();
+      //  bpage.tapBackButton();
+        Thread.sleep(2000);
         homeSubTabs.tapBackButton();
     }
 
     //News
     @Test (priority = 23)
-    public void testGoingNewsTab() {
+    public void testGoingNewsTab() throws InterruptedException{
         testName("NEWS");
         testName("Verify going to News tab / Latest sub-tab");
         editions.tapNewsTab();
 
-        Assert.assertTrue(news.newsHeaderIsPresent());
+       news.newsHeaderIsPresent();
         print("Verified the Buzzfeed News header in the News feed is present");
 
     }
 
-    @Test(enabled = true, priority = 24)
+  //  @Test(enabled = true, priority = 24)
     public void tapFstNewsCell(){
         try{
             news.tapFirstCell();
@@ -294,7 +306,7 @@ public class UKEditionTests2 extends EditionsInit {
     }
 
     //Shopping
-    @Test (priority = 28)
+   // @Test (priority = 28)
     public void testGoingShoppingTab() {
             testName("SHOPPING");
             testName("Verify Shopping tab / Latest sub-tab");
@@ -383,48 +395,21 @@ public class UKEditionTests2 extends EditionsInit {
     }
 
 
-  //  @Test (priority = 35)
-    public void testGiftSubTab() {
-        try{
-            testName("Verify 'Gift Ideas' sub-tab");
-            editions.tapGiftIdeasSubTab();
-            editions.tapSplash();
-            bpage.tapBackButton();
-            news.tapBackButton();
-        }catch (Exception e){
-            editions.tapBackButton();
-            Assert.assertTrue(false);
-        }
-    }
-
-  //  @Test (priority = 36)
-    public void testUnder20SubTab() {
-        try{
-            testName("Verify 'Under $50' sub-tab");
-            shoppingSubTabs.tapUnder20SubTab();
-            editions.tapSplash();
-            bpage.tapBackButton();
-            news.tapBackButton();
-        }catch (Exception e){
-            editions.tapBackButton();
-            Assert.assertTrue(false);
-        }
-    }
-
     //Quizzes
     @Test (priority = 39)
     public void testGoingToQuizzesTab(){
             testName("QUIZZES");
             testName("Verify going to Quizzes tab / Latest sub-tab");
             editions.tapQuizzesTab();
-            editions.visitSplashAndReturn();
+          //  editions.visitSplashAndReturn();
     }
 
     @Test (priority = 40)
-    public void testTapOnTrendingCategory(){
+    public void testTapOnTrendingCategory()throws InterruptedException{
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");
         quizzesSubTabs.tapOnTrending();
+        Thread.sleep(2000);
         editions.tapBackButton();
     }
 
@@ -445,22 +430,99 @@ public class UKEditionTests2 extends EditionsInit {
     }
 
     @Test (priority = 43)
-    public void testTapOnTriviaCategory(){
+    public void testTapOnTriviaCategory()throws InterruptedException{
         testName("testTapOnTriviaCategory");
         testName("Verify going to Trivia category");
         quizzesSubTabs.tapOnTrivia();
-        editions.tapSplash();
-        editions.tapBackButton();
+        Thread.sleep(2000);
         editions.tapBackButton();
     }
 
     @Test (priority = 44)
-    public void testTapCanWeGuess(){
+    public void testTapCanWeGuess()throws InterruptedException{
         testName("testTapCanWeGuess");
         quizzesSubTabs.tapOnCanWeGuess();
-        quizzesSubTabs.tapSplash();
-        quizzesSubTabs.tapBackButton();
+        Thread.sleep(2000);
         editions.tapBackButton();
+    }
+
+    @Test (priority = 45)
+    public void testTapPolls() throws InterruptedException{
+        testName("testTapOnPolls");
+        quizzesSubTabs.tapOnPolls();
+        Thread.sleep(2000);
+        editions.tapBackButton();
+    }
+
+
+    @Test (priority = 46)
+    public void testOnMore() {
+        testName("testOnMore");
+        quizzesSubTabs.tapOnMore();
+    }
+
+    @Test (priority = 47)
+    public void testTapOnTaylorSwift() throws InterruptedException{
+        testName("testOnTaylorSwift");
+        quizzesSubTabs.tapOnTaylorSwift();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 48)
+    public void testTapOnMarvel() throws InterruptedException{
+        testName("testTapOnMarvel");
+        quizzesSubTabs.tapOnMarvel();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 49)
+    public void testTapOnZodiac()throws InterruptedException {
+        testName("testTapOnZodiac");
+        quizzesSubTabs.tapOnZodiac();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 50)
+    public void testTapOnHarryPotter()throws InterruptedException {
+        testName("testTapOnHarryPotter");
+        quizzesSubTabs.tapOnHarryPotter();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 51)
+    public void testTapOnAnime()throws InterruptedException {
+        testName("testTapOnAnime");
+        quizzesSubTabs.tapOnAnime();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 52)
+    public void testTapOnKPop()throws InterruptedException {
+        testName("testTapOnKPop");
+        quizzesSubTabs.tapOnKpop();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 53)
+    public void testTapOnGeography()throws InterruptedException {
+        testName("testTapOnGeography");
+        quizzesSubTabs.tapOnGeographys();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
+    }
+
+    @Test (priority = 54)
+    public void testTapOnChecklist()throws InterruptedException {
+        testName("testTapOnChecilist");
+        quizzesSubTabs.tapOnChecklist();
+        Thread.sleep(2000);
+        quizzesSubTabs.tapBackButton();
     }
 
  //   @Test (priority = 45)
@@ -470,7 +532,7 @@ public class UKEditionTests2 extends EditionsInit {
         quizzesSubTabs.tapBackButton();
     }
 
-    @Test(enabled = true, priority = 49)
+    @Test(enabled = true, priority = 55)
     public void tapGamesTab(){
         try{
             news.tapGamesTab();

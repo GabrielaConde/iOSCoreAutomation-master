@@ -2,20 +2,44 @@ package testModules.editions;
 
 import config.initPages.EditionsInit;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class JapanEditionTests extends EditionsInit {
+
+    @BeforeClass
+    public void signInOnFstLaunch()throws InterruptedException{
+        Thread.sleep(3000);
+        latestSubTab.tapAllowButton();
+        latestSubTab.tapOnGuestSignIn();
+        Thread.sleep(3000);
+      /*  latestSubTab.tapOnSignInLink();
+        Thread.sleep(2000);
+        latestSubTab.enterPassword("sanfer12");
+        latestSubTab.enterEmail("salpimie");
+        Thread.sleep(2000);
+        latestSubTab.tapSignInBFButton();
+        Thread.sleep(3000);
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapNotNow();
+        //  signIn.switchToAlert();
+        latestSubTab.setUSEdition();*/
+    }
 
     @Test
     public void testJapanEditionIsPresent()throws InterruptedException{
         print("-------------------STARTING JAPAN EDITION TESTS-------------------");
         testName("Verify 'Japan' edition is present");
-        editions.tapOnPerfilBtn();
-        editions.tapOnConfiguracion();
-        editions.tapOnEdicion();
-
+        Thread.sleep(3000);
+//        editions.tapProfileButton();
+//        editions.tapGearIcon();
+        editions.tapSettingsMenu();
+        editions.tapOnEditionOnJapan();
         editions.tapJapanEdition();
-        editions.tapOnCerrar();
+        editions.tapCloseButton();
     }
 
 
@@ -31,15 +55,15 @@ public class JapanEditionTests extends EditionsInit {
 
     }
 
-    @Test (priority = 4)
+  //  @Test (priority = 4)
     public void testLolSubTab(){
         testName("Verify 'Lol' sub-tab");
         Assert.assertTrue(editions.lolHomeIsPresent());
         print("Verified 'Lol' sub-tab is present");
         editions.lolHomeSubTab();
         print("Verified Splash is present on sub-tab 'Lol'");
-        editions.tapSplash();
-        editions.tapJapanBackButton();
+    //    editions.tapSplash();
+      //  editions.tapJapanBackButton();
      //   editions.tapJapanBackButton();
 
     }

@@ -10,18 +10,40 @@ public class ShowsSubTabTests extends EditionsInit {
 
 
     @BeforeClass
-    public void goingToShowsTab() throws InterruptedException{
-        Thread.sleep(5000);
-        scroll.scrollHoriz(1,1,1,1);
+    public void goingToShowsTab() throws InterruptedException {
+        signInOnFstLaunch();
+        Thread.sleep(3000);
+     //   scroll.swipeLeftAppium2();
+     //   scroll.swipeLeftAppium2();
+      //  Thread.sleep(2000);
         latestSubTab.tapOnMoreSubNav();
         latestSubTab.tapOnShows();
         print("-------------------STARTING SHOWS SUB-TAB TESTS-------------------");
         testName("Verify Shows Sub-Tab is present and tap-able");
         Assert.assertTrue(showSubTab.showsTabIsPresent());
         print("Verified Sub-tab 'Shows' is present");
-     //   showSubTab.tapShowSubTab();
+        //   showSubTab.tapShowSubTab();
 
     }
+
+
+    public void signInOnFstLaunch() throws InterruptedException {
+        latestSubTab.tapOnSignInLink();
+        latestSubTab.enterPassword("sanfer12");
+        latestSubTab.enterEmail("salpimie");
+        Thread.sleep(2000);
+        latestSubTab.tapSignInBFButton();
+        Thread.sleep(3000);
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapNotNow();
+        //  signIn.switchToAlert();
+        latestSubTab.setUSEdition();
+       }
+
+
 
   //  @Test
     public void verifyShowTabActive(){
@@ -30,6 +52,8 @@ public class ShowsSubTabTests extends EditionsInit {
         print("Verified 'value' for sub-tab 'Shows' is = 1, the sub-tab is active");
 
     }
+
+
 
     @Test(priority = 1)
     public void tapShows()throws InterruptedException{

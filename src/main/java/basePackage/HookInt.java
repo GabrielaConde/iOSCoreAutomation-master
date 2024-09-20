@@ -2,19 +2,19 @@ package basePackage;
 
 public class HookInt extends Base {
 
-    public static void platform() throws Exception{
-        setUp();
+    public void platform() throws Exception{
+     //  setUp();
         waiter();
         baseClassPassed();
     }
 
-    public static void closeApp(){
+  /*  public void closeApp(){
         closeAppBase();
     }
 
-    public static void closeDriver(){
-        closeDriverBase();
-    }
+    public  void closeDriver(){
+        closegetDriver();
+    } */
 
 
 }

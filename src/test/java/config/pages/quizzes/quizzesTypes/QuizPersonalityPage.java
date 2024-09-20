@@ -1,15 +1,15 @@
 package config.pages.quizzes.quizzesTypes;
 
 import config.pages.WaitersPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class QuizPersonalityPage extends QuizzesTypesGeneralPage{
 
     //Catching elements:
-    private final By subText = MobileBy.AccessibilityId("Make your own kitten army.");
-    private final By authorInfo = MobileBy.AccessibilityId("by Joanna Borns, BuzzFeed Staff");
-    private final By quizTitleResultsScreen = MobileBy.AccessibilityId("Pick A Bunch Of Kittens And We'll Guess Your Life Goal");
+    private final By subText = AppiumBy.accessibilityId("Make your own kitten army.");
+    private final By authorInfo = AppiumBy.accessibilityId("by Joanna Borns, BuzzFeed Staff");
+    private final By quizTitleResultsScreen = AppiumBy.accessibilityId("Pick A Bunch Of Kittens And We'll Guess Your Life Goal");
 
     private final By PrevBtn = By.xpath("//XCUIElementTypeStaticText[@name=\"Prev\"]");
 
@@ -19,27 +19,27 @@ public class QuizPersonalityPage extends QuizzesTypesGeneralPage{
     //Methods
     //--First scren
     public boolean verifySubTextIsPresent(){
-        return driver.findElement(subText).isDisplayed();
+        return getDriver().findElement(subText).isDisplayed();
     }
     public boolean verifyAuthorInfoIsPresent(){
-        return driver.findElement(authorInfo).isDisplayed();
+        return getDriver().findElement(authorInfo).isDisplayed();
     }
-    public void tapOnPlayBtn() {driver.findElement(PrevBtn).click();}
+    public void tapOnPlayBtn() {getDriver().findElement(PrevBtn).click();}
 
 
     //--Results screen
     public boolean verifyQuizTitleResultsIsPresent() {
-        return driver.findElement(quizTitleResultsScreen).isDisplayed();
+        return getDriver().findElement(quizTitleResultsScreen).isDisplayed();
     }
 
-    public void tapOnPrevBtn() {driver.findElement(PrevBtn).click();}
+    public void tapOnPrevBtn() {getDriver().findElement(PrevBtn).click();}
 
     public String verifyQuizOnResultsPersonalityTab(){
 
-        driver.findElement(resultsSubTab).click();
+        getDriver().findElement(resultsSubTab).click();
    //     tapOnQuizTitleOnResultsScreen();
-        WaitersPage.waitForElement(completedQuizPersonality);
-        String quizCompleted = driver.findElement(completedQuizPersonality).getAttribute("name");
+      //  WaitersPage.waitForElement(completedQuizPersonality);
+        String quizCompleted = getDriver().findElement(completedQuizPersonality).getAttribute("name");
         print("First Quiz on Results sub-tab: " + quizCompleted);
         return quizCompleted;
     }

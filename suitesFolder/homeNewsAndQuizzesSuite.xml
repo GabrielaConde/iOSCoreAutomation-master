@@ -1,16 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="homeSuite" verbose="1" >
-    <test verbose="2" name="Home" parallel="none" preserve-order="true" >
+<suite name="homeSuite" verbose="1" parallel = "tests" thread-count="2" >
+    <test verbose="2" name="HomeiPhone14" >
+        <parameter name="device" value="iPhone 15 Pro"></parameter>
+        <parameter name="platformVersion" value="17"></parameter>
            <classes>
-               <class name="testModules.home.InFeedElements"/>
-        <!--      <class name="testModules.home.HomeLatestNewNavTests"/>
-
-               <class name="testModules.home.HomeTrendingVisualFeed"/>
-               <class name="testModules.home.GamesFeed"/>
-               <class name="testModules.home.ShowsSubTabTests"/>
-               <class name="testModules.quizzes.QuizzesLatestTests"/> -->
-
-           </classes>
-       </test>
-    </suite>
+                     <class name="testModules.home.HomeLatestNewNavTests"/>
+          </classes>
+    </test>
+    <test verbose="2" name="iPhone 14"  >
+        <parameter name="device" value="iPhone 15"></parameter>
+        <parameter name="platformVersion" value="17"></parameter>
+        <classes>
+            <class name="testModules.home.HomeLatestNewNavTests"/>
+        </classes>
+    </test>
+</suite>

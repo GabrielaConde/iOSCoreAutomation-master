@@ -37,7 +37,7 @@ public class NewsLatestNewNavTests extends EditionsInit {
     }
 
 //    @Test(enabled = true, priority = 1)               //if TRUE, uncomment capabilities (Base class)
-    public void disableAdExp() {
+    public void disableAdExp()throws InterruptedException {
             testName("Disabling Dynamic Ads on Bpages");
             disableAdExp.disableAdExp();
     }

@@ -1,7 +1,7 @@
 package testModules.home;
 
 import config.initPages.EditionsInit;
-import org.springframework.ui.context.Theme;
+//import org.springframework.ui.context.Theme;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

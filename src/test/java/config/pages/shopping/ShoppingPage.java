@@ -2,7 +2,7 @@ package config.pages.shopping;
 
 import config.pages.CommonPage;
 import config.pages.bpage.BpagePage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
@@ -10,14 +10,14 @@ public class ShoppingPage extends CommonPage {
 
     //Catching elements
   //  private final By shopNowButton = By.xpath("(//XCUIElementTypeButton[@name=\"Shop Now\"])[2]");
-    private final By shopNowButton = MobileBy.AccessibilityId("Shop Now");
+    private final By shopNowButton = AppiumBy.accessibilityId("Shop Now");
 
-    private final By shoppingHeader = MobileBy.AccessibilityId("Shopping");
+    private final By shoppingHeader = AppiumBy.accessibilityId("Shopping");
 
-    public Boolean isShoppingHeaderDisplayed(){return driver.findElement(shoppingHeader).isDisplayed();}
+    public Boolean isShoppingHeaderDisplayed(){return getDriver().findElement(shoppingHeader).isDisplayed();}
 
     //SHOPPING SEARCH
-    private final By shoppingSearch = MobileBy.AccessibilityId("Search BuzzFeed");
+    private final By shoppingSearch = AppiumBy.accessibilityId("Search BuzzFeed");
 //    private final By shoppingSearch = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
    // private final By shoppingSearch = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]");
     private final By BFDisclaimer = By.xpath("//XCUIElementTypeStaticText[@name=\"BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.\"]");
@@ -25,7 +25,7 @@ public class ShoppingPage extends CommonPage {
     private final By regularBuzzCell = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[]/XCUIElementTypeOther[2]");
 
     //FEATURE STORIES
-    private final By featureStories = MobileBy.AccessibilityId("Featured Stories");
+    private final By featureStories = AppiumBy.accessibilityId("Featured Stories");
     private final By featureStoriesTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"24 Hilarious Mother’s Day Gifts That’ll Probably Make Her Laugh Out Loud\"]");
     private final By featureStoryCell = By.xpath("//XCUIElementTypeCell[@name=\"shopping_omg_package_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
@@ -40,16 +40,19 @@ public class ShoppingPage extends CommonPage {
     private final By moreCategory = By.xpath("//XCUIElementTypeCell[@name=\"shopping_categories_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther[8]");
 
     //Shopping menu
-    private final By BeautyAndCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Fashion = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Home = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Kids = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Pets = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By SexToys = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Sports = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Stores = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Subscriptions = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Tech = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+
+   private final By  BeautyAndCare = AppiumBy.accessibilityId("Beauty + Personal Care");
+  //  private final By BeautyAndCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By Fashion = AppiumBy.accessibilityId("Fashion");
+    private final By Home =  AppiumBy.accessibilityId("Home");
+    private final By ShopAllHome =  AppiumBy.accessibilityId("Shop All Home");
+    private final By Kids = AppiumBy.accessibilityId("Kids");
+    private final By Pets = AppiumBy.accessibilityId("Pets");
+    private final By SexToys = AppiumBy.accessibilityId("Sex Toys");
+    private final By Sports = AppiumBy.accessibilityId("Sports + Fitness");
+    private final By Stores = AppiumBy.accessibilityId("Stores");
+    private final By Subscriptions = AppiumBy.accessibilityId("Subscriptions");
+    private final By Tech = AppiumBy.accessibilityId("Tech");
     private final By accesories = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
     private final By footware = By.xpath("/XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
     private final By skincare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
@@ -57,145 +60,147 @@ public class ShoppingPage extends CommonPage {
     private final By backCategory = By.xpath("(//XCUIElementTypeButton[@name=\"Back\"])[1]");
     private final By categorySplash = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
     private final By categoryTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"All Categories\"]");
-    private final By beautyAndCareTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Beauty + Personal Care\"]");
-    private final By FashionTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Fashion\"]");
+    private final By beautyAndCareTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Beauty + Personal Care\"]");
+
+ //   private final By beautyAndCareTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Beauty + Personal Care\"]");
+    private final By FashionTitle = AppiumBy.accessibilityId("Fashion");
     private final By backFromMenu = By.xpath("//XCUIElementTypeButton[@name=\"Back\"]");
 
     //SubMenus Beauty And Personal Care
 
-    private final By ShopBeautyAndPersonalCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Hair = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Makeup = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By OutdoorProducts = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By PersonalTools = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By SkinCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By ShopBeautyAndPersonalCare = AppiumBy.accessibilityId("Shop All Beauty + Personal Care");
+    private final By Hair = AppiumBy.accessibilityId("Hair");
+    private final By Makeup = AppiumBy.accessibilityId("Makeup");
+    private final By OutdoorProducts = AppiumBy.accessibilityId("Outdoor Products");
+    private final By PersonalTools = AppiumBy.accessibilityId("Personal Tools + Accessories");
+    private final By SkinCare = AppiumBy.accessibilityId("Skincare");
     private final By SkinCareTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Skincare\"]");
 
 
     // SkinCare Sub Menues
-    private final By acneSolutions = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By body = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By face = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By acneSolutions = AppiumBy.accessibilityId("Acne Solutions");
+    private final By body = AppiumBy.accessibilityId("Body");
+    private final By face = AppiumBy.accessibilityId("Face");
 
     //SubMenus Fashion
-    private final By shopAllFashionSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By AccesoriesSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By DressesSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By FootwareSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By FormalWearSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By JacketsSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By JeansSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By LoungeWearSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By PlantsSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By SweatersSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By SwimsuitsSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[11]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By TopsSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[12]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By UnderwearSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[13]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By shopAllFashionSubMenu = AppiumBy.accessibilityId("Shop All Fashion");
+    private final By AccesoriesSubMenu = AppiumBy.accessibilityId("Fashion Accessories");
+    private final By DressesSubMenu = AppiumBy.accessibilityId("Dresses");
+    private final By FootwareSubMenu = AppiumBy.accessibilityId("Footwear");
+    private final By FormalWearSubMenu = AppiumBy.accessibilityId("Formal Wear");
+    private final By JacketsSubMenu = AppiumBy.accessibilityId("Jackets");
+    private final By JeansSubMenu = AppiumBy.accessibilityId("Jeans");
+    private final By LoungeWearSubMenu = AppiumBy.accessibilityId("Loungewear");
+    private final By PlantsSubMenu = AppiumBy.accessibilityId("Pants");
+    private final By SweatersSubMenu = AppiumBy.accessibilityId("Sweaters");
+    private final By SwimsuitsSubMenu = AppiumBy.accessibilityId("Swimsuits");
+    private final By TopsSubMenu = AppiumBy.accessibilityId("Tops");
+    private final By UnderwearSubMenu = AppiumBy.accessibilityId("Underwear");
 
     //Fashion accesories sub menu
-    private final By Bags = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By ColdWeather = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By GlassesAndSunglasses = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Jewerly = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By Bags = AppiumBy.accessibilityId("Bags");
+    private final By ColdWeather = AppiumBy.accessibilityId("Cold Weather");
+    private final By GlassesAndSunglasses = AppiumBy.accessibilityId("Glasses + Sunglasses");
+    private final By Jewerly = AppiumBy.accessibilityId("Jewelry");
     private final By FashionAccessoriesTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Fashion Accessories\"]");
 
     // Footware submenu
     private final By footwareTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Footwear\"]");
-    private final By Boots = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Dress = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Flats = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Heels = By.xpath("/XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By OutDoorShoes = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Sandals = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Sneakers = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By Boots = AppiumBy.accessibilityId("Boots");
+    private final By Dress = AppiumBy.accessibilityId("Dress");
+    private final By Flats = AppiumBy.accessibilityId("Flats");
+    private final By Heels = AppiumBy.accessibilityId("Heels");
+    private final By OutDoorShoes = AppiumBy.accessibilityId("OutDoor Shoes");
+    private final By Sandals = AppiumBy.accessibilityId("Sandals");
+    private final By Sneakers = AppiumBy.accessibilityId("Sneakers");
 
 
   // Sports and fitness submenu
-    private final By ShopAllSportsAndFitness = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By FitnessAndAccessories = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther\n");
-    private final By matchinery = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By PersonalCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By ShopAllSportsAndFitness = AppiumBy.accessibilityId("Shop All Sports + Fitness");
+    private final By FitnessAndAccessories = AppiumBy.accessibilityId("Fitness Accessories");
+    private final By matchinery = AppiumBy.accessibilityId("Machinery");
+    private final By PersonalCare = AppiumBy.accessibilityId("Personal Care");
 
     //Shop All Stores submenu
 
-    private final By ShopAllStores = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Amazon = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Etsy = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Nordstrom = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Sephora = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By ShopSmall = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Target = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By Walmart = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By WayFair = By.xpath("//XCUIElementTypeApplication[@name='BuzzFeed 🐞']/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By StoresTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Stores\"]");
+    private final By ShopAllStores = AppiumBy.accessibilityId("Shop All Stores");
+    private final By Amazon = AppiumBy.accessibilityId("Amazon");
+    private final By Etsy = AppiumBy.accessibilityId("Etsy");
+    private final By Nordstrom = AppiumBy.accessibilityId("Nordstrom");
+    private final By Sephora = AppiumBy.accessibilityId("Sephora");
+    private final By ShopSmall = AppiumBy.accessibilityId("Shop Small");
+    private final By Target = AppiumBy.accessibilityId("Target");
+    private final By Walmart = AppiumBy.accessibilityId("Walmart");
+    private final By WayFair = AppiumBy.accessibilityId("Wayfair");
+    private final By StoresTitle = AppiumBy.accessibilityId("StoresTitle");
 
 
     //Shop All Homes
-    private final By ShopAllHomeSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By BarthroomSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By BeddingMattressSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By CleaningSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By CookingSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By DecorSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By FurnitureSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By HomeOfficeSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By OrganizationSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By OutDoorShoesSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By OutDoorHomeSubMenu = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By ShopAllHomeSubMenu = AppiumBy.accessibilityId("Shop All Home");
+    private final By BarthroomSubMenu = AppiumBy.accessibilityId("Bathroom");
+    private final By BeddingMattressSubMenu = AppiumBy.accessibilityId("Bedding + Mattress");
+    private final By CleaningSubMenu = AppiumBy.accessibilityId("Cleaning");
+    private final By CookingSubMenu = AppiumBy.accessibilityId("Kitchen");
+    private final By DecorSubMenu = AppiumBy.accessibilityId("Decor");
+    private final By FurnitureSubMenu = AppiumBy.accessibilityId("Furniture");
+    private final By HomeOfficeSubMenu = AppiumBy.accessibilityId("Home Office");
+    private final By OrganizationSubMenu = AppiumBy.accessibilityId("Organization");
+    private final By OutDoorShoesSubMenu = AppiumBy.accessibilityId("Outdoor Shoes");
+    private final By OutDoorHomeSubMenu = AppiumBy.accessibilityId("Outdoor Home");
     private final By HomeTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Home\"]");
 
    // Kitchen submenu
-    private final By appliances = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By tools = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By appliances = AppiumBy.accessibilityId("Appliances");
+    private final By tools = AppiumBy.accessibilityId("Tools");
     private final By kitchenTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Kitchen\"]");
 
     // Furniture submenu
-    private final By bedroom = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By kidsRoom =  By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By kitchen = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By livingRoom = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By office = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By bedroom = AppiumBy.accessibilityId("Bedroom");
+    private final By kidsRoom =  AppiumBy.accessibilityId("Kids Room");
+    private final By kitchen = AppiumBy.accessibilityId("Kitchen");
+    private final By livingRoom = AppiumBy.accessibilityId("Living Room");
+    private final By office = AppiumBy.accessibilityId("Office");
     private final By furnitureTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Furniture\"]");
 
 
     // Outdoor home
-    private final By backyard = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By garden = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By recreation = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By backyard = AppiumBy.accessibilityId("Backyard");
+    private final By garden =  AppiumBy.accessibilityId("Garden");
+    private final By recreation = AppiumBy.accessibilityId("Recreation");
     private final By outdoorHomeTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Outdoor Home\"]");
 
     //Sport + Fitness Sub menu
-    private final By sportAndFitnessTitle = By.xpath("//XCUIElementTypeStaticText[@name=\"Sports + Fitness\"]");
-    private final By showAllSportsAndFitness = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By fitnessAccessories = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By machinery = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By personalCare = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By sportAndFitnessTitle = AppiumBy.accessibilityId("Shop All Sports + Fitness");
+    private final By showAllSportsAndFitness = AppiumBy.accessibilityId("Shop All Sports + Fitness");
+    private final By fitnessAccessories = AppiumBy.accessibilityId("Shop All Sports + Fitness");
+    private final By machinery = AppiumBy.accessibilityId("Machinery");
+    private final By personalCare = AppiumBy.accessibilityId("Personal Care");
 
     // tech sub menu
 
-    private final By techTitle = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Tech\"]");
-    private final By shopAllTech = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By techAccesories = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By gadgets = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By homeElectronics = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By techTitle = AppiumBy.accessibilityId("Shop All Tech");
+    private final By shopAllTech = AppiumBy.accessibilityId("Shop All Tech");
+    private final By techAccesories = AppiumBy.accessibilityId("Tech Accessories");
+    private final By gadgets = AppiumBy.accessibilityId("Gadgets");
+    private final By homeElectronics = AppiumBy.accessibilityId("Home Electronics");
 
     // GIFT GUIDE ITEMS
-    private final By giftGuideTitle = MobileBy.AccessibilityId("Latest Gift Guides");
-    private final By giftGuidesCTALink = MobileBy.AccessibilityId("See all our Gift Guides");
+    private final By giftGuideTitle = AppiumBy.accessibilityId("Latest Gift Guides");
+    private final By giftGuidesCTALink = AppiumBy.accessibilityId("See all our Gift Guides");
     private final By giftGuideTitleOnScreen = By.xpath("//XCUIElementTypeStaticText[@name=\"Gift Guide\"]");
-    private final By trendingProductTitle = MobileBy.AccessibilityId("Trending Products");
+    private final By trendingProductTitle = AppiumBy.accessibilityId("Trending Products");
 
 
     // FEATURE STORIES
-    private final By featuresStoriesTitle = MobileBy.AccessibilityId("Featured Stories");
+    private final By featuresStoriesTitle = AppiumBy.accessibilityId("Featured Stories");
 
     //ALL Stories
-    private final By AllStories = MobileBy.AccessibilityId("All Stories");
+    private final By AllStories = AppiumBy.accessibilityId("All Stories");
 
     // Shopping videos
     private final By fstVideo = By.xpath("(//XCUIElementTypeOther[@name=\"xcThumbnailView\"])[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]");
-    private final By playButton = MobileBy.AccessibilityId("xcThumbnailPlayImage");
-    private final By closeVideo = MobileBy.AccessibilityId("xcCloseButton");
+    private final By playButton = AppiumBy.accessibilityId("xcThumbnailPlayImage");
+    private final By closeVideo = AppiumBy.accessibilityId("xcCloseButton");
 
 
 
@@ -212,37 +217,37 @@ public class ShoppingPage extends CommonPage {
 
     public Boolean isVideoDisplayed(){
         scroll.scrollUntilElement(fstVideo);
-        return driver.findElement(fstVideo).isDisplayed();}
+        return getDriver().findElement(fstVideo).isDisplayed();}
 
     public void tapOnVideo(){
-        driver.findElement(playButton).click();
+        getDriver().findElement(playButton).click();
     }
-    public void closeVideo(){driver.findElement(closeVideo).click();}
+    public void closeVideo(){getDriver().findElement(closeVideo).click();}
 
 
-    public Boolean IsDisclaimerPresent() { return driver.findElement(BFDisclaimer).isDisplayed();}
-    public void clickOnShoppingSearch() {driver.findElement(shoppingSearch).click();}
+    public Boolean IsDisclaimerPresent() { return getDriver().findElement(BFDisclaimer).isDisplayed();}
+    public void clickOnShoppingSearch() {getDriver().findElement(shoppingSearch).click();}
     public void typeSearchElement(String word){
-      /*  Actions a = new Actions(driver);
+      /*  Actions a = new Actions(getDriver());
         a.sendKeys(word);
         a.perform();*/
         sendSearchString(word);
     }
     public void tapOnProductCell(){
-        driver.findElement(AmazonProdCell).click();
+        getDriver().findElement(AmazonProdCell).click();
     }
 
     public void tapOnRegularProduct(){
-        driver.findElement(regularBuzzCell).click();
+        getDriver().findElement(regularBuzzCell).click();
     }
 
     //GIFT GUIDE METHODS
-    public Boolean validateGiftGuideTitle(){ return driver.findElement(giftGuideTitle).isDisplayed();}
-    public void tapOnCTAGiftGuideLink() {driver.findElement(giftGuidesCTALink).click();}
-    public Boolean validateGiftGuideTitleOnScreen() {return driver.findElement(giftGuideTitleOnScreen).isDisplayed();}
+    public Boolean validateGiftGuideTitle(){ return getDriver().findElement(giftGuideTitle).isDisplayed();}
+    public void tapOnCTAGiftGuideLink() {getDriver().findElement(giftGuidesCTALink).click();}
+    public Boolean validateGiftGuideTitleOnScreen() {return getDriver().findElement(giftGuideTitleOnScreen).isDisplayed();}
     public Boolean validateTrendingProductsTitle()
     {return false;
-            //driver.findElement(trendingProductsTitle).isDisplayed();
+            //getDriver().findElement(trendingProductsTitle).isDisplayed();
 
             }
 
@@ -250,65 +255,65 @@ public class ShoppingPage extends CommonPage {
 
     //FEATURE STORIES METHODS
 
-    public void tapOnFeatureStoriesCell(){driver.findElement(featureStoryCell).click();}
-    public Boolean featureStoryTitleIsDisplayed(){ return driver.findElement(featureStories).isDisplayed();}
+    public void tapOnFeatureStoriesCell(){getDriver().findElement(featureStoryCell).click();}
+    public Boolean featureStoryTitleIsDisplayed(){ return getDriver().findElement(featureStories).isDisplayed();}
 
 
 
     //SHOP ALL HOMES SUB MENUS
-    public void tapOnShopAllHommes(){driver.findElement(ShopAllHomeSubMenu).click();}
-    public void tapOnBathroomsSubMenu(){driver.findElement(BarthroomSubMenu).click();}
-    public void tapOnBeddingMatressSubMenu(){driver.findElement(BeddingMattressSubMenu).click();}
-    public void tapOnCleaningSubMenu(){driver.findElement(CleaningSubMenu).click();}
-    public void tapOnKitchenMenu(){driver.findElement(CookingSubMenu).click();}
-    public void tapOnDecorSubMenu(){driver.findElement(DecorSubMenu).click();}
-    public void tapOnFurnitureSubMenu(){driver.findElement(FurnitureSubMenu).click();}
-    public void tapHomeOfficeSubMenu(){driver.findElement(HomeOfficeSubMenu).click();}
-    public void tapOnOrganizationSubMenu(){driver.findElement(OrganizationSubMenu).click();}
-    public void tapOnOutDoorShoesSubMenu(){driver.findElement(OutDoorShoesSubMenu).click();}
-    public void tapOnOutDoorHomeSubMenu(){driver.findElement(OutDoorHomeSubMenu).click();}
+    public void tapOnShopAllHommes(){getDriver().findElement(ShopAllHomeSubMenu).click();}
+    public void tapOnBathroomsSubMenu(){getDriver().findElement(BarthroomSubMenu).click();}
+    public void tapOnBeddingMatressSubMenu(){getDriver().findElement(BeddingMattressSubMenu).click();}
+    public void tapOnCleaningSubMenu(){getDriver().findElement(CleaningSubMenu).click();}
+    public void tapOnKitchenMenu(){getDriver().findElement(CookingSubMenu).click();}
+    public void tapOnDecorSubMenu(){getDriver().findElement(DecorSubMenu).click();}
+    public void tapOnFurnitureSubMenu(){getDriver().findElement(FurnitureSubMenu).click();}
+    public void tapHomeOfficeSubMenu(){getDriver().findElement(HomeOfficeSubMenu).click();}
+    public void tapOnOrganizationSubMenu(){getDriver().findElement(OrganizationSubMenu).click();}
+    public void tapOnOutDoorShoesSubMenu(){getDriver().findElement(OutDoorShoesSubMenu).click();}
+    public void tapOnOutDoorHomeSubMenu(){getDriver().findElement(OutDoorHomeSubMenu).click();}
 
 
     //Kitchen sub menues
 
-    public void tapOnAppliancesSubMenu(){driver.findElement(appliances).click();}
-    public void tapOnToolsSubMenu(){driver.findElement(tools).click();}
-    public Boolean validateKitchenTitle() {return driver.findElement(kitchenTitle).isDisplayed();}
+    public void tapOnAppliancesSubMenu(){getDriver().findElement(appliances).click();}
+    public void tapOnToolsSubMenu(){getDriver().findElement(tools).click();}
+    public Boolean validateKitchenTitle() {return getDriver().findElement(kitchenTitle).isDisplayed();}
 
     // Furniture sub menues
 
-    public void tapOnBedroomSubMenu(){driver.findElement(bedroom).click();}
-    public void tapOnKidsRoomSubMenu(){driver.findElement(kidsRoom).click();}
+    public void tapOnBedroomSubMenu(){getDriver().findElement(bedroom).click();}
+    public void tapOnKidsRoomSubMenu(){getDriver().findElement(kidsRoom).click();}
    // public void tapOutdoorSubMenu(){driver.findElement(OutDoorSubMenu).click();}
-    public void tapOnKitchenSubMenu() {driver.findElement(kitchen).click();}
-    public void tapOnLivingRoomSubMenu() {driver.findElement(livingRoom).click();}
-    public Boolean validateFurnitureTitle() {return driver.findElement(furnitureTitle).isDisplayed();}
+    public void tapOnKitchenSubMenu() {getDriver().findElement(kitchen).click();}
+    public void tapOnLivingRoomSubMenu() {getDriver().findElement(livingRoom).click();}
+    public Boolean validateFurnitureTitle() {return getDriver().findElement(furnitureTitle).isDisplayed();}
 
     //Outdoor sub menues
-    public void tapOnBackyardSubMenu() {driver.findElement(backyard).click();}
-    public void tapOnGardenSubMenu() {driver.findElement(garden).click();}
-    public void tapOnRecreationSubMenu() {driver.findElement(recreation).click();}
-    public Boolean validateOnOutDoorTitle() { return driver.findElement(outdoorHomeTitle).isDisplayed();}
+    public void tapOnBackyardSubMenu() {getDriver().findElement(backyard).click();}
+    public void tapOnGardenSubMenu() {getDriver().findElement(garden).click();}
+    public void tapOnRecreationSubMenu() {getDriver().findElement(recreation).click();}
+    public Boolean validateOnOutDoorTitle() { return getDriver().findElement(outdoorHomeTitle).isDisplayed();}
 
 
     //Outdoor home
 
-    public void tapOnOfficeSubMenu() {driver.findElement(office).click();}
+    public void tapOnOfficeSubMenu() {getDriver().findElement(office).click();}
 
 
 
 
     //Shop All Stores submenu METHODS
-    public void tapOnAllShopStores(){driver.findElement(ShopAllStores).click();}
-    public void tapOnAmazon(){driver.findElement(Amazon).click();}
-    public void tapOnEtsy(){driver.findElement(Etsy).click();}
-    public void tapOnNordstram(){driver.findElement(Nordstrom).click();}
-    public void tapOnSephora(){driver.findElement(Sephora).click();}
-    public void tapOnShopSmail(){driver.findElement(ShopSmall).click();}
-    public void tapOnTarget(){driver.findElement(Target).click();}
-    public void tapOnAllWalmat(){driver.findElement(Walmart).click();}
-    public void tapOnAWayFair(){driver.findElement(WayFair).click();}
-    public Boolean validateStoresTitle() { return driver.findElement(StoresTitle).isDisplayed();}
+    public void tapOnAllShopStores(){getDriver().findElement(ShopAllStores).click();}
+    public void tapOnAmazon(){getDriver().findElement(Amazon).click();}
+    public void tapOnEtsy(){getDriver().findElement(Etsy).click();}
+    public void tapOnNordstram(){getDriver().findElement(Nordstrom).click();}
+    public void tapOnSephora(){getDriver().findElement(Sephora).click();}
+    public void tapOnShopSmail(){getDriver().findElement(ShopSmall).click();}
+    public void tapOnTarget(){getDriver().findElement(Target).click();}
+    public void tapOnAllWalmat(){getDriver().findElement(Walmart).click();}
+    public void tapOnAWayFair(){getDriver().findElement(WayFair).click();}
+    public Boolean validateStoresTitle() { return getDriver().findElement(StoresTitle).isDisplayed();}
 
     //
 
@@ -316,131 +321,131 @@ public class ShoppingPage extends CommonPage {
 
 
   // Methods to access Sports and Fitness
-    public void tapShopAllSportsAndFitnessSubMenu() {driver.findElement(ShopAllSportsAndFitness).click();}
-    public void tapFitnessAndAccessoriesSubMenu() {driver.findElement(FitnessAndAccessories).click();}
-    public void tapMatchinarySubMenu() {driver.findElement(matchinery).click();}
-    public void tapPersonalCareSubMenu() {driver.findElement(PersonalCare).click();}
+    public void tapShopAllSportsAndFitnessSubMenu() {getDriver().findElement(ShopAllSportsAndFitness).click();}
+    public void tapFitnessAndAccessoriesSubMenu() {getDriver().findElement(FitnessAndAccessories).click();}
+    public void tapMatchinarySubMenu() {getDriver().findElement(matchinery).click();}
+    public void tapPersonalCareSubMenu() {getDriver().findElement(PersonalCare).click();}
 
     // Methods to access Beauty And Personal Care Sub Menu
-    public void tapShopBeautyAndPersonalCareSubMenu() {driver.findElement(ShopBeautyAndPersonalCare).click();}
-    public void tapHairSubMenu() {driver.findElement(Hair).click();}
-    public void tapMakeUpSubMenu() {driver.findElement(Makeup).click();}
-    public void tapOutDoorProductsSubMenu() {driver.findElement(OutdoorProducts).click();}
-    public void tapPersonalToolsSubMenu() {driver.findElement(PersonalTools).click();}
-    public void tapSkinCareSubMenu() {driver.findElement(SkinCare).click();}
-    public Boolean validateSkinCareTitle() { return driver.findElement(SkinCareTitle).isDisplayed();}
+    public void tapShopBeautyAndPersonalCareSubMenu() {getDriver().findElement(ShopBeautyAndPersonalCare).click();}
+    public void tapHairSubMenu() {getDriver().findElement(Hair).click();}
+    public void tapMakeUpSubMenu() {getDriver().findElement(Makeup).click();}
+    public void tapOutDoorProductsSubMenu() {getDriver().findElement(OutdoorProducts).click();}
+    public void tapPersonalToolsSubMenu() {getDriver().findElement(PersonalTools).click();}
+    public void tapSkinCareSubMenu() {getDriver().findElement(SkinCare).click();}
+    public Boolean validateSkinCareTitle() { return getDriver().findElement(SkinCareTitle).isDisplayed();}
 
 
     // Methods to access SkinCare sub menu
-    public void tapAcneSolutionsSubMenu() {driver.findElement(acneSolutions).click();}
-    public void tapBodySubMenu() {driver.findElement(body).click();}
-    public void tapFaceSubMenu() {driver.findElement(face).click();}
+    public void tapAcneSolutionsSubMenu() {getDriver().findElement(acneSolutions).click();}
+    public void tapBodySubMenu() {getDriver().findElement(body).click();}
+    public void tapFaceSubMenu() {getDriver().findElement(face).click();}
 
 
 
 // Methods to access Fashion Sub Menu
-    public void tapAllFashionSubMenu() {driver.findElement(ShopBeautyAndPersonalCare).click();}
-    public void tapAccesoriesSubMenu() {driver.findElement(AccesoriesSubMenu).click();}
-    public void tapDressesSubMenu() {driver.findElement(DressesSubMenu).click();}
-    public void tapFootwareSubMenu() {driver.findElement(FootwareSubMenu).click();}
-    public void tapFormalWearSubMenu() {driver.findElement(FormalWearSubMenu).click();}
-    public void tapJacketsSubMenu() {driver.findElement(JacketsSubMenu).click();}
-    public void tapJeansSubMenu() {driver.findElement(JeansSubMenu).click();}
-    public void tapLoungeWearSubMenu() {driver.findElement(LoungeWearSubMenu).click();}
-    public void tapPlantsSubMenu() {driver.findElement(PlantsSubMenu).click();}
-    public void tapSweatersSubMenu() {driver.findElement(SweatersSubMenu).click();}
-    public void tapSwimsuitsSubMenu() {driver.findElement(SwimsuitsSubMenu).click();}
-    public void tapTopsSubMenu() {driver.findElement(TopsSubMenu).click();}
-    public void tapUnderwearSubMenu() {driver.findElement(UnderwearSubMenu).click();}
+    public void tapAllFashionSubMenu() {getDriver().findElement(shopAllFashionSubMenu).click();}
+    public void tapAccesoriesSubMenu() {getDriver().findElement(AccesoriesSubMenu).click();}
+    public void tapDressesSubMenu() {getDriver().findElement(DressesSubMenu).click();}
+    public void tapFootwareSubMenu() {getDriver().findElement(FootwareSubMenu).click();}
+    public void tapFormalWearSubMenu() {getDriver().findElement(FormalWearSubMenu).click();}
+    public void tapJacketsSubMenu() {getDriver().findElement(JacketsSubMenu).click();}
+    public void tapJeansSubMenu() {getDriver().findElement(JeansSubMenu).click();}
+    public void tapLoungeWearSubMenu() {getDriver().findElement(LoungeWearSubMenu).click();}
+    public void tapPlantsSubMenu() {getDriver().findElement(PlantsSubMenu).click();}
+    public void tapSweatersSubMenu() {getDriver().findElement(SweatersSubMenu).click();}
+    public void tapSwimsuitsSubMenu() {getDriver().findElement(SwimsuitsSubMenu).click();}
+    public void tapTopsSubMenu() {getDriver().findElement(TopsSubMenu).click();}
+    public void tapUnderwearSubMenu() {getDriver().findElement(UnderwearSubMenu).click();}
 
     // Methods to access Fashion Accessories sub menu
-    public void tapOnBagsSubMenu(){driver.findElement(Bags).click();}
-    public void tapOnColdWeatherSubMenu(){driver.findElement(ColdWeather).click();}
-    public void tapOnGlassesSubMenu(){driver.findElement(GlassesAndSunglasses).click();}
-    public void tapOnJewerlySubMenu(){driver.findElement(Jewerly).click();}
-    public Boolean validateFashionAccessoriesTitle() { return driver.findElement(FashionAccessoriesTitle).isDisplayed();}
+    public void tapOnBagsSubMenu(){getDriver().findElement(Bags).click();}
+    public void tapOnColdWeatherSubMenu(){getDriver().findElement(ColdWeather).click();}
+    public void tapOnGlassesSubMenu(){getDriver().findElement(GlassesAndSunglasses).click();}
+    public void tapOnJewerlySubMenu(){getDriver().findElement(Jewerly).click();}
+    public Boolean validateFashionAccessoriesTitle() { return getDriver().findElement(FashionAccessoriesTitle).isDisplayed();}
 
     // Methos to access footware submenu
 
-    public void tapOnBootsSubMenu(){driver.findElement(Boots).click();}
-    public void tapOnDressSubMenu(){driver.findElement(Dress).click();}
-    public void tapOnFlatsSubMenu(){driver.findElement(Flats).click();}
-    public void tapOnHeelsSubMenu(){driver.findElement(Heels).click();}
-    public void tapOnOutdoorSubMenu(){driver.findElement(OutDoorShoes).click();}
-    public void tapOnSandalsSubMenu(){driver.findElement(Sandals).click();}
-    public void tapOnBagsSneakersMenu(){driver.findElement(Sneakers).click();}
-    public Boolean validateFootwareTitle() { return driver.findElement(footwareTitle).isDisplayed();}
+    public void tapOnBootsSubMenu(){getDriver().findElement(Boots).click();}
+    public void tapOnDressSubMenu(){getDriver().findElement(Dress).click();}
+    public void tapOnFlatsSubMenu(){getDriver().findElement(Flats).click();}
+    public void tapOnHeelsSubMenu(){getDriver().findElement(Heels).click();}
+    public void tapOnOutdoorSubMenu(){getDriver().findElement(OutDoorShoes).click();}
+    public void tapOnSandalsSubMenu(){getDriver().findElement(Sandals).click();}
+    public void tapOnBagsSneakersMenu(){getDriver().findElement(Sneakers).click();}
+    public Boolean validateFootwareTitle() { return getDriver().findElement(footwareTitle).isDisplayed();}
 
 
 
-    public String getCategoryName() { return driver.findElement(cateogoryName).getText();}
-    public Boolean verifyFashionCatTitle(){ return driver.findElement(FashionTitle).isDisplayed();}
-    public Boolean verifyBeautyAndCareTitle(){ return driver.findElement(beautyAndCareTitle).isDisplayed();}
-    public void tapOnCategoryBackBtn(){driver.findElement(backCategory).click();}
-    public Boolean verifySplashCategoryLoads(){ return driver.findElement(categorySplash).isDisplayed();}
-    public String validateCateroryTitle() {return driver.findElement(categoryTitle).getText();}
-    public Boolean validateAllCateroryTitleIsDisplayed() {return driver.findElement(categoryTitle).isDisplayed();}
+    public String getCategoryName() { return getDriver().findElement(cateogoryName).getText();}
+    public Boolean verifyFashionCatTitle(){ return getDriver().findElement(FashionTitle).isDisplayed();}
+    public Boolean verifyBeautyAndCareTitle(){ return getDriver().findElement(beautyAndCareTitle).isDisplayed();}
+    public void tapOnCategoryBackBtn(){getDriver().findElement(backCategory).click();}
+    public Boolean verifySplashCategoryLoads(){ return getDriver().findElement(categorySplash).isDisplayed();}
+    public String validateCateroryTitle() {return getDriver().findElement(categoryTitle).getText();}
+    public Boolean validateAllCateroryTitleIsDisplayed() {return getDriver().findElement(categoryTitle).isDisplayed();}
 
-    public void tapOnBeautyCategory(){driver.findElement(categoryBeauty).click();}
-    public void tapOnFashionCategory(){driver.findElement(fashionCategory).click();}
-    public void tapOnHomeCategory(){driver.findElement(homeCatgegory).click();}
-    public void tapOnKidsCategory(){driver.findElement(kidsCategory).click();}
-    public void tapOnBPetsCategory(){driver.findElement(petsCategory).click();}
-    public void tapOnSexToysCategory(){driver.findElement(sexToysCategory).click();}
-    public void tapOnStoresCategory(){driver.findElement(storesCategory).click();}
-    public void tapOnMoreCategory(){driver.findElement(moreCategory).click();}
+    public void tapOnBeautyCategory(){getDriver().findElement(categoryBeauty).click();}
+    public void tapOnFashionCategory(){getDriver().findElement(fashionCategory).click();}
+    public void tapOnHomeCategory(){getDriver().findElement(homeCatgegory).click();}
+    public void tapOnKidsCategory(){getDriver().findElement(kidsCategory).click();}
+    public void tapOnBPetsCategory(){getDriver().findElement(petsCategory).click();}
+    public void tapOnSexToysCategory(){getDriver().findElement(sexToysCategory).click();}
+    public void tapOnStoresCategory(){getDriver().findElement(storesCategory).click();}
+    public void tapOnMoreCategory(){getDriver().findElement(moreCategory).click();}
 
-    public void clickOnBeautyMenu(){driver.findElement(BeautyAndCare).click();}
-    public void clickOnFashionMenu(){driver.findElement(Fashion).click();}
-    public void clickOnHomeMenu(){driver.findElement(Home).click();}
+    public void clickOnBeautyMenu(){getDriver().findElement(BeautyAndCare).click();}
+    public void clickOnFashionMenu(){getDriver().findElement(Fashion).click();}
+    public void clickOnHomeMenu(){getDriver().findElement(Home).click();}
 
     //Methods to access Home Sub menues
-    public void tapOnShopAllHome(){driver.findElement(ShopAllHomeSubMenu).click();}
-    public Boolean validateHomeTitle() { return driver.findElement(HomeTitle).isDisplayed();}
+    public void tapOnShopAllHome(){getDriver().findElement(ShopAllHomeSubMenu).click();}
+    public Boolean validateHomeTitle() { return getDriver().findElement(HomeTitle).isDisplayed();}
 
   // Methods to access Sports + Fitness Sub menu
-  public void clickOnShopAllSportsAndFitness(){driver.findElement(ShopAllSportsAndFitness).click();}
-    public void clickOnFitnessAccessories(){driver.findElement(fitnessAccessories).click();}
-    public void clickOnMachinery() {driver.findElement(machinery).click();}
-    public void clickOnPersonalCareMenu(){driver.findElement(personalCare).click();}
-    public Boolean validateSportsAndFitnessTitle() { return driver.findElement(sportAndFitnessTitle).isDisplayed();}
+  public void clickOnShopAllSportsAndFitness(){getDriver().findElement(ShopAllSportsAndFitness).click();}
+    public void clickOnFitnessAccessories(){getDriver().findElement(fitnessAccessories).click();}
+    public void clickOnMachinery() {getDriver().findElement(machinery).click();}
+    public void clickOnPersonalCareMenu(){getDriver().findElement(personalCare).click();}
+    public Boolean validateSportsAndFitnessTitle() { return getDriver().findElement(sportAndFitnessTitle).isDisplayed();}
 
 
 
 
 
-    public void clickOnKidsMenu(){driver.findElement(Kids).click();}
-    public void clickOnPetsMenu(){driver.findElement(Pets).click();}
-    public void clickOnSexToysMenu(){driver.findElement(SexToys).click();}
-    public void clickOnSportsMenu(){driver.findElement(Sports).click();}
-    public void clickOnStoresMenu(){driver.findElement(Stores).click();}
-    public void clickOnSubscriptions(){driver.findElement(Subscriptions).click();}
-    public void clickOnTechMenu(){driver.findElement(Tech).click();}
-    public void clickOnAccesoriesMenu(){driver.findElement(accesories).click();}
-    public void clickOnFootwareMenu(){driver.findElement(footware).click();}
-    public void skincareMenu() {driver.findElement(skincare).click();}
+    public void clickOnKidsMenu(){getDriver().findElement(Kids).click();}
+    public void clickOnPetsMenu(){getDriver().findElement(Pets).click();}
+    public void clickOnSexToysMenu(){getDriver().findElement(SexToys).click();}
+    public void clickOnSportsMenu(){getDriver().findElement(Sports).click();}
+    public void clickOnStoresMenu(){getDriver().findElement(Stores).click();}
+    public void clickOnSubscriptions(){getDriver().findElement(Subscriptions).click();}
+    public void clickOnTechMenu(){getDriver().findElement(Tech).click();}
+    public void clickOnAccesoriesMenu(){getDriver().findElement(accesories).click();}
+    public void clickOnFootwareMenu(){getDriver().findElement(footware).click();}
+    public void skincareMenu() {getDriver().findElement(skincare).click();}
 
     // tech menu methods
-    public Boolean validateTechTitle() { return driver.findElement(techTitle).isDisplayed();}
-    public void shopAllTechMenu() {driver.findElement(shopAllTech).click();}
-    public void tapTechAccesoriesMenu() {driver.findElement(techAccesories).click();}
-    public void tapgadgetsMenu() {driver.findElement(gadgets).click();}
-    public void taphomeElectronicsMenu() {driver.findElement(homeElectronics).click();}
+    public Boolean validateTechTitle() { return getDriver().findElement(techTitle).isDisplayed();}
+    public void shopAllTechMenu() {getDriver().findElement(shopAllTech).click();}
+    public void tapTechAccesoriesMenu() {getDriver().findElement(techAccesories).click();}
+    public void tapgadgetsMenu() {getDriver().findElement(gadgets).click();}
+    public void taphomeElectronicsMenu() {getDriver().findElement(homeElectronics).click();}
 
 
     //Methods
     public boolean shoppingTabIsPresent() {
-        return driver.findElement(shoppingTab).isDisplayed();
+        return getDriver().findElement(shoppingTab).isDisplayed();
     }
 
-    public void tapBackFromMenu(){driver.findElement(backFromMenu);}
+    public void tapBackFromMenu(){getDriver().findElement(backFromMenu);}
 
     public boolean shopNowButtonIsPresent() {
-        return driver.findElement(shopNowButton).isDisplayed();
+        return getDriver().findElement(shopNowButton).isDisplayed();
     }
 
     public void tapShopNowButton() {
-        driver.findElement(shopNowButton).click();
+        getDriver().findElement(shopNowButton).click();
         print("Tapped the Shop now button");
     }
 }

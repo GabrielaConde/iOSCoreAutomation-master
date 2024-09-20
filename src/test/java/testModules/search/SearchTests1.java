@@ -16,6 +16,8 @@ public class SearchTests1 extends SearchInit {
         Thread.sleep(3000);
         search.tapOnAcceptAllCookiesBtn();
         Thread.sleep(2000);
+        search.setUSEdition();
+        Thread.sleep(3000);
         search.tapSearchTab();
         print("------------------------------------------------------");
     }
@@ -46,7 +48,7 @@ public class SearchTests1 extends SearchInit {
     }
 
     @Test(priority = 4)
-    public void testClearSearch() {
+    public void testClearSearch()throws InterruptedException{
         testName("Clear the search results");
         Assert.assertTrue(search.clearSearchIsPresent());
         print("Verified Clear Search is displayed");

@@ -2,7 +2,7 @@ package config.pages.profile;
 
 import config.pages.CommonPage;
 import config.pages.WaitersPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,17 +10,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BookmarksPage extends CommonPage {
 
     //Catching elements
-    private final By cancelBtn = MobileBy.AccessibilityId("Cancel");
+    private final By cancelBtn = AppiumBy.accessibilityId("Cancel");
  //   private final By cancelBtn = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
-    private final By bookmarksTab = MobileBy.AccessibilityId("Bookmarks");
-    private final By bookmarksEmptyMessage = MobileBy.AccessibilityId("Did you know you can bookmark posts and quizzes?, To bookmark, tap the bookmark icon");
-    private final By addBookmarkButton = MobileBy.AccessibilityId("Add Bookmark");
-    private final By removeBookmarkButton = MobileBy.AccessibilityId("Remove Bookmark");
-    private final By bookmarkAddedToast = MobileBy.AccessibilityId("Added to your Bookmarks!");
-    private final By bookmarkRemovedToast = MobileBy.AccessibilityId("Removed from your Bookmarks!");
+    private final By bookmarksTab = AppiumBy.accessibilityId("Bookmarks");
+    private final By bookmarksEmptyMessage = AppiumBy.accessibilityId("Did you know you can bookmark posts and quizzes?, To bookmark, tap the bookmark icon");
+    private final By addBookmarkButton = AppiumBy.accessibilityId("Add Bookmark");
+    private final By removeBookmarkButton = AppiumBy.accessibilityId("Remove Bookmark");
+    private final By bookmarkAddedToast = AppiumBy.accessibilityId("Added to your Bookmarks!");
+    private final By bookmarkRemovedToast = AppiumBy.accessibilityId("Removed from your Bookmarks!");
   //  private final By bpageBookmarked = By.xpath("//XCUIElementTypeStaticText[@name='33 Things To Bring On Your Next Outdoor Adventure']");
   //  private final By bpageBookmarked = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[5]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
-   private final By bpageBookmarked = MobileBy.iOSNsPredicateString("label == \"33 Things To Bring On Your Next Outdoor Adventure\" AND name == \"33 Things To Bring On Your Next Outdoor Adventure\"");
+   private final By bpageBookmarked = AppiumBy.iOSNsPredicateString("label == \"33 Things To Bring On Your Next Outdoor Adventure\" AND name == \"33 Things To Bring On Your Next Outdoor Adventure\"");
 
 
     @Override
@@ -30,59 +30,59 @@ public class BookmarksPage extends CommonPage {
 
     //Methods
     public boolean bookmarksTabIsPresent() {
-        return driver.findElement(bookmarksTab).isDisplayed();
+        return getDriver().findElement(bookmarksTab).isDisplayed();
     }
 
     public void tapBookmarksTab() {
-        driver.findElement(bookmarksTab).click();
+        getDriver().findElement(bookmarksTab).click();
         print("Tapped Bookmarks");
     }
 
     public void clickOnCancelBtn(){
-        WaitersPage.waitForElement(cancelBtn);
-        driver.findElement(cancelBtn).click();
+       // WaitersPage.waitForElement(cancelBtn);
+        getDriver().findElement(cancelBtn).click();
     }
 
     public boolean bookmarksEmptyMessageIsPresent() {
-        return driver.findElement(bookmarksEmptyMessage).isDisplayed();
+        return getDriver().findElement(bookmarksEmptyMessage).isDisplayed();
     }
 
     public boolean addBookmarkButtonIsPresent() {
-        return driver.findElement(addBookmarkButton).isDisplayed();
+        return getDriver().findElement(addBookmarkButton).isDisplayed();
     }
 
     public void tapAddBookmarkButton() {
-        driver.findElement(addBookmarkButton).click();
+        getDriver().findElement(addBookmarkButton).click();
         print("Tapped Add to Bookmarks button");
     }
 
     public boolean removeBookmarkButtonIsPresent() {
-        WaitersPage.waitForElement(removeBookmarkButton);
-        return driver.findElement(removeBookmarkButton).isDisplayed();
+       // WaitersPage.waitForElement(removeBookmarkButton);
+        return getDriver().findElement(removeBookmarkButton).isDisplayed();
     }
 
     public void tapRemoveBookmarkButton() {
-        driver.findElement(removeBookmarkButton).click();
+        getDriver().findElement(removeBookmarkButton).click();
         print("Tapped Remove from Bookmarks button");
     }
 
     public boolean bookmarkAddedToastIsPresent() {
-        return driver.findElement(bookmarkAddedToast).isDisplayed();
+        return getDriver().findElement(bookmarkAddedToast).isDisplayed();
     }
 
     public boolean bookmarkRemovedToastIsPresent() {
-        return driver.findElement(bookmarkRemovedToast).isDisplayed();
+        return getDriver().findElement(bookmarkRemovedToast).isDisplayed();
     }
 
     public boolean bpageBookmarkedIsPresent() {
        // WaitersPage.waitForElement(bpageBookmarked);
-        Boolean result = driver.findElement(bpageBookmarked).isDisplayed();
+        Boolean result = getDriver().findElement(bpageBookmarked).isDisplayed();
         return result;
     }
 
     public void tapBpageBookmarked() throws InterruptedException{
         Thread.sleep(3000);
-        driver.findElement(bpageBookmarked).click();
+        getDriver().findElement(bpageBookmarked).click();
         print("Tapped Bpage bookmarked");
     }
 }

@@ -1,37 +1,47 @@
 package config.pages.signIn;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class SignInMailPage extends CommonPage {
 
     //Catching elements
-    private final By userName = MobileBy.AccessibilityId("salpimienta");
-    private final By date = MobileBy.AccessibilityId("Joined Nov 2021");
+    private final By userName = AppiumBy.accessibilityId("salpimienta");
+    private final By date = AppiumBy.accessibilityId("Joined Nov 2021");
+
+
+
+
+    private final By signInWithExistAccLnk = AppiumBy.accessibilityId("Sign in with existing account");
 
     //Methods
+
+
     public boolean profileButtonIsPresent() {
-        return driver.findElement(profileButton).isDisplayed();
+        return getDriver().findElement(profileButton).isDisplayed();
     }
+
+    public void tapOnSignInWithExistingAccLnk() {getDriver().findElement(signInWithExistAccLnk).click();}
 
     public boolean emailFieldIsPresent() {
-        return driver.findElement(emailField).isDisplayed();
+        return getDriver().findElement(emailField).isDisplayed();
     }
 
+
     public boolean passwordFieldIsPresent() {
-        return driver.findElement(passwordField).isDisplayed();
+        return getDriver().findElement(passwordField).isDisplayed();
     }
 
     public boolean signInButtonIsPresent() {
-        return driver.findElement(signInButton).isDisplayed();
+        return getDriver().findElement(signInButton).isDisplayed();
     }
 
     public boolean userNameIsPresent() {
-        return driver.findElement(userName).isDisplayed();
+        return getDriver().findElement(userName).isDisplayed();
     }
 
     public boolean dateIsPresent() {
-        return driver.findElement(date).isDisplayed();
+        return getDriver().findElement(date).isDisplayed();
     }
 }

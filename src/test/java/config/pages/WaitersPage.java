@@ -2,17 +2,18 @@ package config.pages;
 
 import basePackage.Base;
 import org.openqa.selenium.By;
+import java.time.Duration;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.springframework.ui.context.Theme;
+//import org.springframework.ui.context.Theme;
 
 public class WaitersPage extends Base {
 
     //140
-    protected static WebDriverWait waiter = new WebDriverWait(driver, 60);
+    protected WebDriverWait waiter = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
 
     //Method
-    public static Boolean waitForElement(By data) {
+    public Boolean waitForElement(By data) {
         try {
             waiter.until(ExpectedConditions.visibilityOfElementLocated(data));
             return true;

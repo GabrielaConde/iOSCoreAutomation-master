@@ -167,7 +167,7 @@ public class ShoppingSubTabsTestsDeprecated extends EditionsInit {
     }
 
     @Test (priority = 11)
-    public void testGiftSubTab() {
+    public void testGiftSubTab() throws InterruptedException {
         testName("Verify the Gift Guide sub tab");
         shoppingSubTabs.tapGiftSubTab();
 

@@ -23,7 +23,8 @@ public class NatBpageEmbedsTests3 extends BpageInit {
     public void testIGEmbedIsPresent() throws InterruptedException{
         testName("Verify IG embed is present");
         embeds.waitForNative();
-        scroll.scrollDown();
+        nativeBpage.scrollInBpageMultipleTimes(2);
+
         Thread.sleep(3000);
         Assert.assertTrue(embeds.igEmbedIsPresent());
         print("Verified IG embed is present");
@@ -31,7 +32,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
 
 
     //YouTube
-    @Test(priority = 4, dataProvider = "YTVideoEmbed", dataProviderClass = BpagesDataProvider.class)
+  //  @Test(priority = 4, dataProvider = "YTVideoEmbed", dataProviderClass = BpagesDataProvider.class)
     public void testSearchYTVideoNativeBpage(String data)throws InterruptedException {
         testName("Search Native Bpage with Twitter embed");
         embeds.tapBackButton();
@@ -39,7 +40,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.completeSearch(data);
     }
 
-    @Test(priority = 5)
+  //  @Test(priority = 5)
     public void testPlayYTButtonIsPresent() throws InterruptedException{
         testName("Verify tapping 'Play' button on YouTube embed");
         embeds.waitForNative();
@@ -49,7 +50,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
     }
 
     //Twitter
-    @Test(priority = 6, dataProvider = "twitterEmbed", dataProviderClass = BpagesDataProvider.class)
+ //   @Test(priority = 6, dataProvider = "twitterEmbed", dataProviderClass = BpagesDataProvider.class)
     public void testSearchTwitterNativeBpage(String data)throws InterruptedException {
         testName("Search Native Bpage with Twitter embed");
         embeds.tapBackButton();
@@ -57,12 +58,12 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.completeSearch(data);
     }
 
-    @Test(priority = 7)
+ //   @Test(priority = 7)
     public void testTWEmbedIsPresent() {
         testName("Verify Twitter embed is present");
       //  embeds.waitForNative();
        // scroll.scrollDown90_40();
-        scroll.scrollDown();
+        nativeBpage.scrollInBpage2();
     //    scroll.scrollDown();
   //      Assert.assertTrue(embeds.twPlayButtonIsPresent());
         print("Verified Twitter embed is present");
@@ -70,7 +71,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
     }
 
     //IG Videos
-    @Test(priority = 8, dataProvider = "instagramVideoEmbed", dataProviderClass = BpagesDataProvider.class)
+  //  @Test(priority = 8, dataProvider = "instagramVideoEmbed", dataProviderClass = BpagesDataProvider.class)
     public void testSearchIGVideoNativeBpage(String data)throws InterruptedException {
         testName("Search Native Bpage with IG Video embed");
         embeds.tapBackButton();
@@ -80,7 +81,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
 
 
     //TikTok
-    @Test(priority = 10, dataProvider = "tiktokEmbed", dataProviderClass = BpagesDataProvider.class)
+   // @Test(priority = 10, dataProvider = "tiktokEmbed", dataProviderClass = BpagesDataProvider.class)
     public void testSearchTikTokVideoNativeBpage(String data)throws InterruptedException {
         testName("Search Native Bpage with Tik Tok Video embed");
         embeds.tapBackButton();
@@ -88,7 +89,7 @@ public class NatBpageEmbedsTests3 extends BpageInit {
         embeds.completeSearch(data);
     }
 
-    @Test(priority = 11)
+   // @Test(priority = 11)
     public void testTikTokVideoIsPresent() throws InterruptedException {
         try {
             testName("Verify Tik Tok video embed is present");

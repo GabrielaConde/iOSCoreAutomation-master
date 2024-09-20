@@ -3,7 +3,7 @@ package config.pages.settings;
 import config.pages.CommonPage;
 import config.pages.WaitersPage;
 import config.pages.signIn.SignInMailPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -15,106 +15,109 @@ public class SettingsSetupPage extends CommonPage {
     protected final By closeSubscribe = By.xpath("(//XCUIElementTypeButton[@name=\"Close\"])");
 //    protected final By closeSubscribe = By.xpath("//*[contains(@name,'Close,')]");
     //Catching elements
-    protected final By debugButton = MobileBy.AccessibilityId("Debug");
-    protected final By aBeagleExperiments = MobileBy.AccessibilityId("ABeagle Experiments");
-    protected final By experiments = MobileBy.AccessibilityId("Experiments");
-    protected final By adFeatureFlag = MobileBy.AccessibilityId("Ad Feature Flags");
-    protected final By featureFlag = MobileBy.AccessibilityId("Feature Flags");
-    protected final By kennelButton = MobileBy.AccessibilityId("Kennel");
+    protected final By debugButton = AppiumBy.accessibilityId("Debug");
+    protected final By settingsItemMnu = AppiumBy.xpath("(//XCUIElementTypeButton[@name=\"Settings\"])[2]");
+    protected final By aBeagleExperiments = AppiumBy.accessibilityId("ABeagle Experiments");
+    protected final By experiments = AppiumBy.accessibilityId("Experiments");
+    protected final By adFeatureFlag = AppiumBy.accessibilityId("Ad Feature Flags");
+    protected final By featureFlag = AppiumBy.accessibilityId("Feature Flags");
+    protected final By kennelButton = AppiumBy.accessibilityId("Kennel");
 
     //--Stage
-    protected final By serverSettings = MobileBy.AccessibilityId("Server settings");
-    protected final By setAllEnvironments = MobileBy.AccessibilityId("Set All Environments, Production");
-    protected final By stagingEnvironment = MobileBy.AccessibilityId("Staging");
+    protected final By serverSettings = AppiumBy.accessibilityId("Server settings");
+    protected final By setAllEnvironments = AppiumBy.accessibilityId("Set All Environments, Production");
+    protected final By stagingEnvironment = AppiumBy.accessibilityId("Staging");
     protected final By serverSettingsBackButton = By.xpath("//*[contains(@type,'back button')]");
 
     //--Shopping tab
-    protected final By shoppingTabExperiment = MobileBy.AccessibilityId("shopping-tab-ios-7040");
-    protected final By enabledOption = MobileBy.AccessibilityId("enabled");
-    protected final By onOption = MobileBy.AccessibilityId("on");
+    protected final By shoppingTabExperiment = AppiumBy.accessibilityId("shopping-tab-ios-7040");
+    protected final By enabledOption = AppiumBy.accessibilityId("enabled");
+    protected final By onOption = AppiumBy.accessibilityId("on");
 
     //--Trending Package exp
-    protected final By trendingPckExperiment = MobileBy.AccessibilityId("trending-products-package-IOS-7723");
-    protected final By bothFeedsVariant = MobileBy.AccessibilityId("both_feeds");
+    protected final By trendingPckExperiment = AppiumBy.accessibilityId("trending-products-package-IOS-7723");
+    protected final By bothFeedsVariant = AppiumBy.accessibilityId("both_feeds");
 
     //--Ads
-    protected final By allAdsBpageDynamicExperiment = MobileBy.AccessibilityId("adflag_ios_all_buzzfeed");
-    protected final By offVariant = MobileBy.AccessibilityId("off");
+    protected final By allAdsBpageDynamicExperiment = AppiumBy.accessibilityId("adflag_ios_all_buzzfeed");
+    protected final By offVariant = AppiumBy.accessibilityId("off");
 
     //--Results sub tab
-    protected final By resultsFlag = MobileBy.AccessibilityId("quiz-results-feed-IOS-8603");
-    protected final By onVariant = MobileBy.AccessibilityId("on");
+    protected final By resultsFlag = AppiumBy.accessibilityId("quiz-results-feed-IOS-8603");
+    protected final By onVariant = AppiumBy.accessibilityId("on");
 
     //GAME HUB
-    protected final By gameHubFF = MobileBy.AccessibilityId("quiz-game-hub-IOS-8701");
-    protected final By gamesTabFF = MobileBy.AccessibilityId("game-tab-BR-3008-NOPROD");
+    protected final By gameHubFF = AppiumBy.accessibilityId("quiz-game-hub-IOS-8701");
+    protected final By gamesTabFF = AppiumBy.accessibilityId("game-tab-BR-3008-NOPROD");
 
     //VISUAL FEED
-    protected final By visualFeedExp = MobileBy.AccessibilityId("visual-feed-APPS-7879");
+    protected final By visualFeedExp = AppiumBy.accessibilityId("visual-feed-APPS-7879");
 
     //AI QUIZZES
-    protected final By aiQuizzes = MobileBy.AccessibilityId("ai-quiz-APPS-8061");
+    protected final By aiQuizzes = AppiumBy.accessibilityId("ai-quiz-APPS-8061");
 
     //IMPROVE SUB TABS NAVIGATION
-    protected final By navSubTabs = MobileBy.AccessibilityId("improved-sub-tab-navigation-IOS-8982");
+    protected final By navSubTabs = AppiumBy.accessibilityId("improved-sub-tab-navigation-IOS-8982");
    // protected final By navSubTabs = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]");
 
-    public void closeSubscribe() {driver.findElement(closeSubscribe).click();}
+    public void closeSubscribe() {getDriver().findElement(closeSubscribe).click();}
 
-    public void setOnOption() {driver.findElement(onOption).click();}
+    public void setOnOption() {getDriver().findElement(onOption).click();}
+
+    public void tapSettingsItemMenu(){getDriver().findElement(settingsItemMnu).click();}
 
 
     public void turnOnGameHubFF(){
         editFlag();
         scroll.scrollMultipleTimes(2);
-        driver.findElement(gameHubFF).click();
-        driver.findElement(onVariant).click();
-        driver.findElement(featureFlag).click();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(gameHubFF).click();
+        getDriver().findElement(onVariant).click();
+        getDriver().findElement(featureFlag).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void turnOnAIQuizzesFF(){
         editFlag();
-        driver.findElement(aiQuizzes).click();
-        driver.findElement(onVariant).click();
-        driver.findElement(experiments).click();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(aiQuizzes).click();
+        getDriver().findElement(onVariant).click();
+        getDriver().findElement(experiments).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void turnOnGamesTabFF(){
         editFlag();
-        driver.findElement(gamesTabFF).click();
-        driver.findElement(onOption).click();
-        driver.findElement(featureFlag).click();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(gamesTabFF).click();
+        getDriver().findElement(onOption).click();
+        getDriver().findElement(featureFlag).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void turnOnVisualFeedFF()throws InterruptedException{
         editExperiment();
         WaitersPage.waiterEnv(3000);
       //  Thread.sleep(3000);
-        driver.findElement(visualFeedExp).click();
+        getDriver().findElement(visualFeedExp).click();
         WaitersPage.waiterEnv(3000);
      //   Thread.sleep(3000);
-        driver.findElement(enabledOption).click();
+        getDriver().findElement(enabledOption).click();
         WaitersPage.waiterEnv(3000);
    //     Thread.sleep(3000);
-        driver.findElement(experiments).click();
+        getDriver().findElement(experiments).click();
         WaitersPage.waiterEnv(3000);
    //     Thread.sleep(3000);
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(kennelButton).click();
         WaitersPage.waiterEnv(3000);
     //    Thread.sleep(3000);
         tapDoneButton();
@@ -124,22 +127,23 @@ public class SettingsSetupPage extends CommonPage {
         WaitersPage.waiterEnv(3000);
     //    Thread.sleep(3000);
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     //Methods
     public void editExperiment() throws InterruptedException{
         gotoSettings();
-        driver.findElement(settingsButton).click();
+       // getDriver().findElement(settingsButton).click();
+        getDriver().findElement(gearIcon).click();
         WaitersPage.waiterEnv(3000);
     //    Thread.sleep(3000);
-        driver.findElement(debugButton).click();
+        getDriver().findElement(debugButton).click();
         WaitersPage.waiterEnv(3000);
      //   Thread.sleep(3000);
-        driver.findElement(aBeagleExperiments).click();
+        getDriver().findElement(aBeagleExperiments).click();
         WaitersPage.waiterEnv(3000);
     //    Thread.sleep(3000);
-        driver.findElement(experiments).click();
+        getDriver().findElement(experiments).click();
     }
 
     public void gotoSettings(){
@@ -147,90 +151,96 @@ public class SettingsSetupPage extends CommonPage {
         signIn.tapProfileButton();
     }
 
-    public void editAdFeatureFlag() {
+    public void editAdFeatureFlag() throws InterruptedException{
         gotoSettings();
-        driver.findElement(settingsButton).click();
-        driver.findElement(debugButton).click();
-        driver.findElement(aBeagleExperiments).click();
-        driver.findElement(adFeatureFlag).click();
+        getDriver().findElement(gearIcon).click();
+        getDriver().findElement(settingsItemMnu).click();
+        getDriver().findElement(debugButton).click();
+        Thread.sleep(2000);
+        getDriver().findElement(aBeagleExperiments).click();
+        Thread.sleep(2000);
+        getDriver().findElement(adFeatureFlag).click();
     }
 
 
 
     public void editFlag() {
         gotoSettings();
-        driver.findElement(settingsButton).click();
-        driver.findElement(debugButton).click();
-        driver.findElement(aBeagleExperiments).click();
+        getDriver().findElement(settingsButton).click();
+        getDriver().findElement(debugButton).click();
+        getDriver().findElement(aBeagleExperiments).click();
 
-        driver.findElement(featureFlag).click();
+        getDriver().findElement(featureFlag).click();
     }
 
     public void enableImproveSubTabsNavigation() throws InterruptedException{
         editFlag();
-        driver.findElement(navSubTabs).click();
-        driver.findElement(onVariant).click();
+        getDriver().findElement(navSubTabs).click();
+        getDriver().findElement(onVariant).click();
         Thread.sleep(3000);
-        driver.findElement(featureFlag).click();
+        getDriver().findElement(featureFlag).click();
         Thread.sleep(2000);
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void enableTrendingPackage()throws InterruptedException {
         editExperiment();
-        driver.findElement(trendingPckExperiment).click();
-        driver.findElement(bothFeedsVariant).click();
-        driver.findElement(experiments).click();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(trendingPckExperiment).click();
+        getDriver().findElement(bothFeedsVariant).click();
+        getDriver().findElement(experiments).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
-    public void disableAdExp() {
+    public void disableAdExp() throws InterruptedException{
         editAdFeatureFlag();
-        driver.findElement(allAdsBpageDynamicExperiment).click();
-        driver.findElement(offVariant).click();
-        driver.findElement(adFeatureFlag).click();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(allAdsBpageDynamicExperiment).click();
+        getDriver().findElement(offVariant).click();
+        getDriver().findElement(adFeatureFlag).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
-        driver.resetApp();
+      //  getDriver().resetApp();
+        getDriver().terminateApp("com.buzzfeed.buzzfeed");
+       // getDriver().activateApp("com.buzzfeed.buzzfeed");
+        activateApp();
     }
 
     public void changeToStage() {
-        driver.findElement(settingsButton).click();
-        driver.findElement(debugButton).click();
-        driver.findElement(serverSettings).click();
-        driver.findElement(setAllEnvironments).click();
-        driver.findElement(stagingEnvironment).click();
+        getDriver().findElement(settingsButton).click();
+        getDriver().findElement(debugButton).click();
+        getDriver().findElement(serverSettings).click();
+        getDriver().findElement(setAllEnvironments).click();
+        getDriver().findElement(stagingEnvironment).click();
         print("Set environment to Stage");
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void enableShoppingTab()throws InterruptedException {
         editExperiment();
-        driver.findElement(shoppingTabExperiment).click();
-        driver.findElement(enabledOption).click();
+        getDriver().findElement(shoppingTabExperiment).click();
+        getDriver().findElement(enabledOption).click();
         print("Enabled Shopping tab experiment");
-        driver.resetApp();
+        getDriver().resetApp();
     }
 
     public void enableResultsSubTab() {
         editFlag();
         scroll.scrollDown();
-        driver.findElement(resultsFlag).click();
-        driver.findElement(onVariant).click();
+        getDriver().findElement(resultsFlag).click();
+        getDriver().findElement(onVariant).click();
         print("Enabled Results flag for Quizzes tab");
         tapBackButton();
-        driver.findElement(kennelButton).click();
+        getDriver().findElement(kennelButton).click();
         tapDoneButton();
         tapSettingsButton();
         tapCloseButton();
-        driver.resetApp();
+        getDriver().resetApp();
     }
 }

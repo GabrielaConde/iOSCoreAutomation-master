@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [signInFBAndProfileSuite]">
-  <test thread-count="5" verbose="0" name="signInAndProfile(failed)">
+<suite name="Failed suite [signInFBAndProfileSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="signInAndProfile(failed)" verbose="0">
     <classes>
-      <class name="testModules.profile.RecentlyViewedEmptyTests2">
+      <class name="testModules.profile.WishlistTests3">
         <methods>
-          <include name="testRecentlyViewedTab"/>
+          <include name="testRemoveFromWishlist"/>
+          <include name="testAddToWishlist" invocation-numbers="0"/>
+          <include name="testWishlistAfterRemoval"/>
           <include name="initializePages"/>
+          <include name="testAddingOneItemToWishList" invocation-numbers="0"/>
+          <include name="testVerifySingleItemAdded"/>
+          <include name="testExploreButton"/>
+          <include name="testWishlistEmpty"/>
+          <include name="testAddedToWishlist"/>
+          <include name="testWishlistTab"/>
+          <include name="testCancelButton"/>
           <include name="tearDown"/>
+          <include name="testGetItButton"/>
           <include name="setUpTest"/>
         </methods>
-      </class> <!-- testModules.profile.RecentlyViewedEmptyTests2 -->
-      <class name="testModules.profile.MyCommentsTests4">
+      </class> <!-- testModules.profile.WishlistTests3 -->
+      <class name="testModules.profile.FBHeaderTests1">
         <methods>
-          <include name="testMyComments"/>
+          <include name="testAddProfilePhoto"/>
+          <include name="testEditUsernameModal"/>
+          <include name="testUpdateProfilePhoto"/>
+          <include name="testDeleteProfilePhoto"/>
+          <include name="testEditUsernameButton"/>
           <include name="initializePages"/>
+          <include name="testEditProfileButton"/>
+          <include name="testChangeBackDisplayName" invocation-numbers="0"/>
+          <include name="testDisplayName"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
+          <include name="testEditDisplayNameButton"/>
+          <include name="testEditDisplayName" invocation-numbers="0"/>
+          <include name="testNewDisplayName"/>
         </methods>
-      </class> <!-- testModules.profile.MyCommentsTests4 -->
+      </class> <!-- testModules.profile.FBHeaderTests1 -->
       <class name="testModules.profile.MyPostsTests5">
         <methods>
           <include name="initializePages"/>
@@ -27,6 +47,48 @@
           <include name="testMyPosts"/>
         </methods>
       </class> <!-- testModules.profile.MyPostsTests5 -->
+      <class name="testModules.profile.RecentlyViewedEmptyTests2">
+        <methods>
+          <include name="testRecentlyViewedTab"/>
+          <include name="initializePages"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="testRecentlyViewedEmpty"/>
+        </methods>
+      </class> <!-- testModules.profile.RecentlyViewedEmptyTests2 -->
+      <class name="testModules.profile.BookmarksTests6">
+        <methods>
+          <include name="testAddBookmark" invocation-numbers="0"/>
+          <include name="testBookmarkRemoved" invocation-numbers="0"/>
+          <include name="testEmptyBookmarks"/>
+          <include name="testRemoveBookmark" invocation-numbers="0"/>
+          <include name="testBookmarkAdded"/>
+          <include name="initializePages"/>
+          <include name="tearDown"/>
+          <include name="testBookmarksTab"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- testModules.profile.BookmarksTests6 -->
+      <class name="testModules.signIn.SignInFBTests">
+        <methods>
+          <include name="testDate"/>
+          <include name="initProcess"/>
+          <include name="loginUserWOCAndDelete"/>
+          <include name="testUserName"/>
+          <include name="initializePages"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+          <include name="signInFstTime"/>
+        </methods>
+      </class> <!-- testModules.signIn.SignInFBTests -->
+      <class name="testModules.profile.MyCommentsTests4">
+        <methods>
+          <include name="testMyComments"/>
+          <include name="initializePages"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- testModules.profile.MyCommentsTests4 -->
     </classes>
   </test> <!-- signInAndProfile(failed) -->
 </suite> <!-- Failed suite [signInFBAndProfileSuite] -->

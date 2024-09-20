@@ -1,18 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [newsAndShoppingSuite]">
-  <test thread-count="5" verbose="0" name="News and Shopping(failed)">
+<suite name="Failed suite [newsAndShoppingSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="HomeiPhone14(failed)" verbose="0">
+    <parameter name="platformVersion" value="16.4"/>
+    <parameter name="device" value="iPhone 14"/>
     <classes>
       <class name="testModules.shopping.ShoppingTests">
         <methods>
-          <include name="openTrendingModal"/>
-          <include name="validateTrendingPackageTitleIsDisplayed"/>
-          <include name="testShopNowButton"/>
+          <include name="validateShopSmallMenu"/>
+          <include name="validateHomeElectronicsMenu"/>
+          <include name="validatePersonalToolsSubMenu"/>
+          <include name="validateTechMenu"/>
+          <include name="validateFitnessAccesoriesMenu"/>
+          <include name="validateHomeMenu"/>
+          <include name="validateDressesSubMenu"/>
+          <include name="validateTechAccessoriesMenu"/>
+          <include name="validateMachineryMenu"/>
+          <include name="testPetsCategory"/>
+          <include name="validateKidsRoomSubMenu"/>
+          <include name="validateBootsSubMenu"/>
+          <include name="validatePantsSubMenu"/>
+          <include name="validatePersonalCareMenu"/>
+          <include name="validateSandalsSubMenu"/>
+          <include name="validateRecreationSubMenu"/>
+          <include name="validateWalmartMenu"/>
+          <include name="validateUnderwareSubMenu"/>
+          <include name="validateSubscriptionsMenu"/>
+          <include name="validateFootwareSubMenu"/>
           <include name="tearDown"/>
+          <include name="validateStoresMenu"/>
+          <include name="validateSneakersSubMenu"/>
+          <include name="validateOutdoorSubMenu"/>
+          <include name="validateHairSubMenu"/>
+          <include name="validateBeautyAndCareMenu"/>
+          <include name="validateFaceSubMenu"/>
+          <include name="validateShopAllStoresMenu"/>
+          <include name="validateSMakeUpSubMenu"/>
+          <include name="validateFashionAccesoriesSubMenu"/>
+          <include name="validateAmazonMenu"/>
+          <include name="validateNordstromMenu"/>
+          <include name="validateKitchenRoomSubMenu"/>
+          <include name="validateBeddingAndMatressSubMenu"/>
+          <include name="validateColdWeatherSubMenu"/>
+          <include name="validateKidsMenu"/>
+          <include name="validateShopAllBeautyAndPersonalCareSubMenu"/>
+          <include name="signInOnFstLaunch"/>
+          <include name="validateFashionMenu"/>
+          <include name="validatToolsSubMenu"/>
+          <include name="testSexToysCategory"/>
+          <include name="testShoppingHeaderIsPresent"/>
+          <include name="validateSecondOfficeSubMenu"/>
+          <include name="validateGlassesAndSunglassesSubMenu"/>
+          <include name="validateSexToysMenu"/>
           <include name="initializePages"/>
           <include name="setUpTest"/>
+          <include name="validateSkinCareSubMenu"/>
+          <include name="validateWayfairMenu"/>
+          <include name="testBeautyCategory"/>
+          <include name="validateOrganizationSubMenu"/>
+          <include name="validateOutDoorSubMenu"/>
+          <include name="validateBagsSubMenu"/>
+          <include name="validateShopAllTechMenu"/>
+          <include name="validateJewerlySubMenu"/>
+          <include name="validateFormalWareSubMenu"/>
+          <include name="validateBodySubMenu"/>
+          <include name="validatePetsMenu"/>
+          <include name="testFashionCategory"/>
+          <include name="validateLoungeWareSubMenu"/>
+          <include name="validateOfficeSubMenu"/>
+          <include name="testHomeCategory"/>
+          <include name="testShoppingTab"/>
+          <include name="validateGardenSubMenu"/>
+          <include name="validateJacketsSubMenu"/>
+          <include name="validateFurnitureSubMenu"/>
+          <include name="validateBathroomSubMenu"/>
+          <include name="validateSwimsuitsSubMenu"/>
+          <include name="validateEtsyMenu"/>
+          <include name="validateSportsAndFitnessMenu"/>
+          <include name="validateLivingRoomSubMenu"/>
+          <include name="validateDressSubMenu"/>
+          <include name="validateJeansSubMenu"/>
+          <include name="validateCleaningSubMenu"/>
+          <include name="setUp"/>
+          <include name="validateHeelsSubMenu"/>
+          <include name="validateDecorSubMenu"/>
+          <include name="validateAppliancesSubMenu"/>
+          <include name="validateSweatersSubMenu"/>
+          <include name="validateBackyardSubMenu"/>
+          <include name="validateOutDoorProductsSubMenu"/>
+          <include name="validateKitchenSubMenu"/>
+          <include name="validateShopAllSportsAndFitnessMenu"/>
+          <include name="testMore"/>
+          <include name="validateBedroomSubMenu"/>
+          <include name="validateGadgetsMenu"/>
+          <include name="validateSephoraMenu"/>
+          <include name="validateTopsSubMenu"/>
+          <include name="validateAcneSolutionsSubMenu"/>
+          <include name="validateFeatureStoriesDisplays"/>
+          <include name="validateFlatsSubMenu"/>
+          <include name="validateFeatureStoriesTitle"/>
+          <include name="validateShopAllFashionSubMenu"/>
+          <include name="validateTargetMenu"/>
+          <include name="testKidsCategory"/>
         </methods>
       </class> <!-- testModules.shopping.ShoppingTests -->
     </classes>
-  </test> <!-- News and Shopping(failed) -->
+  </test> <!-- HomeiPhone14(failed) -->
 </suite> <!-- Failed suite [newsAndShoppingSuite] -->

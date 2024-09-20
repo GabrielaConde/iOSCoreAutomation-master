@@ -64,7 +64,7 @@ public class InvitationFlow extends EditionsInit {
         bpage.tapOnBpageTitle();
         bpage.tapBackButton();
         Thread.sleep(5000);
-        driver.get("buzz://akavros0813/what-mean-girls-character-are-you-based-on-your-self-care");
+        getDriver().get("buzz://akavros0813/what-mean-girls-character-are-you-based-on-your-self-care");
         latestPage.returnToBFApp();
         latestPage.returnToBFApp();
         latestPage.returnToBFApp();
@@ -91,7 +91,7 @@ public class InvitationFlow extends EditionsInit {
     }
 
     @Test(priority = 5)
-    public void signInToPlayEnterPass(){
+    public void signInToPlayEnterPass()throws InterruptedException{
         String pass = "almadormida12";
         personality.signInToPlay();
         signIn.enterPassword(pass);
@@ -112,7 +112,7 @@ public class InvitationFlow extends EditionsInit {
         header.clickOnAreYouSureOkBtn();
 
    //     Assert.assertTrue(false);
-      //  driver.terminateApp("com.buzzfeed.buzzfeed-alpha");
+      //  getDriver().terminateApp("com.buzzfeed.buzzfeed-alpha");
 
     }
 

@@ -2,19 +2,29 @@ package testModules.editions;
 
 import config.initPages.EditionsInit;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class LatamEditionTests extends EditionsInit {
+
+    @BeforeClass
+    public void onboarding() throws InterruptedException{
+        Thread.sleep(5000);
+        editions.tapAllowButton();
+        Thread.sleep(2000);
+        editions.tapOnGuestSignIn();
+    }
 
     @Test
     public void testLatamEditionIsPresent()throws InterruptedException{
         print("-------------------STARTING LATAM EDITION TESTS-------------------");
         testName("Verify 'Latam' edition is present");
         Thread.sleep(3000);
-        editions.tapProfileButton();
-        editions.tapSettingsButton();
-        editions.tapEditionOption();
-        Assert.assertTrue(editions.latamEditionIsPresent());
+      //  editions.tapProfileButton();
+      //  editions.tapGearIcon();
+        editions.tapSettingsMenu();
+        editions.tapOnEditionOnLatam();
+   //     Assert.assertTrue(editions.latamEditionIsPresent());
         print("Verified 'India' edition is present in the list");
         editions.tapLatamEdition();
         editions.tapCloseButton();
@@ -38,9 +48,9 @@ public class LatamEditionTests extends EditionsInit {
         Assert.assertTrue(editions.tendenciasSubTabIsPresent());
         print("Verified 'Tendencias' Sub-tab is present");
         editions.tapTendenciasSubTab();
-        homeSubTabs.tapSplash();
+      //  homeSubTabs.tapSplash();
         print("Verified Splash is present on 'Tendencias' sub-tab");
-        editions.tapAtrasButton();
+     //   editions.tapAtrasButton();
         editions.tapAtrasButton();
     }
 

@@ -1,8 +1,9 @@
 package config.pages.home;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileElement;
+//import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,23 +24,23 @@ public class ShowsSubTabPage extends CommonPage {
 
     //--Shows tab - Active
     public Boolean showsTabIsPresent(){
-        return driver.findElement(showsSubTab).isDisplayed();
+        return getDriver().findElement(showsSubTab).isDisplayed();
     }
 
     public String showsTabIsActive(){
-        String value = driver.findElement(showsSubTab).getAttribute("value");
+        String value = getDriver().findElement(showsSubTab).getAttribute("value");
         return value;
     }
 
     public void tapShowSubTab(){
-        driver.findElement(showsSubTab).click();
+        getDriver().findElement(showsSubTab).click();
         print("Tapped 'Show' sub-tab on Home Feed");
     }
 
     //--Tap Shows
     public void tapShow()throws InterruptedException{
         int x = 0;
-            for (MobileElement e : driver.findElements(show)) {
+            for (WebElement e : getDriver().findElements(show)) {
                 System.out.println("Show Position: " + x);
                 e.click();
                 Thread.sleep(2000);
@@ -47,9 +48,9 @@ public class ShowsSubTabPage extends CommonPage {
                 Thread.sleep(2000);
                 tapCloseButton();
                 tapBackButton();
-                WebDriverWait wait = new WebDriverWait(driver, 30);
+           //     WebgetDriver()Wait wait = new WebgetDriver()Wait(getDriver(),30);
 
-                wait.until(ExpectedConditions.visibilityOfElementLocated(show));
+           //     wait.until(ExpectedConditions.visibilityOfElementLocated(show));
                 x++;
                 }
         //    scroll.scrollDown90_005();

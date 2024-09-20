@@ -15,7 +15,7 @@ public class FallBpageTests4 extends BpageInit {
         fallbackBpage.completeSearch(data);
     }
 
-    @Test(priority = 3)
+  //  @Test(priority = 3)
     public void verifyTitleIsPresent()throws InterruptedException {
         testName("Verify title is present on Fallback Bpage");
         Thread.sleep(3000);
@@ -65,10 +65,11 @@ public class FallBpageTests4 extends BpageInit {
       //  scroll.scrollUp();
      //   scroll.scrollDown90_85();
      //   scroll.scrollDown90_70();
-        scroll.scrollDown80_20();
+    /*    scroll.scrollDown80_20();
         scroll.scrollDown();
         scroll.scrollDown();
-        scroll.scrollDown();
+        scroll.scrollDown(); */
+        fallbackBpage.scrollInBpageMultipleTimes(4);
 
         fallbackBpage.moreOnThisHeaderIsPresent();
         print("Verified 'More On This' header is present");

@@ -81,7 +81,7 @@ public class FallBpageCommentsTests5 extends BpageInit {
     }
 
     @Test(priority = 8, dataProvider = "stagePass", dataProviderClass = LoginCredentialsDataProvider.class)
-    public void testEnterPassword(String data) {
+    public void testEnterPassword(String data) throws InterruptedException{
         testName("Enter password and login");
         fallbackComments.enterPassword(data);
         fallbackComments.tapSignInButton();

@@ -1,7 +1,7 @@
 package config.pages.bpage;
 
 import config.pages.WaitersPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -17,45 +17,45 @@ public class BpageEmbedsPage extends BpagePage{
 
     //Catching elements
     private final By igEmbed = By.xpath("//XCUIElementTypeOther[@name=\"Instagram\"]");
-    private final By igProfile = MobileBy.AccessibilityId("Instagram");
-    private final By ytPlayButton = MobileBy.AccessibilityId("Play");
+    private final By igProfile = AppiumBy.accessibilityId("Instagram");
+    private final By ytPlayButton = AppiumBy.accessibilityId("Play");
   //  private final By twPlayButton = By.xpath("//XCUIElementTypeOther[@name=\"Video Attachment\"]");
-  private final By twPlayButton = MobileBy.AccessibilityId("Watch now");
+  private final By twPlayButton = AppiumBy.accessibilityId("Watch now");
     private final By igVideoEmbed = By.xpath("//XCUIElementTypeButton[@name=\"Control\"]");
-    private final By watchNowButtonTikTokEmbed = MobileBy.AccessibilityId("Watch now");
-    private final By userTikTokEmbed = MobileBy.AccessibilityId("@alexogray");
-    private final By tumblrButton = MobileBy.AccessibilityId("Open in");
-    private final By tumblrUser = MobileBy.AccessibilityId("yungterra");
-    private final By twitterEmbed = MobileBy.AccessibilityId("20 seconds");
+    private final By watchNowButtonTikTokEmbed = AppiumBy.accessibilityId("Watch now");
+    private final By userTikTokEmbed = AppiumBy.accessibilityId("@alexogray");
+    private final By tumblrButton = AppiumBy.accessibilityId("Open in");
+    private final By tumblrUser = AppiumBy.accessibilityId("yungterra");
+    private final By twitterEmbed = AppiumBy.accessibilityId("20 seconds");
 
 
 
     //Methods
     //--IG and YouTube
     public void waitForNative(){
-        WaitersPage.waitForElement(title);
+      // WaitersPage.waitForElement(title);
     }
 
     public Boolean igEmbedIsPresent(){
-        return driver.findElement(igEmbed).isDisplayed();
+        return getDriver().findElement(igEmbed).isDisplayed();
     }
 
     public void tapIGEmbed(){
-        driver.findElement(igEmbed).click();
+        getDriver().findElement(igEmbed).click();
         print("Tapped 'IG' embed");
     }
 
     public Boolean ytPlayButtonIsPresent(){
-        return driver.findElement(ytPlayButton).isDisplayed();
+        return getDriver().findElement(ytPlayButton).isDisplayed();
     }
 
     //--Twitter
     public Boolean twPlayButtonIsPresent(){
-        return driver.findElement(twPlayButton).isDisplayed();
+        return getDriver().findElement(twPlayButton).isDisplayed();
     }
 
     public void tapTWPlayButton(){
-        driver.findElement(twPlayButton).click();
+        getDriver().findElement(twPlayButton).click();
         print("Tapped 'Play' button on Twitter embed");
     }
 
@@ -70,16 +70,17 @@ public class BpageEmbedsPage extends BpagePage{
     }
 
     public Boolean igVideoIsPresent(){
-        return driver.findElement(igVideoEmbed).isDisplayed();
+        return getDriver().findElement(igVideoEmbed).isDisplayed();
     }
 
     //--TikTok
     public void scrollToTikTokVideo() {
         int i;
+     /*   scroll.scrollDown();
         scroll.scrollDown();
         scroll.scrollDown();
-        scroll.scrollDown();
-        scroll.scrollDown();
+        scroll.scrollDown(); */
+        scrollInBpageMultipleTimes(4);
       /*  for(i=0; i<=2; i++) {
             scroll.scrollDown();
             scroll.scrollDown();
@@ -90,31 +91,31 @@ public class BpageEmbedsPage extends BpagePage{
     }
 
     public Boolean tikTokWatchNowButtonIsPresent(){
-        return driver.findElement(watchNowButtonTikTokEmbed).isDisplayed();
+        return getDriver().findElement(watchNowButtonTikTokEmbed).isDisplayed();
     }
 
     public void tapOntikTokWatchNowButton(){
-         driver.findElement(watchNowButtonTikTokEmbed).click();
+         getDriver().findElement(watchNowButtonTikTokEmbed).click();
     }
 
     public Boolean tikTokUserIsPresent(){
-        return driver.findElement(userTikTokEmbed).isDisplayed();
+        return getDriver().findElement(userTikTokEmbed).isDisplayed();
     }
 
     //--Tumblr.
     public Boolean tumblrButtonIsPresent(){
-        return driver.findElement(tumblrButton).isDisplayed();
+        return getDriver().findElement(tumblrButton).isDisplayed();
     }
 
     public Boolean tumblrUserIsPresent(){
-        return driver.findElement(tumblrUser).isDisplayed();
+        return getDriver().findElement(tumblrUser).isDisplayed();
     }
 
-    public void tapTwitterVideo(){driver.findElement(twitterEmbed).click();}
+    public void tapTwitterVideo(){getDriver().findElement(twitterEmbed).click();}
 
     public void tapTumblrButtonEmbed()throws InterruptedException{
         Thread.sleep(3000);
-        driver.findElement(tumblrButton).click();
+        getDriver().findElement(tumblrButton).click();
         print("Tapped 'Open in tumblr' button");
     }
 }

@@ -1,8 +1,10 @@
 package config.pages.shopping;
 
+import org.openqa.selenium.WebElement;
+
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.AppiumBy;
+//import io.appium.java_client.WebElement;
 import org.openqa.selenium.By;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,16 +12,16 @@ import java.util.List;
 public class ShoppingSubTabsPageDeprecated extends CommonPage {
 
     //Catching Elements
-    private final By amazonSubTab = MobileBy.AccessibilityId("Amazon");
-    private final By beautySubTab = MobileBy.AccessibilityId("Beauty");
-    private final By dealsSubTab = MobileBy.AccessibilityId("Deals");
-    private final By homeSubTab = MobileBy.AccessibilityId("Home");
-    private final By clothingSubTab = MobileBy.AccessibilityId("Clothing");
-    private final By under50SubTab = MobileBy.AccessibilityId("Under $50");
-    private final By under20SubTab = MobileBy.AccessibilityId("Under £20");
-    private final By gadgetsSubTab = MobileBy.AccessibilityId("Gadgets");
-    private final By splurgeSubTab = MobileBy.AccessibilityId("Splurge-Worthy");
-    private final By giftSubTab = MobileBy.AccessibilityId("Gift Guide");
+    private final By amazonSubTab = AppiumBy.accessibilityId("Amazon");
+    private final By beautySubTab = AppiumBy.accessibilityId("Beauty");
+    private final By dealsSubTab = AppiumBy.accessibilityId("Deals");
+    private final By homeSubTab = AppiumBy.accessibilityId("Home");
+    private final By clothingSubTab = AppiumBy.accessibilityId("Clothing");
+    private final By under50SubTab = AppiumBy.accessibilityId("Under $50");
+    private final By under20SubTab = AppiumBy.accessibilityId("Under £20");
+    private final By gadgetsSubTab = AppiumBy.accessibilityId("Gadgets");
+    private final By splurgeSubTab = AppiumBy.accessibilityId("Splurge-Worthy");
+    private final By giftSubTab = AppiumBy.accessibilityId("Gift Guide");
 
 
     //Methods
@@ -61,8 +63,8 @@ public class ShoppingSubTabsPageDeprecated extends CommonPage {
         for (By tab : listTabsLeft) {
             swipeLeft();
             WaitersPage.waitForElement(tab);
-            //wait.until(ExpectedConditions.visibilityOf(driver.findElement(tab)));
-            Assert.assertEquals(driver.findElement(tab).getAttribute("value"), "1");
+            //wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(tab)));
+            Assert.assertEquals(getDriver().findElement(tab).getAttribute("value"), "1");
             print("The active tab is " + tab);
         }
     }
@@ -72,19 +74,19 @@ public class ShoppingSubTabsPageDeprecated extends CommonPage {
         for (By tab : listTabsRight) {
             swipeRight();
             WaitersPage.waitForElement(tab);
-            //wait.until(ExpectedConditions.visibilityOf(driver.findElement(tab)));
-            Assert.assertEquals(driver.findElement(tab).getAttribute("value"), "1");
+            //wait.until(ExpectedConditions.visibilityOf(getDriver().findElement(tab)));
+            Assert.assertEquals(getDriver().findElement(tab).getAttribute("value"), "1");
             print("The active tab is " + tab);
         }
     }
      */
 
     public List<String> getSubTabActiveLeft() {
-        List<MobileElement> swipedTab = driver.findElements(subtabs);
+        List<WebElement> swipedTab = getDriver().findElements(subtabs);
         List<String> tabValue = new ArrayList<>();
         List<String> activeTab = new ArrayList<>();
 
-        for (MobileElement tab : swipedTab) {
+        for (WebElement tab : swipedTab) {
             scroll.swipeLeft();
             tabValue.add(tab.getAttribute("value"));
             activeTab.add(tab.getText());
@@ -94,11 +96,11 @@ public class ShoppingSubTabsPageDeprecated extends CommonPage {
     }
 
     public List<String>  getSubTabActiveRight() {
-        List<MobileElement> swipedTab = driver.findElements(subtabs);
+        List<WebElement> swipedTab = getDriver().findElements(subtabs);
         List<String> tabValue = new ArrayList<>();
         List<String> activeTab = new ArrayList<>();
 
-        for (MobileElement tab : swipedTab) {
+        for (WebElement tab : swipedTab) {
             scroll.swipeRight();
             tabValue.add(tab.getAttribute("value"));
             activeTab.add(tab.getText());
@@ -108,88 +110,88 @@ public class ShoppingSubTabsPageDeprecated extends CommonPage {
     }
 
     public void tapAmazonSubTab() {
-        driver.findElement(amazonSubTab).click();
+        getDriver().findElement(amazonSubTab).click();
         print("Tapped the Amazon sub-ab");
     }
 
     public String amazonSubTabIsActive(){
-        return driver.findElement(amazonSubTab).getAttribute("value");
+        return getDriver().findElement(amazonSubTab).getAttribute("value");
     }
 
     public void tapBeautySubTab() {
-        driver.findElement(beautySubTab).click();
+        getDriver().findElement(beautySubTab).click();
         print("Tapped the Beauty sub-ab");
     }
 
     public String beautySubTabIsActive(){
-        return driver.findElement(beautySubTab).getAttribute("value");
+        return getDriver().findElement(beautySubTab).getAttribute("value");
     }
 
     public void tapDealsSubTab() {
-        driver.findElement(dealsSubTab).click();
+        getDriver().findElement(dealsSubTab).click();
         print("Tapped the Deals sub-ab");
     }
 
     public String dealsSubTabIsActive(){
-        return driver.findElement(dealsSubTab).getAttribute("value");
+        return getDriver().findElement(dealsSubTab).getAttribute("value");
     }
 
     public void tapHomeSubTab() {
-        driver.findElement(homeSubTab).click();
+        getDriver().findElement(homeSubTab).click();
         print("Tapped the Home sub-ab");
     }
 
     public String homeSubTabIsActive(){
-        return driver.findElement(homeSubTab).getAttribute("value");
+        return getDriver().findElement(homeSubTab).getAttribute("value");
     }
 
     public void tapClothingSubTab() {
-        driver.findElement(clothingSubTab).click();
+        getDriver().findElement(clothingSubTab).click();
         print("Tapped the Clothing sub-ab");
     }
 
     public String clothingSubTabIsActive(){
-        return driver.findElement(clothingSubTab).getAttribute("value");
+        return getDriver().findElement(clothingSubTab).getAttribute("value");
     }
 
     public void tapUnder50SubTab() {
-        driver.findElement(under50SubTab).click();
+        getDriver().findElement(under50SubTab).click();
         print("Tapped the Under $50 sub-ab");
     }
 
     public void tapUnder20SubTab() {
-        driver.findElement(under20SubTab).click();
+        getDriver().findElement(under20SubTab).click();
         print("Tapped the Under $20sub-ab");
     }
 
     public String under50SubTabIsActive(){
-        return driver.findElement(under50SubTab).getAttribute("value");
+        return getDriver().findElement(under50SubTab).getAttribute("value");
     }
 
     public void tapGadgetsSubTab() {
-        driver.findElement(gadgetsSubTab).click();
+        getDriver().findElement(gadgetsSubTab).click();
         print("Tapped the Gadgets sub-ab");
     }
 
     public String gadgetsSubTabIsActive(){
-        return driver.findElement(gadgetsSubTab).getAttribute("value");
+        return getDriver().findElement(gadgetsSubTab).getAttribute("value");
     }
 
     public void tapSplurgeSubTab() {
-        driver.findElement(splurgeSubTab).click();
+        getDriver().findElement(splurgeSubTab).click();
         print("Tapped the Splurge-Worthy sub-ab");
     }
 
     public String splurgeSubTabIsActive(){
-        return driver.findElement(splurgeSubTab).getAttribute("value");
+        return getDriver().findElement(splurgeSubTab).getAttribute("value");
     }
 
     public void tapGiftSubTab() {
-        driver.findElement(giftSubTab).click();
+        getDriver().findElement(giftSubTab).click();
         print("Tapped the Gift Guide sub-ab");
     }
 
     public String giftSubTabIsActive(){
-        return driver.findElement(giftSubTab).getAttribute("value");
+        return getDriver().findElement(giftSubTab).getAttribute("value");
     }
 }

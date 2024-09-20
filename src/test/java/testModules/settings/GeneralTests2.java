@@ -64,7 +64,7 @@ public class GeneralTests2 extends InitTest {
     }
 
     @Test (priority = 6)
-    public void testSelectDarkMode() {
+    public void testSelectDarkMode() throws InterruptedException{
         testName("Change theme to Dark Mode");
         general.tapThemeSection();
         general.selectDarkMode();

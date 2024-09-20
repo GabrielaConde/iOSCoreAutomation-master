@@ -1,96 +1,119 @@
 package config.pages.quizzes;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class QuizzesSubTabsPage extends CommonPage {
 
     //Catching elements
 
-    private final By trendingSubTab = MobileBy.AccessibilityId("Trending");
-    private final By triviaSubTab = MobileBy.AccessibilityId("Trivia");
-    private final By matchups = MobileBy.AccessibilityId("Matchups");
-    private final By foodSubTab = MobileBy.AccessibilityId("Food");
-    private final By resultsSubTab = MobileBy.AccessibilityId("Results");
-    private final By disneySubTab = MobileBy.AccessibilityId("Disney");
-    private final By whoAreYouSubTab = MobileBy.AccessibilityId("Who Are You?");
-    private final By loveSubTab = MobileBy.AccessibilityId("Love");
-    private final By more = MobileBy.AccessibilityId("More");
+    private final By trendingSubTab = AppiumBy.accessibilityId("Trending");
+    private final By triviaSubTab = AppiumBy.accessibilityId("Trivia");
+    private final By matchups = AppiumBy.accessibilityId("Matchups");
+    private final By foodSubTab = AppiumBy.accessibilityId("Food");
+    private final By resultsSubTab = AppiumBy.accessibilityId("Results");
+    private final By disneySubTab = AppiumBy.accessibilityId("Disney");
+    private final By whoAreYouSubTab = AppiumBy.accessibilityId("Who Are You?");
+    private final By loveSubTab = AppiumBy.accessibilityId("Love");
+    private final By more = AppiumBy.accessibilityId("More");
 
 
-    private final By celebrity = MobileBy.AccessibilityId("Celebrity");
-    private final By canWeGuessSubTab = MobileBy.AccessibilityId("Can We Guess?");
-    private final By aiquizzes = MobileBy.AccessibilityId("AI Quizzes");
+    private final By celebrity = AppiumBy.accessibilityId("Celebrity");
+    private final By canWeGuessSubTab = AppiumBy.accessibilityId("Can We Guess?");
+    private final By aiquizzes = AppiumBy.accessibilityId("AI Quizzes");
+
+    //New categories on foreign editions
+
+    private final By polls  = AppiumBy.accessibilityId("Polls");
+    private final By TaylorSwift  = AppiumBy.accessibilityId("Taylor Swift");
+    private final By Marvel  = AppiumBy.accessibilityId("Marvel");
+    private final By Zodiac  = AppiumBy.accessibilityId("Zodiac");
+    private final By HarryPotter  = AppiumBy.accessibilityId("Harry Potter");
+    private final By Anime  = AppiumBy.accessibilityId("Anime");
+    private final By Kpop  = AppiumBy.accessibilityId("Kpop");
+    private final By Geography  = AppiumBy.accessibilityId("Geography");
+    private final By Checklist  = AppiumBy.accessibilityId("Checklist");
+
 
 
     //Methods
 
-    public void tapOnAIQuizzes() {driver.findElement(aiquizzes).click();}
-    public void tapOnTrending(){driver.findElement(trendingSubTab).click();}
-    public void tapOnCanWeGuess(){driver.findElement(canWeGuessSubTab).click();}
-    public void tapOnDisney(){driver.findElement(disneySubTab).click();}
-    public void tapOnFood(){driver.findElement(foodSubTab).click();}
-    public void tapOnWhoAreYou(){driver.findElement(whoAreYouSubTab).click();}
-    public void tapOnLove(){driver.findElement(loveSubTab).click();}
-    public void tapOnTrivia(){driver.findElement(triviaSubTab).click();}
-    public void tapOnMore(){driver.findElement(more).click();}
-        public void tapOnResults() {driver.findElement(resultsSubTab).click();}
-        public void tapOnMatchups() {driver.findElement(matchups).click();}
+    public void tapOnAIQuizzes() {getDriver().findElement(aiquizzes).click();}
+    public void tapOnTrending(){getDriver().findElement(trendingSubTab).click();}
+    public void tapOnCanWeGuess(){getDriver().findElement(canWeGuessSubTab).click();}
+    public void tapOnDisney(){getDriver().findElement(disneySubTab).click();}
+    public void tapOnFood(){getDriver().findElement(foodSubTab).click();}
+    public void tapOnWhoAreYou(){getDriver().findElement(whoAreYouSubTab).click();}
+    public void tapOnLove(){getDriver().findElement(loveSubTab).click();}
+    public void tapOnTrivia(){getDriver().findElement(triviaSubTab).click();}
+    public void tapOnMore(){getDriver().findElement(more).click();}
+        public void tapOnResults() {getDriver().findElement(resultsSubTab).click();}
+        public void tapOnMatchups() {getDriver().findElement(matchups).click();}
+
+    public void tapOnPolls() {getDriver().findElement(polls).click();}
+    public void tapOnTaylorSwift() {getDriver().findElement(TaylorSwift).click();}
+    public void tapOnMarvel() {getDriver().findElement(Marvel).click();}
+    public void tapOnZodiac() {getDriver().findElement(Zodiac).click();}
+    public void tapOnHarryPotter() {getDriver().findElement(HarryPotter).click();}
+    public void tapOnAnime() {getDriver().findElement(Anime).click();}
+    public void tapOnKpop() {getDriver().findElement(Kpop).click();}
+    public void tapOnGeographys() {getDriver().findElement(Geography).click();}
+    public void tapOnChecklist() {getDriver().findElement(Checklist).click();}
 
 
     //--Tabs Name - Active
     public Boolean canWeGuessTabIsPresent(){
-        return driver.findElement(canWeGuessSubTab).isDisplayed();
+        return getDriver().findElement(canWeGuessSubTab).isDisplayed();
     }
 
     public String canWeGuessTabIsActive(){
-        String value = driver.findElement(canWeGuessSubTab).getAttribute("value");
+        String value = getDriver().findElement(canWeGuessSubTab).getAttribute("value");
         return value;
     }
 
     public Boolean disneyIsPresent(){
-        return driver.findElement(disneySubTab).isDisplayed();
+        return getDriver().findElement(disneySubTab).isDisplayed();
     }
 
     public String disneyIsActive(){
-        String value = driver.findElement(disneySubTab).getAttribute("value");
+        String value = getDriver().findElement(disneySubTab).getAttribute("value");
         return value;
     }
 
     public Boolean foodTabIsPresent(){
-        return driver.findElement(foodSubTab).isDisplayed();
+        return getDriver().findElement(foodSubTab).isDisplayed();
     }
 
     public String foodTabIsActive(){
-        String value = driver.findElement(foodSubTab).getAttribute("value");
+        String value = getDriver().findElement(foodSubTab).getAttribute("value");
         return value;
     }
 
     public Boolean whoAreYouTabIsPresent(){
-        return driver.findElement(whoAreYouSubTab).isDisplayed();
+        return getDriver().findElement(whoAreYouSubTab).isDisplayed();
     }
 
     public String whoAreYouTabIsActive(){
-        String value = driver.findElement(whoAreYouSubTab).getAttribute("value");
+        String value = getDriver().findElement(whoAreYouSubTab).getAttribute("value");
         return value;
     }
 
     public Boolean loveTabIsPresent(){
-        return driver.findElement(loveSubTab).isDisplayed();
+        return getDriver().findElement(loveSubTab).isDisplayed();
     }
 
     public String loveTabIsActive(){
-        String value = driver.findElement(loveSubTab).getAttribute("value");
+        String value = getDriver().findElement(loveSubTab).getAttribute("value");
         return value;
     }
 
     public Boolean triviaTabIsPresent(){
-        return driver.findElement(triviaSubTab).isDisplayed();
+        return getDriver().findElement(triviaSubTab).isDisplayed();
     }
 
     public String triviaTabIsActive(){
-        String value = driver.findElement(triviaSubTab).getAttribute("value");
+        String value = getDriver().findElement(triviaSubTab).getAttribute("value");
         return value;
     }
 }

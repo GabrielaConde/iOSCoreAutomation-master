@@ -17,7 +17,7 @@ public class InitTest extends HookInt {
     }
 
     @BeforeSuite
-    public static void setUpTest() throws Exception {
+    public void setUpTest() throws Exception {
         platform();
     }
 
@@ -26,10 +26,10 @@ public class InitTest extends HookInt {
         scroll = new ScrollsPage();
     }
 
-    @AfterSuite
-    public static void tearDown(){
-        closeApp();
-        closeDriver();
+  //  @AfterSuite
+    public void tearDown(){
+        //closeApp();
+       // closeDriver();
 
     }
 }

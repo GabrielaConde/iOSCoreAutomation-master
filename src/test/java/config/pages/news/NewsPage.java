@@ -1,9 +1,10 @@
 package config.pages.news;
 
+import org.openqa.selenium.WebElement;
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
-import org.aspectj.weaver.World;
+import io.appium.java_client.AppiumBy;
+//import io.appium.java_client.WebElement;
+//import org.aspectj.weaver.World;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class NewsPage extends CommonPage {
     //--Latest sub tab
     //NEW NAV
 
-    private final By backToNews = MobileBy.AccessibilityId("News");
+    private final By backToNews = AppiumBy.accessibilityId("News");
    // private final By entertainment = By.xpath("//*[contains(@name,'Entertainment')]");
     private final By entertainment = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
  //   private final By tech = By.xpath("//*[contains(@name,'Tech')]");
@@ -32,95 +33,95 @@ public class NewsPage extends CommonPage {
  //   private final By more = By.xpath("//*[contains(@name,'More')]");
  //   private final By more = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[6]");
 
-    private final By newsHeader = MobileBy.AccessibilityId("News");
-    private final By backToMore = MobileBy.AccessibilityId("More");
+    private final By newsHeader = AppiumBy.accessibilityId("News");
+    private final By backToMore = AppiumBy.accessibilityId("More");
 
 
     //--Sub tabs
-    private final By inequalitySubTab = MobileBy.AccessibilityId("Inequality");
-    private final By JPGSubTab = MobileBy.AccessibilityId("JPG");
-    private final By scienceSubTab = MobileBy.AccessibilityId("Science");
-    private final By politicsSubTab = MobileBy.AccessibilityId("Politics");
-    private final By cultureSubTab = MobileBy.AccessibilityId("Culture");
-    private final By healthSubTab = MobileBy.AccessibilityId("Health");
-    private final By investigationsSubTab = MobileBy.AccessibilityId("Investigations");
-    private final By techSubTab = MobileBy.AccessibilityId("Tech");
-    private final By worldSubTab = MobileBy.AccessibilityId("World");
-    private final By entertainmentSubTab = MobileBy.AccessibilityId("Entertainment");
-    private final By opinionSubTab = MobileBy.AccessibilityId("Opinion");
+    private final By inequalitySubTab = AppiumBy.accessibilityId("Inequality");
+    private final By JPGSubTab = AppiumBy.accessibilityId("JPG");
+    private final By scienceSubTab = AppiumBy.accessibilityId("Science");
+    private final By politicsSubTab = AppiumBy.accessibilityId("Politics");
+    private final By cultureSubTab = AppiumBy.accessibilityId("Culture");
+    private final By healthSubTab = AppiumBy.accessibilityId("Health");
+    private final By investigationsSubTab = AppiumBy.accessibilityId("Investigations");
+    private final By techSubTab = AppiumBy.accessibilityId("Tech");
+    private final By worldSubTab = AppiumBy.accessibilityId("World");
+    private final By entertainmentSubTab = AppiumBy.accessibilityId("Entertainment");
+    private final By opinionSubTab = AppiumBy.accessibilityId("Opinion");
 
     // NEW NAV ELEMENTS
 
  //   private final By inequity = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By inequity = MobileBy.AccessibilityId("Inequality");
+    private final By inequity = AppiumBy.accessibilityId("Inequality");
 
   //  private final By science = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By science = MobileBy.AccessibilityId("Science");
+    private final By science = AppiumBy.accessibilityId("Science");
   //  private final By politics = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By politics = MobileBy.AccessibilityId("Politics");
+    private final By politics = AppiumBy.accessibilityId("Politics");
 
-    private final By investigations = MobileBy.AccessibilityId("Investigations");
+    private final By investigations = AppiumBy.accessibilityId("Investigations");
  //   private final By investigations = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By world = MobileBy.AccessibilityId("World");
+    private final By world = AppiumBy.accessibilityId("World");
 //    private final By world = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
  //   private final By opinion = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By opinion = MobileBy.AccessibilityId("Opinion");
-    private final By more = MobileBy.AccessibilityId("More");
+    private final By opinion = AppiumBy.accessibilityId("Opinion");
+    private final By more = AppiumBy.accessibilityId("More");
     // NEW NAV FOREIGN EDITIONS
 
-    private final By scienceBtn = MobileBy.AccessibilityId("Science");
-    private final By politicsBtn = MobileBy.AccessibilityId("Politics");
-    private final By healthBtn = MobileBy.AccessibilityId("Health");
-    private final By cultureBtn = MobileBy.AccessibilityId("Culture");
-    private final By techBtn = MobileBy.AccessibilityId("Tech");
-    private final By worldBtn = MobileBy.AccessibilityId("World");
-    private final By entertainmentBtn = MobileBy.AccessibilityId("Entertainment");
+    private final By scienceBtn = AppiumBy.accessibilityId("Science");
+    private final By politicsBtn = AppiumBy.accessibilityId("Politics");
+    private final By healthBtn = AppiumBy.accessibilityId("Health");
+    private final By cultureBtn = AppiumBy.accessibilityId("Culture");
+    private final By techBtn = AppiumBy.accessibilityId("Tech");
+    private final By worldBtn = AppiumBy.accessibilityId("World");
+    private final By entertainmentBtn = AppiumBy.accessibilityId("Entertainment");
 
     //Methods
     //NEW NAV FOREIGN EDITIONS
-    public void clickOnHealthBtn(){driver.findElement(healthBtn).click();}
-    public void clickOnCultureBtn(){driver.findElement(cultureBtn).click();}
-    public void clickOnScienceBtn(){driver.findElement(cultureBtn).click();}
-    public void clickOnPoliticseBtn(){driver.findElement(cultureBtn).click();}
-    public void clickOnInvestigationsBtn(){driver.findElement(cultureBtn).click();}
-    public void clickOnTechBtn(){driver.findElement(techBtn).click();}
-    public void clickOnEntertainmentBtn(){driver.findElement(entertainmentBtn).click();}
-    public void clickOnWorldBtn(){driver.findElement(worldBtn).click();}
+    public void clickOnHealthBtn(){getDriver().findElement(healthBtn).click();}
+    public void clickOnCultureBtn(){getDriver().findElement(cultureBtn).click();}
+    public void clickOnScienceBtn(){getDriver().findElement(cultureBtn).click();}
+    public void clickOnPoliticseBtn(){getDriver().findElement(cultureBtn).click();}
+    public void clickOnInvestigationsBtn(){getDriver().findElement(cultureBtn).click();}
+    public void clickOnTechBtn(){getDriver().findElement(techBtn).click();}
+    public void clickOnEntertainmentBtn(){getDriver().findElement(entertainmentBtn).click();}
+    public void clickOnWorldBtn(){getDriver().findElement(worldBtn).click();}
 
 
     //NEW NAV
-    public void tapOnEntertainment(){driver.findElement(entertainmentSubTab).click();}
-    public void tapOnTech(){driver.findElement(techSubTab).click();}
-    public void tapOnJPG(){driver.findElement(JPGSubTab).click();}
-    public void tapOnCulture(){driver.findElement(cultureSubTab).click();}
-    public void tapOnHealth(){driver.findElement(healthSubTab).click();}
-    public void tapOnMore(){driver.findElement(more).click();}
-    public void backToNews(){driver.findElement(newsHeader).click();}
-    public void backToMore(){driver.findElement(backToMore).click();}
+    public void tapOnEntertainment(){getDriver().findElement(entertainmentSubTab).click();}
+    public void tapOnTech(){getDriver().findElement(techSubTab).click();}
+    public void tapOnJPG(){getDriver().findElement(JPGSubTab).click();}
+    public void tapOnCulture(){getDriver().findElement(cultureSubTab).click();}
+    public void tapOnHealth(){getDriver().findElement(healthSubTab).click();}
+    public void tapOnMore(){getDriver().findElement(more).click();}
+    public void backToNews(){getDriver().findElement(newsHeader).click();}
+    public void backToMore(){getDriver().findElement(backToMore).click();}
 
     //ITEMS METHODS FROM MORE MENU
-     public void tapOnInequity(){driver.findElement(inequalitySubTab).click();}
-    public void tapOnScience(){driver.findElement(scienceSubTab).click();}
-    public void tapOnPolitics(){driver.findElement(politicsSubTab).click();}
-    public void tapOnWorld(){driver.findElement(worldSubTab).click();}
-    public void tapOnOpinion(){driver.findElement(opinionSubTab).click();}
+     public void tapOnInequity(){getDriver().findElement(inequalitySubTab).click();}
+    public void tapOnScience(){getDriver().findElement(scienceSubTab).click();}
+    public void tapOnPolitics(){getDriver().findElement(politicsSubTab).click();}
+    public void tapOnWorld(){getDriver().findElement(worldSubTab).click();}
+    public void tapOnOpinion(){getDriver().findElement(opinionSubTab).click();}
 
     //--Latest sub tab
     public boolean newsTabIsPresent() {
-        return driver.findElement(newsTab).isDisplayed();
+        return getDriver().findElement(newsTab).isDisplayed();
     }
 
     public boolean newsHeaderIsPresent() {
-        return driver.findElement(newsHeader).isDisplayed();
+        return getDriver().findElement(newsHeader).isDisplayed();
     }
 
     public List<String>  getSubTabActiveLeft() {
-        List<MobileElement> swipedTab = driver.findElements(subtabs);
+        List<WebElement> swipedTab = getDriver().findElements(subtabs);
         List<String> tabValue = new ArrayList<>();
         List<String> activeTab = new ArrayList<>();
 
-        for (MobileElement tab : swipedTab) {
+        for (WebElement tab : swipedTab) {
             scroll.swipeLeft();
             tabValue.add(tab.getAttribute("value"));
             activeTab.add(tab.getText());
@@ -130,11 +131,11 @@ public class NewsPage extends CommonPage {
     }
 
     public List<String>  getSubTabActiveRight() {
-        List<MobileElement> swipedTab = driver.findElements(subtabs);
+        List<WebElement> swipedTab = getDriver().findElements(subtabs);
         List<String> tabValue = new ArrayList<>();
         List<String> activeTab = new ArrayList<>();
 
-        for (MobileElement tab : swipedTab) {
+        for (WebElement tab : swipedTab) {
             scroll.swipeRight();
             tabValue.add(tab.getAttribute("value"));
             activeTab.add(tab.getText());
@@ -144,92 +145,92 @@ public class NewsPage extends CommonPage {
     }
 
     public void tapInequalitySubTab() {
-        driver.findElement(inequalitySubTab).click();
+        getDriver().findElement(inequalitySubTab).click();
         print("Tapped the Inequality sub-ab");
     }
 
     public String inequalityIsActive() {
-        return driver.findElement(inequalitySubTab).getAttribute("value");
+        return getDriver().findElement(inequalitySubTab).getAttribute("value");
     }
 
     public void tapJPGSubTab() {
-        driver.findElement(JPGSubTab).click();
+        getDriver().findElement(JPGSubTab).click();
         print("Tapped the JPG sub-ab");
     }
 
     public String JPGIsActive() {
-        return driver.findElement(JPGSubTab).getAttribute("value");
+        return getDriver().findElement(JPGSubTab).getAttribute("value");
     }
 
     public void tapScienceSubTab() {
-        driver.findElement(scienceSubTab).click();
+        getDriver().findElement(scienceSubTab).click();
         print("Tapped the Science sub-ab");
     }
 
     public String scienceIsActive() {
-        return driver.findElement(scienceSubTab).getAttribute("value");
+        return getDriver().findElement(scienceSubTab).getAttribute("value");
     }
 
     public void tapPoliticsSubTab() {
-        driver.findElement(politicsSubTab).click();
+        getDriver().findElement(politicsSubTab).click();
         print("Tapped the Politics sub-ab");
     }
 
     public String politicsIsActive() {
-        return driver.findElement(politicsSubTab).getAttribute("value");
+        return getDriver().findElement(politicsSubTab).getAttribute("value");
     }
 
     public void tapCultureSubTab() {
-        driver.findElement(cultureSubTab).click();
+        getDriver().findElement(cultureSubTab).click();
         print("Tapped the Culture sub-ab");
     }
 
     public String cultureIsActive() {
-        return driver.findElement(cultureSubTab).getAttribute("value");
+        return getDriver().findElement(cultureSubTab).getAttribute("value");
     }
 
     public void tapInvestigationsSubTab() {
-        driver.findElement(investigationsSubTab).click();
+        getDriver().findElement(investigationsSubTab).click();
         print("Tapped the Investigations sub-ab");
     }
 
     public String investigationsIsActive() {
-        return driver.findElement(investigationsSubTab).getAttribute("value");
+        return getDriver().findElement(investigationsSubTab).getAttribute("value");
     }
 
     public void tapTechSubTab() {
-        driver.findElement(techSubTab).click();
+        getDriver().findElement(techSubTab).click();
         print("Tapped the Tech sub-ab");
     }
 
     public String techIsActive() {
-        return driver.findElement(techSubTab).getAttribute("value");
+        return getDriver().findElement(techSubTab).getAttribute("value");
     }
 
     public void tapWorldSubTab() {
-        driver.findElement(worldSubTab).click();
+        getDriver().findElement(worldSubTab).click();
         print("Tapped the World sub-ab");
     }
 
     public String worldIsActive() {
-        return driver.findElement(worldSubTab).getAttribute("value");
+        return getDriver().findElement(worldSubTab).getAttribute("value");
     }
 
     public void tapEntertainmentSubTab() {
-        driver.findElement(entertainmentSubTab).click();
+        getDriver().findElement(entertainmentSubTab).click();
         print("Tapped the Entertainment sub-ab");
     }
 
     public String entertainmentIsActive() {
-        return driver.findElement(entertainmentSubTab).getAttribute("value");
+        return getDriver().findElement(entertainmentSubTab).getAttribute("value");
     }
 
     public void tapOpinionSubTab() {
-        driver.findElement(opinionSubTab).click();
+        getDriver().findElement(opinionSubTab).click();
         print("Tapped the Opinion sub-ab");
     }
 
     public String opinionIsActive() {
-        return driver.findElement(opinionSubTab).getAttribute("value");
+        return getDriver().findElement(opinionSubTab).getAttribute("value");
     }
 }

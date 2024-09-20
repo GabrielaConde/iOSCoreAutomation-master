@@ -2,12 +2,34 @@ package testModules.editions;
 
 import config.initPages.EditionsInit;
 import config.pages.settings.SettingsSetupPage;
-import org.omg.CORBA.PUBLIC_MEMBER;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class IndiaEditionTests2 extends EditionsInit {
+
+    @BeforeClass
+    public void signInOnFstLaunch()throws InterruptedException{
+        Thread.sleep(3000);
+        latestSubTab.tapAllowButton();
+        latestSubTab.tapOnGuestSignIn();
+        Thread.sleep(3000);
+
+      /*  latestSubTab.tapOnSignInLink();
+        latestSubTab.enterPassword("sanfer12");
+        latestSubTab.enterEmail("salpimie");
+        Thread.sleep(2000);
+        latestSubTab.tapSignInBFButton();
+        Thread.sleep(3000);
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapAllowButton();
+        latestSubTab.switchToAlert();
+        latestSubTab.tapNotNow();
+        //  signIn.switchToAlert();
+        latestSubTab.setUSEdition(); */
+    }
 
        @BeforeClass
     public void onboarding() throws InterruptedException {

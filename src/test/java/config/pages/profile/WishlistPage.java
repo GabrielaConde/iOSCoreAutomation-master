@@ -2,7 +2,7 @@ package config.pages.profile;
 
 import config.pages.CommonPage;
 import config.pages.WaitersPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
@@ -19,66 +19,66 @@ public class WishlistPage extends CommonPage {
 
     //Catching elements
     private final By  wishlistCell = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther");
-    private final By wishlist = MobileBy.AccessibilityId("Wishlist");
+    private final By wishlist = AppiumBy.accessibilityId("Wishlist");
     private final By addToWishlistButton = By.xpath("(//XCUIElementTypeButton[@name=\"love\"])[1]");
     private final By wishlistMultipleItems = By.xpath("//XCUIElementTypeButton[@name='Add to wishlist']");
-    private final By wishlistEmptyMessage = MobileBy.AccessibilityId("You don't have anything in your wishlist yet!");
-    private final By exploreButton = MobileBy.AccessibilityId("Explore BuzzFeed Shopping");
-    private final By shoppingHeader = MobileBy.AccessibilityId("Shopping");
-    private final By wishlistResult = MobileBy.AccessibilityId("If You're Looking To Treat Yourself, Here Are 31 Things Under $10 From Target");
- //   private final By addToWishlistButton = MobileBy.AccessibilityId("icon heart");
-    private final By addedToWishlistToast = MobileBy.AccessibilityId("Saved product to wishlist!");
-    private final By bpageDate = MobileBy.AccessibilityId("Shopping • Jun 15, 2021");
-    private final By savedProductHeading = MobileBy.AccessibilityId("1 saved product");
-    private final By multipleSavedProductsHeading = MobileBy.AccessibilityId("3 saved products");
-    private final By disclosure =  MobileBy.AccessibilityId("BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.");
-    private final By menuButton = MobileBy.AccessibilityId("menu button");
-    private final By removeFromWishlistButton = MobileBy.AccessibilityId("Remove from wishlist");
-    private final By removedFromWishlistToast = MobileBy.AccessibilityId("Removed product from wishlist");
-    private final By getItButton = MobileBy.AccessibilityId("Get it");
+    private final By wishlistEmptyMessage = AppiumBy.accessibilityId("You don't have anything in your wishlist yet!");
+    private final By exploreButton = AppiumBy.accessibilityId("Explore BuzzFeed Shopping");
+    private final By shoppingHeader = AppiumBy.accessibilityId("Shopping");
+    private final By wishlistResult = AppiumBy.accessibilityId("If You're Looking To Treat Yourself, Here Are 31 Things Under $10 From Target");
+ //   private final By addToWishlistButton = AppiumBy.accessibilityId("icon heart");
+    private final By addedToWishlistToast = AppiumBy.accessibilityId("Saved product to wishlist!");
+    private final By bpageDate = AppiumBy.accessibilityId("Shopping • Jun 15, 2021");
+    private final By savedProductHeading = AppiumBy.accessibilityId("1 saved product");
+    private final By multipleSavedProductsHeading = AppiumBy.accessibilityId("3 saved products");
+    private final By disclosure =  AppiumBy.accessibilityId("BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.");
+    private final By menuButton = AppiumBy.accessibilityId("menu button");
+    private final By removeFromWishlistButton = AppiumBy.accessibilityId("Remove from wishlist");
+    private final By removedFromWishlistToast = AppiumBy.accessibilityId("Removed product from wishlist");
+    private final By getItButton = AppiumBy.accessibilityId("Get it");
 
     //Methods
     public boolean wishlistIsPresent() {
-        return driver.findElement(wishlist).isDisplayed();
+        return getDriver().findElement(wishlist).isDisplayed();
     }
 
     public Boolean verifyItemsAreAdded(){
-        return driver.findElements(wishlistCell).size()>0;
+        return getDriver().findElements(wishlistCell).size()>0;
     }
 
 
 
     public void tapWishlistTab() {
-        driver.findElement(wishlist).click();
+        getDriver().findElement(wishlist).click();
         print("Tapped Wishlist tab");
     }
 
 
     public boolean wishlistEmptyMessageIsPresent() {
-        return driver.findElement(wishlistEmptyMessage).isDisplayed();
+        return getDriver().findElement(wishlistEmptyMessage).isDisplayed();
     }
 
     public boolean exploreButtonIsPresent() {
-        return driver.findElement(exploreButton).isDisplayed();
+        return getDriver().findElement(exploreButton).isDisplayed();
     }
 
     public void tapExploreButton() {
-        driver.findElement(exploreButton).click();
+        getDriver().findElement(exploreButton).click();
         print("Tapped Explore Buzzfeed Shopping");
     }
 
     public void scrollToMultipleItemsButton(){
-        scroll.scrollMultipleTimes(1);
+      //  scroll.scrollDown
         scroll.scrollUntilElement(wishlistMultipleItems);
 
     }
 
     public boolean shoppingHeaderIsPresent() {
-        return driver.findElement(shoppingHeader).isDisplayed();
+        return getDriver().findElement(shoppingHeader).isDisplayed();
     }
 
     public boolean addToWishlistButtonIsPresent() {
-        return driver.findElement(addToWishlistButton).isDisplayed();
+        return getDriver().findElement(addToWishlistButton).isDisplayed();
     }
 
     public void tapAddToWishlistButton() throws InterruptedException {
@@ -86,64 +86,67 @@ public class WishlistPage extends CommonPage {
         scroll.scrollMultipleTimes(1);
         scroll.scrollUntilElement(addToWishlistButton);
         Thread.sleep(1000);
-        driver.findElement(addToWishlistButton).click();
+        getDriver().findElement(addToWishlistButton).click();
         print("Tapped Add to wishlist button");
     }
 
-    public void tapAddMultipleItemsToWishlistButton() {
-        driver.findElement(wishlistMultipleItems).click();
+    public void tapAddMultipleItemsToWishlistButton()throws InterruptedException {
+        scrollInBpage2();
+        Thread.sleep(2000);
+        getDriver().findElement(wishlistMultipleItems).click();
+        Thread.sleep(2000);
         print("Tapped Add to wishlist button");
     }
 
     public boolean addedToWishlistToastIsPresent() {
-        return driver.findElement(addedToWishlistToast).isDisplayed();
+        return getDriver().findElement(addedToWishlistToast).isDisplayed();
     }
 
     public boolean savedProductHeadingIsPresent() {
-        WaitersPage.waitForElement(savedProductHeading);
-        return driver.findElement(savedProductHeading).isDisplayed();
+       // WaitersPage.waitForElement(savedProductHeading);
+        return getDriver().findElement(savedProductHeading).isDisplayed();
     }
 
     public boolean multipleSavedProductHeadingIsPresent() {
-        WaitersPage.waitForElement(multipleSavedProductsHeading);
-        return driver.findElement(multipleSavedProductsHeading).isDisplayed();
+       // WaitersPage.waitForElement(multipleSavedProductsHeading);
+        return getDriver().findElement(multipleSavedProductsHeading).isDisplayed();
     }
 
     public boolean disclosureIsPresent() {
-        WaitersPage.waitForElement(disclosure);
-        return driver.findElement(disclosure).isDisplayed();
+       // WaitersPage.waitForElement(disclosure);
+        return getDriver().findElement(disclosure).isDisplayed();
     }
 
     public boolean getItButtonIsPresent() {
-        return driver.findElement(getItButton).isDisplayed();
+        return getDriver().findElement(getItButton).isDisplayed();
     }
 
     public boolean removedFromWishlistToastIsPresent() {
-        return driver.findElement(removedFromWishlistToast).isDisplayed();
+        return getDriver().findElement(removedFromWishlistToast).isDisplayed();
     }
 
     public void tapRemoveFromWishlistButton() {
-        driver.findElement(removeFromWishlistButton).click();
+        getDriver().findElement(removeFromWishlistButton).click();
         print("Tapped the menu button on a product");
     }
 
     public void tapWishlistResult() {
-        driver.findElement(wishlistResult).click();
+        getDriver().findElement(wishlistResult).click();
         print("Tapped the searched bpage");
     }
 
     public void tapMenuButton() {
-        driver.findElement(menuButton).click();
+        getDriver().findElement(menuButton).click();
         print("Tapped the menu button on a product");
     }
 
     public void tapGetItButton() {
-        driver.findElement(getItButton).click();
+        getDriver().findElement(getItButton).click();
         print("Tapped Get It button");
     }
 
     //--Waiter
     public void waitForBpage() {
-        WaitersPage.waitForElement(bpageDate);
+     //   WaitersPage.waitForElement(bpageDate);
     }
 }

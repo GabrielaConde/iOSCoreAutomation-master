@@ -1,19 +1,24 @@
 package config.pages;
 
+
 import basePackage.Base;
-import com.sun.org.apache.xalan.internal.xsltc.dom.AdaptiveResultTreeImpl;
+//import com.sun.org.apache.xalan.internal.xsltc.dom.AdaptiveResultTreeImpl;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileCommand;
 import io.appium.java_client.TouchAction;
-import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
+//import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import io.appium.java_client.android.AndroidDriver;
+//import io.appium.java_client.android.AndroidDriver();
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
-import org.springframework.remoting.support.DefaultRemoteInvocationExecutor;
+import org.openqa.selenium.UnhandledAlertException;
+//import org.springframework.remoting.support.DefaultRemoteInvocationExecutor;
 
 import java.util.concurrent.TimeUnit;
 
+import static java.sql.DriverManager.getDriver;
 import static java.time.Duration.ofSeconds;
 
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
@@ -26,78 +31,93 @@ public class CommonPage extends Base {
     //Catching Elements
     //--Allow button & Navigation
  //   protected final By suscribeBtn = By.xpath("//*[contains(@name,'Close')");
+
+    protected By loginBtn = AppiumBy.accessibilityId("Login");
+    protected By notOnThisDevice = AppiumBy.accessibilityId("Not on this device");
+    protected By showPassword = AppiumBy.accessibilityId("Show password");
+    protected By collectionView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
+    protected By safariHeader = AppiumBy.accessibilityId("CapsuleNavigationBar?isSelected=true");
+    protected By signInLink = AppiumBy.accessibilityId("Sign in with existing account");
+    protected By homeView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
+    protected By pageView = AppiumBy.accessibilityId("buzz-collectionview");
     protected final By suscribeBtn = By.xpath("(//XCUIElementTypeButton[@name=\"Close\"])[2]");
   //  protected final By suscribeBtn = By.xpath("/XCUIElementTypeButton[@name='Close']");
     protected final By allowTrackButton = By.xpath("/XCUIElementTypeButton[@name='Allow']");
-    protected final By continueBtn = MobileBy.AccessibilityId("permissionConsentAllowConsentButton");
-    protected final By acceptAllCookies = MobileBy.AccessibilityId("bannerAllowAllButton");
-    protected final By continueAds = MobileBy.AccessibilityId("Continue");
-    protected final By allowButton = MobileBy.AccessibilityId("Allow");
-    protected final By quizzesBack = MobileBy.AccessibilityId("Quizzes");
+    protected final By continueBtn = AppiumBy.accessibilityId("permissionConsentAllowConsentButton");
+    protected final By acceptAllCookies = AppiumBy.accessibilityId("bannerAllowAllButton");
+    protected final By continueAds = AppiumBy.accessibilityId("Continue");
+
+  //  private final By continueSignIn = AppiumBy.accessibilityId("Continue");
+    protected final By allowButton = AppiumBy.accessibilityId("Allow");
+    protected final By quizzesBack = AppiumBy.accessibilityId("Quizzes");
  //   protected final By backButton = By.xpath("//*[contains(@name,'Home')");
-    protected final By backButton = MobileBy.AccessibilityId("Back");
+    protected final By backButton = AppiumBy.accessibilityId("Back");
     protected final By trendingBack = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView");
-    protected final By closeButton = MobileBy.AccessibilityId("Close");
+    protected final By closeButton = AppiumBy.accessibilityId("Close");
     protected final By visualFeedCell = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
-    protected final By backButtonFromSearch = MobileBy.AccessibilityId("Back");
-    protected final By goToGamesButton = MobileBy.AccessibilityId("Go to games");
-    protected final By acceptOneTrust = MobileBy.AccessibilityId("bannerAllowAllButton");
-    protected final By sweepTakesNoThanks = MobileBy.AccessibilityId("No thanks, I don't like money");
+    protected final By backButtonFromSearch = AppiumBy.accessibilityId("Back");
+    protected final By goToGamesButton = AppiumBy.accessibilityId("Go to games");
+    protected final By acceptOneTrust = AppiumBy.accessibilityId("bannerAllowAllButton");
+    protected final By sweepTakesNoThanks = AppiumBy.accessibilityId("No thanks, I don't like money");
 
   //  protected final By backButton = By.xpath("//XCUIElementTypeButton[@name=\"Home\"]");
    // protected final By backButton = By.xpath("//XCUIElementTypeButton[@name='BUZZ_BACK_BUTTON']");
 
-    protected final By backToTrending = MobileBy.AccessibilityId("Trending");
-    protected final By backToCoronavirus = MobileBy.AccessibilityId("Coronavirus");
-    protected final By backToFood = MobileBy.AccessibilityId("Food");
-    protected final By backToVideos = MobileBy.AccessibilityId("Videos");
-    protected final By backToShows = MobileBy.AccessibilityId("Shows");
-    protected final By backToAnimals = MobileBy.AccessibilityId("Animals");
-    protected final By backToBooks = MobileBy.AccessibilityId("Books");
-    protected final By backToCommunity = MobileBy.AccessibilityId("Community");
-    protected final By backToHealth = MobileBy.AccessibilityId("Health");
-    protected final By backToLGBTQ = MobileBy.AccessibilityId("LGBTQ");
-    protected final By backToMusic = MobileBy.AccessibilityId("Music");
-    protected final By backToNifty = MobileBy.AccessibilityId("Nifty");
-    protected final By backToParents = MobileBy.AccessibilityId("Parents");
-    protected final By backToRewind = MobileBy.AccessibilityId("Rewind");
-    protected final By backToStyle = MobileBy.AccessibilityId("Style");
-    protected final By backToTravel = MobileBy.AccessibilityId("Travel");
-    protected final By backToFeed = MobileBy.AccessibilityId("Back");
+    private final By cancelAuth = AppiumBy.accessibilityId("Cancel");
+    private final By signInScrollView = AppiumBy.accessibilityId("CenterPageView");
+    protected final By backToTrending = AppiumBy.accessibilityId("Trending");
+    protected final By backToCoronavirus = AppiumBy.accessibilityId("Coronavirus");
+    protected final By backToFood = AppiumBy.accessibilityId("Food");
+    protected final By backToVideos = AppiumBy.accessibilityId("Videos");
+    protected final By backToShows = AppiumBy.accessibilityId("Shows");
+    protected final By backToAnimals = AppiumBy.accessibilityId("Animals");
+    protected final By backToBooks = AppiumBy.accessibilityId("Books");
+    protected final By backToCommunity = AppiumBy.accessibilityId("Community");
+    protected final By backToHealth = AppiumBy.accessibilityId("Health");
+    protected final By backToLGBTQ = AppiumBy.accessibilityId("LGBTQ");
+    protected final By backToMusic = AppiumBy.accessibilityId("Music");
+    protected final By backToNifty = AppiumBy.accessibilityId("Nifty");
+    protected final By backToParents = AppiumBy.accessibilityId("Parents");
+    protected final By backToRewind = AppiumBy.accessibilityId("Rewind");
+    protected final By backToStyle = AppiumBy.accessibilityId("Style");
+    protected final By backToTravel = AppiumBy.accessibilityId("Travel");
+    protected final By backToFeed = AppiumBy.accessibilityId("Back");
 
 
     //NOT NOW button from device
-    protected final By notNowBtn = MobileBy.AccessibilityId("Not Now");
-    protected final By iGNotNowBtn = MobileBy.AccessibilityId("Not now");
+    protected final By notNowBtn = AppiumBy.accessibilityId("Not Now");
+    protected final By iGNotNowBtn = AppiumBy.accessibilityId("Not now");
+
+    protected final By guestSignIn = AppiumBy.accessibilityId("Continue as guest");
 
 
 
 
- //   protected final By closeButton = MobileBy.AccessibilityId("Close");
+ //   protected final By closeButton = AppiumBy.accessibilityId("Close");
  //   protected final By doneButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]")
- //   protected final By doneButton = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
+ //   protected final By doneButton = AppiumBy.xpath("//XCUIElementTypeStaticText[@name=\"Done\"]");
   //  protected final By doneButton = By.xpath("//XCUIElementTypeButton[@name=\"Done\"]");
-    protected final By doneButton = MobileBy.AccessibilityId("Done");
+    protected final By doneButton = AppiumBy.accessibilityId("Done");
   //  protected final By cancelButton = By.xpath("//XCUIElementTypeStaticText[@name=\"Cancel\"]");
-    protected final By cancelButton = MobileBy.AccessibilityId("Cancel");
-    protected final By OKButton = MobileBy.AccessibilityId("OK");
+    protected final By cancelButton = AppiumBy.accessibilityId("Cancel");
+    protected final By OKButton = AppiumBy.accessibilityId("OK");
 
     //--Tabs
-    protected final By homeTab = MobileBy.AccessibilityId("home");
-    protected final By quizzesTab = MobileBy.AccessibilityId("quizzes");
-    protected final By newsTab = MobileBy.AccessibilityId("news");
-    protected final By shoppingTab = MobileBy.AccessibilityId("shoppingPlus");
-    protected final By shoppingJapan = MobileBy.AccessibilityId("shopping");
-    protected final By gamesTab = MobileBy.AccessibilityId("games");
+    protected final By homeTab = AppiumBy.accessibilityId("home");
+    protected final By quizzesTab = AppiumBy.accessibilityId("quizzes");
+    protected final By newsTab = AppiumBy.accessibilityId("news");
+    protected final By shoppingTab = AppiumBy.accessibilityId("shoppingPlus");
+    protected final By shoppingJapan = AppiumBy.accessibilityId("shopping");
+    protected final By gamesTab = AppiumBy.accessibilityId("games");
 
 
 
     //--Subtabs
-    protected final By buzzFeedLogo = MobileBy.AccessibilityId("Home");
+    protected final By buzzFeedLogo = AppiumBy.accessibilityId("Home");
     protected final By subtabs = By.xpath("//XCUIElementTypeApplication[@name='BuzzFeed 🐞']/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeScrollView/XCUIElementTypeButton");
     protected final By latestSubTab = By.id("Latest");
-    protected final By trendingSubTab = MobileBy.AccessibilityId("Trending");
-    protected final By videosSubTab = MobileBy.AccessibilityId("Videos");
+    protected final By trendingSubTab = AppiumBy.accessibilityId("Trending");
+    protected final By videosSubTab = AppiumBy.accessibilityId("Videos");
     protected final By funnyTweets = By.xpath("//XCUIElementTypeStaticText[@name=\"Funny Tweets\"]");
 
     //--Feeds
@@ -107,26 +127,38 @@ public class CommonPage extends Base {
 
     protected final By trendingSplash = By.xpath("**/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage[2]");
     protected final By fstCellNewNav = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
-    protected final By splashCell = By.id("splash_cell");
+   // protected final By splashCell = By.id("splash_cell");
+    protected final By splashCell = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]");
     protected final By firstCell = By.xpath(("(//XCUIElementTypeCell[@name='buffet_grid_cell'])[1]/XCUIElementTypeOther[2]"));
     protected final By firstCellTrending = By.id("simple_feed_item_cell");
     protected final By firstVideo = By.id("simple_video_item_cell");
     protected final By itemsPackage = By.id("SimplePackageCard");
 
     //--Shopping tab
-    protected final By shoppingHeader = MobileBy.AccessibilityId("Shopping");
-    protected final By trendingProductsTitle = MobileBy.AccessibilityId("Trending Products");
-    protected final By latestGiftGuides = MobileBy.AccessibilityId("Latest Gift Guides");
+    protected final By shoppingHeader = AppiumBy.accessibilityId("Shopping");
+    protected final By trendingProductsTitle = AppiumBy.accessibilityId("Trending Products");
+    protected final By latestGiftGuides = AppiumBy.accessibilityId("Latest Gift Guides");
     protected final By latestHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"Latest\"]");
     protected final By randomHeader = By.xpath("//XCUIElementTypeNavigationBar[@name=\"Random\"]\n");
     protected final By gossipHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"Celebrity\"]");
     protected final By lgbtqHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"LGBTQ\"]");
 
+    protected final By gearIcon = AppiumBy.accessibilityId("Settings");
+  //  protected final By settingsMenu = AppiumBy.xpath("(//XCUIElementTypeButton[@name=\"Settings\"])[2]");
+     protected final By settingsMenu = AppiumBy.accessibilityId("Settings");
+
+     public void tapOnLoginBtn(){
+         getDriver().findElement(loginBtn).click();
+     }
+
     //Methods
-    public Boolean isLatestHeaderDisplayed(){return driver.findElement(latestHeader).isDisplayed();}
-    public Boolean isRandomHeaderDisplayed(){return driver.findElement(randomHeader).isDisplayed();}
-    public Boolean isGossipHeaderDisplayed() {return driver.findElement(gossipHeader).isDisplayed();}
-    public Boolean isLgbtqHeaderDisplayed() {return driver.findElement(lgbtqHeader).isDisplayed();}
+    public Boolean isLatestHeaderDisplayed(){return getDriver().findElement(latestHeader).isDisplayed();}
+    public Boolean isRandomHeaderDisplayed(){return getDriver().findElement(randomHeader).isDisplayed();}
+    public Boolean isGossipHeaderDisplayed() {return getDriver().findElement(gossipHeader).isDisplayed();}
+    public Boolean isLgbtqHeaderDisplayed() {return getDriver().findElement(lgbtqHeader).isDisplayed();}
+
+    public void tapOnContinueSignInBtn(){getDriver().findElement(continueSignIn).click();}
+
 
     //--Quizzes tab
     protected final By quizzesHeader = By.id("Quizzes");
@@ -140,184 +172,301 @@ public class CommonPage extends Base {
     //--Bpages & Quizzes
   //  protected final By copyLink = By.xpath("//XCUIElementTypeButton[@name=\"Copy Link\"]");
     protected final By copyLink = By.xpath("//XCUIElementTypeCell[@name=\"Copy Link\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-   // protected final By copyLink = MobileBy.AccessibilityId("Copy Link");
+   // protected final By copyLink = AppiumBy.accessibilityId("Copy Link");
     protected final By copyLinkToastView = By.id("BFKitToastView");
     protected final By copyLinkToastText = By.id("BFKitToastLabel");
 
     //--Profile
-    protected final By profileButton = MobileBy.AccessibilityId("Profile");
+    protected final By profileButton = AppiumBy.accessibilityId("Profile");
+    private final By tapOnPerfilBtn = AppiumBy.accessibilityId("Profile");
 
 
     //--Sign in email
-    protected final By emailField = MobileBy.iOSNsPredicateString("value == \"Username or Email\"");
-    protected final By passwordField = MobileBy.iOSNsPredicateString("value == \"Password\"");
-    protected final By signInButton = MobileBy.AccessibilityId("Sign in");
+
+  //  private final By emailFieldAuth0 = AppiumBy.xpath("//XCUIElementTypeStaticText[@name=\"Email address*\"]");
+    private final By emailFieldAuth0 = MobileBy.xpath("//XCUIElementTypeOther[@name=\"main\"]/XCUIElementTypeTextField");
+  //  private final By passwordFieldAuth0 = AppiumBy.xpath("//XCUIElementTypeOther[@name=\"Password*\"]");
+
+  //  private final By passwordFieldAuth0 = AppiumBy.xpath("//XCUIElementTypeStaticText[@name=\"Password*\"]");
+    //XCUIElementTypeStaticText[@name="Password*"]
+
+    private final By passwordFieldAuth0 = AppiumBy.xpath("//XCUIElementTypeOther[@name=\"main\"]/XCUIElementTypeSecureTextField");
+    private final By continueAuth0Btn = AppiumBy.accessibilityId("Continue");
+    protected final By emailField = AppiumBy.iOSNsPredicateString("value == \"Username or Email\"");
+
+    protected final By continueSignIn = AppiumBy.accessibilityId("Continue");
+    protected final By passwordField = AppiumBy.iOSNsPredicateString("value == \"Password\"");
+   protected final By signInButtonBF = AppiumBy.accessibilityId("Sign in");
+    protected final By signInButton = By.xpath("//XCUIElementTypeButton[@name=\"Continue with Facebook\"]");
     protected final By pyramidSchemePopUp = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[3]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther[1]");
 
     //--Search
-    protected final By searchTab = MobileBy.AccessibilityId("Search");
+    protected final By searchTab = AppiumBy.accessibilityId("Search");
     protected final By searchField = By.xpath("//XCUIElementTypeSearchField[@name='Search BuzzFeed']");
     protected final By searchResult = By.id("buffet_grid_cell");
-    protected final By suggestedSearchesTitle = MobileBy.AccessibilityId("Suggested Searches");
+    protected final By suggestedSearchesTitle = AppiumBy.accessibilityId("Suggested Searches");
+    private final By configuracion = AppiumBy.accessibilityId("Profile");
+    private final By edicion = AppiumBy.accessibilityId("Edición, Latam");
+    private final By editionOnAustralia = AppiumBy.accessibilityId("Edition, United States");
+    private final By editionOnCanada = AppiumBy.accessibilityId("Edition, Australia");
+    private final By editionOnIndia = AppiumBy.accessibilityId("Edition, Canada");
+    private final By editionOnUK = AppiumBy.accessibilityId("Edition, India");
+    private final By editionOnlatam = AppiumBy.accessibilityId("Edition, United Kingdom");
+    private final By editionOnJapan = AppiumBy.accessibilityId("Edición, Latam");
+    private final By cerrarMenu = AppiumBy.accessibilityId("Close");
+    //private final By tapOnPerfilBtn = AppiumBy.accessibilityId("Perfil");
+
+    public void tapOnEmailFieldAuth0(){
+        getDriver().findElement(emailFieldAuth0).click();
+    }
+
+    public void tapOnPwdAuth0(){
+        getDriver().findElement(passwordFieldAuth0).click();
+    }
+
+    public void tapNotOnThisDevice(){
+        try{
+            getDriver().findElement(notOnThisDevice).click();
+        }catch (Exception e){}
+    }
+
+    public void tapOnContinueAuth0Btb(){
+       try {
+           getDriver().findElement(continueAuth0Btn).click();
+       }catch (Exception e){};
+    }
+
+    public void tapOnConfiguracion() {getDriver().findElement(configuracion).click();}
+    public void tapOnEdicion(){getDriver().findElement(edicion).click();}
+    public void tapOnEditionOnAustralia(){getDriver().findElement(editionOnAustralia).click();}
+    public void tapOnEditionOnCanada(){getDriver().findElement(editionOnCanada).click();}
+    public void tapOnEditionOnIndia(){getDriver().findElement(editionOnIndia).click();}
+    public void tapOnEditionOnUK(){getDriver().findElement(editionOnUK).click();}
+
+    public void tapOnEditionOnLatam(){getDriver().findElement(editionOnlatam).click();}
+    public void tapOnEditionOnJapan(){getDriver().findElement(edicion).click();}
+
+
+    public void tapOnCerrar() {getDriver().findElement(cerrarMenu).click();}
+
+
+    public void tapOnPerfBtn(){getDriver().findElement(tapOnPerfilBtn).click();}
+
+     public void switchToAlert(){
+        getDriver().switchTo().alert().accept();
+     }
 
 
     //--Settings
-    protected final By settingsButton = MobileBy.AccessibilityId("Settings");
-   // protected final By profileButton = MobileBy.AccessibilityId("Profile");
+    protected final By settingsButton = AppiumBy.accessibilityId("Settings");
+   // protected final By profileButton = AppiumBy.accessibilityId("Profile");
 
     //--Go back to the app
-    protected final By openBFAppButton = MobileBy.AccessibilityId("Open");
+    protected final By openBFAppButton = AppiumBy.accessibilityId("Open");
 
 
     // footers
-    protected final By searchIcon = MobileBy.AccessibilityId("Search");
+    protected final By searchIcon = AppiumBy.accessibilityId("Search");
+
+    protected final By USEdition = AppiumBy.accessibilityId("United States");
+
+    public void tapUSEdition() {getDriver().findElement(USEdition).click();}
 
 
     //Methods
 
+    public void tapCancelAuth(){
+        try {
+            getDriver().findElement(cancelAuth).click();
+        } catch (Exception e){}
+    }
+
+    public void tapContinueSignIn(){
+        try {
+            getDriver().findElement(continueSignIn).click();
+        } catch (Exception e) {}
+    }
+
     public Boolean isDoneBtnDisplayed(){
-        return driver.findElement(doneButton).isDisplayed();
+        return getDriver().findElement(doneButton).isDisplayed();
     }
     //--ContinueAds + Allow button + Navigation
     public void tapContinueButton() {
-        driver.findElement(continueAds).click();
+        getDriver().findElement(continueAds).click();
         print("Tapped 'Continue' button on Ads prompt");
     }
 
-    public void tapAllOneTrust(){driver.findElement(acceptOneTrust).click();}
+    public void tapAllOneTrust(){
+        try {
+            getDriver().findElement(acceptOneTrust).click();
+        } catch (Exception e){}
+    }
 
-    public void tapOnTrendingCellFeed(){driver.findElement(visualFeedCell).click();}
+    public void isContentDisplayed(){
+        getDriver().findElement(collectionView).isDisplayed();
+    }
+
+    public void tapOnTrendingCellFeed(){getDriver().findElement(visualFeedCell).click();}
 
     public Boolean isPyramidSchemePopUpDisplayed(){
-       return driver.findElement(pyramidSchemePopUp).isDisplayed();
+       return getDriver().findElement(pyramidSchemePopUp).isDisplayed();
     }
 
     public void tapOnGoToGames()throws InterruptedException{
         try {
             Thread.sleep(2000);
-            driver.findElement(goToGamesButton).click();
+            getDriver().findElement(goToGamesButton).click();
         }catch (Exception e){}
     }
 
-    public Boolean isFunnyTweetsHeaderDisplayed(){return driver.findElement(funnyTweets).isDisplayed();}
+    public void tapOnGuestSignIn(){
+        getDriver().findElement(guestSignIn).click();
+    }
+
+    public Boolean isFunnyTweetsHeaderDisplayed(){return getDriver().findElement(funnyTweets).isDisplayed();}
 
     public void tapOnNoThanksSweepTakes(){
         try {
-            driver.findElement(sweepTakesNoThanks).click();
+            getDriver().findElement(sweepTakesNoThanks).click();
         }catch (Exception e){}
+    }
+
+    public void scrollInHome(){
+        scroll.scrollDownPlugin(homeView);
     }
 
 
     public void tapOnContinueBtn(){
-        driver.findElement(continueBtn).click();
+        getDriver().findElement(continueBtn).click();
     }
     public void tapOnAcceptAllCookiesBtn(){
         try {
-            driver.findElement(acceptAllCookies).click();
+            getDriver().findElement(acceptAllCookies).click();
         }catch (Exception e){}
     }
 
     public void closeGoToGamesScreen() {
         try {
-            driver.findElement(closeButton).click();
+            getDriver().findElement(closeButton).click();
         } catch (Exception e) {}
     }
 
     public void tapOnSuscribeBtn()throws InterruptedException{
      //   try {
-            WaitersPage.waitForElement(suscribeBtn);
+         //   WaitersPage.waitForElement(suscribeBtn);
             Thread.sleep(3000);
-            driver.findElement(suscribeBtn).click();
+            getDriver().findElement(suscribeBtn).click();
        // }catch (Exception e) {}
     }
 
     //NEW NAV
-    public Boolean splashCellNewNavIsPresent() {return driver.findElement(splashCellNewNav).isDisplayed();}
-    public void tapSplashNewNav(){driver.findElement(splashCellNewNav).click();}
-    public void tapFstCellNewNav(){driver.findElement(fstCellNewNav).click();}
-    public void tapTrendingSplash() {driver.findElement(trendingSplash).click();}
+    public Boolean splashCellNewNavIsPresent() {return getDriver().findElement(splashCellNewNav).isDisplayed();}
+    public void tapSplashNewNav(){getDriver().findElement(splashCellNewNav).click();}
+    public void tapFstCellNewNav(){getDriver().findElement(fstCellNewNav).click();}
+    public void tapTrendingSplash() {getDriver().findElement(trendingSplash).click();}
 
     public void tapOnSearchIcon(){
-        driver.findElement(searchIcon).click();
+        getDriver().findElement(searchIcon).click();
     }
 
     public void tapQuizzesBack(){
-        driver.findElement(quizzesBack).click();
+        getDriver().findElement(quizzesBack).click();
     }
-    public void tapTrendingBack()  {driver.findElement(trendingBack).click();}
+    public void tapTrendingBack()  {getDriver().findElement(trendingBack).click();}
 
     public void tapAllowButton() {
         try {
-            driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-            driver.findElement(allowButton).click();
+            getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+            getDriver().findElement(allowButton).click();
             print("Tapped Allow Button");
         }catch (Exception e)
         {}
     }
 
-    public void shoppingJapan() {driver.findElement(shoppingJapan).click();}
-    public void backtoTrending() {driver.findElement(backToTrending).click();}
-    public void backtoFood() {driver.findElement(backToFood).click();}
-    public void backtoCoronavirus() {driver.findElement(backToCoronavirus).click();}
-    public void backtoBooks() {driver.findElement(backToBooks).click();}
-    public void  backToVideos() {driver.findElement(backToVideos).click();}
-    public void backToShows() {driver.findElement(backToShows).click();}
-    public void backToAnimals() {driver.findElement(backToVideos).click();}
-    public void backtoCommunity() {driver.findElement(backToCommunity).click();}
-    public void backtoHealth() {driver.findElement(backToHealth).click();}
-    public void backtoLGBTQ() {driver.findElement(backToLGBTQ).click();}
-    public void backToMusic() {driver.findElement(backToMusic).click();}
-    public void backToNifty() {driver.findElement(backToNifty).click();}
-    public void backtoParents() {driver.findElement(backToParents).click();}
-    public void backtoRewind() {driver.findElement(backToRewind).click();}
-    public void BackToStyle() {driver.findElement(backToStyle).click();}
-    public void backtoTravel() {driver.findElement(backToTravel).click();}
-    public void backtoFeed(){driver.findElement(backToFeed).click();}
+    public void shoppingJapan() {getDriver().findElement(shoppingJapan).click();}
+    public void backtoTrending() {getDriver().findElement(backToTrending).click();}
+    public void backtoFood() {getDriver().findElement(backToFood).click();}
+    public void backtoCoronavirus() {getDriver().findElement(backToCoronavirus).click();}
+    public void backtoBooks() {getDriver().findElement(backToBooks).click();}
+    public void  backToVideos() {getDriver().findElement(backToVideos).click();}
+    public void backToShows() {getDriver().findElement(backToShows).click();}
+    public void backToAnimals() {getDriver().findElement(backToVideos).click();}
+    public void backtoCommunity() {getDriver().findElement(backToCommunity).click();}
+    public void backtoHealth() {getDriver().findElement(backToHealth).click();}
+    public void backtoLGBTQ() {getDriver().findElement(backToLGBTQ).click();}
+    public void backToMusic() {getDriver().findElement(backToMusic).click();}
+    public void backToNifty() {getDriver().findElement(backToNifty).click();}
+    public void backtoParents() {getDriver().findElement(backToParents).click();}
+    public void backtoRewind() {getDriver().findElement(backToRewind).click();}
+    public void BackToStyle() {getDriver().findElement(backToStyle).click();}
+    public void backtoTravel() {getDriver().findElement(backToTravel).click();}
+    public void backtoFeed(){getDriver().findElement(backToFeed).click();}
     public void tapNotNow() {
-        WaitersPage.waitForElement(notNowBtn);
-        driver.findElement(notNowBtn).click();
+        try {
+         //   WaitersPage.waitForElement(notNowBtn);
+            getDriver().findElement(notNowBtn).click();
+        }catch (Exception e){}
     }
-    public void tapIGNotNow() {driver.findElement(iGNotNowBtn).click();}
+    public void tapIGNotNow() {getDriver().findElement(iGNotNowBtn).click();}
 
+    public void tapOnSignInLink(){
+        getDriver().findElement(signInLink).click();
+    }
 
     public void tapAllowTrackButton() {
-        driver.findElement(allowTrackButton).click();
+        getDriver().findElement(allowTrackButton).click();
         print("Tapped Allow Track Button");
     }
 
     public void tapBackButtonFromSearch() {
         try {
-            WaitersPage.waitForElement(backButtonFromSearch);
-            driver.findElement(backButtonFromSearch).click();
+         //   WaitersPage.waitForElement(backButtonFromSearch);
+            getDriver().findElement(backButtonFromSearch).click();
             print("Tapped Back button");
         }catch (Exception e){}
     }
 
     public void tapBackButton() {
-        WaitersPage.waitForElement(backButton);
-        driver.findElement(backButton).click();
+     //   WaitersPage.waitForElement(backButton);
+        getDriver().findElement(backButton).click();
         print("Tapped Back button");
+
+    }
+
+    public void tapSafariHeader(){
+        getDriver().findElement(safariHeader).click();
+    }
+
+    public void enterTextOnSafari(String text)throws InterruptedException{
+        tapSafariHeader();
+        Thread.sleep(2000);
+        getDriver().findElement(safariHeader).sendKeys(text);
+        getDriver().findElement(safariHeader).sendKeys(Keys.ENTER);
+
 
     }
 
 
 
     public void scrollHoriz(int x1, int y1, int x2, int y2) {
-        TouchAction action = new TouchAction(driver);
+        TouchAction action = new TouchAction(getDriver());
         action.press(point(x1, y1)).waitAction(waitOptions(ofSeconds(5))).moveTo(point(x2, y2)).release().perform();
     }
 
     public void tapCloseButton() {
-        WaitersPage.waitForElement(closeButton);
-        driver.findElement(closeButton).click();
-        print("Tapped the Close button");
+        try {
+         //   WaitersPage.waitForElement(closeButton);
+            getDriver().findElement(closeButton).click();
+            print("Tapped the Close button");
+        }catch (Exception e){}
     }
 
     public void tapDoneButton() {
-        if (driver.findElement(doneButton).isEnabled())
-        {    driver.findElement(doneButton).click();
+        if (getDriver().findElement(doneButton).isEnabled())
+        {    getDriver().findElement(doneButton).click();
          //   driver.getKeyboard(new KeyEvent(AndroidKey.ENTER));
-          driver.getKeyboard().pressKey(Keys.ENTER);
+
+      //    driver.getKeyboard().pressKey(Keys.ENTER);
             //    driver.getKeyboard().pressKey(Keys.CANCEL);
                 print("Tapped 'Done' button");
         } else {   print("'Done' button not enabled");}
@@ -325,109 +474,118 @@ public class CommonPage extends Base {
     }
 
     public boolean cancelButtonIsPresent() {
-        return driver.findElement(cancelButton).isDisplayed();
+        return getDriver().findElement(cancelButton).isDisplayed();
     }
 
-    public void tapCancelButton() {
-        driver.findElement(cancelButton).click();
+    public void tapCancelButton() throws InterruptedException{
+    //    Thread.sleep(2000);
+        getDriver().findElement(cancelButton).click();
         print("Tapped Cancel button");
     }
 
     public void tapOKButton() {
-        driver.findElement(OKButton).click();
+        getDriver().findElement(OKButton).click();
         print("Tapped the OK button");
     }
 
     public void tapSettingsButton() {
-        driver.findElement(settingsButton).click();
+        getDriver().findElement(settingsButton).click();
         print("Tapped Settings button");
     }
 
     //--Tabs - Bottom Navigation Bar
     public void tapHomeTab() {
-        driver.findElement(homeTab).click();
+        getDriver().findElement(homeTab).click();
         print("Tapped Home tab");
     }
 
+    public void activateApp()throws InterruptedException{
+        getDriver().activateApp("com.apple.mobilesafari");
+        tapSafariHeader();
+        Thread.sleep(2000);
+         enterTextOnSafari("buzzfeed://");
+         tapOnOpenAlert();
+    }
+
     public void tapQuizzesTab() {
-        driver.findElement(quizzesTab).click();
+        getDriver().findElement(quizzesTab).click();
         print("Tapped 'Quizzes' tab");
     }
 
     public boolean quizzesHeaderIsPresent(){
-        return driver.findElement(quizzesHeader).isDisplayed();
+        return getDriver().findElement(quizzesHeader).isDisplayed();
     }
 
     public void tapNewsTab() {
-        driver.findElement(newsTab).click();
+        getDriver().findElement(newsTab).click();
         print("Tapped 'News' tab");
     }
 
     public void tapGamesTab() {
-        driver.findElement(gamesTab).click();
+        getDriver().findElement(gamesTab).click();
         print("Tapped 'Games' tab");
     }
 
-    public Boolean isGamesHeaderDisplayed(){ return driver.findElement(gamesTab).isDisplayed();}
+    public Boolean isGamesHeaderDisplayed(){ return getDriver().findElement(gamesTab).isDisplayed();}
 
     public void tapShoppingTab() {
-        driver.findElement(shoppingTab).click();
+        getDriver().findElement(shoppingTab).click();
         print("Tapped 'Quizzes' tab");
     }
 
     public boolean shoppingHeaderIsPresent() {
-        return driver.findElement(shoppingHeader).isDisplayed();
+        return getDriver().findElement(shoppingHeader).isDisplayed();
     }
 
     //--Sub-tabs
     public boolean buzzfeedLogoIsPresent(){
-        WaitersPage.waitForElement(buzzFeedLogo);
-        return driver.findElement(buzzFeedLogo).isDisplayed();
+     //   WaitersPage.waitForElement(buzzFeedLogo);
+        return getDriver().findElement(buzzFeedLogo).isDisplayed();
     }
     public void tapOnBuzzFeedLogo(){
-        driver.findElement(buzzFeedLogo).click();
+        getDriver().findElement(buzzFeedLogo).click();
     }
 
     public Boolean latestSubTabIsPresent(){
-        return driver.findElement(latestSubTab).isDisplayed();
+        return getDriver().findElement(latestSubTab).isDisplayed();
     }
 
     public String latestSubTabIsActive(){
-        return driver.findElement(latestSubTab).getAttribute("value");
+        return getDriver().findElement(latestSubTab).getAttribute("value");
     }
 
     public Boolean trendingSubTabIsPresent(){
-        return driver.findElement(trendingSubTab).isDisplayed();
+        return getDriver().findElement(trendingSubTab).isDisplayed();
     }
 
     public void tapTrendingSubTab() {
-        driver.findElement(trendingSubTab).click();
+        getDriver().findElement(trendingSubTab).click();
         print("Tapped the Trending sub-ab");
     }
 
     public String trendingSubTabIsActive(){
-        return driver.findElement(trendingSubTab).getAttribute("value");
+        return getDriver().findElement(trendingSubTab).getAttribute("value");
     }
 
     public Boolean videosSubTabIsPresent() {
-        return driver.findElement(videosSubTab).isDisplayed();
+        return getDriver().findElement(videosSubTab).isDisplayed();
     }
 
     public String videosSubTabIsActive(){
-        String value = driver.findElement(videosSubTab).getAttribute("value");
+        String value = getDriver().findElement(videosSubTab).getAttribute("value");
         return value;
     }
 
     //--News tab / Latest tab
     public boolean QCUSectionIsPresent() {
-        return driver.findElement(QCUSection).isDisplayed();
+        return getDriver().findElement(QCUSection).isDisplayed();
     }
 
     //--Feeds
         //--Splash
     public Boolean splashCellIsPresent() {
-        WaitersPage.waitForElement(splashCell);
-        return driver.findElement(splashCell).isDisplayed();
+      //  WaitersPage.waitForElement(splashCell);
+        return getDriver().findElement(splashCell).isDisplayed();
     }
 
     public void visitSplashAndReturn(){
@@ -436,147 +594,265 @@ public class CommonPage extends Base {
     }
 
     public void tapSplash() {
-        WaitersPage.waitForElement(splashCell);
-        driver.findElement(splashCell).click();
+      //  WaitersPage.waitForElement(splashCell);
+        getDriver().findElement(splashCell).click();
      //   print("Tapped Splash on feed");
     }
 
        //--First Cell on Trending
     public Boolean firstCellOnTrendingIsPresent() {
-        return driver.findElement(firstCellTrending).isDisplayed();
+        return getDriver().findElement(firstCellTrending).isDisplayed();
     }
 
     public void tapFirstCellOnTrending() {
-        driver.findElement(firstCellTrending).click();
+        getDriver().findElement(firstCellTrending).click();
         print("Tapped first Bpage under Splash on Trending feed");
     }
 
         //--First cell on general tabs
     public Boolean fistCellIsPresent() {
-        return driver.findElement(firstCell).isDisplayed();
+        return getDriver().findElement(firstCell).isDisplayed();
     }
 
     public void tapFirstCell() {
-        driver.findElement(firstCell).click();
+        getDriver().findElement(firstCell).click();
         print("Tapped first Bpage under Splash on Feed");
     }
 
         //--First Video
     public void tapFirstVideo() {
-        driver.findElement(firstVideo).click();
+        getDriver().findElement(firstVideo).click();
         print("Tapped first video on Video feed");
     }
 
     public void tapPackageItem() {
-        driver.findElement(itemsPackage).click();
+        getDriver().findElement(itemsPackage).click();
         print("Tapped an item from the Package");
     }
 
         //--Trending Products Title
     public boolean trendingProductsTitleIsPresent() {
-        return driver.findElement(trendingProductsTitle).isDisplayed();
+        return getDriver().findElement(trendingProductsTitle).isDisplayed();
     }
 
     //--Dismiss tooltip on Home & Bpages
     public void dismissTooltip() {
-        driver.findElement(dismissTooltip).click();
+        getDriver().findElement(dismissTooltip).click();
     }
 
     //--Bpages & Quizzes
     public boolean verifyCopyLinkbuttonIsPresent(){
-        return driver.findElement(copyLink).isDisplayed();
+        return getDriver().findElement(copyLink).isDisplayed();
     }
 
+
+    public void tapShowPassword(){
+        getDriver().findElement(showPassword).click();
+    }
     public void tapCopyLink(){
-        driver.findElement(copyLink).click();
+        getDriver().findElement(copyLink).click();
         print("Tapped 'Copy Link'");
     }
 
     public boolean verifyLinkCopiedToastIsPresent(){
-        return driver.findElement(copyLinkToastView).isDisplayed();
+        return getDriver().findElement(copyLinkToastView).isDisplayed();
     }
 
     public boolean verifyLinkCopiedToastTextIsPresent(){
-        return driver.findElement(copyLinkToastText).isDisplayed();
+        return getDriver().findElement(copyLinkToastText).isDisplayed();
     }
 
     //--Profile
     public void tapProfileButton() {
-
-        driver.findElement(profileButton).click();
+        getDriver().findElement(profileButton).click();
         print("Tapped profile button");
     }
 
+    public void tapGearIcon(){
+        getDriver().findElement(gearIcon).click();
+    }
+    public void tapSettingsMenu(){
+        getDriver().findElement(settingsMenu).click();
+    }
+
+  public void setUSEdition(){
+      tapOnPerfBtn();
+      //tapOnConfiguracion();
+      tapGearIcon();
+      tapSettingsMenu();
+      tapOnEdicion();
+
+      tapUSEdition();
+      tapOnCerrar();
+  }
+
     //--Sign in email
     public void enterEmail(String userData) {
-        driver.findElement(emailField).click();
-        driver.findElement(emailField).sendKeys(userData);
+        getDriver().findElement(emailField).click();
+        getDriver().findElement(emailField).sendKeys(userData);
         print("Entered email");
     }
 
-    public void enterPassword(String passData) {
-        driver.findElement(passwordField).click();
-        driver.findElement(passwordField).sendKeys(passData);
+    public void enterEmailAuth0(String userData) throws InterruptedException{
+      //  Thread.sleep(6000);
+        getDriver().findElement(emailFieldAuth0).click();
+        Thread.sleep(2000);
+        getDriver().findElement(emailFieldAuth0).sendKeys(userData);
+        print("Entered email");
+
+    }
+
+
+    public void enterPassword(String passData)throws InterruptedException {
+        Thread.sleep(2000);
+        getDriver().findElement(passwordField).click();
+        getDriver().findElement(passwordField).sendKeys(passData);
+        print("Entered password");
+        Thread.sleep(1000);
+        getDriver().hideKeyboard();
+    }
+
+
+    public void enterPasswordAuth0(String passData)throws InterruptedException {
+        Thread.sleep(2000);
+        getDriver().findElement(passwordFieldAuth0).click();
+        getDriver().findElement(passwordFieldAuth0).sendKeys(passData);
         print("Entered password");
     }
 
     public void tapSignInButton() {
-        driver.findElement(signInButton).click();
+        getDriver().findElement(signInButton).click();
+        print("Tapped Sign in button in Login screen");
+    }
+
+    public void tapSignInBFButton() {
+        getDriver().findElement(signInButtonBF).click();
         print("Tapped Sign in button in Login screen");
     }
 
     //--Search
     public void tapSearchTab() {
-        driver.findElement(searchTab).click();
+        getDriver().findElement(searchTab).click();
         print("Tapped 'Search' tab");
     }
 
     public void tapSearchField() {
-        driver.findElement(searchField).click();
-        driver.findElement(searchField).clear();
+        getDriver().findElement(searchField).click();
+        getDriver().findElement(searchField).clear();
         print("Tapped on search field");
     }
 
     public void sendSearchString(String searchTerm) {
-        driver.findElement(searchField).sendKeys(searchTerm);
-        driver.findElement(searchField).sendKeys(Keys.ENTER);
+        getDriver().findElement(searchField).sendKeys(searchTerm);
+        getDriver().findElement(searchField).sendKeys(Keys.ENTER);
         print("SearchTerm+Enter");
     }
 
-    public void tapSearchResult() {
-        driver.findElement(searchResult).click();
+    public void tapSearchResult()throws InterruptedException {
+        Thread.sleep(2000);
+        getDriver().findElement(searchResult).click();
         print("Tapped search result");
     }
 
     public void completeSearch(String data)throws InterruptedException{
-       Thread.sleep(4000);
-        tapHomeTab();
+     //  Thread.sleep(4000);
+     //   tapHomeTab();
+        Thread.sleep(2000);
         tapSearchTab();
         tapSearchField();
         sendSearchString(data);
-        WaitersPage.waitForElement(searchResult);
+      //  WaitersPage.waitForElement(searchResult);
         tapSearchResult();
     }
 
     public boolean suggestedSearchesTitleIsPresent() {
-        return driver.findElement(suggestedSearchesTitle).isDisplayed();
+        return getDriver().findElement(suggestedSearchesTitle).isDisplayed();
     }
 
+
+    public void openBF(){
+        getDriver().get("buzzfeed://");
+    }
+
+    public void tapOnOpenAlert()throws InterruptedException{
+     //   Thread.sleep(2000);
+        try {
+            getDriver().findElement(openBFAppButton).click();
+        } catch (Exception e){}
+            print("Open button is not displayed");
+     //   switchToAlert();
+    }
     //--Go back to the app
-    public void returnToBFApp() throws RuntimeException {
-        driver.get("buzzfeed://");
+
+
+    public void returnToBFApp() throws RuntimeException, InterruptedException {
+        getDriver().get("buzzfeed://");
 
         //--Enable only after simulator fresh reset or on AWS
         try {
-            driver.findElement(openBFAppButton).click();
+            getDriver().findElement(openBFAppButton).click();
         } catch (RuntimeException exception){
             print("Open button is not displayed");
         }
+        Thread.sleep(2000);
+        //switchToAlert();
+    }
+
+    public void returnToBFAppViaSafari() throws RuntimeException, InterruptedException {
+        getDriver().activateApp("com.apple.mobilesafari");
+        tapSafariHeader();
+        Thread.sleep(2000);
+        enterTextOnSafari("buzzfeed://");
+        tapOnOpenAlert();
     }
 
     //--Waiters
     public void waitForLatestGiftGuidesTitle() {
-        WaitersPage.waitForElement(latestGiftGuides);
+      //  WaitersPage.waitForElement(latestGiftGuides);
         print("Shopping page loaded");
+    }
+
+    public void scrollInBpage2(){
+        scroll.scrollDownPlugin(pageView);
+    }
+
+    public void scrollInBpageMultipleTimes(int times){
+        for(int i=1; i<= times; i++)
+            scroll.scrollDownPlugin(pageView);
+    }
+
+    public void tapGuestSignInAndNotif()throws InterruptedException{
+        Thread.sleep(4000);
+        tapAllowButton();
+        Thread.sleep(2000);
+        tapOnGuestSignIn();
+        Thread.sleep(2000);
+    }
+
+    public void signInWithBFAuth0()throws InterruptedException{
+        Thread.sleep(2000);
+        tapProfileButton();
+        Thread.sleep(7000);
+        tapOnContinueAuth0Btb();
+        Thread.sleep(4000);
+        tapCancelAuth();
+        Thread.sleep(4000);
+        tapProfileButton();
+        Thread.sleep(4000);
+         tapOnContinueAuth0Btb();
+        Thread.sleep(8000);
+        enterEmailAuth0("gabmoreau@hotmail.com");
+        Thread.sleep(3000);
+        tapOnContinueAuth0Btb();
+        Thread.sleep(3000);
+        enterPasswordAuth0("almadormida12");
+        Thread.sleep(2000);
+        tapShowPassword();
+        Thread.sleep(4000);
+        tapOnContinueAuth0Btb();
+        Thread.sleep(3000);
+        tapNotNow();
+        Thread.sleep(2000);
+        tapNotOnThisDevice();
     }
 }

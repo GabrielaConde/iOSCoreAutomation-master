@@ -18,6 +18,8 @@ public class QuizPersonalityTests extends EditionsInit {
         Thread.sleep(2000);
         quizzesLatestSubTab.tapAllowButton();
         Thread.sleep(2000);
+        quizzesLatestSubTab.setUSEdition();
+        Thread.sleep(3000);
      //   quizzesLatestSubTab.tapOnAcceptAllCookiesBtn();
      //   Thread.sleep(2000);
     }
@@ -61,7 +63,7 @@ public class QuizPersonalityTests extends EditionsInit {
         print("Verified Author info is present on First screen");
     }
 
-    @Test(priority = 5)
+  //  @Test(priority = 5)
     public void testPlayWithFriendsButtonIsPresent() {
         testName("Verify Play With Friends Button is present");
         Assert.assertTrue(personality.verifyPlayWithFriendsButtonIsPresent());

@@ -1,26 +1,26 @@
 package config.pages.profile;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class MyPostsPage extends CommonPage {
 
     //Catching elements
-    private final By myPosts = MobileBy.AccessibilityId("My Posts");
-    private final By myPostsEmptyMessage = MobileBy.AccessibilityId("Looks like you haven’t written any posts or quizzes yet!, Tap [here](https://www.buzzfeed.com/annakopsky/the-ultimate-guide-to-making-a-buzzfeed-community-post) to learn more.");
+    private final By myPosts = AppiumBy.accessibilityId("My Posts");
+    private final By myPostsEmptyMessage = AppiumBy.accessibilityId("Looks like you haven’t written any posts or quizzes yet!, Tap [here](https://www.buzzfeed.com/annakopsky/the-ultimate-guide-to-making-a-buzzfeed-community-post) to learn more.");
 
     //Methods
     public boolean myPostsIsPresent() {
-        return driver.findElement(myPosts).isDisplayed();
+        return getDriver().findElement(myPosts).isDisplayed();
     }
 
     public void tapMyPosts() {
-        driver.findElement(myPosts).click();
+        getDriver().findElement(myPosts).click();
         print("Tapped My Posts");
     }
 
     public boolean myPostsEmptyMessageIsPresent() {
-        return driver.findElement(myPostsEmptyMessage).isDisplayed();
+        return getDriver().findElement(myPostsEmptyMessage).isDisplayed();
     }
 }

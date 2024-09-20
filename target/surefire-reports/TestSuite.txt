@@ -1,40 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 64, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 818.054 s <<< FAILURE! - in TestSuite
-verifyMoreOnThisBpage(testModules.bpage.NatBpageTests1)  Time elapsed: 66.052 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 16, Time elapsed: 39.187 s <<< FAILURE! - in TestSuite
+setUp(testModules.profile.BFHeaderTests1)  Time elapsed: 37.208 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not determine iOS SDK version: Command 'xcrun --sdk iphonesimulator --show-sdk-version' timed out after 15000ms 
+Host info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:109e:3e5f:aa0:41b7%en0'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.2'
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
-Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
-*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}
-	at testModules.bpage.NatBpageTests1.verifyMoreOnThisBpage(NatBpageTests1.java:181)
+Command: [null, newSession {capabilities=[{appium:locale=US, appium:deviceName=iPhone 14, platformName=IOS, appium:automationName=XCuiTest, appium:region=US, appium:app=/Users/gabrielaconde/Library/Developer/Xcode/DerivedData/BuzzFeed-dkbvwkfuhllwuvexwuwxlnmrmgkk/Build/Products/Debug-iphonesimulator/BuzzFeed.app, appium:platformVersion=16.4}], desiredCapabilities=Capabilities {appium:app: /Users/gabrielaconde/Librar..., appium:automationName: XCuiTest, appium:deviceName: iPhone 14, appium:locale: US, appium:platformVersion: 16.4, appium:region: US, platformName: IOS}}]
+Capabilities {appium:app: /Users/gabrielaconde/Librar..., appium:automationName: XCuiTest, appium:deviceName: iPhone 14, appium:locale: US, appium:platformVersion: 16.4, appium:region: US, platformName: IOS}
 
-tapFirstMoreLikeThisBpage(testModules.bpage.NatBpageTests1)  Time elapsed: 57.33 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
+setUp(testModules.profile.BookmarksTests6)  Time elapsed: 0.814 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not determine iOS SDK version: Command 'xcrun --sdk iphonesimulator --show-sdk-version' timed out after 15000ms 
+Host info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:109e:3e5f:aa0:41b7%en0'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.2'
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
-Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
-*** Element info: {Using=xpath, value=//XCUIElementTypeCollectionView[@name="buzz-collectionview"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]}
-	at testModules.bpage.NatBpageTests1.tapFirstMoreLikeThisBpage(NatBpageTests1.java:237)
-
-testTWEmbedIsPresent(testModules.bpage.NatBpageEmbedsTests3)  Time elapsed: 68.296 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Gabrielas-MBP.fibertel.com.ar', ip: 'fe80:0:0:0:c63:2f5c:70e7:fda1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.5.1', java.version: '1.8.0_322'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/gabrielaconde/Librar..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 14 Pro, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: iOS, platformVersion: 16.4, shouldTerminateApp: true, takesScreenshot: true, udid: 06E2C02A-F2BA-45A6-8B24-98D..., webStorageEnabled: false}
-Session ID: 9685d8a9-4f8c-400b-bded-f1546933ad45
-*** Element info: {Using=xpath, value=//XCUIElementTypeOther[@name="Video Attachment"]}
-	at testModules.bpage.NatBpageEmbedsTests3.testTWEmbedIsPresent(NatBpageEmbedsTests3.java:64)
+Command: [null, newSession {capabilities=[{appium:locale=US, appium:deviceName=iPhone 14, platformName=IOS, appium:automationName=XCuiTest, appium:region=US, appium:app=/Users/gabrielaconde/Library/Developer/Xcode/DerivedData/BuzzFeed-dkbvwkfuhllwuvexwuwxlnmrmgkk/Build/Products/Debug-iphonesimulator/BuzzFeed.app, appium:platformVersion=16.4}], desiredCapabilities=Capabilities {appium:app: /Users/gabrielaconde/Librar..., appium:automationName: XCuiTest, appium:deviceName: iPhone 14, appium:locale: US, appium:platformVersion: 16.4, appium:region: US, platformName: IOS}}]
+Capabilities {appium:app: /Users/gabrielaconde/Librar..., appium:automationName: XCuiTest, appium:deviceName: iPhone 14, appium:locale: US, appium:platformVersion: 16.4, appium:region: US, platformName: IOS}
 

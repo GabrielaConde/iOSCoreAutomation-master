@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="iOSCore" />
         <module name="iOSCoreAutomation-master" />
+        <module name="acme-myApp-appium" />
       </profile>
     </annotationProcessing>
   </component>

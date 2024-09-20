@@ -1,24 +1,24 @@
 package config.pages.quizzes.quizzesTypes;
 
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class AIQuizzes extends QuizzesTypesGeneralPage{
 
     private By AiQuizzesLbl = By.xpath("//XCUIElementTypeStaticText[@name=\"AI Quizzes\"]");
     private By AIQuizzesEmojies = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeImage");
-    private By infinityQuizzesLbl = MobileBy.AccessibilityId("INFINITY QUIZZES");
-    private By infinityQUizText = MobileBy.AccessibilityId("BuzzFeed’s quiz of the future uses the magic of AI to create infinite results uniquely personalized to you.");
-    private By subscribeLbl = MobileBy.AccessibilityId("Subscribe to BuzzFeed+");
-    private By subscribeText = MobileBy.AccessibilityId("An ad free experience with exclusive early access to AI quizzes and more coming soon");
-    private By subscribeImage = MobileBy.AccessibilityId("//XCUIElementTypeCell[@name=\"bf_plus_promo_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
+    private By infinityQuizzesLbl = AppiumBy.accessibilityId("INFINITY QUIZZES");
+    private By infinityQUizText = AppiumBy.accessibilityId("BuzzFeed’s quiz of the future uses the magic of AI to create infinite results uniquely personalized to you.");
+    private By subscribeLbl = AppiumBy.accessibilityId("Subscribe to BuzzFeed+");
+    private By subscribeText = AppiumBy.accessibilityId("An ad free experience with exclusive early access to AI quizzes and more coming soon");
+    private By subscribeImage = AppiumBy.accessibilityId("//XCUIElementTypeCell[@name=\"bf_plus_promo_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
     private By quizImage = By.xpath("//XCUIElementTypeCell[@name=\"buffet_grid_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
-    private By quizText = MobileBy.AccessibilityId("Create Your Perfect Boyfriend (or Girlfriend) Using AI Technology");
+    private By quizText = AppiumBy.accessibilityId("Create Your Perfect Boyfriend (or Girlfriend) Using AI Technology");
 
     //quiz page
 
     private By quizTitle = By.xpath("//XCUIElementTypeCollectionView[@name=\"buzz-collectionview\"]/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText[2]");
-    private By quizDescription = MobileBy.AccessibilityId("Take this quiz and imagine a better future with no dating apps.");
+    private By quizDescription = AppiumBy.accessibilityId("Take this quiz and imagine a better future with no dating apps.");
 
     private By under18 = By.xpath("//XCUIElementTypeOther[@name=\"First, let’s make sure you’re a grown up!\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]");
     private By under18Msg = By.xpath("Sorry, this quiz is for adults only! Why don't you");

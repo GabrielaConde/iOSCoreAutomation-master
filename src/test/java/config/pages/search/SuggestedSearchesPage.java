@@ -1,7 +1,7 @@
 package config.pages.search;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class SuggestedSearchesPage extends CommonPage {
@@ -12,11 +12,11 @@ public class SuggestedSearchesPage extends CommonPage {
 
     //Methods
     public boolean suggestedSearchTermIsPresent() {
-        return driver.findElement(suggestedSearchTerm).isDisplayed();
+        return getDriver().findElement(suggestedSearchTerm).isDisplayed();
     }
 
     public void tapSuggestedSearchTerm() {
-        driver.findElement(suggestedSearchTerm).click();
+        getDriver().findElement(suggestedSearchTerm).click();
         print("Tapped a suggested search term");
     }
 }

@@ -16,10 +16,12 @@ public class QuizzesLatestTests extends EditionsInit {
         testName("Disabling Dynamic Ads on Bpages");
         try{
         setup = new SettingsSetupPage();
-        quizzesLatestSubTab.tapAllowButton();
-        quizzesLatestSubTab.tapAllowButton();
-        setup.disableAdExp();
-        setup.turnOnVisualFeedFF();
+    //    quizzesLatestSubTab.tapAllowButton();
+    //    quizzesLatestSubTab.tapAllowButton();
+            Thread.sleep(2000);
+            latestSubTab.setUSEdition();
+    //    setup.disableAdExp();
+      //  setup.turnOnVisualFeedFF();
         } catch (Exception e) {
             print("ERROR IN THIS TC: " + testName("initProcess"));
             print("ERROR" + e.getMessage());
@@ -124,7 +126,6 @@ public class QuizzesLatestTests extends EditionsInit {
     public void tapOnMore(){
         quizzesLatestSubTab.tapOnMore();
     }
-
 
 
     //    @Test (priority = 13)

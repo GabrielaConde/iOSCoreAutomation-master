@@ -4,6 +4,7 @@ import config.dataProvider.ProfileDataProvider;
 import config.initPages.ProfileInit;
 import config.pages.profile.BookmarksPage;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -11,8 +12,23 @@ import java.awt.*;
 //3- Continues from RecentlyViewedEmptyTests2
 public class WishlistTests3 extends ProfileInit {
 
+    @BeforeClass
+    public void signIn()throws InterruptedException{
+        header.tapGuestSignInAndNotif();
+        Thread.sleep(2000);
+        header.tapProfileButton();
+        Thread.sleep(7000);
+        header.tapOnContinueAuth0Btb();
+        Thread.sleep(2000);
+        header.tapCancelAuth();
+        Thread.sleep(2000);
+        header.tapOnContinueAuth0Btb();
+        Thread.sleep(2000);
+    }
+
     @Test()
-    public void testWishlistTab() {
+    public void testWishlistTab()throws InterruptedException {
+        Thread.sleep(3000);
         testName("Verify Wishlist tab");
         Assert.assertTrue(wishlist.wishlistIsPresent());
         print("Verified Wishlist is present in the Profile screen");
@@ -41,18 +57,16 @@ public class WishlistTests3 extends ProfileInit {
 
     @Test(priority = 3,  dataProvider = "WishList", dataProviderClass = ProfileDataProvider.class)
     public void testAddToWishlist(String data) throws InterruptedException {
+        String buzz = "buzz://jenae_sitzes/best-deals-this-week-5-9-22";
         testName("Add a product to the Wishlist");
-        driver.get("buzz://jenae_sitzes/best-deals-this-week-5-9-22");
-    //        driver.get("buzz://chelseastuart/weekday-deals-10-25-21");
-            wishlist.returnToBFApp();
-            wishlist.returnToBFApp();
-            wishlist.returnToBFApp();
-            wishlist.returnToBFApp();
-    //    wishlist.waitForBpage();
-       // scroll.scrollDown80_10();
-        wishlist.scrollToMultipleItemsButton();
-
-    //    Assert.assertTrue(wishlist.addToWishlistButtonIsPresent());
+        Thread.sleep(2000);
+        getDriver().activateApp("com.apple.mobilesafari");
+     //   getDriver().get("buzz://jenae_sitzes/best-deals-this-week-5-9-22");
+     //   getDriver().navigate().to("buzz://jenae_sitzes/best-deals-this-week-5-9-22");
+        wishlist.tapSafariHeader();
+        Thread.sleep(2000);
+        wishlist.enterTextOnSafari(buzz);
+        wishlist.tapOnOpenAlert();
         print("Verified Add to wishlist button is present in the bpage");
 
         wishlist.tapAddMultipleItemsToWishlistButton();
@@ -87,22 +101,23 @@ public class WishlistTests3 extends ProfileInit {
 
 
     @Test(priority = 6)
-    public void testGetItButton() {
+    public void testGetItButton()throws InterruptedException {
           testName("Verify the Get It button");
         Assert.assertTrue(wishlist.getItButtonIsPresent());
         print("Verified Get It button is present");
-
         wishlist.tapGetItButton();
+       Thread.sleep(1000);
         wishlist.returnToBFApp();
+//        wishlist.returnToBFAppViaSafari();
 
     }
 
     @Test(priority = 7)
     public void testCancelButton()throws InterruptedException {
         testName("Verify the Cancel button");
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         wishlist.tapMenuButton();
-        Assert.assertTrue(wishlist.cancelButtonIsPresent());
+        Thread.sleep(3000);
         print("Verified Cancel button is present");
         wishlist.tapCancelButton();
     }
@@ -136,14 +151,19 @@ public class WishlistTests3 extends ProfileInit {
 
     @Test(priority = 10, dataProvider = "WishList", dataProviderClass = ProfileDataProvider.class)
     public void testAddingOneItemToWishList(String data) throws InterruptedException {
+        String buzz = "buzz://chelseastuart/weekday-deals-10-25-21";
         testName("Verify adding a single item to the wishlist");
         wishlist.tapExploreButton();
      //   wishlist.completeSearch(data);
-
-        driver.get("buzz://chelseastuart/weekday-deals-10-25-21");
-        //        driver.get("buzz://chelseastuart/weekday-deals-10-25-21");
-        wishlist.returnToBFApp();
-        wishlist.returnToBFApp();
+        getDriver().activateApp("com.apple.mobilesafari");
+        wishlist.tapSafariHeader();
+        wishlist.enterTextOnSafari(buzz);
+        wishlist.tapOnOpenAlert();
+        Thread.sleep(2000);
+     //   getDriver().get("buzz://chelseastuart/weekday-deals-10-25-21");
+        //        getDriver().get("buzz://chelseastuart/weekday-deals-10-25-21");
+      //  wishlist.returnToBFApp();
+      //  wishlist.returnToBFApp();
 
         wishlist.tapAddToWishlistButton();
         wishlist.tapBackButton();

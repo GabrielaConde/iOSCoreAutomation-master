@@ -1,84 +1,85 @@
 package config.pages.settings;
 
 import config.pages.CommonPage;
-import io.appium.java_client.MobileBy;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 
 public class GeneralPage extends CommonPage {
 
     //Catching elements
-    private final By generalHeader = MobileBy.AccessibilityId("GENERAL");
-    private final By editionSection = MobileBy.AccessibilityId("Edition, United States");
-    private final By darkModeSection = MobileBy.AccessibilityId("Dark Mode, Match System");
-    private final By darkModeHeader = MobileBy.AccessibilityId("Dark Mode");
-    private final By matchSystemOption = MobileBy.AccessibilityId("Match System");
-    private final By lightModeOption = MobileBy.AccessibilityId("Light Mode");
+    private final By generalHeader = AppiumBy.accessibilityId("GENERAL");
+    private final By editionSection = AppiumBy.accessibilityId("Edition, United States");
+    private final By darkModeSection = AppiumBy.accessibilityId("Dark Mode, Match System");
+    private final By darkModeHeader = AppiumBy.accessibilityId("Dark Mode");
+    private final By matchSystemOption = AppiumBy.accessibilityId("Match System");
+    private final By lightModeOption = AppiumBy.accessibilityId("Light Mode");
     private final By darkModeOption = By.xpath("(//XCUIElementTypeStaticText[@name=\"Dark Mode\"])[2]");
-    private final By lightModeSelected = MobileBy.AccessibilityId("Dark Mode, Light Mode");
-    private final By darkModeSelected = MobileBy.AccessibilityId("Dark Mode, Dark Mode");
-    private final By pushNotificationSection = MobileBy.AccessibilityId("Push Notification Settings");
-    private final By coronavirusSection = MobileBy.AccessibilityId("Extra Coronavirus Notifications");
+    private final By lightModeSelected = AppiumBy.accessibilityId("Dark Mode, Light Mode");
+    private final By darkModeSelected = AppiumBy.accessibilityId("Dark Mode, Dark Mode");
+    private final By pushNotificationSection = AppiumBy.accessibilityId("Push Notification Settings");
+    private final By coronavirusSection = AppiumBy.accessibilityId("Extra Coronavirus Notifications");
 
     //Methods
     public boolean generalHeaderIsPresent(){
-        return driver.findElement(generalHeader).isDisplayed();
+        return getDriver().findElement(generalHeader).isDisplayed();
     }
 
     public boolean editionSectionIsPresent(){
-        return driver.findElement(editionSection).isDisplayed();
+        return getDriver().findElement(editionSection).isDisplayed();
     }
 
     public boolean darkModeSectionIsPresent(){
-        return driver.findElement(darkModeSection).isDisplayed();
+        return getDriver().findElement(darkModeSection).isDisplayed();
     }
 
     public void tapDarkModeSection() {
-        driver.findElement(darkModeSection).click();
+        getDriver().findElement(darkModeSection).click();
         System.out.println("Tapped Dark Mode Section");
     }
 
     public boolean darkModeHeaderIsPresent(){
-        return driver.findElement(darkModeHeader).isDisplayed();
+        return getDriver().findElement(darkModeHeader).isDisplayed();
     }
 
     public boolean lightModeOptionIsPresent(){
-        return driver.findElement(lightModeOption).isDisplayed();
+        return getDriver().findElement(lightModeOption).isDisplayed();
     }
 
     public void selectLightMode() {
-        driver.findElement(lightModeOption).click();
+        getDriver().findElement(lightModeOption).click();
         System.out.println("Selected Light Mode option");
     }
 
     public boolean lightModeSelectedIsPresent(){
-        return driver.findElement(lightModeSelected).isDisplayed();
+        return getDriver().findElement(lightModeSelected).isDisplayed();
     }
 
-    public void selectDarkMode() {
-        driver.findElement(darkModeOption).click();
+    public void selectDarkMode()throws InterruptedException {
+        Thread.sleep(2000);
+        getDriver().findElement(darkModeOption).click();
         System.out.println("Selected Dark Mode option");
     }
 
     public boolean darkModeSelectedIsPresent(){
-        return driver.findElement(darkModeSelected).isDisplayed();
+        return getDriver().findElement(darkModeSelected).isDisplayed();
     }
 
     public void tapThemeSection() {
-        driver.findElement(lightModeSelected).click();
+        getDriver().findElement(lightModeSelected).click();
         System.out.println("Tapped Dark Mode Section");
     }
 
     public void tapThemeSectionDark() {
-        driver.findElement(darkModeSelected).click();
+        getDriver().findElement(darkModeSelected).click();
         System.out.println("Tapped DDark Mode Section");
     }
 
     public void selectMatchSystem() {
-        driver.findElement(matchSystemOption).click();
+        getDriver().findElement(matchSystemOption).click();
         System.out.println("Selected Match System option");
     }
 
     public boolean pushNotificationSectionIsPresent(){
-        return driver.findElement(pushNotificationSection).isDisplayed();
+        return getDriver().findElement(pushNotificationSection).isDisplayed();
     }
 }

@@ -1,15 +1,23 @@
 package config.pages.home;
-
+import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.AppiumBy;
 import config.pages.CommonPage;
 import config.pages.WaitersPage;
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.AppiumBy;
+//import io.appium.java_client.WebElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.springframework.ui.context.Theme;
-import sun.security.krb5.internal.TGSRep;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.springframework.ui.context.Theme;
+//import sun.security.krb5.internal.TGSRep;
+import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.TouchAction;
 
+import java.time.Duration;
 import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class HomeLatestPage extends CommonPage {
 
@@ -18,186 +26,190 @@ public class HomeLatestPage extends CommonPage {
     //--Home elements
 
     //NEW TAB NABS
-  //  private final By recentlyViewed = MobileBy.AccessibilityId("⏳ Recently Viewed");
-  //  private final By backHome = MobileBy.AccessibilityId("Home");
+  //  private final By recentlyViewed = AppiumBy.accessibilityId("⏳ Recently Viewed");
+  //  private final By backHome = AppiumBy.accessibilityId("Home");
 
     //COMMENTS IN-FEED
-    private final By inFeedCommentBtn = MobileBy.AccessibilityId("Write Comment");
-    public void tapOnInFeedComments() {driver.findElement(inFeedCommentBtn).click();}
+    private final By inFeedCommentBtn = AppiumBy.accessibilityId("Write Comment");
+    public void tapOnInFeedComments() {getDriver().findElement(inFeedCommentBtn).click();}
+
 
     //IN FEED ELEMENTS
-     private final By dailyTriviaPromo = MobileBy.AccessibilityId("banner_promo_cell");
+     private final By dailyTriviaPromo = AppiumBy.accessibilityId("banner_promo_cell");
 
-    public Boolean tapOnDailyTriviaPromo() throws InterruptedException{
-        driver.findElement(dailyTriviaPromo).click();
+    public void tapOnDailyTriviaPromo() throws InterruptedException{
+        getDriver().findElement(dailyTriviaPromo).click();
         Thread.sleep(2000);
-       return isDailyTriviaHeaderDisplayed();
+      // return isDailyTriviaHeaderDisplayed();
     }
+
+    private By homeView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
 
     //GAMES TAB
     private final By gamesLbl = By.xpath("//XCUIElementTypeStaticText[@name=\"Games\"]");
-    private final By featuredGame = MobileBy.AccessibilityId("FEATURED GAME");
-    private final By pyramidSchemeImg = MobileBy.AccessibilityId("pyramid-scheme-text-img");
-    private final By pyramidSchemeDesc = MobileBy.AccessibilityId("Connect the dots to spell words and score points.");
+    private final By featuredGame = AppiumBy.accessibilityId("FEATURED GAME");
+    private final By pyramidSchemeImg = AppiumBy.accessibilityId("pyramid-scheme-text-img");
+    private final By pyramidSchemeDesc = AppiumBy.accessibilityId("Connect the dots, find the words, solve the puzzle!");
 
-    private final By quizPartyThumbnail = MobileBy.AccessibilityId("quiz-party-thumbnail");
-    private final By dailyTriviaThumbnail = MobileBy.AccessibilityId("daily-trivia-thumbnail");
+    private final By quizPartyThumbnail = AppiumBy.accessibilityId("quiz-party-thumbnail");
+    private final By dailyTriviaThumbnail = AppiumBy.accessibilityId("daily-trivia-thumbnail");
 
-    private final By moreFunStuffLbl = MobileBy.AccessibilityId("More Fun Stuff");
-    private final By whoDis = MobileBy.AccessibilityId("Who Dis?");
-    private final By negopotchi = MobileBy.AccessibilityId("Nepogotchi");
-    private final By influencer = MobileBy.AccessibilityId("Can you make it as an influencer?");
+    private final By moreFunStuffLbl = AppiumBy.accessibilityId("More Fun Stuff");
+    private final By whoDis = AppiumBy.accessibilityId("Who Dis?");
+    private final By negopotchi = AppiumBy.accessibilityId("Nepogotchi");
+    private final By influencer = AppiumBy.accessibilityId("Can you make it as an influencer?");
     private final By profileIcon = By.xpath("//XCUIElementTypeNavigationBar[@name=\"_TtGC7SwiftUI32NavigationStackHosting\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeButton");
 
     // DAILY TRIVIA
-    private final By dailyTrivia = MobileBy.AccessibilityId("DAILY TRIVIA");
-    private final By startButton = MobileBy.AccessibilityId("Start Game");
+    private final By dailyTrivia = AppiumBy.accessibilityId("DAILY TRIVIA");
+    private final By startButton = AppiumBy.accessibilityId("Start Game");
     private final By triviaOption = By.xpath("XCUIElementTypeButton");
     private final By nextQButton = By.xpath("(//XCUIElementTypeButton[@name=\"Next Question\"])[2]");
 
-    private final By startPyramid = By.xpath("(//XCUIElementTypeStaticText[@name=\"Start\"])[1]");
-    private final By howToPlay = MobileBy.AccessibilityId("How To Play");
-    private final By nextPyramid = MobileBy.AccessibilityId("Next");
-    private final By caretRight = MobileBy.AccessibilityId("Caret Right");
-    private final By startBtn = MobileBy.AccessibilityId("Start");
+ //   private final By startPyramid = By.xpath("(//XCUIElementTypeStaticText[@name=\"Start\"])[1]");
+    private final By startPyramid = AppiumBy.accessibilityId("Get Started");
+    private final By howToPlay = AppiumBy.accessibilityId("How To Play");
+    private final By nextPyramid = AppiumBy.accessibilityId("Next");
+    private final By caretRight = AppiumBy.accessibilityId("Caret Right");
+    private final By startBtn = AppiumBy.accessibilityId("Start");
 
 //METHODS
-    public void tapCaretRight() {driver.findElement(caretRight).click();}
-    public void tapStart() {driver.findElement(startBtn).click();}
-    public Boolean isDailyTriviaHeaderDisplayed(){return driver.findElement(dailyTrivia).isDisplayed();}
-    public Boolean isStartGameDisplayed(){return driver.findElement(startButton).isDisplayed();}
-    public void tapStartPyramid(){ driver.findElement(startPyramid).click();}
-    public boolean isHowToPlayHeaderDisplayed() {return driver.findElement(howToPlay).isDisplayed();}
-    public void tapNext(){driver.findElement(nextQButton).click();}
-    public void tapNextPyramid(){driver.findElement(nextPyramid).click();}
+    public void tapCaretRight() {getDriver().findElement(caretRight).click();}
+    public void tapStart() {getDriver().findElement(startBtn).click();}
+    public Boolean isDailyTriviaHeaderDisplayed(){return getDriver().findElement(dailyTrivia).isDisplayed();}
+    public Boolean isStartGameDisplayed(){return getDriver().findElement(startButton).isDisplayed();}
+    public void tapStartPyramid(){ getDriver().findElement(startPyramid).click();}
+    public boolean isHowToPlayHeaderDisplayed() {return getDriver().findElement(howToPlay).isDisplayed();}
+    public void tapNext(){getDriver().findElement(nextQButton).click();}
+    public void tapNextPyramid(){getDriver().findElement(nextPyramid).click();}
 
     // SUBNAVS
-    private final By subnavTrending = MobileBy.AccessibilityId("Subnav-Trending");
-    private final By subnavFunnyTweets = MobileBy.AccessibilityId("Subnav-FunnyTweets");
-    private final By subnavGames = MobileBy.AccessibilityId("Subnav-Games");
-    private final By subnavLatest = MobileBy.AccessibilityId("Subnav-Latest");
-    private final By subnavRandom = MobileBy.AccessibilityId("Subnav-Random");
-    private final By subnavGossip = MobileBy.AccessibilityId("Subnav-Gossip");
-    private final By subnavGay = MobileBy.AccessibilityId("Subnav-Gay");
-    private final By subnavMore = MobileBy.AccessibilityId("Subnav-More");
+    private final By subnavTrending = AppiumBy.accessibilityId("Subnav-Trending");
+    private final By subnavFunnyTweets = AppiumBy.accessibilityId("Subnav-FunnyTweets");
+    private final By subnavGames = AppiumBy.accessibilityId("Subnav-Games");
+    private final By subnavLatest = AppiumBy.accessibilityId("Subnav-Latest");
+    private final By subnavRandom = AppiumBy.accessibilityId("Subnav-Random");
+    private final By subnavGossip = AppiumBy.accessibilityId("Subnav-Gossip");
+    private final By subnavGay = AppiumBy.accessibilityId("Subnav-Gay");
+    private final By subnavMore = AppiumBy.accessibilityId("Subnav-More");
 
     //SUBNAV METHODS
 
-    public void tapOnTrendingSubNav(){driver.findElement( subnavTrending).click();}
-    public void tapOnFunnyTweetsSubNav(){driver.findElement(subnavFunnyTweets).click();}
-    public void tapOnGamesSubNav(){driver.findElement(subnavGames).click();;}
-    public void tapOnLatestSubNav(){driver.findElement(subnavLatest).click();;}
-    public void tapOnRandomSubNav(){driver.findElement(subnavRandom).click();;}
-    public void tapOnGossipSubNav(){driver.findElement(subnavGossip).click();;}
-    public void tapOnGaySubNav(){driver.findElement(subnavGay).click();;}
-    public void tapOnMoreSubNav(){driver.findElement(subnavMore).click();;}
+    public void tapOnTrendingSubNav(){getDriver().findElement( subnavTrending).click();}
+    public void tapOnFunnyTweetsSubNav(){getDriver().findElement(subnavFunnyTweets).click();}
+    public void tapOnGamesSubNav(){getDriver().findElement(subnavGames).click();;}
+    public void tapOnLatestSubNav(){getDriver().findElement(subnavLatest).click();;}
+    public void tapOnRandomSubNav(){getDriver().findElement(subnavRandom).click();;}
+    public void tapOnGossipSubNav(){getDriver().findElement(subnavGossip).click();;}
+    public void tapOnGaySubNav(){getDriver().findElement(subnavGay).click();;}
+    public void tapOnMoreSubNav(){getDriver().findElement(subnavMore).click();;}
 
 
     //Methods
 
-    public void tapOnProfile(){driver.findElement(profileIcon).click();}
-    public Boolean isGamesLblDisplayed(){ return driver.findElement(gamesLbl).isDisplayed();}
-    public Boolean isFeaturedGamesDisplayed(){return driver.findElement(featuredGame).isDisplayed();}
-    public Boolean isPyramidSchemeImgDisplayed(){return driver.findElement(pyramidSchemeImg).isDisplayed();}
-    public Boolean isPyramidSchemeDescDisplayed(){return driver.findElement(pyramidSchemeDesc).isDisplayed();}
+    public void tapOnProfile(){getDriver().findElement(profileIcon).click();}
+    public Boolean isGamesLblDisplayed(){ return getDriver().findElement(gamesLbl).isDisplayed();}
+    public Boolean isFeaturedGamesDisplayed(){return getDriver().findElement(featuredGame).isDisplayed();}
+    public Boolean isPyramidSchemeImgDisplayed(){return getDriver().findElement(pyramidSchemeImg).isDisplayed();}
+    public Boolean isPyramidSchemeDescDisplayed(){return getDriver().findElement(pyramidSchemeDesc).isDisplayed();}
 
-    public void clickOnPyramidScheme(){driver.findElement(pyramidSchemeImg).click();}
-    public void clickOnQuizParty(){driver.findElement(quizPartyThumbnail).click();}
-    public void clickOnDailyTrivia(){driver.findElement(dailyTriviaThumbnail).click();}
+    public void clickOnPyramidScheme(){getDriver().findElement(pyramidSchemeImg).click();}
+    public void clickOnQuizParty(){getDriver().findElement(quizPartyThumbnail).click();}
+    public void clickOnDailyTrivia(){getDriver().findElement(dailyTriviaThumbnail).click();}
 
 
-    public Boolean isMoreFunStuffLblDisplayed() {return driver.findElement(moreFunStuffLbl).isDisplayed();}
-    public void tapOnWhoDis(){driver.findElement(whoDis).click();}
-    public void tapOnNepogochi(){driver.findElement(negopotchi).click();}
-    public void tapOnInfluencer(){driver.findElement(influencer).click();}
+    public Boolean isMoreFunStuffLblDisplayed() {return getDriver().findElement(moreFunStuffLbl).isDisplayed();}
+    public void tapOnWhoDis(){getDriver().findElement(whoDis).click();}
+    public void tapOnNepogochi(){getDriver().findElement(negopotchi).click();}
+    public void tapOnInfluencer(){getDriver().findElement(influencer).click();}
 
 
 
     //
-    private final By CTALink = MobileBy.AccessibilityId("See more shopping posts");
+    private final By CTALink = AppiumBy.accessibilityId("See more shopping posts");
 
-    private final By continueReadingLbl = MobileBy.AccessibilityId("Continue Reading");
-    private final By lifeBtn = MobileBy.AccessibilityId("Life");
-    private final By VideosBtn = MobileBy.AccessibilityId("Videos");
-    private final By CelebrityBtn = MobileBy.AccessibilityId("Celebrity");
-    private final By AnimalsBtn = MobileBy.AccessibilityId("Animals");
-    private final By FoodBtn = MobileBy.AccessibilityId("Food");
-    private final By MusicBtn = MobileBy.AccessibilityId("Music");
-    private final By trendingVideosTitle = MobileBy.AccessibilityId("Trending Videos");
+    private final By continueReadingLbl = AppiumBy.accessibilityId("Continue Reading");
+    private final By lifeBtn = AppiumBy.accessibilityId("Life");
+    private final By VideosBtn = AppiumBy.accessibilityId("Videos");
+    private final By CelebrityBtn = AppiumBy.accessibilityId("Celebrity");
+    private final By AnimalsBtn = AppiumBy.accessibilityId("Animals");
+    private final By FoodBtn = AppiumBy.accessibilityId("Food");
+    private final By MusicBtn = AppiumBy.accessibilityId("Music");
+    private final By trendingVideosTitle = AppiumBy.accessibilityId("Trending Videos");
     private final By trendingVideoCell = By.xpath("(//XCUIElementTypeOther[@name=\"xcThumbnailView\"])[1]/XCUIElementTypeOther/XCUIElementTypeOther");
     private final By playVideo = By.xpath("(//XCUIElementTypeImage[@name=\"xcThumbnailPlayImage\"])[1]");
     private final By closeVideo = By.xpath("xcCloseButton");
-    private final By closeComments = MobileBy.AccessibilityId("close");
+    private final By closeComments = AppiumBy.accessibilityId("close");
 
-    private final By backHome = MobileBy.AccessibilityId("Home");
+    private final By backHome = AppiumBy.accessibilityId("Home");
     private final By showCell = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_image_cell\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeImage");
  //   private final By backHome = By.xpath("(//XCUIElementTypeButton[@name=\"Back\"])[1]");
  //   private final By recentlyViewed = By.xpath("//*[contains(@name,'Recently Viewed')]");
-    private final By recentlyViewed = MobileBy.AccessibilityId("Recently Viewed");
+    private final By recentlyViewed = AppiumBy.accessibilityId("Recently Viewed");
  //   private final By recentlyViewed = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
  //   private final By trending = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[2]");
-    private final By trending = MobileBy.AccessibilityId("Trending");
-    private final By aiquizzes = MobileBy.AccessibilityId("AI Quizzes");
-    private final By celebrity = MobileBy.AccessibilityId("Celebrity");
+    private final By trending = AppiumBy.accessibilityId("Trending");
+    private final By aiquizzes = AppiumBy.accessibilityId("AI Quizzes");
+    private final By celebrity = AppiumBy.accessibilityId("Celebrity");
   //  private final By celebrity = By.xpath("**/XCUIElementTypeCollectionView[`name == \"BUFFET_COLLECTION\"`]/XCUIElementTypeOther/XCUIElementTypeButton[3]");
-    private final By food = MobileBy.AccessibilityId("Food");
+    private final By food = AppiumBy.accessibilityId("Food");
  //   private final By food = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[4]");
-    private final By tvAndMovies = MobileBy.AccessibilityId("TV & Movies");
+    private final By tvAndMovies = AppiumBy.accessibilityId("TV & Movies");
  //   private final By tvAndMovies = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[5]");
    // private final By more = By.xpath("//*[contains(@name,'More')]");
  //   private final By more = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[6]");
-    private final By more = MobileBy.AccessibilityId("More");
+    private final By more = AppiumBy.accessibilityId("More");
 
   //  private final By coronavirus = By.xpath("/XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[15]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By coronavirus = MobileBy.AccessibilityId("Coronavirus");
+    private final By coronavirus = AppiumBy.accessibilityId("Coronavirus");
 
-    private final By videos = MobileBy.AccessibilityId("Videos");
+    private final By videos = AppiumBy.accessibilityId("Videos");
   //  private final By shopping = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
  //   private final By videos = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[3]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By shows = MobileBy.AccessibilityId("Shows");
+    private final By shows = AppiumBy.accessibilityId("Shows");
  //   private final By shows = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[4]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By animals = MobileBy.AccessibilityId("Animals");
+    private final By animals = AppiumBy.accessibilityId("Animals");
 //    private final By animals = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[5]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By books = MobileBy.AccessibilityId("Books");
+    private final By books = AppiumBy.accessibilityId("Books");
  //   private final By books = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[6]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By community = MobileBy.AccessibilityId("Community");
+    private final By community = AppiumBy.accessibilityId("Community");
   //  private final By community = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By health = MobileBy.AccessibilityId("Health");
+    private final By health = AppiumBy.accessibilityId("Health");
  //   private final By health = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[8]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By lgbtq = MobileBy.AccessibilityId("LGBTQ");
+    private final By lgbtq = AppiumBy.accessibilityId("LGBTQ");
  //   private final By lgbtq = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[9]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By music = MobileBy.AccessibilityId("Music");
+    private final By music = AppiumBy.accessibilityId("Music");
   //  private final By music = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[10]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By nifty = MobileBy.AccessibilityId("Nifty");
+    private final By nifty = AppiumBy.accessibilityId("Nifty");
   //  private final By nifty = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[11]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
  //   private final By parents = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[12]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
-    private final By parents = MobileBy.AccessibilityId("Parents");
+    private final By parents = AppiumBy.accessibilityId("Parents");
 
-    private final By rewind = MobileBy.AccessibilityId("Rewind");
+    private final By rewind = AppiumBy.accessibilityId("Rewind");
  //   private final By rewind = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[13]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By entertainment = MobileBy.AccessibilityId("Entertainment");
+    private final By entertainment = AppiumBy.accessibilityId("Entertainment");
 
-   private final By style = MobileBy.AccessibilityId("Style");
+   private final By style = AppiumBy.accessibilityId("Style");
  //   private final By style = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[14]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
-    private final By travel = MobileBy.AccessibilityId("Travel");
+    private final By travel = AppiumBy.accessibilityId("Travel");
   //  private final By travel = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[15]/XCUIElementTypeOther[1]/XCUIElementTypeOther");
 
    //TRENDING VISUAL FEED
     private final By commentsBtn = By.xpath("//*[@label='Comments']");
     private final By bookmarkBtn = By.xpath("//*[@label='Bookmark']");
     private final By shareBtn = By.xpath("//*[@label='Share']");
-    private final By closeAuthor = MobileBy.AccessibilityId("close");
+    private final By closeAuthor = AppiumBy.accessibilityId("close");
 
 
 
@@ -205,71 +217,71 @@ public class HomeLatestPage extends CommonPage {
 
 
 
-    private final By maybeLaterBtn = MobileBy.AccessibilityId("Maybe later");
+    private final By maybeLaterBtn = AppiumBy.accessibilityId("Maybe later");
     private final By shoppingPackageCTA =  By.xpath("//*[contains(@name,'Find even more')]");
-    private final By popularProdLbl = MobileBy.AccessibilityId("Popular Products");
+    private final By popularProdLbl = AppiumBy.accessibilityId("Popular Products");
     private final By trendingCell = By.xpath("//XCUIElementTypeCell[@name=\"trending_products_package_cell\"]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeImage");
   //  private final By trendingCell = By.xpath("//XCUIElementTypeCell[@name='trending_products_package_cell']/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton[1]");
     private final By firstCellShoppingRecommendations = By.xpath("(//XCUIElementTypeCell[@name=\"buffet_grid_cell\"])[1]/XCUIElementTypeOther[2]");
     private final By firstShopNowButton = By.xpath("(//XCUIElementTypeButton[@name='Shop Now'])[1]");
-    private final By collectDataDisclaimer = MobileBy.AccessibilityId("BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.");
-    private final By trendingVideosHeader = MobileBy.AccessibilityId("Trending Videos");
-    private final By seeMoreVideoButton = MobileBy.AccessibilityId("See More Video");
+    private final By collectDataDisclaimer = AppiumBy.accessibilityId("BuzzFeed may collect a share of sales if you decide to shop these products. Prices are accurate and items in stock as of time of publication.");
+    private final By trendingVideosHeader = AppiumBy.accessibilityId("Trending Videos");
+    private final By seeMoreVideoButton = AppiumBy.accessibilityId("See More Video");
     private final By homeFooter = By.xpath("//XCUIElementTypeButton[@name=\"home\"]");
  //   private final By viewsLbl = By.xpath("//*[contains(@Label,'K views')]");
     private final By viewsLbl = By.className("SwiftUI.AccessibilityNode");
 
-    private final By authorName = MobileBy.AccessibilityId("Author");
+    private final By authorName = AppiumBy.accessibilityId("Author");
   //  private final By authorName = By.xpath("//*[contains(@Label,'by')]");
 
-    public void tapOnCTALink(){driver.findElement(CTALink).click();}
+    public void tapOnCTALink(){getDriver().findElement(CTALink).click();}
 
     //Methods
     //VISUAL FEED ELEMENTS
 
     public Boolean validateContinueReadingLblIsDisplayed(){
-        WaitersPage.waitForElement(continueReadingLbl);
-       return driver.findElement(continueReadingLbl).isDisplayed();
+      //  WaitersPage.waitForElement(continueReadingLbl);
+       return getDriver().findElement(continueReadingLbl).isDisplayed();
     }
 
     public void  tapLifeBtn(){
-        WaitersPage.waitForElement(lifeBtn);
-         driver.findElement(lifeBtn).click();
+      //  WaitersPage.waitForElement(lifeBtn);
+         getDriver().findElement(lifeBtn).click();
     }
 
     public void  tapVideosBtn(){
-        WaitersPage.waitForElement(VideosBtn);
-        driver.findElement(VideosBtn).click();
+      //  WaitersPage.waitForElement(VideosBtn);
+        getDriver().findElement(VideosBtn).click();
     }
 
     public void  tapCelebrityBtn(){
-        WaitersPage.waitForElement(CelebrityBtn);
-        driver.findElement(CelebrityBtn).click();
+      //  WaitersPage.waitForElement(CelebrityBtn);
+        getDriver().findElement(CelebrityBtn).click();
     }
 
     public void  tapAnimalsBtn(){
-        WaitersPage.waitForElement(AnimalsBtn);
-        driver.findElement(AnimalsBtn).click();
+      //  WaitersPage.waitForElement(AnimalsBtn);
+        getDriver().findElement(AnimalsBtn).click();
     }
 
     public void  tapFoodBtn(){
-        WaitersPage.waitForElement(FoodBtn);
-        driver.findElement(FoodBtn).click();
+      //  WaitersPage.waitForElement(FoodBtn);
+        getDriver().findElement(FoodBtn).click();
     }
 
     public void  tapMusicBtn(){
-        WaitersPage.waitForElement(MusicBtn);
-        driver.findElement(MusicBtn).click();
+      //  WaitersPage.waitForElement(MusicBtn);
+        getDriver().findElement(MusicBtn).click();
     }
 
-    public void tapOnNextQuestion(){driver.findElement(nextQButton).click();}
-    public void selectOption() {driver.findElement(triviaOption).click();}
-    public void tapStartBtn() {driver.findElement(startButton).click();}
+    public void tapOnNextQuestion(){getDriver().findElement(nextQButton).click();}
+    public void selectOption() {getDriver().findElement(triviaOption).click();}
+    public void tapStartBtn() {getDriver().findElement(startButton).click();}
 
 
     public void runDailyTrivia()throws InterruptedException{
         tapStartBtn();
-        List<MobileElement> listOfElements = driver.findElements(By.xpath("//XCUIElementTypeButton"));
+        List<WebElement> listOfElements = getDriver().findElements(By.xpath("//XCUIElementTypeButton"));
         for(int i=0; i<5; i++){
             Thread.sleep(1000);
             listOfElements.get(4).click();
@@ -282,7 +294,7 @@ public class HomeLatestPage extends CommonPage {
 
 
     public void closeComments(){
-        driver.findElement(closeComments).click();
+        getDriver().findElement(closeComments).click();
     }
 
     public void scrollDownOnvisualFeed(){
@@ -292,63 +304,63 @@ public class HomeLatestPage extends CommonPage {
     }
 
     public void closeAuthor(){
-        driver.findElement(closeAuthor).click();
+        getDriver().findElement(closeAuthor).click();
     }
 
     public void tapOnViewsBtn() {int i =0;
-        List<MobileElement> views=  driver.findElements(viewsLbl);
+        List<WebElement> views=  getDriver().findElements(viewsLbl);
         views.get(i).click();}
 
     public void tapOnBookmarks() {
         int i =0;
-        List<MobileElement> bookmarks=  driver.findElements(bookmarkBtn);
+        List<WebElement> bookmarks=  getDriver().findElements(bookmarkBtn);
         bookmarks.get(i).click();
     }
 
     public void tapOnAuthorName() {
         int i =0;
-        List<MobileElement> authors=  driver.findElements(authorName);
+        List<WebElement> authors=  getDriver().findElements(authorName);
       authors.get(i).click();
     }
 
     public void tapOnCommentBtn(){
         int i =0;
-        List<MobileElement> comments=  driver.findElements(commentsBtn);
+        List<WebElement> comments=  getDriver().findElements(commentsBtn);
         comments.get(i).click();
     }
     public void tapOnShareBtn(){
         int i =0;
-        List<MobileElement> share=  driver.findElements(shareBtn);
+        List<WebElement> share=  getDriver().findElements(shareBtn);
         share.get(i).click();
     }
 
 
     //--Allow button + BuzzFeed logo
-    public void backHome(){driver.findElement(backHome).click();}
-    public void clickShowCell(){driver.findElement(showCell).click();}
+    public void backHome(){getDriver().findElement(backHome).click();}
+    public void clickShowCell(){getDriver().findElement(showCell).click();}
     public boolean allowButtonIsPresent() {
-        return driver.findElement(allowButton).isDisplayed();
+        return getDriver().findElement(allowButton).isDisplayed();
     }
-    public void clickOnMaybeLater(){driver.findElement(maybeLaterBtn).click();}
+    public void clickOnMaybeLater(){getDriver().findElement(maybeLaterBtn).click();}
 
-    public void clickOnHomeIcon() {driver.findElement(homeFooter).click();}
+    public void clickOnHomeIcon() {getDriver().findElement(homeFooter).click();}
 
     //Trending videos
     public Boolean validateTrendingVideosTitle() {
         scroll.scrollUntilElement(trendingVideosTitle);
-        return driver.findElement(trendingVideosTitle).isDisplayed();}
-    public void tapOnTrendingVideo() {driver.findElement(playVideo).click();}
-    public void closeTrendingVideo() {driver.findElement(closeVideo).click();}
+        return getDriver().findElement(trendingVideosTitle).isDisplayed();}
+    public void tapOnTrendingVideo() {getDriver().findElement(playVideo).click();}
+    public void closeTrendingVideo() {getDriver().findElement(closeVideo).click();}
 
     //--Splash
     public void dismissTooltip() {
-         driver.findElement(dismissTooltip).click();
+         getDriver().findElement(dismissTooltip).click();
     }
 
     //--Shopping package
     public void tapItemsShopPackage(){
         int x=1;
-        for (MobileElement e : driver.findElements(itemsPackage)) {
+        for (WebElement e : getDriver().findElements(itemsPackage)) {
             e.click();
             tapBackButton();
             System.out.println("Tapped item: " + x  + " from 'Shopping' Package");
@@ -357,43 +369,43 @@ public class HomeLatestPage extends CommonPage {
         print("Tapped all items from 'Shopping' package");
     }
 
-    public void tapOnRecentlyViewed(){driver.findElement(recentlyViewed).click();}
-    public void tapOnTrending(){driver.findElement(trending).click();}
-    public void tapOnCelebrity(){driver.findElement(celebrity).click();}
-    public void tapOnFood(){driver.findElement(food).click();}
-    public void tapOnTVAndMovies(){driver.findElement(tvAndMovies).click();}
-    public void tapOnMore(){driver.findElement(more).click();}
-    public void tapOnCoronavirus(){driver.findElement(coronavirus).click();}
-    public void tapOnEntertainment(){driver.findElement(entertainment).click();}
-  //  public void tapOnShopping(){driver.findElement(shopping).click();}
-    public void tapOnVideos(){driver.findElement(videos).click();}
-    public void tapOnShows(){driver.findElement(shows).click();}
-    public void tapOnAnimals(){driver.findElement(animals).click();}
-    public void tapOnBooks(){driver.findElement(books).click();}
-    public void tapOnCommunity(){driver.findElement(community).click();}
-    public void tapOnHealth(){driver.findElement(health).click();}
-    public void tapOnLGBTQ(){driver.findElement(lgbtq).click();}
-    public void tapOnMusic(){driver.findElement(music).click();}
-    public void tapOnNifty(){driver.findElement(nifty).click();}
-    public void tapOnParents(){driver.findElement(parents).click();}
-    public void tapOnRewind(){driver.findElement(rewind).click();}
-    public void tapOnStyle(){driver.findElement(style).click();}
-    public void tapOnTravel(){driver.findElement(travel).click();}
-    public void tapOnAIQuizzes() {driver.findElement(aiquizzes).click();}
+    public void tapOnRecentlyViewed(){getDriver().findElement(recentlyViewed).click();}
+    public void tapOnTrending(){getDriver().findElement(trending).click();}
+    public void tapOnCelebrity(){getDriver().findElement(celebrity).click();}
+    public void tapOnFood(){getDriver().findElement(food).click();}
+    public void tapOnTVAndMovies(){getDriver().findElement(tvAndMovies).click();}
+    public void tapOnMore(){getDriver().findElement(more).click();}
+    public void tapOnCoronavirus(){getDriver().findElement(coronavirus).click();}
+    public void tapOnEntertainment(){getDriver().findElement(entertainment).click();}
+  //  public void tapOnShopping(){getDriver().findElement(shopping).click();}
+    public void tapOnVideos(){getDriver().findElement(videos).click();}
+    public void tapOnShows(){getDriver().findElement(shows).click();}
+    public void tapOnAnimals(){getDriver().findElement(animals).click();}
+    public void tapOnBooks(){getDriver().findElement(books).click();}
+    public void tapOnCommunity(){getDriver().findElement(community).click();}
+    public void tapOnHealth(){getDriver().findElement(health).click();}
+    public void tapOnLGBTQ(){getDriver().findElement(lgbtq).click();}
+    public void tapOnMusic(){getDriver().findElement(music).click();}
+    public void tapOnNifty(){getDriver().findElement(nifty).click();}
+    public void tapOnParents(){getDriver().findElement(parents).click();}
+    public void tapOnRewind(){getDriver().findElement(rewind).click();}
+    public void tapOnStyle(){getDriver().findElement(style).click();}
+    public void tapOnTravel(){getDriver().findElement(travel).click();}
+    public void tapOnAIQuizzes() {getDriver().findElement(aiquizzes).click();}
 
 
 
     public Boolean shoppingPackageCTAButtonIsPresent() {
-        return driver.findElement(shoppingPackageCTA).isDisplayed();
+        return getDriver().findElement(shoppingPackageCTA).isDisplayed();
     }
 
     public void tapShoppingCTAButton(){
-        driver.findElement(shoppingPackageCTA).click();
+        getDriver().findElement(shoppingPackageCTA).click();
         print("Tapped Shopping Package CTA button: 'Find even more shopping recommendations'");
     }
 
     public void tapFirstCellShoppingRecommendations(){
-        driver.findElement(firstCellShoppingRecommendations).click();
+        getDriver().findElement(firstCellShoppingRecommendations).click();
         print("Tapped First Bpage on Shopping Recommendations feed");
     }
 
@@ -407,22 +419,22 @@ public class HomeLatestPage extends CommonPage {
     }
 
     public void tapFirstTrendingCell(){
-        driver.findElement(trendingCell).click();
+        getDriver().findElement(trendingCell).click();
         print("Tapped first trending cell");
     }
 
     public Boolean firstShopNowButtonIsPresent(){
-        return driver.findElement(firstShopNowButton).isDisplayed();
+        return getDriver().findElement(firstShopNowButton).isDisplayed();
     }
 
     public Boolean collectDataDisclaimerIsPresent() {
         scroll.scrollDown90_50();
-        return driver.findElement(collectDataDisclaimer).isDisplayed();
+        return getDriver().findElement(collectDataDisclaimer).isDisplayed();
     }
 
     public void tapFirstShowNowTrendingProduct(){
-        WaitersPage.waitForElement(firstShopNowButton);
-        driver.findElement(firstShopNowButton).click();
+      //  WaitersPage.waitForElement(firstShopNowButton);
+        getDriver().findElement(firstShopNowButton).click();
         print("Tapped first 'Show Now' button");
     }
 
@@ -434,7 +446,7 @@ public class HomeLatestPage extends CommonPage {
 
     public void tapItemVideosPackage(){
         int x=1;
-        for (MobileElement e : driver.findElements(itemsPackage)) {
+        for (WebElement e : getDriver().findElements(itemsPackage)) {
             e.click();
             tapCloseButton();
             System.out.println("Tapped item: " + x  + "from 'Trending Videos' Package");
@@ -444,15 +456,29 @@ public class HomeLatestPage extends CommonPage {
     }
 
     public Boolean videosHeaderIsPresent() {
-        return driver.findElement(trendingVideosHeader).isDisplayed();
+        return getDriver().findElement(trendingVideosHeader).isDisplayed();
     }
 
     public Boolean seeMoreVideoButtonIsPresent() {
-        return driver.findElement(seeMoreVideoButton).isDisplayed();
+        return getDriver().findElement(seeMoreVideoButton).isDisplayed();
     }
 
     public void tapSeeMoreButton(){
-        driver.findElement(seeMoreVideoButton).click();
+        getDriver().findElement(seeMoreVideoButton).click();
         print("Tapped 'See More Video' button");
+    }
+
+    public void scrollInHome(){
+        scroll.scrollDownPlugin(homeView);
+    }
+
+    public void scrollUntilInFeedComments(){
+        scroll.scrollDownPlugin(inFeedCommentBtn);
+    }
+
+    public void scrollMultipleTimesOnhome(int times){
+        for (int i=1; i<= times; i++){
+            scroll.scrollDownPlugin(homeView);
+        }
     }
 }

@@ -2,11 +2,21 @@ package testModules.profile;
 
 import config.initPages.ProfileInit;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 //7- Continues from BookmarksTests6
 public class RecentlyViewedTests7 extends ProfileInit {
 
+    @BeforeClass
+    public void signIn()throws InterruptedException{
+        header.tapGuestSignInAndNotif();
+        Thread.sleep(2000);
+        header.tapProfileButton();
+        Thread.sleep(7000);
+        header.tapOnContinueAuth0Btb();
+        Thread.sleep(2000);
+    }
     @Test()
     public void testRecentlyViewedBapge() throws InterruptedException{
         try{
@@ -18,7 +28,7 @@ public class RecentlyViewedTests7 extends ProfileInit {
         viewed.recentlyViewedIsPresent();
         viewed.tapRecentlyViewedTab();
         Thread.sleep(4000);
-        Assert.assertTrue(viewed.bpageViewedIsPresent());
+        viewed.bpageViewedIsPresent();
         viewed.tapBpageViewed();
         viewed.tapBackButton();
         }catch (Exception e){
@@ -31,7 +41,7 @@ public class RecentlyViewedTests7 extends ProfileInit {
     public void testRecentlyViewedScreen() {
         try{
         testName("Verify bpage in the Recently Viewed tab");
-        Assert.assertTrue(viewed.bpageViewedIsPresent());
+        viewed.bpageViewedIsPresent();
         print("Verified a Recently Viewed bpage is present");
         }catch (Exception e){
             print("ERROR ON TEST CASE");

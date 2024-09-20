@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class RecentSearchesTests2 extends SearchInit {
 
     @Test()
-    public void testCancelButton() {
+    public void testCancelButton()throws InterruptedException {
         testName("Verify the Cancel button");
         search.tapSearchField();
         Assert.assertTrue(recent.cancelButtonIsPresent());
@@ -33,7 +33,7 @@ public class RecentSearchesTests2 extends SearchInit {
     }
 
     @Test(priority = 3)
-    public void testSearchResults() {
+    public void testSearchResults() throws InterruptedException{
         testName("Verify the Search results");
         Assert.assertTrue(search.searchResultIsPresent());
         print("Verified Search result is displayed");
@@ -42,7 +42,7 @@ public class RecentSearchesTests2 extends SearchInit {
     }
 
     @Test(priority = 4)
-    public void testClearButton() {
+    public void testClearButton() throws InterruptedException{
         testName("Verify the Clear button");
         recent.tapCancelButton();
         Assert.assertTrue(recent.clearButtonIsPresent());

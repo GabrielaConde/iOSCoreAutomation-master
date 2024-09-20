@@ -50,7 +50,7 @@ public class PartnerPlayGame extends EditionsInit {
     }
 
     @Test(priority = 4)
-    public void signInToPlayEnterPass(){
+    public void signInToPlayEnterPass()throws InterruptedException{
         String pass = "sanfer12";
         signIn.enterPassword(pass);
         signIn.tapSignInButton();

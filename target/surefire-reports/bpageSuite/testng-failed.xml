@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [bpageSuite]">
-  <test thread-count="5" verbose="0" name="BPage(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [bpageSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="iPhone 15(failed)" verbose="0">
+    <parameter name="platformVersion" value="16"/>
+    <parameter name="device" value="iPhone 14 Pro"/>
     <classes>
-      <class name="testModules.bpage.NatBpageEmbedsTests3">
-        <methods>
-          <include name="testTWEmbedIsPresent"/>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
-          <include name="initializePages"/>
-        </methods>
-      </class> <!-- testModules.bpage.NatBpageEmbedsTests3 -->
       <class name="testModules.bpage.NatBpageTests1">
         <methods>
-          <include name="tapFirstMoreLikeThisBpage"/>
-          <include name="verifyMoreOnThisBpage"/>
-          <include name="tearDown"/>
-          <include name="setUpTest"/>
+          <include name="testBuyFromAmazonButtonIsPresent"/>
+          <include name="testBuyFromAmazonButton"/>
+          <include name="verifyDataCategoryArePresent"/>
+          <include name="tapImage"/>
           <include name="initializePages"/>
           <include name="initProcess"/>
+          <include name="verifyAuthorInfoIsPresentOnBpage"/>
+          <include name="tapShareButtonOnMV"/>
+          <include name="testSearchNativeBpage"/>
+          <include name="testSearchFallbackBpage"/>
+          <include name="tearSuite"/>
+          <include name="verifyDismissMV"/>
+          <include name="verifyTitleIsPresent"/>
+          <include name="verifySubTitleIsPresent"/>
+          <include name="verifyShareButtonIsPresentOnMV"/>
+          <include name="setUp"/>
+          <include name="setUpTest"/>
+          <include name="verifyImagePresentOnBpage"/>
         </methods>
       </class> <!-- testModules.bpage.NatBpageTests1 -->
     </classes>
-  </test> <!-- BPage(failed) -->
+  </test> <!-- iPhone 15(failed) -->
 </suite> <!-- Failed suite [bpageSuite] -->
