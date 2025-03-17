@@ -10,9 +10,9 @@
         </classes>
     </test>
 
-    <test verbose="2" name="iPhone 15"  >
-        <parameter name="device" value="iPhone 15"></parameter>
-        <parameter name="platformVersion" value="17"></parameter>
+    <test verbose="2" name="iPhone 16"  >
+        <parameter name="device" value="iPhone 16"></parameter>
+        <parameter name="platformVersion" value="18"></parameter>
         <classes>
             <class name="testModules.bpage.NatBpageTests1"/>
             <!--    <class name="testModules.bpage.NatBpageShoppingButtonsTests2"/> -->

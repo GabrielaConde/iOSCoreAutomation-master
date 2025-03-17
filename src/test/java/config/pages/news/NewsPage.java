@@ -34,6 +34,10 @@ public class NewsPage extends CommonPage {
  //   private final By more = By.xpath("//XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeButton[6]");
 
     private final By newsHeader = AppiumBy.accessibilityId("News");
+
+    private final By newsSplash = By.xpath("//XCUIElementTypeCell[@name=\"splash_cell\"]/XCUIElementTypeOther[2]");
+    public void tapOnNewsSplash() {getDriver().findElement(newsSplash).click();}
+   // public Boolean isOntheNewsHeaderVisible(){ getDriver().findElement()}
     private final By backToMore = AppiumBy.accessibilityId("More");
 
 

@@ -16,6 +16,8 @@ public class SettingsSetupPage extends CommonPage {
 //    protected final By closeSubscribe = By.xpath("//*[contains(@name,'Close,')]");
     //Catching elements
     protected final By debugButton = AppiumBy.accessibilityId("Debug");
+
+    protected final By adflag_ios_all_buzzfeed = AppiumBy.accessibilityId("adflag_ios_all_buzzfeed");
     protected final By settingsItemMnu = AppiumBy.xpath("(//XCUIElementTypeButton[@name=\"Settings\"])[2]");
     protected final By aBeagleExperiments = AppiumBy.accessibilityId("ABeagle Experiments");
     protected final By experiments = AppiumBy.accessibilityId("Experiments");
@@ -36,6 +38,8 @@ public class SettingsSetupPage extends CommonPage {
 
     //--Trending Package exp
     protected final By trendingPckExperiment = AppiumBy.accessibilityId("trending-products-package-IOS-7723");
+    protected final By newHomeFeedExperiment = AppiumBy.accessibilityId("new-homefeed-BR-3279");
+
     protected final By bothFeedsVariant = AppiumBy.accessibilityId("both_feeds");
 
     //--Ads
@@ -56,11 +60,25 @@ public class SettingsSetupPage extends CommonPage {
     //AI QUIZZES
     protected final By aiQuizzes = AppiumBy.accessibilityId("ai-quiz-APPS-8061");
 
+    protected final By AdFlag = AppiumBy.accessibilityId("adflag_ios_all_buzzfeed");
+
+    public void tapAdFlagExp(){getDriver().findElement(AdFlag).click();}
+
     //IMPROVE SUB TABS NAVIGATION
     protected final By navSubTabs = AppiumBy.accessibilityId("improved-sub-tab-navigation-IOS-8982");
    // protected final By navSubTabs = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther[4]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[7]");
 
-    public void closeSubscribe() {getDriver().findElement(closeSubscribe).click();}
+    public void closeSubscribe() {
+        try {
+            Thread.sleep(2000);
+            backToSettings();
+           // tapBackButton();
+            Thread.sleep(2000);
+            getDriver().findElement(closeSubscribe).click();
+        }catch (Exception e){
+            getDriver().findElement(closeSubscribe).click();
+        }
+    }
 
     public void setOnOption() {getDriver().findElement(onOption).click();}
 
@@ -132,18 +150,23 @@ public class SettingsSetupPage extends CommonPage {
 
     //Methods
     public void editExperiment() throws InterruptedException{
-        gotoSettings();
+     //   gotoSettings();
        // getDriver().findElement(settingsButton).click();
         getDriver().findElement(gearIcon).click();
-        WaitersPage.waiterEnv(3000);
+        WaitersPage.waiterEnv(5000);
     //    Thread.sleep(3000);
         getDriver().findElement(debugButton).click();
-        WaitersPage.waiterEnv(3000);
+        WaitersPage.waiterEnv(4000);
+     //   Thread.sleep(5000);
+    //    tapCancelAuth();
+   //     Thread.sleep(2000);
      //   Thread.sleep(3000);
         getDriver().findElement(aBeagleExperiments).click();
         WaitersPage.waiterEnv(3000);
-    //    Thread.sleep(3000);
+
         getDriver().findElement(experiments).click();
+        WaitersPage.waiterEnv(2000);
+
     }
 
     public void gotoSettings(){
@@ -152,9 +175,9 @@ public class SettingsSetupPage extends CommonPage {
     }
 
     public void editAdFeatureFlag() throws InterruptedException{
-        gotoSettings();
+      //  gotoSettings();
         getDriver().findElement(gearIcon).click();
-        getDriver().findElement(settingsItemMnu).click();
+    //    getDriver().findElement(settingsItemMnu).click();
         getDriver().findElement(debugButton).click();
         Thread.sleep(2000);
         getDriver().findElement(aBeagleExperiments).click();
@@ -199,12 +222,38 @@ public class SettingsSetupPage extends CommonPage {
         getDriver().resetApp();
     }
 
-    public void disableAdExp() throws InterruptedException{
-        editAdFeatureFlag();
-        getDriver().findElement(allAdsBpageDynamicExperiment).click();
+    public void enableNewHomeFeed()throws InterruptedException {
+        editExperiment();
+        getDriver().findElement(newHomeFeedExperiment).click();
+        Thread.sleep(2000);
+        getDriver().findElement(enabledOption).click();
+        getDriver().findElement(experiments).click();
+        getDriver().findElement(kennelButton).click();
+        getDriver().findElement(adFeatureFlag).click();
+        getDriver().findElement(AdFlag).click();
         getDriver().findElement(offVariant).click();
         getDriver().findElement(adFeatureFlag).click();
         getDriver().findElement(kennelButton).click();
+        tapDoneButton();
+        tapSettingsButton();
+        tapCloseButton();
+     //   getDriver().resetApp();
+     //   getDriver().launchApp();
+        getDriver().terminateApp("com.buzzfeed.buzzfeed-alpha");
+        getDriver().activateApp("com.buzzfeed.buzzfeed-alpha");
+    }
+
+    public void disableAdExp() throws InterruptedException{
+        editAdFeatureFlag();
+        Thread.sleep(6000);
+        getDriver().findElement(adflag_ios_all_buzzfeed).click();
+        Thread.sleep(2000);
+        getDriver().findElement(offVariant).click();
+        Thread.sleep(2000);
+        getDriver().findElement(adFeatureFlag).click();
+        Thread.sleep(2000);
+        getDriver().findElement(kennelButton).click();
+        Thread.sleep(2000);
         tapDoneButton();
       //  getDriver().resetApp();
         getDriver().terminateApp("com.buzzfeed.buzzfeed");

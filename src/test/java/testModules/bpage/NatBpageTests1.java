@@ -65,7 +65,7 @@ public class NatBpageTests1 extends BpageInit {
         testName("Verify Data & Category are present at top the Native Bpage");
        // Assert.assertEquals(nativeBpage.categoryDateArePresent(), "News • Updated Aug 3, 2021");
         print("Verified Date & Category are ok at top of the Native Bpage");
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 3)
@@ -304,9 +304,9 @@ public class NatBpageTests1 extends BpageInit {
         print("-------------------STARTING TO TEST SHOPPING BUTTONS ON NATIVE BPAGE -------------------");
         testName("Search native Bpage with Amazon shopping button");
         Thread.sleep(5000);
-        try {
+      //  try {
             amazonButton.completeSearch(data);
-        }catch (Exception e) {}
+      //  }catch (Exception e) {}
         }catch (Exception e){}
     }
 
@@ -322,6 +322,7 @@ public class NatBpageTests1 extends BpageInit {
 
 //        Assert.assertTrue(amazonButton.buyFromAmazonIsPresent());
         print("Verified 'Buy from Amazon' button is present");
+   //     Assert.assertTrue(false);
         }catch (Exception e){}
     }
 
@@ -350,8 +351,7 @@ public class NatBpageTests1 extends BpageInit {
     }
 
 
-
-  //  @Test(priority = 29)
+ //   @Test(priority = 29)
     public void failTest(){
         Assert.assertTrue(false);
     }

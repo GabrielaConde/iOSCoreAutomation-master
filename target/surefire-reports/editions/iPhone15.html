@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>iPhone15</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>64/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>57/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 05 18:19:26 ART 2024</td>
+<td>Started on:</td><td>Thu Oct 31 09:42:26 ART 2024</td>
 </tr>
-<tr><td>Total time:</td><td>465 seconds (465398 ms)</td>
+<tr><td>Total time:</td><td>481 seconds (481287 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,638 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTendenciasSubTab()'><b>testTendenciasSubTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.editions.EditionsPage.tapAtrasButton(EditionsPage.java:155)
+	at testModules.editions.AllEditionsLambda.testTendenciasSubTab(AllEditionsLambda.java:711)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace132405252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace132405252'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.editions.EditionsPage.tapAtrasButton(EditionsPage.java:155)
+	at testModules.editions.AllEditionsLambda.testTendenciasSubTab(AllEditionsLambda.java:711)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnAIQuizzesOnUK()'><b>testTapOnAIQuizzesOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnAIQuizzesOnUK(AllEditionsLambda.java:528)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1562367981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1562367981'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnAIQuizzesOnUK(AllEditionsLambda.java:528)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategory()'><b>testTapOnTrendingCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategory(AllEditionsLambda.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1477791142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1477791142'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategory(AllEditionsLambda.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>7</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnIndia()'><b>testTapOnTrendingCategoryOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnIndia(AllEditionsLambda.java:458)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1052648461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052648461'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnIndia(AllEditionsLambda.java:458)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnCanada()'><b>testTapOnTrendingCategoryOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnCanada(AllEditionsLambda.java:257)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace734913992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace734913992'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnCanada(AllEditionsLambda.java:257)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>7</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnUK()'><b>testTapOnTrendingCategoryOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnUK(AllEditionsLambda.java:516)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1941527858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1941527858'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7&apos;, java.version: &apos;21.0.2&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [514f8100-754b-409d-b20f-2f270b6597ab, findElement {using=accessibility id, value=Back}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCUITest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 16, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 18, appium:processArguments: {}, appium:takesScreenshot: true, appium:udid: 00008140-0005159C21E3001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11220, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 514f8100-754b-409d-b20f-2f270b6597ab
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.CommonPage.tapBackButton(CommonPage.java:431)
+	at testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnUK(AllEditionsLambda.java:516)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>3</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnJapan()'><b>testGoingToQuizzesTabOnJapan</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnJapan(AllEditionsLambda.java:750)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div><a href='#' onClick='toggleBox("stack-trace144651232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace144651232'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnJapan(AllEditionsLambda.java:750)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,325 +707,290 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotterOnCanada()'><b>testTapOnHarryPotterOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td title='testModules.editions.AllEditionsLambda.testJapanEditionIsPresent()'><b>testJapanEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnUK()'><b>testTapOnTrendingCategoryOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testOnMore()'><b>testOnMore</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotterOnUK()'><b>testTapOnHarryPotterOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>7</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategory()'><b>testTapOnTriviaCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnCanada()'><b>testGoingToQuizzesTabOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTendenciasSubTab()'><b>testTendenciasSubTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testUKEditionIsPresent()'><b>testUKEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>7</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnUK()'><b>testGoingToQuizzesTabOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>1</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwiftOnCanada()'><b>testTapOnTaylorSwiftOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnZodiacOnCanada()'><b>testTapOnZodiacOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnMarvel()'><b>testTapOnMarvel</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testLoUltimoSubTab()'><b>testLoUltimoSubTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>0</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnChecklist()'><b>testTapOnChecklist</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnCanWeGuessCategory()'><b>testTapOnCanWeGuessCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testCanadaEditionIsPresent()'><b>testCanadaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnGeographyOnCanada()'><b>testTapOnGeographyOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnIndia()'><b>testGoingNewsTabOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>1</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnUK()'><b>testGoingNewsTabOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>1</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
 <td title='testModules.editions.AllEditionsLambda.testTapOnMarvelOnUK()'><b>testTapOnMarvelOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnKPop()'><b>testTapOnKPop</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnKPopOnUK()'><b>testTapOnKPopOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testCanWeGuess()'><b>testCanWeGuess</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategory()'><b>testTapOnTrendingCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>7</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
 <td title='testModules.editions.AllEditionsLambda.tapGamesTabOnCanada()'><b>tapGamesTabOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
-<td>3</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testOnMoreOnUK()'><b>testOnMoreOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>3</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testIndiaEditionIsPresent()'><b>testIndiaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotter()'><b>testTapOnHarryPotter</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>10</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testLatamEditionIsPresent()'><b>testLatamEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>10</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwift()'><b>testTapOnTaylorSwift</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnChecklistOnCanada()'><b>testTapOnChecklistOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapCanWeGuessOnUK()'><b>testTapCanWeGuessOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapPollsOnCanada()'><b>testTapPollsOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnKPopOnCanada()'><b>testTapOnKPopOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingNewsTab()'><b>testGoingNewsTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnZodiac()'><b>testTapOnZodiac</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnGeography()'><b>testTapOnGeography</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTab()'><b>testGoingToQuizzesTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapPolls()'><b>testTapPolls</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnIndia()'><b>testTapOnTrendingCategoryOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnChecklistOnUK()'><b>testTapOnChecklistOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.tapGamesTab()'><b>tapGamesTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
 <td>2</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testJapanEditionIsPresent()'><b>testJapanEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>11</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnAnime()'><b>testTapOnAnime</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>9</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testAustraliaEditionIsPresent()'><b>testAustraliaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnAnimeOnUK()'><b>testTapOnAnimeOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.tapGamesTabOnUk()'><b>tapGamesTabOnUk</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwiftOnUK()'><b>testTapOnTaylorSwiftOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>7</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnMarvelOnCanada()'><b>testTapOnMarvelOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategoryOnCanada()'><b>testTapOnTriviaCategoryOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnAIQuizzesOnCanada()'><b>testTapOnAIQuizzesOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnIndia()'><b>testGoingToQuizzesTabOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>1</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnZodiacOnUK()'><b>testTapOnZodiacOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnCanada()'><b>testGoingNewsTabOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>2</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategoryOnUK()'><b>testTapOnTriviaCategoryOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapPollsOnUK()'><b>testTapPollsOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnAnimeOnCanada()'><b>testTapOnAnimeOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
-<tr>
-<td title='testModules.editions.AllEditionsLambda.testOnMoreOnCanada()'><b>testOnMoreOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
-<td></td>
-<td>3</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
 <td title='testModules.editions.AllEditionsLambda.testTapOnGeographyOnUK()'><b>testTapOnGeographyOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>6</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testIndiaEditionIsPresent()'><b>testIndiaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.tapGamesTabOnUk()'><b>tapGamesTabOnUk</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwift()'><b>testTapOnTaylorSwift</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnShowdownOnCanada()'><b>testTapOnShowdownOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwiftOnCanada()'><b>testTapOnTaylorSwiftOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testAustraliaEditionIsPresent()'><b>testAustraliaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnIndia()'><b>testGoingToQuizzesTabOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnCanWeGuessCategory()'><b>testTapOnCanWeGuessCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnAnime()'><b>testTapOnAnime</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testOnMore()'><b>testOnMore</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnChecklistOnCanada()'><b>testTapOnChecklistOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapPolls()'><b>testTapPolls</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnChecklist()'><b>testTapOnChecklist</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>15</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotterOnCanada()'><b>testTapOnHarryPotterOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategoryOnUK()'><b>testTapOnTriviaCategoryOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.tapGamesTab()'><b>tapGamesTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnZodiacOnCanada()'><b>testTapOnZodiacOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnKPopOnUK()'><b>testTapOnKPopOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTab()'><b>testGoingToQuizzesTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnKPop()'><b>testTapOnKPop</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnChecklistOnUK()'><b>testTapOnChecklistOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategoryOnCanada()'><b>testTapOnTriviaCategoryOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnUK()'><b>testGoingNewsTabOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapPollsOnUK()'><b>testTapPollsOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapCanWeGuessOnUK()'><b>testTapCanWeGuessOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnMarvel()'><b>testTapOnMarvel</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotterOnUK()'><b>testTapOnHarryPotterOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTaylorSwiftOnUK()'><b>testTapOnTaylorSwiftOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnAnimeOnUK()'><b>testTapOnAnimeOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testCanWeGuess()'><b>testCanWeGuess</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnCanada()'><b>testGoingToQuizzesTabOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnZodiacOnUK()'><b>testTapOnZodiacOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testOnMoreOnCanada()'><b>testOnMoreOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnCanada()'><b>testGoingNewsTabOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnUK()'><b>testGoingToQuizzesTabOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingNewsTabOnIndia()'><b>testGoingNewsTabOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnAnimeOnCanada()'><b>testTapOnAnimeOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnZodiac()'><b>testTapOnZodiac</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testLatamEditionIsPresent()'><b>testLatamEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
 <td title='testModules.editions.AllEditionsLambda.testShoppingTab()'><b>testShoppingTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
-<td title='testModules.editions.AllEditionsLambda.testGoingToQuizzesTabOnJapan()'><b>testGoingToQuizzesTabOnJapan</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td title='testModules.editions.AllEditionsLambda.testUKEditionIsPresent()'><b>testUKEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
-<td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>7</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnTrendingCategoryOnCanada()'><b>testTapOnTrendingCategoryOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td title='testModules.editions.AllEditionsLambda.testTapPollsOnCanada()'><b>testTapPollsOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testLoUltimoSubTab()'><b>testLoUltimoSubTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnGeography()'><b>testTapOnGeography</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testCanadaEditionIsPresent()'><b>testCanadaEditionIsPresent</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>8</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
-<td title='testModules.editions.AllEditionsLambda.testTapOnAIQuizzesOnUK()'><b>testTapOnAIQuizzesOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td title='testModules.editions.AllEditionsLambda.testTapOnKPopOnCanada()'><b>testTapOnKPopOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testOnMoreOnUK()'><b>testOnMoreOnUK</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>4</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnHarryPotter()'><b>testTapOnHarryPotter</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnTriviaCategory()'><b>testTapOnTriviaCategory</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 <tr>
 <td title='testModules.editions.AllEditionsLambda.tapGamesTabOnIndia()'><b>tapGamesTabOnIndia</b><br>Test class: testModules.editions.AllEditionsLambda</td>
 <td></td>
 <td>2</td>
-<td>testModules.editions.AllEditionsLambda@6646153</td></tr>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testGoingNewsTab()'><b>testGoingNewsTab</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnGeographyOnCanada()'><b>testTapOnGeographyOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
+<tr>
+<td title='testModules.editions.AllEditionsLambda.testTapOnMarvelOnCanada()'><b>testTapOnMarvelOnCanada</b><br>Test class: testModules.editions.AllEditionsLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.editions.AllEditionsLambda@63a65a25</td></tr>
 </table><p>
 </body>
 </html>

@@ -14,8 +14,12 @@ import org.openqa.selenium.Keys;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.UnhandledAlertException;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 //import org.springframework.remoting.support.DefaultRemoteInvocationExecutor;
 
+import java.time.Duration;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static java.sql.DriverManager.getDriver;
@@ -23,6 +27,7 @@ import static java.time.Duration.ofSeconds;
 
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import static io.appium.java_client.touch.offset.PointOption.point;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class CommonPage extends Base {
 
@@ -33,6 +38,8 @@ public class CommonPage extends Base {
  //   protected final By suscribeBtn = By.xpath("//*[contains(@name,'Close')");
 
     protected By loginBtn = AppiumBy.accessibilityId("Login");
+
+    protected By closeButtonTriviaScreen = AppiumBy.accessibilityId("xmark");
     protected By notOnThisDevice = AppiumBy.accessibilityId("Not on this device");
     protected By showPassword = AppiumBy.accessibilityId("Show password");
     protected By collectionView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
@@ -49,7 +56,10 @@ public class CommonPage extends Base {
 
   //  private final By continueSignIn = AppiumBy.accessibilityId("Continue");
     protected final By allowButton = AppiumBy.accessibilityId("Allow");
-    protected final By quizzesBack = AppiumBy.accessibilityId("Quizzes");
+
+    protected final By xmark = By.xpath("\t\n" +
+            "//XCUIElementTypeButton[@name=\"xmark\"]");
+    protected final By quizzesBack = By.xpath("\t\n" + "//XCUIElementTypeButton[@name=\"Quizzes\"]");
  //   protected final By backButton = By.xpath("//*[contains(@name,'Home')");
     protected final By backButton = AppiumBy.accessibilityId("Back");
     protected final By trendingBack = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView");
@@ -143,7 +153,9 @@ public class CommonPage extends Base {
     protected final By gossipHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"Celebrity\"]");
     protected final By lgbtqHeader = By.xpath("//XCUIElementTypeStaticText[@name=\"LGBTQ\"]");
 
-    protected final By gearIcon = AppiumBy.accessibilityId("Settings");
+  //  protected final By gearIcon = AppiumBy.accessibilityId("Settings");
+
+    protected final By gearIcon = By.xpath("\t\n" + "//XCUIElementTypeButton[@name=\"gearshape\"]");
   //  protected final By settingsMenu = AppiumBy.xpath("(//XCUIElementTypeButton[@name=\"Settings\"])[2]");
      protected final By settingsMenu = AppiumBy.accessibilityId("Settings");
 
@@ -163,11 +175,17 @@ public class CommonPage extends Base {
     //--Quizzes tab
     protected final By quizzesHeader = By.id("Quizzes");
 
+     public void tapXMark() {
+         getDriver().findElement(xmark).click();
+     }
+
     //--Tooltip on Home & Bpage
     protected final By dismissTooltip = By.xpath("//XCUIElementTypeApplication[@name='BuzzFeed \uD83D\uDC1E']/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeButton");
 
     //--News Tag /Latest sub-tab
     protected final By QCUSection = By.xpath("//*[contains(@name,'Quickly Catch Up.')]");
+
+    protected final By backToSettings = AppiumBy.accessibilityId("Settings");
 
     //--Bpages & Quizzes
   //  protected final By copyLink = By.xpath("//XCUIElementTypeButton[@name=\"Copy Link\"]");
@@ -177,7 +195,7 @@ public class CommonPage extends Base {
     protected final By copyLinkToastText = By.id("BFKitToastLabel");
 
     //--Profile
-    protected final By profileButton = AppiumBy.accessibilityId("Profile");
+    protected final By profileButton = By.xpath("XCUIElementTypeButton[@name=\"gearshape\"]");
     private final By tapOnPerfilBtn = AppiumBy.accessibilityId("Profile");
 
 
@@ -248,6 +266,8 @@ public class CommonPage extends Base {
 
 
     public void tapOnCerrar() {getDriver().findElement(cerrarMenu).click();}
+
+    public void tapOnCloseTrivia(){getDriver().findElement(closeButtonTriviaScreen);}
 
 
     public void tapOnPerfBtn(){getDriver().findElement(tapOnPerfilBtn).click();}
@@ -379,8 +399,7 @@ public class CommonPage extends Base {
             getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
             getDriver().findElement(allowButton).click();
             print("Tapped Allow Button");
-        }catch (Exception e)
-        {}
+        }catch (Exception e){}
     }
 
     public void shoppingJapan() {getDriver().findElement(shoppingJapan).click();}
@@ -428,8 +447,10 @@ public class CommonPage extends Base {
 
     public void tapBackButton() {
      //   WaitersPage.waitForElement(backButton);
-        getDriver().findElement(backButton).click();
-        print("Tapped Back button");
+        try {
+            getDriver().findElement(backButton).click();
+            print("Tapped Back button");
+        }catch (Exception e) {}
 
     }
 
@@ -500,11 +521,18 @@ public class CommonPage extends Base {
     }
 
     public void activateApp()throws InterruptedException{
+        Thread.sleep(2000);
         getDriver().activateApp("com.apple.mobilesafari");
+        Thread.sleep(2000);
         tapSafariHeader();
         Thread.sleep(2000);
          enterTextOnSafari("buzzfeed://");
+        Thread.sleep(2000);
          tapOnOpenAlert();
+    }
+
+    public void backToSettings(){
+        getDriver().findElement(backToSettings).click();
     }
 
     public void tapQuizzesTab() {
@@ -780,22 +808,18 @@ public class CommonPage extends Base {
             getDriver().findElement(openBFAppButton).click();
         } catch (Exception e){}
             print("Open button is not displayed");
-     //   switchToAlert();
     }
     //--Go back to the app
 
 
     public void returnToBFApp() throws RuntimeException, InterruptedException {
         getDriver().get("buzzfeed://");
-
-        //--Enable only after simulator fresh reset or on AWS
         try {
             getDriver().findElement(openBFAppButton).click();
         } catch (RuntimeException exception){
             print("Open button is not displayed");
         }
         Thread.sleep(2000);
-        //switchToAlert();
     }
 
     public void returnToBFAppViaSafari() throws RuntimeException, InterruptedException {
@@ -828,6 +852,8 @@ public class CommonPage extends Base {
         tapOnGuestSignIn();
         Thread.sleep(2000);
     }
+
+
 
     public void signInWithBFAuth0()throws InterruptedException{
         Thread.sleep(2000);

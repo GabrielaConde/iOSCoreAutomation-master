@@ -87,6 +87,7 @@ config/pages/quizzes/QuizzesSubTabsPage.class
 config/pages/profile/BookmarksPage.class
 config/pages/editions/EditionsPage.class
 config/pages/profile/HeaderPage.class
+testModules/editions/AllEditionsLambda.class
 testModules/quizzes/quizzesTypes/QuizTriviaTests.class
 testModules/quizzes/AsyncQuizzes/InvitationFlowTrivia.class
 config/pages/signIn/SignInFBPage.class

@@ -1,38 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [homeSuite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="HomeiPhone14(failed)" verbose="0">
-    <parameter name="platformVersion" value="17"/>
-    <parameter name="device" value="iPhone 15 Pro"/>
+<suite name="Failed suite [editions]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="iPhone16(failed)" verbose="0">
+    <parameter name="platformVersion" value="18.0"/>
+    <parameter name="device" value="iPhone 16 Pro"/>
     <classes>
-      <class name="testModules.profile.BFHeaderTests1">
+      <class name="testModules.editions.AustraliaEditionTests">
         <methods>
-          <include name="testChangeBackDisplayName"/>
-          <include name="testEditDisplayName"/>
+          <include name="testRandomSubTab"/>
+          <include name="testGoingNewsTab"/>
+          <include name="signInOnFstLaunch"/>
+          <include name="testGayStuffpSubTab"/>
+          <include name="testCommunitySubTab"/>
+          <include name="testParentsSubTab"/>
+          <include name="testTapOnHarryPotter"/>
+          <include name="testStyleSubTab"/>
           <include name="tearSuite"/>
-          <include name="testEditDisplayNameButton"/>
-          <include name="testDisplayName"/>
-          <include name="signIn"/>
-          <include name="initializePages"/>
-          <include name="testEditUsernameModal"/>
-          <include name="testEditUsernameButton"/>
+          <include name="testLatestsSubTab"/>
+          <include name="testRewindSubTab"/>
           <include name="setUp"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- testModules.profile.BFHeaderTests1 -->
-      <class name="testModules.profile.BookmarksTests6">
-        <methods>
-          <include name="testBookmarkRemoved"/>
-          <include name="testAddBookmark"/>
-          <include name="tearSuite"/>
-          <include name="signIn"/>
-          <include name="testRemoveBookmark"/>
-          <include name="testBookmarkAdded"/>
+          <include name="testTapOnMarvel"/>
+          <include name="testTapOnTrendingCategory"/>
+          <include name="testOnMore"/>
+          <include name="testTapOnChecklist"/>
+          <include name="testTravelSubTab"/>
+          <include name="testAnimalsSubTab"/>
+          <include name="testBooksSubTab"/>
+          <include name="testMusicSubTab"/>
+          <include name="testTapOnZodiac"/>
+          <include name="testGoingToQuizzesTab"/>
+          <include name="testTapOnKPop"/>
+          <include name="testAustraliaEditionIsPresent"/>
+          <include name="testTravelHomeSubTab"/>
+          <include name="tapGamesTab"/>
+          <include name="testGamesSubTab"/>
+          <include name="testFoodSubTab"/>
+          <include name="testTapOnTaylorSwift"/>
+          <include name="testTapOnAnime"/>
+          <include name="testTapOnTriviaCategory"/>
+          <include name="tapOnMore1"/>
+          <include name="testGossipSubTab"/>
+          <include name="testFunnyTweetsSubTab"/>
+          <include name="testTrendingSubTab"/>
+          <include name="testLatestSubTab"/>
           <include name="initializePages"/>
-          <include name="setUp"/>
+          <include name="testEntertainmentSubTab"/>
+          <include name="testCanWeGuess"/>
+          <include name="testTapOnGeography"/>
           <include name="setUpTest"/>
+          <include name="testNiftySubTab"/>
         </methods>
-      </class> <!-- testModules.profile.BookmarksTests6 -->
+      </class> <!-- testModules.editions.AustraliaEditionTests -->
     </classes>
-  </test> <!-- HomeiPhone14(failed) -->
-</suite> <!-- Failed suite [homeSuite] -->
+  </test> <!-- iPhone16(failed) -->
+</suite> <!-- Failed suite [editions] -->

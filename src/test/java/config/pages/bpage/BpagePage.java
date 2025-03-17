@@ -53,6 +53,14 @@ public class BpagePage extends CommonPage {
     protected final By trendingHeader = AppiumBy.accessibilityId("Trending");
     protected final By trendingPost = By.xpath("//XCUIElementTypeCell[@name=\"Trending\"]/following::XCUIElementTypeCell[1]");
     protected final By backButton = By.xpath("//XCUIElementTypeButton[@name=\"BUZZ_BACK_BUTTON\"]");
+    protected final By backButtonShopping = By.xpath("//XCUIElementTypeButton[@name=\"Shopping\"]");
+    protected final By backButtonNews = By.xpath("//XCUIElementTypeButton[@name=\"News\"]");
+    protected final By backButtonQuizzes = By.xpath("//XCUIElementTypeButton[@name=\"Quizzes\"]");
+
+    public void tapBackButtonShopping(){ getDriver().findElement(backButtonShopping).click();}
+    public void tapBackButtonNews(){ getDriver().findElement(backButtonNews).click();}
+
+    public void tapBackButtonQuizzes(){ getDriver().findElement(backButtonQuizzes).click();}
 
 
     //Methods

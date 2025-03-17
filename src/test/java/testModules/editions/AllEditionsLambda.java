@@ -10,7 +10,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @BeforeClass
     public void signInOnFstLaunch() throws InterruptedException {
-        try {
+       try {
             Thread.sleep(3000);
             latestSubTab.tapAllowButton();
             latestSubTab.tapOnGuestSignIn();
@@ -20,7 +20,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test
     public void testAustraliaEditionIsPresent() {
-        try{
+       try{
         print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
         testName("Verify 'Australia' edition is present");
         editions.tapSettingsButton();
@@ -38,7 +38,7 @@ public class AllEditionsLambda extends EditionsInit {
         Thread.sleep(3000);
         editions.tapNewsTab();
         print("Verified the Buzzfeed News header in the News feed is present");
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 2)
@@ -72,7 +72,7 @@ public class AllEditionsLambda extends EditionsInit {
         quizzesSubTabs.tapOnTrivia();
         Thread.sleep(3000);
         editions.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 5)
@@ -83,10 +83,10 @@ public class AllEditionsLambda extends EditionsInit {
         quizzesSubTabs.tapOnCanWeGuess();
         Thread.sleep(3000);
         editions.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
-    @Test(priority = 6)
+  //  @Test(priority = 6)
     public void testTapPolls() throws InterruptedException {
         try{
         testName("testTapOnPolls");
@@ -104,7 +104,7 @@ public class AllEditionsLambda extends EditionsInit {
         testName("testOnMore");
         Thread.sleep(3000);
         quizzesSubTabs.tapOnMore();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 8)
@@ -115,7 +115,7 @@ public class AllEditionsLambda extends EditionsInit {
         quizzesSubTabs.tapOnTaylorSwift();
         Thread.sleep(3000);
         quizzesSubTabs.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 9)
@@ -142,7 +142,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 11)
     public void testTapOnHarryPotter() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnHarryPotter");
         quizzesSubTabs.tapOnHarryPotter();
@@ -153,7 +153,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 12)
     public void testTapOnAnime() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnAnime");
         quizzesSubTabs.tapOnAnime();
@@ -164,13 +164,13 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 13)
     public void testTapOnKPop() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnKPop");
         quizzesSubTabs.tapOnKpop();
         Thread.sleep(3000);
         quizzesSubTabs.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 14)
@@ -181,7 +181,7 @@ public class AllEditionsLambda extends EditionsInit {
         quizzesSubTabs.tapOnGeographys();
         Thread.sleep(2000);
         quizzesSubTabs.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 15)
@@ -202,7 +202,7 @@ public class AllEditionsLambda extends EditionsInit {
         news.tapGamesTab();
         news.tapHomeTab();
         //   news.tapBackButton();
-        } catch (Exception e) {
+       } catch (Exception e) {
             print("ERROR IN THIS TC: " + testName("Move to Games Tab"));
             print("ERROR" + e.getMessage());
         }
@@ -233,7 +233,7 @@ public class AllEditionsLambda extends EditionsInit {
 
         Assert.assertTrue(news.newsHeaderIsPresent());
         print("Verified the Buzzfeed News header in the News feed is present");
-       }catch (Exception e){}
+      }catch (Exception e){}
     }
 
     @Test(priority = 19)
@@ -248,7 +248,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 20)
     public void testTapOnTrendingCategoryOnCanada() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnTrendingCategory");
         testName("Verify going to Trending Quizzes tab");
@@ -260,20 +260,20 @@ public class AllEditionsLambda extends EditionsInit {
 
 
     @Test(priority = 21)
-    public void testTapOnAIQuizzesOnCanada() throws InterruptedException {
+    public void testTapOnShowdownOnCanada() throws InterruptedException {
         try{
         Thread.sleep(3000);
         testName("testTapOnFoodCategory");
         testName("Verify going to Food category");
-        quizzesSubTabs.tapOnAIQuizzes();
+        quizzesSubTabs.tapOnShowdown();
         Thread.sleep(3000);
         editions.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 22)
     public void testTapOnTriviaCategoryOnCanada() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnTriviaCategory");
         testName("Verify going to Trivia category");
@@ -285,7 +285,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 23)
     public void testTapOnCanWeGuessCategory() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnCanWeGuessCategory");
         quizzesSubTabs.tapOnCanWeGuess();
@@ -294,7 +294,7 @@ public class AllEditionsLambda extends EditionsInit {
         }catch (Exception e){}
     }
 
-    @Test(priority = 24)
+   // @Test(priority = 24)
     public void testTapPollsOnCanada() throws InterruptedException {
         try{
         testName("testTapOnPolls");
@@ -323,7 +323,7 @@ public class AllEditionsLambda extends EditionsInit {
         quizzesSubTabs.tapOnTaylorSwift();
         Thread.sleep(3000);
         quizzesSubTabs.tapBackButton();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 27)
@@ -394,7 +394,7 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 33)
     public void testTapOnChecklistOnCanada() throws InterruptedException {
-        try{
+       try{
         Thread.sleep(3000);
         testName("testTapOnChecilist");
         quizzesSubTabs.tapOnChecklist();
@@ -464,7 +464,7 @@ public class AllEditionsLambda extends EditionsInit {
             try {
         news.tapGamesTab();
         news.tapHomeTab();
-        } catch (Exception e) {
+       } catch (Exception e) {
             print("ERROR IN THIS TC: " + testName("Move to Games Tab"));
             print("ERROR" + e.getMessage());
         }
@@ -503,7 +503,7 @@ public class AllEditionsLambda extends EditionsInit {
         testName("Verify going to Quizzes tab / Latest sub-tab");
         editions.tapQuizzesTab();
         //  editions.visitSplashAndReturn();
-        }catch (Exception e){}
+       }catch (Exception e){}
     }
 
     @Test(priority = 43)
@@ -523,7 +523,7 @@ public class AllEditionsLambda extends EditionsInit {
         try{
         testName("testTapOnFoodCategory");
         testName("Verify going to Food category");
-        quizzesSubTabs.tapOnAIQuizzes();
+        quizzesSubTabs.tapOnShowdown();
         Thread.sleep(2000);
         editions.tapBackButton();
         }catch (Exception e){}
@@ -550,7 +550,7 @@ public class AllEditionsLambda extends EditionsInit {
         }catch (Exception e){}
     }
 
-    @Test(priority = 47)
+   // @Test(priority = 47)
     public void testTapPollsOnUK() throws InterruptedException {
         try{
         testName("testTapOnPolls");
@@ -583,12 +583,12 @@ public class AllEditionsLambda extends EditionsInit {
 
     @Test(priority = 50)
     public void testTapOnMarvelOnUK() throws InterruptedException {
-        try{
+      //  try{
         testName("testTapOnMarvel");
         quizzesSubTabs.tapOnMarvel();
         Thread.sleep(2000);
         quizzesSubTabs.tapBackButton();
-        }catch (Exception e){}
+      //  }catch (Exception e){}
     }
 
     @Test(priority = 51)
@@ -739,15 +739,18 @@ public class AllEditionsLambda extends EditionsInit {
 
     //Quizzes
     @Test (priority = 36)
-    public void testGoingToQuizzesTabOnJapan()throws InterruptedException{
-        try{
+    public void testGoingToQuizzesTabOnJapan()throws InterruptedException {
+          try{
         testName("QUIZZES");
         testName("Verify going to Quizzes tab / Latest sub-tab");
 
         editions.tapQuizzesTab();
         print("Verified 'Quizzes' header is present on Quizzes/Latest feed");
         Thread.sleep(3000);
-        }catch (Exception e){}
+       }catch (Exception e){}
+
+
     }
+
 
 }

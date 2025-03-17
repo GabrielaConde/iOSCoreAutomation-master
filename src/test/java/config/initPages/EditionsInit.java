@@ -6,6 +6,7 @@ import config.pages.bpage.BpagePage;
 import config.pages.editions.EditionsPage;
 import config.pages.home.HomeLatestPage;
 import config.pages.home.HomeSubTabsPage;
+import config.pages.home.NewHomeFeed;
 import config.pages.home.ShowsSubTabPage;
 import config.pages.news.NewsPage;
 import config.pages.quizzes.QuizzesLatestPage;
@@ -23,6 +24,7 @@ public class EditionsInit extends InitTest {
 
     protected HomeSubTabsPage homeSubTabs;
     protected HomeLatestPage latestSubTab;
+    protected NewHomeFeed newHomeFeed;
     protected ShowsSubTabPage showSubTab;
     protected NewsPage news;
     protected ShoppingSubTabsPageDeprecated shoppingSubTabs;
@@ -62,5 +64,6 @@ public class EditionsInit extends InitTest {
         scroll = new ScrollsPage();
         bpage = new BpagePage();
         disableAdExp = new SettingsSetupPage();
+        newHomeFeed = new NewHomeFeed();
     }
 }

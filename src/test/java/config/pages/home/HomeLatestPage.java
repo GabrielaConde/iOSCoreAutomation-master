@@ -33,9 +33,18 @@ public class HomeLatestPage extends CommonPage {
     private final By inFeedCommentBtn = AppiumBy.accessibilityId("Write Comment");
     public void tapOnInFeedComments() {getDriver().findElement(inFeedCommentBtn).click();}
 
+    private final By swipeCell = By.xpath("/XCUIElementTypeCollectionView[@name=\"BUFFET_COLLECTION\"]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther");
+
+    public void horizontalSwap() {
+        scroll.swipeLeftByElement(subnavTrending,1);
+    }
 
     //IN FEED ELEMENTS
      private final By dailyTriviaPromo = AppiumBy.accessibilityId("banner_promo_cell");
+
+    private final By closePyramidScheme = By.xpath("//XCUIElementTypeButton[@name=\"xmark\"]");
+
+    public void tapOnClosePyramidScheme() {getDriver().findElement(closePyramidScheme).click();}
 
     public void tapOnDailyTriviaPromo() throws InterruptedException{
         getDriver().findElement(dailyTriviaPromo).click();
@@ -43,7 +52,10 @@ public class HomeLatestPage extends CommonPage {
       // return isDailyTriviaHeaderDisplayed();
     }
 
-    private By homeView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
+    public void closePyramidScheme(){getDriver().findElement(closePyramidScheme);}
+
+   // private By homeView = AppiumBy.accessibilityId("BUFFET_COLLECTION");
+    private By homeView = AppiumBy.accessibilityId("_TtGC7SwiftUI32NavigationStackHosting");
 
     //GAMES TAB
     private final By gamesLbl = By.xpath("//XCUIElementTypeStaticText[@name=\"Games\"]");
@@ -85,10 +97,10 @@ public class HomeLatestPage extends CommonPage {
 
     // SUBNAVS
     private final By subnavTrending = AppiumBy.accessibilityId("Subnav-Trending");
-    private final By subnavFunnyTweets = AppiumBy.accessibilityId("Subnav-FunnyTweets");
+    private final By subnavFunnyTweets = AppiumBy.accessibilityId("Funny Tweets");
     private final By subnavGames = AppiumBy.accessibilityId("Subnav-Games");
-    private final By subnavLatest = AppiumBy.accessibilityId("Subnav-Latest");
-    private final By subnavRandom = AppiumBy.accessibilityId("Subnav-Random");
+    private final By subnavLatest = AppiumBy.accessibilityId("Latest");
+    private final By subnavRandom = AppiumBy.accessibilityId("Random");
     private final By subnavGossip = AppiumBy.accessibilityId("Subnav-Gossip");
     private final By subnavGay = AppiumBy.accessibilityId("Subnav-Gay");
     private final By subnavMore = AppiumBy.accessibilityId("Subnav-More");
@@ -96,6 +108,7 @@ public class HomeLatestPage extends CommonPage {
     //SUBNAV METHODS
 
     public void tapOnTrendingSubNav(){getDriver().findElement( subnavTrending).click();}
+
     public void tapOnFunnyTweetsSubNav(){getDriver().findElement(subnavFunnyTweets).click();}
     public void tapOnGamesSubNav(){getDriver().findElement(subnavGames).click();;}
     public void tapOnLatestSubNav(){getDriver().findElement(subnavLatest).click();;}
@@ -103,6 +116,11 @@ public class HomeLatestPage extends CommonPage {
     public void tapOnGossipSubNav(){getDriver().findElement(subnavGossip).click();;}
     public void tapOnGaySubNav(){getDriver().findElement(subnavGay).click();;}
     public void tapOnMoreSubNav(){getDriver().findElement(subnavMore).click();;}
+
+
+    public Boolean isPyramidSchemeHeaderDisplayed(){
+       return getDriver().findElement(pyramidSchemeImg).isDisplayed();
+    }
 
 
     //Methods
@@ -127,6 +145,9 @@ public class HomeLatestPage extends CommonPage {
 
     //
     private final By CTALink = AppiumBy.accessibilityId("See more shopping posts");
+
+    private final By showDown = AppiumBy.accessibilityId("Showdown");
+    public void tapOnShowDown(){getDriver().findElement(showDown).click();}
 
     private final By continueReadingLbl = AppiumBy.accessibilityId("Continue Reading");
     private final By lifeBtn = AppiumBy.accessibilityId("Life");
@@ -480,5 +501,16 @@ public class HomeLatestPage extends CommonPage {
         for (int i=1; i<= times; i++){
             scroll.scrollDownPlugin(homeView);
         }
+    }
+
+    public void scrollLeftMultipleTimesOnhome(int times){
+        for (int i=1; i<= times; i++){
+            scroll.scrollDownPlugin(homeView);
+        }
+    }
+
+    public void scrollLeftOnhome(){
+            scroll.scrollLeftPlugin(homeView);
+
     }
 }

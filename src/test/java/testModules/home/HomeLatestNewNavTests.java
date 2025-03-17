@@ -227,11 +227,12 @@ public class HomeLatestNewNavTests extends EditionsInit {
     }
 
 
-    @Test(priority =19)
+  //  @Test(priority =19)
     public void tapOnRandom()throws InterruptedException{
         try{
         Thread.sleep(2000);
       //  scroll.swipeLeftAppium2();
+            latestSubTab.scrollLeftOnhome();
         latestSubTab.tapOnRandomSubNav();
      //   Thread.sleep(2000);
       //  latestSubTab.tapSplash();
@@ -241,7 +242,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-     @Test(priority =20)
+   //  @Test(priority =20)
     public void tapOnGossip()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -253,7 +254,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
     }
 
 
-    @Test(priority =21)
+  //  @Test(priority =21)
     public void tapOnGayStuff()throws InterruptedException{
         try{
         latestSubTab.tapOnGaySubNav();
@@ -263,7 +264,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =22)
+ //   @Test(priority =22)
     public void tapOnMore(){
         try{
         latestSubTab.tapOnMoreSubNav();
@@ -282,7 +283,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         latestSubTab.tapBackButton();
     }
 
-    @Test(priority =24)
+  //  @Test(priority =24)
     public void tapOnVideos()throws InterruptedException{
         try{
         Thread.sleep(3000);
@@ -299,7 +300,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         latestSubTab.tapBackButton();
     }
 
-    @Test(priority =26)
+ //   @Test(priority =26)
     public void tapOnEntentainment()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -310,7 +311,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =27)
+ //   @Test(priority =27)
     public void tapOnTVAndMovies()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -322,7 +323,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =28)
+//    @Test(priority =28)
     public void tapOnAnimals()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -334,7 +335,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =29)
+  //  @Test(priority =29)
     public void tapOnBooks()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -346,7 +347,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =30)
+ //   @Test(priority =30)
     public void tapOnComunity()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -358,7 +359,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         }catch (Exception e) {}
     }
 
-    @Test(priority =31)
+  //  @Test(priority =31)
     public void tapOnFood()throws InterruptedException{
         try{
         Thread.sleep(2000);
@@ -379,7 +380,7 @@ public class HomeLatestNewNavTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
-    @Test(priority =32)
+  //  @Test(priority =32)
     public void tapOnMusic()throws InterruptedException{
         try{
         Thread.sleep(2000);

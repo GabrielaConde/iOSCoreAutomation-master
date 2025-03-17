@@ -16,6 +16,7 @@ public class AustraliaEditionTests extends EditionsInit {
     public void signInOnFstLaunch()throws InterruptedException{
         Thread.sleep(3000);
         latestSubTab.tapAllowButton();
+        Thread.sleep(3000);
         latestSubTab.tapOnGuestSignIn();
         Thread.sleep(3000);
       /*  Thread.sleep(2000);
@@ -43,7 +44,7 @@ public class AustraliaEditionTests extends EditionsInit {
      //   editions.tapOnNoThanksSweepTakes();
     //    editions.tapProfileButton();
 
-        editions.tapSettingsButton();
+        editions.tapGearIcon();
      //   editions.tapGearIcon();
        // editions.tapEditionOption();
 
@@ -56,7 +57,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
     //Home
-  //  @Test(priority = 1)
+    @Test(priority = 1)
     public void testLatestSubTab() throws InterruptedException {
         try {
             testName("HOME");
@@ -71,7 +72,7 @@ public class AustraliaEditionTests extends EditionsInit {
         }
     }
 
-  //  @Test(priority = 2)
+   @Test(priority = 2)
     public void testTrendingSubTab() throws InterruptedException {
         try {
             print("-------------------STARTING AUSTRALIA EDITION TESTS-------------------");
@@ -94,7 +95,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
 
-  //  @Test(priority = 4)
+    @Test(priority = 4)
     public void testFunnyTweetsSubTab() throws InterruptedException {
       //  try {
             testName("Verify 'Shows' Sub-Tab");
@@ -111,7 +112,7 @@ public class AustraliaEditionTests extends EditionsInit {
         }*/
     }
 
- //   @Test(priority = 5)
+    @Test(priority = 5)
     public void testGamesSubTab() {
       //  try{
         testName("Verify 'Videos' Sub-Tab");
@@ -125,44 +126,48 @@ public class AustraliaEditionTests extends EditionsInit {
         }*/
     }
 
- //   @Test(priority = 6)
+    @Test(priority = 6)
     public void testLatestsSubTab() {
         try{
+
         testName("Verify 'Videos' Sub-Tab");
         latestSubTab.tapOnLatestSubNav();
         latestSubTab.isLatestHeaderDisplayed();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
         homeSubTabs.tapBackButton();
+            latestSubTab.horizontalSwap();
         } catch (Exception e){
         //    Assert.assertTrue(false);
             homeSubTabs.tapBackButton();
         }
     }
 
- //   @Test(priority = 7)
-    public void testRandomSubTab() {
-        try{
+    @Test(priority = 7)
+    public void testRandomSubTab()throws InterruptedException {
+     //   try{
         testName("Verify 'Videos' Sub-Tab");
-        latestSubTab.tapOnRandomSubNav();
-        latestSubTab.isRandomHeaderDisplayed();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
-        homeSubTabs.tapHomeTab();
-        } catch (Exception e){
+
+        Thread.sleep(2000);
+    //    latestSubTab.tapOnRandomSubNav();
+   //     latestSubTab.isRandomHeaderDisplayed();
+     //   latestSubTab.tapSplash();
+     //   bpage.tapBackButton();
+     //   homeSubTabs.tapHomeTab();
+     /*   } catch (Exception e){
             homeSubTabs.tapBackButton();
 //            Assert.assertTrue(false);
-        }
+        }*/
     }
 
- //   @Test(priority = 8)
+    @Test(priority = 8)
     public void testGossipSubTab() {
         try{
         testName("Verify 'Videos' Sub-Tab");
         latestSubTab.tapOnGossipSubNav();
         latestSubTab.isGossipHeaderDisplayed();
-        latestSubTab.tapSplash();
-        bpage.tapBackButton();
+      //  latestSubTab.tapSplash();
+      //  bpage.tapBackButton();
         homeSubTabs.tapBackButton();
         } catch (Exception e){
          //   Assert.assertTrue(false);
@@ -170,7 +175,7 @@ public class AustraliaEditionTests extends EditionsInit {
         }
     }
 
- //   @Test(priority = 9)
+    @Test(priority = 9)
     public void testGayStuffpSubTab()throws InterruptedException {
         Thread.sleep(4000);
     //    try{
@@ -179,7 +184,7 @@ public class AustraliaEditionTests extends EditionsInit {
       //  latestSubTab.isLgbtqHeaderDisplayed();
       //  latestSubTab.tapSplash();
       //  bpage.tapBackButton();
-        Thread.sleep(4000);
+        Thread.sleep(3000);
         homeSubTabs.tapBackButton();
       /*  } catch (Exception e){
        //     Assert.assertTrue(false);
@@ -187,10 +192,10 @@ public class AustraliaEditionTests extends EditionsInit {
         }*/
     }
 
-  //  @Test(priority = 10)
+    @Test(priority = 10)
     public void tapOnMore1() throws InterruptedException {
         //  Thread.sleep(5000);
-        Thread.sleep(5000);
+        Thread.sleep(4000);
         latestSubTab.tapOnMoreSubNav();
         // Thread.sleep(5000);
         //    Assert.assertTrue(false);
@@ -205,7 +210,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
-  //  @Test(priority = 12)
+    @Test(priority = 12)
     public void testEntertainmentSubTab() throws InterruptedException {
         Thread.sleep(4000);
         latestSubTab.tapOnEntertainment();
@@ -213,7 +218,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
-  //  @Test(priority = 13)
+    @Test(priority = 13)
     public void testAnimalsSubTab() throws InterruptedException {
         Thread.sleep(2000);
         homeSubTabs.clickOnAnimalsBtn();
@@ -224,17 +229,17 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
 
-  //  @Test(priority = 14)
+    @Test(priority = 14)
     public void testBooksSubTab() throws InterruptedException {
         Thread.sleep(3000);
         latestSubTab.tapOnBooks();
         Thread.sleep(2000);
-        bpage.tapBackButton();
+      //  bpage.tapBackButton();
         homeSubTabs.tapBackButton();
     }
 
 
-  //  @Test(priority = 15)
+    @Test(priority = 15)
     public void testFoodSubTab() throws InterruptedException{
         Thread.sleep(3000);
         testName("Verify 'Food' sub-tab");
@@ -243,7 +248,7 @@ public class AustraliaEditionTests extends EditionsInit {
         latestSubTab.tapBackButton();
     }
 
-  //  @Test(priority = 16)
+    @Test(priority = 16)
     public void testCommunitySubTab()throws InterruptedException {
         Thread.sleep(4000);
         latestSubTab.tapOnCommunity();
@@ -252,7 +257,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
 
-  //  @Test(priority = 17)
+    @Test(priority = 17)
     public void testMusicSubTab()throws InterruptedException {
         Thread.sleep(3000);
         latestSubTab.tapOnMusic();
@@ -260,7 +265,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
- //   @Test(priority = 18)
+    @Test(priority = 18)
     public void testNiftySubTab()throws InterruptedException {
         Thread.sleep(4000);
         latestSubTab.tapOnNifty();
@@ -268,7 +273,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
-  //  @Test(priority = 19)
+   @Test(priority = 19)
     public void testParentsSubTab() throws InterruptedException{
         Thread.sleep(4000);
         latestSubTab.tapOnParents();
@@ -276,7 +281,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
- //   @Test(priority = 20)
+    @Test(priority = 20)
     public void testRewindSubTab()throws InterruptedException {
         Thread.sleep(4000);
         latestSubTab.tapOnRewind();
@@ -284,7 +289,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
-  //  @Test(priority = 21)
+    @Test(priority = 21)
     public void testStyleSubTab() throws InterruptedException{
         Thread.sleep(5000);
         latestSubTab.tapOnStyle();
@@ -292,7 +297,7 @@ public class AustraliaEditionTests extends EditionsInit {
         homeSubTabs.tapBackButton();
     }
 
- //   @Test(priority = 22)
+    @Test(priority = 22)
     public void testTravelHomeSubTab()throws InterruptedException {
         Thread.sleep(5000);
         latestSubTab.tapOnTravel();
@@ -301,7 +306,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
 
-    //  @Test (priority = 16)
+      @Test (priority = 23)
     public void testTravelSubTab() {
         try {
             testName("Verify Travel sub-tab");
@@ -315,7 +320,8 @@ public class AustraliaEditionTests extends EditionsInit {
             //  print("Verified Splash is present on 'Travel' sub-tab");
 
             // print("Bpage on Splash: " + editions.getSplashTitle());
-            editions.visitSplashAndReturn();
+            editions.tapBackButton();
+          //  editions.visitSplashAndReturn();
         } catch (Exception e) {
             System.out.println("ERROR ON THIS TEST CASE");
             System.out.print("EXCEPTION: ");
@@ -324,7 +330,7 @@ public class AustraliaEditionTests extends EditionsInit {
     }
 
     //News
-    @Test(priority = 23)
+    @Test(priority = 24)
     public void testGoingNewsTab()throws InterruptedException {
         testName("NEWS");
         testName("Verify going to News tab / Latest sub-tab");
@@ -412,7 +418,7 @@ public class AustraliaEditionTests extends EditionsInit {
         editions.tapBackButton();
     }
 
-      @Test (priority = 30)
+    //  @Test (priority = 30)
     public void testTapPolls() throws InterruptedException{
         testName("testTapOnPolls");
           Thread.sleep(3000);

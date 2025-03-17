@@ -9,6 +9,9 @@ import org.testng.annotations.BeforeClass;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Parameters;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -18,53 +21,66 @@ import static java.sql.DriverManager.getDriver;
 
 public class Base {
     private static ThreadLocal<IOSDriver> driver = new ThreadLocal<>();
+    String appId;
+    String resultOfExec = null;
 
 
-    public static String env = "Local";
-    private static final String APP_LOCATION = "/Users/gabrielaconde/Library/Developer/Xcode/DerivedData/BuzzFeed-dkbvwkfuhllwuvexwuwxlnmrmgkk/Build/Products/Debug-iphonesimulator/BuzzFeed.app";
+    public static String env = "Lambda";
+    private static final String APP_LOCATION = "/Users/gabrielaconde/Library/Developer/Xcode/DerivedData/BuzzFeed-evttmtbrjzqnhbfddetqlfcpxdsg/Build/Products/Debug-iphonesimulator/BuzzFeed.app";
 
     @Parameters({"device", "platformVersion"})
     @BeforeClass
     public void setUp(String device, String platformVersion) throws Exception {
         URL url;
         XCUITestOptions options = new XCUITestOptions();
+        String appId;
+        String resultOfExec = null;
 
         if (env == "Local") {
             //LOCAL
-        options.setDeviceName("iPhone 15 Pro");
-        options.setPlatformVersion("17.0");
+        options.setDeviceName(device);
+        options.setPlatformVersion(platformVersion);
         options.setLocale("US");
+        options.setCapability("fullReset", false);
+        options.setCapability("noReset", true);
         options.setCapability("region", "US");
+        options.setCapability("showXcodeLog", true);
+        options.setCapability("autoGrantPermissions", true);
+        options. setCapability("autoAcceptAlerts", true);
         options.setApp(APP_LOCATION);
 
          url = new URL("http://127.0.0.1:4723");
 
         } else {
-
             //LAMBDA
+        /*  try{
+                Process process = Runtime.getRuntime().exec("curl -u \"gabriela.conde-moreau:mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE\" -X POST \"https://manual-api.lambdatest.com/app/upload/realDevice\" -F \"appFile=@\"/Users/gabrielaconde/Developer/CORE_BUILDS/BuzzFeed.ipa\"\" -F \"name=\"BuzzFeed_ipa\"\"");
+                BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                resultOfExec =br.readLine();
+            } catch (Exception e){}
+            appId = resultOfExec.substring(10, 40);*/
+
             String userName = "gabriela.conde-moreau";
             String gridURL = "@http://hub.lambdatest.com/wd/hub";
             String key = "mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE";
             String hub2 = "https://" + userName + ":" + key + "@mobile-hub.lambdatest.com/wd/hub";
-
             String hub = "https://gabriela.conde-moreau:mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE@mobile-hub.lambdatest.com/wd/hub";
-         //   options.setApp("lt://APP10160291931719244340214972");
-       //    options.setApp("lt://APP10160502001721862391159759");
-               options.setApp("lt://APP1016061291725567306059863");
-            options.setCapability("build", "iOS Core Sept 5");
+            options.setApp("lt://APP10160561931740494622061879");
+           // options.setApp(appId);
+            options.setCapability("build", "Test full flow");
             options.setDeviceName(device);
             options.setPlatformVersion(platformVersion);
             options.setCapability("appiumVersion", "2.2.1");
+            options.setCapability("region", "US");
+            options.setCapability("network", "true");
             options.setLocale("US");
             options.setLanguage("US");
-            options.setCapability("region", "US");
+            options.setCapability("fullReset", false);
+            options.setCapability("noReset", true);
             options.setCapability("isRealMobile", true);
-
             options.setMaxTypingFrequency(7);
              url = new URL(hub2);
-
     }
-
                driver.set(new IOSDriver(url, options));
 
     }
@@ -88,10 +104,13 @@ public class Base {
     }
     @AfterClass
     public void tearSuite(){
-        if(getDriver() != null){
-            getDriver().quit();
-            driver.remove();
-        }
+        try {
+            if (getDriver() != null) {
+                getDriver().quit();
+                driver.remove();
+
+            }
+        }catch (Exception e){}
 
     }
 

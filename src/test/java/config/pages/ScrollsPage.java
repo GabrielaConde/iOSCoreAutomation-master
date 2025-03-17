@@ -3,19 +3,25 @@ package config.pages;
 import basePackage.Base;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
 import java.time.Duration;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 
 import static io.appium.java_client.touch.WaitOptions.waitOptions;
 import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofSeconds;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.remote.RemoteWebElement;
 
@@ -343,9 +349,131 @@ public class ScrollsPage extends Base {
                 "direction", "up"));
     }
 
+    public void scrollLeftPlugin(By viewLocator) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
+        RemoteWebElement scrollView = (RemoteWebElement) wait.until(presenceOfElementLocated(viewLocator));
+        getDriver().executeScript("mobile: swipe", ImmutableMap.of("elementId", scrollView.getId(),
+                "percentage", 50,
+                "direction", "left"));
+    }
+
+    public void scrollToElementIOS(By locator, IOSDriver driver)throws InterruptedException {
+        HashMap<String, Object> scrollObject = new HashMap<>();
+        boolean isElementFound = false;
+        Integer scrollCount = 0;
+        int startX = driver.manage().window().getSize().getWidth() / 2;
+        int height = driver.manage().window().getSize().getHeight();
+        int startY = (int) (height * 0.7); // Adjusted to be within screen bounds
+        int endY = (int) (height * 0.3); // Adjusted to be within screen bounds
+
+        while (!isElementFound) {
+            System.out.println("Scrolling...");
+            //   try {
+            Thread.sleep(2000); // Slower scroll with longer wait time
+            //    WebElement element = driver.findElement(ByElement);
+            boolean isFoundTheElement = getDriver().findElements(locator).size() > 0;
+            //  if (element.isDisplayed()) {
+            if (isFoundTheElement == true) {
+                isElementFound = true;
+            } else {
+                scrollObject.put("direction", "down");
+                scrollObject.put("startX", startX);
+                scrollObject.put("startY", startY);
+                scrollObject.put("endX", startX);
+                scrollObject.put("endY", endY);
+                driver.executeScript("mobile:scroll", scrollObject);
+            }
+            //     startY = height/2;
+
+            scrollObject.put("direction", "up");
+            scrollObject.put("startX", startX);
+            scrollObject.put("startY", endY);
+            scrollObject.put("endX", startX);
+            scrollObject.put("endY", startY);
+            driver.executeScript("mobile:scroll", scrollObject);
+
+        /*    } catch (Exception e) {
+                // iOS specific scroll using mobile:scroll
+              //  HashMap<String, Object> scrollObject = new HashMap<>();
+                scrollObject.put("direction", "down");
+                scrollObject.put("startX", startX);
+                scrollObject.put("startY", startY);
+                scrollObject.put("endX", startX);
+                scrollObject.put("endY", endY);
+                driver.executeScript("mobile:scroll", scrollObject);
+            }*/
+        }
+
+    }
 
 
+    public void scrollGeneric(double percentageStart, double percentageEnd, IOSDriver driver) {
+        int startX = driver.manage().window().getSize().getWidth() / 2;
+        int startY = (int) (driver.manage().window().getSize().getHeight() * percentageStart);
+        int endX = startX;
+        int endY = (int) (driver.manage().window().getSize().getHeight() * percentageEnd);
+        PointerInput finger1 = new PointerInput (PointerInput.Kind.TOUCH, "finger1");
+        Sequence sequence = new Sequence(finger1, 1)
+                .addAction(finger1.createPointerMove (Duration.ZERO, PointerInput.Origin.viewport(), startX, startY))
+                .addAction (finger1.createPointerDown (PointerInput.MouseButton. LEFT.asArg()))
+                .addAction(finger1.createPointerMove (Duration.ofMillis(100), PointerInput.Origin.viewport(), endX, endY))
+                .addAction(finger1.createPointerUp (PointerInput.MouseButton.LEFT.asArg()));
+        driver.perform(Collections.singletonList(sequence));
+        print("Scrolled down: " + percentageStart + "/" + percentageEnd);
+    }
 
+    public void scrollUntilElementGeneric(By locator, int manyTimes, double percentageStart, double percentageEnd, IOSDriver driver) {
+        int scrollCount = 0;
+        boolean isFoundTheElement = driver.findElements(locator).size() > 0;
+        while (isFoundTheElement == false && scrollCount <= manyTimes) {
+            scrollGeneric(percentageStart, percentageEnd, driver);
+            scrollCount++;
+            isFoundTheElement = driver.findElements(locator).size() > 0;
+        }
+        print("Scrolled down from: " + percentageStart + "/" + percentageEnd + " until element");
+    }
 
+    public void scrollGenericManyTimes(double percentageStart, double percentageEnd, int max, IOSDriver driver){
+        for(int i=0; i<=max; i++){
+            scrollGeneric(percentageStart, percentageEnd, driver);
+        }
+        print("Scrolled down from: " + percentageStart + "/" + percentageEnd + " until element");
+    }
+
+   /* public void swipeLeftByElement(By elementSwipe, int percentage) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
+        RemoteWebElement carousel = (RemoteWebElement) wait.until(presenceOfElementLocated(elementSwipe));
+        getDriver().executeScript("mobile: swipe", Map.of(
+                "elementId", carousel.getId(),
+                "percentage", percentage,
+                "direction", "left"));
+        print("Swiped an element to the left");
+    }
+
+    public void swipeRightByElement(By elementSwipe, int i) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
+        RemoteWebElement carousel = (RemoteWebElement) wait.until(presenceOfElementLocated(elementSwipe));
+        getDriver().executeScript("mobile: swipe", Map.of(
+                "elementId", carousel.getId(),
+                "percentage", i,
+                "direction", "right"));
+        print("Swiped an element to the right");
+    } */
+
+    public void swipeLeftHash() {
+        HashMap scrollObject = new HashMap<>();
+        scrollObject.put("direction", "left");
+        getDriver().executeScript("mobile: swipe", scrollObject);
+        print("Swiped left");
+    }
+
+    public void swipeLeftByElement(By elementSwipe, int percentage) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(60));
+        RemoteWebElement carousel = (RemoteWebElement) wait.until(presenceOfElementLocated(elementSwipe));
+        Map<String, Object> params = new HashMap<>();
+        params.put("elementId", carousel.getId());
+        params.put("percentage", percentage);    params.put("direction", "left");
+        getDriver().executeScript("mobile: swipe", params);
+        System.out.println("Swiped an element to the left");}
 
 }

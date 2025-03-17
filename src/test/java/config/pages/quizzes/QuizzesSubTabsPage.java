@@ -3,6 +3,7 @@ package config.pages.quizzes;
 import config.pages.CommonPage;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
+import org.openqa.selenium.devtools.v85.dom.model.DistributedNodesUpdated;
 
 public class QuizzesSubTabsPage extends CommonPage {
 
@@ -27,6 +28,7 @@ public class QuizzesSubTabsPage extends CommonPage {
 
     private final By polls  = AppiumBy.accessibilityId("Polls");
     private final By TaylorSwift  = AppiumBy.accessibilityId("Taylor Swift");
+   // public void tapOnTaylorSwift() {getDriver().findElement(TaylorSwift).click();}
     private final By Marvel  = AppiumBy.accessibilityId("Marvel");
     private final By Zodiac  = AppiumBy.accessibilityId("Zodiac");
     private final By HarryPotter  = AppiumBy.accessibilityId("Harry Potter");
@@ -35,12 +37,61 @@ public class QuizzesSubTabsPage extends CommonPage {
     private final By Geography  = AppiumBy.accessibilityId("Geography");
     private final By Checklist  = AppiumBy.accessibilityId("Checklist");
 
+    private final By Showdown = AppiumBy.accessibilityId("Showdown");
+
+    private final By trending = AppiumBy.accessibilityId("Trending");
+
+    private final By backToDisney = AppiumBy.accessibilityId("Disney");
+    public void backToDisney() {getDriver().findElement(backToDisney).click();}
+
+    private final By backToFood = AppiumBy.accessibilityId("Food");
+    public void backToFood() {getDriver().findElement(backToFood).click();}
+
+    private final By backToWhoAreYou = AppiumBy.accessibilityId("Who Are You?");
+    public void backTWhoAreYou() {getDriver().findElement(backToWhoAreYou).click();}
+
+    private final By backToLove = AppiumBy.accessibilityId("Love");
+    public void backToLove() {getDriver().findElement(backToLove).click();}
+
+    private final By backToTaylorSwift = AppiumBy.accessibilityId("Taylor Swift");
+    public void backToTaylorSwift() {getDriver().findElement(backToTaylorSwift).click();}
+
+    private final By backToMarvel = AppiumBy.accessibilityId("Marvel");
+    public void backToMarvel() {getDriver().findElement(backToMarvel).click();}
+
+    private final By backToZodiac = AppiumBy.accessibilityId("Zodiac");
+    public void backToZodiac() {getDriver().findElement(backToZodiac).click();}
+
+    private final By backToHarryPotter = AppiumBy.accessibilityId("Harry Potter");
+    public void backToHarryPotter() {getDriver().findElement(backToHarryPotter).click();}
+
+    private final By backToAnime = AppiumBy.accessibilityId("Anime");
+    public void backToAnime() {getDriver().findElement(backToAnime).click();}
+
+    private final By backToKPop = AppiumBy.accessibilityId("Kpop");
+    public void backToKPop() {getDriver().findElement(backToKPop).click();}
+
+    private final By backToGeography = AppiumBy.accessibilityId("Geography");
+    public void backToGeography() {getDriver().findElement(backToGeography).click();}
+
+    private final By backToChecklist = AppiumBy.accessibilityId("Checklist");
+    public void backToChecklist() {getDriver().findElement(backToChecklist).click();}
+
+
+
+
+
+
+
+
 
 
     //Methods
 
     public void tapOnAIQuizzes() {getDriver().findElement(aiquizzes).click();}
     public void tapOnTrending(){getDriver().findElement(trendingSubTab).click();}
+
+    public void tapOnShowdown(){getDriver().findElement(Showdown).click();}
     public void tapOnCanWeGuess(){getDriver().findElement(canWeGuessSubTab).click();}
     public void tapOnDisney(){getDriver().findElement(disneySubTab).click();}
     public void tapOnFood(){getDriver().findElement(foodSubTab).click();}
@@ -60,6 +111,8 @@ public class QuizzesSubTabsPage extends CommonPage {
     public void tapOnKpop() {getDriver().findElement(Kpop).click();}
     public void tapOnGeographys() {getDriver().findElement(Geography).click();}
     public void tapOnChecklist() {getDriver().findElement(Checklist).click();}
+
+
 
 
     //--Tabs Name - Active
