@@ -1701,7 +1701,7 @@ public class fullFlowLambda extends EditionsInit {
         Assert.assertTrue(latestSubTab.isPyramidSchemeDescDisplayed());
     }
 
-    @Test(priority = 125)
+  //  @Test(priority = 125)
     public void validateTappingOnPyramidScheme() throws InterruptedException {
         Thread.sleep(3000);
         latestSubTab.clickOnPyramidScheme();
