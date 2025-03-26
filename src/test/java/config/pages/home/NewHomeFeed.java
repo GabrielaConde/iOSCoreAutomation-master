@@ -21,7 +21,17 @@ public class NewHomeFeed extends HomeLatestPage {
     public void tapOnNewGamesEveryDay() {getDriver().findElement(newGamesEveryDay).click();}
 
 
+   private By makeYours = AppiumBy.accessibilityId("Make Yours");
+    private By makeYoursCell = By.xpath("//XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]");
+ //   private By makeYoursCell = By.xpath("//XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]")
+    public void tapOnMakeYoursCell() {getDriver().findElement(makeYoursCell).click();}
+    public By TopCreatorsLbl = By.xpath("//XCUIElementTypeCollectionView/XCUIElementTypeCell[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]");
 
+    private By creatorItem = By.xpath("//XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[1]");
+
+    private By SeeAllMakeYours = By.xpath("//XCUIElementTypeStaticText[@name=\"See All\"]");
+    public void tapOnSeeAllMakeYours() {getDriver().findElement(SeeAllMakeYours).click();}
+    public void tapOnCreatorItem() {getDriver().findElement(creatorItem).click();}
     private By dailyTrivia = AppiumBy.accessibilityId("Daily Trivia");
     private By playNowTrivia = By.xpath("(//XCUIElementTypeButton[@name=\"Play Now\"])[1]");
 
@@ -92,6 +102,7 @@ public class NewHomeFeed extends HomeLatestPage {
     public void tapOntopic10() {getDriver().findElement(topic10).click();}
 
 
+
     private By topic2 = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]");
     private By topic3 = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]");
     private By topic4 = By.xpath("//XCUIElementTypeApplication[@name=\"BuzzFeed \uD83D\uDC1E\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]");
@@ -159,8 +170,8 @@ public class NewHomeFeed extends HomeLatestPage {
     public void tapOnPlayNowPyramidScheme(){getDriver().findElement(playNowPyramidScheme).click();}
 
 
-    public void scrollUntilTrendingTopics(IOSDriver driver){
-        scroll.scrollUntilElementGeneric(trendingTopicsTitle, 4, 0.8, 0.7, driver);
+    public void scrollUntilMakeYours(IOSDriver driver){
+        scroll.scrollUntilElementGeneric(makeYours, 5, 0.8, 0.7, driver);
     }
 
     public void scrollUntilDailyTriviaCell(IOSDriver driver){

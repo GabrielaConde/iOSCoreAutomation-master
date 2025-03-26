@@ -274,6 +274,27 @@ public class fullFlowLambda extends EditionsInit {
     }
 
     @Test(priority = 6)
+    public void validateCreatorsCarrousel()throws InterruptedException{
+        Thread.sleep(2000);
+        newHomeFeed.scrollUntilMakeYours(getDriver());
+        Thread.sleep(2000);
+        newHomeFeed.tapOnSeeAllMakeYours();
+        Thread.sleep(2000);
+        newHomeFeed.tapBackButton();
+        Thread.sleep(3000);
+//        newHomeFeed.tapOnMakeYoursCell();
+        //   Thread.sleep(2000);
+        //   bpage.tapBackButton();
+        Thread.sleep(2000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(2000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(2000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+    }
+
+    @Test(priority = 7)
     public void validatePyramidSchemeCell() throws InterruptedException {
         //  try {
         Thread.sleep(2000);
@@ -289,7 +310,7 @@ public class fullFlowLambda extends EditionsInit {
         //  } catch (Exception e) {}
     }
 
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void validateShoppingSection() throws InterruptedException {
         //  try {
         Thread.sleep(2000);
@@ -301,7 +322,7 @@ public class fullFlowLambda extends EditionsInit {
         //  }catch (Exception e){}
     }
 
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void validateOnTheNewsSection() throws InterruptedException {
         //  try {
         Thread.sleep(2000);
@@ -313,7 +334,7 @@ public class fullFlowLambda extends EditionsInit {
         //  }catch (Exception e){}
     }
 
-    @Test(enabled = true, priority = 9)
+    @Test(enabled = true, priority = 10)
     public void moveToNewsTab() throws InterruptedException {
         //   try{
         Thread.sleep(3000);
@@ -326,7 +347,7 @@ public class fullFlowLambda extends EditionsInit {
 
     }
 
-    @Test(priority = 10)
+    @Test(priority = 11)
     public void testNewsHeader() throws InterruptedException {
         testName("Verify the News Header");
         Thread.sleep(2000);
@@ -339,7 +360,7 @@ public class fullFlowLambda extends EditionsInit {
         }*/
     }
 
-    @Test(priority = 11)
+    @Test(priority = 12)
     public void tapOnNewssplash() throws InterruptedException {
         Thread.sleep(2000);
         news.tapOnNewsSplash();
@@ -351,7 +372,7 @@ public class fullFlowLambda extends EditionsInit {
     }
 //**********************************************************************
 
-    @Test(priority = 12)
+    @Test(priority = 13)
     public void testShoppingTab() throws InterruptedException {
         //   try{
         Thread.sleep(3000);

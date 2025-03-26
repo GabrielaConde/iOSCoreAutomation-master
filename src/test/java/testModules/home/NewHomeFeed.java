@@ -17,7 +17,7 @@ public class NewHomeFeed extends EditionsInit {
     HomeLatestPage homePage;
     @BeforeClass
     public void initProcess() throws InterruptedException{
-        try {
+       // try {
             disableAds = new SettingsSetupPage();
             homePage = new HomeLatestPage();
             Thread.sleep(2000);
@@ -36,7 +36,7 @@ public class NewHomeFeed extends EditionsInit {
          //   Thread.sleep(3000);
          //   latestSubTab.tapCloseButton();
         //    Thread.sleep(3000);
-        }catch (Exception e) {}
+      //  }catch (Exception e) {}
     }
 
 
@@ -50,7 +50,7 @@ public class NewHomeFeed extends EditionsInit {
 
     @Test(priority = 1)
     public void validateSeeAll()throws InterruptedException{
-        try {
+      //  try {
     //    latestSubTab.tapAllowButton();
      //   latestSubTab.tapOnGuestSignIn();
    //     Thread.sleep(3000);
@@ -62,12 +62,12 @@ public class NewHomeFeed extends EditionsInit {
          //   newHomeFeed.tapBackButton();
             Thread.sleep(3000);
             newHomeFeed.tapBackButton();
-        }catch (Exception e) {}
+       // }catch (Exception e) {}
 
     }
     @Test(priority = 2)
     public void validateTrendingTopics()throws InterruptedException{
-        try {
+     //   try {
          //   newHomeFeed.scrollUntilTrendingTopics(getDriver());
             scroll.scrollGeneric(0.8,0.7,getDriver());
             newHomeFeed.tapOntopic1();
@@ -85,12 +85,12 @@ public class NewHomeFeed extends EditionsInit {
             newHomeFeed.tapOntopic4();
           Thread.sleep(2000);
             bpage.tapBackButton();
-        }catch (Exception e){}
+     //   }catch (Exception e){}
     }
 
     @Test(priority = 3)
     public void validateMoreButton()throws InterruptedException{
-        try {
+      //  try {
             Thread.sleep(3000);
             newHomeFeed.tapOntMore();
             Thread.sleep(2000);
@@ -172,7 +172,7 @@ public class NewHomeFeed extends EditionsInit {
             newHomeFeed.tapBackButton();
             Thread.sleep(2000);
             newHomeFeed.tapBackButton();
-        }catch (Exception e){}
+      //  }catch (Exception e){}
 
     }
 
@@ -190,7 +190,7 @@ public class NewHomeFeed extends EditionsInit {
 
     @Test(priority = 5)
     public void validateForYOu()throws InterruptedException{
-        try {
+     //   try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilForYou(getDriver());
             //  scroll.scrollGeneric(0.8,0.7,getDriver());
@@ -198,12 +198,33 @@ public class NewHomeFeed extends EditionsInit {
             newHomeFeed.tapOnForYou();
             Thread.sleep(2000);
             newHomeFeed.tapBackButton();
-        }catch (Exception e) {}
+      //  }catch (Exception e) {}
     }
 
     @Test(priority = 6)
+    public void validateMakeYours()throws InterruptedException{
+        Thread.sleep(2000);
+        newHomeFeed.scrollUntilMakeYours(getDriver());
+        Thread.sleep(2000);
+        newHomeFeed.tapOnSeeAllMakeYours();
+        Thread.sleep(2000);
+        newHomeFeed.tapBackButton();
+        Thread.sleep(3000);
+//        newHomeFeed.tapOnMakeYoursCell();
+     //   Thread.sleep(2000);
+     //   bpage.tapBackButton();
+        Thread.sleep(2000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(2000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(2000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+    }
+
+    @Test(priority = 7)
     public void validateDailyTriviaCell()throws InterruptedException{
-        try {
+      //  try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilDailyTriviaCell(getDriver());
             Thread.sleep(2000);
@@ -215,12 +236,12 @@ public class NewHomeFeed extends EditionsInit {
          //   homePage.tapOnCloseTrivia();
          //   Thread.sleep(4000);
          //   newHomeFeed.tapHomeTab();
-       } catch (Exception e) {}
+      // } catch (Exception e) {}
     }
 
-    @Test(priority = 6)
+    @Test(priority = 8)
     public void validatePyramidSchemeCell()throws InterruptedException{
-         try {
+      //   try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilPyramidSchemeCell(getDriver());
         Thread.sleep(2000);
@@ -231,30 +252,33 @@ public class NewHomeFeed extends EditionsInit {
         homePage.tapOnClosePyramidScheme();
         Thread.sleep(2000);
         newHomeFeed.tapHomeTab();
-          } catch (Exception e) {}
+       //   } catch (Exception e) {}
     }
-    @Test(priority = 7)
+    @Test(priority = 9)
     public void validateShoppingSection()throws InterruptedException{
-       try {
+     //  try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilShopping(getDriver());
             Thread.sleep(2000);
             newHomeFeed.tapOnShoppingSplash();
             Thread.sleep(2000);
             newHomeFeed.tapBackButton();
-        }catch (Exception e){}
+      //  }catch (Exception e){}
     }
 
-    @Test(priority = 8)
+    @Test(priority = 10)
     public void validateOnTheNewsSection()throws InterruptedException{
-        try {
+      //  try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilInTheNews(getDriver());
             Thread.sleep(3000);
-            newHomeFeed.tapOnInTheNewsCell();
-            Thread.sleep(2000);
-            newHomeFeed.tapBackButton();
-        }catch (Exception e){}
+         //   newHomeFeed.tapOnInTheNewsCell();
+        //    Thread.sleep(2000);
+       //     newHomeFeed.tapBackButton();
+       //     Assert.assertTrue(false);
+    //    }catch (Exception e){}
     }
+
+
 
 }

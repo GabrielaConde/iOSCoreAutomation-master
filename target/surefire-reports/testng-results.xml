@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-05T20:12:59 ART" name="bpageSuite" finished-at="2025-03-05T20:15:11 ART" duration-ms="131656">
+  <suite started-at="2025-03-18T21:13:03 ART" name="bpageSuite" finished-at="2025-03-18T21:15:27 ART" duration-ms="144384">
     <groups>
     </groups>
-    <test started-at="2025-03-05T20:12:59 ART" name="iPhone 15 Pro" finished-at="2025-03-05T20:14:50 ART" duration-ms="110814">
+    <test started-at="2025-03-18T21:13:03 ART" name="iPhone 15 Pro" finished-at="2025-03-18T21:14:54 ART" duration-ms="111305">
       <class name="testModules.bpage.NatBpageTests1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:12:59 ART" name="setUp" finished-at="2025-03-05T20:13:29 ART" duration-ms="30479" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:13:03 ART" name="setUp" finished-at="2025-03-18T21:13:34 ART" duration-ms="31909" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:13:29 ART" name="initializePages" finished-at="2025-03-05T20:13:33 ART" duration-ms="3342" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:13:34 ART" name="initializePages" finished-at="2025-03-18T21:13:38 ART" duration-ms="3584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method is-config="true" signature="initProcess()[pri:0, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:13:33 ART" name="initProcess" finished-at="2025-03-05T20:13:47 ART" duration-ms="14080" status="PASS">
+        <test-method is-config="true" signature="initProcess()[pri:0, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:13:38 ART" name="initProcess" finished-at="2025-03-18T21:13:52 ART" duration-ms="13679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initProcess -->
-        <test-method signature="testSearchNativeBpage(java.lang.String)[pri:1, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:13:47 ART" name="testSearchNativeBpage" data-provider="nativeBpage" finished-at="2025-03-05T20:14:13 ART" duration-ms="26223" status="PASS">
+        <test-method signature="testSearchNativeBpage(java.lang.String)[pri:1, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:13:52 ART" name="testSearchNativeBpage" data-provider="nativeBpage" finished-at="2025-03-18T21:14:18 ART" duration-ms="26080" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,43 +42,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchNativeBpage -->
-        <test-method signature="verifyDataCategoryArePresent()[pri:2, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:13 ART" name="verifyDataCategoryArePresent" finished-at="2025-03-05T20:14:13 ART" duration-ms="0" status="PASS">
+        <test-method signature="verifyDataCategoryArePresent()[pri:2, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:18 ART" name="verifyDataCategoryArePresent" finished-at="2025-03-18T21:14:18 ART" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataCategoryArePresent -->
-        <test-method signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:13 ART" name="verifyTitleIsPresent" finished-at="2025-03-05T20:14:14 ART" duration-ms="888" status="PASS">
+        <test-method signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:18 ART" name="verifyTitleIsPresent" finished-at="2025-03-18T21:14:19 ART" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleIsPresent -->
-        <test-method signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:14 ART" name="verifySubTitleIsPresent" finished-at="2025-03-05T20:14:15 ART" duration-ms="832" status="PASS">
+        <test-method signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:19 ART" name="verifySubTitleIsPresent" finished-at="2025-03-18T21:14:20 ART" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubTitleIsPresent -->
-        <test-method signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:15 ART" name="verifyAuthorInfoIsPresentOnBpage" finished-at="2025-03-05T20:14:17 ART" duration-ms="1754" status="PASS">
+        <test-method signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:20 ART" name="verifyAuthorInfoIsPresentOnBpage" finished-at="2025-03-18T21:14:21 ART" duration-ms="1769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAuthorInfoIsPresentOnBpage -->
-        <test-method signature="verifyImagePresentOnBpage()[pri:6, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:17 ART" name="verifyImagePresentOnBpage" finished-at="2025-03-05T20:14:18 ART" duration-ms="957" status="PASS">
+        <test-method signature="verifyImagePresentOnBpage()[pri:6, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:21 ART" name="verifyImagePresentOnBpage" finished-at="2025-03-18T21:14:22 ART" duration-ms="854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyImagePresentOnBpage -->
-        <test-method signature="tapImage()[pri:7, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:18 ART" name="tapImage" finished-at="2025-03-05T20:14:19 ART" duration-ms="1352" status="PASS">
+        <test-method signature="tapImage()[pri:7, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:22 ART" name="tapImage" finished-at="2025-03-18T21:14:24 ART" duration-ms="1265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapImage -->
-        <test-method signature="verifyShareButtonIsPresentOnMV()[pri:8, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:19 ART" name="verifyShareButtonIsPresentOnMV" finished-at="2025-03-05T20:14:20 ART" duration-ms="827" status="PASS">
+        <test-method signature="verifyShareButtonIsPresentOnMV()[pri:8, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:24 ART" name="verifyShareButtonIsPresentOnMV" finished-at="2025-03-18T21:14:24 ART" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShareButtonIsPresentOnMV -->
-        <test-method signature="tapShareButtonOnMV()[pri:9, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:20 ART" name="tapShareButtonOnMV" finished-at="2025-03-05T20:14:22 ART" duration-ms="1924" status="PASS">
+        <test-method signature="tapShareButtonOnMV()[pri:9, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:24 ART" name="tapShareButtonOnMV" finished-at="2025-03-18T21:14:26 ART" duration-ms="1762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapShareButtonOnMV -->
-        <test-method signature="verifyDismissMV()[pri:10, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:22 ART" name="verifyDismissMV" finished-at="2025-03-05T20:14:32 ART" duration-ms="10342" status="PASS">
+        <test-method signature="verifyDismissMV()[pri:10, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:26 ART" name="verifyDismissMV" finished-at="2025-03-18T21:14:36 ART" duration-ms="10243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDismissMV -->
-        <test-method signature="testSearchFallbackBpage(java.lang.String)[pri:16, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:32 ART" name="testSearchFallbackBpage" data-provider="amazonButtonNativeBpage" finished-at="2025-03-05T20:14:44 ART" duration-ms="11579" status="PASS">
+        <test-method signature="testSearchFallbackBpage(java.lang.String)[pri:16, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:36 ART" name="testSearchFallbackBpage" data-provider="amazonButtonNativeBpage" finished-at="2025-03-18T21:14:48 ART" duration-ms="11375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,27 +89,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchFallbackBpage -->
-        <test-method signature="testBuyFromAmazonButtonIsPresent()[pri:17, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:44 ART" name="testBuyFromAmazonButtonIsPresent" finished-at="2025-03-05T20:14:45 ART" duration-ms="1564" status="PASS">
+        <test-method signature="testBuyFromAmazonButtonIsPresent()[pri:17, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:48 ART" name="testBuyFromAmazonButtonIsPresent" finished-at="2025-03-18T21:14:49 ART" duration-ms="1465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyFromAmazonButtonIsPresent -->
-        <test-method signature="testBuyFromAmazonButton()[pri:18, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:45 ART" name="testBuyFromAmazonButton" finished-at="2025-03-05T20:14:50 ART" duration-ms="4458" status="PASS">
+        <test-method signature="testBuyFromAmazonButton()[pri:18, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:49 ART" name="testBuyFromAmazonButton" finished-at="2025-03-18T21:14:54 ART" duration-ms="4444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyFromAmazonButton -->
-        <test-method is-config="true" signature="tearSuite()[pri:0, instance:testModules.bpage.NatBpageTests1@429bffaa]" started-at="2025-03-05T20:14:50 ART" name="tearSuite" finished-at="2025-03-05T20:14:50 ART" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="tearSuite()[pri:0, instance:testModules.bpage.NatBpageTests1@4d5b6aac]" started-at="2025-03-18T21:14:54 ART" name="tearSuite" finished-at="2025-03-18T21:14:54 ART" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearSuite -->
       </class> <!-- testModules.bpage.NatBpageTests1 -->
     </test> <!-- iPhone 15 Pro -->
-    <test started-at="2025-03-05T20:12:59 ART" name="iPhone 16" finished-at="2025-03-05T20:15:11 ART" duration-ms="131656">
+    <test started-at="2025-03-18T21:13:03 ART" name="iPhone 16" finished-at="2025-03-18T21:15:27 ART" duration-ms="144384">
       <class name="testModules.bpage.NatBpageTests1">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:12:57 ART" name="setUpTest" finished-at="2025-03-05T20:12:59 ART" duration-ms="2079" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:13:01 ART" name="setUpTest" finished-at="2025-03-18T21:13:03 ART" duration-ms="2007" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:12:59 ART" name="setUp" finished-at="2025-03-05T20:13:29 ART" duration-ms="29843" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:13:03 ART" name="setUp" finished-at="2025-03-18T21:13:45 ART" duration-ms="42515" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,15 +125,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:29 ART" name="initializePages" finished-at="2025-03-05T20:13:32 ART" duration-ms="3436" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:13:45 ART" name="initializePages" finished-at="2025-03-18T21:13:50 ART" duration-ms="4529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method is-config="true" signature="initProcess()[pri:0, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:32 ART" name="initProcess" finished-at="2025-03-05T20:13:47 ART" duration-ms="14807" status="PASS">
+        <test-method is-config="true" signature="initProcess()[pri:0, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:13:50 ART" name="initProcess" finished-at="2025-03-18T21:14:03 ART" duration-ms="13720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initProcess -->
-        <test-method signature="testSearchNativeBpage(java.lang.String)[pri:1, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:47 ART" name="testSearchNativeBpage" data-provider="nativeBpage" finished-at="2025-03-05T20:13:54 ART" duration-ms="6585" status="PASS">
+        <test-method signature="testSearchNativeBpage(java.lang.String)[pri:1, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:03 ART" name="testSearchNativeBpage" data-provider="nativeBpage" finished-at="2025-03-18T21:14:10 ART" duration-ms="6551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,43 +144,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchNativeBpage -->
-        <test-method signature="verifyDataCategoryArePresent()[pri:2, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:54 ART" name="verifyDataCategoryArePresent" finished-at="2025-03-05T20:13:54 ART" duration-ms="0" status="PASS">
+        <test-method signature="verifyDataCategoryArePresent()[pri:2, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:10 ART" name="verifyDataCategoryArePresent" finished-at="2025-03-18T21:14:10 ART" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataCategoryArePresent -->
-        <test-method signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:54 ART" name="verifyTitleIsPresent" finished-at="2025-03-05T20:13:54 ART" duration-ms="409" status="PASS">
+        <test-method signature="verifyTitleIsPresent()[pri:3, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:10 ART" name="verifyTitleIsPresent" finished-at="2025-03-18T21:14:10 ART" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleIsPresent -->
-        <test-method signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:54 ART" name="verifySubTitleIsPresent" finished-at="2025-03-05T20:13:55 ART" duration-ms="440" status="PASS">
+        <test-method signature="verifySubTitleIsPresent()[pri:4, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:10 ART" name="verifySubTitleIsPresent" finished-at="2025-03-18T21:14:11 ART" duration-ms="461" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySubTitleIsPresent -->
-        <test-method signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:55 ART" name="verifyAuthorInfoIsPresentOnBpage" finished-at="2025-03-05T20:13:55 ART" duration-ms="437" status="PASS">
+        <test-method signature="verifyAuthorInfoIsPresentOnBpage()[pri:5, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:11 ART" name="verifyAuthorInfoIsPresentOnBpage" finished-at="2025-03-18T21:14:11 ART" duration-ms="540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAuthorInfoIsPresentOnBpage -->
-        <test-method signature="verifyImagePresentOnBpage()[pri:6, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:55 ART" name="verifyImagePresentOnBpage" finished-at="2025-03-05T20:13:55 ART" duration-ms="517" status="PASS">
+        <test-method signature="verifyImagePresentOnBpage()[pri:6, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:11 ART" name="verifyImagePresentOnBpage" finished-at="2025-03-18T21:14:12 ART" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyImagePresentOnBpage -->
-        <test-method signature="tapImage()[pri:7, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:55 ART" name="tapImage" finished-at="2025-03-05T20:13:56 ART" duration-ms="429" status="PASS">
+        <test-method signature="tapImage()[pri:7, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:12 ART" name="tapImage" finished-at="2025-03-18T21:14:12 ART" duration-ms="454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapImage -->
-        <test-method signature="verifyShareButtonIsPresentOnMV()[pri:8, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:56 ART" name="verifyShareButtonIsPresentOnMV" finished-at="2025-03-05T20:13:56 ART" duration-ms="481" status="PASS">
+        <test-method signature="verifyShareButtonIsPresentOnMV()[pri:8, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:12 ART" name="verifyShareButtonIsPresentOnMV" finished-at="2025-03-18T21:14:13 ART" duration-ms="504" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShareButtonIsPresentOnMV -->
-        <test-method signature="tapShareButtonOnMV()[pri:9, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:56 ART" name="tapShareButtonOnMV" finished-at="2025-03-05T20:13:57 ART" duration-ms="431" status="PASS">
+        <test-method signature="tapShareButtonOnMV()[pri:9, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:13 ART" name="tapShareButtonOnMV" finished-at="2025-03-18T21:14:13 ART" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tapShareButtonOnMV -->
-        <test-method signature="verifyDismissMV()[pri:10, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:57 ART" name="verifyDismissMV" finished-at="2025-03-05T20:13:57 ART" duration-ms="489" status="PASS">
+        <test-method signature="verifyDismissMV()[pri:10, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:13 ART" name="verifyDismissMV" finished-at="2025-03-18T21:14:14 ART" duration-ms="467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDismissMV -->
-        <test-method signature="testSearchFallbackBpage(java.lang.String)[pri:16, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:13:57 ART" name="testSearchFallbackBpage" data-provider="amazonButtonNativeBpage" finished-at="2025-03-05T20:14:05 ART" duration-ms="7577" status="PASS">
+        <test-method signature="testSearchFallbackBpage(java.lang.String)[pri:16, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:14 ART" name="testSearchFallbackBpage" data-provider="amazonButtonNativeBpage" finished-at="2025-03-18T21:14:21 ART" duration-ms="7532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,22 +191,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchFallbackBpage -->
-        <test-method signature="testBuyFromAmazonButtonIsPresent()[pri:17, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:14:05 ART" name="testBuyFromAmazonButtonIsPresent" finished-at="2025-03-05T20:15:06 ART" duration-ms="60928" status="PASS">
+        <test-method signature="testBuyFromAmazonButtonIsPresent()[pri:17, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:14:21 ART" name="testBuyFromAmazonButtonIsPresent" finished-at="2025-03-18T21:15:22 ART" duration-ms="60882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyFromAmazonButtonIsPresent -->
-        <test-method signature="testBuyFromAmazonButton()[pri:18, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:15:06 ART" name="testBuyFromAmazonButton" finished-at="2025-03-05T20:15:10 ART" duration-ms="4606" status="PASS">
+        <test-method signature="testBuyFromAmazonButton()[pri:18, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:15:22 ART" name="testBuyFromAmazonButton" finished-at="2025-03-18T21:15:27 ART" duration-ms="4508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBuyFromAmazonButton -->
-        <test-method is-config="true" signature="tearSuite()[pri:0, instance:testModules.bpage.NatBpageTests1@48f278eb]" started-at="2025-03-05T20:15:10 ART" name="tearSuite" finished-at="2025-03-05T20:15:11 ART" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearSuite()[pri:0, instance:testModules.bpage.NatBpageTests1@3f6b0be5]" started-at="2025-03-18T21:15:27 ART" name="tearSuite" finished-at="2025-03-18T21:15:27 ART" duration-ms="163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearSuite -->
       </class> <!-- testModules.bpage.NatBpageTests1 -->
     </test> <!-- iPhone 16 -->
   </suite> <!-- bpageSuite -->
-  <suite started-at="2025-03-05T20:15:11 ART" name="AllSuites" finished-at="2025-03-05T20:15:11 ART" duration-ms="0">
+  <suite started-at="2025-03-18T21:15:27 ART" name="AllSuites" finished-at="2025-03-18T21:15:27 ART" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- AllSuites -->

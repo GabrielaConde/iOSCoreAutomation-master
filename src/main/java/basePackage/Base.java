@@ -65,14 +65,16 @@ public class Base {
             String key = "mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE";
             String hub2 = "https://" + userName + ":" + key + "@mobile-hub.lambdatest.com/wd/hub";
             String hub = "https://gabriela.conde-moreau:mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE@mobile-hub.lambdatest.com/wd/hub";
-            options.setApp("lt://APP10160561931740494622061879");
+            options.setApp("lt://APP1016024941742339611853371");
            // options.setApp(appId);
-            options.setCapability("build", "Test full flow");
+            options.setCapability("build", "Test Full Flow");
             options.setDeviceName(device);
             options.setPlatformVersion(platformVersion);
             options.setCapability("appiumVersion", "2.2.1");
             options.setCapability("region", "US");
             options.setCapability("network", "true");
+            options.setCapability("appProfiling", "true");
+            options.setCapability("devicelog", "true");
             options.setLocale("US");
             options.setLanguage("US");
             options.setCapability("fullReset", false);
