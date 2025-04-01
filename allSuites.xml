@@ -5,4 +5,4 @@
     <suite-files>
                <suite-file path="suitesFolder/homeSuiteLocal.xml"/>
      </suite-files>
-     </suite>
+</suite>
