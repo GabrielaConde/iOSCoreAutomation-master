@@ -419,7 +419,7 @@ public class ScrollsPage extends Base {
                 .addAction(finger1.createPointerMove (Duration.ofMillis(100), PointerInput.Origin.viewport(), endX, endY))
                 .addAction(finger1.createPointerUp (PointerInput.MouseButton.LEFT.asArg()));
         driver.perform(Collections.singletonList(sequence));
-        print("Scrolled down: " + percentageStart + "/" + percentageEnd);
+     //   print("Scrolled down: " + percentageStart + "/" + percentageEnd);
     }
 
     public void scrollUntilElementGeneric(By locator, int manyTimes, double percentageStart, double percentageEnd, IOSDriver driver) {

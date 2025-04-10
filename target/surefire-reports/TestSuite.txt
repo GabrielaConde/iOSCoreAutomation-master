@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 147.055 s - in TestSuite
+Tests run: 510, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2,518.549 s <<< FAILURE! - in TestSuite
+validateTrendingTopicsCanada(testModules.home.fullFlowLambda)  Time elapsed: 5.494 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7.4', java.version: '11.0.21'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [9f41f7d1-aabf-476e-8059-508a6b0811da, findElement {using=xpath, value=//XCUIElementTypeApplication[@name="BuzzFeed 🐞"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-000E156E34F1A01E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11066, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 9f41f7d1-aabf-476e-8059-508a6b0811da
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+
+validateTrendingTopicsCanada(testModules.home.fullFlowLambda)  Time elapsed: 8.254 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7.4', java.version: '11.0.21'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [46cbc031-2c65-43f5-9635-2bbc755f2d89, findElement {using=xpath, value=//XCUIElementTypeApplication[@name="BuzzFeed 🐞"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008130-000248123AC1001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11014, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 46cbc031-2c65-43f5-9635-2bbc755f2d89
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+

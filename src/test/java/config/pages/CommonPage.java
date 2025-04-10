@@ -395,11 +395,14 @@ public class CommonPage extends Base {
     public void tapTrendingBack()  {getDriver().findElement(trendingBack).click();}
 
     public void tapAllowButton() {
-        try {
-            getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-            getDriver().findElement(allowButton).click();
-            print("Tapped Allow Button");
-        }catch (Exception e){}
+        if (env.equals("Local")) {
+            try {
+                getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+                getDriver().findElement(allowButton).click();
+                print("Tapped Allow Button");
+            } catch (Exception e) {
+            }
+        }
     }
 
     public void shoppingJapan() {getDriver().findElement(shoppingJapan).click();}
@@ -439,9 +442,7 @@ public class CommonPage extends Base {
 
     public void tapBackButtonFromSearch() {
         try {
-         //   WaitersPage.waitForElement(backButtonFromSearch);
             getDriver().findElement(backButtonFromSearch).click();
-            print("Tapped Back button");
         }catch (Exception e){}
     }
 
@@ -449,7 +450,6 @@ public class CommonPage extends Base {
      //   WaitersPage.waitForElement(backButton);
         try {
             getDriver().findElement(backButton).click();
-            print("Tapped Back button");
         }catch (Exception e) {}
 
     }
@@ -528,7 +528,8 @@ public class CommonPage extends Base {
         Thread.sleep(2000);
          enterTextOnSafari("buzzfeed://");
         Thread.sleep(2000);
-         tapOnOpenAlert();
+        if (env.equals("Local")){
+         tapOnOpenAlert();}
     }
 
     public void backToSettings(){
@@ -827,7 +828,8 @@ public class CommonPage extends Base {
         tapSafariHeader();
         Thread.sleep(2000);
         enterTextOnSafari("buzzfeed://");
-        tapOnOpenAlert();
+        if (env.equals("Local")){
+        tapOnOpenAlert();}
     }
 
     //--Waiters
@@ -847,7 +849,9 @@ public class CommonPage extends Base {
 
     public void tapGuestSignInAndNotif()throws InterruptedException{
         Thread.sleep(4000);
-        tapAllowButton();
+        if (env.equals("Local")) {
+            tapAllowButton();
+        }
         Thread.sleep(2000);
         tapOnGuestSignIn();
         Thread.sleep(2000);

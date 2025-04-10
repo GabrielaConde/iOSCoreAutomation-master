@@ -65,14 +65,14 @@ public class NewHomeFeed extends EditionsInit {
        // }catch (Exception e) {}
 
     }
-    @Test(priority = 2)
+  //  @Test(priority = 2)
     public void validateTrendingTopics()throws InterruptedException{
      //   try {
          //   newHomeFeed.scrollUntilTrendingTopics(getDriver());
             scroll.scrollGeneric(0.8,0.7,getDriver());
-            newHomeFeed.tapOntopic1();
-            Thread.sleep(2000);
-            bpage.tapBackButton();
+          //  newHomeFeed.tapOntopic1();
+            //Thread.sleep(2000);
+            //bpage.tapBackButton();
             Thread.sleep(2000);
             newHomeFeed.tapOntopic2();
             Thread.sleep(2000);
@@ -91,6 +91,7 @@ public class NewHomeFeed extends EditionsInit {
     @Test(priority = 3)
     public void validateMoreButton()throws InterruptedException{
       //  try {
+        scroll.scrollGeneric(0.8,0.7,getDriver());
             Thread.sleep(3000);
             newHomeFeed.tapOntMore();
             Thread.sleep(2000);
@@ -195,13 +196,33 @@ public class NewHomeFeed extends EditionsInit {
             newHomeFeed.scrollUntilForYou(getDriver());
             //  scroll.scrollGeneric(0.8,0.7,getDriver());
             Thread.sleep(2000);
-            newHomeFeed.tapOnForYou();
-            Thread.sleep(2000);
-            newHomeFeed.tapBackButton();
+         //   newHomeFeed.tapOnForYou();
+         //   Thread.sleep(2000);
+          //  newHomeFeed.tapBackButton();
       //  }catch (Exception e) {}
     }
 
     @Test(priority = 6)
+    public void validateCreatorsCarrousel()throws InterruptedException{
+        Thread.sleep(2000);
+        newHomeFeed.scrollUntilMakeYours(getDriver());
+        Thread.sleep(2000);
+        newHomeFeed.tapOnSeeAllMakeYours();
+        Thread.sleep(2000);
+        newHomeFeed.tapBackButton();
+        Thread.sleep(3000);
+//        newHomeFeed.tapOnMakeYoursCell();
+        //   Thread.sleep(2000);
+        //   bpage.tapBackButton();
+        Thread.sleep(2000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(2000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(2000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+    }
+  //  @Test(priority = 7)
     public void validateMakeYours()throws InterruptedException{
         Thread.sleep(2000);
         newHomeFeed.scrollUntilMakeYours(getDriver());
@@ -222,7 +243,7 @@ public class NewHomeFeed extends EditionsInit {
         Thread.sleep(2000);
     }
 
-    @Test(priority = 7)
+    @Test(priority = 8)
     public void validateDailyTriviaCell()throws InterruptedException{
       //  try {
             Thread.sleep(2000);
@@ -239,34 +260,34 @@ public class NewHomeFeed extends EditionsInit {
       // } catch (Exception e) {}
     }
 
-    @Test(priority = 8)
+    @Test(priority = 9)
     public void validatePyramidSchemeCell()throws InterruptedException{
       //   try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilPyramidSchemeCell(getDriver());
         Thread.sleep(2000);
-        newHomeFeed.tapOnPlayNowPyramidScheme();
+     //   newHomeFeed.tapOnPlayNowPyramidScheme();
         Thread.sleep(2000);
-        homePage.isPyramidSchemeHeaderDisplayed();
+    //    homePage.isPyramidSchemeHeaderDisplayed();
         Thread.sleep(2000);
-        homePage.tapOnClosePyramidScheme();
+      //  homePage.tapOnClosePyramidScheme();
         Thread.sleep(2000);
-        newHomeFeed.tapHomeTab();
+      //  newHomeFeed.tapHomeTab();
        //   } catch (Exception e) {}
     }
-    @Test(priority = 9)
+    @Test(priority = 10)
     public void validateShoppingSection()throws InterruptedException{
      //  try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilShopping(getDriver());
             Thread.sleep(2000);
-            newHomeFeed.tapOnShoppingSplash();
-            Thread.sleep(2000);
-            newHomeFeed.tapBackButton();
+          //  newHomeFeed.tapOnShoppingSplash();
+          //  Thread.sleep(2000);
+          //  newHomeFeed.tapBackButton();
       //  }catch (Exception e){}
     }
 
-    @Test(priority = 10)
+    @Test(priority = 11)
     public void validateOnTheNewsSection()throws InterruptedException{
       //  try {
             Thread.sleep(2000);

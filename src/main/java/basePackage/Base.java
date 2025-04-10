@@ -36,7 +36,7 @@ public class Base {
         String appId;
         String resultOfExec = null;
 
-        if (env == "Local") {
+        if (env.equals("Local")) {
             //LOCAL
         options.setDeviceName(device);
         options.setPlatformVersion(platformVersion);
@@ -65,18 +65,21 @@ public class Base {
             String key = "mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE";
             String hub2 = "https://" + userName + ":" + key + "@mobile-hub.lambdatest.com/wd/hub";
             String hub = "https://gabriela.conde-moreau:mNywYYEcYCPLNfAQOlAZ9oqkGWoRU4D4sbltLXvbcAQqBFZHOE@mobile-hub.lambdatest.com/wd/hub";
-            options.setApp("lt://APP1016024941742339611853371");
+            options.setApp("lt://APP10160571041744214883721269");
            // options.setApp(appId);
             options.setCapability("build", "Test Full Flow");
             options.setDeviceName(device);
             options.setPlatformVersion(platformVersion);
             options.setCapability("appiumVersion", "2.2.1");
+            options.setCapability("locale", "US");
             options.setCapability("region", "US");
             options.setCapability("network", "true");
             options.setCapability("appProfiling", "true");
             options.setCapability("devicelog", "true");
             options.setLocale("US");
             options.setLanguage("US");
+            options.setCapability("autoGrantPermissions", true);
+            options. setCapability("autoAcceptAlerts", true);
             options.setCapability("fullReset", false);
             options.setCapability("noReset", true);
             options.setCapability("isRealMobile", true);

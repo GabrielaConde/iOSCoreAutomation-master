@@ -1,0 +1,1457 @@
+<html>
+<head>
+<title>TestNG:  Phone 15 Pro</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Phone 15 Pro</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>254/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 01 22:05:39 ART 2025</td>
+</tr>
+<tr><td>Total time:</td><td>2515 seconds (2515623 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateTrendingTopicsCanada()'><b>validateTrendingTopicsCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;11.0.21&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [46cbc031-2c65-43f5-9635-2bbc755f2d89, findElement {using=xpath, value=//XCUIElementTypeApplication[@name=&quot;BuzzFeed 🐞&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008130-000248123AC1001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11014, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 46cbc031-2c65-43f5-9635-2bbc755f2d89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.home.NewHomeFeed.tapOntopic2(NewHomeFeed.java:89)
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1549734003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549734003'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;11.0.21&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [46cbc031-2c65-43f5-9635-2bbc755f2d89, findElement {using=xpath, value=//XCUIElementTypeApplication[@name=&quot;BuzzFeed 🐞&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008130-000248123AC1001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11014, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 46cbc031-2c65-43f5-9635-2bbc755f2d89
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at config.pages.home.NewHomeFeed.tapOntopic2(NewHomeFeed.java:89)
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnChecklist()'><b>tapOnChecklist</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>19</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelHomeSubTabOnIndia()'><b>testTravelHomeSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGossipSubTabONUK()'><b>testGossipSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelHomeSubTab()'><b>testTravelHomeSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testSexToysCategory()'><b>testSexToysCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateHomeElectronicsMenu()'><b>validateHomeElectronicsMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>16</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFitnessAccesoriesMenu()'><b>validateFitnessAccesoriesMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnSHowdoenOnIndia()'><b>testTapOnSHowdoenOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateKidsMenu()'><b>validateKidsMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testEntertainmentSubTabOnIndia()'><b>testEntertainmentSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBackyardSubMenu()'><b>validateBackyardSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateUnderwareSubMenu()'><b>validateUnderwareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnHarryPotterOnCanada()'><b>testTapOnHarryPotterOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testBooksSubTab()'><b>testBooksSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testEntertainmentSubTab()'><b>testEntertainmentSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnGeography()'><b>testTapOnGeography</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGamesSubTabONUK()'><b>testGamesSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnMarvel()'><b>tapOnMarvel</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>14</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateKitchenSubMenu()'><b>validateKitchenSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnAnimeOnCanada()'><b>testTapOnAnimeOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatePyramidSchemeCell()'><b>validatePyramidSchemeCell</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnDisney()'><b>tapOnDisney</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>15</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBedroomSubMenu()'><b>validateBedroomSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSwimsuitsSubMenu()'><b>validateSwimsuitsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnShowdownCategoryOnUK()'><b>testTapOnShowdownCategoryOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOnTheNewsSection()'><b>validateOnTheNewsSection</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>21</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testStyleSubTab()'><b>testStyleSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>12</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnChecklistUK()'><b>testTapOnChecklistUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTrendingSubTabOnIndia()'><b>testTrendingSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateKitchenRoomSubMenu()'><b>validateKitchenRoomSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testNiftySubTab()'><b>testNiftySubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTrendingCategory()'><b>testTapOnTrendingCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingNewsTabOnIndia()'><b>testGoingNewsTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatePersonalToolsSubMenu()'><b>validatePersonalToolsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnMarvel()'><b>testTapOnMarvel</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnHarryPotter()'><b>testTapOnHarryPotter</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFormalWareSubMenu()'><b>validateFormalWareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnNewssplash()'><b>tapOnNewssplash</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopSmallMenu()'><b>validateShopSmallMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateColdWeatherSubMenu()'><b>validateColdWeatherSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateHeelsSubMenu()'><b>validateHeelsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFunnyTweetsSubTabONUK()'><b>testFunnyTweetsSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testHomeCategory()'><b>testHomeCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTrendingCategoryOnUK()'><b>testTapOnTrendingCategoryOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testJapanEditionIsPresent()'><b>testJapanEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopAllFashionSubMenu()'><b>validateShopAllFashionSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateAmazonMenu()'><b>validateAmazonMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testOnMoreOnCanada()'><b>testOnMoreOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnLove()'><b>tapOnLove</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>15</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnZodiacUK()'><b>testTapOnZodiacUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTaylorSwift()'><b>testTapOnTaylorSwift</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnAnime()'><b>tapOnAnime</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnGeography()'><b>tapOnGeography</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>14</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapMoreFunCarrouselItem()'><b>tapMoreFunCarrouselItem</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBodySubMenu()'><b>validateBodySubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFoodSubTab()'><b>testFoodSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTriviaCategoryOnUK()'><b>testTapOnTriviaCategoryOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateAcneSolutionsSubMenu()'><b>validateAcneSolutionsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGossipSubTab()'><b>testGossipSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFaceSubMenu()'><b>validateFaceSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestsSubTabONUK()'><b>testLatestsSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateDailyTriviaCell()'><b>validateDailyTriviaCell</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>27</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatamEditionIsPresent()'><b>testLatamEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelHomeSubTabONUK()'><b>testTravelHomeSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnAnimeUK()'><b>testTapOnAnimeUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSeeAllCanada()'><b>validateSeeAllCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTrendingCategoryOnIndia()'><b>testTapOnTrendingCategoryOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testMusicSubTabONUK()'><b>testMusicSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTendenciasSubTab()'><b>testTendenciasSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnMOreOnUK()'><b>testTapOnMOreOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnZodiacOnCanada()'><b>testTapOnZodiacOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateMoreButtonCanada()'><b>validateMoreButtonCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>121</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFootwareSubMenu()'><b>validateFootwareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnZodiac()'><b>testTapOnZodiac</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateWhealOfFortune()'><b>validateWhealOfFortune</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnTaylorSwift()'><b>tapOnTaylorSwift</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>14</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingToQuizzesTab()'><b>testGoingToQuizzesTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testShoppingHeaderIsPresent()'><b>testShoppingHeaderIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testBeautyCategory()'><b>testBeautyCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOutdoorSubMenu()'><b>validateOutdoorSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGossipSubTabOnIndia()'><b>testGossipSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFunnyTweetsSubTabOnIndia()'><b>testFunnyTweetsSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testNiftySubTabONUK()'><b>testNiftySubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testUKEditionIsPresent()'><b>testUKEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateCleaningSubMenu()'><b>validateCleaningSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnWhoAreYou()'><b>tapOnWhoAreYou</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>16</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.arePyramidSchemeElementsDisplayed()'><b>arePyramidSchemeElementsDisplayed</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateStoresMenu()'><b>validateStoresMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnFood()'><b>tapOnFood</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>17</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopAllStoresMenu()'><b>validateShopAllStoresMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestsSubTab()'><b>testLatestsSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testAnimalsSubTabOnIndia()'><b>testAnimalsSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testEntertainmentSubTabONUK()'><b>testEntertainmentSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateTechAccessoriesMenu()'><b>validateTechAccessoriesMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShoppingSection()'><b>validateShoppingSection</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testCanWeGuess()'><b>testCanWeGuess</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testNewsHeader()'><b>testNewsHeader</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateWayfairMenu()'><b>validateWayfairMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testStyleSubTabONUK()'><b>testStyleSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>12</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFunnyTweetsSubTab()'><b>testFunnyTweetsSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatePetsMenu()'><b>validatePetsMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateWalmartMenu()'><b>validateWalmartMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateLivingRoomSubMenu()'><b>validateLivingRoomSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatePantsSubMenu()'><b>validatePantsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateTechMenu()'><b>validateTechMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testShoppingTabJapan()'><b>testShoppingTabJapan</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testParentsSubTab()'><b>testParentsSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFeatureStoriesDisplays()'><b>validateFeatureStoriesDisplays</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnCanWeGuessCategory()'><b>testTapOnCanWeGuessCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSMakeUpSubMenu()'><b>validateSMakeUpSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapGamesTabOnUK()'><b>tapGamesTabOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSubscriptionsMenu()'><b>validateSubscriptionsMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testBooksSubTabONUK()'><b>testBooksSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRandomSubTab()'><b>testRandomSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnPollsUK()'><b>testTapOnPollsUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnKPopOnCanada()'><b>testTapOnKPopOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testCanadaEditionIsPresent()'><b>testCanadaEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testKidsCategory()'><b>testKidsCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testMore()'><b>testMore</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTaylorSwiftOnCanada()'><b>testTapOnTaylorSwiftOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBeddingAndMatressSubMenu()'><b>validateBeddingAndMatressSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOutDoorSubMenu()'><b>validateOutDoorSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateHomeMenu()'><b>validateHomeMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateNordstromMenu()'><b>validateNordstromMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingNewsTabOnCanada()'><b>testGoingNewsTabOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testAnimalsSubTabONUK()'><b>testAnimalsSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnHarryPotterUK()'><b>testTapOnHarryPotterUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateAppliancesSubMenu()'><b>validateAppliancesSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRewindSubTab()'><b>testRewindSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFoodSubTabOnIndia()'><b>testFoodSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnTrending()'><b>tapOnTrending</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRewindSubTabONUK()'><b>testRewindSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatePersonalCareMenu()'><b>validatePersonalCareMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.moveToNewsTab()'><b>moveToNewsTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapGamesTabOnCanada()'><b>tapGamesTabOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGayStuffpSubTabOnIndia()'><b>testGayStuffpSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFashionAccesoriesSubMenu()'><b>validateFashionAccesoriesSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelSubTabOnIndia()'><b>testTravelSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTrendingCategoryOnCanada()'><b>testTapOnTrendingCategoryOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSkinCareSubMenu()'><b>validateSkinCareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnZodiac()'><b>tapOnZodiac</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>14</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnKPop()'><b>testTapOnKPop</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testAnimalsSubTab()'><b>testAnimalsSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingNewsTab()'><b>testGoingNewsTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRandomSubTabONUK()'><b>testRandomSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateDecorSubMenu()'><b>validateDecorSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnMarvelUK()'><b>testTapOnMarvelUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnMarvelOnCanada()'><b>testTapOnMarvelOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnKPop()'><b>tapOnKPop</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>15</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFurnitureSubMenu()'><b>validateFurnitureSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testOnMore()'><b>testOnMore</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTrendingSubTabONUK()'><b>testTrendingSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testCommunitySubTab()'><b>testCommunitySubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnGeographyOnCanada()'><b>testTapOnGeographyOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateGadgetsMenu()'><b>validateGadgetsMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testNiftySubTabOnIndia()'><b>testNiftySubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOutDoorProductsSubMenu()'><b>validateOutDoorProductsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGamesSubTab()'><b>testGamesSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateJeansSubMenu()'><b>validateJeansSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapQuizzesTab()'><b>tapQuizzesTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnCanWeGuess()'><b>tapOnCanWeGuess</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testCommunitySubTabOnIndia()'><b>testCommunitySubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateRecreationSubMenu()'><b>validateRecreationSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateMakeYours()'><b>validateMakeYours</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>17</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTrendingSubTab()'><b>testTrendingSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestSubTab()'><b>testLatestSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateEtsyMenu()'><b>validateEtsyMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestsSubTabOnIndia()'><b>testLatestsSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFashionCategory()'><b>testFashionCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapGamesTabOnIndia2()'><b>tapGamesTabOnIndia2</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOfficeSubMenu()'><b>validateOfficeSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapQuizSplash()'><b>tapQuizSplash</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingToQuizzesTabOnUK()'><b>testGoingToQuizzesTabOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testIndiaEditionIsPresent()'><b>testIndiaEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnMore()'><b>tapOnMore</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingShoppingTab()'><b>testGoingShoppingTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelSubTabONUK()'><b>testTravelSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateTargetMenu()'><b>validateTargetMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testParentsSubTabONUK()'><b>testParentsSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSandalsSubMenu()'><b>validateSandalsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGamesSubTabOnIndia()'><b>testGamesSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testMusicSubTab()'><b>testMusicSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopAllTechMenu()'><b>validateShopAllTechMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testFoodSubTabONUK()'><b>testFoodSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateJacketsSubMenu()'><b>validateJacketsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopAllSportsAndFitnessMenu()'><b>validateShopAllSportsAndFitnessMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnMore1()'><b>tapOnMore1</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBagsSubMenu()'><b>validateBagsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testParentsSubTabOnIndia()'><b>testParentsSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateTopsSubMenu()'><b>validateTopsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRewindSubTabOnIndia()'><b>testRewindSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingNewsTabOnUK()'><b>testGoingNewsTabOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateDressesSubMenu()'><b>validateDressesSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testMusicSubTabOnIndia()'><b>testMusicSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLoUltimoSubTab()'><b>testLoUltimoSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestSubTabONUK()'><b>testLatestSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateGardenSubMenu()'><b>validateGardenSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapGamesTab()'><b>tapGamesTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnTrivia()'><b>tapOnTrivia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateGlassesAndSunglassesSubMenu()'><b>validateGlassesAndSunglassesSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnHarryPotter()'><b>tapOnHarryPotter</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>15</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.isGamesLblDisplayed()'><b>isGamesLblDisplayed</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTravelSubTab()'><b>testTravelSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateMachineryMenu()'><b>validateMachineryMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnCanWeGuessOnUK()'><b>testTapOnCanWeGuessOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTaylorSwiftUK()'><b>testTapOnTaylorSwiftUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testStyleSubTabOnIndia()'><b>testStyleSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>13</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateMoreButton()'><b>validateMoreButton</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>156</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testPetsCategory()'><b>testPetsCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSneakersSubMenu()'><b>validateSneakersSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBathroomSubMenu()'><b>validateBathroomSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.verifyQuizzesHeaderIsPresent()'><b>verifyQuizzesHeaderIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnShowdownOnCanada()'><b>testTapOnShowdownOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateKidsRoomSubMenu()'><b>validateKidsRoomSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGayStuffpSubTab()'><b>testGayStuffpSubTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>10</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateShopAllBeautyAndPersonalCareSubMenu()'><b>validateShopAllBeautyAndPersonalCareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateJewerlySubMenu()'><b>validateJewerlySubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnChecklist()'><b>testTapOnChecklist</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingToQuizzesTabOnCanada()'><b>testGoingToQuizzesTabOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateOrganizationSubMenu()'><b>validateOrganizationSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testShoppingTab()'><b>testShoppingTab</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>3</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBeautyAndCareMenu()'><b>validateBeautyAndCareMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGayStuffpSubTabONUK()'><b>testGayStuffpSubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSweatersSubMenu()'><b>validateSweatersSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFeatureStoriesTitle()'><b>validateFeatureStoriesTitle</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTriviaCategoryOnCanada()'><b>testTapOnTriviaCategoryOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testBooksSubTabOnIndia()'><b>testBooksSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testCommunitySubTabONUK()'><b>testCommunitySubTabONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>11</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFashionMenu()'><b>validateFashionMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSexToysMenu()'><b>validateSexToysMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testLatestSubTabOnIndia()'><b>testLatestSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>0</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateFlatsSubMenu()'><b>validateFlatsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>7</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateForYOu()'><b>validateForYOu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>14</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnMore1ONUK()'><b>tapOnMore1ONUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnChecklistOnCanada()'><b>testTapOnChecklistOnCanada</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>12</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSportsAndFitnessMenu()'><b>validateSportsAndFitnessMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validatToolsSubMenu()'><b>validatToolsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateDressSubMenu()'><b>validateDressSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateLoungeWareSubMenu()'><b>validateLoungeWareSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateMoreFunStuff()'><b>validateMoreFunStuff</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnKpopOnUK()'><b>testTapOnKpopOnUK</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSephoraMenu()'><b>validateSephoraMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateBootsSubMenu()'><b>validateBootsSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSeeAll()'><b>validateSeeAll</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingToQuizzesTabOnJapan()'><b>testGoingToQuizzesTabOnJapan</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>4</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnTriviaCategory()'><b>testTapOnTriviaCategory</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testTapOnAnime()'><b>testTapOnAnime</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateHairSubMenu()'><b>validateHairSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>8</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateSecondOfficeSubMenu()'><b>validateSecondOfficeSubMenu</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>9</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.tapOnMore1OnIndia()'><b>tapOnMore1OnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>5</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.validateCreatorsCarrousel()'><b>validateCreatorsCarrousel</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>33</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testGoingToQuizzesTabOnIndia()'><b>testGoingToQuizzesTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>1</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testAustraliaEditionIsPresent()'><b>testAustraliaEditionIsPresent</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>6</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+<tr>
+<td title='testModules.home.fullFlowLambda.testRandomSubTabOnIndia()'><b>testRandomSubTabOnIndia</b><br>Test class: testModules.home.fullFlowLambda</td>
+<td></td>
+<td>2</td>
+<td>testModules.home.fullFlowLambda@2ddc9a9f</td></tr>
+</table><p>
+</body>
+</html>

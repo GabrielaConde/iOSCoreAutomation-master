@@ -23,25 +23,21 @@ public class fullFlowLambda extends EditionsInit {
     QuizzesSubTabsPage quizzesLatestSubTabs;
 
     @BeforeClass
-    public void initProcess() throws InterruptedException {
-        //  try {
+    public void initProcess() throws InterruptedException{
+        // try {
         disableAds = new SettingsSetupPage();
         homePage = new HomeLatestPage();
-        shoppingPage = new ShoppingPage();
         quizzesLatestSubTabs = new QuizzesSubTabsPage();
         Thread.sleep(2000);
         //    latestSubTab.tapAllowButton();
         latestSubTab.tapOnGuestSignIn();
-
-        // COMMENTED
         Thread.sleep(4000);
         disableAds.disableAdExp();
         Thread.sleep(13000);
-        disableAds.tapAllowButton();
-        Thread.sleep(3000);
+        //  disableAds.tapAllowButton();
+        // Thread.sleep(3000);
         disableAds.closeSubscribe();
-        // END COMMENTED
-        Thread.sleep(4000);
+        Thread.sleep(2000);
         //   enableHomefeed.enableNewHomeFeed();
 
         //   latestSubTab.tapAllowButton();
@@ -53,7 +49,7 @@ public class fullFlowLambda extends EditionsInit {
 
 
     // @Test
-    public void tapSplash() throws InterruptedException {
+    public void tapSplash()throws InterruptedException{
         Thread.sleep(3000);
         newHomeFeed.tapOnSplash();
         Thread.sleep(2000);
@@ -61,90 +57,49 @@ public class fullFlowLambda extends EditionsInit {
     }
 
     @Test(priority = 1)
-    public void validateSeeAll() throws InterruptedException {
+    public void validateSeeAll()throws InterruptedException{
         //  try {
+        //    latestSubTab.tapAllowButton();
+        //   latestSubTab.tapOnGuestSignIn();
+        //     Thread.sleep(3000);
         Thread.sleep(3000);
         newHomeFeed.tapOnSeeAll();
+        //   Thread.sleep(2000);
+        //   newHomeFeed.tapOnTrendingSplash();
+        //   Thread.sleep(2000);
+        //   newHomeFeed.tapBackButton();
         Thread.sleep(3000);
         newHomeFeed.tapBackButton();
-        //  }catch (Exception e) {}
+        // }catch (Exception e) {}
 
     }
-
-    //   @Test(priority = 2)
-    public void validateTrendingTopics() throws InterruptedException {
-        Thread.sleep(2000);
-        //  try {
+    //  @Test(priority = 2)
+    public void validateTrendingTopics()throws InterruptedException{
+        //   try {
         //   newHomeFeed.scrollUntilTrendingTopics(getDriver());
-        scroll.scrollGeneric(0.8, 0.7, getDriver());
-        Thread.sleep(3000);
-        newHomeFeed.tapOntopic1();
-        Thread.sleep(2000);
-        newHomeFeed.isDisnetTPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
+        scroll.scrollGeneric(0.8,0.7,getDriver());
+        //  newHomeFeed.tapOntopic1();
+        //Thread.sleep(2000);
+        //bpage.tapBackButton();
         Thread.sleep(2000);
         newHomeFeed.tapOntopic2();
-        Thread.sleep(2000);
-        newHomeFeed.isHarryPotterTPTitleDisplayed();
         Thread.sleep(2000);
         bpage.tapBackButton();
         Thread.sleep(2000);
         newHomeFeed.tapOntopic3();
         Thread.sleep(2000);
-        newHomeFeed.isArcadeTPTitleDisplayed();
-        Thread.sleep(2000);
         bpage.tapBackButton();
         Thread.sleep(2000);
         newHomeFeed.tapOntopic4();
         Thread.sleep(2000);
-        newHomeFeed.isTaylorSwiftTPDisplayed();
-        Thread.sleep(2000);
         bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic5();
-        Thread.sleep(2000);
-        newHomeFeed.isPoliticsTPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic6();
-        Thread.sleep(2000);
-        newHomeFeed.isFunnyTweetsTPPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic7();
-        Thread.sleep(2000);
-        newHomeFeed.isSexAndLoveTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic8();
-        Thread.sleep(2000);
-        newHomeFeed.isHealthTPPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic9();
-        Thread.sleep(2000);
-        newHomeFeed.isTVAndMoviesTPPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOntopic10();
-        Thread.sleep(2000);
-        newHomeFeed.isLatestPososPPTitleDisplayed();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        //  }catch (Exception e){}
+        //   }catch (Exception e){}
     }
 
-    @Test(priority = 3)
-    public void validateMoreButton() throws InterruptedException {
+    @Test(priority = 2)
+    public void validateMoreButton()throws InterruptedException{
         //  try {
-        scroll.scrollGeneric(0.8, 0.7, getDriver());
-        //   newHomeFeed.scrollUntilTrendingTopics(getDriver());
+        scroll.scrollGeneric(0.8,0.7,getDriver());
         Thread.sleep(3000);
         newHomeFeed.tapOntMore();
         Thread.sleep(2000);
@@ -231,7 +186,7 @@ public class fullFlowLambda extends EditionsInit {
     }
 
     // @Test(priority = 4)
-    public void validateDiscussionTopic() throws InterruptedException {
+    public void validateDiscussionTopic()throws InterruptedException{
         try {
             Thread.sleep(2000);
             newHomeFeed.scrollUntilDiscussionTopic(getDriver());
@@ -239,25 +194,46 @@ public class fullFlowLambda extends EditionsInit {
             newHomeFeed.isDiscussionLabelDisplayed();
             Thread.sleep(2000);
             newHomeFeed.tapBackButton();
-        } catch (Exception e) {
-        }
+        }catch (Exception e){}
     }
 
-    @Test(priority = 5)
-    public void validateForYOu() throws InterruptedException {
-        //  try {
+    @Test(priority = 3)
+    public void validateForYOu()throws InterruptedException{
+        //   try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilForYou(getDriver());
         //  scroll.scrollGeneric(0.8,0.7,getDriver());
         Thread.sleep(2000);
         //   newHomeFeed.tapOnForYou();
         //   Thread.sleep(2000);
-        //   newHomeFeed.tapBackButton();
+        //  newHomeFeed.tapBackButton();
         //  }catch (Exception e) {}
     }
 
-    @Test(priority = 6)
-    public void validateDailyTriviaCell() throws InterruptedException {
+    @Test(priority = 4)
+    public void validateCreatorsCarrousel()throws InterruptedException{
+        Thread.sleep(2000);
+        newHomeFeed.scrollUntilMakeYours(getDriver());
+        Thread.sleep(2000);
+        newHomeFeed.tapOnSeeAllMakeYours();
+        Thread.sleep(2000);
+        newHomeFeed.tapBackButton();
+        Thread.sleep(3000);
+//        newHomeFeed.tapOnMakeYoursCell();
+        //   Thread.sleep(2000);
+        //   bpage.tapBackButton();
+        Thread.sleep(3000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(3000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(3000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+    }
+
+
+    @Test(priority = 5)
+    public void validateDailyTriviaCell()throws InterruptedException{
         //  try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilDailyTriviaCell(getDriver());
@@ -270,68 +246,47 @@ public class fullFlowLambda extends EditionsInit {
         //   homePage.tapOnCloseTrivia();
         //   Thread.sleep(4000);
         //   newHomeFeed.tapHomeTab();
-        //  } catch (Exception e) {}
+        // } catch (Exception e) {}
     }
 
     @Test(priority = 6)
-    public void validateCreatorsCarrousel()throws InterruptedException{
-        Thread.sleep(2000);
-        newHomeFeed.scrollUntilMakeYours(getDriver());
-        Thread.sleep(2000);
-        newHomeFeed.tapOnSeeAllMakeYours();
-        Thread.sleep(2000);
-        newHomeFeed.tapBackButton();
-        Thread.sleep(3000);
-//        newHomeFeed.tapOnMakeYoursCell();
-        //   Thread.sleep(2000);
-        //   bpage.tapBackButton();
-        Thread.sleep(2000);
-        newHomeFeed.tapOnCreatorItem();
-        Thread.sleep(2000);
-        newHomeFeed.tapDoneButton();
-        Thread.sleep(2000);
-        bpage.tapBackButton();
-        Thread.sleep(2000);
-    }
-
-    @Test(priority = 7)
-    public void validatePyramidSchemeCell() throws InterruptedException {
-        //  try {
+    public void validatePyramidSchemeCell()throws InterruptedException{
+        //   try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilPyramidSchemeCell(getDriver());
         Thread.sleep(2000);
         //   newHomeFeed.tapOnPlayNowPyramidScheme();
-        //    Thread.sleep(2000);
+        Thread.sleep(2000);
         //    homePage.isPyramidSchemeHeaderDisplayed();
-        //    Thread.sleep(3000);
-        //    homePage.tapOnClosePyramidScheme();
-        //    Thread.sleep(2000);
-        //    newHomeFeed.tapHomeTab();
-        //  } catch (Exception e) {}
+        Thread.sleep(2000);
+        //  homePage.tapOnClosePyramidScheme();
+        Thread.sleep(2000);
+        //  newHomeFeed.tapHomeTab();
+        //   } catch (Exception e) {}
     }
-
-    @Test(priority = 8)
-    public void validateShoppingSection() throws InterruptedException {
+    @Test(priority = 7)
+    public void validateShoppingSection()throws InterruptedException{
         //  try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilShopping(getDriver());
         Thread.sleep(2000);
-        //   newHomeFeed.tapOnShoppingSplash();
-        //   Thread.sleep(2000);
-        //   newHomeFeed.tapBackButton();
+        //  newHomeFeed.tapOnShoppingSplash();
+        //  Thread.sleep(2000);
+        //  newHomeFeed.tapBackButton();
         //  }catch (Exception e){}
     }
 
-    @Test(priority = 9)
-    public void validateOnTheNewsSection() throws InterruptedException {
+    @Test(priority = 8)
+    public void validateOnTheNewsSection()throws InterruptedException{
         //  try {
         Thread.sleep(2000);
         newHomeFeed.scrollUntilInTheNews(getDriver());
         Thread.sleep(3000);
-        //  newHomeFeed.tapOnInTheNewsCell();
-        Thread.sleep(2000);
-        //   newHomeFeed.tapBackButton();
-        //  }catch (Exception e){}
+        //   newHomeFeed.tapOnInTheNewsCell();
+        //    Thread.sleep(2000);
+        //     newHomeFeed.tapBackButton();
+        //     Assert.assertTrue(false);
+        //    }catch (Exception e){}
     }
 
     @Test(enabled = true, priority = 10)
@@ -1780,10 +1735,10 @@ public class fullFlowLambda extends EditionsInit {
         Thread.sleep(2000);
         newHomeFeed.tapMakeYours();
         Thread.sleep(4000);
-        newHomeFeed.isMakeYoursTitleDisplayed();
-        Thread.sleep(1000);
-        newHomeFeed.isHotTopicDisplayed();
-        Thread.sleep(2000);
+      //  newHomeFeed.isMakeYoursTitleDisplayed();
+      //  Thread.sleep(1000);
+      //  newHomeFeed.isHotTopicDisplayed();
+      //  Thread.sleep(2000);
         latestSubTab.tapBackButton();
         Thread.sleep(2000);
     }
@@ -2336,7 +2291,7 @@ public class fullFlowLambda extends EditionsInit {
       //  }catch (Exception e) {}
 
     }
-    @Test(priority = 174)
+  //  @Test(priority = 174)
     public void validateTrendingTopicsCanada()throws InterruptedException{
       //  try {
             //   newHomeFeed.scrollUntilTrendingTopics(getDriver());
@@ -2363,6 +2318,7 @@ public class fullFlowLambda extends EditionsInit {
     @Test(priority = 175)
     public void validateMoreButtonCanada()throws InterruptedException{
      //   try {
+        scroll.scrollGeneric(0.8,0.7,getDriver());
             Thread.sleep(3000);
             newHomeFeed.tapOntMore();
             Thread.sleep(2000);

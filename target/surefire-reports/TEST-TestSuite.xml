@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="147.055" tests="26" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="2,518.549" tests="510" errors="0" skipped="0" failures="2">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire/surefirebooter9098705071174445855.jar /Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire 2025-03-18T21-13-00_018-jvmRun1 surefire15233398465228901152tmp surefire_04383637745176352525tmp"/>
+    <property name="sun.java.command" value="/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire/surefirebooter11419987649226192107.jar /Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire 2025-04-01T22-05-35_910-jvmRun1 surefire5669524363452147002tmp surefire_012548810188295393483tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/test-classes:/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/classes:/Users/gabrielaconde/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/Users/gabrielaconde/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/gabrielaconde/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/gabrielaconde/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/gabrielaconde/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/gabrielaconde/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/gabrielaconde/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/gabrielaconde/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/gabrielaconde/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/gabrielaconde/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/gabrielaconde/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/gabrielaconde/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/gabrielaconde/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/gabrielaconde/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/gabrielaconde/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/gabrielaconde/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/Users/gabrielaconde/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/Users/gabrielaconde/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/Users/gabrielaconde/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/gabrielaconde/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/gabrielaconde/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/gabrielaconde/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-java/4.8.1/selenium-java-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.8.1/selenium-chrome-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/gabrielaconde/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.8.1/selenium-chromium-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.8.1/selenium-devtools-v108-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v109/4.8.1/selenium-devtools-v109-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v110/4.8.1/selenium-devtools-v110-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.8.1/selenium-devtools-v85-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.8.1/selenium-edge-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.8.1/selenium-firefox-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.8.1/selenium-ie-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.8.1/selenium-safari-driver-4.8.1.jar:/Users/gabrielaconde/.m2/repository/org/testng/testng/7.5/testng-7.5.jar:/Users/gabrielaconde/.m2/repository/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar:/Users/gabrielaconde/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/gabrielaconde/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/gabrielaconde/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.22.0/surefire-testng-utils-2.22.0.jar:/Users/gabrielaconde/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.22.0/surefire-grouper-2.22.0.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire/surefirebooter9098705071174445855.jar"/>
+    <property name="surefire.real.class.path" value="/Users/gabrielaconde/Developer/Core/iOSCoreAutomation-master/target/surefire/surefirebooter11419987649226192107.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.21+9-LTS-193"/>
@@ -64,30 +64,546 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="argLine" value="-DTest_NG_XML=allSuites.xml"/>
   </properties>
-  <testcase name="testSearchNativeBpage" classname="testModules.bpage.NatBpageTests1" time="6.555"/>
-  <testcase name="testSearchNativeBpage" classname="testModules.bpage.NatBpageTests1" time="3.992"/>
-  <testcase name="verifyDataCategoryArePresent" classname="testModules.bpage.NatBpageTests1" time="0"/>
-  <testcase name="verifyDataCategoryArePresent" classname="testModules.bpage.NatBpageTests1" time="0"/>
-  <testcase name="verifyTitleIsPresent" classname="testModules.bpage.NatBpageTests1" time="0.538"/>
-  <testcase name="verifyTitleIsPresent" classname="testModules.bpage.NatBpageTests1" time="0.917"/>
-  <testcase name="verifySubTitleIsPresent" classname="testModules.bpage.NatBpageTests1" time="0.462"/>
-  <testcase name="verifySubTitleIsPresent" classname="testModules.bpage.NatBpageTests1" time="0.919"/>
-  <testcase name="verifyAuthorInfoIsPresentOnBpage" classname="testModules.bpage.NatBpageTests1" time="0.54"/>
-  <testcase name="verifyAuthorInfoIsPresentOnBpage" classname="testModules.bpage.NatBpageTests1" time="0.065"/>
-  <testcase name="verifyImagePresentOnBpage" classname="testModules.bpage.NatBpageTests1" time="0.452"/>
-  <testcase name="verifyImagePresentOnBpage" classname="testModules.bpage.NatBpageTests1" time="0.853"/>
-  <testcase name="tapImage" classname="testModules.bpage.NatBpageTests1" time="0.454"/>
-  <testcase name="tapImage" classname="testModules.bpage.NatBpageTests1" time="1.265"/>
-  <testcase name="verifyShareButtonIsPresentOnMV" classname="testModules.bpage.NatBpageTests1" time="0.503"/>
-  <testcase name="verifyShareButtonIsPresentOnMV" classname="testModules.bpage.NatBpageTests1" time="0.829"/>
-  <testcase name="tapShareButtonOnMV" classname="testModules.bpage.NatBpageTests1" time="0.533"/>
-  <testcase name="tapShareButtonOnMV" classname="testModules.bpage.NatBpageTests1" time="1.763"/>
-  <testcase name="verifyDismissMV" classname="testModules.bpage.NatBpageTests1" time="0.467"/>
-  <testcase name="verifyDismissMV" classname="testModules.bpage.NatBpageTests1" time="10.243"/>
-  <testcase name="testSearchFallbackBpage" classname="testModules.bpage.NatBpageTests1" time="1.704"/>
-  <testcase name="testSearchFallbackBpage" classname="testModules.bpage.NatBpageTests1" time="11.376"/>
-  <testcase name="testBuyFromAmazonButtonIsPresent" classname="testModules.bpage.NatBpageTests1" time="1.466"/>
-  <testcase name="testBuyFromAmazonButtonIsPresent" classname="testModules.bpage.NatBpageTests1" time="33.018"/>
-  <testcase name="testBuyFromAmazonButton" classname="testModules.bpage.NatBpageTests1" time="4.445"/>
-  <testcase name="testBuyFromAmazonButton" classname="testModules.bpage.NatBpageTests1" time="4.509"/>
+  <testcase name="validateSeeAll" classname="testModules.home.fullFlowLambda" time="9.235"/>
+  <testcase name="validateSeeAll" classname="testModules.home.fullFlowLambda" time="8.908"/>
+  <testcase name="validateMoreButton" classname="testModules.home.fullFlowLambda" time="144.851"/>
+  <testcase name="validateMoreButton" classname="testModules.home.fullFlowLambda" time="0.659"/>
+  <testcase name="validateForYOu" classname="testModules.home.fullFlowLambda" time="8.832"/>
+  <testcase name="validateForYOu" classname="testModules.home.fullFlowLambda" time="5.826"/>
+  <testcase name="validateCreatorsCarrousel" classname="testModules.home.fullFlowLambda" time="33.729"/>
+  <testcase name="validateCreatorsCarrousel" classname="testModules.home.fullFlowLambda" time="2.081"/>
+  <testcase name="validateDailyTriviaCell" classname="testModules.home.fullFlowLambda" time="25.818"/>
+  <testcase name="validateDailyTriviaCell" classname="testModules.home.fullFlowLambda" time="4.644"/>
+  <testcase name="validatePyramidSchemeCell" classname="testModules.home.fullFlowLambda" time="0.773"/>
+  <testcase name="validatePyramidSchemeCell" classname="testModules.home.fullFlowLambda" time="4.313"/>
+  <testcase name="validateShoppingSection" classname="testModules.home.fullFlowLambda" time="4.898"/>
+  <testcase name="validateShoppingSection" classname="testModules.home.fullFlowLambda" time="0.114"/>
+  <testcase name="validateOnTheNewsSection" classname="testModules.home.fullFlowLambda" time="21.87"/>
+  <testcase name="validateOnTheNewsSection" classname="testModules.home.fullFlowLambda" time="4.368"/>
+  <testcase name="moveToNewsTab" classname="testModules.home.fullFlowLambda" time="3.328"/>
+  <testcase name="moveToNewsTab" classname="testModules.home.fullFlowLambda" time="1.337"/>
+  <testcase name="testNewsHeader" classname="testModules.home.fullFlowLambda" time="3.122"/>
+  <testcase name="testNewsHeader" classname="testModules.home.fullFlowLambda" time="3.144"/>
+  <testcase name="tapOnNewssplash" classname="testModules.home.fullFlowLambda" time="4.642"/>
+  <testcase name="tapOnNewssplash" classname="testModules.home.fullFlowLambda" time="0.121"/>
+  <testcase name="testShoppingTab" classname="testModules.home.fullFlowLambda" time="3.907"/>
+  <testcase name="testShoppingTab" classname="testModules.home.fullFlowLambda" time="4.054"/>
+  <testcase name="testShoppingHeaderIsPresent" classname="testModules.home.fullFlowLambda" time="4.591"/>
+  <testcase name="testShoppingHeaderIsPresent" classname="testModules.home.fullFlowLambda" time="2.878"/>
+  <testcase name="testBeautyCategory" classname="testModules.home.fullFlowLambda" time="4.475"/>
+  <testcase name="testBeautyCategory" classname="testModules.home.fullFlowLambda" time="2.868"/>
+  <testcase name="testFashionCategory" classname="testModules.home.fullFlowLambda" time="4.849"/>
+  <testcase name="testFashionCategory" classname="testModules.home.fullFlowLambda" time="2.734"/>
+  <testcase name="testHomeCategory" classname="testModules.home.fullFlowLambda" time="5.442"/>
+  <testcase name="testHomeCategory" classname="testModules.home.fullFlowLambda" time="2.197"/>
+  <testcase name="testKidsCategory" classname="testModules.home.fullFlowLambda" time="5.498"/>
+  <testcase name="testKidsCategory" classname="testModules.home.fullFlowLambda" time="2.015"/>
+  <testcase name="testPetsCategory" classname="testModules.home.fullFlowLambda" time="6.929"/>
+  <testcase name="testPetsCategory" classname="testModules.home.fullFlowLambda" time="0.757"/>
+  <testcase name="testSexToysCategory" classname="testModules.home.fullFlowLambda" time="11.591"/>
+  <testcase name="testSexToysCategory" classname="testModules.home.fullFlowLambda" time="0.806"/>
+  <testcase name="testMore" classname="testModules.home.fullFlowLambda" time="9.918"/>
+  <testcase name="testMore" classname="testModules.home.fullFlowLambda" time="1.864"/>
+  <testcase name="validateBeautyAndCareMenu" classname="testModules.home.fullFlowLambda" time="5.625"/>
+  <testcase name="validateBeautyAndCareMenu" classname="testModules.home.fullFlowLambda" time="1.835"/>
+  <testcase name="validateShopAllBeautyAndPersonalCareSubMenu" classname="testModules.home.fullFlowLambda" time="6.832"/>
+  <testcase name="validateShopAllBeautyAndPersonalCareSubMenu" classname="testModules.home.fullFlowLambda" time="1.658"/>
+  <testcase name="validateHairSubMenu" classname="testModules.home.fullFlowLambda" time="5.875"/>
+  <testcase name="validateHairSubMenu" classname="testModules.home.fullFlowLambda" time="3.033"/>
+  <testcase name="validateSMakeUpSubMenu" classname="testModules.home.fullFlowLambda" time="7.811"/>
+  <testcase name="validateSMakeUpSubMenu" classname="testModules.home.fullFlowLambda" time="3.039"/>
+  <testcase name="validateOutDoorProductsSubMenu" classname="testModules.home.fullFlowLambda" time="5.326"/>
+  <testcase name="validateOutDoorProductsSubMenu" classname="testModules.home.fullFlowLambda" time="3.231"/>
+  <testcase name="validatePersonalToolsSubMenu" classname="testModules.home.fullFlowLambda" time="4.266"/>
+  <testcase name="validatePersonalToolsSubMenu" classname="testModules.home.fullFlowLambda" time="4.584"/>
+  <testcase name="validateSkinCareSubMenu" classname="testModules.home.fullFlowLambda" time="0.77"/>
+  <testcase name="validateSkinCareSubMenu" classname="testModules.home.fullFlowLambda" time="4.581"/>
+  <testcase name="validateAcneSolutionsSubMenu" classname="testModules.home.fullFlowLambda" time="2.922"/>
+  <testcase name="validateAcneSolutionsSubMenu" classname="testModules.home.fullFlowLambda" time="4.89"/>
+  <testcase name="validateBodySubMenu" classname="testModules.home.fullFlowLambda" time="2.602"/>
+  <testcase name="validateBodySubMenu" classname="testModules.home.fullFlowLambda" time="4.819"/>
+  <testcase name="validateFaceSubMenu" classname="testModules.home.fullFlowLambda" time="5.082"/>
+  <testcase name="validateFaceSubMenu" classname="testModules.home.fullFlowLambda" time="5.566"/>
+  <testcase name="validateFashionMenu" classname="testModules.home.fullFlowLambda" time="1.058"/>
+  <testcase name="validateFashionMenu" classname="testModules.home.fullFlowLambda" time="5.791"/>
+  <testcase name="validateShopAllFashionSubMenu" classname="testModules.home.fullFlowLambda" time="1.952"/>
+  <testcase name="validateShopAllFashionSubMenu" classname="testModules.home.fullFlowLambda" time="5.647"/>
+  <testcase name="validateFashionAccesoriesSubMenu" classname="testModules.home.fullFlowLambda" time="0.714"/>
+  <testcase name="validateFashionAccesoriesSubMenu" classname="testModules.home.fullFlowLambda" time="6.396"/>
+  <testcase name="validateBagsSubMenu" classname="testModules.home.fullFlowLambda" time="1.205"/>
+  <testcase name="validateBagsSubMenu" classname="testModules.home.fullFlowLambda" time="6.772"/>
+  <testcase name="validateColdWeatherSubMenu" classname="testModules.home.fullFlowLambda" time="0.946"/>
+  <testcase name="validateColdWeatherSubMenu" classname="testModules.home.fullFlowLambda" time="6.542"/>
+  <testcase name="validateGlassesAndSunglassesSubMenu" classname="testModules.home.fullFlowLambda" time="0.862"/>
+  <testcase name="validateGlassesAndSunglassesSubMenu" classname="testModules.home.fullFlowLambda" time="0.001"/>
+  <testcase name="validateJewerlySubMenu" classname="testModules.home.fullFlowLambda" time="7.903"/>
+  <testcase name="validateJewerlySubMenu" classname="testModules.home.fullFlowLambda" time="0.287"/>
+  <testcase name="validateDressesSubMenu" classname="testModules.home.fullFlowLambda" time="7.469"/>
+  <testcase name="validateDressesSubMenu" classname="testModules.home.fullFlowLambda" time="3.25"/>
+  <testcase name="validateFootwareSubMenu" classname="testModules.home.fullFlowLambda" time="5.397"/>
+  <testcase name="validateFootwareSubMenu" classname="testModules.home.fullFlowLambda" time="0.827"/>
+  <testcase name="validateBootsSubMenu" classname="testModules.home.fullFlowLambda" time="4.658"/>
+  <testcase name="validateBootsSubMenu" classname="testModules.home.fullFlowLambda" time="2.108"/>
+  <testcase name="validateDressSubMenu" classname="testModules.home.fullFlowLambda" time="6.756"/>
+  <testcase name="validateDressSubMenu" classname="testModules.home.fullFlowLambda" time="3.798"/>
+  <testcase name="validateFlatsSubMenu" classname="testModules.home.fullFlowLambda" time="5.692"/>
+  <testcase name="validateFlatsSubMenu" classname="testModules.home.fullFlowLambda" time="3.902"/>
+  <testcase name="validateHeelsSubMenu" classname="testModules.home.fullFlowLambda" time="3.638"/>
+  <testcase name="validateHeelsSubMenu" classname="testModules.home.fullFlowLambda" time="4.334"/>
+  <testcase name="validateOutDoorSubMenu" classname="testModules.home.fullFlowLambda" time="4.171"/>
+  <testcase name="validateOutDoorSubMenu" classname="testModules.home.fullFlowLambda" time="5.66"/>
+  <testcase name="validateSandalsSubMenu" classname="testModules.home.fullFlowLambda" time="3.409"/>
+  <testcase name="validateSandalsSubMenu" classname="testModules.home.fullFlowLambda" time="4.225"/>
+  <testcase name="validateSneakersSubMenu" classname="testModules.home.fullFlowLambda" time="3.27"/>
+  <testcase name="validateSneakersSubMenu" classname="testModules.home.fullFlowLambda" time="5.92"/>
+  <testcase name="validateFormalWareSubMenu" classname="testModules.home.fullFlowLambda" time="3.462"/>
+  <testcase name="validateFormalWareSubMenu" classname="testModules.home.fullFlowLambda" time="6.305"/>
+  <testcase name="validateJacketsSubMenu" classname="testModules.home.fullFlowLambda" time="1.828"/>
+  <testcase name="validateJacketsSubMenu" classname="testModules.home.fullFlowLambda" time="5.991"/>
+  <testcase name="validateJeansSubMenu" classname="testModules.home.fullFlowLambda" time="1.601"/>
+  <testcase name="validateJeansSubMenu" classname="testModules.home.fullFlowLambda" time="6.383"/>
+  <testcase name="validateLoungeWareSubMenu" classname="testModules.home.fullFlowLambda" time="1.599"/>
+  <testcase name="validateLoungeWareSubMenu" classname="testModules.home.fullFlowLambda" time="6.549"/>
+  <testcase name="validatePantsSubMenu" classname="testModules.home.fullFlowLambda" time="1.537"/>
+  <testcase name="validatePantsSubMenu" classname="testModules.home.fullFlowLambda" time="6.495"/>
+  <testcase name="validateSweatersSubMenu" classname="testModules.home.fullFlowLambda" time="0.946"/>
+  <testcase name="validateSweatersSubMenu" classname="testModules.home.fullFlowLambda" time="0.199"/>
+  <testcase name="validateSwimsuitsSubMenu" classname="testModules.home.fullFlowLambda" time="1.478"/>
+  <testcase name="validateSwimsuitsSubMenu" classname="testModules.home.fullFlowLambda" time="7.597"/>
+  <testcase name="validateTopsSubMenu" classname="testModules.home.fullFlowLambda" time="7.553"/>
+  <testcase name="validateTopsSubMenu" classname="testModules.home.fullFlowLambda" time="1.738"/>
+  <testcase name="validateUnderwareSubMenu" classname="testModules.home.fullFlowLambda" time="1.585"/>
+  <testcase name="validateUnderwareSubMenu" classname="testModules.home.fullFlowLambda" time="5.363"/>
+  <testcase name="validateHomeMenu" classname="testModules.home.fullFlowLambda" time="5.495"/>
+  <testcase name="validateHomeMenu" classname="testModules.home.fullFlowLambda" time="3.038"/>
+  <testcase name="validateBathroomSubMenu" classname="testModules.home.fullFlowLambda" time="5.873"/>
+  <testcase name="validateBathroomSubMenu" classname="testModules.home.fullFlowLambda" time="4.173"/>
+  <testcase name="validateBeddingAndMatressSubMenu" classname="testModules.home.fullFlowLambda" time="2.454"/>
+  <testcase name="validateBeddingAndMatressSubMenu" classname="testModules.home.fullFlowLambda" time="6.654"/>
+  <testcase name="validateCleaningSubMenu" classname="testModules.home.fullFlowLambda" time="4.567"/>
+  <testcase name="validateCleaningSubMenu" classname="testModules.home.fullFlowLambda" time="5.756"/>
+  <testcase name="validateKitchenSubMenu" classname="testModules.home.fullFlowLambda" time="2.309"/>
+  <testcase name="validateKitchenSubMenu" classname="testModules.home.fullFlowLambda" time="4.084"/>
+  <testcase name="validateAppliancesSubMenu" classname="testModules.home.fullFlowLambda" time="1.786"/>
+  <testcase name="validateAppliancesSubMenu" classname="testModules.home.fullFlowLambda" time="2.897"/>
+  <testcase name="validatToolsSubMenu" classname="testModules.home.fullFlowLambda" time="3.632"/>
+  <testcase name="validatToolsSubMenu" classname="testModules.home.fullFlowLambda" time="5.53"/>
+  <testcase name="validateDecorSubMenu" classname="testModules.home.fullFlowLambda" time="5.471"/>
+  <testcase name="validateDecorSubMenu" classname="testModules.home.fullFlowLambda" time="0.488"/>
+  <testcase name="validateFurnitureSubMenu" classname="testModules.home.fullFlowLambda" time="3.495"/>
+  <testcase name="validateFurnitureSubMenu" classname="testModules.home.fullFlowLambda" time="0.175"/>
+  <testcase name="validateBedroomSubMenu" classname="testModules.home.fullFlowLambda" time="1.903"/>
+  <testcase name="validateBedroomSubMenu" classname="testModules.home.fullFlowLambda" time="7.135"/>
+  <testcase name="validateKidsRoomSubMenu" classname="testModules.home.fullFlowLambda" time="7.605"/>
+  <testcase name="validateKidsRoomSubMenu" classname="testModules.home.fullFlowLambda" time="7.734"/>
+  <testcase name="validateKitchenRoomSubMenu" classname="testModules.home.fullFlowLambda" time="6.946"/>
+  <testcase name="validateKitchenRoomSubMenu" classname="testModules.home.fullFlowLambda" time="6.197"/>
+  <testcase name="validateLivingRoomSubMenu" classname="testModules.home.fullFlowLambda" time="0.374"/>
+  <testcase name="validateLivingRoomSubMenu" classname="testModules.home.fullFlowLambda" time="7.233"/>
+  <testcase name="validateSecondOfficeSubMenu" classname="testModules.home.fullFlowLambda" time="0.978"/>
+  <testcase name="validateSecondOfficeSubMenu" classname="testModules.home.fullFlowLambda" time="2.848"/>
+  <testcase name="validateOfficeSubMenu" classname="testModules.home.fullFlowLambda" time="1.407"/>
+  <testcase name="validateOfficeSubMenu" classname="testModules.home.fullFlowLambda" time="3.131"/>
+  <testcase name="validateOrganizationSubMenu" classname="testModules.home.fullFlowLambda" time="0.561"/>
+  <testcase name="validateOrganizationSubMenu" classname="testModules.home.fullFlowLambda" time="3.851"/>
+  <testcase name="validateOutdoorSubMenu" classname="testModules.home.fullFlowLambda" time="6.393"/>
+  <testcase name="validateOutdoorSubMenu" classname="testModules.home.fullFlowLambda" time="1.85"/>
+  <testcase name="validateBackyardSubMenu" classname="testModules.home.fullFlowLambda" time="4.565"/>
+  <testcase name="validateBackyardSubMenu" classname="testModules.home.fullFlowLambda" time="1.74"/>
+  <testcase name="validateGardenSubMenu" classname="testModules.home.fullFlowLambda" time="4.367"/>
+  <testcase name="validateGardenSubMenu" classname="testModules.home.fullFlowLambda" time="3.64"/>
+  <testcase name="validateRecreationSubMenu" classname="testModules.home.fullFlowLambda" time="6.015"/>
+  <testcase name="validateRecreationSubMenu" classname="testModules.home.fullFlowLambda" time="1.698"/>
+  <testcase name="validateKidsMenu" classname="testModules.home.fullFlowLambda" time="5.941"/>
+  <testcase name="validateKidsMenu" classname="testModules.home.fullFlowLambda" time="1.662"/>
+  <testcase name="validatePetsMenu" classname="testModules.home.fullFlowLambda" time="5.884"/>
+  <testcase name="validatePetsMenu" classname="testModules.home.fullFlowLambda" time="2.111"/>
+  <testcase name="validateSexToysMenu" classname="testModules.home.fullFlowLambda" time="4.278"/>
+  <testcase name="validateSexToysMenu" classname="testModules.home.fullFlowLambda" time="3.668"/>
+  <testcase name="validateSportsAndFitnessMenu" classname="testModules.home.fullFlowLambda" time="5.456"/>
+  <testcase name="validateSportsAndFitnessMenu" classname="testModules.home.fullFlowLambda" time="0.612"/>
+  <testcase name="validateShopAllSportsAndFitnessMenu" classname="testModules.home.fullFlowLambda" time="5.791"/>
+  <testcase name="validateShopAllSportsAndFitnessMenu" classname="testModules.home.fullFlowLambda" time="3.485"/>
+  <testcase name="validateFitnessAccesoriesMenu" classname="testModules.home.fullFlowLambda" time="5.951"/>
+  <testcase name="validateFitnessAccesoriesMenu" classname="testModules.home.fullFlowLambda" time="1.111"/>
+  <testcase name="validateMachineryMenu" classname="testModules.home.fullFlowLambda" time="5.669"/>
+  <testcase name="validateMachineryMenu" classname="testModules.home.fullFlowLambda" time="1.028"/>
+  <testcase name="validatePersonalCareMenu" classname="testModules.home.fullFlowLambda" time="4.867"/>
+  <testcase name="validatePersonalCareMenu" classname="testModules.home.fullFlowLambda" time="2.361"/>
+  <testcase name="validateStoresMenu" classname="testModules.home.fullFlowLambda" time="4.792"/>
+  <testcase name="validateStoresMenu" classname="testModules.home.fullFlowLambda" time="0.011"/>
+  <testcase name="validateShopAllStoresMenu" classname="testModules.home.fullFlowLambda" time="6.282"/>
+  <testcase name="validateShopAllStoresMenu" classname="testModules.home.fullFlowLambda" time="2.252"/>
+  <testcase name="validateAmazonMenu" classname="testModules.home.fullFlowLambda" time="6.496"/>
+  <testcase name="validateAmazonMenu" classname="testModules.home.fullFlowLambda" time="1.74"/>
+  <testcase name="validateEtsyMenu" classname="testModules.home.fullFlowLambda" time="6.479"/>
+  <testcase name="validateEtsyMenu" classname="testModules.home.fullFlowLambda" time="1.921"/>
+  <testcase name="validateNordstromMenu" classname="testModules.home.fullFlowLambda" time="5.267"/>
+  <testcase name="validateNordstromMenu" classname="testModules.home.fullFlowLambda" time="7.577"/>
+  <testcase name="validateSephoraMenu" classname="testModules.home.fullFlowLambda" time="7.634"/>
+  <testcase name="validateSephoraMenu" classname="testModules.home.fullFlowLambda" time="8.805"/>
+  <testcase name="validateShopSmallMenu" classname="testModules.home.fullFlowLambda" time="5.575"/>
+  <testcase name="validateShopSmallMenu" classname="testModules.home.fullFlowLambda" time="7.74"/>
+  <testcase name="validateTargetMenu" classname="testModules.home.fullFlowLambda" time="5.814"/>
+  <testcase name="validateTargetMenu" classname="testModules.home.fullFlowLambda" time="5.604"/>
+  <testcase name="validateWalmartMenu" classname="testModules.home.fullFlowLambda" time="7.577"/>
+  <testcase name="validateWalmartMenu" classname="testModules.home.fullFlowLambda" time="9.563"/>
+  <testcase name="validateWayfairMenu" classname="testModules.home.fullFlowLambda" time="1.66"/>
+  <testcase name="validateWayfairMenu" classname="testModules.home.fullFlowLambda" time="0.869"/>
+  <testcase name="validateSubscriptionsMenu" classname="testModules.home.fullFlowLambda" time="1.86"/>
+  <testcase name="validateSubscriptionsMenu" classname="testModules.home.fullFlowLambda" time="2.054"/>
+  <testcase name="validateTechMenu" classname="testModules.home.fullFlowLambda" time="1.09"/>
+  <testcase name="validateTechMenu" classname="testModules.home.fullFlowLambda" time="6.475"/>
+  <testcase name="validateShopAllTechMenu" classname="testModules.home.fullFlowLambda" time="0.089"/>
+  <testcase name="validateShopAllTechMenu" classname="testModules.home.fullFlowLambda" time="1.798"/>
+  <testcase name="validateTechAccessoriesMenu" classname="testModules.home.fullFlowLambda" time="9.558"/>
+  <testcase name="validateTechAccessoriesMenu" classname="testModules.home.fullFlowLambda" time="2.063"/>
+  <testcase name="validateGadgetsMenu" classname="testModules.home.fullFlowLambda" time="8.616"/>
+  <testcase name="validateGadgetsMenu" classname="testModules.home.fullFlowLambda" time="3.789"/>
+  <testcase name="validateHomeElectronicsMenu" classname="testModules.home.fullFlowLambda" time="8.098"/>
+  <testcase name="validateHomeElectronicsMenu" classname="testModules.home.fullFlowLambda" time="1.385"/>
+  <testcase name="validateFeatureStoriesTitle" classname="testModules.home.fullFlowLambda" time="0.857"/>
+  <testcase name="validateFeatureStoriesTitle" classname="testModules.home.fullFlowLambda" time="0.952"/>
+  <testcase name="validateFeatureStoriesDisplays" classname="testModules.home.fullFlowLambda" time="7.173"/>
+  <testcase name="validateFeatureStoriesDisplays" classname="testModules.home.fullFlowLambda" time="8.957"/>
+  <testcase name="tapQuizzesTab" classname="testModules.home.fullFlowLambda" time="1.479"/>
+  <testcase name="tapQuizzesTab" classname="testModules.home.fullFlowLambda" time="1.191"/>
+  <testcase name="verifyQuizzesHeaderIsPresent" classname="testModules.home.fullFlowLambda" time="0.76"/>
+  <testcase name="verifyQuizzesHeaderIsPresent" classname="testModules.home.fullFlowLambda" time="1.673"/>
+  <testcase name="tapQuizSplash" classname="testModules.home.fullFlowLambda" time="5.96"/>
+  <testcase name="tapQuizSplash" classname="testModules.home.fullFlowLambda" time="6.86"/>
+  <testcase name="tapOnTrending" classname="testModules.home.fullFlowLambda" time="2.819"/>
+  <testcase name="tapOnTrending" classname="testModules.home.fullFlowLambda" time="0.026"/>
+  <testcase name="tapOnTrivia" classname="testModules.home.fullFlowLambda" time="4.696"/>
+  <testcase name="tapOnTrivia" classname="testModules.home.fullFlowLambda" time="5.028"/>
+  <testcase name="tapOnCanWeGuess" classname="testModules.home.fullFlowLambda" time="6.534"/>
+  <testcase name="tapOnCanWeGuess" classname="testModules.home.fullFlowLambda" time="7.2"/>
+  <testcase name="tapOnMore" classname="testModules.home.fullFlowLambda" time="1.329"/>
+  <testcase name="tapOnMore" classname="testModules.home.fullFlowLambda" time="1.139"/>
+  <testcase name="tapOnDisney" classname="testModules.home.fullFlowLambda" time="1.157"/>
+  <testcase name="tapOnDisney" classname="testModules.home.fullFlowLambda" time="0.286"/>
+  <testcase name="tapOnFood" classname="testModules.home.fullFlowLambda" time="6.662"/>
+  <testcase name="tapOnFood" classname="testModules.home.fullFlowLambda" time="2.912"/>
+  <testcase name="tapOnWhoAreYou" classname="testModules.home.fullFlowLambda" time="0.448"/>
+  <testcase name="tapOnWhoAreYou" classname="testModules.home.fullFlowLambda" time="4.817"/>
+  <testcase name="tapOnLove" classname="testModules.home.fullFlowLambda" time="14.687"/>
+  <testcase name="tapOnLove" classname="testModules.home.fullFlowLambda" time="6.929"/>
+  <testcase name="tapOnTaylorSwift" classname="testModules.home.fullFlowLambda" time="14.279"/>
+  <testcase name="tapOnTaylorSwift" classname="testModules.home.fullFlowLambda" time="6.791"/>
+  <testcase name="tapOnMarvel" classname="testModules.home.fullFlowLambda" time="11.222"/>
+  <testcase name="tapOnMarvel" classname="testModules.home.fullFlowLambda" time="7.171"/>
+  <testcase name="tapOnZodiac" classname="testModules.home.fullFlowLambda" time="8.741"/>
+  <testcase name="tapOnZodiac" classname="testModules.home.fullFlowLambda" time="7.066"/>
+  <testcase name="tapOnHarryPotter" classname="testModules.home.fullFlowLambda" time="8.106"/>
+  <testcase name="tapOnHarryPotter" classname="testModules.home.fullFlowLambda" time="8.287"/>
+  <testcase name="tapOnAnime" classname="testModules.home.fullFlowLambda" time="7.165"/>
+  <testcase name="tapOnAnime" classname="testModules.home.fullFlowLambda" time="4.633"/>
+  <testcase name="tapOnKPop" classname="testModules.home.fullFlowLambda" time="7.799"/>
+  <testcase name="tapOnKPop" classname="testModules.home.fullFlowLambda" time="8.722"/>
+  <testcase name="tapOnGeography" classname="testModules.home.fullFlowLambda" time="7.108"/>
+  <testcase name="tapOnGeography" classname="testModules.home.fullFlowLambda" time="6.52"/>
+  <testcase name="tapOnChecklist" classname="testModules.home.fullFlowLambda" time="9.118"/>
+  <testcase name="tapOnChecklist" classname="testModules.home.fullFlowLambda" time="7.915"/>
+  <testcase name="isGamesLblDisplayed" classname="testModules.home.fullFlowLambda" time="3.829"/>
+  <testcase name="isGamesLblDisplayed" classname="testModules.home.fullFlowLambda" time="1.678"/>
+  <testcase name="arePyramidSchemeElementsDisplayed" classname="testModules.home.fullFlowLambda" time="3.085"/>
+  <testcase name="arePyramidSchemeElementsDisplayed" classname="testModules.home.fullFlowLambda" time="3.603"/>
+  <testcase name="validateMakeYours" classname="testModules.home.fullFlowLambda" time="8.359"/>
+  <testcase name="validateMakeYours" classname="testModules.home.fullFlowLambda" time="1.194"/>
+  <testcase name="validateWhealOfFortune" classname="testModules.home.fullFlowLambda" time="1.776"/>
+  <testcase name="validateWhealOfFortune" classname="testModules.home.fullFlowLambda" time="2.669"/>
+  <testcase name="validateMoreFunStuff" classname="testModules.home.fullFlowLambda" time="9.326"/>
+  <testcase name="validateMoreFunStuff" classname="testModules.home.fullFlowLambda" time="2.695"/>
+  <testcase name="tapMoreFunCarrouselItem" classname="testModules.home.fullFlowLambda" time="0.365"/>
+  <testcase name="tapMoreFunCarrouselItem" classname="testModules.home.fullFlowLambda" time="6.176"/>
+  <testcase name="testAustraliaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="6.203"/>
+  <testcase name="testAustraliaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="2.291"/>
+  <testcase name="testLatestSubTab" classname="testModules.home.fullFlowLambda" time="0.001"/>
+  <testcase name="testLatestSubTab" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testTrendingSubTab" classname="testModules.home.fullFlowLambda" time="2.193"/>
+  <testcase name="testTrendingSubTab" classname="testModules.home.fullFlowLambda" time="4.67"/>
+  <testcase name="testFunnyTweetsSubTab" classname="testModules.home.fullFlowLambda" time="5.662"/>
+  <testcase name="testFunnyTweetsSubTab" classname="testModules.home.fullFlowLambda" time="3.916"/>
+  <testcase name="testGamesSubTab" classname="testModules.home.fullFlowLambda" time="3.62"/>
+  <testcase name="testGamesSubTab" classname="testModules.home.fullFlowLambda" time="0.05"/>
+  <testcase name="testLatestsSubTab" classname="testModules.home.fullFlowLambda" time="5.131"/>
+  <testcase name="testLatestsSubTab" classname="testModules.home.fullFlowLambda" time="5.111"/>
+  <testcase name="testRandomSubTab" classname="testModules.home.fullFlowLambda" time="0.805"/>
+  <testcase name="testRandomSubTab" classname="testModules.home.fullFlowLambda" time="2.001"/>
+  <testcase name="testGossipSubTab" classname="testModules.home.fullFlowLambda" time="4.329"/>
+  <testcase name="testGossipSubTab" classname="testModules.home.fullFlowLambda" time="0.943"/>
+  <testcase name="testGayStuffpSubTab" classname="testModules.home.fullFlowLambda" time="7.033"/>
+  <testcase name="testGayStuffpSubTab" classname="testModules.home.fullFlowLambda" time="2.376"/>
+  <testcase name="tapOnMore1" classname="testModules.home.fullFlowLambda" time="2.865"/>
+  <testcase name="tapOnMore1" classname="testModules.home.fullFlowLambda" time="5.21"/>
+  <testcase name="testEntertainmentSubTab" classname="testModules.home.fullFlowLambda" time="3.795"/>
+  <testcase name="testEntertainmentSubTab" classname="testModules.home.fullFlowLambda" time="6.302"/>
+  <testcase name="testAnimalsSubTab" classname="testModules.home.fullFlowLambda" time="4.591"/>
+  <testcase name="testAnimalsSubTab" classname="testModules.home.fullFlowLambda" time="2.183"/>
+  <testcase name="testBooksSubTab" classname="testModules.home.fullFlowLambda" time="3.118"/>
+  <testcase name="testBooksSubTab" classname="testModules.home.fullFlowLambda" time="8.544"/>
+  <testcase name="testFoodSubTab" classname="testModules.home.fullFlowLambda" time="4.027"/>
+  <testcase name="testFoodSubTab" classname="testModules.home.fullFlowLambda" time="8.772"/>
+  <testcase name="testCommunitySubTab" classname="testModules.home.fullFlowLambda" time="3.833"/>
+  <testcase name="testCommunitySubTab" classname="testModules.home.fullFlowLambda" time="6.862"/>
+  <testcase name="testMusicSubTab" classname="testModules.home.fullFlowLambda" time="7.971"/>
+  <testcase name="testMusicSubTab" classname="testModules.home.fullFlowLambda" time="0.132"/>
+  <testcase name="testNiftySubTab" classname="testModules.home.fullFlowLambda" time="3.29"/>
+  <testcase name="testNiftySubTab" classname="testModules.home.fullFlowLambda" time="6.418"/>
+  <testcase name="testParentsSubTab" classname="testModules.home.fullFlowLambda" time="4.617"/>
+  <testcase name="testParentsSubTab" classname="testModules.home.fullFlowLambda" time="3.097"/>
+  <testcase name="testRewindSubTab" classname="testModules.home.fullFlowLambda" time="0.216"/>
+  <testcase name="testRewindSubTab" classname="testModules.home.fullFlowLambda" time="5.718"/>
+  <testcase name="testStyleSubTab" classname="testModules.home.fullFlowLambda" time="3.889"/>
+  <testcase name="testStyleSubTab" classname="testModules.home.fullFlowLambda" time="1.207"/>
+  <testcase name="testTravelHomeSubTab" classname="testModules.home.fullFlowLambda" time="5.572"/>
+  <testcase name="testTravelHomeSubTab" classname="testModules.home.fullFlowLambda" time="1.085"/>
+  <testcase name="testTravelSubTab" classname="testModules.home.fullFlowLambda" time="2.783"/>
+  <testcase name="testTravelSubTab" classname="testModules.home.fullFlowLambda" time="3.326"/>
+  <testcase name="testGoingNewsTab" classname="testModules.home.fullFlowLambda" time="4.376"/>
+  <testcase name="testGoingNewsTab" classname="testModules.home.fullFlowLambda" time="0.101"/>
+  <testcase name="testGoingShoppingTab" classname="testModules.home.fullFlowLambda" time="3.861"/>
+  <testcase name="testGoingShoppingTab" classname="testModules.home.fullFlowLambda" time="2.334"/>
+  <testcase name="testGoingToQuizzesTab" classname="testModules.home.fullFlowLambda" time="4.362"/>
+  <testcase name="testGoingToQuizzesTab" classname="testModules.home.fullFlowLambda" time="5.075"/>
+  <testcase name="testTapOnTrendingCategory" classname="testModules.home.fullFlowLambda" time="5.621"/>
+  <testcase name="testTapOnTrendingCategory" classname="testModules.home.fullFlowLambda" time="7.197"/>
+  <testcase name="testTapOnTriviaCategory" classname="testModules.home.fullFlowLambda" time="2.792"/>
+  <testcase name="testTapOnTriviaCategory" classname="testModules.home.fullFlowLambda" time="8.109"/>
+  <testcase name="testCanWeGuess" classname="testModules.home.fullFlowLambda" time="8.841"/>
+  <testcase name="testCanWeGuess" classname="testModules.home.fullFlowLambda" time="2.629"/>
+  <testcase name="testOnMore" classname="testModules.home.fullFlowLambda" time="3.146"/>
+  <testcase name="testOnMore" classname="testModules.home.fullFlowLambda" time="4.51"/>
+  <testcase name="testTapOnTaylorSwift" classname="testModules.home.fullFlowLambda" time="9.179"/>
+  <testcase name="testTapOnTaylorSwift" classname="testModules.home.fullFlowLambda" time="3.233"/>
+  <testcase name="testTapOnMarvel" classname="testModules.home.fullFlowLambda" time="4.126"/>
+  <testcase name="testTapOnMarvel" classname="testModules.home.fullFlowLambda" time="1.876"/>
+  <testcase name="testTapOnZodiac" classname="testModules.home.fullFlowLambda" time="8.772"/>
+  <testcase name="testTapOnZodiac" classname="testModules.home.fullFlowLambda" time="1.6"/>
+  <testcase name="testTapOnHarryPotter" classname="testModules.home.fullFlowLambda" time="1.376"/>
+  <testcase name="testTapOnHarryPotter" classname="testModules.home.fullFlowLambda" time="3.443"/>
+  <testcase name="testTapOnAnime" classname="testModules.home.fullFlowLambda" time="1.683"/>
+  <testcase name="testTapOnAnime" classname="testModules.home.fullFlowLambda" time="9.192"/>
+  <testcase name="testTapOnKPop" classname="testModules.home.fullFlowLambda" time="0.762"/>
+  <testcase name="testTapOnKPop" classname="testModules.home.fullFlowLambda" time="8.479"/>
+  <testcase name="testTapOnGeography" classname="testModules.home.fullFlowLambda" time="6.54"/>
+  <testcase name="testTapOnGeography" classname="testModules.home.fullFlowLambda" time="7.318"/>
+  <testcase name="testTapOnChecklist" classname="testModules.home.fullFlowLambda" time="1.586"/>
+  <testcase name="testTapOnChecklist" classname="testModules.home.fullFlowLambda" time="9.191"/>
+  <testcase name="tapGamesTab" classname="testModules.home.fullFlowLambda" time="4.1"/>
+  <testcase name="tapGamesTab" classname="testModules.home.fullFlowLambda" time="5.806"/>
+  <testcase name="testCanadaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="7.106"/>
+  <testcase name="testCanadaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="11.982"/>
+  <testcase name="validateSeeAllCanada" classname="testModules.home.fullFlowLambda" time="6.941"/>
+  <testcase name="validateSeeAllCanada" classname="testModules.home.fullFlowLambda" time="8.744"/>
+  <testcase name="validateTrendingTopicsCanada" classname="testModules.home.fullFlowLambda" time="5.494">
+    <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [9f41f7d1-aabf-476e-8059-508a6b0811da, findElement {using=xpath, value=//XCUIElementTypeApplication[@name=&quot;BuzzFeed 🐞&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]&#10;Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-000E156E34F1A01E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11066, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}&#10;Session ID: 9f41f7d1-aabf-476e-8059-508a6b0811da" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7.4', java.version: '11.0.21'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [9f41f7d1-aabf-476e-8059-508a6b0811da, findElement {using=xpath, value=//XCUIElementTypeApplication[@name="BuzzFeed 🐞"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Plus, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008120-000E156E34F1A01E, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11066, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 9f41f7d1-aabf-476e-8059-508a6b0811da
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+</failure>
+    <system-out><![CDATA[Scrolled down: 0.8/0.7
+------------------------------------------------------
+---Test: testTapOnHarryPotter---
+]]></system-out>
+  </testcase>
+  <testcase name="validateTrendingTopicsCanada" classname="testModules.home.fullFlowLambda" time="8.254">
+    <failure message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;11.0.21&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [46cbc031-2c65-43f5-9635-2bbc755f2d89, findElement {using=xpath, value=//XCUIElementTypeApplication[@name=&quot;BuzzFeed 🐞&quot;]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]&#10;Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008130-000248123AC1001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11014, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}&#10;Session ID: 46cbc031-2c65-43f5-9635-2bbc755f2d89" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.7.4', java.version: '11.0.21'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [46cbc031-2c65-43f5-9635-2bbc755f2d89, findElement {using=xpath, value=//XCUIElementTypeApplication[@name="BuzzFeed 🐞"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]}]
+Capabilities {appium:autoAcceptAlerts: true, appium:automationName: XCuiTest, appium:bundleID: com.buzzfeed.buzzfeed-alpha, appium:bundleId: com.buzzfeed.buzzfeed-alpha, appium:databaseEnabled: false, appium:derivedDataPath: /Users/ltadmin/Documents/ap..., appium:deviceName: iPhone 15 Pro, appium:headless: false, appium:javascriptEnabled: true, appium:language: US, appium:locale: US, appium:locationContextEnabled: false, appium:maxTypingFrequency: 7, appium:mode: cloud, appium:nativeWebScreenshot: true, appium:networkConnectionEnabled: false, appium:newCommandTimeout: 0, appium:noReset: false, appium:orientation: PORTRAIT, appium:platformVersion: 17, appium:realDevice: true, appium:takesScreenshot: true, appium:udid: 00008130-000248123AC1001C, appium:uiautomator2ServerLaunchTimeout: 60000, appium:usePrebuiltWDA: true, appium:waitForQuiescence: false, appium:wdaLocalPort: 11014, appium:wdaRemotePort: 8100, appium:wdaStartupRetries: 3, appium:webStorageEnabled: false, appium:webkitResponseTimeout: 20000, platformName: IOS}
+Session ID: 46cbc031-2c65-43f5-9635-2bbc755f2d89
+	at testModules.home.fullFlowLambda.validateTrendingTopicsCanada(fullFlowLambda.java:2349)
+</failure>
+    <system-out><![CDATA[Scrolled down: 0.8/0.7
+Scrolled down: 0.8/0.7
+Tapped Back button
+]]></system-out>
+  </testcase>
+  <testcase name="validateMoreButtonCanada" classname="testModules.home.fullFlowLambda" time="41.865"/>
+  <testcase name="validateMoreButtonCanada" classname="testModules.home.fullFlowLambda" time="8.25"/>
+  <testcase name="testGoingNewsTabOnCanada" classname="testModules.home.fullFlowLambda" time="2.201"/>
+  <testcase name="testGoingNewsTabOnCanada" classname="testModules.home.fullFlowLambda" time="3.15"/>
+  <testcase name="testGoingToQuizzesTabOnCanada" classname="testModules.home.fullFlowLambda" time="4.276"/>
+  <testcase name="testGoingToQuizzesTabOnCanada" classname="testModules.home.fullFlowLambda" time="4.165"/>
+  <testcase name="testTapOnTrendingCategoryOnCanada" classname="testModules.home.fullFlowLambda" time="8.857"/>
+  <testcase name="testTapOnTrendingCategoryOnCanada" classname="testModules.home.fullFlowLambda" time="8.394"/>
+  <testcase name="testTapOnShowdownOnCanada" classname="testModules.home.fullFlowLambda" time="9.023"/>
+  <testcase name="testTapOnShowdownOnCanada" classname="testModules.home.fullFlowLambda" time="0.247"/>
+  <testcase name="testTapOnTriviaCategoryOnCanada" classname="testModules.home.fullFlowLambda" time="8.866"/>
+  <testcase name="testTapOnTriviaCategoryOnCanada" classname="testModules.home.fullFlowLambda" time="8.523"/>
+  <testcase name="testTapOnCanWeGuessCategory" classname="testModules.home.fullFlowLambda" time="8.849"/>
+  <testcase name="testTapOnCanWeGuessCategory" classname="testModules.home.fullFlowLambda" time="4.801"/>
+  <testcase name="testOnMoreOnCanada" classname="testModules.home.fullFlowLambda" time="3.393"/>
+  <testcase name="testOnMoreOnCanada" classname="testModules.home.fullFlowLambda" time="3.392"/>
+  <testcase name="testTapOnTaylorSwiftOnCanada" classname="testModules.home.fullFlowLambda" time="8.84"/>
+  <testcase name="testTapOnTaylorSwiftOnCanada" classname="testModules.home.fullFlowLambda" time="4.973"/>
+  <testcase name="testTapOnMarvelOnCanada" classname="testModules.home.fullFlowLambda" time="8.554"/>
+  <testcase name="testTapOnMarvelOnCanada" classname="testModules.home.fullFlowLambda" time="5.485"/>
+  <testcase name="testTapOnZodiacOnCanada" classname="testModules.home.fullFlowLambda" time="8.547"/>
+  <testcase name="testTapOnZodiacOnCanada" classname="testModules.home.fullFlowLambda" time="0.71"/>
+  <testcase name="testTapOnHarryPotterOnCanada" classname="testModules.home.fullFlowLambda" time="0.292"/>
+  <testcase name="testTapOnHarryPotterOnCanada" classname="testModules.home.fullFlowLambda" time="1.849"/>
+  <testcase name="testTapOnAnimeOnCanada" classname="testModules.home.fullFlowLambda" time="1.173"/>
+  <testcase name="testTapOnAnimeOnCanada" classname="testModules.home.fullFlowLambda" time="5.067"/>
+  <testcase name="testTapOnKPopOnCanada" classname="testModules.home.fullFlowLambda" time="0.056"/>
+  <testcase name="testTapOnKPopOnCanada" classname="testModules.home.fullFlowLambda" time="3.872"/>
+  <testcase name="testTapOnGeographyOnCanada" classname="testModules.home.fullFlowLambda" time="9.21"/>
+  <testcase name="testTapOnGeographyOnCanada" classname="testModules.home.fullFlowLambda" time="8.09"/>
+  <testcase name="testTapOnChecklistOnCanada" classname="testModules.home.fullFlowLambda" time="3.788"/>
+  <testcase name="testTapOnChecklistOnCanada" classname="testModules.home.fullFlowLambda" time="4.543"/>
+  <testcase name="tapGamesTabOnCanada" classname="testModules.home.fullFlowLambda" time="4.405"/>
+  <testcase name="tapGamesTabOnCanada" classname="testModules.home.fullFlowLambda" time="9.879"/>
+  <testcase name="testIndiaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="3.315"/>
+  <testcase name="testIndiaEditionIsPresent" classname="testModules.home.fullFlowLambda" time="0.546"/>
+  <testcase name="testLatestSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testLatestSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testTrendingSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.37"/>
+  <testcase name="testTrendingSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="7.297"/>
+  <testcase name="testFunnyTweetsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="6.109"/>
+  <testcase name="testFunnyTweetsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="6.208"/>
+  <testcase name="testGamesSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.912"/>
+  <testcase name="testGamesSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="3.617"/>
+  <testcase name="testLatestsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="5.451"/>
+  <testcase name="testLatestsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="4.519"/>
+  <testcase name="testRandomSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.151"/>
+  <testcase name="testRandomSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2"/>
+  <testcase name="testGossipSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="3.535"/>
+  <testcase name="testGossipSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="3.564"/>
+  <testcase name="testGayStuffpSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="4.651"/>
+  <testcase name="testGayStuffpSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="9.677"/>
+  <testcase name="tapOnMore1OnIndia" classname="testModules.home.fullFlowLambda" time="1.409"/>
+  <testcase name="tapOnMore1OnIndia" classname="testModules.home.fullFlowLambda" time="4.312"/>
+  <testcase name="testEntertainmentSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.508"/>
+  <testcase name="testEntertainmentSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.234"/>
+  <testcase name="testAnimalsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="6.866"/>
+  <testcase name="testAnimalsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="8.028"/>
+  <testcase name="testBooksSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="3.258"/>
+  <testcase name="testBooksSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.707"/>
+  <testcase name="testCommunitySubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.959"/>
+  <testcase name="testCommunitySubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.443"/>
+  <testcase name="testFoodSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="7.671"/>
+  <testcase name="testFoodSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="8.241"/>
+  <testcase name="testMusicSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.647"/>
+  <testcase name="testMusicSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.126"/>
+  <testcase name="testNiftySubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.848"/>
+  <testcase name="testNiftySubTabOnIndia" classname="testModules.home.fullFlowLambda" time="4.088"/>
+  <testcase name="testParentsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.747"/>
+  <testcase name="testParentsSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.466"/>
+  <testcase name="testRewindSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.153"/>
+  <testcase name="testRewindSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="6.51"/>
+  <testcase name="testStyleSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="8.416"/>
+  <testcase name="testStyleSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="5.172"/>
+  <testcase name="testTravelHomeSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.231"/>
+  <testcase name="testTravelHomeSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.274"/>
+  <testcase name="testTravelSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.678"/>
+  <testcase name="testTravelSubTabOnIndia" classname="testModules.home.fullFlowLambda" time="2.629"/>
+  <testcase name="testGoingNewsTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.362"/>
+  <testcase name="testGoingNewsTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.435"/>
+  <testcase name="testGoingToQuizzesTabOnIndia" classname="testModules.home.fullFlowLambda" time="1.34"/>
+  <testcase name="testGoingToQuizzesTabOnIndia" classname="testModules.home.fullFlowLambda" time="0.09"/>
+  <testcase name="testTapOnTrendingCategoryOnIndia" classname="testModules.home.fullFlowLambda" time="3.816"/>
+  <testcase name="testTapOnTrendingCategoryOnIndia" classname="testModules.home.fullFlowLambda" time="5.63"/>
+  <testcase name="testTapOnSHowdoenOnIndia" classname="testModules.home.fullFlowLambda" time="4.82"/>
+  <testcase name="testTapOnSHowdoenOnIndia" classname="testModules.home.fullFlowLambda" time="2.635"/>
+  <testcase name="tapGamesTabOnIndia2" classname="testModules.home.fullFlowLambda" time="0.321"/>
+  <testcase name="tapGamesTabOnIndia2" classname="testModules.home.fullFlowLambda" time="2.948"/>
+  <testcase name="testUKEditionIsPresent" classname="testModules.home.fullFlowLambda" time="7.56"/>
+  <testcase name="testUKEditionIsPresent" classname="testModules.home.fullFlowLambda" time="2.582"/>
+  <testcase name="testLatestSubTabONUK" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testLatestSubTabONUK" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testTrendingSubTabONUK" classname="testModules.home.fullFlowLambda" time="6.494"/>
+  <testcase name="testTrendingSubTabONUK" classname="testModules.home.fullFlowLambda" time="8.151"/>
+  <testcase name="testFunnyTweetsSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.784"/>
+  <testcase name="testFunnyTweetsSubTabONUK" classname="testModules.home.fullFlowLambda" time="5.68"/>
+  <testcase name="testGamesSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.921"/>
+  <testcase name="testGamesSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.236"/>
+  <testcase name="testLatestsSubTabONUK" classname="testModules.home.fullFlowLambda" time="5.103"/>
+  <testcase name="testLatestsSubTabONUK" classname="testModules.home.fullFlowLambda" time="4.82"/>
+  <testcase name="testRandomSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.605"/>
+  <testcase name="testRandomSubTabONUK" classname="testModules.home.fullFlowLambda" time="2.04"/>
+  <testcase name="testGossipSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.586"/>
+  <testcase name="testGossipSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.716"/>
+  <testcase name="testGayStuffpSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.189"/>
+  <testcase name="testGayStuffpSubTabONUK" classname="testModules.home.fullFlowLambda" time="9.605"/>
+  <testcase name="tapOnMore1ONUK" classname="testModules.home.fullFlowLambda" time="5.565"/>
+  <testcase name="tapOnMore1ONUK" classname="testModules.home.fullFlowLambda" time="2.45"/>
+  <testcase name="testEntertainmentSubTabONUK" classname="testModules.home.fullFlowLambda" time="4.436"/>
+  <testcase name="testEntertainmentSubTabONUK" classname="testModules.home.fullFlowLambda" time="0.797"/>
+  <testcase name="testAnimalsSubTabONUK" classname="testModules.home.fullFlowLambda" time="6.645"/>
+  <testcase name="testAnimalsSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.021"/>
+  <testcase name="testBooksSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.4"/>
+  <testcase name="testBooksSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.455"/>
+  <testcase name="testFoodSubTabONUK" classname="testModules.home.fullFlowLambda" time="2.008"/>
+  <testcase name="testFoodSubTabONUK" classname="testModules.home.fullFlowLambda" time="0.843"/>
+  <testcase name="testCommunitySubTabONUK" classname="testModules.home.fullFlowLambda" time="8.197"/>
+  <testcase name="testCommunitySubTabONUK" classname="testModules.home.fullFlowLambda" time="4.118"/>
+  <testcase name="testMusicSubTabONUK" classname="testModules.home.fullFlowLambda" time="5.524"/>
+  <testcase name="testMusicSubTabONUK" classname="testModules.home.fullFlowLambda" time="3.756"/>
+  <testcase name="testNiftySubTabONUK" classname="testModules.home.fullFlowLambda" time="0.072"/>
+  <testcase name="testNiftySubTabONUK" classname="testModules.home.fullFlowLambda" time="0.209"/>
+  <testcase name="testParentsSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.824"/>
+  <testcase name="testParentsSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.672"/>
+  <testcase name="testRewindSubTabONUK" classname="testModules.home.fullFlowLambda" time="0.342"/>
+  <testcase name="testRewindSubTabONUK" classname="testModules.home.fullFlowLambda" time="0.296"/>
+  <testcase name="testStyleSubTabONUK" classname="testModules.home.fullFlowLambda" time="2.974"/>
+  <testcase name="testStyleSubTabONUK" classname="testModules.home.fullFlowLambda" time="8.879"/>
+  <testcase name="testTravelHomeSubTabONUK" classname="testModules.home.fullFlowLambda" time="10.197"/>
+  <testcase name="testTravelHomeSubTabONUK" classname="testModules.home.fullFlowLambda" time="13.373"/>
+  <testcase name="testTravelSubTabONUK" classname="testModules.home.fullFlowLambda" time="1.943"/>
+  <testcase name="testTravelSubTabONUK" classname="testModules.home.fullFlowLambda" time="2.761"/>
+  <testcase name="testGoingNewsTabOnUK" classname="testModules.home.fullFlowLambda" time="1.363"/>
+  <testcase name="testGoingNewsTabOnUK" classname="testModules.home.fullFlowLambda" time="1.506"/>
+  <testcase name="testGoingToQuizzesTabOnUK" classname="testModules.home.fullFlowLambda" time="1.301"/>
+  <testcase name="testGoingToQuizzesTabOnUK" classname="testModules.home.fullFlowLambda" time="1.753"/>
+  <testcase name="testTapOnTrendingCategoryOnUK" classname="testModules.home.fullFlowLambda" time="1.699"/>
+  <testcase name="testTapOnTrendingCategoryOnUK" classname="testModules.home.fullFlowLambda" time="5.721"/>
+  <testcase name="testTapOnShowdownCategoryOnUK" classname="testModules.home.fullFlowLambda" time="4.549"/>
+  <testcase name="testTapOnShowdownCategoryOnUK" classname="testModules.home.fullFlowLambda" time="4.66"/>
+  <testcase name="testTapOnTriviaCategoryOnUK" classname="testModules.home.fullFlowLambda" time="3.429"/>
+  <testcase name="testTapOnTriviaCategoryOnUK" classname="testModules.home.fullFlowLambda" time="5.663"/>
+  <testcase name="testTapOnCanWeGuessOnUK" classname="testModules.home.fullFlowLambda" time="4.578"/>
+  <testcase name="testTapOnCanWeGuessOnUK" classname="testModules.home.fullFlowLambda" time="5.13"/>
+  <testcase name="testTapOnMOreOnUK" classname="testModules.home.fullFlowLambda" time="2.421"/>
+  <testcase name="testTapOnMOreOnUK" classname="testModules.home.fullFlowLambda" time="3.262"/>
+  <testcase name="testTapOnPollsUK" classname="testModules.home.fullFlowLambda" time="4.561"/>
+  <testcase name="testTapOnPollsUK" classname="testModules.home.fullFlowLambda" time="5.59"/>
+  <testcase name="testTapOnTaylorSwiftUK" classname="testModules.home.fullFlowLambda" time="0.44"/>
+  <testcase name="testTapOnTaylorSwiftUK" classname="testModules.home.fullFlowLambda" time="4.573"/>
+  <testcase name="testTapOnMarvelUK" classname="testModules.home.fullFlowLambda" time="4.596"/>
+  <testcase name="testTapOnMarvelUK" classname="testModules.home.fullFlowLambda" time="5.341"/>
+  <testcase name="testTapOnZodiacUK" classname="testModules.home.fullFlowLambda" time="1.017"/>
+  <testcase name="testTapOnZodiacUK" classname="testModules.home.fullFlowLambda" time="5.696"/>
+  <testcase name="testTapOnHarryPotterUK" classname="testModules.home.fullFlowLambda" time="4.528"/>
+  <testcase name="testTapOnHarryPotterUK" classname="testModules.home.fullFlowLambda" time="5.302"/>
+  <testcase name="testTapOnAnimeUK" classname="testModules.home.fullFlowLambda" time="4.597"/>
+  <testcase name="testTapOnAnimeUK" classname="testModules.home.fullFlowLambda" time="5.761"/>
+  <testcase name="testTapOnKpopOnUK" classname="testModules.home.fullFlowLambda" time="4.415"/>
+  <testcase name="testTapOnKpopOnUK" classname="testModules.home.fullFlowLambda" time="4.582"/>
+  <testcase name="testTapOnChecklistUK" classname="testModules.home.fullFlowLambda" time="4.58"/>
+  <testcase name="testTapOnChecklistUK" classname="testModules.home.fullFlowLambda" time="5.396"/>
+  <testcase name="tapGamesTabOnUK" classname="testModules.home.fullFlowLambda" time="7.035"/>
+  <testcase name="tapGamesTabOnUK" classname="testModules.home.fullFlowLambda" time="8.498"/>
+  <testcase name="testLatamEditionIsPresent" classname="testModules.home.fullFlowLambda" time="3.443"/>
+  <testcase name="testLatamEditionIsPresent" classname="testModules.home.fullFlowLambda" time="3.566"/>
+  <testcase name="testLoUltimoSubTab" classname="testModules.home.fullFlowLambda" time="0.001"/>
+  <testcase name="testLoUltimoSubTab" classname="testModules.home.fullFlowLambda" time="0"/>
+  <testcase name="testTendenciasSubTab" classname="testModules.home.fullFlowLambda" time="0.445"/>
+  <testcase name="testTendenciasSubTab" classname="testModules.home.fullFlowLambda" time="0.421"/>
+  <testcase name="testJapanEditionIsPresent" classname="testModules.home.fullFlowLambda" time="3.248"/>
+  <testcase name="testJapanEditionIsPresent" classname="testModules.home.fullFlowLambda" time="3.409"/>
+  <testcase name="testShoppingTabJapan" classname="testModules.home.fullFlowLambda" time="0.441"/>
+  <testcase name="testShoppingTabJapan" classname="testModules.home.fullFlowLambda" time="0.433"/>
+  <testcase name="testGoingToQuizzesTabOnJapan" classname="testModules.home.fullFlowLambda" time="4.337"/>
+  <testcase name="testGoingToQuizzesTabOnJapan" classname="testModules.home.fullFlowLambda" time="4.204"/>
 </testsuite>
