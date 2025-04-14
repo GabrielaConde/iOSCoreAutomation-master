@@ -64,7 +64,10 @@ public class HomeLatestPage extends CommonPage {
     private final By pyramidSchemeDesc = AppiumBy.accessibilityId("Connect the dots, find the words, solve the puzzle!");
 
     private final By quizPartyThumbnail = AppiumBy.accessibilityId("quiz-party-thumbnail");
+  //  private final By quizPartyThumbnail = By.xpath("//XCUIElementTypeImage[@name=\"quiz-party-thumbnail\"]");
     private final By dailyTriviaThumbnail = AppiumBy.accessibilityId("daily-trivia-thumbnail");
+
+  //  private final By dailyTriviaThumbnail = By.xpath("//XCUIElementTypeImage[@name=\"daily-trivia-thumbnail\"]");
 
     private final By moreFunStuffLbl = AppiumBy.accessibilityId("More Fun Stuff");
     private final By whoDis = AppiumBy.accessibilityId("Who Dis?");
