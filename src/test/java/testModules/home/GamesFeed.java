@@ -110,7 +110,7 @@ public class GamesFeed extends EditionsInit {
        latestSubTab.tapXMark();
     }
 
-    @Test(priority = 8)
+   // @Test(priority = 8)
     public void validateMakeYours() throws InterruptedException{
         Thread.sleep(2000);
         newHomeFeed.tapMakeYours();
@@ -120,6 +120,24 @@ public class GamesFeed extends EditionsInit {
         newHomeFeed.isHotTopicDisplayed();
         Thread.sleep(2000);
         latestSubTab.tapBackButton();
+        Thread.sleep(2000);
+    }
+
+    @Test(priority = 8)
+    public void validateCreatorsCarrousel()throws InterruptedException{
+        Thread.sleep(2000);
+        newHomeFeed.tapMakeYours();
+//        newHomeFeed.tapOnMakeYoursCell();
+        //   Thread.sleep(2000);
+        //   bpage.tapBackButton();
+        Thread.sleep(3000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(3000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(3000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+        bpage.tapBackButton();
         Thread.sleep(2000);
     }
 

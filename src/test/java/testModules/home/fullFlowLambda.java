@@ -1730,18 +1730,25 @@ public class fullFlowLambda extends EditionsInit {
         latestSubTab.tapXMark();
     }
 
+
     @Test(priority = 130)
-    public void validateMakeYours() throws InterruptedException {
+    public void validateMakeYours()throws InterruptedException{
         Thread.sleep(2000);
         newHomeFeed.tapMakeYours();
-        Thread.sleep(4000);
-      //  newHomeFeed.isMakeYoursTitleDisplayed();
-      //  Thread.sleep(1000);
-      //  newHomeFeed.isHotTopicDisplayed();
-      //  Thread.sleep(2000);
-        latestSubTab.tapBackButton();
+//        newHomeFeed.tapOnMakeYoursCell();
+        //   Thread.sleep(2000);
+        //   bpage.tapBackButton();
+        Thread.sleep(3000);
+        newHomeFeed.tapOnCreatorItem();
+        Thread.sleep(3000);
+        newHomeFeed.tapDoneButton();
+        Thread.sleep(3000);
+        bpage.tapBackButton();
+        Thread.sleep(2000);
+        bpage.tapBackButton();
         Thread.sleep(2000);
     }
+
 
     @Test(priority = 131)
     public void validateWhealOfFortune() throws InterruptedException {
