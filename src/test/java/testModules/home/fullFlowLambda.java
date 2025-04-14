@@ -2460,6 +2460,7 @@ public class fullFlowLambda extends EditionsInit {
 
     @Test(priority = 180)
     public void testTapOnTriviaCategoryOnCanada() throws InterruptedException {
+        //
       //  try{
             Thread.sleep(3000);
             testName("testTapOnTriviaCategory");
